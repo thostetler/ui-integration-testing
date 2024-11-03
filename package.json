@@ -1,0 +1,17 @@
+{
+  "name": "ui-e2e-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Tim Hostetler",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.8.7"
+  },
+  "dependencies": {
+    "playwright-performance": "^1.0.3"
+  }
+}
