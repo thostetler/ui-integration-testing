@@ -11,8 +11,15 @@ const test = base.extend<
   PerformanceOptions & PerformanceWorker
 >({
   performance: playwrightPerformance.performance,
-  performanceOptions: [{}, { scope: "worker" }],
+  performanceOptions: [
+    {
+      dropResultsFromFailedTest: true,
+    },
+    { scope: "worker" },
+  ],
   worker: [playwrightPerformance.worker, { scope: "worker", auto: true }],
 });
 
-export { test };
+type TestContext = Parameters<Parameters<typeof test>[2]>[0];
+
+export { test, TestContext };
