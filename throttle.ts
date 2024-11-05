@@ -1,4 +1,4 @@
-import { BrowserContext, Page } from "@playwright/test";
+import { BrowserContext, Page } from '@playwright/test';
 
 type ThrottleSettings = Record<
   string,
@@ -9,30 +9,30 @@ type ThrottleSettings = Record<
       latency: number;
       downloadThroughput: number;
       uploadThroughput: number;
-      connectionType: "cellular3g" | "ethernet";
+      connectionType: 'cellular3g' | 'ethernet';
     };
   }
 >;
 
 const throttleSettings: ThrottleSettings = {
-  "3g-4x": {
+  '3g-4x': {
     rate: 4,
     networkConditions: {
       offline: false,
       latency: 0,
       downloadThroughput: -1,
       uploadThroughput: -1,
-      connectionType: "cellular3g",
+      connectionType: 'cellular3g',
     },
   },
-  "eth-2x": {
+  'eth-2x': {
     rate: 2,
     networkConditions: {
       offline: false,
       latency: 0,
       downloadThroughput: -1,
       uploadThroughput: -1,
-      connectionType: "ethernet",
+      connectionType: 'ethernet',
     },
   },
 };
@@ -45,11 +45,11 @@ export const throttlePage = async (
   const cdpSession = await context.newCDPSession(page);
 
   const settings = throttleSettings[tag];
-  await cdpSession.send("Emulation.setCPUThrottlingRate", {
+  await cdpSession.send('Emulation.setCPUThrottlingRate', {
     rate: settings.rate,
   });
   await cdpSession.send(
-    "Network.emulateNetworkConditions",
+    'Network.emulateNetworkConditions',
     settings.networkConditions,
   );
   return settings;

@@ -1,10 +1,10 @@
-import { test as base } from "@playwright/test";
+import { test as base } from '@playwright/test';
 import type {
   PerformanceOptions,
   PerformanceWorker,
   PlaywrightPerformance,
-} from "playwright-performance";
-import { playwrightPerformance } from "playwright-performance";
+} from 'playwright-performance';
+import { playwrightPerformance } from 'playwright-performance';
 
 const test = base.extend<
   PlaywrightPerformance,
@@ -16,9 +16,9 @@ const test = base.extend<
       dropResultsFromFailedTest: true,
       suppressConsoleResults: true,
     },
-    { scope: "worker" },
+    { scope: 'worker' },
   ],
-  worker: [playwrightPerformance.worker, { scope: "worker", auto: true }],
+  worker: [playwrightPerformance.worker, { scope: 'worker', auto: true }],
 });
 
 type TestContext = Parameters<Parameters<typeof test>[2]>[0];
