@@ -132,8 +132,7 @@ export const queries = [
   {
     description: 'multiple field search with nested citations',
     name: 'multi-field-nested-citations',
-    query:
-      'author:"Feynman" title:"quantum" citations(journal:"Physical Review")',
+    query: 'author:"Feynman" title:"quantum" citations(journal:"Physical Review")',
   },
   {
     description: 'author with citations in title and abstract',
@@ -143,7 +142,6 @@ export const queries = [
   {
     description: 'author OR title with citations in journal',
     name: 'author-or-title-citations-journal',
-    query:
-      '(author:"Einstein, A" OR title:"relativity") citations(journal:"Nature")',
+    query: '(author:"Einstein, A" OR title:"relativity") citations(journal:"Nature")',
   },
 ];

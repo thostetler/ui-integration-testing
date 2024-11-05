@@ -37,20 +37,13 @@ const throttleSettings: ThrottleSettings = {
   },
 };
 
-export const throttlePage = async (
-  context: BrowserContext,
-  page: Page,
-  tag: keyof typeof throttleSettings,
-) => {
+export const throttlePage = async (context: BrowserContext, page: Page, tag: keyof typeof throttleSettings) => {
   const cdpSession = await context.newCDPSession(page);
 
   const settings = throttleSettings[tag];
   await cdpSession.send('Emulation.setCPUThrottlingRate', {
     rate: settings.rate,
   });
-  await cdpSession.send(
-    'Network.emulateNetworkConditions',
-    settings.networkConditions,
-  );
+  await cdpSession.send('Network.emulateNetworkConditions', settings.networkConditions);
   return settings;
 };
