@@ -1,6 +1,7 @@
 import { test, TestContext } from '../../test-base';
 import { queries } from '../../queries';
 import { throttlePage } from '../../throttle';
+import {makePrefix} from '../../utils';
 
 test.use({
   baseURL: 'https://devui.adsabs.harvard.edu',
@@ -14,20 +15,21 @@ const perfTest = async (
   { page, performance }: Pick<TestContext, 'page' | 'performance'>,
   { query, name }: Query,
 ) => {
-  performance.sampleStart(`${prefix}.landing.pre-load.${name}`);
+  performance.sampleStart(`${prefix}.pre-load.${name}`);
   await page.goto('/', { waitUntil: 'commit' });
   await page.fill('input[name="q"]', query);
-  performance.sampleStart(`${prefix}.landing.post-load.${name}`);
+  performance.sampleStart(`${prefix}.post-load.${name}`);
   await page.getByLabel('submit').click();
   await page.waitForSelector('h3.s-results-title');
-  performance.sampleEnd(`${prefix}.landing.pre-load.${name}`);
-  performance.sampleEnd(`${prefix}.landing.post-load.${name}`);
+  performance.sampleEnd(`${prefix}.pre-load.${name}`);
+  performance.sampleEnd(`${prefix}.post-load.${name}`);
 };
 
 for (const { description, name, query } of queries) {
-  test(description, async ({ page, performance }) => {
+  const prefix = makePrefix('bbb', name, 'normal');
+  test(prefix, async ({ page, performance }) => {
     await perfTest(
-      'bbb.normal',
+      prefix,
       { page, performance },
       { query, name, description },
     );
@@ -35,17 +37,13 @@ for (const { description, name, query } of queries) {
 }
 
 for (const { description, name, query } of queries) {
-  test(
-    description,
-    {
-      tag: ['@throttled', '@3g-4x'],
-    },
+  const prefix = makePrefix('bbb', name, '3g-4x');
+  test(prefix, {tag: ['@throttled', '@3g-4x']},
     async ({ page, performance, context }) => {
       test.slow();
-
       await throttlePage(context, page, '3g-4x');
       await perfTest(
-        'bbb.3g-4x.',
+        prefix,
         { page, performance },
         { query, name, description },
       );
@@ -54,17 +52,13 @@ for (const { description, name, query } of queries) {
 }
 
 for (const { description, name, query } of queries) {
-  test(
-    description,
-    {
-      tag: ['@throttled', '@eth-2x'],
-    },
+  const prefix = makePrefix('bbb', name, 'eth-2x');
+  test(prefix, {tag: ['@throttled', '@eth-2x']},
     async ({ page, performance, context }) => {
       test.slow();
-
       await throttlePage(context, page, 'eth-2x');
       await perfTest(
-        'bbb.eth-2x.',
+        prefix,
         { page, performance },
         { query, name, description },
       );

@@ -1,6 +1,7 @@
 import { queries } from '../../queries';
 import { test, TestContext } from '../../test-base';
 import { throttlePage } from '../../throttle';
+import {makePrefix} from '../../utils';
 
 test.use({
   baseURL: 'https://dev.scixplorer.org',
@@ -25,9 +26,10 @@ const perfTest = async (
 };
 
 for (const { description, name, query } of queries) {
-  test(description, async ({ page, performance }) => {
+  const prefix = makePrefix('scix', name, 'normal');
+  test(prefix, async ({ page, performance }) => {
     await perfTest(
-      'scix.normal',
+      prefix,
       { page, performance },
       { query, name, description },
     );
@@ -35,16 +37,13 @@ for (const { description, name, query } of queries) {
 }
 
 for (const { description, name, query } of queries) {
-  test(
-    description,
-    {
-      tag: ['@throttled', '@3g-4x'],
-    },
+  const prefix = makePrefix('scix', name, '3g-4x');
+  test(prefix, {tag: ['@throttled', '@3g-4x']},
     async ({ page, performance, context }) => {
       test.slow();
       await throttlePage(context, page, '3g-4x');
       await perfTest(
-        'scix.3g-4x.',
+        prefix,
         { page, performance },
         { query, name, description },
       );
@@ -53,20 +52,17 @@ for (const { description, name, query } of queries) {
 }
 
 for (const { description, name, query } of queries) {
-  test(
-    description,
-    {
-      tag: ['@throttled', '@eth-2x'],
-    },
+  const prefix = makePrefix('scix', name, 'eth-2x');
+  test(prefix, {tag: ['@throttled', '@eth-2x']},
     async ({ page, performance, context }) => {
       test.slow();
-
       await throttlePage(context, page, 'eth-2x');
       await perfTest(
-        'scix.eth-2x.',
+        prefix,
         { page, performance },
         { query, name, description },
       );
     },
   );
 }
+
