@@ -14,6 +14,7 @@ const test = base.extend<
   performanceOptions: [
     {
       dropResultsFromFailedTest: true,
+      suppressConsoleResults: true,
     },
     { scope: "worker" },
   ],

@@ -4,7 +4,11 @@ export const queries = [
     name: "first-author",
     query: 'author:"^Solanki, Sami"',
   },
-  { description: "citations search", name: "citations", query: "" },
+  {
+    description: "citations search",
+    name: "citations",
+    query: 'citations(abs:"JWST")',
+  },
   {
     description: "year range search",
     name: "year-range",
