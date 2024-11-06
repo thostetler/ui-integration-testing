@@ -7,5 +7,5 @@ echo "Running performance tests..."
 
 for i in {1..10}; do
     echo "Running test $i..."
-    pnpm run test
+    pnpm run test:perf
 done
