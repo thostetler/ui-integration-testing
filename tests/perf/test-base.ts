@@ -8,6 +8,7 @@ const test = base.extend<PlaywrightPerformance, PerformanceOptions & Performance
     {
       dropResultsFromFailedTest: true,
       suppressConsoleResults: true,
+      performanceResultsDirectoryName: './perf-results',
     },
     { scope: 'worker' },
   ],

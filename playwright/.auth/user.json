@@ -1,0 +1,119 @@
+{
+  "cookies": [
+    {
+      "name": "scix_session",
+      "value": "Fe26.2*1*7e221f642788d4011b8a1177b35284b7a34a1a8cb1753b31a144330ceb00166d*eD5iAHyE_HWtJJSvlqecjA*0pIj7624e5OfYhVF52mu0VwHqiiAQK53mnGF3ZWyl65yUO9yrx4Mm2fSOoMl7zsy_uh29BBqyLMZgAvyNrBOObv050if_83n_w0n3rgtojj09dyyoY5cThD8AGXR9ImM5cDhDc8wnBl3aIpamZD0KVgyFu8GwTlXRlW1DO_D0sSBeslNJ7q1vdOWsntTWzkjmuhApB2A8rMUqiMiwsbL3Yj34RnRGyui28haiXjS8qcfvoyrYk2uu-SJ2ojNx3ykJbjm0Va9q6kPXLVw3aRz5wbCFLaydyxFd8YJP7R7GSyLtdiF2FP6dfQjGQ2rTzLkQ0Aa1OWTpFMcpN39Shjkcl5RJDZP64mQN7DZDW037WM*1732347536654*07ec64a88fbe697618a30be87c9894be494a953e603b5ba7c8d6467fb540cb49*523MFWRqu2fJXbk9e_Lv0kpgVfgN75dhfmOSYRfgQlg~2",
+      "domain": "dev.scixplorer.org",
+      "path": "/",
+      "expires": 1732347476.673612,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.2059655619.1731051537",
+      "domain": ".scixplorer.org",
+      "path": "/",
+      "expires": 1765611536.972512,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "session",
+      "value": ".eJw1jssKgkAUQH8l7tpFBQYJLcJHYmklg4_ZiNqt0WYsxpFI8d8Toe2BczgDZHeJLQNDyQ41yKobGAMsCjCAxiEP4oj7gtb-wRHUeiz9ngpKGKfEqwJif8-EPdPa3sE4uW-UIm-wUf_aK-8Uy0pezQxceVw7yZQrMHFPHLeCXT69dw1NjroZqUbtcWPpJWjQtSjnF1jB-AMBTDc_.Zy3AEQ.yI9hFY6vG5PPZF8ywg9_Gt1SgPI",
+      "domain": "dev.scixplorer.org",
+      "path": "/",
+      "expires": 1762609137.521137,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_DBP4MPB22J",
+      "value": "GS1.1.1731051536.1.0.1731051538.0.0.0",
+      "domain": ".scixplorer.org",
+      "path": "/",
+      "expires": 1765611538.187781,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1698540663.1731051539",
+      "domain": ".harvard.edu",
+      "path": "/",
+      "expires": 1765611538.608041,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "session",
+      "value": ".eJw1jsEKgkAURX8l3tpFVhYJLQKNyqaYUOzNRiynnNRRxpEM8d8Tod3lwDncDqKn4nUKtlYNNyASCdgdTO5gA_GzljjZhznY4htNDM85hocZKwKLOWzYwYL4L-vi0w30g1txVcSSS_2vlXGj0-iRi5HBaV2hMPc0cUsiVzgPpHf7HrdLLROHCre-Tj3qobsDA5qaq_ELmND_AKTFNe4.Zy3AFA.jB9zbDnIGBVrS-QaZBqJ3F-h__I",
+      "domain": "devui.adsabs.harvard.edu",
+      "path": "/",
+      "expires": 1762609140.073802,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_X07MS2584V",
+      "value": "GS1.1.1731051538.1.0.1731051540.0.0.0",
+      "domain": ".harvard.edu",
+      "path": "/",
+      "expires": 1765611540.291109,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://devui.adsabs.harvard.edu",
+      "localStorage": [
+        {
+          "name": "test",
+          "value": "null"
+        },
+        {
+          "name": "bumblebeestorage-service>currentQuery",
+          "value": "{\"q\":[\"bibcode:2019ApJ...875L...1E\"],\"sort\":[\"score desc, bibcode desc\"],\"n\":[\"10\"],\"p\":[\"1\"]}"
+        },
+        {
+          "name": "bumblebeestorage-service>#keys",
+          "value": "{\"appConfig\":1,\"currentQuery\":1}"
+        },
+        {
+          "name": "bumblebeestorage-service>appConfig",
+          "value": "{\"username\":\"anonymous@ads\",\"scopes\":[\"api\",\"execute-query\",\"store-query\"],\"client_id\":\"L9pYi1HQdEoMn7Y3UnKXyJA6tndDQiEsR0KQKYEF\",\"access_token\":\"hBa6RpzoW4wVKvWVp0VZhwFQiT8pcMNOONEHC1tH\",\"client_name\":\"BB client\",\"token_type\":\"Bearer\",\"ratelimit\":1,\"anonymous\":true,\"client_secret\":\"zHo1RvtF6LssI5frTe2V5u8FhF2gh80ZbQRPIz4wMnB7YKsW79izXtAvdqRR\",\"expire_in\":\"2024-11-09T07:38:59.030527\",\"refresh_token\":\"FntdPNs8SROFWROGMAdqsIsDCGeT2KVypvIp9Q36\"}"
+        }
+      ]
+    },
+    {
+      "origin": "https://dev.scixplorer.org",
+      "localStorage": [
+        {
+          "name": "chakra-ui-color-mode",
+          "value": "light"
+        },
+        {
+          "name": "nectar-app-state",
+          "value": "{\"state\":{\"user\":{\"access_token\":\"m6Eq94SzqSRHAdrWqvhME9tTyhUz7OEstbYzlnzP\",\"username\":\"anonymous@ads\",\"anonymous\":true,\"expire_in\":\"2024-11-09T07:38:55.794955\"},\"mode\":\"GENERAL\",\"numPerPage\":10,\"settings\":{\"searchFacets\":{\"order\":[\"author\",\"collections\",\"refereed\",\"institutions\",\"keywords\",\"publications\",\"bibgroups\",\"simbad\",\"ned\",\"data\",\"vizier\",\"pubtype\",\"planetary\"],\"state\":{\"author\":{\"hidden\":false,\"expanded\":true},\"collections\":{\"hidden\":false,\"expanded\":true},\"refereed\":{\"hidden\":false,\"expanded\":true},\"institutions\":{\"hidden\":false,\"expanded\":false},\"keywords\":{\"hidden\":false,\"expanded\":false},\"publications\":{\"hidden\":false,\"expanded\":false},\"bibgroups\":{\"hidden\":false,\"expanded\":false},\"simbad\":{\"hidden\":false,\"expanded\":false},\"ned\":{\"hidden\":false,\"expanded\":false},\"data\":{\"hidden\":false,\"expanded\":false},\"vizier\":{\"hidden\":false,\"expanded\":false},\"pubtype\":{\"hidden\":false,\"expanded\":false},\"planetary\":{\"hidden\":false,\"expanded\":false}},\"open\":true,\"ignored\":[]},\"user\":{}},\"orcid\":{\"isAuthenticated\":false,\"user\":null,\"active\":false}},\"version\":0}"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "MXJzems0MTk4Y2h5NA=="
+        }
+      ]
+    }
+  ]
+}

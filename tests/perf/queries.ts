@@ -32,12 +32,12 @@ export const queries = [
   {
     description: 'abstract keyword search',
     name: 'abstract-keyword',
-    query: 'abstract:"supernova"',
+    query: 'abs:"supernova"',
   },
   {
     description: 'bibliographic code search',
     name: 'bibcode-search',
-    query: 'bibcode:2020ApJ...890L..10M',
+    query: 'bibcode:2020ApJ...890...86S',
   },
   {
     description: 'publication type search',
@@ -52,7 +52,7 @@ export const queries = [
   {
     description: 'arxiv identifier search',
     name: 'arxiv-id',
-    query: 'arxiv:2005.14165',
+    query: 'arxiv:hep-th/9108028',
   },
   {
     description: 'OR condition search',
@@ -72,7 +72,7 @@ export const queries = [
   {
     description: 'journal search',
     name: 'journal-search',
-    query: 'journal:"Nature"',
+    query: 'bibstem:ApJ',
   },
   {
     description: 'publication date exact',
@@ -82,12 +82,7 @@ export const queries = [
   {
     description: 'multiple fields search',
     name: 'multi-field',
-    query: 'author:"Feynman" title:"path integral"',
-  },
-  {
-    description: 'first author with citations search',
-    name: 'first-author-citations',
-    query: 'author:"^Solanki, Sami" citations(abstract:JWST)',
+    query: 'author:"Feynman" title:"Positrons"',
   },
   {
     description: 'papers cited by specific author',
@@ -97,12 +92,12 @@ export const queries = [
   {
     description: 'title keyword with citations',
     name: 'title-citations',
-    query: 'title:"black hole" citations(author:"Hawking, S")',
+    query: 'title:"black hole" citations(author:"^Hawking, S")',
   },
   {
     description: 'year range with citations from a specific journal',
     name: 'year-range-journal-citations',
-    query: 'year:2010-2020 citations(journal:"Astrophysical Journal")',
+    query: 'year:2010-2020 citations(bibstem:ApJ)',
   },
   {
     description: 'full text search with references',
@@ -122,26 +117,26 @@ export const queries = [
   {
     description: 'keyword search with cited references',
     name: 'keyword-cited-references',
-    query: 'keyword:"dark matter" references(author:"Zwicky, F")',
+    query: 'keyword:"dark matter" references(author:"Navarro, Julio F")',
   },
   {
     description: 'arxiv ID with citations search',
     name: 'arxiv-citations',
-    query: 'arxiv:2005.14165 citations(year:2021)',
+    query: 'citations(arxiv:hep-th/9108028)',
   },
   {
     description: 'multiple field search with nested citations',
     name: 'multi-field-nested-citations',
-    query: 'author:"Feynman" title:"quantum" citations(journal:"Physical Review")',
+    query: 'author:"Feynman" title:"quantum" citations(bibstem:PhRvL)',
   },
   {
     description: 'author with citations in title and abstract',
     name: 'author-citations-title-abstract',
-    query: 'author:"Sagan" citations(title:"life" abstract:"extraterrestrial")',
+    query: 'author:"Sagan" citations(title:"life" abs:"extraterrestrial")',
   },
   {
     description: 'author OR title with citations in journal',
     name: 'author-or-title-citations-journal',
-    query: '(author:"Einstein, A" OR title:"relativity") citations(journal:"Nature")',
+    query: '(author:"Einstein, A" OR title:"relativity") citations(bibstem:Natur)',
   },
 ];
