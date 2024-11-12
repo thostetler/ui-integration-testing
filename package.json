@@ -19,7 +19,7 @@
   "scripts": {
     "test": "playwright test",
     "preinstall": "npx only-allow pnpm",
-    "test:perf": "playwright test 'perf/perf.spec.ts' --repeat-each 10"
+    "test:perf": "playwright test 'perf/perf.spec.ts' --repeat-each 100"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",

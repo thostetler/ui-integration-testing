@@ -39,32 +39,23 @@ const perfTest = async (
   performance.sampleStart(`${prefix}.TTRL`);
   performance.sampleStart(`${prefix}.TTSBI`);
 
-  await page.goto('/', { waitUntil: 'domcontentloaded' });
-  await expect(page.getByTestId('search-input')).toBeEditable()
-
-  performance.sampleEnd('${prefix}.TTSBI');
+  await page.goto('/', { waitUntil: 'load' });
+  await page.waitForSelector(searchBarSelector, { state: 'visible' });
+  performance.sampleEnd(`${prefix}.TTSBI`);
 
   await page.locator(searchBarSelector).fill(query);
   await page.locator(searchButtonSelector).click();
-  performance.sampleStart('${prefix}.TTRS');
-  await page.waitForURL('**/search**');
-  await page.waitForSelector(searchResultsSelector)
+  performance.sampleStart(`${prefix}.TTRS`);
+  await page.waitForSelector(searchResultsSelector, { state: 'visible' });
   performance.sampleEnd(`${prefix}.TTRS`);
   performance.sampleEnd(`${prefix}.TTRL`);
 
   performance.sampleStart(`${prefix}.TTRR`);
   await page.locator(searchBarSelector).fill(`${query} ${refinement}`);
   await page.locator(searchButtonSelector).click();
-  await page.waitForURL('**/search**');
-  await page.waitForSelector(searchResultsSelector)
+  await page.waitForSelector(searchResultsSelector, { state: 'visible' });
   performance.sampleEnd(`${prefix}.TTRR`);
-
-  // for testing, adding a timeout to see the results
-  await page.waitForTimeout(500);
 };
-
-
-
 
 test.describe('scixplorer.org', () => {
   test.use({ baseURL: 'https://dev.scixplorer.org' });
@@ -82,8 +73,25 @@ test.describe('scixplorer.org', () => {
       await perfTest(prefix, selectors, {page, performance}, {query, name, description, refinement });
     });
   }
-
 })
+
+test.describe('ui.adsabs.harvard.edu', () => {
+  test.use({ baseURL: 'https://dev.adsabs.harvard.edu' });
+
+  // bbb selectors
+  const selectors = {
+    searchBarSelector: 'input[name="q"]',
+    searchButtonSelector: 'button.s-search-submit',
+    searchResultsSelector: 'h3.s-results-title'
+  }
+
+  for (const {description, name, query, refinement} of queries) {
+    const prefix = makePrefix('bbb', name, 'normal');
+    test(prefix, async ({page, performance}) => {
+      await perfTest(prefix, selectors, {page, performance}, {query, name, description, refinement });
+    });
+  }
+});
 
 
 // test.describe('ui.adsabs.harvard.edu', () => {
