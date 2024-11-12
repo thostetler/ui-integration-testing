@@ -11,6 +11,9 @@ dependencies:
   '@types/node':
     specifier: ^22.8.7
     version: 22.8.7
+  csv-writer:
+    specifier: ^1.6.0
+    version: 1.6.0
   eslint-config-prettier:
     specifier: ^9.1.0
     version: 9.1.0(eslint@9.14.0)
@@ -395,6 +398,10 @@ packages:
 
   /csv-stringify@5.6.5:
     resolution: {integrity: sha512-PjiQ659aQ+fUTQqSrd1XEDnOr52jh30RBurfzkscaE2tPaFsDH5wOAHJiw8XAHphRknCwMUE9KRayc4K/NbO8A==}
+    dev: false
+
+  /csv-writer@1.6.0:
+    resolution: {integrity: sha512-NOx7YDFWEsM/fTRAJjRpPp8t+MKRVvniAg9wQlUKx20MFrPs73WLJhFf5iteqrxNYnsy924K3Iroh3yNHeYd2g==}
     dev: false
 
   /csv@5.5.3:
