@@ -46,6 +46,7 @@ const perfTest = async (
   await page.locator(searchBarSelector).fill(query);
   await page.locator(searchButtonSelector).click();
   performance.sampleStart(`${prefix}.TTRS`);
+
   await page.waitForSelector(searchResultsSelector, { state: 'visible' });
   performance.sampleEnd(`${prefix}.TTRS`);
   performance.sampleEnd(`${prefix}.TTRL`);
@@ -53,6 +54,7 @@ const perfTest = async (
   performance.sampleStart(`${prefix}.TTRR`);
   await page.locator(searchBarSelector).fill(`${query} ${refinement}`);
   await page.locator(searchButtonSelector).click();
+  await page.waitForSelector(searchResultsSelector, { state: 'hidden' });
   await page.waitForSelector(searchResultsSelector, { state: 'visible' });
   performance.sampleEnd(`${prefix}.TTRR`);
 };
@@ -64,12 +66,13 @@ test.describe('scixplorer.org', () => {
   const selectors = {
     searchBarSelector: '[data-testid="search-input"]',
     searchButtonSelector: '[data-testid="search-submit"]',
-    searchResultsSelector: '#results a>span'
+    searchResultsSelector: '#results a>span',
   }
 
   for (const {description, name, query, refinement} of queries) {
     const prefix = makePrefix('scix', name, 'normal');
     test(prefix, async ({page, performance}) => {
+      test.setTimeout(15000)
       await perfTest(prefix, selectors, {page, performance}, {query, name, description, refinement });
     });
   }
@@ -88,6 +91,7 @@ test.describe('ui.adsabs.harvard.edu', () => {
   for (const {description, name, query, refinement} of queries) {
     const prefix = makePrefix('bbb', name, 'normal');
     test(prefix, async ({page, performance}) => {
+      test.setTimeout(15000)
       await perfTest(prefix, selectors, {page, performance}, {query, name, description, refinement });
     });
   }

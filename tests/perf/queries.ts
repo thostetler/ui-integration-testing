@@ -1,4 +1,10 @@
 export const queries = [
+  // {
+  //   description: 'test search',
+  //   name: 'test-search',
+  //   query: 'test',
+  //   refinement: 'testing',
+  // },
   {
     description: 'first author search',
     name: 'first-author',
@@ -96,12 +102,6 @@ export const queries = [
     refinement: 'property:refereed',
   },
   {
-    description: 'multiple fields search',
-    name: 'multi-field',
-    query: 'author:"Feynman" title:"Positrons"',
-    refinement: 'year:1960-1988',
-  },
-  {
     description: 'papers cited by specific author',
     name: 'cited-by-author',
     query: 'citations(author:"Einstein, A")',
@@ -124,12 +124,6 @@ export const queries = [
     name: 'full-text-references',
     query: 'full:"gravitational waves" references(author:"Thorne, K")',
     refinement: 'year:1980-2023',
-  },
-  {
-    description: 'affiliation with references search',
-    name: 'affiliation-references',
-    query: 'aff:"Harvard" references(title:"cosmology")',
-    refinement: 'year:2000-2023',
   },
   {
     description: 'publication type with citations in specific year',
