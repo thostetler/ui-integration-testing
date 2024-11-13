@@ -4,7 +4,7 @@ type ThrottleSettings = Record<
   string,
   {
     rate: number;
-    networkConditions: {
+    networkConditions?: {
       offline: boolean;
       latency: number;
       downloadThroughput: number;
@@ -15,6 +15,9 @@ type ThrottleSettings = Record<
 >;
 
 const throttleSettings: ThrottleSettings = {
+  '6x': {
+    rate: 6,
+  },
   '3g-4x': {
     rate: 4,
     networkConditions: {
@@ -44,6 +47,8 @@ export const throttlePage = async (context: BrowserContext, page: Page, tag: key
   await cdpSession.send('Emulation.setCPUThrottlingRate', {
     rate: settings.rate,
   });
-  await cdpSession.send('Network.emulateNetworkConditions', settings.networkConditions);
+  if (settings.networkConditions) {
+    await cdpSession.send('Network.emulateNetworkConditions', settings.networkConditions);
+  }
   return settings;
 };

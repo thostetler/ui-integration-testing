@@ -75,6 +75,13 @@ test.describe('scixplorer.org', () => {
       test.setTimeout(15000)
       await perfTest(prefix, selectors, {page, performance}, {query, name, description, refinement });
     });
+
+    const throttledPrefix = makePrefix('scix', name, '6x-cpu');
+    test(throttledPrefix, async ({page, performance, context}) => {
+      test.slow();
+      await throttlePage(context, page, '6x');
+      await perfTest(throttledPrefix, selectors, {page, performance}, {query, name, description, refinement });
+    });
   }
 })
 
@@ -93,6 +100,13 @@ test.describe('ui.adsabs.harvard.edu', () => {
     test(prefix, async ({page, performance}) => {
       test.setTimeout(15000)
       await perfTest(prefix, selectors, {page, performance}, {query, name, description, refinement });
+    });
+
+    const throttledPrefix = makePrefix('bbb', name, '6x-cpu');
+    test(throttledPrefix, async ({page, performance, context}) => {
+      test.slow();
+      await throttlePage(context, page, '6x');
+      await perfTest(throttledPrefix, selectors, {page, performance}, {query, name, description, refinement });
     });
   }
 });

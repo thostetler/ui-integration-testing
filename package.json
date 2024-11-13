@@ -12,6 +12,7 @@
     "csv-writer": "^1.6.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "nodemon": "^3.1.7",
     "playwright-performance": "^1.0.3",
     "prettier": "^3.3.3"
   },
@@ -19,7 +20,8 @@
   "scripts": {
     "test": "playwright test",
     "preinstall": "npx only-allow pnpm",
-    "test:perf": "playwright test 'perf/perf.spec.ts' --repeat-each 100"
+    "test:perf": "playwright test 'perf/perf.spec.ts' --repeat-each 100",
+    "aggregate": "node ./agg_timings.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
