@@ -1,10 +1,4 @@
 export const queries = [
-  // {
-  //   description: 'test search',
-  //   name: 'test-search',
-  //   query: 'test',
-  //   refinement: 'testing',
-  // },
   {
     description: 'first author search',
     name: 'first-author',
