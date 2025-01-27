@@ -2,7 +2,6 @@ import {test, TestContext} from './test-base';
 import {queries} from './queries';
 import {makePrefix} from './utils';
 import {throttlePage} from './throttle';
-import {expect} from '@playwright/test';
 
 type Query = (typeof queries)[number];
 
