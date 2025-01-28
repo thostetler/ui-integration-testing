@@ -33,11 +33,19 @@ export default defineConfig({
   projects: [
     { name: 'setup', testMatch: /.*\.setup\.ts/ },
     {
-      name: 'chromium',
+      name: 'perf',
       use: { ...devices['Desktop Chrome'],
         storageState: 'playwright/.auth/user.json'
       },
       dependencies: ['setup'],
+      testMatch: '**\/perf\/**',
     },
+    {
+      name: 'test',
+      use: {
+        ...devices['Desktop Chrome'],
+      },
+      testIgnore: '**\/perf\/perf.spec.ts',
+    }
   ],
 });

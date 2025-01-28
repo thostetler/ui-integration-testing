@@ -2,97 +2,46 @@
   "cookies": [
     {
       "name": "scix_session",
-      "value": "Fe26.2*1*9672ea73e464f3bd0922e469b308efe54cc86cc3f55f7c97370e7acfa9eb7263*5nzx6-lghPPXkqcZty-qhg*ML8B54KoCNONZOzTeKrzV90lrtOlpitLV7thxDV4pgA05cskaUpmVEMulaCvZMrJqoRtVUibSgZ3PvAeUvV5_BMxjbxQuayBMXK9sB4mOZ1kF-YfrnNHZ9-V9I0uZZw0EzunFu5gL-bxL-o-do-9gREhN8wexqbKQrm0cFlWLjynQ7Zxml-LP7cx2ms0W_SCIv5g5qDppZhVsjDitNJBlAneXR_OHxtVcY87z6kcbmNxBqfjKkyxwgEw2MS7Hty-Itgtu5RSGWMqGQ26o8wSb3hbee9IlyHuoAKv8qapxMRH9xP7KSW5vbx4hGant9LgXLGX1PvpZYjnjNU7OC1SuWOYeJ__AcRBP2ShVaGTCJ4*1732754816682*7d89c7327f51a57cc295c13bdceb7b5b85c21236b99dbae2460690003ff6008a*XAfgAnjqX2OffXrvCw8pm0RcCLGOxURu_-QUR5FHHpI~2",
+      "value": "Fe26.2*1*eb49065bc669c7776a38e35f4168125dff178feacb87cac5f10b8c25c6059694*kDhAFKWkwnJwbS-rMn88yw*ufaraOI4_yxoGgJhHPpHzYLjOOawRgXqeyd_OUZ0WLHQl3yeIsPzpPmHtHGn7Yx89uuux65SlXgm3yqun5RHKPCLEWCYI9251oWEryTLQBua9gBVqbBM4w_IOY3ggoengtF97fyEsoaqYFAlMgmJm5vfdPFdCeoR-X4tYW_80N1vkN63G9kx7SkGgOkYMCJJiLcPhQT1zVKh9wlyhlwswfh9HI9wzMvkJKc82ohUsTcnDUR3NZULRH4KROHaCvxYLmQLypUYbm6hEBnGo4oflOfwPSPupDR8piKep3GiDq4njXWdWnRCJL27traeEUSUtSWkwlxzCTLWVSeCiK4uZmZrurafuTDD4m8rObCGQ6Y*1738436401349*34c47acccb4b368fb393987df10afcebf688166ed7661d108912f5324ce2d718*MCGoZ54j3pSiVUHD8B0QI_rkLDBBITlnjC4gR6SArik~2",
       "domain": "dev.scixplorer.org",
       "path": "/",
-      "expires": 1732754756.703899,
+      "expires": 1738436341.531921,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Strict"
     },
     {
       "name": "_ga",
-      "value": "GA1.1.488358477.1731458817",
+      "value": "GA1.1.241665233.1737140402",
       "domain": ".scixplorer.org",
       "path": "/",
-      "expires": 1766018816.9875,
+      "expires": 1771700401.582997,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
-    },
-    {
-      "name": "session",
-      "value": ".eJw1jk8LgjAcQL9K_M4eUvoDQgdDkciZlJXbRdRWc9NVc8tA_O5F0PXBe7wB8quiHQNXK0MtyOsLuANMSnAB86pHztFGPOax7_U4ZQxzJkiIHZLe5sgnLfGJIOdgBePXfVDVFpJK_a_dC6NZXjX1j8EznprOCf1ZcZBeU4pkF20Std8G2WsdZSeNlm8i8UKABaaj6vcCNowfvXs2lA.ZzP3AQ.vjBhqigirlebxx98ca7vaLUHU4A",
-      "domain": "dev.scixplorer.org",
-      "path": "/",
-      "expires": 1763016417.591618,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
     },
     {
       "name": "_ga_DBP4MPB22J",
-      "value": "GS1.1.1731458816.1.0.1731458818.0.0.0",
+      "value": "GS1.1.1737140401.1.0.1737140401.0.0.0",
       "domain": ".scixplorer.org",
       "path": "/",
-      "expires": 1766018818.219928,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_ga",
-      "value": "GA1.1.1682091641.1731458819",
-      "domain": ".harvard.edu",
-      "path": "/",
-      "expires": 1766018818.647845,
+      "expires": 1771700401.866488,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "session",
-      "value": ".eJw1jkELgjAYQP9KfGcvZR4SOpiGCG4mWDovYjVzTq3mRDbpvxdC1wfv8WYoKkGHGmwpRmpAwe5gz7C6gg2oObAojTX2MUcNt5BPFPIeJk4wIzqYoqTt8jTvsA728Pm5Lyq6sqe9_Nee5Sjr4tayhYEzKTMMrUxl7_iUyMByy8DR5GjtLrxyz2SjieL11gMDxoGK5QXW8PkC3xU2yA.ZzP3BA.GA7hJo0KIu9SjG_YM__3HT_GYuI",
-      "domain": "devui.adsabs.harvard.edu",
+      "value": ".eJw1js0KgkAYAF8lvrOHdSMsoUOyKQSuFFboRdS2XX8yWd38w3cvhK4DM8wE0VOyRoDZSsU0iLIHmBOsEjCB3u3cdc6D54S5RziipOgCvyxCYhXueBwDbJfU5yjw3T3MP7dm8hVXrGr_tXesWhGlZbYwOBAL75Ch-ss202-U26erwqLbfPQcDUadpkiKfk0EaKAaJpcX0GH-AouCNdQ.Z4qosw.L-IyslXCVFcPMeurSMJgbuvFDyU",
+      "domain": "dev.scixplorer.org",
       "path": "/",
-      "expires": 1763016420.175103,
+      "expires": 1768698003.225756,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "_ga_X07MS2584V",
-      "value": "GS1.1.1731458818.1.0.1731458820.0.0.0",
-      "domain": ".harvard.edu",
-      "path": "/",
-      "expires": 1766018820.335561,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
     }
   ],
   "origins": [
-    {
-      "origin": "https://devui.adsabs.harvard.edu",
-      "localStorage": [
-        {
-          "name": "test",
-          "value": "null"
-        },
-        {
-          "name": "bumblebeestorage-service>currentQuery",
-          "value": "{\"q\":[\"bibcode:2019ApJ...875L...1E\"],\"sort\":[\"score desc, bibcode desc\"],\"n\":[\"10\"],\"p\":[\"1\"]}"
-        },
-        {
-          "name": "bumblebeestorage-service>#keys",
-          "value": "{\"appConfig\":1,\"currentQuery\":1}"
-        },
-        {
-          "name": "bumblebeestorage-service>appConfig",
-          "value": "{\"username\":\"anonymous@ads\",\"scopes\":[\"api\",\"execute-query\",\"store-query\"],\"client_id\":\"Awy3LL5XyXqQPTtI5CaIAzYE59VkfCUY2zYykh4D\",\"access_token\":\"Fpkntoi8L76UDPUqhSPcN8JilytQizLFhCikvo2z\",\"client_name\":\"BB client\",\"token_type\":\"Bearer\",\"ratelimit\":1,\"anonymous\":true,\"client_secret\":\"uaYZNkidRTlrRVquGgXYc9AZTLwy0Xo1LNTsewcpOjBVHTmEwt2PPTVUxeD7\",\"expire_in\":\"2024-11-14T00:46:59.054462\",\"refresh_token\":\"u8QMocNqDhV2VtPBfPnkCdfFpC9KSDi6bOLLo2uA\"}"
-        }
-      ]
-    },
     {
       "origin": "https://dev.scixplorer.org",
       "localStorage": [
@@ -102,7 +51,7 @@
         },
         {
           "name": "nectar-app-state",
-          "value": "{\"state\":{\"user\":{\"access_token\":\"Qz9aFejvTFfp5pLx4ApIrcKo7pGSfWEXlCIlapQ3\",\"username\":\"anonymous@ads\",\"anonymous\":true,\"expire_in\":\"2024-11-14T00:46:55.918587\"},\"mode\":\"GENERAL\",\"numPerPage\":10,\"settings\":{\"searchFacets\":{\"order\":[\"author\",\"collections\",\"refereed\",\"institutions\",\"keywords\",\"publications\",\"bibgroups\",\"simbad\",\"ned\",\"data\",\"vizier\",\"pubtype\",\"planetary\"],\"state\":{\"author\":{\"hidden\":false,\"expanded\":true},\"collections\":{\"hidden\":false,\"expanded\":true},\"refereed\":{\"hidden\":false,\"expanded\":true},\"institutions\":{\"hidden\":false,\"expanded\":false},\"keywords\":{\"hidden\":false,\"expanded\":false},\"publications\":{\"hidden\":false,\"expanded\":false},\"bibgroups\":{\"hidden\":false,\"expanded\":false},\"simbad\":{\"hidden\":false,\"expanded\":false},\"ned\":{\"hidden\":false,\"expanded\":false},\"data\":{\"hidden\":false,\"expanded\":false},\"vizier\":{\"hidden\":false,\"expanded\":false},\"pubtype\":{\"hidden\":false,\"expanded\":false},\"planetary\":{\"hidden\":false,\"expanded\":false}},\"open\":true,\"ignored\":[]},\"user\":{}},\"orcid\":{\"isAuthenticated\":false,\"user\":null,\"active\":false}},\"version\":0}"
+          "value": "{\"state\":{\"user\":{\"access_token\":\"QUi1QNAfsVZY7LOooduCc3KAOUgsySzKwJbAF5Vn\",\"username\":\"anonymous@ads\",\"anonymous\":true,\"expire_in\":\"2025-01-18T18:59:59.330623\"},\"mode\":\"GENERAL\",\"numPerPage\":10,\"settings\":{\"searchFacets\":{\"order\":[\"author\",\"collections\",\"refereed\",\"institutions\",\"keywords\",\"publications\",\"bibgroups\",\"simbad\",\"ned\",\"data\",\"vizier\",\"pubtype\",\"planetary\",\"uat\"],\"state\":{\"author\":{\"hidden\":false,\"expanded\":true},\"collections\":{\"hidden\":false,\"expanded\":true},\"refereed\":{\"hidden\":false,\"expanded\":true},\"institutions\":{\"hidden\":false,\"expanded\":false},\"keywords\":{\"hidden\":false,\"expanded\":false},\"publications\":{\"hidden\":false,\"expanded\":false},\"bibgroups\":{\"hidden\":false,\"expanded\":false},\"simbad\":{\"hidden\":false,\"expanded\":false},\"ned\":{\"hidden\":false,\"expanded\":false},\"data\":{\"hidden\":false,\"expanded\":false},\"vizier\":{\"hidden\":false,\"expanded\":false},\"pubtype\":{\"hidden\":false,\"expanded\":false},\"planetary\":{\"hidden\":false,\"expanded\":false},\"uat\":{\"hidden\":false,\"expanded\":false}},\"open\":true,\"ignored\":[]},\"user\":{}},\"orcid\":{\"isAuthenticated\":false,\"user\":null,\"active\":false}},\"version\":0}"
         }
       ]
     },
@@ -111,7 +60,7 @@
       "localStorage": [
         {
           "name": "rc::a",
-          "value": "M2ltZGdkdnNkd2N2"
+          "value": "MWMzNXExeTFnbzN1dDg="
         }
       ]
     }
