@@ -1,17 +1,19 @@
-import { InboxDto, MailSlurp } from 'mailslurp-client';
-import { configDotenv } from 'dotenv';
+import {InboxDto, MailSlurp} from 'mailslurp-client';
+import {configDotenv} from 'dotenv';
+import {Page} from '@playwright/test';
 
 configDotenv();
-const ms = new MailSlurp({
-  apiKey: process.env.MAILSLURP_API_KEY,
-});
 
 export const getMailSlurp = () => {
   if (!process.env.MAILSLURP_API_KEY) {
-    throw new Error('Environment variable MAILSLURP_API_KEY must be defined');
+    return;
   }
-  return ms;
+  return new MailSlurp({
+    apiKey: process.env.MAILSLURP_API_KEY,
+  });
 }
+
+export const ms = getMailSlurp();
 
 export const getInbox = async () => {
   try {
@@ -40,12 +42,17 @@ export const getTestEmailAccount = () => {
   const emailAddress = process.env.TEST_EMAIL;
   const password = process.env.TEST_PASSWORD;
 
-  if (!emailAddress || !password) {
-    throw new Error('Environment variables TEST_EMAIL and TEST_PASSWORD must be defined');
-  }
-
   return {
     emailAddress,
     password
   }
+}
+
+export const getRandomPassword = async (page: Page, len=16) => {
+  return await page.evaluate(() => {
+    const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    const ranVals = new Uint8Array(len);
+    crypto.getRandomValues(ranVals);
+    return Array.from(ranVals, byte => chars[byte % chars.length]).join('');
+  });
 }

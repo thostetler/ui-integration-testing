@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import {getInbox, getTestEmailAccount, waitForLatestEmail} from '../../../util/email';
+import {ms, getInbox, getTestEmailAccount, waitForLatestEmail, getRandomPassword} from '../../../util/email';
 import {configDotenv} from 'dotenv';
 import { Email } from 'mailslurp-client';
 
@@ -8,7 +8,6 @@ configDotenv();
 test.use({
   baseURL: 'https://qa.adsabs.harvard.edu'
 });
-
 
 function extractRegisterToken(email: Email): string | null {
   const html = email.body;
@@ -21,10 +20,10 @@ function extractRegisterToken(email: Email): string | null {
   throw new Error(`${html} is not a string`)
 }
 
-const password = 'XZHFjvCpDWrF8sAb1d0Npg50nH1xg'
-
 test('Can register an account', async ({ page }) => {
+  test.skip(!ms, 'MailSlurp API key not set');
   const {id, emailAddress} = await getInbox();
+  const password = await getRandomPassword(page);
   await page.goto("/user/account/register");
 
   // fill out form
@@ -65,6 +64,9 @@ test('Can register an account', async ({ page }) => {
 
 test('Can login and get to all settings pages', async ({ page }) => {
   const { emailAddress, password } = getTestEmailAccount();
+  test.skip(!emailAddress, 'TEST_EMAIL not set');
+  test.skip(!password, 'TEST_PASSWORD not set');
+
   await page.goto("/user/account/login");
 
   // fill out form
@@ -115,25 +117,3 @@ test('Can login and get to all settings pages', async ({ page }) => {
   await page.goto('/user/libraries');
   await expect(page.locator('span.h2')).toHaveText('My Libraries');
 });
-
-
-
-
-
-
-// test("register and delete account", async ({ page }) =>{
-//
-//
-//   // go to account page
-//   await page.goto('/user/settings/delete');
-//   page.on('dialog', async dialog => {
-//     await dialog.accept();
-//   });
-//   await page.locator('#delete-account').click();
-//   await page.waitForURL('/user/account/login');
-//   await expect(page).toHaveURL('/user/account/login');
-// });
-
-
-
-
