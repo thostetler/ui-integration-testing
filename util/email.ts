@@ -48,6 +48,16 @@ export const getTestEmailAccount = () => {
   }
 }
 
+export const getAltTestEmailAccount = () => {
+  const emailAddress = process.env.TEST_EMAIL_ALT;
+  const password = process.env.TEST_PASSWORD;
+
+  return {
+    emailAddress,
+    password
+  }
+}
+
 export const getRandomPassword = async (page: Page, len=16) => {
   return await page.evaluate(() => {
     const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';

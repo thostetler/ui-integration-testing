@@ -34,3 +34,18 @@ For the other account login tests make sure you have a good test account created
 
 The tests watch for these variables and will be skipped if they are not set.
 
+**Pass Arguments to Playwright**
+```bash
+pnpm test -- --ui
+pnpm test -- --headed
+```
+
+## Authenticated tests
+Some of the tests require authentication. To run these tests, you'll need to create two test accounts and verify them yourself.
+You can use plussed (`+`) email addresses to create the alt account, for example:
+```
+TEST_EMAIL=myemail+test@gmail.com
+TEST_EMAIL_ALT=myemail+testalt@gmail.com
+TEST_PASSWORD=yourpassword
+```
+These shouldn't be accounts you use for anything else, as the settings/libraries will be changed/deleted during the tests.
