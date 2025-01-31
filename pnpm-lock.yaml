@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@better-fetch/fetch':
+    specifier: ^1.1.12
+    version: 1.1.12
   '@playwright/test':
     specifier: ^1.48.2
     version: 1.48.2
@@ -35,6 +38,9 @@ dependencies:
   prettier:
     specifier: ^3.3.3
     version: 3.3.3
+  zod:
+    specifier: ^3.24.1
+    version: 3.24.1
 
 devDependencies:
   '@eslint/js':
@@ -51,6 +57,10 @@ devDependencies:
     version: 8.13.0(eslint@9.14.0)(typescript@5.6.3)
 
 packages:
+
+  /@better-fetch/fetch@1.1.12:
+    resolution: {integrity: sha512-B3bfloI/2UBQWIATRN6qmlORrvx3Mp0kkNjmXLv0b+DtbtR+pP4/I5kQA/rDUv+OReLywCCldf6co4LdDmh8JA==}
+    dev: false
 
   /@eslint-community/eslint-utils@4.4.1(eslint@9.14.0):
     resolution: {integrity: sha512-s3O3waFUrMV8P/XaF/+ZTp1X9XBZW1a4B97ZnjQF2KYWaFD2A8KyFBsrsfSjEmjn3RGWAIuvlneuZm3CUK3jbA==}
@@ -1132,3 +1142,7 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+  /zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
+    dev: false

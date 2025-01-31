@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import {ms, getInbox, getTestEmailAccount, waitForLatestEmail, getRandomPassword} from '../../../util/email';
 import {configDotenv} from 'dotenv';
 import { Email } from 'mailslurp-client';
+import {loginUser} from '../../../util/auth';
 
 configDotenv();
 
@@ -66,17 +67,8 @@ test('Can login and get to all settings pages', async ({ page }) => {
   const { emailAddress, password } = getTestEmailAccount();
   test.skip(!emailAddress, 'TEST_EMAIL not set');
   test.skip(!password, 'TEST_PASSWORD not set');
+  await loginUser(page, {emailAddress, password});
 
-  await page.goto("/user/account/login");
-
-  // fill out form
-  await page.locator('#email').fill(emailAddress);
-  await page.locator('#password').fill(password);
-
-  // submit
-  await page.locator('.submit-login').click();
-  await page.waitForURL('/');
-  
   // can we get to and see the app settings page?
   await page.goto('/user/settings/application');
   await expect(page.locator('.panel-heading')).toContainText('Search Settings');

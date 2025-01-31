@@ -34,3 +34,8 @@ For the other account login tests make sure you have a good test account created
 
 The tests watch for these variables and will be skipped if they are not set.
 
+**Pass Arguments to Playwright**
+```bash
+pnpm test -- --ui
+pnpm test -- --headed
+```
