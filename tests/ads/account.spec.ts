@@ -1,12 +1,13 @@
-import { test, expect } from '@playwright/test';
-import {ms, getInbox, getTestEmailAccount, waitForLatestEmail, getRandomPassword} from '../../../util/email';
-import {configDotenv} from 'dotenv';
+import { expect, test } from '@playwright/test';
+import { getInbox, getRandomPassword, getTestEmailAccount, ms, waitForLatestEmail } from '../../util/email';
+import { configDotenv } from 'dotenv';
 import { Email } from 'mailslurp-client';
+import { loginUser } from '../../util/auth';
 
 configDotenv();
 
 test.use({
-  baseURL: 'https://qa.adsabs.harvard.edu'
+  baseURL: process.env.ADS_BASE_URL,
 });
 
 function extractRegisterToken(email: Email): string | null {
@@ -17,14 +18,14 @@ function extractRegisterToken(email: Email): string | null {
     return match ? match[1] : null;
   }
 
-  throw new Error(`${html} is not a string`)
+  throw new Error(`${html} is not a string`);
 }
 
-test('Can register an account', async ({ page }) => {
+test('Can register an account', { tag: ['@smoke'] }, async ({ page }) => {
   test.skip(!ms, 'MailSlurp API key not set');
-  const {id, emailAddress} = await getInbox();
+  const { id, emailAddress } = await getInbox();
   const password = await getRandomPassword(page);
-  await page.goto("/user/account/register");
+  await page.goto('/user/account/register');
 
   // fill out form
   await page.locator('#email').fill(emailAddress);
@@ -32,7 +33,7 @@ test('Can register an account', async ({ page }) => {
   await page.locator('#password2').fill(password);
 
   // submit
-  await page.locator('button[data-form-name=\'register\']').click();
+  await page.locator("button[data-form-name='register']").click();
 
   const email = await waitForLatestEmail(id);
 
@@ -40,43 +41,33 @@ test('Can register an account', async ({ page }) => {
   expect(registerToken).not.toBeNull();
 
   // verify email
-  await page.goto(`/user/account/verify/register/${registerToken}`)
+  await page.goto(`/user/account/verify/register/${registerToken}`);
 
   const bootstrapResponseListener = async (response) => {
     if (response.url().includes('/accounts/bootstrap')) {
-
       // verify that the bootstrap response contains the correct username (i.e. that we logged in)
       const bootstrapResponse = await response.json();
       expect(bootstrapResponse).toHaveProperty('username', emailAddress);
     }
-  }
+  };
   page.on('response', bootstrapResponseListener);
   await page.waitForURL('/');
   page.off('response', bootstrapResponseListener);
 
   // delete the account
   await page.goto('/user/settings/delete');
-  page.on('dialog', async dialog => {
+  page.on('dialog', async (dialog) => {
     await dialog.accept();
   });
   await page.locator('#delete-account').click();
 });
 
-test('Can login and get to all settings pages', async ({ page }) => {
+test('Can login and get to all settings pages', { tag: ['@smoke'] }, async ({ page }) => {
   const { emailAddress, password } = getTestEmailAccount();
   test.skip(!emailAddress, 'TEST_EMAIL not set');
   test.skip(!password, 'TEST_PASSWORD not set');
+  await loginUser(page, { emailAddress, password });
 
-  await page.goto("/user/account/login");
-
-  // fill out form
-  await page.locator('#email').fill(emailAddress);
-  await page.locator('#password').fill(password);
-
-  // submit
-  await page.locator('.submit-login').click();
-  await page.waitForURL('/');
-  
   // can we get to and see the app settings page?
   await page.goto('/user/settings/application');
   await expect(page.locator('.panel-heading')).toContainText('Search Settings');

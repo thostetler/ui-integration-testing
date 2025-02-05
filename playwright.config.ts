@@ -31,21 +31,21 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    { name: 'setup', testMatch: /.*\.setup\.ts/ },
+    { name: 'auth', testMatch: /auth.setup\.ts/ },
+    { name: 'login', testMatch: /login.setup\.ts/ },
     {
       name: 'perf',
-      use: { ...devices['Desktop Chrome'],
-        storageState: 'playwright/.auth/user.json'
-      },
-      dependencies: ['setup'],
-      testMatch: '**\/perf\/**',
+      use: { ...devices['Desktop Chrome'], storageState: 'playwright/.auth/user.json' },
+      dependencies: ['auth'],
+      testMatch: '**/perf/**',
     },
     {
       name: 'test',
+      dependencies: ['login'],
       use: {
         ...devices['Desktop Chrome'],
       },
-      testIgnore: '**\/perf\/perf.spec.ts',
-    }
+      testIgnore: '**/perf/perf.spec.ts',
+    },
   ],
 });

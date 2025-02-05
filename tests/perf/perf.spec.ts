@@ -1,7 +1,7 @@
-import {test, TestContext} from './test-base';
-import {queries} from './queries';
-import {makePrefix} from './utils';
-import {throttlePage} from './throttle';
+import { test, TestContext } from './test-base';
+import { queries } from './queries';
+import { makePrefix } from './utils';
+import { throttlePage } from './throttle';
 
 type Query = (typeof queries)[number];
 
@@ -31,7 +31,11 @@ type Query = (typeof queries)[number];
  */
 const perfTest = async (
   prefix: string,
-  { searchBarSelector, searchResultsSelector, searchButtonSelector}: { searchBarSelector: string, searchButtonSelector: string, searchResultsSelector: string },
+  {
+    searchBarSelector,
+    searchResultsSelector,
+    searchButtonSelector,
+  }: { searchBarSelector: string; searchButtonSelector: string; searchResultsSelector: string },
   { page, performance }: Pick<TestContext, 'page' | 'performance'>,
   { query, refinement }: Query,
 ) => {
@@ -66,23 +70,23 @@ test.describe('scixplorer.org', () => {
     searchBarSelector: '[data-testid="search-input"]',
     searchButtonSelector: '[data-testid="search-submit"]',
     searchResultsSelector: '#results a>span',
-  }
+  };
 
-  for (const {description, name, query, refinement} of queries) {
+  for (const { description, name, query, refinement } of queries) {
     const prefix = makePrefix('scix', name, 'normal');
-    test(prefix, async ({page, performance}) => {
-      test.setTimeout(15000)
-      await perfTest(prefix, selectors, {page, performance}, {query, name, description, refinement });
+    test(prefix, async ({ page, performance }) => {
+      test.setTimeout(15000);
+      await perfTest(prefix, selectors, { page, performance }, { query, name, description, refinement });
     });
 
     const throttledPrefix = makePrefix('scix', name, '6x-cpu');
-    test(throttledPrefix, async ({page, performance, context}) => {
+    test(throttledPrefix, async ({ page, performance, context }) => {
       test.slow();
       await throttlePage(context, page, '6x');
-      await perfTest(throttledPrefix, selectors, {page, performance}, {query, name, description, refinement });
+      await perfTest(throttledPrefix, selectors, { page, performance }, { query, name, description, refinement });
     });
   }
-})
+});
 
 test.describe('ui.adsabs.harvard.edu', () => {
   test.use({ baseURL: 'https://dev.adsabs.harvard.edu' });
@@ -91,25 +95,24 @@ test.describe('ui.adsabs.harvard.edu', () => {
   const selectors = {
     searchBarSelector: 'input[name="q"]',
     searchButtonSelector: 'button.s-search-submit',
-    searchResultsSelector: 'h3.s-results-title'
-  }
+    searchResultsSelector: 'h3.s-results-title',
+  };
 
-  for (const {description, name, query, refinement} of queries) {
+  for (const { description, name, query, refinement } of queries) {
     const prefix = makePrefix('bbb', name, 'normal');
-    test(prefix, async ({page, performance}) => {
-      test.setTimeout(15000)
-      await perfTest(prefix, selectors, {page, performance}, {query, name, description, refinement });
+    test(prefix, async ({ page, performance }) => {
+      test.setTimeout(15000);
+      await perfTest(prefix, selectors, { page, performance }, { query, name, description, refinement });
     });
 
     const throttledPrefix = makePrefix('bbb', name, '6x-cpu');
-    test(throttledPrefix, async ({page, performance, context}) => {
+    test(throttledPrefix, async ({ page, performance, context }) => {
       test.slow();
       await throttlePage(context, page, '6x');
-      await perfTest(throttledPrefix, selectors, {page, performance}, {query, name, description, refinement });
+      await perfTest(throttledPrefix, selectors, { page, performance }, { query, name, description, refinement });
     });
   }
 });
-
 
 // test.describe('ui.adsabs.harvard.edu', () => {
 //   test.use({
