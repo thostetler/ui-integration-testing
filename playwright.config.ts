@@ -35,11 +35,9 @@ export default defineConfig({
     { name: 'login', testMatch: /login.setup\.ts/ },
     {
       name: 'perf',
-      use: { ...devices['Desktop Chrome'],
-        storageState: 'playwright/.auth/user.json'
-      },
+      use: { ...devices['Desktop Chrome'], storageState: 'playwright/.auth/user.json' },
       dependencies: ['auth'],
-      testMatch: '**\/perf\/**',
+      testMatch: '**/perf/**',
     },
     {
       name: 'test',
@@ -47,7 +45,7 @@ export default defineConfig({
       use: {
         ...devices['Desktop Chrome'],
       },
-      testIgnore: '**\/perf\/perf.spec.ts',
-    }
+      testIgnore: '**/perf/perf.spec.ts',
+    },
   ],
 });

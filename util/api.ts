@@ -1,10 +1,10 @@
-import {APIRequestContext, Page, request} from '@playwright/test';
+import { Page } from '@playwright/test';
 
 type BBB = {
   getService: (service: string) => {
     getApiAccess: () => Promise<{ access_token: string }>;
-  }
-}
+  };
+};
 
 export const getAPIToken = async (page: Page): Promise<string> => {
   await page.waitForFunction(() => window['bbb']);
@@ -14,4 +14,4 @@ export const getAPIToken = async (page: Page): Promise<string> => {
       return res.access_token;
     }
   });
-}
+};

@@ -1,10 +1,10 @@
-import {APIRequestContext, BrowserContext, expect, Page, request} from '@playwright/test';
+import { APIRequestContext, BrowserContext, expect, Page, request } from '@playwright/test';
 
 type BootstrapResponse = {
   access_token: string;
   refresh_token: string;
   expires_at: string;
-  token_type: "bearer";
+  token_type: 'bearer';
   username: string;
   scopes: string[];
   anonymous: boolean;
@@ -15,12 +15,12 @@ type BootstrapResponse = {
   individual_ratelimits: number | null;
   given_name: string | null;
   family_name: string | null;
-}
+};
 
 type Credentials = {
-  emailAddress: string,
-  password: string,
-}
+  emailAddress: string;
+  password: string;
+};
 export const loginUser = async (page: Page, credentials: Credentials) => {
   await page.goto('/user/account/login', { waitUntil: 'domcontentloaded' });
 
@@ -43,13 +43,11 @@ export const loginUser = async (page: Page, credentials: Credentials) => {
 
   // submit
   await page.locator('.submit-login').click();
-  const res = await page.waitForResponse('**/accounts/bootstrap')
-  const bootstrapData = await res.json() as BootstrapResponse;
+  const res = await page.waitForResponse('**/accounts/bootstrap');
+  const bootstrapData = (await res.json()) as BootstrapResponse;
   expect(bootstrapData.username).toBe(credentials.emailAddress);
-}
+};
 
 export const logoutUser = async (page: Page) => {
   await page.locator('.logout').click();
-}
-
-
+};

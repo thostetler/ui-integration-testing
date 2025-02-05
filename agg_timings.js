@@ -54,8 +54,8 @@ rl.on('line', (line) => {
   if (line.includes('name')) {
     const item = JSON.parse(line);
 
-    if (item.name.includes('test-search') || item.name.includes('4x-slow-cpu')){
-      return
+    if (item.name.includes('test-search') || item.name.includes('4x-slow-cpu')) {
+      return;
     }
 
     processItem(item);
@@ -119,7 +119,7 @@ rl.on('close', () => {
   const records = Object.values(csvData);
 
   csvWriter
-  .writeRecords(records)
-  .then(() => console.log('CSV file written successfully'))
-  .catch((error) => console.error('Error writing CSV file', error));
+    .writeRecords(records)
+    .then(() => console.log('CSV file written successfully'))
+    .catch((error) => console.error('Error writing CSV file', error));
 });
