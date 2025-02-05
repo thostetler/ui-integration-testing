@@ -17,15 +17,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
-    - name: Install dependencies
-      run: npm ci
-    - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run: npx playwright test
+
+    - uses: pnpm/action-setup@v4
+      name: Setup pnpm
+      with:
+        run_install: true
+
+    - run: pnpm exec playwright install-deps && pnpm exec playwright install
+      name: Install Playwright and browser(s)
+
+    - run: pnpm test
+      name: Run Playwright tests
+
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
