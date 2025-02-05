@@ -2,15 +2,6 @@ name: Playwright Tests
 on:
   workflow_dispatch:
 
-env:
-  TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
-  TEST_EMAIL_ALT: ${{ secrets.TEST_EMAIL_ALT }}
-  TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
-  MAILSLURP_API_KEY: ${{ secrets.MAILSLURP_API_KEY }}
-  API_TEST_BASE_URL: ${{ vars.API_TEST_BASE_URL }}
-  ADS_BASE_URL: ${{ vars.ADS_BASE_URL }}
-  SCIX_BASE_URL: ${{ vars.SCIX_BASE_URL }}
-
 jobs:
   test:
     timeout-minutes: 60
@@ -29,6 +20,18 @@ jobs:
 
     - run: pnpm exec playwright install-deps && pnpm exec playwright install
       name: Install Playwright and browser(s)
+
+    - name: Make .env file
+      uses: SpicyPizza/create-envfile@v2.0
+      with:
+        envkey_TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+        envkey_TEST_EMAIL_ALT: ${{ secrets.TEST_EMAIL_ALT }}
+        envkey_TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+        envkey_MAILSLURP_API_KEY: ${{ secrets.MAILSLURP_API_KEY }}
+        envkey_API_TEST_BASE_URL: ${{ vars.API_TEST_BASE_URL }}
+        envkey_ADS_BASE_URL: ${{ vars.ADS_BASE_URL }}
+        envkey_SCIX_BASE_URL: ${{ vars.SCIX_BASE_URL }}
+        file_name: .env
 
     - run: pnpm test
       name: Run Playwright tests
