@@ -38,13 +38,10 @@ const clearLibs = async (page: Page) => {
   const libs = await getLibs();
 
   // delete all libraries, just to confirm we have a clean slate
-  await Promise.all(
-    libs.map((lib) => {
-      return apiContext.delete(`/v1/biblib/documents/${lib.id}`);
-    }),
-  );
+  await Promise.all(libs.map((lib) => apiContext.delete(`/v1/biblib/documents/${lib.id}`)));
 
-  expect(await getLibs()).toEqual([]);
+  const newLibs = await getLibs();
+  expect(newLibs).toEqual([]);
 };
 
 setup('login with default credentials', async ({ browser }) => {
