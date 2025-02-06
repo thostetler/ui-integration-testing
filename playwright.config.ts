@@ -46,6 +46,12 @@ export default defineConfig({
         ...devices['Desktop Chrome'],
       },
       testIgnore: '**/perf/perf.spec.ts',
+      expect: {
+        toHaveScreenshot: {
+          stylePath: 'tests/util/screenshots.css',
+          threshold: 0.4,
+        },
+      },
     },
   ],
 });

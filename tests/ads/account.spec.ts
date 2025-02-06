@@ -1,8 +1,8 @@
 import { expect, test } from '@playwright/test';
-import { getInbox, getRandomPassword, getTestEmailAccount, ms, waitForLatestEmail } from '../../util/email';
+import { getInbox, getRandomPassword, getTestEmailAccount, ms, waitForLatestEmail } from '@/util/email';
 import { configDotenv } from 'dotenv';
 import { Email } from 'mailslurp-client';
-import { loginUser } from '../../util/auth';
+import { loginUser } from '@/util/auth';
 
 configDotenv();
 

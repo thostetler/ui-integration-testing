@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@axe-core/playwright':
+    specifier: ^4.10.1
+    version: 4.10.1(playwright-core@1.48.2)
   '@better-fetch/fetch':
     specifier: ^1.1.12
     version: 1.1.12
@@ -57,6 +60,15 @@ devDependencies:
     version: 8.13.0(eslint@9.14.0)(typescript@5.6.3)
 
 packages:
+
+  /@axe-core/playwright@4.10.1(playwright-core@1.48.2):
+    resolution: {integrity: sha512-EV5t39VV68kuAfMKqb/RL+YjYKhfuGim9rgIaQ6Vntb2HgaCaau0h98Y3WEUqW1+PbdzxDtDNjFAipbtZuBmEA==}
+    peerDependencies:
+      playwright-core: '>= 1.0.0'
+    dependencies:
+      axe-core: 4.10.2
+      playwright-core: 1.48.2
+    dev: false
 
   /@better-fetch/fetch@1.1.12:
     resolution: {integrity: sha512-B3bfloI/2UBQWIATRN6qmlORrvx3Mp0kkNjmXLv0b+DtbtR+pP4/I5kQA/rDUv+OReLywCCldf6co4LdDmh8JA==}
@@ -360,6 +372,11 @@ packages:
     resolution: {integrity: sha512-mpsCN+D7mzZeqrlDw7UTPhvDQDlx1i819E9fbKIt8drkgED5FSOlBv3Rk/+sXdevnO2wwlRkVOQ4kdT0AyqPqQ==}
     dependencies:
       csv: 5.5.3
+    dev: false
+
+  /axe-core@4.10.2:
+    resolution: {integrity: sha512-RE3mdQ7P3FRSe7eqCWoeQ/Z9QXrtniSjp1wUjt5nRC3WIpz5rSCve6o3fsZ2aCpJtrZjSZgjwXAoTO5k4tEI0w==}
+    engines: {node: '>=4'}
     dev: false
 
   /balanced-match@1.0.2:

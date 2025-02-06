@@ -1,4 +1,4 @@
-import { APIRequestContext, BrowserContext, expect, Page, request } from '@playwright/test';
+import { expect, Page } from '@playwright/test';
 
 type BootstrapResponse = {
   access_token: string;

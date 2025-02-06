@@ -1,8 +1,8 @@
 import { expect, Page, request, test as setup } from '@playwright/test';
 import { join } from 'path';
-import { getAltTestEmailAccount, getTestEmailAccount } from '../util/email';
-import { loginUser } from '../util/auth';
-import { getAPIToken } from '../util/api';
+import { getAltTestEmailAccount, getTestEmailAccount } from '@/util/email';
+import { loginUser } from '@/util/auth';
+import { getAPIToken } from '@/util/api';
 import * as fs from 'node:fs';
 import { configDotenv } from 'dotenv';
 

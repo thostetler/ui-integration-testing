@@ -1,5 +1,5 @@
 import { expect, Page, test } from '@playwright/test';
-import { getAltTestEmailAccount, getTestEmailAccount } from '../../util/email';
+import { getAltTestEmailAccount, getTestEmailAccount } from '@/util/email';
 import { configDotenv } from 'dotenv';
 
 configDotenv();

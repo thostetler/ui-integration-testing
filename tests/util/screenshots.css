@@ -1,0 +1,8 @@
+/* Use this file to hide/mask or change any css during screenshot testing */
+
+#alerts-container { display: none; }
+#darkSwitch { display: none; }
+
+/* ### modern form ### */
+.search-examples .text-link { display: none; }
+
