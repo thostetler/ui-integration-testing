@@ -1,0 +1,13 @@
+/* Use this file to hide/mask or change any css during screenshot testing */
+
+body { overflow: hidden; }
+#alerts-container { display: none; }
+#darkSwitch { display: none; }
+.MathJax { display: none; }
+
+/* ### modern form ### */
+.search-examples .text-link { display: none; }
+
+/* ### abstract pages ### */
+#abstract-page-layout .s-stable-search-bar-height { display: none; }
+.graphics-container img { display: none; }

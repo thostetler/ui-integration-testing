@@ -1,0 +1,346 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 18,
+    "params": {
+      "facet.pivot": "property,year",
+      "fl": "id",
+      "start": "0",
+      "sort": "date desc,bibcode desc",
+      "rows": "10",
+      "p_": "0",
+      "facet.limit": "2000",
+      "q": "bibcode:2005MNRAS.364.1105S OR bibcode:2003SIAMR..45..167N OR bibcode:2003PASP..115..763C OR bibcode:2003Natur.424..839V OR bibcode:2003MNRAS.344.1000B OR bibcode:2003AnPhy.303....2K OR bibcode:2002PhLB..545...23C OR bibcode:2001Natur.414..338G OR bibcode:2001MNRAS.322..231K OR bibcode:2001MachL..45....5B OR bibcode:2001JGR...106.7183T OR bibcode:2000PhRvL..85.3966P",
+      "facet.minCount": "1",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67a6c7f5-6f37097c6e81c71d16ad318f",
+      "boost": "add(doctype_boost, 1)",
+      "facet": "true",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 12,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "7600500"
+      },
+      {
+        "id": "6997732"
+      },
+      {
+        "id": "7013476"
+      },
+      {
+        "id": "7023111"
+      },
+      {
+        "id": "7066807"
+      },
+      {
+        "id": "6870397"
+      },
+      {
+        "id": "6743663"
+      },
+      {
+        "id": "6455427"
+      },
+      {
+        "id": "6440505"
+      },
+      {
+        "id": "6407285"
+      }
+    ]
+  },
+  "facet_counts": {
+    "facet_queries": {},
+    "facet_fields": {},
+    "facet_ranges": {},
+    "facet_intervals": {},
+    "facet_heatmaps": {},
+    "facet_pivot": {
+      "property,year": [
+        {
+          "field": "property",
+          "value": "article",
+          "count": 12,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2003",
+              "count": 5
+            },
+            {
+              "field": "year",
+              "value": "2001",
+              "count": 4
+            },
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2002",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2005",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "esource",
+          "count": 12,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2003",
+              "count": 5
+            },
+            {
+              "field": "year",
+              "value": "2001",
+              "count": 4
+            },
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2002",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2005",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "refereed",
+          "count": 10,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2003",
+              "count": 4
+            },
+            {
+              "field": "year",
+              "value": "2001",
+              "count": 3
+            },
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2002",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2005",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "eprintopenaccess",
+          "count": 7,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2003",
+              "count": 4
+            },
+            {
+              "field": "year",
+              "value": "2001",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2002",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2005",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "openaccess",
+          "count": 7,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2003",
+              "count": 4
+            },
+            {
+              "field": "year",
+              "value": "2001",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2002",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2005",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "data",
+          "count": 4,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2003",
+              "count": 2
+            },
+            {
+              "field": "year",
+              "value": "2001",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2005",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "inspire",
+          "count": 4,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2003",
+              "count": 2
+            },
+            {
+              "field": "year",
+              "value": "2001",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2002",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "pubopenaccess",
+          "count": 4,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2003",
+              "count": 2
+            },
+            {
+              "field": "year",
+              "value": "2001",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2005",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "adsopenaccess",
+          "count": 3,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2001",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2003",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2005",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "associated",
+          "count": 3,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2001",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2003",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2005",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "notrefereed",
+          "count": 2,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2001",
+              "count": 1
+            },
+            {
+              "field": "year",
+              "value": "2003",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

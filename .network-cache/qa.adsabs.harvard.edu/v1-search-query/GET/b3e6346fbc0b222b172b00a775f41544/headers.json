@@ -1,0 +1,26 @@
+{
+  "url": "https://qa.adsabs.harvard.edu/v1/search/query?facet=true&facet.field=database&facet.limit=20&facet.mincount=1&facet.offset=0&fl=id&p_=0&q=bibcode%3A2005MNRAS.364.1105S%20OR%20bibcode%3A2003SIAMR..45..167N%20OR%20bibcode%3A2003PASP..115..763C%20OR%20bibcode%3A2003Natur.424..839V%20OR%20bibcode%3A2003MNRAS.344.1000B%20OR%20bibcode%3A2003AnPhy.303....2K%20OR%20bibcode%3A2002PhLB..545...23C%20OR%20bibcode%3A2001Natur.414..338G%20OR%20bibcode%3A2001MNRAS.322..231K%20OR%20bibcode%3A2001MachL..45....5B%20OR%20bibcode%3A2001JGR...106.7183T%20OR%20bibcode%3A2000PhRvL..85.3966P&rows=1&sort=date%20desc%2C%20bibcode%20desc",
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "date": "Sat, 08 Feb 2025 02:56:54 GMT",
+    "content-type": "application/json",
+    "content-length": "1203",
+    "connection": "keep-alive",
+    "permissions-policy": "browsing-topics=()",
+    "x-frame-options": "SAMEORIGIN",
+    "x-content-type-options": "nosniff",
+    "content-security-policy": "default-src 'self'; object-src 'none'",
+    "strict-transport-security": "max-age=31556926; includeSubDomains",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "x-ratelimit-limit": "5000",
+    "x-ratelimit-remaining": "4995",
+    "x-ratelimit-reset": "1739069814",
+    "retry-after": "86399",
+    "access-control-allow-origin": "http://0.0.0.0:8000",
+    "access-control-allow-credentials": "true",
+    "vary": "Origin, Cookie",
+    "set-cookie": "session=.eJwlzkFrAjEQhuH_knMPM8kk2fFWKHgohVYPW7wsk2QGtVZld0VK6X-vtvfv_Xi-3WCjTlu3MDlM-uCGXXMLhy1LwUJQoHFg1uI9aIbYgQdgVPFolKQ2S9UwKXctZwopco2hI4uZ-D43I2sJQw0crZDVWHLRSlIZU0bWiIAltGA1JeYWQ2ixgrtBzjp-ylGPs1vM4-VOu0w6_vvEC2DnEQg7qtgxNmNQ9UUwkA-3_iSXeTvUw-7vwT0v90gblKfz-v2tfy2nFR02L5McV7tHWV_3se-v88cXuJ9fdZlRMA.Z6bH9g.b2cv1UHR3fwB09wdkPJWCF6b4Wg; Expires=Sun, 08 Feb 2026 08:56:54 GMT; Secure; HttpOnly; Path=/; SameSite=Lax",
+    "x-envoy-upstream-service-time": "270"
+  }
+}
