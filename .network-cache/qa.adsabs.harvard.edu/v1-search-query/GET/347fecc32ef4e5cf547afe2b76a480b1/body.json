@@ -1,0 +1,1306 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 82,
+    "params": {
+      "q": "year:2000 moon crater",
+      "fl": "identifier,[citations],abstract,author,book_author,orcid_pub,publisher,orcid_user,orcid_other,bibcode,citation_count,comment,doi,id,keyword,page,property,pub,pub_raw,pubdate,pubnote,read_count,title,volume,database,links_data,esources,data,citation_count_norm,email,doctype",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67bcaf72-11b6d66d13547a644e55e1d8",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "date desc,bibcode desc",
+      "rows": "25",
+      "wt": "json",
+      "p_": "0"
+    }
+  },
+  "response": {
+    "numFound": 112,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2000JGR...10529239H",
+        "abstract": "The chronology of lunar volcanism is based on radiometric ages determined from Apollo and Luna landing site samples, regional stratigraphic relationships, and crater degradation and size-frequency distribution data for units largely defined prior to the end of the Apollo program. Here we report on new crater size-frequency distribution data for 139 spectrally and morphologically defined basalt units which are exposed in six nearside impact basins (Australe, Tranquillitatis, Humboldtianum, Humorum, Serenitatis, and Imbrium). Crater size-frequency distribution measurements are a statistically robust and accurate method to derive absolute model ages of unsampled regions of the Moon. Compared to crater degradation ages, crater size-frequency ages, performed on spectrally defined units, offer significant improvements in accuracy. Our investigation showed that (1) in the investigated basins, lunar volcanism was active for at least 1.5-2.0 b.y., starting at about 3.9-4.0 b.y. and ceasing at ~2.0 b.y., (2) most basalts erupted during the late Imbrian Period at about 3.6-3.8 b.y., (3) significantly fewer basalts were emplaced during the Eratosthenian Period, (4) basalts of Copernican age were not found in any of the investigated basins, (5) lunar basin-filling volcanism probably started within ~100 m.y. after the formation of the individual basins. We also assessed the relationship between impact basin age and the history of mare basalt emplacement in these basins. We found that (1) in all pre-Nectarian basins (Australe and Tranquillitatis) as well as in the Humboldtianum basin, which is of Nectarian age, the distribution of surface ages is clearly dominated by only a single peak in the number of erupted units at 3.6-3.8 b.y., (2) in the younger basins (Humorum, Serenitatis, and Imbrium) a second peak at 3.3-3.5 b.y. is observed, (3) basalt eruptions younger than 2.6 b.y. occur only intermittently, and (4) in the youngest basins, Serenitatis and Imbrium, we see an extended period of active basin-filling volcanism (1.5-1.6 b.y.) which is 500 m.y. longer than in the Australe and Humorum and even ~1.0 b.y. longer than in Tranquillitatis and Humboldtianum.",
+        "author": [
+          "Hiesinger, Harald",
+          "Jaumann, Ralf",
+          "Neukam, Gerhard",
+          "Head, James W."
+        ],
+        "database": [
+          "astronomy",
+          "physics",
+          "earth science"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1029/2000JE001244"
+        ],
+        "email": [
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "id": "6153470",
+        "identifier": [
+          "2000JGR...10529239H",
+          "10.1029/2000JE001244"
+        ],
+        "keyword": [
+          "Planetology: Solid Surface Planets",
+          "Planetology: Solid Surface Planets: Impact phenomena (includes cratering)",
+          "Planetology: Solid Surface Planets: Remote sensing",
+          "Planetology: Solid Surface Planets: Volcanism"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1029%2F2000JE001244\"}"
+        ],
+        "orcid_pub": [
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "page": [
+          "29239"
+        ],
+        "pub": "Journal of Geophysical Research",
+        "pub_raw": "Journal of Geophysical Research, Volume 105, Issue E12, p. 29239-29276",
+        "pubdate": "2000-12-00",
+        "title": [
+          "Ages of mare basalts on the lunar nearside"
+        ],
+        "volume": "105",
+        "read_count": 4,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 332,
+        "citation_count_norm": 83,
+        "[citations]": {
+          "num_references": 62,
+          "num_citations": 333
+        }
+      },
+      {
+        "bibcode": "2000Icar..148..508D",
+        "abstract": "The deuterium to protium (D/H) ratio of the deep mantle may be a remnant of the hydrogen isotopic composition of Earth forming planetesimals, which later evolved as a result of the late accretion of asteroids and comets. If so, the mass of asteroids and comets incident on Earth since the time of its accretion is estimated to be 4×10 <SUP>20</SUP>-2×10 <SUP>22</SUP> kg. The combined use of water D/H ratios, the lunar cratering record, and terrestrial mantle siderophiles would favor a rather low mass fraction of comets among impacting bodies (⋦0.01). Asteroids, comets, and the early Earth contributed to 0-0.5, 0-0.1, and 0.5-0.9 of Earth's water inventory, respectively. A two stage model is advocated in which escape to space of terrestrial volatiles predated the late accretion of extraterrestrial gases. We wish to emphasize that our interpretations and conclusions might evolve in the future when additional data on asteroids, comets, and Earth's interior become available.",
+        "author": [
+          "Dauphas, Nicolas",
+          "Robert, François",
+          "Marty, Bernard"
+        ],
+        "database": [
+          "astronomy",
+          "earth science"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1006/icar.2000.6489"
+        ],
+        "email": [
+          "dauphas@crpg.cnrs-nancy.fr",
+          "-",
+          "-"
+        ],
+        "id": "6135515",
+        "identifier": [
+          "2000Icar..148..508D",
+          "10.1006/icar.2000.6489"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1006/icar.2000.6489\"}"
+        ],
+        "orcid_pub": [
+          "-",
+          "-",
+          "-"
+        ],
+        "page": [
+          "508"
+        ],
+        "pub": "Icarus",
+        "pub_raw": "Icarus, Volume 148, Issue 2, pp. 508-512 (2000).",
+        "pubdate": "2000-12-00",
+        "title": [
+          "The Late Asteroidal and Cometary Bombardment of Earth as Recorded in Water Deuterium to Protium Ratio"
+        ],
+        "volume": "148",
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 77,
+        "citation_count_norm": 25.666666,
+        "[citations]": {
+          "num_references": 41,
+          "num_citations": 76
+        }
+      },
+      {
+        "bibcode": "2000AstSR...1b..78K",
+        "abstract": "Using various data on registration meteor space partcles, results of optical and radar observations of meteors and bolids, acoustic waves and explosions of meteoroids in atmosphere of the Earth, and also conclusions of concerning lunar craters and distributions of an asteroids, a general integral equation of the influx of space particles and bodies onto the Earth is obtained. A criterion separating for breaking down meteorites into impact and explosive ones is put forward. It is assumed that impact craters are formed by meteoroids whose maximum deceleration heights are above the Earth surface. If maximum deceleration occurs either on the Earth surface or is not reached, the meteoroids form explosive craters. Based on the results obtained using the theories of crater formation [16, 34], minimum sizes of explosive craters are worked out. Variations in results are explained relying on various theories of crater formation [16, 34].",
+        "author": [
+          "Kruchinenko, V. G."
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.18372/2411-6602.01.2078"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6094538",
+        "identifier": [
+          "10.18372/2411-6602.01.2078",
+          "2000AstSR...1b..78K"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"pdf\", \"url\": \"http://astro.nau.edu.ua/papers/AstSR_2000_Vol_1_Iss_2_P_78.pdf\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.18372%2F2411-6602.01.2078\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "78"
+        ],
+        "pub": "Astronomical School's Report",
+        "pub_raw": "Astronomical School's Report, 2000, Vol. 1, Iss. 2, P. 78-90",
+        "pubdate": "2000-12-00",
+        "title": [
+          "Accretion of cosmic matter onto the earth"
+        ],
+        "volume": "1",
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 9,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000eaa..bookE4659.",
+        "abstract": "NASA Discovery mission, launched in January 1998. Designed to spend one year in orbit around the Moon. Carried a neutron spectrometer which gave strong indications of water ice in shadowed craters at both lunar poles. Also gave high resolution gravity data and returned information on the composition of the lunar crust. Lowered into a 30 km altitude orbit in January 1999 on completion of its prima...",
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "inbook",
+        "doi": [
+          "10.1888/0333750888/4659"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6280935",
+        "identifier": [
+          "2000eaa..bookE4659.",
+          "10.1888/0333750888/4659"
+        ],
+        "keyword": [
+          "Space Missions",
+          "Solar System Missions"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1888/0333750888/4659\"}"
+        ],
+        "page": [
+          "4659"
+        ],
+        "pub": "Encyclopedia of Astronomy and Astrophysics",
+        "pub_raw": "\"Encyclopedia of Astronomy and Astrophysics, Edited by Paul Murdin, article id. 4659. Bristol: Institute of Physics Publishing, 2001. <A href=\"http://eaa.iop.org/abstract/0333750888/4659\">http://eaa.iop.org/abstract/0333750888/4659</A>\"",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Lunar Prospector"
+        ],
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000eaa..bookE4487.",
+        "abstract": "A small crater formed on a planetary body by a block of ejecta thrown out during the excavation of a larger impact crater, the primary crater. Secondary craters from recent impact events, such as those associated with the lunar crater Tycho, tend to be more easily identifiable as secondary features. Some are clustered around the primary crater, and tend to be irregular, having been formed by low-...",
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "inbook",
+        "doi": [
+          "10.1888/0333750888/4487"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6280093",
+        "identifier": [
+          "2000eaa..bookE4487.",
+          "10.1888/0333750888/4487"
+        ],
+        "keyword": [
+          "Solar System",
+          "Planetary Physics"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1888/0333750888/4487\"}"
+        ],
+        "page": [
+          "4487"
+        ],
+        "pub": "Encyclopedia of Astronomy and Astrophysics",
+        "pub_raw": "\"Encyclopedia of Astronomy and Astrophysics, Edited by Paul Murdin, article id. 4487. Bristol: Institute of Physics Publishing, 2001. <A href=\"http://eaa.iop.org/abstract/0333750888/4487\">http://eaa.iop.org/abstract/0333750888/4487</A>\"",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Secondary Crater"
+        ],
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000eaa..bookE4422.",
+        "abstract": "A prominent young lunar crater in the Moon's southern uplands, and the hub of the Moon's most striking ray system. Its diameter is 102 km, and it is centered at 43.4 °S, 11.1 °W; it is named after the astronomer Tycho Brahe. The crater is one of the youngest features of the Moon, perhaps just 100 million years old. Its ray system extends for up to 1500 km in all directions, and is most prominent ...",
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "inbook",
+        "doi": [
+          "10.1888/0333750888/4422"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6280669",
+        "identifier": [
+          "2000eaa..bookE4422.",
+          "10.1888/0333750888/4422"
+        ],
+        "keyword": [
+          "Solar System",
+          "Planets and Satellites"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1888/0333750888/4422\"}"
+        ],
+        "page": [
+          "4422"
+        ],
+        "pub": "Encyclopedia of Astronomy and Astrophysics",
+        "pub_raw": "\"Encyclopedia of Astronomy and Astrophysics, Edited by Paul Murdin, article id. 4422. Bristol: Institute of Physics Publishing, 2001. <A href=\"http://eaa.iop.org/abstract/0333750888/4422\">http://eaa.iop.org/abstract/0333750888/4422</A>\"",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Tycho (Crater)"
+        ],
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000eaa..bookE4421.",
+        "abstract": "One of the Moon's most conspicuous craters, with a diameter of 93 km, centered at 9.7 °N, 20.1°W. It is named after the Polish astronomer Nicholas Copernicus. It is one of the Moon's younger features, the impact that produced it having taken place an estimated 1 billion years ago. Like other young craters it is surrounded by a system of bright rays formed by ejecta from the impact; the rays from ...",
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "inbook",
+        "doi": [
+          "10.1888/0333750888/4421"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6280656",
+        "identifier": [
+          "2000eaa..bookE4421.",
+          "10.1888/0333750888/4421"
+        ],
+        "keyword": [
+          "Solar System",
+          "Planets and Satellites"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1888/0333750888/4421\"}"
+        ],
+        "page": [
+          "4421"
+        ],
+        "pub": "Encyclopedia of Astronomy and Astrophysics",
+        "pub_raw": "\"Encyclopedia of Astronomy and Astrophysics, Edited by Paul Murdin, article id. 4421. Bristol: Institute of Physics Publishing, 2001. <A href=\"http://eaa.iop.org/abstract/0333750888/4421\">http://eaa.iop.org/abstract/0333750888/4421</A>\"",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Copernicus (Crater)"
+        ],
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000eaa..bookE4420.",
+        "abstract": "The largest and deepest multiringed impact structure on the Moon. It lies almost entirely on the Moon's farside, and extends for over 2500 km from the south polar region to the 135 km diameter crater Aitken, at 16.8 °S, 173.4 °E. The impact that produced the basin is estimated to have occurred around 4.1 billion years ago, near the beginning of the solar system's great cratering episode known as ...",
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "inbook",
+        "doi": [
+          "10.1888/0333750888/4420"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6280638",
+        "identifier": [
+          "10.1888/0333750888/4420",
+          "2000eaa..bookE4420."
+        ],
+        "keyword": [
+          "Solar System",
+          "Planets and Satellites"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1888/0333750888/4420\"}"
+        ],
+        "page": [
+          "4420"
+        ],
+        "pub": "Encyclopedia of Astronomy and Astrophysics",
+        "pub_raw": "\"Encyclopedia of Astronomy and Astrophysics, Edited by Paul Murdin, article id. 4420. Bristol: Institute of Physics Publishing, 2001. <A href=\"http://eaa.iop.org/abstract/0333750888/4420\">http://eaa.iop.org/abstract/0333750888/4420</A>\"",
+        "pubdate": "2000-11-00",
+        "title": [
+          "South Pole-Aitken Basin (SPA Basin)"
+        ],
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000eaa..bookE4177.",
+        "abstract": "The Observatorio Astronómico Nacional (OAN) was founded by José Celestino Mutis in the framework of the `Expedicion Botanica' on 20 August 1803. His first astronomer was Francisco Jose de Caldas. By the turn of the century, Julio Garavito worked in celestial mechanics—a crater on the far side of the Moon bears his name....",
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "inbook",
+        "doi": [
+          "10.1888/0333750888/4177"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6280462",
+        "identifier": [
+          "2000eaa..bookE4177.",
+          "10.1888/0333750888/4177"
+        ],
+        "keyword": [
+          "Organizations and Institutions",
+          "Observatories",
+          "Institutions and Telescopes"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1888/0333750888/4177\"}"
+        ],
+        "page": [
+          "4177"
+        ],
+        "pub": "Encyclopedia of Astronomy and Astrophysics",
+        "pub_raw": "\"Encyclopedia of Astronomy and Astrophysics, Edited by Paul Murdin, article id. 4177. Bristol: Institute of Physics Publishing, 2001. <A href=\"http://eaa.iop.org/abstract/0333750888/4177\">http://eaa.iop.org/abstract/0333750888/4177</A>\"",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Observatorio Astronómico Nacional, Colombia"
+        ],
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000eaa..bookE4005.",
+        "abstract": "Astrogeologist Gene Shoemaker was born in Los Angeles, California and became chief scientist at the USGS Center of Astrogeology (Flagstaff) and professor of geology at CalTech. He worked with his wife Carolyn on cratering, both on the Moon and the Earth, by volcanoes and by meteor and cometary impact. He discovered, with Edward Chao, coesite, a type of silica produced in a violent impact and a si...",
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "inbook",
+        "doi": [
+          "10.1888/0333750888/4005"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6279624",
+        "identifier": [
+          "10.1888/0333750888/4005",
+          "2000eaa..bookE4005."
+        ],
+        "keyword": [
+          "History and Archaeoastronomy",
+          "Biographies"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1888/0333750888/4005\"}"
+        ],
+        "page": [
+          "4005"
+        ],
+        "pub": "Encyclopedia of Astronomy and Astrophysics",
+        "pub_raw": "\"Encyclopedia of Astronomy and Astrophysics, Edited by Paul Murdin, article id. 4005. Bristol: Institute of Physics Publishing, 2001. <A href=\"http://eaa.iop.org/abstract/0333750888/4005\">http://eaa.iop.org/abstract/0333750888/4005</A>\"",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Shoemaker, Eugene [`Gene'] Merle (1928-97) and Shoemaker, Carolyn [née Spellman]"
+        ],
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000eaa..bookE3955.",
+        "abstract": "Italian astronomer, born in Ferrara, became a Jesuit and came into conflict with the Copernican system, like OSIANDER refuting it while acknowledging its use as a mathematical hypothesis. Mapped the Moon and introduced some of the names still used, in a chart published in the New Almagest in 1651. As a follower of the Ptolemaic system, he named major lunar craters after HIPPARCHUS, PTOLEMY and BR...",
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "inbook",
+        "doi": [
+          "10.1888/0333750888/3955"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6280384",
+        "identifier": [
+          "10.1888/0333750888/3955",
+          "2000eaa..bookE3955."
+        ],
+        "keyword": [
+          "History and Archaeoastronomy",
+          "Biographies"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1888/0333750888/3955\"}"
+        ],
+        "page": [
+          "3955"
+        ],
+        "pub": "Encyclopedia of Astronomy and Astrophysics",
+        "pub_raw": "\"Encyclopedia of Astronomy and Astrophysics, Edited by Paul Murdin, article id. 3955. Bristol: Institute of Physics Publishing, 2001. <A href=\"http://eaa.iop.org/abstract/0333750888/3955\">http://eaa.iop.org/abstract/0333750888/3955</A>\"",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Riccioli, Giambattista [Giovanni Battista] (1598-1671)"
+        ],
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000eaa..bookE3667.",
+        "abstract": "German astronomer, became professsor at Munich, asserted to a skeptical astronomical community that he had seen a city, a forest and artificial structures on the Moon, near Sinus Aestuum. Proposed the impact theory of lunar craters....",
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "inbook",
+        "doi": [
+          "10.1888/0333750888/3667"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6279580",
+        "identifier": [
+          "10.1888/0333750888/3667",
+          "2000eaa..bookE3667."
+        ],
+        "keyword": [
+          "History and Archaeoastronomy",
+          "Biographies"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1888/0333750888/3667\"}"
+        ],
+        "page": [
+          "3667"
+        ],
+        "pub": "Encyclopedia of Astronomy and Astrophysics",
+        "pub_raw": "\"Encyclopedia of Astronomy and Astrophysics, Edited by Paul Murdin, article id. 3667. Bristol: Institute of Physics Publishing, 2001. <A href=\"http://eaa.iop.org/abstract/0333750888/3667\">http://eaa.iop.org/abstract/0333750888/3667</A>\"",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Gruithuisen, Franz von Paula (1744-1852)"
+        ],
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000star.book.....M",
+        "abstract": "1. Astronomy and astronomers; 2. The revolving sky; 3. Patterns of stars; 4. Star legends; 5. The stars themselves; 6. Stars of the far north; 7. Northern stars: the January sky; 8. Northern stars: the February sky; 9. Northern stars: the March sky; 10. Northern stars: the April sky; 11. Northern stars: the May sky; 12. Northern stars: the June sky; 13. Northern stars: the July sky; 14. Northern stars: the August sky; 15. Northern stars: the September sky; 16. Northern stars: the October sky; 17. Northern stars: the November sky; 18. Northern stars: the December sky; 19. Stars of the far south; 20: Southern stars: the January sky; 21. Southern stars: the February sky; 22. Southern stars: the March sky; 23. Southern stars: the April sky; 24. Southern stars: the May sky; 25. Southern stars: the June sky; 26. Southern stars: the July sky; 27. Southern stars: the August sky; 28. Southern stars: the September sky; 29. Southern stars: the October sky; 30. Southern stars: the November sky; 31. Southern stars: the December sky; 32. The equatorial sky; 33. Our star: the sun; 34. The craters of the moon; 35. The planets; 36. Space nomads; 37. Glows in the sky; Appendices; Index.",
+        "author": [
+          "Moore, Patrick"
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "book",
+        "email": [
+          "-"
+        ],
+        "id": "6294622",
+        "identifier": [
+          "2000star.book.....M"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "pub": "Stargazing",
+        "pub_raw": "Stargazing, by Patrick Moore, Cambridge, UK: Cambridge University Press, 2000",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Stargazing"
+        ],
+        "read_count": 0,
+        "property": [
+          "NONARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000S&T...100d.144K",
+        "author": [
+          "Kovacsy, Arpad"
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "article",
+        "email": [
+          "-"
+        ],
+        "id": "6247572",
+        "identifier": [
+          "2000S&T...100d.144K"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "144"
+        ],
+        "pub": "Sky and Telescope",
+        "pub_raw": "Sky and Telescope, Vol. 100, Issue 4, p. 144",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Lunar Crater Clavius"
+        ],
+        "volume": "100",
+        "read_count": 0,
+        "property": [
+          "ARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000P&SS...48.1213T",
+        "abstract": "The 14 SNC meteorites are all igneous rocks, either basalts or basaltic cumulates. They are inferred to be from Mars, based on direct comparison with Martian materials and on consistency with inferences about Mars. Most telling is that the SNC meteorites contain traces of gas which is very similar in elemental and isotopic compositions to the modern Martian atmosphere as measured by Viking landers on Mars and spectroscopy from Earth. The Martian atmosphere appears to have a unique composition in the solar system, so its presence in the SNCs is accepted as strong direct evidence that they formed on Mars. Independent of this link, the SNC meteorites must be from a planet with a significant atmosphere because they contain several abundant gas components, one of which carries large isotopic fractionations characteristic of atmospheric processing. Further, the elemental compositions and oxidation state of the SNC meteorites are consistent with data from in situ analyses of Martian soils and rocks, and are quite distinct from compositions of other meteorites, rocks from the Earth, and rocks from the Moon. The range of formation ages for the SNC meteorites, 4.5- 0.18 Ga, is consistent with the varied ages of the Martian surface (based on its cratering record) and inconsistent with surface ages on any other solar system body. The extreme chemical fractionations in the SNC meteorites suggest complex internal processes on a large planet, which is inconsistent with an asteroidal origin. Some SNCs were altered by aqueous solutions at &lt;0.7 Ga, consistent with the recent presence of liquid groundwater in Mars inferred independently from the geology of its surface. There seems little likelihood that the SNCs are not from Mars. If they were from another planetary body, it would have to be substantially identical to Mars as it now is understood.",
+        "author": [
+          "Treiman, Allan H.",
+          "Gleason, James D.",
+          "Bogard, Donald D."
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1016/S0032-0633(00)00105-7"
+        ],
+        "email": [
+          "-",
+          "-",
+          "-"
+        ],
+        "id": "6204253",
+        "identifier": [
+          "10.1016/S0032-0633(00)00105-7",
+          "2000P&SS...48.1213T"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1016%2FS0032-0633%2800%2900105-7\"}"
+        ],
+        "orcid_pub": [
+          "-",
+          "-",
+          "-"
+        ],
+        "page": [
+          "1213"
+        ],
+        "pub": "Planetary and Space Science",
+        "pub_raw": "Planetary and Space Science, Volume 48, Issue 12-14, p. 1213-1230.",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The SNC meteorites are from Mars"
+        ],
+        "volume": "48",
+        "read_count": 2,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 122,
+        "citation_count_norm": 40.666668,
+        "[citations]": {
+          "num_references": 111,
+          "num_citations": 122
+        }
+      },
+      {
+        "bibcode": "2000JGR...10524621S",
+        "abstract": "The distant lunar sodium tail was discovered by Smith et al. [1999] from all-sky observations of sodium emissions made at the McDonald Observatory, Texas (31°N, 256°E), during the Leonid meteor shower of November 1998. The optical emission from the lunar sodium tail was enhanced after the meteor shower and appeared as a bright spot in the all-sky images. We conducted similar all-sky sodium observations during the same interval at Shigaraki (35°N, 136°E), Japan, and observed the sodium spot of the lunar tail on November 18-20. The changes in the spot shape during these days are quite similar to those reported by Smith et al. [1999], although the intensities are much weaker. The local time difference between Texas and Shigaraki (~10 hours) offers a unique opportunity to study the time history of the sodium emission enhancement after the Leonid meteor shower. Combining these two measurements, we conclude that the duration of the most enhanced sodium emission was &lt;1 day, which is consistent with the duration of the meteor shower.",
+        "author": [
+          "Shiokawa, K.",
+          "Ejiri, M. K.",
+          "Ogawa, T.",
+          "Nakamura, T."
+        ],
+        "database": [
+          "astronomy",
+          "physics",
+          "earth science"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1029/2000JE001243"
+        ],
+        "email": [
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "id": "6152827",
+        "identifier": [
+          "10.1029/2000JE001243",
+          "2000JGR...10524621S"
+        ],
+        "keyword": [
+          "Planetology: Solid Surface Planets: Atmospheres-structure and dynamics",
+          "Planetology: Solid Surface Planets: Impact phenomena (includes cratering)",
+          "Planetology: Solid Surface Planets: Remote sensing"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1029%2F2000JE001243\"}"
+        ],
+        "orcid_pub": [
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "page": [
+          "24621"
+        ],
+        "pub": "Journal of Geophysical Research",
+        "pub_raw": "Journal of Geophysical Research, Volume 105, Issue E10, p. 24621-24626",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Distant lunar sodium tail observed in the Japanese local-time sector during the Leonid meteor shower of 1998"
+        ],
+        "volume": "105",
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 8,
+        "citation_count_norm": 2,
+        "[citations]": {
+          "num_references": 11,
+          "num_citations": 8
+        }
+      },
+      {
+        "bibcode": "2000DPS....32.5809R",
+        "abstract": "Ultraviolet, visual, and near-infrared spectra of Phobos, obtained by Mariner 9 and Viking Orbiters, were interpreted to suggest a compositional similarity with carbonaceous chrondrites. Such a composition would be inconsistent with the moons origin in the proto-Mars region, as Mars is composed chiefly of differentiated silicates. This interpretation was used to suggest that the moons originated in the main-asteroid belt, with subsequent capture and orbital evolution into their current locations. Interpretations of more recent visual and near-infrared spectra, obtained by Phobos-2 and Mars Pathfinder, have demonstrated that the Phobos spectrum is more similar to spectra of other classes of asteroids and lunar soils. If lunar mare soil is the correct analogy, then such a composition suggests a formation of Phobos from materials similar to that on Mars, i.e. basalts, and would not require a dynamically difficult capture and orbital evolution. During the science phasing orbits of the Mars Global Surveyor mission Thermal Emission Spectrometer (TES) observations of Phobos were acquired at each of four encounters. The spectral variability observed for localized surface regions on Phobos has been previously reported and is greatest near the northern wall of Stickney crater. Interpretation of the thermal infrared spectra of airless bodies, based upon most existing laboratory measurements, is complicated by the absence of interstitial gases on the celestial objects that would act to minimize potential thermal gradients in the upper layers of the surface. As an aid to interpretation of the TES Phobos spectra they are compared to telescopic and airborne thermal infrared spectra of asteroids from several classes, including Ceres (G), Pallas (B), and Vesta (V). The asteroid spectra provide a direct analogy to the physical situation encountered at the surface of Phobos, albeit different thermal gradients may exist for each surface. This work is supported by NASA RTOP's 344-30-30-01 and 344-34-21-08.",
+        "author": [
+          "Roush, T. L."
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "abstract",
+        "email": [
+          "-"
+        ],
+        "id": "6107291",
+        "identifier": [
+          "2000BAAS...32.1112R",
+          "2000DPS....32.5809R"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "58.09"
+        ],
+        "pub": "AAS/Division for Planetary Sciences Meeting Abstracts #32",
+        "pub_raw": "American Astronomical Society, DPS Meeting #32, id.58.09; <ALTJOURNAL>Bulletin of the American Astronomical Society, Vol. 32, p.1112</ALTJOURNAL>",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Thermal Emission Spectra of Phobos, Vesta, Ceres, and Pallas: A Comparison."
+        ],
+        "volume": "32",
+        "read_count": 0,
+        "property": [
+          "NONARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 1,
+        "citation_count_norm": 1,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 1
+        }
+      },
+      {
+        "bibcode": "2000DPS....32.5808S",
+        "abstract": "We quantify the effects of interstitial H<SUB>2</SUB>O ice on Martian rampart crater formation and conclude that sufficient quantities of ice may be melted to form fluidized ejecta blankets. We calculate the composition of the ejecta blankets as a function of rampart crater diameter and subsurface distribution of ice. For small volume fractions of subsurface ice (φ &lt; ~0.20), rocky projectiles impacting at 10 km/s vaporize and melt interstitial ice up to 2 and 7 projectile radii (R<SUB>p</SUB>), respectively. Ice is partially melted to 16 R<SUB>p</SUB>, well outside the final crater diameter. We calculate the amount of melted ice excavated and ballistically emplaced in the continuous ejecta blanket. From our hydrocode simulations of impact in a φ =0.15 ice-rock mixture, the ejecta excavation angle is nearly constant at 70\\arcdeg in the melted ice zone, decreasing outside the melted ice zone to 45\\arcdeg near the crater rim. The mixture excavation angle is steeper compared to impacts into pure rock resulting in a larger volume of excavated material landing near the crater compared to dry Lunar craters. The ice is shocked to higher temperatures than the rock, experiencing transient shock temperatures above 10,000 K in the vaporized zone and a few 1000 K in the melted zone. After releasing from the shock, most of the water in the ejecta blanket will be boiling. The ejecta is emplaced from the crater rim outward with the outer material preferentially containing more water. The continuous ejecta blanket is laid down within minutes, with a lateral velocity component of 10s-100s m/s. High lateral velocities are required for the observed ejecta flow morphologies, including cases of flow over and around pre-existing topography. For exponentially decreasing ice content with depth, z, of the form φ (z km)=0.15e<SUP>-z/2</SUP>, the fraction of the ejecta blanket containing melted ice peaks for craters with D=5-25 km and becomes negligible by D=60 km. This range agrees with the observed size distribution of rampart craters and suggested subsurface ice distribution (Clifford, S.M. JGR 98, 10937, 1993). This work is supported by NASA grant NAG5-8907.",
+        "author": [
+          "Stewart, S. T.",
+          "O'Keefe, J. D.",
+          "Ahrens, T. J."
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "abstract",
+        "email": [
+          "-",
+          "-",
+          "-"
+        ],
+        "id": "6107278",
+        "identifier": [
+          "2000DPS....32.5808S",
+          "2000BAAS...32.1112S"
+        ],
+        "orcid_pub": [
+          "-",
+          "-",
+          "-"
+        ],
+        "page": [
+          "58.08"
+        ],
+        "pub": "AAS/Division for Planetary Sciences Meeting Abstracts #32",
+        "pub_raw": "American Astronomical Society, DPS Meeting #32, id.58.08; <ALTJOURNAL>Bulletin of the American Astronomical Society, Vol. 32, p.1112</ALTJOURNAL>",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The Role of Subsurface Ice in Rampart Crater Formation"
+        ],
+        "volume": "32",
+        "read_count": 0,
+        "property": [
+          "NONARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 4,
+        "citation_count_norm": 1.3333334,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 4
+        }
+      },
+      {
+        "bibcode": "2000DPS....32.5807B",
+        "abstract": "The \"Catalog of Large Martian Impact Craters\" currently is being revised with new data from the Mars Global Surveyor (MGS) mission [1]. One of the new pieces of information being incorporated into the Catalog is a measurement of the maximum extent of the ejecta layers surrounding most fresh martian impact craters. The ratio of the maximum ejecta length to crater radius is called the ejecta mobility ratio and is generally believed to provide information about the viscosity of the material emplaced in the layered deposits. Previous studies by Mouginis-Mark [2] and Costard [3] suggest that ejecta mobility correlates with latitude, elevation, and ejecta type. We are utilzing the new information from MGS MOC, MOLA, and TES to re-evaluate the effect of latitude, elevation, terrain type, terrain age, composition, and terrain roughness on the radial extent of the ejecta deposits. Our eventual goal is to determine how terrain characteristics, particularly the presence of subsurface volatiles, affect the formation and emplacement of the layered ejecta morphologies. Currently our analysis is complete for the northern plains regions of Mars. We have largely completed measurements of ejecta length surrounding craters in the heavily cratered highlands and have just initiated the analysis for these regions. Our preliminary analysis has led to the following results for the northern plains: (1) We find no statistical differences in average ejecta mobility ratios for craters superposed on different types of plains. (2) The average ejecta mobility ratio of single layer craters typically has a value lying between the ejecta mobility ratios of the double layer inner and outer layers. (3) Layered ejecta deposits closer to the equator tend to have lower ejecta mobility ratios than those deposits found at higher latitudes, consistent with the earlier findings of [2]. The results of our analysis for the heavily cratered highlands will be presented at the conference. REFERENCES: [1] Barlow N. G., LPSC XXXI, Abstract #1682, 2000. [2] Mouginis-Mark P., JGR, 84, 8011-8022, 1979. [3] Costard F., Earth Moon and Planets, 45, 265-290, 1989. ACKNOWLEDGEMENTS: This work is funded by the NASA Mars Data Analysis Program.",
+        "author": [
+          "Barlow, N. G."
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "abstract",
+        "email": [
+          "-"
+        ],
+        "id": "6107266",
+        "identifier": [
+          "2000BAAS...32.1112B",
+          "2000DPS....32.5807B"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "58.07"
+        ],
+        "pub": "AAS/Division for Planetary Sciences Meeting Abstracts #32",
+        "pub_raw": "American Astronomical Society, DPS Meeting #32, id.58.07; <ALTJOURNAL>Bulletin of the American Astronomical Society, Vol. 32, p.1112</ALTJOURNAL>",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Ejecta Mobility Studies of Fresh Martian Impact Craters"
+        ],
+        "volume": "32",
+        "read_count": 0,
+        "property": [
+          "NONARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000DPS....32.5802H",
+        "abstract": "Mars displays lava flows formed within the last 180 Ma, and possibly within the last 20 Ma, and has also experienced liquid water movement on or near the surface within the same time frame. This constrains geophysical models. Mars meteorites divide into 3 groups. One specimen is 4500 Ma old, and may represent a primordial crust underlying much of Mars' surface. The nakhlite group crystallized 1300 Ma ago. The shergottite group crystallized 180-300 Ma ago, possibly at a single impact site. Several nakhlites have been exposed to liquid water; Shih et al. (1998) and Swindle et al. (2000) dated this exposure at 670 Ma, possibly with younger episodes. Mars meteorites give us data from three to five random sites on Mars; they establish geothermal activity within the last 4% of Martian time. Crater counts give us more selectivity in geologic interpretation. We calibrate ages by using lunar counts adjusted by estimates of the relative Mars/Moon impact ratio. Ongoing independent studies by W. Bottke (USA) and B. Ivanov (Russia) both suggest that for a fixed bolide size, Mars gets 2.0 +/- 0.4 times as many hits as the moon. Adjusting for impact velocity and gravity, we predict Martian isochrons, or crater densities for surfaces of varied ages. Mars Global Surveyor images show that the youngest lava flows in both Elysium Planitia and Amazonis Planitia have less than 1% as many craters (11 m &lt; D&lt; 100 m) as the lunar maria, and ages of the order 20 Ma or less (Hartmann and Berman 2000; Hartmann et al., in preparation). This suggests volcanism within the last 0.4% of Martian time. For every geothermal heating episode that produces lava flows on Mars, many lesser ones melt permafrost ice and produce underground aquifers. The apparent water-erosion gullies found by Malin and Edgett (2000) at high latitudes may be produced in this way on time scales less than those cited above. References: Hartmann and Berman 2000, J. Geophys. Res. 105, 15011-10526; Malin and Edgett 2000, Science 288, 2330-2335; Shih et al. 1998, LPSC XXIX, #11435; Swindle et al. 2000, Meteor. Planet. Sci. 35,107-116.",
+        "author": [
+          "Hartmann, W. K.",
+          "Grier, J. A.",
+          "Berman, D. C.",
+          "Esquerdo, G. A."
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "abstract",
+        "email": [
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "id": "6107210",
+        "identifier": [
+          "2000DPS....32.5802H",
+          "2000BAAS...32.1111H"
+        ],
+        "orcid_pub": [
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "page": [
+          "58.02"
+        ],
+        "pub": "AAS/Division for Planetary Sciences Meeting Abstracts #32",
+        "pub_raw": "American Astronomical Society, DPS Meeting #32, id.58.02; <ALTJOURNAL>Bulletin of the American Astronomical Society, Vol. 32, p.1111</ALTJOURNAL>",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The Case for Youthful Geological Activity on Mars"
+        ],
+        "volume": "32",
+        "read_count": 0,
+        "property": [
+          "NONARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 1,
+        "citation_count_norm": 0.25,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 1
+        }
+      },
+      {
+        "bibcode": "2000DPS....32.5207M",
+        "orcid_other": [
+          "-",
+          "-",
+          "-",
+          "0000-0001-9046-2265"
+        ],
+        "abstract": "At the end of the main accretional period of the terrestrial planets, a few percent of the initial planetesimal population is left on highly-inclined orbits in the inner solar system (Petit et al., 2000). We show that this final depletion of this leftover population would cause an extended bombardment of all of the terrestrial planets, slowly decaying with a time scale of order 60 Ma. Because of the large impact velocities dictated by the high inclinations, these projectiles would produce craters much larger than those formed by asteroids of equal size on typical current Near-Earth asteroid orbits: on the Moon, basins could have been formed by bodies as small as 20 km in diameter, and 10 km craters would be produced by 400 m impactors. To account for the observed lunar crater record, the initial population of highly--inclined leftovers would need to be a few times that presently in the main asteroid belt, consistent with the Petit et al. (2000) estimate for this population. If a Terminal Lunar Cataclysm (a spike in the cratering record ~ 3.9 Ga ago) really occurred on the Moon, it was not caused by the highly--inclined leftover population, because of the monotonic diminishment of the latter.",
+        "author": [
+          "Morbidelli, A.",
+          "Petit, J. M.",
+          "Gladman, B.",
+          "Chambers, J."
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "abstract",
+        "email": [
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "id": "6107624",
+        "identifier": [
+          "2000BAAS...32.1100M",
+          "2000DPS....32.5207M"
+        ],
+        "orcid_pub": [
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "page": [
+          "52.07"
+        ],
+        "pub": "AAS/Division for Planetary Sciences Meeting Abstracts #32",
+        "pub_raw": "American Astronomical Society, DPS Meeting #32, id.52.07; <ALTJOURNAL>Bulletin of the American Astronomical Society, Vol. 32, p.1100</ALTJOURNAL>",
+        "pubdate": "2000-10-00",
+        "title": [
+          "A Plausible Cause of The Late Heavy Bombardment"
+        ],
+        "volume": "32",
+        "read_count": 0,
+        "property": [
+          "NONARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000DPS....32.3806B",
+        "abstract": "An analysis of Galileo imaging data shows that it is possible for secondary craters to dominate Europa's small crater population. Europa's crater density is much lower than that of the Moon at all sizes, with only 15 known craters larger than 10 km, and a small crater population that is well below saturation. Yet, in several localities, segments of the small-crater size-distributions exhibit a steeply-sloping power-law relationship, reminiscent of secondary craters on the Moon and other bodies. Given this size-distribution and the number of crater clusters, we became intrigued by the possibility that the majority of the small craters may be secondaries. At issue is whether or not the mass ejected from the small number of large primary craters is sufficient to generate enough distant secondaries to account for the bulk of the measured small-crater population. We calculate, from scaling laws, the amount of mass ejected from all the known primary craters on Europa larger than 10 km diameter. This establishes an upper limit to the amount of mass available to produce secondary craters. Then, based on crater densities from six high-resolution image sequences, we estimate a typical spatial density of small craters on Europa. Using relevant scaling relations, we calculate the amount of mass necessary to produce these small craters assuming all of the small craters are secondaries. Although the derived mass has a large range of values due to the uncertainties of the scaling relations, our preliminary results show the lower end of the range falls well within the limits established by the mass ejected from the primary craters. This does not prove that most or all small craters on Europa are secondaries; however, this work demonstrates that it is possible that secondaries dominate Europa's small crater population.",
+        "author": [
+          "Bierhaus, E. B.",
+          "Chapman, C. R.",
+          "Merline, W. J."
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "abstract",
+        "email": [
+          "-",
+          "-",
+          "-"
+        ],
+        "id": "6106986",
+        "identifier": [
+          "2000DPS....32.3806B",
+          "2000BAAS...32.1067B"
+        ],
+        "orcid_pub": [
+          "-",
+          "-",
+          "-"
+        ],
+        "page": [
+          "38.06"
+        ],
+        "pub": "AAS/Division for Planetary Sciences Meeting Abstracts #32",
+        "pub_raw": "American Astronomical Society, DPS Meeting #32, id.38.06; <ALTJOURNAL>Bulletin of the American Astronomical Society, Vol. 32, p.1067</ALTJOURNAL>",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Secondary Cratering on Europa"
+        ],
+        "volume": "32",
+        "read_count": 0,
+        "property": [
+          "NONARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 2,
+        "citation_count_norm": 0.6666667,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 2
+        }
+      },
+      {
+        "bibcode": "2000DPS....32.2505H",
+        "abstract": "The Astronomy Workshop (http://janus.astro.umd.edu) is an interactive online astronomy resource developed and maintained at the University of Maryland for use by students, educators and the general public. The Astronomy Workshop has been extensively tested in large university survey courses, as well as smaller classes for undergraduate majors and graduate students. It has also been used in High School and Junior High School science classes. Below are some tools in the Astronomy Workshop. Animated Orbits of Planets and Moons: The orbits of the nine planets and 63 known planetary satellites are shown in animated, to-scale drawings. The orbiting bodies move at their correct relative speeds about their parent, which is rendered as an attractive, to-scale gif image. Planetary Calculators (New!): Calculate a simple formula, e.g. the escape velocity, simultaneously for all planets and moons in the Solar System. Solar System Collisions: This most popular of our applications shows what happens when an asteroid or comet with user-defined size and speed impacts a given planet. The program calculates many effects, including the country impacted (if Earth is the target), energy of explosion, crater size, and magnitude of the ``planetquake'' generated. It also displays a relevant image (e.g. terrestrial crater, lunar crater, etc.). Build Your Own Solar System (New!): Choose the masses of up to four planets, and their orbital sizes and shapes, and explore the prospects for life in your creation. Astronomical Distances: Travel away from the Earth at a chosen speed and see how long it takes to reach other planets, stars and galaxies. This tool helps students visualize astronomical distances in an intuitive way. Funding for the Astronomy Workshop is provided by NSF.",
+        "author": [
+          "Hamilton, D. P.",
+          "Asbury, M. L."
+        ],
+        "database": [
+          "astronomy",
+          "physics"
+        ],
+        "doctype": "abstract",
+        "email": [
+          "-",
+          "-"
+        ],
+        "id": "6106567",
+        "identifier": [
+          "2000BAAS...32.1038H",
+          "2000DPS....32.2505H"
+        ],
+        "orcid_pub": [
+          "-",
+          "-"
+        ],
+        "page": [
+          "25.05"
+        ],
+        "pub": "AAS/Division for Planetary Sciences Meeting Abstracts #32",
+        "pub_raw": "American Astronomical Society, DPS Meeting #32, id.25.05; <ALTJOURNAL>Bulletin of the American Astronomical Society, Vol. 32, p.1038</ALTJOURNAL>",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The Astronomy Workshop"
+        ],
+        "volume": "32",
+        "read_count": 0,
+        "property": [
+          "NONARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000DPS....32.2409F",
+        "abstract": "SMART-1 is the first in the programme of ESA's Small Missions for Advanced Research and Technology . Its objective is to demonstrate Solar Electric Primary Propulsion (SEP) for future Cornerstones (such as Bepi-Colombo) and to test new technologies for spacecraft and instruments. The project aims to have the spacecraft ready in October 2002 for launch as an Ariane-5 auxiliary payload. After a cruise with primary SEP, the SMART-1 mission is to orbit the Moon for a nominal period of six months, with possible extension. The spacecraft will carry out a complete programme of scientific observations during the cruise and in lunar orbit. SMART-1's science payload, with a total mass of some 15 kg, features many innovative instruments and advanced technologies. A miniaturised high-resolution camera (AMIE) for lunar surface imaging, a near-infrared point-spectrometer (SIR) for lunar mineralogy investigation, and a very compact X-ray spectrometer (D-CIXS) with a new type of detector and micro-collimator which will provide fluorescence spectroscopy and imagery of the Moon's surface elemental composition. The payload also includes an experiment (KaTE) aimed at demonstrating deep-space telemetry and telecommand communications in the X and Ka-bands, a radio-science experiment (RSIS), a deep space optical link (Laser-Link Experiment), using the ESA Optical Ground station in Tenerife, and the validation of a system of autonomous navigation SMART-1 lunar science investigations include studies of the chemical (OBAN) based on image processing. SMART-1 lunar science investigations include studies of the chemica composition and evolution of the Moon, of geophysical processes (volcanism, tectonics, cratering, erosion, deposition of ices and volatiles) for comparative planetology, and high resolution studies in preparation for future steps of lunar exploration. The mission could address several topics such as the accretional processes that led to the formation of planets, and the origin of the Earth-Moon system.",
+        "author": [
+          "Foing, B. H.",
+          "Racca, G. R.",
+          "SMART-1 Science and Technology Working Team"
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "abstract",
+        "email": [
+          "-",
+          "-",
+          "-"
+        ],
+        "id": "6106493",
+        "identifier": [
+          "2000DPS....32.2409F",
+          "2000BAAS...32.1037F"
+        ],
+        "orcid_pub": [
+          "-",
+          "-",
+          "-"
+        ],
+        "page": [
+          "24.09"
+        ],
+        "pub": "AAS/Division for Planetary Sciences Meeting Abstracts #32",
+        "pub_raw": "American Astronomical Society, DPS Meeting #32, id.24.09; <ALTJOURNAL>Bulletin of the American Astronomical Society, Vol. 32, p.1037</ALTJOURNAL>",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The ESA SMART-1 Mission to the Moon: Goals and Science"
+        ],
+        "volume": "32",
+        "read_count": 0,
+        "property": [
+          "NONARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0,
+        "citation_count_norm": 0,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2000DPS....32.2407M",
+        "abstract": "New instrumentation has been developed for spectral imaging of Mercury's extended atmosphere. The approach depends upon simultaneous short-exposure images in white light and sodium, with the former used to select the frames for post-integration of the sodium images. The effects of atmospheric seeing are thus minimized by the combination of high-speed exposures and subsequent selective integration. The instrumentation consists of a long slit imaging Echelle spectrometer equipped with an image slicer and an imaging photon detector. A test of the white light component of the technique has yielded a best-to-date image of a portion of Mercury's surface not photographed during the Mariner 10 mission. The pilot observations were made at the Mt. Wilson Observatory on 29 August 1998. The optical images show Mercury's albedo features over the longitude range 270<SUP>o</SUP>-360<SUP>o</SUP> W. Spatially variable features are seen with a resolution of ~250 km. A bright feature in the northern hemisphere appears similar to the lunar crater Copernicus; three darker features are similar in appearance to lunar maria. There are no obvious relations of the white light albedo features to either radar maps or sodium bright spots reported in the literature.",
+        "author": [
+          "Mendillo, M.",
+          "Baumgardner, J.",
+          "Wilson, J. K."
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "abstract",
+        "email": [
+          "-",
+          "-",
+          "-"
+        ],
+        "id": "6106467",
+        "identifier": [
+          "2000DPS....32.2407M",
+          "2000BAAS...32.1036M"
+        ],
+        "orcid_pub": [
+          "-",
+          "-",
+          "-"
+        ],
+        "page": [
+          "24.07"
+        ],
+        "pub": "AAS/Division for Planetary Sciences Meeting Abstracts #32",
+        "pub_raw": "American Astronomical Society, DPS Meeting #32, id.24.07; <ALTJOURNAL>Bulletin of the American Astronomical Society, Vol. 32, p.1036</ALTJOURNAL>",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Groundbased High-Definition Imaging of the Planet Mercury"
+        ],
+        "volume": "32",
+        "read_count": 0,
+        "property": [
+          "NONARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 1,
+        "citation_count_norm": 0.33333334,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 1
+        }
+      }
+    ]
+  }
+}

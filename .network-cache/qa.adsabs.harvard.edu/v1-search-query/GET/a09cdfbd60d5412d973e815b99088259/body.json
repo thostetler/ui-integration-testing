@@ -1,0 +1,50 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 23,
+    "params": {
+      "facet.field": "database",
+      "fl": "id",
+      "start": "0",
+      "sort": "date desc,bibcode desc",
+      "rows": "1",
+      "p_": "0",
+      "facet.limit": "20",
+      "q": "year:2000 moon crater",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67bcaf73-4d39dd0404bf77f811cf40bb",
+      "boost": "add(doctype_boost, 1)",
+      "facet.mincount": "1",
+      "facet": "true",
+      "wt": "json",
+      "facet.offset": "0"
+    }
+  },
+  "response": {
+    "numFound": 112,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "6153470"
+      }
+    ]
+  },
+  "facet_counts": {
+    "facet_queries": {},
+    "facet_fields": {
+      "database": [
+        "astronomy",
+        111,
+        "earthscience",
+        29,
+        "physics",
+        26,
+        "general",
+        1
+      ]
+    },
+    "facet_ranges": {},
+    "facet_intervals": {},
+    "facet_heatmaps": {}
+  }
+}

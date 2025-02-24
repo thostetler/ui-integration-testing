@@ -1,0 +1,26 @@
+{
+  "url": "https://qa.adsabs.harvard.edu/v1/search/query?facet=true&facet.field=property&facet.limit=20&facet.mincount=1&facet.offset=0&facet.query=property%3Arefereed&fl=id&p_=0&q=year%3A2000%20moon%20crater&rows=1&sort=date%20desc%2C%20bibcode%20desc",
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "date": "Mon, 24 Feb 2025 17:42:11 GMT",
+    "content-type": "application/json",
+    "content-length": "1128",
+    "connection": "keep-alive",
+    "permissions-policy": "browsing-topics=()",
+    "x-frame-options": "SAMEORIGIN",
+    "x-content-type-options": "nosniff",
+    "content-security-policy": "default-src 'self'; object-src 'none'",
+    "strict-transport-security": "max-age=31556926; includeSubDomains",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "x-ratelimit-limit": "5000",
+    "x-ratelimit-remaining": "4995",
+    "x-ratelimit-reset": "1740505331",
+    "retry-after": "86399",
+    "access-control-allow-origin": "http://0.0.0.0:8000",
+    "access-control-allow-credentials": "true",
+    "vary": "Origin, Cookie",
+    "set-cookie": "session=.eJwljrtOAzEQRf_FNcXYHo8926UKEkGCDqrV-JVdSDZoHzzFv2OgvdI953ypvs5lGVRX5bSUK9WPWXUqc7TepRCisDB571PQGjBb0dmCYeTIUTCShTZzBBISjgmp5FBRJ87e2VC9oUJkxGdPwAGTkElAyQVnXKmemFzDEmIJESo4ZnQCqoW8lPksU5lW1a3z9pu2LWX-7xMjoINpat2YOrDOlaEUE0VbNLb9L7KtQ59O4x9BjYchzm_vO_tobpbPfP26Pxynp9t1J-vx4354HvYj3j2MTn3_APSKUNk.Z7yvcw.5rsPXyqBVfTP9O7PngvdGL6Y2wU; Expires=Tue, 24 Feb 2026 23:42:11 GMT; Secure; HttpOnly; Path=/; SameSite=Lax",
+    "x-envoy-upstream-service-time": "95"
+  }
+}

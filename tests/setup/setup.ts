@@ -21,6 +21,7 @@ const test = base.extend<Fixtures>({
       new CacheRoute(page, {
         baseDir: '.network-cache',
         extraDir: (req) => hashQueryString(req.url()),
+        noCache: Number(process.env.DISABLE_REQUEST_CACHE) === 1,
       }),
     );
   },
