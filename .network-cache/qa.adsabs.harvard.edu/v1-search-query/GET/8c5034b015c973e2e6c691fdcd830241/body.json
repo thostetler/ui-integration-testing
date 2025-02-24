@@ -1,0 +1,1011 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 151,
+    "params": {
+      "q": "citations(identifier:2022PhRvD.105j3539A)",
+      "fl": "title,bibcode,author,keyword,pub,volume,year,[citations],property,pubdate,abstract,esources,data",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67bcabc2-69a149417ea781591cc54451",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "date desc",
+      "rows": "25",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 28,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2025PhLB..86139229I",
+        "abstract": "This study investigates the realization of R-symmetric Higgs inflation within the framework of no-scale-like supergravity, aiming to elucidate the formation of primordial black holes and observable gravitational waves within a class of GUT models. We explore the possibility of an ultra-slow-roll phase in a hybrid inflation framework, where the GUT Higgs field primarily takes on the role of the inflaton. The amplification of the scalar power spectrum gives rise to scalar-induced gravitational waves and the generation of primordial black holes. The predicted stochastic gravitational wave background falls within the sensitivity range of existing and upcoming gravitational wave detectors, while primordial black holes hold the potential to explain the abundance of dark matter. Furthermore, we highlight the significance of the leading-order nonrenormalizable term in the superpotential of achieving inflationary observables consistent with the latest experimental data. Additionally, the predicted range of the tensor-to-scalar ratio, a key measure of primordial gravitational waves, lies within the observational window of future experiments searching for B-mode polarization patterns in cosmic microwave background data.",
+        "author": [
+          "Ijaz, Nadir",
+          "Rehman, Mansoor Ur"
+        ],
+        "keyword": [
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "Physics Letters B",
+        "pubdate": "2025-02-00",
+        "title": [
+          "Exploring primordial black holes and gravitational waves with R-symmetric GUT Higgs inflation"
+        ],
+        "volume": "861",
+        "year": "2025",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 105,
+          "num_citations": 5
+        }
+      },
+      {
+        "bibcode": "2025JCAP...01..079E",
+        "abstract": "We present a full one-loop calculation of the gravitino thermal production rate, beyond the so-called hard thermal loop approximation, using the corresponding thermal spectral functions in numerical form on both sides of the light cone. This framework requires a full numerical evaluation. We interpret our results within the framework of a general supergravity-based model, remaining agnostic about the specifics of supersymmetry breaking. In this context, assuming that gravitinos constitute the entirety of the dark matter in the Universe imposes strict constraints on the reheating temperature. For example, with a gluino mass at the current LHC limit, a maximum reheating temperature of T <SUB>reh</SUB> ≃ 10<SUP>9</SUP> GeV is compatible with a gravitino mass of m <SUB>3/2</SUB> ≃ 1 TeV. Additionally, with a reheating temperature an order of magnitude lower at T <SUB>reh</SUB> ≃ 10<SUP>8</SUP> GeV, the common gaugino mass M <SUB>1/2</SUB> can range from 2 to 4 TeV within the same gravitino mass range. For much higher values of M <SUB>1/2</SUB>, which are favored by current accelerator and cosmological data in the context of supersymmetric models, such as M <SUB>1/2</SUB> = 10 TeV, and for m <SUB>3/2</SUB> ≃ 1 TeV the reheating temperature compatible with the gravitino dark matter scenario is 10<SUP>7</SUP> GeV. If other dark matter particles are considered, the reheating temperature could be much lower.",
+        "author": [
+          "Eberl, Helmut",
+          "Gialamas, Ioannis D.",
+          "Spanos, Vassilis C."
+        ],
+        "keyword": [
+          "dark matter theory",
+          "supersymmetry and cosmology",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2025-01-00",
+        "title": [
+          "Gravitino thermal production, dark matter, and reheating of the Universe"
+        ],
+        "volume": "2025",
+        "year": "2025",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 140,
+          "num_citations": 1
+        }
+      },
+      {
+        "bibcode": "2025RvMP...97a5001R",
+        "abstract": "Gravitational waves are a unique probe of the early Universe, as the Universe is transparent to gravitational radiation right back to the end of inflation. This review summarizes detection prospects and the wide scope of primordial events that could lead to a detectable stochastic gravitational wave background. Any such background would shed light on what lies beyond the standard model, sometimes at remarkably high scales. The range of strategies for detecting a stochastic gravitational wave background is overviewed before the review delves into three major primordial events that can source such a background. Finally, the landscape of other sources of primordial backgrounds is summarized.",
+        "author": [
+          "Roshan, Rishav",
+          "White, Graham"
+        ],
+        "keyword": [
+          "High-energy theory",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Reviews of Modern Physics",
+        "pubdate": "2025-01-00",
+        "title": [
+          "Using gravitational waves to see the first second of the Universe"
+        ],
+        "volume": "97",
+        "year": "2025",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 756,
+          "num_citations": 54
+        }
+      },
+      {
+        "bibcode": "2025arXiv250106307N",
+        "abstract": "We develop a scenario based on $\\mu$-hybrid inflation within the framework of a left-right symmetric model defined by the gauge symmetry group $G_{3221} = SU(3)_c \\times SU(2)_L \\times SU(2)_R \\times U(1)_{B-L}$. This model features a two-stage symmetry breaking to the Standard Model, with inflation occurring between the two stages, resulting in the dilution of primordial monopoles produced during the symmetry breaking of $SU(2)_R$ to $U(1)_R$. The second symmetry breaking gives rise to a network of metastable cosmic strings, which produces gravitational waves that can be observed by current and future experiments. A crucial aspect of this model is the inclusion of $R$-symmetry breaking terms in the superpotential, which helps explain the origin of the first symmetry breaking scale and ensures experimentally viable inflation with a minimal (canonical) Kähler potential. We show that the model successfully implements consistent inflation, leptogenesis, metastable cosmic strings, and gravitino dark matter, all in agreement with the observational data and constraints on reheating temperature from leptogenesis and gravitino overproduction bounds. We explore the potential embedding of $G_{3221}$ within the gauge symmetry $G_{422} = SU(4)_c \\times SU(2)_L \\times SU(2)_R$, and provide a brief discussion on the proton decay predictions, which can be tested by the upcoming experiments.",
+        "author": [
+          "Nadeem Ahmad, Muhammad",
+          "Mehmood, Maria",
+          "Rehman, Mansoor Ur",
+          "Shafi, Qaisar"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2025-01-00",
+        "title": [
+          "$\\mathbf{\\mu}$-Hybrid Inflation and Metastable Cosmic Strings in $\\mathbf{SU(3)_c\\times SU(2)_L\\times SU(2)_R \\times U(1)_{B-L}}$"
+        ],
+        "year": "2025",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "[citations]": {
+          "num_references": 88,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2024EPJC...84.1209E",
+        "abstract": "In this paper, we investigate D-term inflation within the framework of supergravity, employing the minimal Kähler potential. Following previous studies that revealed that this model can overcome the <inline-formula id=\"IEq1\"><mml:math><mml:mi>η</mml:mi></mml:math></inline-formula>-problem found in F-term models, we explore reheating dynamics and gravitino production, emphasizing the interplay between reheating temperature, spectral index, and gravitino abundance. Our analysis indicates that gravitino production is sensitive to the equation of state during reheating, affecting the reheating temperature and subsequent dark matter relic density. Furthermore, we analyze gravitational waves generated by cosmic strings, providing critical constraints on early Universe dynamics and cosmic string properties, the energy scales of both inflation and string formation influence the stochastic gravitational wave background (SGWB) generated by these cosmic strings.",
+        "author": [
+          "El Bourakadi, K.",
+          "Otalora, G.",
+          "Burton-Villalobos, A.",
+          "Chakir, H.",
+          "Ferricha-Alami, M.",
+          "Bennai, M."
+        ],
+        "keyword": [
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "European Physical Journal C",
+        "pubdate": "2024-11-00",
+        "title": [
+          "Insights into gravitinos abundance, cosmic strings and stochastic gravitational wave background"
+        ],
+        "volume": "84",
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 82,
+          "num_citations": 0
+        }
+      },
+      {
+        "bibcode": "2024NuPhB100216528B",
+        "abstract": "We propose a scenario where a high scale seesaw origin of light neutrino mass and gravitational dark matter (DM) in MeV-TeV ballpark originating from primordial black hole (PBH) evaporation can be simultaneously probed by future observations of stochastic gravitational wave (GW) background with multiple tilts or spectral breaks. A high scale breaking of an Abelian gauge symmetry ensures the dynamical origin of the seesaw scale while also leading to the formation of cosmic strings responsible for generating stochastic GW background. The requirement of a correct DM relic in this ballpark necessitates the inclusion of a diluter as PBH typically leads to DM overproduction. This leads to a second early matter dominated epoch after PBH evaporation due to the long-lived diluter. These two early matter dominated epochs, crucially connected to the DM relic, lead to multiple spectral breaks in the otherwise scale-invariant GW spectrum formed by cosmic strings. We find interesting correlations between DM mass and turning point frequencies of GW spectrum which are within reach of several near future experiments like LISA, BBO, ET, CE, etc.",
+        "author": [
+          "Borah, Debasish",
+          "Jyoti Das, Suruj",
+          "Roshan, Rishav"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics"
+        ],
+        "pub": "Nuclear Physics B",
+        "pubdate": "2024-05-00",
+        "title": [
+          "Probing high scale seesaw and PBH generated dark matter via gravitational waves with multiple tilts"
+        ],
+        "volume": "1002",
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 159,
+          "num_citations": 18
+        }
+      },
+      {
+        "bibcode": "2024JCAP...05..128L",
+        "abstract": "We present a novel mechanism for producing topologically stable monopoles (TSMs) from the quantum mechanical decay of metastable cosmic strings in the early universe. In an SO(10) model this mechanism yields TSMs that carry two units (4π/e) of Dirac magnetic charge as well as some color magnetic charge which is screened. For a dimensionless string tension parameter Gμ ≈ 10<SUP>-9</SUP>-10<SUP>-5</SUP>, the monopoles are superheavy with masses of order 10<SUP>15</SUP>-10<SUP>17</SUP> GeV. Monopoles with masses of order 10<SUP>8</SUP>-10<SUP>14</SUP> GeV arise from metastable strings for Gμ values from ∼ 10<SUP>-22</SUP> to 10<SUP>-10</SUP>. We identify the parameter space for producing these monopoles at an observable level with detectors such as IceCube and KM3NeT. For lower Gμ values the ultra-relativistic monopoles should be detectable at Pierre Auger and ANITA. The stochastic gravitational wave emission arise from metastable strings with Gμ ∼ 10<SUP>-9</SUP>-10-5 and should be accessible at HLVK and future detectors including the Einstein Telescope and Cosmic Explorer. An E <SUB>6</SUB> extension based on this framework would yield TSMs from the quantum mechanical decay of metastable strings that carry three units (6π/e) of Dirac magnetic charge.",
+        "author": [
+          "Lazarides, George",
+          "Maji, Rinku",
+          "Shafi, Qaisar"
+        ],
+        "keyword": [
+          "Cosmic strings",
+          "domain walls",
+          "monopoles",
+          "cosmology of theories beyond the SM",
+          "gravitational waves / sources",
+          "physics of the early universe",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2024-05-00",
+        "title": [
+          "Quantum tunneling in the early universe: stable magnetic monopoles from metastable cosmic strings"
+        ],
+        "volume": "2024",
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 104,
+          "num_citations": 7
+        }
+      },
+      {
+        "bibcode": "2024arXiv240406008A",
+        "abstract": "We present a realistic supersymmetric $\\mu$-hybrid inflation model within the framework of $SU(4)_C \\times SU(2)_L \\times U(1)_R$ gauge symmetry, wherein the symmetry breaking $SU(4)_C \\times SU(2)_L \\times U(1)_R\\rightarrow SU(3)_C\\times SU(2)_L \\times U(1)_{B-L}\\times U(1)_R$ occurs before observable inflation, effectively eliminating topologically stable primordial monopoles. Subsequent breaking of $U(1)_{B-L} \\times U(1)_R \\rightarrow U(1)_Y$ after inflation leads to the formation of superheavy metastable cosmic strings (CSs), capable of producing a stochastic gravitational wave background (SGWB) consistent with the recent PTA data. Moreover, the scalar spectral index $n_s$ and the tensor-to-scalar ratio $r$ align with Planck 2018 observations. A consistent scenario for reheating and non-thermal leptogenesis is employed to explain the observed matter content of the universe. Finally, the embedding of $G_{421}$ into the Pati-Salam gauge symmetry $G_{422}$ is briefly discussed, predicting potentially observable proton decay rates detectable at facilities such as Hyper Kamiokande and DUNE.",
+        "author": [
+          "Ahmed, Waqas",
+          "Mehmood, Maria",
+          "Rehman, Mansoor Ur",
+          "Zubair, Umer"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2024-04-00",
+        "title": [
+          "Inflation, Proton Decay and Gravitational Waves from Metastable Strings in $SU(4)_C \\times SU(2)_L \\times U(1)_R$ Model"
+        ],
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "[citations]": {
+          "num_references": 89,
+          "num_citations": 6
+        }
+      },
+      {
+        "bibcode": "2024JCAP...03..006L",
+        "abstract": "Motivated by the NANOGrav 15 year data and other recent investigations of stochastic gravitational background radiation based on pulsar timing arrays, we show how superheavy strings survive inflation but the slightly heavier monopoles do not in a non-supersymmetric hybrid inflation model based on flipped SU(5). With the dimensionless string tension parameter Gμ ∼ 10<SUP>-6</SUP>, the gravitational wave spectrum emitted by the strings, which are metastable due to breaking caused by monopole-antimonopole quantum mechanical tunneling, is compatible with the latest NANOGrav measurement as well as the advanced LIGO-VIRGO third run data. The string network undergoes about 30 e-foldings of inflation which suppresses the spectrum in the LIGO-VIRGO frequency range. With the symmetry breaking chain SU(5)×U(1)<SUB> X </SUB> → SU(3)<SUB> c </SUB>×SU(2)<SUB> L </SUB>×U(1)<SUB> Z </SUB>×U(1)<SUB> X </SUB> → SU(3)<SUB> c </SUB>×SU(2)<SUB> L </SUB>×U(1)<SUB> Y </SUB>, the estimated proton lifetime is of order 10<SUP>36</SUP>-10<SUP>37</SUP> yrs.",
+        "author": [
+          "Lazarides, George",
+          "Maji, Rinku",
+          "Moursy, Ahmad",
+          "Shafi, Qaisar"
+        ],
+        "keyword": [
+          "Cosmic strings",
+          "domain walls",
+          "monopoles",
+          "inflation",
+          "particle physics - cosmology connection",
+          "physics of the early universe",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2024-03-00",
+        "title": [
+          "Inflation, superheavy metastable strings and gravitational waves in non-supersymmetric flipped SU(5)"
+        ],
+        "volume": "2024",
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 77,
+          "num_citations": 30
+        }
+      },
+      {
+        "bibcode": "2024PhLB..85038516A",
+        "abstract": "We discuss <mml:math altimg=\"si1.svg\"><mml:msub><mml:mrow><mml:mi>E</mml:mi></mml:mrow><mml:mrow><mml:mn>6</mml:mn></mml:mrow></mml:msub></mml:math> based extensions of the Standard Model (SM) containing two varieties of superheavy metastable cosmic strings (CSs) that respectively have neutral and electrically charged current carriers. We employ an extended version of the velocity-dependent one-scale (VOS) model, recently discussed by some authors, to estimate the gravitational wave (GW) spectrum emitted by metastable strings with a dimensionless string tension <mml:math altimg=\"si2.svg\"><mml:mi>G</mml:mi><mml:mi>μ</mml:mi><mml:mo>≈</mml:mo><mml:msup><mml:mrow><mml:mn>10</mml:mn></mml:mrow><mml:mrow><mml:mo linebreak=\"badbreak\" linebreakstyle=\"after\">‑</mml:mo><mml:mn>6</mml:mn></mml:mrow></mml:msup></mml:math> that carry a right-handed neutrino (RHN) current. We find that with a low to moderate amount of current, the spectrum is compatible with the LIGO O3 run and also consistent at the 1σ level with the recent PTA signals.",
+        "author": [
+          "Afzal, Adeela",
+          "Shafi, Qaisar",
+          "Tiwari, Amit"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "Physics Letters B",
+        "pubdate": "2024-03-00",
+        "title": [
+          "Gravitational wave emission from metastable current-carrying strings in E<SUB loc=\"post\">6</SUB>"
+        ],
+        "volume": "850",
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 62,
+          "num_citations": 13
+        }
+      },
+      {
+        "bibcode": "2024JCAP...01..015M",
+        "abstract": "We show that, when connected with monopoles, the flat D-flat direction breaking the local U(1) <SUB>B-L</SUB> symmetry as an extension of the minimal supersymmetric standard model can be responsible for the signal of a stochastic gravitational wave background recently reported by NANOGrav collaborations, while naturally satisfying constraints at high frequency band. Thanks to the flatness of the direction, a phase of thermal inflation arises naturally. The reheating temperature is quite low, and suppresses signals at frequencies higher than the characteristic frequency set by the reheating temperature. Notably, forthcoming spaced based experiments such as LISA can probe the cutoff frequency, providing an indirect clue of the scale of soft SUSY-breaking mass parameter.",
+        "author": [
+          "Maji, Rinku",
+          "Park, Wan-il"
+        ],
+        "keyword": [
+          "Cosmic strings",
+          "domain walls",
+          "monopoles",
+          "cosmological phase transitions",
+          "cosmology of theories beyond the SM",
+          "gravitational waves / sources",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2024-01-00",
+        "title": [
+          "Supersymmetric U(1) <SUB>B-L</SUB> flat direction and NANOGrav 15 year data"
+        ],
+        "volume": "2024",
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 137,
+          "num_citations": 39
+        }
+      },
+      {
+        "bibcode": "2024JCAP...01..049A",
+        "abstract": "A realistic model of SU(5) × U(1)<SUB>χ</SUB>, embedded in SO(10) supersymmetric grand unified theory, is investigated for the emergence of a metastable cosmic string network. This network eventually decays via the Schwinger production of monopole-antimonopole pairs, subsequently generating a stochastic gravitational wave background that is compatible with the NANOGrav 15-year data. In order to avoid the monopole problem in the breaking of both SO(10) and SU(5), a non-minimal Higgs inflation scenario is incorporated. The radiative breaking of the U(1)<SUB>χ</SUB> symmetry at a slightly lower scale plays a pivotal role in aligning the string tension parameter with the observable range. The resultant gravitational wave spectrum not only accounts for the signal observed in the most recent pulsar timing array (PTA) experiments but is also accessible to both current and future ground-based and space-based experiments.",
+        "author": [
+          "Ahmed, Waqas",
+          "Rehman, Mansoor Ur",
+          "Zubair, Umer"
+        ],
+        "keyword": [
+          "inflation",
+          "particle physics - cosmology connection",
+          "Cosmic strings",
+          "domain walls",
+          "monopoles",
+          "leptogenesis",
+          "High Energy Physics - Phenomenology",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2024-01-00",
+        "title": [
+          "Probing stochastic gravitational wave background from SU(5) × U(1)<SUB>χ</SUB> strings in light of NANOGrav 15-year data"
+        ],
+        "volume": "2024",
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 86,
+          "num_citations": 27
+        }
+      },
+      {
+        "bibcode": "2024PhRvD.109a5008A",
+        "abstract": "A series of pulsar timing arrays (PTAs) recently observed gravitational waves at the nanohertz frequencies. Motivated by this remarkable result, we present a novel class of Pati-Salam models that give rise to a network of metastable cosmic strings, offering a plausible explanation for the observed PTA data. Additionally, we introduce a hybrid inflationary scenario to eliminate magnetic monopoles that arise during the subsequent phase transitions from the Pati-Salam symmetry to the Standard Model gauge group. The resulting scalar spectral index is compatible with Planck data, and the tensor-to-scalar ratio is anticipated to be extremely small. Moreover, we incorporate a nonthermal leptogenesis to generate the required baryon asymmetry in our framework. Finally, the gravitational wave spectra generated by the metastable cosmic strings not only correspond to signals observed in recent PTAs, including NANOGrav, but are also within the exploration capacity of both present and future ground- and space-based experiments.",
+        "author": [
+          "Ahmed, Waqas",
+          "Chowdhury, Talal Ahmed",
+          "Nasri, Salah",
+          "Saad, Shaikh"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - High Energy Astrophysical Phenomena",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2024-01-00",
+        "title": [
+          "Gravitational waves from metastable cosmic strings in the Pati-Salam model in light of new pulsar timing array data"
+        ],
+        "volume": "109",
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 82,
+          "num_citations": 28
+        }
+      },
+      {
+        "bibcode": "2024PhRvD.109b6013E",
+        "abstract": "New physics beyond the Standard Model can give rise to stochastic gravitational-wave backgrounds, for example, through cosmic strings. In this way, gravitational-wave searches with pulsar-timing arrays as well as existing and future laser interferometers may provide information on particle physics beyond the Standard Model. Here, we take one additional step and link particle physics beyond the Standard Model to quantum gravity. We investigate whether particle physics models that may give rise to cosmic strings can be embedded into an asymptotically safe theory of quantum gravity and matter. We focus on models where cosmic strings arise from U(1)-symmetry breaking in an extended Yukawa-Abelian-Higgs sector that may be part of a dark sector. We find a negative answer for the simplest model that can give rise to cosmic strings and also find constraints on an extended model. We tentatively conclude that cosmic strings are difficult to accommodate in asymptotically safe models. This fits well with the latest 15-year dataset and search for new physics from the NANOGrav Collaboration, which disfavors a stable-cosmic-string interpretation. In that sense, the recent data provide an indirect, albeit at present rather tentative, hint about the quantum theory of gravity.",
+        "author": [
+          "Eichhorn, Astrid",
+          "Santos, Rafael R. Lino dos",
+          "Miqueleto, João Lucas"
+        ],
+        "keyword": [
+          "General Relativity and Quantum Cosmology",
+          "Astrophysics - High Energy Astrophysical Phenomena",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2024-01-00",
+        "title": [
+          "From quantum gravity to gravitational waves through cosmic strings"
+        ],
+        "volume": "109",
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 228,
+          "num_citations": 27
+        }
+      },
+      {
+        "bibcode": "2023JCAP...11..020B",
+        "abstract": "Many symmetry breaking patterns in grand unified theories (GUTs) give rise to cosmic strings that eventually decay when pairs of GUT monopoles spontaneously nucleate along the string cores. These strings are known as metastable cosmic strings and have intriguing implications for particle physics and cosmology. In this article, we discuss the current status of metastable cosmic strings, with a focus on possible GUT embeddings and connections to inflation, neutrinos, and gravitational waves (GWs). The GW signal emitted by a network of metastable cosmic strings in the early universe differs, in particular, from the signal emitted by topologically stable strings by a suppression at low frequencies. Therefore, if the underlying symmetry breaking scale is close to the GUT scale, the resulting GW spectrum can be accessible at current ground-based interferometers as well as at future space-based interferometers, such as LISA, and at the same time account for the signal in the most recent pulsar timing data sets. Metastable cosmic strings thus nourish the hope that future GW observations might shed light on fundamental physics close to the GUT scale.",
+        "author": [
+          "Buchmüller, Wilfried",
+          "Domcke, Valerie",
+          "Schmitz, Kai"
+        ],
+        "keyword": [
+          "Cosmic strings",
+          "domain walls",
+          "monopoles",
+          "particle physics - cosmology connection",
+          "primordial gravitational waves (theory)",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2023-11-00",
+        "title": [
+          "Metastable cosmic strings"
+        ],
+        "volume": "2023",
+        "year": "2023",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 89,
+          "num_citations": 45
+        }
+      },
+      {
+        "bibcode": "2023JHEAp..39...81V",
+        "abstract": "Various pulsar timing array (PTA) experiments (NANOGrav, EPTA, PPTA, CPTA, including data from InPTA) very recently reported evidence for excess red common-spectrum signals in their latest datasets, with inter-pulsar correlations following the Hellings-Downs pattern, pointing to a stochastic gravitational wave background (SGWB) origin. Focusing for concreteness on the NANOGrav signal (given that all signals are in good agreement between each other), I inspect whether it supports an inflationary SGWB explanation, finding that such an interpretation calls for an extremely blue tensor spectrum, with spectral index n<SUB>T</SUB> ≃ 1.8 ± 0.3, while Big Bang Nucleosynthesis limits require a very low reheating scale, T<SUB>rh</SUB> ≲ 10 GeV . While not impossible, an inflationary origin for the PTA signal is barely tenable: within well-motivated inflationary models it is hard to achieve such a blue tilt, whereas models who do tend to predict sizeable non-Gaussianities, excluded by observations. Intriguingly, ekpyrotic models naturally predict a SGWB with spectral index n<SUB>T</SUB> = 2, although with an amplitude too suppressed to be able to explain the signal detected by PTA experiments. Finally, I provide explicit expressions for a bivariate Gaussian approximation to the joint posterior distribution for the intrinsic-noise amplitude and spectral index of the NANOGrav signal, which can facilitate extending similar analyses to different theoretical signals.",
+        "author": [
+          "Vagnozzi, Sunny"
+        ],
+        "keyword": [
+          "Cosmic inflation",
+          "Pulsar timing arrays",
+          "Gravitational waves",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Phenomenology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of High Energy Astrophysics",
+        "pubdate": "2023-08-00",
+        "title": [
+          "Inflationary interpretation of the stochastic gravitational wave background signal detected by pulsar timing array experiments"
+        ],
+        "volume": "39",
+        "year": "2023",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 433,
+          "num_citations": 161
+        }
+      },
+      {
+        "bibcode": "2023arXiv230811410A",
+        "abstract": "We construct a realistic supersymmetric model for superheavy metastable cosmic strings (CSs) that can be investigated in the current pulsar timing array (PTA) experiments. We consider shifted $\\mu$ hybrid inflation in which the symmetry breaking $SU(4)_c \\times SU(2)_L \\times U(1)_R\\rightarrow SU(3)_c\\times SU(2)_L \\times U(1)_{B-L}\\times U(1)_R$ proceeds along an inflationary trajectory such that the topologically unstable primordial monopoles are inflated away. The breaking of $U(1)_{B-L} \\times U(1)_R \\rightarrow U(1)_Y$ after inflation ends yields the metastable CSs that generate the stochastic gravitational wave background (SGWB) which is consistent with the current PTA data set. The scalar spectral index $n_s$ and the tensor to scalar ratio $r$ are also compatible with Planck 2018. We briefly discuss both reheating and leptogenesis in this model.",
+        "author": [
+          "Afzal, Adeela",
+          "Mehmood, Maria",
+          "Rehman, Mansoor Ur",
+          "Shafi, Qaiser"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2023-08-00",
+        "title": [
+          "Supersymmetric hybrid inflation and metastable cosmic strings in $SU(4)_c \\times SU(2)_L \\times U(1)_R$"
+        ],
+        "year": "2023",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "[citations]": {
+          "num_references": 49,
+          "num_citations": 18
+        }
+      },
+      {
+        "bibcode": "2023ChPhC..47h5104Q",
+        "abstract": "We study stochastic gravitational waves from cosmic strings generated in an ultraviolet-complete model for pseudo-Nambu-Goldstone dark matter with a hidden ${U(1)}$ gauge symmetry. The dark matter candidate in this model can naturally evade direct detection bounds and easily satisfy other phenomenological constraints. The bound on the dark matter lifetime implies an ultraviolet scale higher than $ 10^9\\; \\mathrm{GeV} $ . The spontaneous ${U(1)}$ symmetry breaking at such a high scale would induce cosmic strings with high tension, resulting in a stochastic gravitational wave background with a high energy density. We investigate the constraints from current gravitational wave experiments as well as the future sensitivity. We find that most viable parameter points can be well studied in future gravitational wave experiments. *Supported by the National Natural Science Foundation of China (11805288)",
+        "author": [
+          "Qiu, Ze-Yu",
+          "Yu, Zhao-Huan"
+        ],
+        "keyword": [
+          "dark matter",
+          "gravitational waves",
+          "cosmic strings",
+          "beyond the standard model",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics"
+        ],
+        "pub": "Chinese Physics C",
+        "pubdate": "2023-08-00",
+        "title": [
+          "Gravitational waves from cosmic strings associated with pseudo-Nambu-Goldstone dark matter"
+        ],
+        "volume": "47",
+        "year": "2023",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 120,
+          "num_citations": 11
+        }
+      },
+      {
+        "bibcode": "2023PhRvD.108b3531B",
+        "abstract": "We study the effect of an ultralight primordial black hole (PBH) dominated phase on the gravitational wave (GW) spectrum generated by a cosmic string (CS) network formed as a result of a high-scale U (1 ) symmetry breaking. A PBH-dominated phase leads to tilts in the spectrum via entropy dilution and generates a new GW spectrum from PBH density fluctuations, detectable at ongoing and planned near-future GW detectors. The combined spectrum has a unique shape with a plateau, a sharp tilted peak over the plateau, and a characteristic falloff, which can be distinguished from the one generated in the combination of CS and any other matter domination or new exotic physics. We discuss how ongoing and planned future experiments can probe such a unique spectrum for different values of U (1 ) breaking scale and PBH parameters such as initial mass and energy fraction.",
+        "author": [
+          "Borah, Debasish",
+          "Das, Suruj Jyoti",
+          "Roshan, Rishav",
+          "Samanta, Rome"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2023-07-00",
+        "title": [
+          "Imprint of PBH domination on gravitational waves generated by cosmic strings"
+        ],
+        "volume": "108",
+        "year": "2023",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 119,
+          "num_citations": 13
+        }
+      },
+      {
+        "bibcode": "2023JHEP...05..119L",
+        "abstract": "We explore a variety of composite topological structures that arise from the spontaneous breaking of SO(10) to SU(3)<SUB>c</SUB>× U(1)<SUB>em</SUB> via one of its maximal subgroups SU(5) × U(1)<SUB>χ</SUB>, SU(4)<SUB>c</SUB>× SU(2)<SUB>L</SUB>× SU(2)<SUB>R</SUB>, and SU(5) × U(1)<SUB>X</SUB> (also known as flipped SU(5)). They include i) a network of &Z; strings which develop monopoles and turn into necklaces with the structure of &Z;<SUB>2</SUB> strings, ii) dumbbells connecting two different types of monopoles, or monopoles and antimonpoles, iii) starfish-like configurations, iv) polypole configurations, and v) walls bounded by a necklace. We display these structures both before and after the electroweak breaking. The appearance of these composite structures in the early universe and their astrophysical implications including gravitational wave emission would depend on the symmetry breaking patterns and scales, and the nature of the associated phase transitions.",
+        "author": [
+          "Lazarides, George",
+          "Shafi, Qaisar",
+          "Tiwari, Amit"
+        ],
+        "keyword": [
+          "Grand Unification",
+          "Phase Transitions in the Early Universe",
+          "Topological Strings",
+          "High Energy Physics - Phenomenology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of High Energy Physics",
+        "pubdate": "2023-05-00",
+        "title": [
+          "Composite topological structures in SO(10)"
+        ],
+        "volume": "2023",
+        "year": "2023",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 52,
+          "num_citations": 21
+        }
+      },
+      {
+        "bibcode": "2023JCAP...03..007M",
+        "abstract": "We discuss how in SO(10) grand unification an observable number density of topologically stable intermediate mass (~ 10<SUP>14</SUP> GeV) monopoles survive inflation driven by a Coleman-Weinberg potential and non-minimal coupling of the inflaton field to gravity. The scalar spectral index n<SUB>s</SUB> is in excellent agreement with the current observations, and the tensor to scalar ratio r ≳ 0.003. The model also predicts the presence of intermediate scale topologically stable cosmic strings, and their gravitational wave spectrum reflects the amount of cosmic inflation experienced by the associated symmetry breaking. The discovery of these primordial monopoles and the stochastic gravitational wave background from the strings would provide important new insights regarding the symmetry breaking patterns in the early universe.",
+        "author": [
+          "Maji, Rinku",
+          "Shafi, Qaisar"
+        ],
+        "keyword": [
+          "Cosmic strings",
+          "domain walls",
+          "monopoles",
+          "inflation",
+          "particle physics - cosmology connection",
+          "primordial gravitational waves (theory)",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2023-03-00",
+        "title": [
+          "Monopoles, strings and gravitational waves in non-minimal inflation"
+        ],
+        "volume": "2023",
+        "year": "2023",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 94,
+          "num_citations": 21
+        }
+      },
+      {
+        "bibcode": "2023JCAP...01..019A",
+        "abstract": "We implement shifted hybrid inflation in the framework of supersymmetric SU(5) × U(1)<SUB>χ</SUB> GUT model which provides a natural solution to the monopole problem appearing in the spontaneous symmetry breaking of SU(5). The U(1)<SUB>χ</SUB> symmetry is radiatevely broken after the end of inflation at an intermediate scale, yielding topologically stable cosmic strings. The Planck's bound on the gravitational interaction strength of these strings, characterized by G<SUB>N</SUB>μ<SUB>s</SUB> are easily satisfied with the U(1)<SUB>χ</SUB> symmetry breaking scale which depends on the initial boundary conditions at the GUT scale. The dimension-5 proton lifetime for the decay p → K <SUP>+</SUP> ν̅, mediated by color-triplet Higgsinos is found to satisfy current Super-Kamiokande bounds for SUSY breaking scale M <SUB>SUSY</SUB> ≳ 12.5 TeV. We show that with minimal Kähler potential, the soft supersymmetry breaking terms play a vital role in bringing the scalar spectral index n_s within the Planck's latest bounds, although with small tensor modes r ≲ 2.5 × 10<SUP>-6</SUP> and SU(5) gauge symmetry breaking scale in the range (2 × 10<SUP>15</SUP>≲ M<SUB>α</SUB> ≲ 2 × 10<SUP>16</SUP>) GeV. By employing non-minimal terms in the Kähler potential, the tensor-to-scalar ratio approaches observable values (r ≲ 10<SUP>-3</SUP>) with the SU(5) symmetry breaking scale M<SUB>α</SUB> ≃ 2 × 10<SUP>16</SUP> GeV.",
+        "author": [
+          "Ahmed, Waqas",
+          "Zubair, Umer"
+        ],
+        "keyword": [
+          "inflation",
+          "supersymmetry and cosmology",
+          "Cosmic strings",
+          "domain walls",
+          "mon­opoles",
+          "High Energy Physics - Phenomenology",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2023-01-00",
+        "title": [
+          "Radiative symmetry breaking, cosmic strings and observable gravity waves in 𝖴(1)<SUB>𝖱</SUB> symmetric 𝖲𝖴(5) × 𝖴(1)<SUB>χ</SUB>"
+        ],
+        "volume": "2023",
+        "year": "2023",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 87,
+          "num_citations": 5
+        }
+      },
+      {
+        "bibcode": "2022JCAP...12..009L",
+        "abstract": "We discuss some testable predictions of a non-supersymmetric SO(10) model supplemented by a Peccei-Quinn symmetry. We utilize a symmetry breaking pattern of SO(10) that yields unification of the Standard Model gauge couplings, with the unification scale also linked to inflation driven by an SO(10) singlet scalar field with a Coleman-Weinberg potential. Proton decay mediated by the superheavy gauge bosons may be observable at the proposed Hyper-Kamiokande experiment. Due to an unbroken Z <SUB>2</SUB> gauge symmetry from SO(10), the model predicts the presence of a stable intermediate mass fermion which, together with the axion, provides the desired relic abundance of dark matter. The model also predicts the presence of intermediate scale topologically stable monopoles and strings that survive inflation. The monopoles may be present in the Universe at an observable level. We estimate the stochastic gravitational wave background emitted by the strings and show that it should be testable in a number of planned and proposed space and land based experiments. Finally, we show how the observed baryon asymmetry in the Universe is realized via non-thermal leptogenesis.",
+        "author": [
+          "Lazarides, George",
+          "Maji, Rinku",
+          "Roshan, Rishav",
+          "Shafi, Qaisar"
+        ],
+        "keyword": [
+          "Cosmic strings",
+          "domain walls",
+          "monopoles",
+          "dark matter theory",
+          "inflation",
+          "leptogenesis",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2022-12-00",
+        "title": [
+          "A predictive SO(10) model"
+        ],
+        "volume": "2022",
+        "year": "2022",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 147,
+          "num_citations": 19
+        }
+      },
+      {
+        "bibcode": "2022PDU....3701090S",
+        "abstract": "In this paper, we study a hybrid combination of Einstein-Hilbert action with curvature scalar R, and a function f(R) in Palatini gravity within the context of inflationary scenario, from the Swampland conjecture point of view. This hybrid model has been paid attention in recent cosmological studies, and its applications have been widely studied in the literature. In this regard, using the Swampland conjecture (using (C<SUB>1</SUB>) as the first component of dS swampland conjecture, which is obtained from the first derivative of the potential upon the potential and (C<SUB>2</SUB>) as the second component which is acquired from the second derivative of the potential upon the potential), we investigate the cosmological implications of the present gravity theory, with a suitable potential, in the framework of inflationary scenario to obtain cosmological quantities such as slow-roll parameter, scalar spectral index (n<SUB>s</SUB>) , tensor-to-scalar ratio (r<SUB>s</SUB>), and then compare them with the cosmological observations. Moreover, we compare the compatibility or incompatibility of the model with observable data, such as Planck, by applying Swampland conjecture to r<SUB>s</SUB> -n<SUB>s</SUB> , C<SUB>1,2</SUB> -n<SUB>s</SUB> and C<SUB>1,2</SUB> -r<SUB>s</SUB> plots.",
+        "author": [
+          "Sadeghi, J.",
+          "Noori Gashti, S.",
+          "Darabi, F."
+        ],
+        "keyword": [
+          "Einstein-Hilbert action",
+          "Palatini gravity",
+          "Swampland conjecture",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "pub": "Physics of the Dark Universe",
+        "pubdate": "2022-09-00",
+        "title": [
+          "Swampland conjectures in hybrid metric-Palatini gravity"
+        ],
+        "volume": "37",
+        "year": "2022",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 135,
+          "num_citations": 7
+        }
+      },
+      {
+        "bibcode": "2022JCAP...08..042L",
+        "abstract": "We estimate the stochastic gravitational wave spectrum emitted from a network of cosmic strings in which the latter are effectively stable against breaking by monopole pair creation. The monopoles are produced at a higher scale from an earlier symmetry breaking and experience significant inflation before reentering the horizon. This gives rise to monopole-antimonopole pairs connected by string segments and the string loop formation essentially ceases. As a consequence, the lower frequency portion of the gravitational wave spectrum is suppressed relative to the no-inflation case with stable strings, which evades the stringent PPTA bound on the dimensionless string tension Gμ. We display the modified spectrum, accessible in the ongoing and future experiments, for Gμ values in the range 10<SUP>-10</SUP>-10<SUP>-15</SUP>. We show how this 'quasi-stable' string network is realized in realistic grand unified theories.",
+        "author": [
+          "Lazarides, George",
+          "Maji, Rinku",
+          "Shafi, Qaisar"
+        ],
+        "keyword": [
+          "Cosmic strings",
+          "domain walls",
+          "monopoles",
+          "cosmology of theories beyond the SM",
+          "gravitational waves / sources",
+          "particle physics - cosmology connection",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2022-08-00",
+        "title": [
+          "Gravitational waves from quasi-stable strings"
+        ],
+        "volume": "2022",
+        "year": "2022",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 63,
+          "num_citations": 28
+        }
+      }
+    ]
+  }
+}

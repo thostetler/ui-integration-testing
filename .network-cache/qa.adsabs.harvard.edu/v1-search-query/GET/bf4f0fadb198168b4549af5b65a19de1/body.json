@@ -1,0 +1,84 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 0,
+    "params": {
+      "q": "identifier:2022PhRvD.105j3539A",
+      "fl": "links_data,[citations],keyword,property,first_author,year,issn,isbn,title,aff,abstract,bibcode,pub,pub_raw,volume,author,issue,pubdate,doi,page,esources,data",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67bcabc2-2d459568726cdae001b4bbed",
+      "boost": "add(doctype_boost, 1)",
+      "rows": "1",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 1,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2022PhRvD.105j3539A",
+        "abstract": "We present a successful realization of supersymmetric μ -hybrid inflation model based on a gauged U (1 )<SUB>B - L</SUB> extension of the minimal supersymmetric standard model, with the soft supersymmetry breaking terms are playing an important role. Successful nonthermal leptogenesis with gravitino dark matter yields a reheat temperature in the range 2 ×10<SUP>7</SUP>≲T<SUB>R</SUB>≲5 ×10<SUP>9</SUP> GeV . This corresponds to the predictions 2 ×10<SUP>-18</SUP>≲r ≲4 ×10<SUP>-13</SUP> for the tensor to scalar ratio, and -2 ×10<SUP>-6</SUP>≲d n<SUB>s</SUB>/d ln k ≲-5 ×10<SUP>-11</SUP> for the running of the scalar spectral index. The B - L breaking scale is estimated as 6 ×10<SUP>14</SUP>≲M /GeV ≲10<SUP>16</SUP> , calculated at the central value of the scalar spectral index, n<SUB>s</SUB>=0.9655 , reported by Planck 2018. Finally, in a grand unified theory setup the dimensionless string tension parameter associated with the metastable strings is in the range 10<SUP>-9</SUP>≲G μ<SUB>cs</SUB>≲10<SUP>-6</SUP> corresponding to a stochastic gravitational wave background lying within the 2 σ bound of the recent NANOGrav 12.5-yr data.",
+        "aff": [
+          "Department of Physics, Quaid-i-Azam University, Islamabad, 45320, Pakistan",
+          "School of Mathematics and Physics, Hubei Polytechnic University, Huangshi 435003, China",
+          "Department of Physics, Quaid-i-Azam University, Islamabad, 45320, Pakistan",
+          "Bartol Research Institute, Department of Physics and Astronomy, University of Delaware, Newark, Delaware 19716, USA"
+        ],
+        "author": [
+          "Afzal, Adeela",
+          "Ahmed, Waqas",
+          "Rehman, Mansoor Ur",
+          "Shafi, Qaisar"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.105.103539",
+          "10.48550/arXiv.2202.07386"
+        ],
+        "first_author": "Afzal, Adeela",
+        "issn": [
+          "1550-7998",
+          "0556-2821"
+        ],
+        "issue": "10",
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics"
+        ],
+        "links_data": [
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"preprint\", \"url\": \"http://arxiv.org/abs/2202.07386\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1103%2FPhysRevD.105.103539\"}"
+        ],
+        "page": [
+          "103539"
+        ],
+        "pub": "Physical Review D",
+        "pub_raw": "Physical Review D, Volume 105, Issue 10, article id.103539",
+        "pubdate": "2022-05-00",
+        "title": [
+          "μ -hybrid inflation, gravitino dark matter, and stochastic gravitational wave background from cosmic strings"
+        ],
+        "volume": "105",
+        "year": "2022",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 76,
+          "num_citations": 28
+        }
+      }
+    ]
+  }
+}

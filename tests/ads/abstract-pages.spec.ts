@@ -1,7 +1,8 @@
-import { expect, type Page, test } from '@playwright/test';
+import { expect, test } from '@/setup/setup';
 import { configDotenv } from 'dotenv';
 import { ROUTES } from '@/constants';
 import { a11yCheck, visualCheck } from '@/util/helpers';
+import { Page } from '@playwright/test';
 
 configDotenv();
 
@@ -91,7 +92,9 @@ async function assertContentLoaded(page: Page, route: string, title: string) {
 
 test.describe('Abstract pages', () => {
   for (const { name, route } of SUBVIEWS) {
-    test(`${name} page loads properly`, { tag: ['@smoke'] }, async ({ page }, testInfo) => {
+    test(`${name} page loads properly`, { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+      await cacheRoute.GET('**/v1/search/query*');
+
       // Build the test name for snapshots and a11y logs
       const testName = `abs-${name.toLowerCase().replace(/\s+/g, '-')}`;
 

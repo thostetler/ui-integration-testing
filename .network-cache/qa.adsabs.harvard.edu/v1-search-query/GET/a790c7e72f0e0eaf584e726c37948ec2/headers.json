@@ -1,0 +1,26 @@
+{
+  "url": "https://qa.adsabs.harvard.edu/v1/search/query?fl=title&q=bibcode%3A2022PhRvD.105j3539A",
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "date": "Mon, 24 Feb 2025 17:26:28 GMT",
+    "content-type": "application/json",
+    "content-length": "533",
+    "connection": "keep-alive",
+    "permissions-policy": "browsing-topics=()",
+    "x-frame-options": "SAMEORIGIN",
+    "x-content-type-options": "nosniff",
+    "content-security-policy": "default-src 'self'; object-src 'none'",
+    "strict-transport-security": "max-age=31556926; includeSubDomains",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "x-ratelimit-limit": "5000",
+    "x-ratelimit-remaining": "4995",
+    "x-ratelimit-reset": "1740504387",
+    "retry-after": "86398",
+    "access-control-allow-origin": "http://0.0.0.0:8000",
+    "access-control-allow-credentials": "true",
+    "vary": "Origin, Cookie",
+    "set-cookie": "session=.eJwlzs9KAzEQgPF3ydnDZJLZJD22VEQET6L0ssxOJu1CbW32D7jiu7vqA3wfvy_TlqrDyWwKnwe9M22fzcaojVlKB-LJkXJmF8h7qymkjNaCzymKgLJKox1C7DCESKAZk3UlqG8EJFAHFNkXILAs4h0WhYwUS2CN0TdOIJfcOGSHiUJhodIRB7NCPrS-80Uvo9mMdfqlTYPWfx8jg424Qmz0YmOyuSRQxY6t8-jW_srTeGrl3P8dzO31ZfdUh-fd4fHKxy0th-N--_CZhtHVG8L81s_zMi335vsHTr1Szw.Z7yrxA.8wiriJAcixwZd1rDW9kInQlVbew; Expires=Tue, 24 Feb 2026 23:26:28 GMT; Secure; HttpOnly; Path=/; SameSite=Lax",
+    "x-envoy-upstream-service-time": "2499"
+  }
+}

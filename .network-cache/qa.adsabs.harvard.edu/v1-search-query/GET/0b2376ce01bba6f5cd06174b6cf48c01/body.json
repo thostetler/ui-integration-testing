@@ -1,0 +1,985 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 10046,
+    "params": {
+      "q": "similar(identifier:2022PhRvD.105j3539A)",
+      "fl": "title,bibcode,author,keyword,pub,volume,year,[citations],property,pubdate,abstract,esources,data",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67bcabc2-6af357545d383eec33a31eb2",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "score desc",
+      "rows": "25",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 11225041,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2022PhRvD.105k5008A",
+        "abstract": "We revisit the hybrid inflation model gauged by U (1 )B<SUB>-L</SUB> extension of the minimal supersymmetric standard model in a no-scale background. Considering a single predictive framework, we study inflation, leptogenesis, gavitino cosmology, and the stochastic background of gravitational waves produced by metastable cosmic strings. The spontaneous breaking of U (1 )B<SUB>-L</SUB> at the end of inflation produces a network of metastable cosmic strings, while the interaction between the U (1 )B<SUB>-L</SUB> Higgs field and the neutrinos generate heavy Majorana masses for the right-handed neutrinos. The heavy Majorana masses explain the tiny neutrino masses via the seesaw mechanism, a realistic scenario for reheating and nonthermal leptogenesis. We show that a successful nonthermal leptogenesis and a stable gravitino as a dark matter candidate can be achieved for a wide range of reheating temperatures and U (1 )B<SUB>-L</SUB> symmetry breaking scales. The possibility of realizing metastable cosmic strings in a grand unified theory setup is briefly discussed. We find that a successful reheating with nonthermal leptogenesis and gravitino dark matter restricts the allowed values of string tension to a narrow range 10<SUP>-9</SUP>≲G μ<SUB>C S</SUB>≲8 ×10<SUP>-6</SUP>, predicting a stochastic gravitational-wave background that lies within the 1 σ bounds of the recent NANOGrav 12.5-yr data, as well as within the sensitivity bounds of future GW experiments.",
+        "author": [
+          "Ahmed, Waqas",
+          "Junaid, M.",
+          "Nasri, Salah",
+          "Zubair, Umer"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-06-00",
+        "title": [
+          "Constraining the cosmic strings gravitational wave spectra in no-scale inflation with viable gravitino dark matter and nonthermal leptogenesis"
+        ],
+        "volume": "105",
+        "year": "2022",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 88,
+          "num_citations": 23
+        }
+      },
+      {
+        "bibcode": "2021JCAP...11..022M",
+        "abstract": "We present a successful realization of sneutrino tribrid inflation model based on a gauged U(1)_B-L extension of Minimal Supersymmetric Standard Model (MSSM). A single interaction term involving the B-L Higgs field and the right-handed neutrinos serves multiple purposes. These include the generation of heavy Majorana masses for the right-handed neutrinos to provide an explanation for the tiny neutrino masses via the seesaw mechanism, a realistic scenario for reheating and non-thermal leptogenesis with a reheat temperature as low as 10<SUP>6</SUP> GeV, and a successful realization of inflation with right-handed sneutrino as the inflaton. The matter parity which helps avoid rapid proton decay survives as a Z<SUB>2</SUB> subgroup of a U(1) R-symmetry. Depending on the choice of model parameters yields the following predicted range of the tensor to scalar ratio, 3 × 10<SUP>-11</SUP>≲ r≲ 7× 10<SUP>-4</SUP> (6 × 10<SUP>-7</SUP>≲ r ≲ 0.01), and the running of the scalar spectral index, -0.00022 ≲ dn_s/dln k ≲ -0.0026 (-0.00014 ≲ dn_s/dln k ≲ 0.005), along with the B-L breaking scale, 3 × 10<SUP>14</SUP>≲ M/ GeV≲ 5 × 10<SUP>15</SUP> (6 × 10<SUP>15</SUP>≲ M/ GeV≲ 2 × 10<SUP>16</SUP>), calculated at the central value of the scalar spectral index, n_s =0.966, reported by Planck 2018. The possibility of realizing metastable cosmic strings in a grand unified theory setup is briefly discussed. The metastable cosmic string network admits string tension values in the range 10<SUP>-8</SUP>≲ Gμ<SUB>s</SUB> ≲ 10<SUP>-6</SUP>, and predicts a stochastic gravitational wave background lying within the 2-σ bounds of the recent NANOGrav 12.5-yr data.",
+        "author": [
+          "Masoud, Muhammad Atif",
+          "Rehman, Mansoor Ur",
+          "Shafi, Qaisar"
+        ],
+        "keyword": [
+          "gravitational waves / sources",
+          "inflation",
+          "particle physics - cosmology connection",
+          "supersymmetry and cosmology",
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2021-11-00",
+        "title": [
+          "Sneutrino tribrid inflation, metastable cosmic strings and gravitational waves"
+        ],
+        "volume": "2021",
+        "year": "2021",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 70,
+          "num_citations": 31
+        }
+      },
+      {
+        "bibcode": "2020PhLB..81135914B",
+        "abstract": "We interpret the recent NANOGrav results in terms of a stochastic gravitational wave background from metastable cosmic strings. The observed amplitude of a stochastic signal can be translated into a range for the cosmic string tension and the mass of magnetic monopoles arising in theories of grand unification. In a sizable part of the parameter space, this interpretation predicts a large stochastic gravitational wave signal in the frequency band of ground-based interferometers, which can be probed in the very near future. We confront these results with predictions from successful inflation, leptogenesis and dark matter from the spontaneous breaking of a gauged B-L symmetry.",
+        "author": [
+          "Buchmuller, Wilfried",
+          "Domcke, Valerie",
+          "Schmitz, Kai"
+        ],
+        "keyword": [
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "Physics Letters B",
+        "pubdate": "2020-12-00",
+        "title": [
+          "From NANOGrav to LIGO with metastable cosmic strings"
+        ],
+        "volume": "811",
+        "year": "2020",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 39,
+          "num_citations": 133
+        }
+      },
+      {
+        "bibcode": "2020JCAP...11..019R",
+        "abstract": "We study the feasibility of realizing supersymmetric new inflation model, introduced by Senoguz and Shafi in [1], for SU(5) and flipped SU(5) models of grand unified theories (GUTs). This realization requires an additional U(1)<SUB>R</SUB> × Z<SUB>n</SUB> symmetry for its successful implementation. The standard model (SM) gauge singlet scalar components of 24<SUB>H</SUB> and 10<SUB>H</SUB> GUT Higgs superfields are respectively employed to realize successful inflation in SU(5) and flipped SU(5) models. The predictions of the various inflationary observables lie within the recent Planck bounds on the scalar spectral index, n<SUB>s</SUB>, for n &gt;= 5 in SU(5) model and for n &gt;= 6 in flipped SU(5) model. In particular, the tensor to scalar ratio r and the running of spectral index d n<SUB>s</SUB>/ d ln k are negligibly small and lie in the range, 10<SUP>-12</SUP> lesssim r lesssim 10<SUP>-8</SUP> and 10<SUP>-9</SUP> lesssim dn<SUB>s</SUB>/d ln k lesssim 10<SUP>-3</SUP>, for realistic values of n. In numerical estimation of the various predictions, we fix the gauge symmetry breaking scale, M, around 2 × 10<SUP>16</SUP> GeV . The issue of gauge coupling unification in R-symmetric SU(5) is evaded by adding vectorlike families with mass splitting within their multiplets. The dilution of monopoles beyond the observable limit is naturally achieved in the breaking of SU(5) gauge symmetry during inflation. A realistic scenario of reheating with non-thermal leptogenesis is employed for both models. The predicted range of reheat temperature within Planck bounds, 3 × 10<SUP>7</SUP> GeV lesssim T<SUB>r</SUB> lesssim 2 × 10<SUP>9</SUP> GeV, is safe from the gravitino problem for the gravitino mass, m<SUB>3/2</SUB> gtrsim 10 TeV . Finally, the U(1)<SUB>R</SUB> × Z<SUB>n</SUB> symmetry is also observed to play a crucial role in suppressing the various fast proton decay operators.",
+        "author": [
+          "Rehman, Mansoor Ur",
+          "Azeem Abid, Mian Muhammad",
+          "Ejaz, Amna"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2020-11-00",
+        "title": [
+          "New inflation in supersymmetric SU(5) and flipped SU(5) GUT models"
+        ],
+        "volume": "2020",
+        "year": "2020",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 78,
+          "num_citations": 15
+        }
+      },
+      {
+        "bibcode": "2013PhLB..725..327P",
+        "abstract": "The minimal supersymmetric (or F-term) hybrid inflation is defined by a unique renormalizable superpotential, fixed by a U (1) R-symmetry, and it employs a canonical Kähler potential. The inflationary potential takes into account both radiative and supergravity corrections, as well as an important soft supersymmetry breaking term, with a mass coefficient in the range (0.1- 10) TeV. The latter term assists in obtaining a scalar spectral index n<SUB>s</SUB> close to 0.96, as strongly suggested by the PLANCK and WMAP 9 yr measurements. The minimal model predicts that the tensor-to-scalar r is extremely tiny, of order 10<SUP>-12</SUP>, while the spectral index running, | dn<SUB>s</SUB> / dln k | ∼10<SUP>-4</SUP>. If inflation is associated with the breaking of a local U<SUB>(1) B - L</SUB> symmetry, the corresponding symmetry breaking scale M is (0.7- 1.6) ṡ10<SUP>15</SUP> GeV with n<SUB>s</SUB> ≃ 0.96. This scenario is compatible with the bounds on M from cosmic strings, formed at the end of inflation from B - L symmetry breaking. We briefly discuss non-thermal leptogenesis which is readily implemented in this class of models.",
+        "author": [
+          "Pallis, Constantinos",
+          "Shafi, Qaisar"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Extragalactic Astrophysics"
+        ],
+        "pub": "Physics Letters B",
+        "pubdate": "2013-10-00",
+        "title": [
+          "Update on minimal supersymmetric hybrid inflation in light of PLANCK"
+        ],
+        "volume": "725",
+        "year": "2013",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 63,
+          "num_citations": 49
+        }
+      },
+      {
+        "bibcode": "2003PhRvD..68j3514J",
+        "abstract": "We study cosmic string formation within supersymmetric grand unified theories (GUTs). We consider gauge groups having a rank between 4 and 8. We examine all possible spontaneous symmetry breaking patterns from the GUT down to the standard model gauge group. Assuming standard hybrid inflation, we select all the models which can solve the GUT monopole problem leading to baryogenesis after inflation, and are consistent with proton lifetime measurements. We conclude that, in all acceptable spontaneous symmetry breaking schemes, cosmic string formation is unavoidable. The strings which form at the end of inflation have a mass which is proportional to the inflationary scale. Sometimes a second network of strings form at a lower scale. Models based on gauge groups which have a rank greater than 6 can lead to more than one inflationary era; they all end by cosmic string formation.",
+        "author": [
+          "Jeannerot, Rachel",
+          "Rocher, Jonathan",
+          "Sakellariadou, Mairi"
+        ],
+        "keyword": [
+          "12.10.Dm",
+          "11.27.+d",
+          "98.80.Cq",
+          "Unified theories and models of strong and electroweak interactions",
+          "Extended classical solutions",
+          "cosmic strings domain walls texture",
+          "Particle-theory and field-theory models of the early Universe",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2003-11-00",
+        "title": [
+          "How generic is cosmic string formation in supersymmetric grand unified theories"
+        ],
+        "volume": "68",
+        "year": "2003",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 71,
+          "num_citations": 385
+        }
+      },
+      {
+        "bibcode": "2024PhRvD.109e5025F",
+        "abstract": "We present a comprehensive analysis of a supersymmetric SO(10) grand unified theory, which is broken to the Standard Model via the breaking of two intermediate symmetries. The spontaneous breaking of the first intermediate symmetry, B -L , leads to the generation of cosmic strings and right-handed neutrino masses and further to an observable cosmological background of gravitational waves and generation of light neutrino masses via type-I seesaw mechanism. Supersymmetry breaking manifests as sparticle masses below the B -L breaking but far above the electroweak scale due to proton decay limits. This naturally pushes the B -L breaking scale close to the grand unified theory scale, leading to the formation of metastable cosmic strings, which can provide a gravitational wave spectrum consistent with the recent pulsar timing arrays observation. We perform a detailed analysis of this model using two-loop renormalization group equations, including threshold corrections, to determine the symmetry-breaking scale consistent with the recent pulsar timing arrays signals such as NANOGrav 15-year data and testable by the next-generation limits on proton decay from Hyper-K and JUNO. Simultaneously, we find the regions of the model parameter space that can predict the measured quark and lepton masses and mixing, baryon asymmetry of our Universe, a viable dark matter candidate and can be tested by a combination of neutrinoless double beta decay searches and limits on the sum of neutrinos masses.",
+        "author": [
+          "Fu, Bowen",
+          "King, Stephen F.",
+          "Marsili, Luca",
+          "Pascoli, Silvia",
+          "Turner, Jessica",
+          "Zhou, Ye-Ling"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2024-03-00",
+        "title": [
+          "Testing realistic SO(10) SUSY GUTs with proton decay and gravitational waves"
+        ],
+        "volume": "109",
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 95,
+          "num_citations": 25
+        }
+      },
+      {
+        "bibcode": "1983PhRvD..28..679B",
+        "abstract": "The creation and evolution of energy-density perturbations are analyzed for the \"new inflationary universe\" scenario proposed by Linde, and Albrecht and Steinhardt. According to the scenario, the Universe underwent a strongly first-order phase transition and entered a \"de Sitter phase\" of exponential expansion during which all previously existing energy-density perturbations expanded to distance scales very large compared to the size of our observable Universe. The existence of an event horizon during the de Sitter phase gives rise to zero-point fluctuations in the scalar field φ, whose slowly growing expectation value signals the transition to the spontaneous-symmetry-breaking (SSB) phase of a grand unified theory (GUT). The fluctuations in φ are created on small distance scales and expanded to large scales, eventually giving rise to an almost scale-free spectrum of adiabatic density perturbations (the so-called Zel'dovich spectrum). When a fluctuation reenters the horizon (radius~=H<SUP>-1</SUP>) during the Friedmann-Robertson-Walker (FRW) phase that follows the exponential expansion, it has a perturbation amplitude δρρ|<SUB>H</SUB>=(4 or 25)HΔφφ˙(t<SUB>1</SUB>), where H is the Hubble constant during the de Sitter phase (H<SUP>-1</SUP> is the radius of the event horizon), φ˙(t<SUB>1</SUB>) is the mean value of φ˙ at the time (t<SUB>1</SUB>) that the wavelength of the perturbation expanded beyond the Hubble radius during the de Sitter epoch, Δφ is the fluctuation in φ at time t<SUB>1</SUB> on the same scale, and 4 (25) applies if the Universe is radiation (matter) dominated when the scale in question reenters the horizon. Scales larger than about 10<SUP>15</SUP>-10<SUP>16</SUP>M<SUB>solar</SUB> reenter the horizon when the Universe is matter dominated. Owing to the Sachs-Wolfe effect, these density perturbations give rise to temperature fluctuations in the microwave background which, on all angular scales &gt;&gt;1°, are δTT~=(15)HΔφφ˙(t<SUB>1</SUB>). The value of Δφ expected from de Sitter fluctuations is O(H2π). For the simplest model of \"new inflation,\" that based on an SU(5) GUT with Coleman-Weinberg SSB, φ˙(t<SUB>1</SUB>)&lt;&lt;H<SUP>2</SUP> so that δTT&gt;&gt;1-in obvious conflict with the large-scale isotropy of the microwave background. One remedy for this is a model in which the inflation occurs when φ˙(t<SUB>1</SUB>)&gt;&gt;H<SUP>2</SUP>. We analyze a supersymmetric model which has this feature, and show that a value of δρρ|<SUB>H</SUB>~=10<SUP>-4</SUP>-10<SUP>-3</SUP> on all observable scales is not implausible.",
+        "author": [
+          "Bardeen, James M.",
+          "Steinhardt, Paul J.",
+          "Turner, Michael S."
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "1983-08-00",
+        "title": [
+          "Spontaneous creation of almost scale-free density perturbations in an inflationary universe"
+        ],
+        "volume": "28",
+        "year": "1983",
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "INSPIRE",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 40,
+          "num_citations": 2098
+        }
+      },
+      {
+        "bibcode": "1993PhLB..315..331E",
+        "abstract": "We scan the complete parameter space of the supersymmetric standard model extended by a gauge singlet, which is compatible with the following constraints: universal soft supersymmetry breaking terms at the GUT scale, finite running Yukawa couplings up to the GUT scale and present experimental bounds on all sparticles, Higgs scalar and top quark. The full radiative corrections to the Higgs potential due to the top/stop sector are included. We find a lower limit on the gluino mass of 160 GeV, upper limits on the lightest neutral scalar Higgs mass dependent on m<SUB>top</SUB> and the size of the soft supersymmetry breaking terms, and the possibility of a Higgs scalar as light as 10 GeV, but with reduced couplings to the Z boson.",
+        "author": [
+          "Ellwanger, Ulrich",
+          "de Traubenberg, Michel Rausch",
+          "Savoy, Carlos A."
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "Physics Letters B",
+        "pubdate": "1993-10-00",
+        "title": [
+          "Particle spectrum in supersymmetric models with a gauge singlet"
+        ],
+        "volume": "315",
+        "year": "1993",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 38,
+          "num_citations": 230
+        }
+      },
+      {
+        "bibcode": "2020PhLB..80935764B",
+        "abstract": "The spontaneous breaking of U<SUB>(1) B - L</SUB> around the scale of grand unification can simultaneously account for hybrid inflation, leptogenesis, and neutralino dark matter, thus resolving three major puzzles of particle physics and cosmology in a single predictive framework. The B - L phase transition also results in a network of cosmic strings. If strong and electroweak interactions are unified in an SO (10) gauge group, containing U<SUB>(1) B - L</SUB> as a subgroup, these strings are metastable. In this case, they produce a stochastic background of gravitational waves that evades current pulsar timing bounds, but features a flat spectrum with amplitude h<SUP>2</SUP>Ω<SUB>GW</SUB> ∼10<SUP>-8</SUP> at interferometer frequencies. Ongoing and future LIGO observations will hence probe the scale of B - L breaking.",
+        "author": [
+          "Buchmuller, Wilfried",
+          "Domcke, Valerie",
+          "Murayama, Hitoshi",
+          "Schmitz, Kai"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "pub": "Physics Letters B",
+        "pubdate": "2020-10-00",
+        "title": [
+          "Probing the scale of grand unification with gravitational waves"
+        ],
+        "volume": "809",
+        "year": "2020",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 45,
+          "num_citations": 95
+        }
+      },
+      {
+        "bibcode": "2006JCAP...09..007B",
+        "abstract": "We point out that the inclusion of a string component contributing around 5% to the CMB power spectrum amplitude on large scales can increase the preferred value of the spectral index n<SUB>s</SUB> of density fluctuations measured by CMB experiments. While this finding applies to any cosmological scenario involving strings, we consider in particular models of supersymmetric hybrid inflation, which predict n_{\\mathrm {s}} \\gtrsim <P />0.98 , in tension with the CMB data when strings are not included. Using MCMC analysis we constrain the parameter space allowed for F- and D-term inflation. For the F-term model, using minimal supergravity corrections, we find that logκ = -2.34 ± 0.38 and M = (0.518 ± 0.059) × 10<SUP>16</SUP> GeV. The inclusion of non-minimal supergravity corrections can modify these values somewhat. In the corresponding analysis for D-term inflation, we find logκ = -4.24 ± 0.19 and m<SUB>FI</SUB> = (0.245 ± 0.031) × 10<SUP>16</SUP> GeV. Under the assumption that these models are correct, these results represent precision measurements of important parameters of a grand unified theory. We consider the possible uncertainties in our measurements and additional constraints on the scenario from the stochastic background of gravitational waves produced by the strings. The best fitting model predicts a B-mode polarization signal ap0.3 μK rms peaking at \\ell \\approx 1000 . This is of comparable amplitude to the expected signal due to gravitational lensing of the adiabatic E-mode signal on these scales.",
+        "author": [
+          "Battye, Richard A.",
+          "Garbrecht, Björn",
+          "Moss, Adam"
+        ],
+        "keyword": [
+          "Astrophysics"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2006-09-00",
+        "title": [
+          "Constraints on supersymmetric hybrid inflation models"
+        ],
+        "volume": "2006",
+        "year": "2006",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 83,
+          "num_citations": 113
+        }
+      },
+      {
+        "bibcode": "2013PhRvD..87k5028B",
+        "abstract": "Models of natural supersymmetry seek to solve the little hierarchy problem by positing a spectrum of light Higgsinos ≲200-300GeV and light top squarks ≲600GeV along with very heavy squarks and TeV-scale gluinos. Such models have low electroweak fine-tuning and satisfy the LHC constraints. However, in the context of the minimal supersymmetric standard model, they predict too low a value of m<SUB>h</SUB>, are frequently in conflict with the measured b→sγ branching fraction, and the relic density of thermally produced Higgsino-like weakly interacting massive particles (WIMPs) falls well below dark matter measurements. We propose a framework dubbed radiative natural supersymmetry (RNS), which can be realized within the minimal supersymmetric standard model (avoiding the addition of extra exotic matter) and which maintains features such as gauge coupling unification and radiative electroweak symmetry breaking. The RNS model can be generated from supersymmetry (SUSY) grand unified theory type models with nonuniversal Higgs masses. Allowing for high-scale soft SUSY breaking Higgs mass m<SUB>H<SUB>u</SUB></SUB>&gt;m<SUB>0</SUB> leads to automatic cancellations during renormalization group running and to radiatively-induced low fine-tuning at the electroweak scale. Coupled with large mixing in the top-squark sector, RNS allows for fine-tuning at the 3%-10% level with TeV-scale top squarks and a 125 GeV light Higgs scalar h. The model allows for at least a partial solution to the SUSY flavor, CP, and gravitino problems since first-/second-generation scalars (and the gravitino) may exist in the 10-30 TeV regime. We outline some possible signatures for RNS at the LHC, such as the appearance of low invariant mass opposite-sign isolated dileptons from gluino cascade decays. The smoking gun signature for RNS is the appearance of light Higgsinos at a linear e<SUP>+</SUP>e<SUP>-</SUP> collider. If the strong CP problem is solved by the Peccei-Quinn mechanism, then RNS naturally accommodates mixed axion-Higgsino cold dark matter, where the light Higgsino-like WIMPs—which in this case make up only a fraction of the measured relic abundance—should be detectable at upcoming WIMP detectors.",
+        "author": [
+          "Baer, Howard",
+          "Barger, Vernon",
+          "Huang, Peisi",
+          "Mickelson, Dan",
+          "Mustafayev, Azar",
+          "Tata, Xerxes"
+        ],
+        "keyword": [
+          "14.80.Ly",
+          "11.30.Pb",
+          "12.60.Jv",
+          "Supersymmetric partners of known particles",
+          "Supersymmetry",
+          "Supersymmetric models",
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2013-06-00",
+        "title": [
+          "Radiative natural supersymmetry: Reconciling electroweak fine-tuning and the Higgs boson mass"
+        ],
+        "volume": "87",
+        "year": "2013",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 139,
+          "num_citations": 218
+        }
+      },
+      {
+        "bibcode": "2022JCAP...06..027A",
+        "abstract": "We realize smooth hybrid inflation in the framework of supersymmetric SU(5) × U(1)<SUB>χ</SUB> ⊂ SO(10) model which provides a natural solution to the monopole problem appearing in the spontaneous symmetry breaking of SU(5). The breaking of U(1)<SUB>χ</SUB> symmetry leaves a residual discrete Z <SUB>2</SUB> symmetry, that serves as the MSSM matter parity, realizing the possibility of the lightest supersymmetric particle as a cold dark matter candidate. The d = 5 proton lifetime for the decay p ⟶ K <SUP>+</SUP>ν̅, mediated by color-triplet Higgsinos is found to satisfy current experimental bounds if split-high scale SUSY scenario is employed. We show that with minimal Kähler potential, the soft supersymmetry breaking terms play a vital rôle in bringing the scalar spectral index n<SUB>s</SUB> within the Planck's latest bounds. In a minimal Kähler potential setup, small values of tensor-to-scalar ratio r ≲ 3.5 × 10<SUP>-7</SUP> are obtained, whereas the gravitino mass turns out to be in the range that favors PeV scale SUSY but is not sufficiently high to avoid the d = 5 proton decay. A non-minimal Kähler potential including higher order corrections is required to realize successful inflation with central value of scalar spectral index n<SUB>s</SUB> = 0.9655, large tensor modes r ≲ 0.056 and a low reheat temperature (3 × 10<SUP>6</SUP> ≲ T<SUB>r</SUB> ≲ 6.5 × 10<SUP>7</SUP>) GeV consistent with leptogenesis and baryogenesis.",
+        "author": [
+          "Ahmed, Waqas",
+          "Karozas, Athanasios",
+          "Leontaris, George K.",
+          "Zubair, Umer"
+        ],
+        "keyword": [
+          "inflation",
+          "supersymmetry and cosmology",
+          "baryon asymmetry",
+          "big bang nucleosynthesis",
+          "High Energy Physics - Phenomenology",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2022-06-00",
+        "title": [
+          "Smooth hybrid inflation with low reheat temperature and observable gravity waves in SU(5) × U(1)<SUB>χ</SUB> super-GUT"
+        ],
+        "volume": "2022",
+        "year": "2022",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 53,
+          "num_citations": 7
+        }
+      },
+      {
+        "bibcode": "2021JCAP...12..006B",
+        "abstract": "A metastable cosmic-string network is a generic consequence of many grand unified theories (GUTs) when combined with cosmic inflation. Metastable cosmic strings are not topologically stable, but decay on cosmic time scales due to pair production of GUT monopoles. This leads to a network consisting of metastable long strings on superhorizon scales as well as of string loops and segments on subhorizon scales. We compute for the first time the complete stochastic gravitational-wave background (SGWB) arising from all these network constituents, including several technical improvements to both the derivation of the loop and segment contributions. We find that the gravitational waves emitted by string loops provide the main contribution to the gravitational-wave spectrum in the relevant parameter space. The resulting spectrum is consistent with the tentative signal observed by the NANOGrav and Parkes pulsar timing collaborations for a string tension of G <SUB>μ</SUB> ~ 10<SUP>-11…-7</SUP> and has ample discovery space for ground- and space-based detectors. For GUT-scale string tensions, G <SUB>μ</SUB> ~ 10<SUP>-8…-7</SUP>, metastable strings predict a SGWB in the LIGO-Virgo-KAGRA band that could be discovered in the near future.",
+        "author": [
+          "Buchmüller, Wilfried",
+          "Domcke, Valerie",
+          "Schmitz, Kai"
+        ],
+        "keyword": [
+          "Cosmic strings",
+          "domain walls",
+          "monopoles",
+          "primordial gravitational waves (theory)",
+          "particle physics - cosmology connection",
+          "gravitational waves / experiments",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2021-12-00",
+        "title": [
+          "Stochastic gravitational-wave background from metastable cosmic strings"
+        ],
+        "volume": "2021",
+        "year": "2021",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 60,
+          "num_citations": 88
+        }
+      },
+      {
+        "bibcode": "1993PhLB..318..447D",
+        "abstract": "We show that if there is a realistic 4D string, the dilaton and moduli supermultiplets will generically acquire a small mass ~ O(m<SUB>3/2</SUB>), providing the only vacuum-independent evidence of low-energy physics in string theory beyond the supersymmetric standard model. The only assumptions behind this result are (i) softly broken supersymmetry at low energies with zero cosmological constant, (ii) these particles interact with gravitational strength and the scalar components have a flat potential in perturbation theory, which are well-known properties of string theories. (iii) They acquire a VEV of the order of the Planck scale (as required for the correct value of the gauge coupling constants and the expected compactification scale) after supersymmetry gets broken. We explore the cosmological implications of these particles. Similar to the gravitino, the fermionic states may overclose the Universe if they are stable or destroy nucleosynthesis if they decay unless their masses belong to a certain range or inflation dilutes them. For the scalar states it is known that the problem cannot be entirely solved by inflation, since oscillations around the minimum of the potential, rather than thermal production, are the main source for their energy and can lead to a huge entropy generation at late times. We discuss some possible ways to alleviate this entropy problem, that favour low-temperature baryogenesis, and also comment on the possible role of these particles as dark matter candidates or as sources of the baryon asymmetry through their decay.",
+        "author": [
+          "de Carlos, B.",
+          "Casas, J. A.",
+          "Quevedo, F.",
+          "Roulet, E."
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "Physics Letters B",
+        "pubdate": "1993-12-00",
+        "title": [
+          "Model-independent properties and cosmological implications of the dilaton and moduli sectors of 4D strings"
+        ],
+        "volume": "318",
+        "year": "1993",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 40,
+          "num_citations": 505
+        }
+      },
+      {
+        "bibcode": "2009JCAP...02..002B",
+        "abstract": "Supersymmetric models with t-b-τ Yukawa unification at M<SUB>GUT</SUB> qualitatively predict a sparticle mass spectrum including first and second generation scalars at the 3-15 TeV scale, third generation scalars at the (few) TeV scale and gluinos in the sub-TeV range. The neutralino relic density in these models typically turns out to lie far above the measured dark matter abundance, prompting the suggestion that instead dark matter is composed of an axion/axino mixture. We explore the axion and thermal and non-thermal axino dark matter abundance in Yukawa-unified SUSY models. We find in this scenario that (i) rather large values of Peccei-Quinn symmetry breaking scale f<SUB>a</SUB> ~ 10<SUP>12</SUP> GeV are favored and (ii) rather large values of GUT scale scalar masses ~ 10-15 TeV allow for the re-heat temperature T<SUB>R</SUB> of the universe to be T<SUB>R</SUB> gap 10<SUP>6</SUP> GeV. This allows in turn a solution to the gravitino/Big Bang Nucleosynthesis problem while also allowing for baryogenesis via non-thermal leptogenesis. The large scalar masses for Yukawa-unified models are also favored by data on b → sγ and B<SUB>s</SUB> → μ<SUP>+</SUP>μ<SUP>-</SUP> decay. Testable consequences from this scenario include a possible axion detection at axion search experiments, but null results from direct and indirect WIMP search experiments.",
+        "author": [
+          "Baer, Howard",
+          "Haider, Markus",
+          "Kraml, Sabine",
+          "Sekmen, Sezen",
+          "Summy, Heaya"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "Astrophysics"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2009-02-00",
+        "title": [
+          "Cosmological consequences of Yukawa-unified SUSY with mixed axion/axino cold and warm dark matter"
+        ],
+        "volume": "2009",
+        "year": "2009",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 146,
+          "num_citations": 72
+        }
+      },
+      {
+        "bibcode": "2023JCAP...01..019A",
+        "abstract": "We implement shifted hybrid inflation in the framework of supersymmetric SU(5) × U(1)<SUB>χ</SUB> GUT model which provides a natural solution to the monopole problem appearing in the spontaneous symmetry breaking of SU(5). The U(1)<SUB>χ</SUB> symmetry is radiatevely broken after the end of inflation at an intermediate scale, yielding topologically stable cosmic strings. The Planck's bound on the gravitational interaction strength of these strings, characterized by G<SUB>N</SUB>μ<SUB>s</SUB> are easily satisfied with the U(1)<SUB>χ</SUB> symmetry breaking scale which depends on the initial boundary conditions at the GUT scale. The dimension-5 proton lifetime for the decay p → K <SUP>+</SUP> ν̅, mediated by color-triplet Higgsinos is found to satisfy current Super-Kamiokande bounds for SUSY breaking scale M <SUB>SUSY</SUB> ≳ 12.5 TeV. We show that with minimal Kähler potential, the soft supersymmetry breaking terms play a vital role in bringing the scalar spectral index n_s within the Planck's latest bounds, although with small tensor modes r ≲ 2.5 × 10<SUP>-6</SUP> and SU(5) gauge symmetry breaking scale in the range (2 × 10<SUP>15</SUP>≲ M<SUB>α</SUB> ≲ 2 × 10<SUP>16</SUP>) GeV. By employing non-minimal terms in the Kähler potential, the tensor-to-scalar ratio approaches observable values (r ≲ 10<SUP>-3</SUP>) with the SU(5) symmetry breaking scale M<SUB>α</SUB> ≃ 2 × 10<SUP>16</SUP> GeV.",
+        "author": [
+          "Ahmed, Waqas",
+          "Zubair, Umer"
+        ],
+        "keyword": [
+          "inflation",
+          "supersymmetry and cosmology",
+          "Cosmic strings",
+          "domain walls",
+          "mon­opoles",
+          "High Energy Physics - Phenomenology",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2023-01-00",
+        "title": [
+          "Radiative symmetry breaking, cosmic strings and observable gravity waves in 𝖴(1)<SUB>𝖱</SUB> symmetric 𝖲𝖴(5) × 𝖴(1)<SUB>χ</SUB>"
+        ],
+        "volume": "2023",
+        "year": "2023",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 87,
+          "num_citations": 5
+        }
+      },
+      {
+        "bibcode": "2007JCAP...08..019C",
+        "abstract": "We study the spectrum, couplings and cosmological and astrophysical implications of the moduli fields for the class of Calabi Yau IIB string compactifications for which moduli stabilisation leads to an exponentially large volume \\mathcal {V} \\sim 10^{15} <P />l_{\\mathrm {s}}^6 and an intermediate string scale m<SUB>s</SUB>~10<SUP>11</SUP> GeV, with TeV-scale observable supersymmetry breaking. All Kähler moduli except for the overall volume are heavier than the susy (supersymmetry) breaking scale, with m~ln(M<SUB>P</SUB>/m<SUB>3/2</SUB>)m<SUB>3/2</SUB>~(ln(M<SUB>P</SUB>/m<SUB>3/2</SUB>))<SUP>2</SUP>m<SUB>susy</SUB>~500 TeV and, contrary to standard expectations, have matter couplings suppressed only by the string scale rather than the Planck scale. These decay to matter early in the history of the universe, with a reheat temperature T~10<SUP>7</SUP> GeV, and are free from the cosmological moduli problem (CMP). The heavy moduli have a branching ratio to gravitino pairs of 10<SUP>-30</SUP> and do not suffer from the gravitino overproduction problem. The overall volume modulus is a distinctive feature of these models and is an M<SUB>planck</SUB>-coupled scalar of mass m~1 MeV and subject to the CMP. A period of thermal inflation may help relax this problem. This field has a lifetime τ~10<SUP>24</SUP> s and can contribute to dark matter. It may be detected through its decays to γγ or e<SUP>+</SUP>e<SUP>-</SUP>. If accessible the e<SUP>+</SUP>e<SUP>-</SUP> decay mode dominates, with \\mathrm {Br}(\\chi \\to \\gamma \\gamma) suppressed by a factor (ln(M<SUB>P</SUB>/m<SUB>3/2</SUB>))<SUP>2</SUP>. We consider the potential for detection of this field through different astrophysical sources: the Milky Way halo, the diffuse cosmic background and nearby galaxy clusters and find that the observed gamma ray background constrains \\Omega_{\\chi } \\lesssim <P />10^{-4} . The decays of this field may generate the 511 keV emission line from the galactic centre observed by INTEGRAL/SPI.",
+        "author": [
+          "Conlon, Joseph P.",
+          "Quevedo, Fernando"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "Astrophysics",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2007-08-00",
+        "title": [
+          "Astrophysical and cosmological implications of large volume string compactifications"
+        ],
+        "volume": "2007",
+        "year": "2007",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 80,
+          "num_citations": 110
+        }
+      },
+      {
+        "bibcode": "2024JCAP...01..049A",
+        "abstract": "A realistic model of SU(5) × U(1)<SUB>χ</SUB>, embedded in SO(10) supersymmetric grand unified theory, is investigated for the emergence of a metastable cosmic string network. This network eventually decays via the Schwinger production of monopole-antimonopole pairs, subsequently generating a stochastic gravitational wave background that is compatible with the NANOGrav 15-year data. In order to avoid the monopole problem in the breaking of both SO(10) and SU(5), a non-minimal Higgs inflation scenario is incorporated. The radiative breaking of the U(1)<SUB>χ</SUB> symmetry at a slightly lower scale plays a pivotal role in aligning the string tension parameter with the observable range. The resultant gravitational wave spectrum not only accounts for the signal observed in the most recent pulsar timing array (PTA) experiments but is also accessible to both current and future ground-based and space-based experiments.",
+        "author": [
+          "Ahmed, Waqas",
+          "Rehman, Mansoor Ur",
+          "Zubair, Umer"
+        ],
+        "keyword": [
+          "inflation",
+          "particle physics - cosmology connection",
+          "Cosmic strings",
+          "domain walls",
+          "monopoles",
+          "leptogenesis",
+          "High Energy Physics - Phenomenology",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2024-01-00",
+        "title": [
+          "Probing stochastic gravitational wave background from SU(5) × U(1)<SUB>χ</SUB> strings in light of NANOGrav 15-year data"
+        ],
+        "volume": "2024",
+        "year": "2024",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 86,
+          "num_citations": 27
+        }
+      },
+      {
+        "bibcode": "1994PhRvD..49.4908B",
+        "abstract": "We examine the spectrum of supersymmetric particles predicted by grand unified theoretical (GUT) models where the electroweak symmetry breaking is accomplished radiatively. We evolve the soft-supersymmetry-breaking parameters according to the renormalization group equations (RGE). The minimization of the Higgs potential is conveniently described by means of tadpole diagrams. We present complete one-loop expressions for these minimization conditions, including contributions from the matter and the gauge sectors. We concentrate on the low tanβ fixed point region (that provides a natural explanation of a large top quark mass) for which we find solutions to the RGE satisfying both experimental bounds and fine-tuning criteria. We also find that the constraint from the consideration of the lightest supersymmetric particle as the dark matter of the Univerese is accommodated in much of parameter space where the lightest neutralino is predominantly gaugino. The supersymmetric mass spectrum displays correlations that are model independent over much of the GUT parameter space.",
+        "author": [
+          "Barger, V.",
+          "Berger, M. S.",
+          "Ohmann, P."
+        ],
+        "keyword": [
+          "12.60.Jv",
+          "11.30.Pb",
+          "12.15.Ff",
+          "14.80.Ly",
+          "Supersymmetric models",
+          "Supersymmetry",
+          "Quark and lepton masses and mixing",
+          "Supersymmetric partners of known particles",
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "1994-05-00",
+        "title": [
+          "Supersymmetric particle spectrum"
+        ],
+        "volume": "49",
+        "year": "1994",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 100,
+          "num_citations": 358
+        }
+      },
+      {
+        "bibcode": "1993NuPhB.410..188D",
+        "abstract": "If the present baryon asymmetry is due to a Planck or GUT-scale matter asymmetry then baryon- or lepton-number violating processes are constrained by the condition that they do not subsequently erase this asymmetry. We present a revision of the analysis of sphaleron baryon-number violating processes in the standard model including lepton-mass effects. We find the surprising result that a GUT-scale matter asymmetry can survive the B and L violating sphaleron interactions even though ( B - L) is conserved and equals zero for all temperatures. We extend the analysis to cover the minimal supersymmetric standard model (MSSM) and also derive the constraints on the R-parity violating couplings in extensions of the MSSM. In the case of the baryon number violating dimension 4 operators we find, contrary to current wisdom, that the resulting bounds can be avoided completely because of a residual lepton-flavour number conservation; in the case of lepton number violating operators we find the bounds are flavour dependent and can be avoided completely in definite flavour channels. We also consider how the bounds are modified in the case where there is a Grand Unified extension of the supersymmetric model which introduces new lepton flavour violating couplings.",
+        "author": [
+          "Dreiner, H.",
+          "Ross, G. G."
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "Nuclear Physics B",
+        "pubdate": "1993-12-00",
+        "title": [
+          "Sphaleron erasure of primordial baryogenesis"
+        ],
+        "volume": "410",
+        "year": "1993",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 45,
+          "num_citations": 217
+        }
+      },
+      {
+        "bibcode": "2006JHEP...12..038G",
+        "abstract": "We analyze the cosmological implications of F-term hybrid inflation with a subdominant Fayet-Iliopoulos D-term whose presence explicitly breaks a D-parity in the inflaton-waterfall sector. This scenario of inflation, which is called F<SUB>D</SUB>-term hybrid model for brevity, can naturally predict lepton number violation at the electroweak scale, by tying the μ-parameter of the MSSM to an SO(3)-symmetric Majorana mass m<SUB>N</SUB>, via the vacuum expectation value of the inflaton field. We show how a negative Hubble-induced mass term in a next-to-minimal extension of supergravity helps to accommodate the present CMB data and considerably weaken the strict constraints on the theoretical parameters, resulting from cosmic string effects on the power spectrum P<SUB>Script R</SUB>. The usual gravitino overabundance constraint may be significantly relaxed in this model, once the enormous entropy release from the late decays of the ultraheavy waterfall gauge particles is properly considered. As the Universe enters a second thermalization phase involving a very low reheat temperature, which might be as low as about 0.3 TeV, thermal electroweak-scale resonant leptogenesis provides a viable mechanism for successful baryogenesis, while thermal right-handed sneutrinos emerge as new possible candidates for solving the cold dark matter problem. In addition, we discuss grand unified theory realizations of F<SUB>D</SUB>-term hybrid inflation devoid of cosmic strings and monopoles, based on the complete breaking of an SU(2)<SUB>X</SUB> subgroup. The F<SUB>D</SUB>-term hybrid model offers rich particle-physics phenomenology, which could be probed at high-energy colliders, as well as in low-energy experiments of lepton flavour or number violation.",
+        "author": [
+          "Garbrecht, Björn",
+          "Pallis, Constantinos",
+          "Pilaftsis, Apostolos"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "Astrophysics"
+        ],
+        "pub": "Journal of High Energy Physics",
+        "pubdate": "2006-12-00",
+        "title": [
+          "Anatomy of F<SUB>D</SUB>-term hybrid inflation"
+        ],
+        "volume": "2006",
+        "year": "2006",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 143,
+          "num_citations": 77
+        }
+      },
+      {
+        "bibcode": "2001PhRvD..64b3508G",
+        "abstract": "The thermal history of the universe before the epoch of nucleosynthesis is unknown. The maximum temperature in the radiation-dominated era, which we will refer to as the reheat temperature, may have been as low as 0.7 MeV. In this paper we show that a low reheat temperature has important implications for many topics in cosmology. We show that weakly interacting massive particles (WIMP's) may be produced even if the reheat temperature is much smaller than the freeze-out temperature of the WIMP, and that the dependence of the present abundance on the mass and the annihilation cross section of the WIMP differs drastically from familiar results. We reexamine predictions of the relic abundance and resulting model constraints of supersymmetric dark matter, axions, massive neutrinos, and other dark matter candidates, nucleosynthesis constraints on decaying particles, and leptogenesis by decay of superheavy particles. We find that the allowed parameter space of supersymmetric models is altered, removing the usual bounds on the mass spectrum; the cosmological bound on massive neutrinos is drastically changed, ruling out Dirac (Majorana) neutrino masses m<SUB>ν</SUB> only in the range 33 keV &lt;~m<SUB>ν</SUB>&lt;~6 (5) MeV, which is significantly smaller from the standard disallowed range 94 eV &lt;~m<SUB>ν</SUB>&lt;~2 GeV (this implies that massive neutrinos may still play the role of either warm or cold dark matter); the cosmological upper bound on the Peccei-Quinn scale may be significantly increased to 10<SUP>16</SUP> GeV from the usually cited limit of about 10<SUP>12</SUP> GeV; and that efficient out-of-equilibrium grand unified theory GUT baryogenesis and/or leptogenesis can take place even if the reheat temperature is much smaller than the mass of the decaying superheavy particle.",
+        "author": [
+          "Giudice, Gian Francesco",
+          "Kolb, Edward W.",
+          "Riotto, Antonio"
+        ],
+        "keyword": [
+          "98.80.Cq",
+          "Particle-theory and field-theory models of the early Universe",
+          "High Energy Physics - Phenomenology",
+          "Astrophysics"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2001-07-00",
+        "title": [
+          "Largest temperature of the radiation era and its cosmological implications"
+        ],
+        "volume": "64",
+        "year": "2001",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 68,
+          "num_citations": 617
+        }
+      },
+      {
+        "bibcode": "2023JHEP...05..011A",
+        "abstract": "We analyse the shifted hybrid inflation in a no-scale supersymmetric SU(5) GUT model which naturally circumvents the monopole problem. The no-scale framework is derivable as the effective field theory of the supersymmetric (SUSY) compactifications of string theory, and yields a flat potential with no anti-de Sitter vacua, resolving the η problem. The model predicts a scalar spectral tilt n<SUB>s</SUB> compatible with the most recent measurements by the Planck satellite, while also accommodating large values of the tensor-to-scalar ratio r (~ 0.0015), potentially measurable by the near-future experiments. Moreover, the proton decay lifetime in the presence of the dimension-5 operators is found to lie above the current limit imposed by the Super-Kamiokande experiment. A realistic scenario of reheating and non-thermal leptogenesis is employed, wherein the reheating temperature T<SUB>r</SUB> lies in the (2 × 10<SUP>6</SUP> ≲ T<SUB>r</SUB> ≲ 2 × 10<SUP>9</SUP>) GeV range, and at the same time realizing gravitino as a viable dark matter (DM) candidate.",
+        "author": [
+          "Ahmed, Waqas",
+          "Moosa, Muhammad",
+          "Munir, Shoaib",
+          "Zubair, Umer"
+        ],
+        "keyword": [
+          "Baryo-and Leptogenesis",
+          "Grand Unification",
+          "Supergravity Models",
+          "Supersymmetry",
+          "High Energy Physics - Phenomenology",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Theory"
+        ],
+        "pub": "Journal of High Energy Physics",
+        "pubdate": "2023-05-00",
+        "title": [
+          "Observable r, gravitino dark matter, and non-thermal leptogenesis in no-scale supergravity"
+        ],
+        "volume": "2023",
+        "year": "2023",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "[citations]": {
+          "num_references": 66,
+          "num_citations": 5
+        }
+      },
+      {
+        "bibcode": "2005hep.ph...12170S",
+        "abstract": "A gauged U(1)_B-L symmetry predicts three right handed handed neutrinos and its spontaneous breaking automatically yields the seesaw mechanism. In a supersymmetric setting this breaking can be nicely linked with inflation to yield deltaT/ T proportional to (M_B-L / M_P)^2, where M_B-L (M_P) denote the B-L breaking (Planck) scale. Thus M_B-L is estimated to be of order 10^16 GeV, and the heaviest right handed neutrino mass is less than or of order 10^14 GeV. A second right handed neutrino turns out to have a mass of order 10-10^2 T_r, where T_r (&lt;~10^9 GeV) denotes the reheat temperature. A U(1) R symmetry plays an essential role in implementing inflation and leptogenesis, resolving the MSSM mu problem and eliminating dimension five nucleon decay. An unbroken Z_2 subgroup plays the role of matter parity. The scalar spectral index n_s=0.99+-0.01 for the simplest models, while in smooth hybrid inflation n_s&gt;=0.97. The tensor to scalar ratio r is negligible, and dn_s/dlnk&lt;~10^-3.",
+        "author": [
+          "Senoguz, V. N.",
+          "Shafi, Q."
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2005-12-00",
+        "title": [
+          "U(1)_B-L: Neutrino Physics and Inflation"
+        ],
+        "year": "2005",
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "[citations]": {
+          "num_references": 52,
+          "num_citations": 25
+        }
+      }
+    ]
+  }
+}
