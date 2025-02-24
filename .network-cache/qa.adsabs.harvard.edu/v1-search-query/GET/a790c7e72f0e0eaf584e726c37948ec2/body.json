@@ -1,0 +1,27 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 44,
+    "params": {
+      "q": "bibcode:2022PhRvD.105j3539A",
+      "fl": "title",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67bcabc2-69b05f3a32e17abd6062d970",
+      "boost": "add(doctype_boost, 1)",
+      "rows": "10",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 1,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "title": [
+          "μ -hybrid inflation, gravitino dark matter, and stochastic gravitational wave background from cosmic strings"
+        ]
+      }
+    ]
+  }
+}

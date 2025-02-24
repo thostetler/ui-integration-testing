@@ -1,0 +1,26 @@
+{
+  "url": "https://qa.adsabs.harvard.edu/v1/search/query?fl=bibcode%2Cdata%2Cdoctype%2Cdoi%2Cesources%2Cfirst_author%2Cgenre%2Cisbn%2Cissn%2Cissue%2Cpage%2Cproperty%2Cpub%2Ctitle%2Cvolume%2Cyear%2Clinks_data%2Cpublisher&q=identifier%3A2022PhRvD.105j3539A",
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "date": "Mon, 24 Feb 2025 17:26:28 GMT",
+    "content-type": "application/json",
+    "content-length": "1615",
+    "connection": "keep-alive",
+    "permissions-policy": "browsing-topics=()",
+    "x-frame-options": "SAMEORIGIN",
+    "x-content-type-options": "nosniff",
+    "content-security-policy": "default-src 'self'; object-src 'none'",
+    "strict-transport-security": "max-age=31556926; includeSubDomains",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "x-ratelimit-limit": "5000",
+    "x-ratelimit-remaining": "4994",
+    "x-ratelimit-reset": "1740504387",
+    "retry-after": "86398",
+    "access-control-allow-origin": "http://0.0.0.0:8000",
+    "access-control-allow-credentials": "true",
+    "vary": "Origin, Cookie",
+    "set-cookie": "session=.eJwlzktKA0EQgOG79NpFVz-mq-cAQlBEUYi4GarrkYTJRJnHQsS7G_UA_8_35QabdTm63ui86I0bTuJ6hxSNk4cuGUcsJsmqoZWUG5RckiXl6j0186lhgwCZipgJhCbsrQpBQ8pcqVRIkKVQELWusVZgkOC9cJdbYMEihbVxxx5DbiXG2NwV8qHzRBe9rK5f5-2Xti06__sokAcM4BNgYsAKYtWrhkYQU4jX_p229Tjw-fR3cE_V73DaL9PzLt69ja8kuN0fEF8eRt09Qv28ncq4H6v7_gH6r1J3.Z7yrxA.2vzPNlAfzyRlS-VTa9-c1uWzcUE; Expires=Tue, 24 Feb 2026 23:26:28 GMT; Secure; HttpOnly; Path=/; SameSite=Lax",
+    "x-envoy-upstream-service-time": "2506"
+  }
+}

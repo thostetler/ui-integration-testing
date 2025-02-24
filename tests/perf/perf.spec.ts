@@ -62,7 +62,7 @@ const perfTest = async (
   performance.sampleEnd(`${prefix}.TTRR`);
 };
 
-test.describe('scixplorer.org', () => {
+test.describe('scixplorer.org', { tag: '@perf' }, () => {
   test.use({ baseURL: 'https://dev.scixplorer.org' });
 
   // scix selectors

@@ -27,9 +27,6 @@ To set up and run the tests locally:
    pnpm test:watch
 ```
 
-In order to do the account creation tests, you'll need to create a mailslurp API key and set it in the `MAILSLURP_API_KEY` environment variable.
-https://docs.mailslurp.com/api/
-
 For the other account login tests make sure you have a good test account created in the environment and add the `TEST_EMAIL` and `TEST_PASSWORD` environment variables.
 
 The tests watch for these variables and will be skipped if they are not set.
@@ -49,3 +46,15 @@ TEST_EMAIL_ALT=myemail+testalt@gmail.com
 TEST_PASSWORD=yourpassword
 ```
 These shouldn't be accounts you use for anything else, as the settings/libraries will be changed/deleted during the tests.
+
+## Account Registration tests (those requiring emails)
+
+### Create a Google project in Google console
+1. Go to https://console.developers.google.com/
+2. Create a new project
+3. Add the Gmail API to the project
+4. Create credentials for the project
+5. Download the credentials as a JSON file, save this in the `gmail` directory
+6. Set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable to the path of the JSON file
+
+

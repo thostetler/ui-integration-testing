@@ -1,0 +1,69 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 19,
+    "params": {
+      "facet.field": "author_facet_hier",
+      "fl": "id",
+      "start": "0",
+      "sort": "date desc,bibcode desc",
+      "rows": "1",
+      "p_": "0",
+      "facet.limit": "20",
+      "q": "bibcode:2005MNRAS.364.1105S OR bibcode:2003SIAMR..45..167N OR bibcode:2003PASP..115..763C OR bibcode:2003Natur.424..839V OR bibcode:2003MNRAS.344.1000B OR bibcode:2003AnPhy.303....2K OR bibcode:2002PhLB..545...23C OR bibcode:2001Natur.414..338G OR bibcode:2001MNRAS.322..231K OR bibcode:2001MachL..45....5B OR bibcode:2001JGR...106.7183T OR bibcode:2000PhRvL..85.3966P",
+      "facet.prefix": "0/",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67a6c7f5-7b65d002012e49fd1df0f1bb",
+      "boost": "add(doctype_boost, 1)",
+      "facet.mincount": "1",
+      "facet": "true",
+      "wt": "json",
+      "facet.offset": "0"
+    }
+  },
+  "response": {
+    "numFound": 12,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "7600500"
+      }
+    ]
+  },
+  "facet_counts": {
+    "facet_queries": {},
+    "facet_fields": {
+      "author_facet_hier": [
+        "0/Breiman, L",
+        1,
+        "0/Bruzual, G",
+        1,
+        "0/Caldwell, R",
+        1,
+        "0/Chabrier, G",
+        1,
+        "0/Charlot, S",
+        1,
+        "0/Gratzel, M",
+        1,
+        "0/Kitaev, A",
+        1,
+        "0/Kroupa, P",
+        1,
+        "0/Newman, M",
+        1,
+        "0/Pendry, J",
+        1,
+        "0/Springel, V",
+        1,
+        "0/Taylor, K",
+        1,
+        "0/Vahala, K",
+        1
+      ]
+    },
+    "facet_ranges": {},
+    "facet_intervals": {},
+    "facet_heatmaps": {}
+  }
+}

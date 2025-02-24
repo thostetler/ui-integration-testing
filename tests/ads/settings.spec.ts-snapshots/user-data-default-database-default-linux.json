@@ -1,0 +1,22 @@
+[
+  {
+    "name": "All",
+    "value": false
+  },
+  {
+    "name": "Physics",
+    "value": true
+  },
+  {
+    "name": "Astronomy",
+    "value": false
+  },
+  {
+    "name": "General",
+    "value": false
+  },
+  {
+    "name": "Earth Science",
+    "value": false
+  }
+]

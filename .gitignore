@@ -6,3 +6,7 @@ node_modules/
 .env
 playwright/
 .idea
+
+# gmail credentials
+provider/credentials.json
+provider/token.json

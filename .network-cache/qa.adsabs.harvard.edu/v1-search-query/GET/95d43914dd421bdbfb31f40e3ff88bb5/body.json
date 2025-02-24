@@ -1,0 +1,890 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 21,
+    "params": {
+      "q": "bibcode:2005MNRAS.364.1105S OR bibcode:2003SIAMR..45..167N OR bibcode:2003PASP..115..763C OR bibcode:2003Natur.424..839V OR bibcode:2003MNRAS.344.1000B OR bibcode:2003AnPhy.303....2K OR bibcode:2002PhLB..545...23C OR bibcode:2001Natur.414..338G OR bibcode:2001MNRAS.322..231K OR bibcode:2001MachL..45....5B OR bibcode:2001JGR...106.7183T OR bibcode:2000PhRvL..85.3966P",
+      "fl": "identifier,[citations],abstract,author,book_author,orcid_pub,publisher,orcid_user,orcid_other,bibcode,citation_count,comment,doi,id,keyword,page,property,pub,pub_raw,pubdate,pubnote,read_count,title,volume,database,links_data,esources,data,citation_count_norm,email,doctype",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67a6c7f5-0d2e2a240f6559a62286c37a",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "date desc,bibcode desc",
+      "rows": "25",
+      "wt": "json",
+      "p_": "0"
+    }
+  },
+  "response": {
+    "numFound": 12,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2005MNRAS.364.1105S",
+        "orcid_user": [
+          "0000-0001-5976-4599"
+        ],
+        "abstract": "We discuss the cosmological simulation code GADGET-2, a new massively parallel TreeSPH code, capable of following a collisionless fluid with the N-body method, and an ideal gas by means of smoothed particle hydrodynamics (SPH). Our implementation of SPH manifestly conserves energy and entropy in regions free of dissipation, while allowing for fully adaptive smoothing lengths. Gravitational forces are computed with a hierarchical multipole expansion, which can optionally be applied in the form of a TreePM algorithm, where only short-range forces are computed with the `tree' method while long-range forces are determined with Fourier techniques. Time integration is based on a quasi-symplectic scheme where long-range and short-range forces can be integrated with different time-steps. Individual and adaptive short-range time-steps may also be employed. The domain decomposition used in the parallelization algorithm is based on a space-filling curve, resulting in high flexibility and tree force errors that do not depend on the way the domains are cut. The code is efficient in terms of memory consumption and required communication bandwidth. It has been used to compute the first cosmological N-body simulation with more than 10<SUP>10</SUP> dark matter particles, reaching a homogeneous spatial dynamic range of 10<SUP>5</SUP> per dimension in a three-dimensional box. It has also been used to carry out very large cosmological SPH simulations that account for radiative cooling and star formation, reaching total particle numbers of more than 250 million. We present the algorithms used by the code and discuss their accuracy and performance using a number of test problems. GADGET-2 is publicly released to the research community.",
+        "author": [
+          "Springel, Volker"
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1111/j.1365-2966.2005.09655.x",
+          "10.48550/arXiv.astro-ph/0505010"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "7600500",
+        "identifier": [
+          "arXiv:astro-ph/0505010",
+          "2005MNRAS.tmp..999S",
+          "2005astro.ph..5010S",
+          "10.48550/arXiv.astro-ph/0505010",
+          "10.1111/j.1365-2966.2005.09655.x",
+          "2005MNRAS.364.1105S"
+        ],
+        "keyword": [
+          "methods: numerical",
+          "galaxies: interactions",
+          "dark matter",
+          "Astrophysics"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"1\", \"title\": \"\", \"type\": \"simbad\", \"url\": \"http://$SIMBAD$/simbo.pl?bibcode=2005MNRAS.364.1105S\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"pdf\", \"url\": \"https://academic.oup.com/mnras/pdf-lookup/doi/10.1111/j.1365-2966.2005.09655.x\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"preprint\", \"url\": \"http://arxiv.org/abs/astro-ph/0505010\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1111/j.1365-2966.2005.09655.x\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"gif\", \"url\": \"http://articles.adsabs.harvard.edu/full/2005MNRAS.364.1105S\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"article\", \"url\": \"http://articles.adsabs.harvard.edu/full/2005MNRAS.364.1105S?defaultprint=YES\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"spires\", \"url\": \"http://inspirehep.net/search?p=find+eprint+astro-ph/0505010\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "1105"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubnote": [
+          "submitted to MNRAS, 31 pages, 20 figures (reduced resolution), code available at http://www.mpa-garching.mpg.de/gadget; Mon.Not.Roy.Astron.Soc. 364 (2005) 1105-1134; doi:10.1111/j.1365-2966.2005.09655.x"
+        ],
+        "pub_raw": "Monthly Notices of the Royal Astronomical Society, Volume 364, Issue 4, pp. 1105-1134.",
+        "pubdate": "2005-12-00",
+        "title": [
+          "The cosmological simulation code GADGET-2"
+        ],
+        "volume": "364",
+        "publisher": "OUP",
+        "read_count": 251,
+        "data": [
+          "SIMBAD:1"
+        ],
+        "esources": [
+          "ADS_PDF",
+          "ADS_SCAN",
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ADS_OPENACCESS",
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 5751,
+        "citation_count_norm": 5751,
+        "[citations]": {
+          "num_references": 118,
+          "num_citations": 5751
+        }
+      },
+      {
+        "bibcode": "2003MNRAS.344.1000B",
+        "orcid_user": [
+          "0000-0002-6971-5755",
+          "-"
+        ],
+        "abstract": "We present a new model for computing the spectral evolution of stellar populations at ages between 1 × 10<SUP>5</SUP> and 2 × 10<SUP>10</SUP> yr at a resolution of 3 Å across the whole wavelength range from 3200 to 9500 Å for a wide range of metallicities. These predictions are based on a newly available library of observed stellar spectra. We also compute the spectral evolution across a larger wavelength range, from 91 Å to 160 μm, at lower resolution. The model incorporates recent progress in stellar evolution theory and an observationally motivated prescription for thermally pulsing stars on the asymptotic giant branch. The latter is supported by observations of surface brightness fluctuations in nearby stellar populations. We show that this model reproduces well the observed optical and near-infrared colour-magnitude diagrams of Galactic star clusters of various ages and metallicities. Stochastic fluctuations in the numbers of stars in different evolutionary phases can account for the full range of observed integrated colours of star clusters in the Magellanic Clouds. The model reproduces in detail typical galaxy spectra from the Early Data Release (EDR) of the Sloan Digital Sky Survey (SDSS). We exemplify how this type of spectral fit can constrain physical parameters such as the star formation history, metallicity and dust content of galaxies. Our model is the first to enable accurate studies of absorption-line strengths in galaxies containing stars over the full range of ages. Using the highest-quality spectra of the SDSS EDR, we show that this model can reproduce simultaneously the observed strengths of those Lick indices that do not depend strongly on element abundance ratios. The interpretation of such indices with our model should be particularly useful for constraining the star formation histories and metallicities of galaxies.",
+        "author": [
+          "Bruzual, G.",
+          "Charlot, S."
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1046/j.1365-8711.2003.06897.x",
+          "10.48550/arXiv.astro-ph/0309134"
+        ],
+        "email": [
+          "-",
+          "-"
+        ],
+        "id": "6997732",
+        "identifier": [
+          "2003MNRAS.344.1000B",
+          "arXiv:astro-ph/0309134",
+          "10.48550/arXiv.astro-ph/0309134",
+          "2003astro.ph..9134B",
+          "10.1046/j.1365-8711.2003.06897.x"
+        ],
+        "keyword": [
+          "stars: evolution",
+          "galaxies: evolution",
+          "galaxies: formation",
+          "galaxies: stellar content",
+          "Astrophysics"
+        ],
+        "links_data": [
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"preprint\", \"url\": \"http://arxiv.org/abs/astro-ph/0309134\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"spires\", \"url\": \"http://inspirehep.net/search?p=find+j+MNRAA,344,1000\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1046/j.1365-8711.2003.06897.x\"}",
+          "{\"access\": \"\", \"instances\": \"12\", \"title\": \"\", \"type\": \"simbad\", \"url\": \"http://$SIMBAD$/simbo.pl?bibcode=2003MNRAS.344.1000B\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"pdf\", \"url\": \"https://academic.oup.com/mnras/pdf-lookup/doi/10.1046/j.1365-8711.2003.06897.x\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"gif\", \"url\": \"http://articles.adsabs.harvard.edu/full/2003MNRAS.344.1000B\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"article\", \"url\": \"http://articles.adsabs.harvard.edu/full/2003MNRAS.344.1000B?defaultprint=YES\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"spires\", \"url\": \"http://inspirehep.net/search?p=find+eprint+astro-ph/0309134\"}"
+        ],
+        "orcid_pub": [
+          "-",
+          "-"
+        ],
+        "page": [
+          "1000"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubnote": [
+          "35 pages, 22 figures, to appear in MNRAS; version with full resolution figures available at http://www.iap.fr/~charlot/bc2003/paper; Mon.Not.Roy.Astron.Soc.344:1000,2003; doi:10.1046/j.1365-8711.2003.06897.x"
+        ],
+        "pub_raw": "Monthly Notices of the Royal Astronomical Society, Volume 344, Issue 4, pp. 1000-1028.",
+        "pubdate": "2003-10-00",
+        "title": [
+          "Stellar population synthesis at the resolution of 2003"
+        ],
+        "volume": "344",
+        "publisher": "OUP",
+        "read_count": 272,
+        "data": [
+          "SIMBAD:12"
+        ],
+        "esources": [
+          "ADS_PDF",
+          "ADS_SCAN",
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ADS_OPENACCESS",
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 9052,
+        "citation_count_norm": 4526,
+        "[citations]": {
+          "num_references": 161,
+          "num_citations": 9052
+        }
+      },
+      {
+        "bibcode": "2003Natur.424..839V",
+        "abstract": "Optical microcavities confine light to small volumes by resonant recirculation. Devices based on optical microcavities are already indispensable for a wide range of applications and studies. For example, microcavities made of active III-V semiconductor materials control laser emission spectra to enable long-distance transmission of data over optical fibres; they also ensure narrow spot-size laser read/write beams in CD and DVD players. In quantum optical devices, microcavities can coax atoms or quantum dots to emit spontaneous photons in a desired direction or can provide an environment where dissipative mechanisms such as spontaneous emission are overcome so that quantum entanglement of radiation and matter is possible. Applications of these remarkable devices are as diverse as their geometrical and resonant properties.",
+        "author": [
+          "Vahala, Kerry J."
+        ],
+        "database": [
+          "physics",
+          "general"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1038/nature01939"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "7013476",
+        "identifier": [
+          "2003Natur.424..839V",
+          "10.1038/nature01939"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1038%2Fnature01939\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "839"
+        ],
+        "pub": "Nature",
+        "pub_raw": "Nature, Volume 424, Issue 6950, pp. 839-846 (2003).",
+        "pubdate": "2003-08-00",
+        "title": [
+          "Optical microcavities"
+        ],
+        "volume": "424",
+        "read_count": 1,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 3080,
+        "citation_count_norm": 3080,
+        "[citations]": {
+          "num_references": 101,
+          "num_citations": 3080
+        }
+      },
+      {
+        "bibcode": "2003PASP..115..763C",
+        "abstract": "We review recent determinations of the present-day mass function (PDMF) and initial mass function (IMF) in various components of the Galaxy-disk, spheroid, young, and globular clusters-and in conditions characteristic of early star formation. As a general feature, the IMF is found to depend weakly on the environment and to be well described by a power-law form for m&gt;~1 M<SUB>solar</SUB> and a lognormal form below, except possibly for early star formation conditions. The disk IMF for single objects has a characteristic mass around m<SUB>c</SUB>~0.08 M<SUB>solar</SUB> and a variance in logarithmic mass σ~0.7, whereas the IMF for multiple systems has m<SUB>c</SUB>~0.2 M<SUB>solar</SUB> and σ~0.6. The extension of the single MF into the brown dwarf regime is in good agreement with present estimates of L- and T-dwarf densities and yields a disk brown dwarf number density comparable to the stellar one, n<SUB>BD</SUB>~n<SUB>*</SUB>~0.1 pc<SUP>-3</SUP>. The IMF of young clusters is found to be consistent with the disk field IMF, providing the same correction for unresolved binaries, confirming the fact that young star clusters and disk field stars represent the same stellar population. Dynamical effects, yielding depletion of the lowest mass objects, are found to become consequential for ages &gt;~130 Myr. The spheroid IMF relies on much less robust grounds. The large metallicity spread in the local subdwarf photometric sample, in particular, remains puzzling. Recent observations suggest that there is a continuous kinematic shear between the thick-disk population, present in local samples, and the genuine spheroid one. This enables us to derive only an upper limit for the spheroid mass density and IMF. Within all the uncertainties, the latter is found to be similar to the one derived for globular clusters and is well represented also by a lognormal form with a characteristic mass slightly larger than for the disk, m<SUB>c</SUB>~0.2-0.3 M<SUB>solar</SUB>, excluding a significant population of brown dwarfs in globular clusters and in the spheroid. The IMF characteristic of early star formation at large redshift remains undetermined, but different observational constraints suggest that it does not extend below ~1 M<SUB>solar</SUB>. These results suggest a characteristic mass for star formation that decreases with time, from conditions prevailing at large redshift to conditions characteristic of the spheroid (or thick disk) to present-day conditions. These conclusions, however, remain speculative, given the large uncertainties in the spheroid and early star IMF determinations. <P />These IMFs allow a reasonably robust determination of the Galactic present-day and initial stellar and brown dwarf contents. They also have important galactic implications beyond the Milky Way in yielding more accurate mass-to-light ratio determinations. The mass-to-light ratios obtained with the disk and the spheroid IMF yield values 1.8-1.4 times smaller than for a Salpeter IMF, respectively, in agreement with various recent dynamical determinations. This general IMF determination is examined in the context of star formation theory. None of the theories based on a Jeans-type mechanism, where fragmentation is due only to gravity, can fulfill all the observational constraints on star formation and predict a large number of substellar objects. On the other hand, recent numerical simulations of compressible turbulence, in particular in super-Alfvénic conditions, seem to reproduce both qualitatively and quantitatively the stellar and substellar IMF and thus provide an appealing theoretical foundation. In this picture, star formation is induced by the dissipation of large-scale turbulence to smaller scales through radiative MHD shocks, producing filamentary structures. These shocks produce local nonequilibrium structures with large density contrasts, which collapse eventually in gravitationally bound objects under the combined influence of turbulence and gravity. The concept of a single Jeans mass is replaced by a distribution of local Jeans masses, representative of the lognormal probability density function of the turbulent gas. Objects below the mean thermal Jeans mass still have a possibility to collapse, although with a decreasing probability. <P />The page charges for this Review were partially covered by a generous gift from a PASP supporter.",
+        "author": [
+          "Chabrier, Gilles"
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1086/376392",
+          "10.48550/arXiv.astro-ph/0304382"
+        ],
+        "email": [
+          "chabrier@ens-lyon.fr"
+        ],
+        "id": "7023111",
+        "identifier": [
+          "10.1086/376392",
+          "10.48550/arXiv.astro-ph/0304382",
+          "2003astro.ph..4382C",
+          "arXiv:astro-ph/0304382",
+          "2003PASP..115..763C"
+        ],
+        "keyword": [
+          "Galaxies: Luminosity Function",
+          "Mass Function",
+          "Invited Reviews",
+          "Astrophysics"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"6\", \"title\": \"\", \"type\": \"simbad\", \"url\": \"http://$SIMBAD$/simbo.pl?bibcode=2003PASP..115..763C\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"pdf\", \"url\": \"https://iopscience.iop.org/article/10.1086/376392/pdf\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"preprint\", \"url\": \"http://arxiv.org/abs/astro-ph/0304382\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://iopscience.iop.org/article/10.1086/376392\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"spires\", \"url\": \"http://inspirehep.net/search?p=find+eprint+astro-ph/0304382\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "763"
+        ],
+        "pub": "Publications of the Astronomical Society of the Pacific",
+        "pubnote": [
+          "Published version: PASP, 2003, 115, 763. A few changes. References to recent work added; Publ.Astron.Soc.Pac.115:763-796,2003; doi:10.1086/376392"
+        ],
+        "pub_raw": "The Publications of the Astronomical Society of the Pacific, Volume 115, Issue 809, pp. 763-795.",
+        "pubdate": "2003-07-00",
+        "title": [
+          "Galactic Stellar and Substellar Initial Mass Function"
+        ],
+        "volume": "115",
+        "publisher": "IOP",
+        "read_count": 285,
+        "data": [
+          "SIMBAD:6"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 7815,
+        "citation_count_norm": 7815,
+        "[citations]": {
+          "num_references": 197,
+          "num_citations": 7815
+        }
+      },
+      {
+        "bibcode": "2003SIAMR..45..167N",
+        "abstract": "Inspired by empirical studies of networked systems such as the Internet, social networks, and biological networks, researchers have in recent years developed a variety of techniques and models to help us understand or predict the behavior of these systems. Here we review developments in this field, including such concepts as the small-world effect, degree distributions, clustering, network correlations, random graph models, models of network growth and preferential attachment, and dynamical processes taking place on networks.",
+        "author": [
+          "Newman, M. E. J."
+        ],
+        "database": [
+          "physics"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1137/S003614450342480",
+          "10.48550/arXiv.cond-mat/0303516"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "7066807",
+        "identifier": [
+          "2003cond.mat..3516N",
+          "10.1137/S003614450342480",
+          "10.48550/arXiv.cond-mat/0303516",
+          "arXiv:cond-mat/0303516",
+          "2003SIAMR..45..167N"
+        ],
+        "keyword": [
+          "networks",
+          "graph theory",
+          "complex systems",
+          "computer networks",
+          "social networks",
+          "random graphs",
+          "percolation theory",
+          "Condensed Matter - Statistical Mechanics",
+          "Condensed Matter - Disordered Systems and Neural Networks"
+        ],
+        "links_data": [
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"preprint\", \"url\": \"http://arxiv.org/abs/cond-mat/0303516\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1137%2FS003614450342480\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "167"
+        ],
+        "pub": "SIAM Review",
+        "pubnote": [
+          "Review article, 58 pages, 16 figures, 3 tables, 429 references, published in SIAM Review (2003); SIAM Review 45, 167-256 (2003); doi:10.1137/S003614450342480"
+        ],
+        "pub_raw": "SIAM Review, vol. 45, no. 2, pp. 167-256",
+        "pubdate": "2003-01-00",
+        "title": [
+          "The Structure and Function of Complex Networks"
+        ],
+        "volume": "45",
+        "read_count": 523,
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "citation_count": 5757,
+        "citation_count_norm": 5757,
+        "[citations]": {
+          "num_references": 101,
+          "num_citations": 5756
+        }
+      },
+      {
+        "bibcode": "2003AnPhy.303....2K",
+        "abstract": "A two-dimensional quantum system with anyonic excitations can be considered as a quantum computer. Unitary transformations can be performed by moving the excitations around each other. Measurements can be performed by joining excitations in pairs and observing the result of fusion. Such computation is fault-tolerant by its physical nature.",
+        "author": [
+          "Kitaev, A. Yu."
+        ],
+        "database": [
+          "physics"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1016/S0003-4916(02)00018-0",
+          "10.48550/arXiv.quant-ph/9707021"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6870397",
+        "identifier": [
+          "2003AnPhy.303....2K",
+          "10.1016/S0003-4916(02)00018-0",
+          "10.48550/arXiv.quant-ph/9707021",
+          "1997quant.ph..7021K",
+          "arXiv:quant-ph/9707021"
+        ],
+        "keyword": [
+          "Quantum Physics",
+          "Condensed Matter - Mesoscale and Nanoscale Physics",
+          "High Energy Physics - Theory"
+        ],
+        "links_data": [
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"preprint\", \"url\": \"http://arxiv.org/abs/quant-ph/9707021\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"spires\", \"url\": \"http://inspirehep.net/search?p=find+j+APNYA,303,2\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1016%2FS0003-4916%2802%2900018-0\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"spires\", \"url\": \"http://inspirehep.net/search?p=find+eprint+quant-ph/9707021\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "2"
+        ],
+        "pub": "Annals of Physics",
+        "pubnote": [
+          "27 pages, Latex2e, uses amssymb.sty, 13 Postscript figures; Annals Phys. 303 (2003) 2-30; doi:10.1016/S0003-4916(02)00018-0"
+        ],
+        "pub_raw": "Annals of Physics, Volume 303, Issue 1, p. 2-30.",
+        "pubdate": "2003-01-00",
+        "title": [
+          "Fault-tolerant quantum computation by anyons"
+        ],
+        "volume": "303",
+        "publisher": "Elsevier",
+        "read_count": 1267,
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 5422,
+        "citation_count_norm": 5422,
+        "[citations]": {
+          "num_references": 17,
+          "num_citations": 5422
+        }
+      },
+      {
+        "bibcode": "2002PhLB..545...23C",
+        "abstract": "It is extraordinary that a number of observations indicate that we live in a spatially flat, low matter density Universe, which is currently undergoing a period of accelerating expansion. The effort to explain this current state has focused attention on cosmological models in which the dominant component of the cosmic energy density has negative pressure, with an equation of state /w&gt;=-1. Remarking that most observations are consistent with models right up to the /w=-1 or cosmological constant (/Λ) limit, it is natural to ask what lies on the other side, at /w&lt;-1. In this regard, we construct a toy model of a ``phantom'' energy component which possesses an equation of state /w&lt;-1. Such a component is found to be compatible with most classical tests of cosmology based on current data, including the recent type 1a SNe data as well as the cosmic microwave background anisotropy and mass power spectrum. If the future observations continue to allow /w&lt;-1, then barring unanticipated systematic effects, the dominant component of the cosmic energy density may be stranger than anything expected.",
+        "author": [
+          "Caldwell, R. R."
+        ],
+        "database": [
+          "astronomy",
+          "physics"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1016/S0370-2693(02)02589-3",
+          "10.48550/arXiv.astro-ph/9908168"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6743663",
+        "identifier": [
+          "arXiv:astro-ph/9908168",
+          "1999astro.ph..8168C",
+          "10.48550/arXiv.astro-ph/9908168",
+          "10.1016/S0370-2693(02)02589-3",
+          "2002PhLB..545...23C"
+        ],
+        "keyword": [
+          "Astrophysics",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Phenomenology"
+        ],
+        "links_data": [
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"preprint\", \"url\": \"http://arxiv.org/abs/astro-ph/9908168\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"spires\", \"url\": \"http://inspirehep.net/search?p=find+j+PHLTA,B545,23\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1016%2FS0370-2693%2802%2902589-3\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"spires\", \"url\": \"http://inspirehep.net/search?p=find+eprint+astro-ph/9908168\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "23"
+        ],
+        "pub": "Physics Letters B",
+        "pubnote": [
+          "update of original version, includes new material, matches version appearing in Phys. Lett. B, (17 pages, 7 eps figures); Phys.Lett.B545:23-29,2002; doi:10.1016/S0370-2693(02)02589-3"
+        ],
+        "pub_raw": "Physics Letters B, Volume 545, Issue 1-2, p. 23-29.",
+        "pubdate": "2002-10-00",
+        "title": [
+          "A phantom menace? Cosmological consequences of a dark energy component with super-negative equation of state"
+        ],
+        "volume": "545",
+        "read_count": 145,
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 3085,
+        "citation_count_norm": 3085,
+        "[citations]": {
+          "num_references": 19,
+          "num_citations": 3084
+        }
+      },
+      {
+        "bibcode": "2001Natur.414..338G",
+        "abstract": "Until now, photovoltaics - the conversion of sunlight to electrical power - has been dominated by solid-state junction devices, often made of silicon. But this dominance is now being challenged by the emergence of a new generation of photovoltaic cells, based, for example, on nanocrystalline materials and conducting polymer films. These offer the prospect of cheap fabrication together with other attractive features, such as flexibility. The phenomenal recent progress in fabricating and characterizing nanocrystalline materials has opened up whole new vistas of opportunity. Contrary to expectation, some of the new devices have strikingly high conversion efficiencies, which compete with those of conventional devices. Here I look into the historical background, and present status and development prospects for this new generation of photoelectrochemical cells.",
+        "author": [
+          "Grätzel, Michael"
+        ],
+        "database": [
+          "physics",
+          "general"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1038/35104607"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6455427",
+        "identifier": [
+          "10.1038/35104607",
+          "2001Natur.414..338G"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1038%2F35104607\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "338"
+        ],
+        "pub": "Nature",
+        "pub_raw": "Nature, Volume 414, Issue 6861, pp. 338-344 (2001).",
+        "pubdate": "2001-11-00",
+        "title": [
+          "Photoelectrochemical cells"
+        ],
+        "volume": "414",
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 4583,
+        "citation_count_norm": 4583,
+        "[citations]": {
+          "num_references": 21,
+          "num_citations": 4583
+        }
+      },
+      {
+        "bibcode": "2001MNRAS.322..231K",
+        "orcid_user": [
+          "0000-0002-7301-3377"
+        ],
+        "abstract": "A universal initial mass function (IMF) is not intuitive, but so far no convincing evidence for a variable IMF exists. The detection of systematic variations of the IMF with star-forming conditions would be the Rosetta Stone for star formation. In this contribution an average or Galactic-field IMF is defined, stressing that there is evidence for a change in the power-law index at only two masses: near 0.5M<SUB>solar</SUB> and near 0.08M<SUB>solar</SUB>. Using this supposed universal IMF, the uncertainty inherent in any observational estimate of the IMF is investigated by studying the scatter introduced by Poisson noise and the dynamical evolution of star clusters. It is found that this apparent scatter reproduces quite well the observed scatter in power-law index determinations, thus defining the fundamental limit within which any true variation becomes undetectable. The absence of evidence for a variable IMF means that any true variation of the IMF in well-studied populations must be smaller than this scatter. Determinations of the power-law indices α are subject to systematic errors arising mostly from unresolved binaries. The systematic bias is quantified here, with the result that the single-star IMFs for young star clusters are systematically steeper by Δα~0.5 between 0.1 and 1M<SUB>solar</SUB> than the Galactic-field IMF, which is populated by, on average, about 5-Gyr-old stars. The MFs in globular clusters appear to be, on average, systematically flatter than the Galactic-field IMF (Piotto &amp; Zoccali; Paresce &amp; De Marchi), and the recent detection of ancient white-dwarf candidates in the Galactic halo and the absence of associated low-mass stars (Ibata et al.; Méndez &amp; Minniti) suggest a radically different IMF for this ancient population. Star formation in higher metallicity environments thus appears to produce relatively more low-mass stars. While still tentative, this is an interesting trend, being consistent with a systematic variation of the IMF as expected from theoretical arguments.",
+        "author": [
+          "Kroupa, Pavel"
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1046/j.1365-8711.2001.04022.x",
+          "10.48550/arXiv.astro-ph/0009005"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6440505",
+        "identifier": [
+          "2000astro.ph..9005K",
+          "arXiv:astro-ph/0009005",
+          "2001MNRAS.322..231K",
+          "10.48550/arXiv.astro-ph/0009005",
+          "10.1046/j.1365-8711.2001.04022.x"
+        ],
+        "keyword": [
+          "BINARIES: GENERAL",
+          "STARS: FORMATION",
+          "STARS: KINEMATICS",
+          "STARS: LUMINOSITY FUNCTION",
+          "MASS FUNCTION",
+          "GLOBULAR CLUSTERS: GENERAL",
+          "OPEN CLUSTERS AND ASSOCIATIONS: GENERAL",
+          "Astrophysics"
+        ],
+        "links_data": [
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"preprint\", \"url\": \"http://arxiv.org/abs/astro-ph/0009005\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"spires\", \"url\": \"http://inspirehep.net/search?p=find+j+MNRAA,322,231\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.1046/j.1365-8711.2001.04022.x\"}",
+          "{\"access\": \"\", \"instances\": \"9\", \"title\": \"\", \"type\": \"simbad\", \"url\": \"http://$SIMBAD$/simbo.pl?bibcode=2001MNRAS.322..231K\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"pdf\", \"url\": \"https://academic.oup.com/mnras/pdf-lookup/doi/10.1046/j.1365-8711.2001.04022.x\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"gif\", \"url\": \"http://articles.adsabs.harvard.edu/full/2001MNRAS.322..231K\"}",
+          "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"article\", \"url\": \"http://articles.adsabs.harvard.edu/full/2001MNRAS.322..231K?defaultprint=YES\"}",
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"spires\", \"url\": \"http://inspirehep.net/search?p=find+eprint+astro-ph/0009005\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "231"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubnote": [
+          "MNRAS, in press; 34 pages, 14 figures (figs.1 and 14 in colour); repl.vers: adjustments for consistency with published version; Mon.Not.Roy.Astron.Soc.322:231,2001; doi:10.1046/j.1365-8711.2001.04022.x"
+        ],
+        "pub_raw": "Monthly Notices of the Royal Astronomical Society, Volume 322, Issue 2, pp. 231-246.",
+        "pubdate": "2001-04-00",
+        "title": [
+          "On the variation of the initial mass function"
+        ],
+        "volume": "322",
+        "publisher": "OUP",
+        "read_count": 243,
+        "data": [
+          "SIMBAD:9"
+        ],
+        "esources": [
+          "ADS_PDF",
+          "ADS_SCAN",
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ADS_OPENACCESS",
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 6313,
+        "citation_count_norm": 6313,
+        "[citations]": {
+          "num_references": 97,
+          "num_citations": 6312
+        }
+      },
+      {
+        "bibcode": "2001JGR...106.7183T",
+        "abstract": "A diagram has been devised that can provide a concise statistical summary of how well patterns match each other in terms of their correlation, their root-mean-square difference, and the ratio of their variances. Although the form of this diagram is general, it is especially useful in evaluating complex models, such as those used to study geophysical phenomena. Examples are given showing that the diagram can be used to summarize the relative merits of a collection of different models or to track changes in performance of a model as it is modified. Methods are suggested for indicating on these diagrams the statistical significance of apparent differences and the degree to which observational uncertainty and unforced internal variability limit the expected agreement between model-simulated and observed behaviors. The geometric relationship between the statistics plotted on the diagram also provides some guidance for devising skill scores that appropriately weight among the various measures of pattern correspondence.",
+        "author": [
+          "Taylor, Karl E."
+        ],
+        "database": [
+          "physics",
+          "earth science"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1029/2000JD900719"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6407285",
+        "identifier": [
+          "10.1029/2000JD900719",
+          "2001JGR...106.7183T"
+        ],
+        "keyword": [
+          "Meteorology and Atmospheric Dynamics: Theoretical modeling",
+          "Meteorology and Atmospheric Dynamics: Instruments and techniques",
+          "General or Miscellaneous: Techniques applicable in three or more fields"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1029%2F2000JD900719\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "7183"
+        ],
+        "pub": "Journal of Geophysical Research",
+        "pub_raw": "Journal of Geophysical Research: Atmospheres, Volume 106, Issue D7, pp. 7183-7192",
+        "pubdate": "2001-04-00",
+        "title": [
+          "Summarizing multiple aspects of model performance in a single diagram"
+        ],
+        "volume": "106",
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 4726,
+        "citation_count_norm": 4726,
+        "[citations]": {
+          "num_references": 14,
+          "num_citations": 4726
+        }
+      },
+      {
+        "bibcode": "2001MachL..45....5B",
+        "abstract": "Random forests are a combination of tree predictors such that each tree depends on the values of a random vector sampled independently and with the same distribution for all trees in the forest. The generalization error for forests converges a.s. to a limit as the number of trees in the forest becomes large. The generalization error of a forest of tree classifiers depends on the strength of the individual trees in the forest and the correlation between them. Using a random selection of features to split each node yields error rates that compare favorably to Adaboost (Y. Freund &amp; R. Schapire, Machine Learning: Proceedings of the Thirteenth International conference, ***, 148-156), but are more robust with respect to noise. Internal estimates monitor error, strength, and correlation and these are used to show the response to increasing the number of features used in the splitting. Internal estimates are also used to measure variable importance. These ideas are also applicable to regression.",
+        "author": [
+          "Breiman, Leo"
+        ],
+        "database": [
+          "astronomy"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1023/A:1010933404324"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6444775",
+        "identifier": [
+          "10.1023/A:1010933404324",
+          "2001MachL..45....5B"
+        ],
+        "keyword": [
+          "machine learning"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1023%2FA%3A1010933404324\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "5"
+        ],
+        "pub": "Machine Learning",
+        "pub_raw": "Machine Learning, Volume 45, pp. 5-32 (2001)",
+        "pubdate": "2001-01-00",
+        "title": [
+          "Random Forests."
+        ],
+        "volume": "45",
+        "read_count": 16,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 22309,
+        "citation_count_norm": 22309,
+        "[citations]": {
+          "num_references": 0,
+          "num_citations": 22309
+        }
+      },
+      {
+        "bibcode": "2000PhRvL..85.3966P",
+        "abstract": "With a conventional lens sharpness of the image is always limited by the wavelength of light. An unconventional alternative to a lens, a slab of negative refractive index material, has the power to focus all Fourier components of a 2D image, even those that do not propagate in a radiative manner. Such ``superlenses'' can be realized in the microwave band with current technology. Our simulations show that a version of the lens operating at the frequency of visible light can be realized in the form of a thin slab of silver. This optical version resolves objects only a few nanometers across.",
+        "author": [
+          "Pendry, J. B."
+        ],
+        "database": [
+          "physics"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1103/PhysRevLett.85.3966"
+        ],
+        "email": [
+          "-"
+        ],
+        "id": "6234138",
+        "identifier": [
+          "10.1103/PhysRevLett.85.3966",
+          "2000PhRvL..85.3966P"
+        ],
+        "links_data": [
+          "{\"access\": \"\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"https://doi.org/10.1103%2FPhysRevLett.85.3966\"}"
+        ],
+        "orcid_pub": [
+          "-"
+        ],
+        "page": [
+          "3966"
+        ],
+        "pub": "Physical Review Letters",
+        "pub_raw": "Physical Review Letters, Volume 85, Issue 18, October 30, 2000, pp.3966-3969",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Negative Refraction Makes a Perfect Lens"
+        ],
+        "volume": "85",
+        "publisher": "APS",
+        "read_count": 0,
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 7029,
+        "citation_count_norm": 7029,
+        "[citations]": {
+          "num_references": 9,
+          "num_citations": 7029
+        }
+      }
+    ]
+  }
+}
