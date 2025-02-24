@@ -1,0 +1,1032 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 14,
+    "params": {
+      "q": "year:2000 moon crater",
+      "fl": "title,bibcode,citation_count,read_count,pubdate",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67bcb07a-374c39b46f6ea4257917ae76",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "date desc,bibcode desc",
+      "rows": "1500",
+      "wt": "json",
+      "p_": "0"
+    }
+  },
+  "response": {
+    "numFound": 112,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2000JGR...10529239H",
+        "pubdate": "2000-12-00",
+        "title": [
+          "Ages of mare basalts on the lunar nearside"
+        ],
+        "read_count": 4,
+        "citation_count": 332
+      },
+      {
+        "bibcode": "2000Icar..148..508D",
+        "pubdate": "2000-12-00",
+        "title": [
+          "The Late Asteroidal and Cometary Bombardment of Earth as Recorded in Water Deuterium to Protium Ratio"
+        ],
+        "read_count": 0,
+        "citation_count": 77
+      },
+      {
+        "bibcode": "2000AstSR...1b..78K",
+        "pubdate": "2000-12-00",
+        "title": [
+          "Accretion of cosmic matter onto the earth"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000eaa..bookE4659.",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Lunar Prospector"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000eaa..bookE4487.",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Secondary Crater"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000eaa..bookE4422.",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Tycho (Crater)"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000eaa..bookE4421.",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Copernicus (Crater)"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000eaa..bookE4420.",
+        "pubdate": "2000-11-00",
+        "title": [
+          "South Pole-Aitken Basin (SPA Basin)"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000eaa..bookE4177.",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Observatorio Astronómico Nacional, Colombia"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000eaa..bookE4005.",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Shoemaker, Eugene [`Gene'] Merle (1928-97) and Shoemaker, Carolyn [née Spellman]"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000eaa..bookE3955.",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Riccioli, Giambattista [Giovanni Battista] (1598-1671)"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000eaa..bookE3667.",
+        "pubdate": "2000-11-00",
+        "title": [
+          "Gruithuisen, Franz von Paula (1744-1852)"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000star.book.....M",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Stargazing"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000S&T...100d.144K",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Lunar Crater Clavius"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000P&SS...48.1213T",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The SNC meteorites are from Mars"
+        ],
+        "read_count": 2,
+        "citation_count": 122
+      },
+      {
+        "bibcode": "2000JGR...10524621S",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Distant lunar sodium tail observed in the Japanese local-time sector during the Leonid meteor shower of 1998"
+        ],
+        "read_count": 0,
+        "citation_count": 8
+      },
+      {
+        "bibcode": "2000DPS....32.5809R",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Thermal Emission Spectra of Phobos, Vesta, Ceres, and Pallas: A Comparison."
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000DPS....32.5808S",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The Role of Subsurface Ice in Rampart Crater Formation"
+        ],
+        "read_count": 0,
+        "citation_count": 4
+      },
+      {
+        "bibcode": "2000DPS....32.5807B",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Ejecta Mobility Studies of Fresh Martian Impact Craters"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000DPS....32.5802H",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The Case for Youthful Geological Activity on Mars"
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000DPS....32.5207M",
+        "pubdate": "2000-10-00",
+        "title": [
+          "A Plausible Cause of The Late Heavy Bombardment"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000DPS....32.3806B",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Secondary Cratering on Europa"
+        ],
+        "read_count": 0,
+        "citation_count": 2
+      },
+      {
+        "bibcode": "2000DPS....32.2505H",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The Astronomy Workshop"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000DPS....32.2409F",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The ESA SMART-1 Mission to the Moon: Goals and Science"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000DPS....32.2407M",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Groundbased High-Definition Imaging of the Planet Mercury"
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000DPS....32.2304P",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Lunar Anorthosite Deposits: The Big Picture"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000DPS....32.2303H",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The Origin of Lunar Crater Rays"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000DPS....32.2302M",
+        "pubdate": "2000-10-00",
+        "title": [
+          "A search for water ice at the lunar poles with Clementine images"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000DPS....32.1409W",
+        "pubdate": "2000-10-00",
+        "title": [
+          "A Comparison of Lunar Crater Size Frequency Distribution and Near-Earth Asteroid Population Characteristics: Strong Evidence for the Stability of their Size Frequency Distribution"
+        ],
+        "read_count": 0,
+        "citation_count": 2
+      },
+      {
+        "bibcode": "2000DPS....32.0801K",
+        "pubdate": "2000-10-00",
+        "title": [
+          "The regolith of Asteroid 433 Eros"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000DPS....32.0309C",
+        "pubdate": "2000-10-00",
+        "title": [
+          "Craters, Boulders, and Impact History of Eros"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000Mercu..29e...7B",
+        "pubdate": "2000-09-00",
+        "title": [
+          "Echoes of the Past: The Origin of Lunar Craters"
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000ESASP.462..235S",
+        "pubdate": "2000-09-00",
+        "title": [
+          "Effects of Undiscerned Craters on Lunar Rover Traveling Distance"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000OLEB...30..377M",
+        "pubdate": "2000-08-00",
+        "title": [
+          "Thermosynthesis Niches in the Solar System"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000OLEB...30..370D",
+        "pubdate": "2000-08-00",
+        "title": [
+          "A Possible Europa Exobiology"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000Icar..146..430D",
+        "pubdate": "2000-08-00",
+        "title": [
+          "Langrenus: Transient Illuminations on the Moon"
+        ],
+        "read_count": 1,
+        "citation_count": 11
+      },
+      {
+        "bibcode": "2000Icar..146..420D",
+        "pubdate": "2000-08-00",
+        "title": [
+          "Lunar Surface Imaging Polarimetry. III. Langrenus"
+        ],
+        "read_count": 0,
+        "citation_count": 3
+      },
+      {
+        "bibcode": "2000came.work..279S",
+        "pubdate": "2000-07-00",
+        "title": [
+          "Combined Remote Mineralogical and Elemental Measurements from Rovers"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000came.work...96N",
+        "pubdate": "2000-07-00",
+        "title": [
+          "Martian Chronology: Goals for Investigations from a Recent Multidisciplinary Workshop"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000came.work...65C",
+        "pubdate": "2000-07-00",
+        "title": [
+          "Aladdin: Sample Collection from the Moons of Mars"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000JGR...10516769S",
+        "pubdate": "2000-07-00",
+        "title": [
+          "Insights into the evolution of the uppermost continental mantle from xenolith localities on and near the Colorado Plateau and regional comparisons"
+        ],
+        "read_count": 0,
+        "citation_count": 51
+      },
+      {
+        "bibcode": "2000Icar..146...98B",
+        "pubdate": "2000-07-00",
+        "title": [
+          "Lunar Transient Phenomena: What Do the Clementine Images Reveal?"
+        ],
+        "read_count": 0,
+        "citation_count": 13
+      },
+      {
+        "bibcode": "2000astro.ph..6210I",
+        "pubdate": "2000-06-00",
+        "title": [
+          "The Observation of Lunar Impacts"
+        ],
+        "read_count": 11,
+        "citation_count": 3
+      },
+      {
+        "bibcode": "2000JIMO...28...54S",
+        "pubdate": "2000-06-00",
+        "title": [
+          "The Observation of Lunar Impacts"
+        ],
+        "read_count": 0,
+        "citation_count": 5
+      },
+      {
+        "bibcode": "2000JGR...10515091T",
+        "pubdate": "2000-06-00",
+        "title": [
+          "Phobos: Regolith and ejecta blocks investigated with Mars Orbiter Camera images"
+        ],
+        "read_count": 0,
+        "citation_count": 59
+      },
+      {
+        "bibcode": "2000JGR...10515011H",
+        "pubdate": "2000-06-00",
+        "title": [
+          "Elysium Planitia lava flows: Crater count chronology and geological implications"
+        ],
+        "read_count": 1,
+        "citation_count": 157
+      },
+      {
+        "bibcode": "2000JBAA..110..117C",
+        "pubdate": "2000-06-00",
+        "title": [
+          "The strange behaviour of Torricelli 'B'"
+        ],
+        "read_count": 0,
+        "citation_count": 4
+      },
+      {
+        "bibcode": "2000AcAau..46..661H",
+        "pubdate": "2000-06-00",
+        "title": [
+          "Recent progress on the lunar farside crater Saha proposal"
+        ],
+        "read_count": 0,
+        "citation_count": 4
+      },
+      {
+        "bibcode": "2000mpse.conf..170T",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Stratigraphy and Topography of McMurdo Crater Area, Planum Austral Mars: Implications for Resurfacing History and Porous Character of the South Polar Layered Deposists"
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000mpse.conf..152S",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Topography of Small Volcanoes at the Margin of the Mars North Polar Cap"
+        ],
+        "read_count": 0,
+        "citation_count": 4
+      },
+      {
+        "bibcode": "2000mpse.conf..142P",
+        "pubdate": "2000-05-00",
+        "title": [
+          "A Brief Summary of the Geomorphic Evidence for an Active Surface Hydrologic Cycle in Mars' Past"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000mpse.conf..121M",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Slope Analysis of Scarps in Deuteronilus Mensae from MOLA Data and Viking D.E.M.: Evidence for Landslides Controlled by Ground Ice"
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000mpse.conf..118M",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Crater Density of Lobate Debris Aprons and Fretted Channels: Paleoclimatic Implications"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000mpse.conf...94K",
+        "pubdate": "2000-05-00",
+        "title": [
+          "An Overview of TES Polar Observations to Date"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000mpse.conf...73H",
+        "pubdate": "2000-05-00",
+        "title": [
+          "On the Present Martian Water-Ice Reservoir in Equatorial Mars"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000mpse.conf...70H",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Classification of Martian Volcanoes on Basis of Volcano Ground Ice Interaction"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000mpse.conf...66H",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Evidence for Geologiclaly Recent Lateral Migration of Volatile-rich Polar Layered Deposits"
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000mpse.conf...64H",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Polar Terrain and Youthful Geological Processes on Mars"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000mpse.conf...47G",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Interactions of Intrusive Volcanism with Permafrost on Mars"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000mpse.conf...34E",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Spring Defrosting of Martian Polar Regions: Mars Global Surveyor MOC and TES Monitoring of the Richardson Crater Dune Field, 1999-2000"
+        ],
+        "read_count": 0,
+        "citation_count": 2
+      },
+      {
+        "bibcode": "2000mpse.conf...18C",
+        "pubdate": "2000-05-00",
+        "title": [
+          "High-Latitude Martian Impact Paleolakes: The Possible Contribution of Snowfall and Ancient Glaciers in the Lacustrine Activity Associated to Argyre and Hellas"
+        ],
+        "read_count": 0,
+        "citation_count": 2
+      },
+      {
+        "bibcode": "2000mpse.conf...12B",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Large Grooves in the South Polar Layered Deposits: Insights from Spacecraft Data and Terrestrial Analogs"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000mpse.conf....9B",
+        "pubdate": "2000-05-00",
+        "title": [
+          "The Katla Subglacial Volcano: Topography and Flow Paths of Jökulhlaups"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000mpse.conf....3B",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Ice-rich Debris Aprons and Lobate Crater: Digital Elevation Modeling Derived from Viking Images"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000Icar..145..122S",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Integrated Spectral Analysis of Mare Soils and Craters: Applications to Eastern Nearside Basalts"
+        ],
+        "read_count": 0,
+        "citation_count": 73
+      },
+      {
+        "bibcode": "2000Icar..145..108B",
+        "pubdate": "2000-05-00",
+        "title": [
+          "Interpreting the Elliptical Crater Populations on Mars, Venus, and the Moon"
+        ],
+        "read_count": 0,
+        "citation_count": 103
+      },
+      {
+        "bibcode": "2000DDA....31.0605D",
+        "pubdate": "2000-05-00",
+        "title": [
+          "The Statistics of Large Impacts on the Terrestrial Planets"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000DDA....31.0503H",
+        "pubdate": "2000-05-00",
+        "title": [
+          "The Astronomy Workshop"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000JGR...105.9457P",
+        "pubdate": "2000-04-00",
+        "title": [
+          "Local and regional lunar regolith characteristics at Reiner Gamma Formation: Optical and spectroscopic properties from Clementine and Earth-based data"
+        ],
+        "read_count": 0,
+        "citation_count": 86
+      },
+      {
+        "bibcode": "2000AcAau..46..555H",
+        "pubdate": "2000-04-00",
+        "title": [
+          "A proposal for a radio frequency interference-free dedicated lunar far side crater for high sensitivity radioastronomy: programmatic issues"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000Sci...287.1785C",
+        "pubdate": "2000-03-00",
+        "title": [
+          "Lunar Impact History from <SUP>40</SUP>Ar/<SUP>39</SUP>Ar Dating of Glass Spherules"
+        ],
+        "read_count": 0,
+        "citation_count": 150
+      },
+      {
+        "bibcode": "2000LPI....31.1950G",
+        "pubdate": "2000-03-00",
+        "title": [
+          "The Optical Maturity of the Ejecta of Small Bright Rayed Lunar Craters"
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000LPI....31.1654W",
+        "pubdate": "2000-03-00",
+        "title": [
+          "The Morphology of Hadley Crater on the Moon"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000LPI....31.1366H",
+        "pubdate": "2000-03-00",
+        "title": [
+          "Stratigraphy of the Lunar Crust Around the Farside Craters King and Tsiolkovsky"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000LPI....31.1333H",
+        "pubdate": "2000-03-00",
+        "title": [
+          "Lunar Crater Rays: Compositions and Modes of Origin"
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000LPI....31.1280H",
+        "pubdate": "2000-03-00",
+        "title": [
+          "Pyroclastic Eruptions Associated with the Floor-fractured Lunar Farside Crater Oppenheimer in the South Pole Aitken Basin"
+        ],
+        "read_count": 0,
+        "citation_count": 5
+      },
+      {
+        "bibcode": "2000JGR...105.4245G",
+        "pubdate": "2000-02-00",
+        "title": [
+          "Compositional analyses of small lunar pyroclastic deposits using Clementine multispectral data"
+        ],
+        "read_count": 0,
+        "citation_count": 58
+      },
+      {
+        "bibcode": "2000JGR...105.4235B",
+        "pubdate": "2000-02-00",
+        "title": [
+          "Compositional studies of the Orientale, Humorum, Nectaris, and Crisium lunar basins"
+        ],
+        "read_count": 0,
+        "citation_count": 55
+      },
+      {
+        "bibcode": "2000JGR...105.4217G",
+        "pubdate": "2000-02-00",
+        "title": [
+          "Geology of the Smythii and Marginis region of the Moon: Using integrated remotely sensed data"
+        ],
+        "read_count": 1,
+        "citation_count": 29
+      },
+      {
+        "bibcode": "2000JGR...105.4175F",
+        "pubdate": "2000-02-00",
+        "title": [
+          "Polar hydrogen deposits on the Moon"
+        ],
+        "read_count": 0,
+        "citation_count": 209
+      },
+      {
+        "bibcode": "2000srrt.conf...35M",
+        "pubdate": "2000-01-00",
+        "title": [
+          "Recovery of Volatiles from the Moon and Associated Issues"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000slmw.book.....L",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Shoemaker by Levy. The Man Who Made an Impact"
+        ],
+        "read_count": 0,
+        "citation_count": 27
+      },
+      {
+        "bibcode": "2000orem.book..493H",
+        "pubdate": "2000-00-00",
+        "title": [
+          "The Time-Dependent Intense Bombardment of the Primordial Earth/Moon System"
+        ],
+        "read_count": 1,
+        "citation_count": 64
+      },
+      {
+        "bibcode": "2000neas.work....7C",
+        "pubdate": "2000-01-00",
+        "title": [
+          "Surface Properties of 433 Eros: Results from NEAR"
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000neas.work....5C",
+        "pubdate": "2000-01-00",
+        "title": [
+          "Implications from Near-Shoemaker Imaging of Eros for Small-Scale Structure and Surface Sampling"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000neas.work....3B",
+        "pubdate": "2000-01-00",
+        "title": [
+          "Surface Processes and Sample Return: What Can We Learn About Asteroid Regoliths?"
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000cem..conf..209S",
+        "pubdate": "2000-01-00",
+        "title": [
+          "The Theory of Breakage and Asteroid Size Distribution"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000SoSyR..34..390R",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Morphological Analysis of the Cratering of the South Pole - Aitken Basin on the Moon"
+        ],
+        "read_count": 0,
+        "citation_count": 2
+      },
+      {
+        "bibcode": "2000SoSyR..34..277B",
+        "pubdate": "2000-00-00",
+        "title": [
+          "On the Degradation of Impact Craters on Callisto"
+        ],
+        "read_count": 0,
+        "citation_count": 3
+      },
+      {
+        "bibcode": "2000STIN...0075276J",
+        "pubdate": "2000-01-00",
+        "title": [
+          "Radar Images of the Kuiper Quadrangle (Mercury) from Goldstone Radar Data"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000STIN...0057192H",
+        "pubdate": "2000-01-00",
+        "title": [
+          "Lybia Montes: A Safe, Ancient Cratered Terrain, Mars Surveyor Landing Site at the Isidis Basin Rim"
+        ],
+        "read_count": 1,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000PhDT.......240H",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Geological investigations of the lunar surface using Clementine multispectral analyses"
+        ],
+        "read_count": 0,
+        "citation_count": 6
+      },
+      {
+        "bibcode": "2000PhDT.......144D",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Modeling of geodynamic processes on Ganymede and Callisto: Insight into thermal and tectonic histories"
+        ],
+        "read_count": 0,
+        "citation_count": 1
+      },
+      {
+        "bibcode": "2000JGR...10520431L",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Compositional gradients across mare-highland contacts: Importance and geological implication of lateral transport"
+        ],
+        "read_count": 0,
+        "citation_count": 51
+      },
+      {
+        "bibcode": "2000JGR...10520403H",
+        "pubdate": "2000-00-00",
+        "title": [
+          "The materials of the lunar Procellarum KREEP Terrane: A synthesis of data from geomorphological mapping, remote sensing, and sample analyses"
+        ],
+        "read_count": 0,
+        "citation_count": 77
+      },
+      {
+        "bibcode": "2000JGR...10520387C",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Simulated degradation of lunar impact craters and a new method for age dating farside mare deposits"
+        ],
+        "read_count": 0,
+        "citation_count": 75
+      },
+      {
+        "bibcode": "2000JGR...10520377L",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Imaging of lunar surface maturity"
+        ],
+        "read_count": 2,
+        "citation_count": 309
+      },
+      {
+        "bibcode": "2000JGR...10520333E",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Lunar rare earth element distribution and ramifications for FeO and TiO<SUB>2</SUB>: Lunar Prospector neutron spectrometer observations"
+        ],
+        "read_count": 1,
+        "citation_count": 116
+      },
+      {
+        "bibcode": "2000JGR...10520307L",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Thorium abundances on the lunar surface"
+        ],
+        "read_count": 2,
+        "citation_count": 195
+      },
+      {
+        "bibcode": "2000JGR...10520245H",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Implications from stereo-derived topography of Venusian impact craters"
+        ],
+        "read_count": 0,
+        "citation_count": 51
+      },
+      {
+        "bibcode": "2000JGR...105.1757M",
+        "pubdate": "2000-01-00",
+        "title": [
+          "Mineralogy, composition, and alteration of Mars Pathfinder rocks and soils: Evidence from multispectral, elemental, and magnetic data on terrestrial analogue, SNC meteorite, and Pathfinder samples"
+        ],
+        "read_count": 0,
+        "citation_count": 264
+      },
+      {
+        "bibcode": "2000JGR...105..757M",
+        "pubdate": "2000-01-00",
+        "title": [
+          "Mineralogy, composition, and alteration of Mars Pathfinder rocks and soils: Evidence from multispectral, elemental, and magnetic data on terrestrial analogue, SNC meteorite, and Pathfinder samples"
+        ],
+        "read_count": 0,
+        "citation_count": 56
+      },
+      {
+        "bibcode": "2000EOSTr..81..349J",
+        "pubdate": "2000-00-00",
+        "title": [
+          "New views of the Moon: Improved understanding through data integration"
+        ],
+        "read_count": 0,
+        "citation_count": 13
+      },
+      {
+        "bibcode": "2000EOSTr..81..209M",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Surface composition reveals icy Galilean satellites' past"
+        ],
+        "read_count": 0,
+        "citation_count": 3
+      },
+      {
+        "bibcode": "2000AdSpR..26..371H",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Sharing the Moon by Thirds: An Extended SAHA Crater Proposal"
+        ],
+        "read_count": 0,
+        "citation_count": 4
+      },
+      {
+        "bibcode": "2000AdSpR..26..359M",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Laydown of A Tether from Earth Visible Location to Far Side for Lunar SETI"
+        ],
+        "read_count": 0,
+        "citation_count": 4
+      },
+      {
+        "bibcode": "2000AdSpR..26..351G",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Twin Rigid-Frames Hexapod Rovers for the Saha Radioastronomic Missions"
+        ],
+        "read_count": 0,
+        "citation_count": 2
+      },
+      {
+        "bibcode": "2000AdSpR..26..343H",
+        "pubdate": "2000-00-00",
+        "title": [
+          "A Pristine Radio Window on the Universe: Just One Lunar Crater, but Opened at all Frequencies"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000AdSpR..26..341.",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Protection of Part of a Celestial Body for the Scientific Benefit of Humankind: The Lunar Farside Crater Saha Proposal"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000ASPC..213..593H",
+        "pubdate": "2000-00-00",
+        "title": [
+          "The Habitability of the Moon"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000ASPC..213..573M",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Recent Progress in Bioastronomy Space Missions"
+        ],
+        "read_count": 0,
+        "citation_count": 0
+      },
+      {
+        "bibcode": "2000AREPS..28..305G",
+        "pubdate": "2000-00-00",
+        "title": [
+          "Vredefort, Sudbury, Chicxulub: Three of a Kind?"
+        ],
+        "read_count": 0,
+        "citation_count": 104
+      }
+    ]
+  }
+}

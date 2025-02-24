@@ -1,0 +1,213 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 38,
+    "params": {
+      "facet.pivot": "property,year",
+      "fl": "id",
+      "start": "0",
+      "sort": "date desc,bibcode desc",
+      "rows": "10",
+      "p_": "0",
+      "facet.limit": "2000",
+      "q": "year:2000 moon crater",
+      "facet.minCount": "1",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67bcaf73-0f3c552b044244a529a0aa2b",
+      "boost": "add(doctype_boost, 1)",
+      "facet": "true",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 112,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "6153470"
+      },
+      {
+        "id": "6135515"
+      },
+      {
+        "id": "6094538"
+      },
+      {
+        "id": "6280935"
+      },
+      {
+        "id": "6280093"
+      },
+      {
+        "id": "6280669"
+      },
+      {
+        "id": "6280656"
+      },
+      {
+        "id": "6280638"
+      },
+      {
+        "id": "6280462"
+      },
+      {
+        "id": "6279624"
+      }
+    ]
+  },
+  "facet_counts": {
+    "facet_queries": {},
+    "facet_fields": {},
+    "facet_ranges": {},
+    "facet_intervals": {},
+    "facet_heatmaps": {},
+    "facet_pivot": {
+      "property,year": [
+        {
+          "field": "property",
+          "value": "article",
+          "count": 84,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 84
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "esource",
+          "count": 82,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 82
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "notrefereed",
+          "count": 69,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 69
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "refereed",
+          "count": 43,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 43
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "toc",
+          "count": 32,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 32
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "openaccess",
+          "count": 31,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 31
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "nonarticle",
+          "count": 28,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 28
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "pubopenaccess",
+          "count": 25,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 25
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "adsopenaccess",
+          "count": 5,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "associated",
+          "count": 2,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "eprintopenaccess",
+          "count": 1,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "field": "property",
+          "value": "inspire",
+          "count": 1,
+          "pivot": [
+            {
+              "field": "year",
+              "value": "2000",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
