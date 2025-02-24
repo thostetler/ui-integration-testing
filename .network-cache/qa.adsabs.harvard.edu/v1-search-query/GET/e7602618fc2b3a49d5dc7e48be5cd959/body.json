@@ -1,0 +1,69 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 13,
+    "params": {
+      "facet.field": "property",
+      "fl": "id",
+      "start": "0",
+      "sort": "date desc,bibcode desc",
+      "rows": "1",
+      "p_": "0",
+      "facet.query": "property:refereed",
+      "facet.limit": "20",
+      "q": "year:2000 moon crater",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67bcaf73-639ce3dc3607e0390b200455",
+      "boost": "add(doctype_boost, 1)",
+      "facet.mincount": "1",
+      "facet": "true",
+      "wt": "json",
+      "facet.offset": "0"
+    }
+  },
+  "response": {
+    "numFound": 112,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "6153470"
+      }
+    ]
+  },
+  "facet_counts": {
+    "facet_queries": {
+      "property:refereed": 43
+    },
+    "facet_fields": {
+      "property": [
+        "article",
+        84,
+        "esource",
+        82,
+        "notrefereed",
+        69,
+        "refereed",
+        43,
+        "toc",
+        32,
+        "openaccess",
+        31,
+        "nonarticle",
+        28,
+        "pubopenaccess",
+        25,
+        "adsopenaccess",
+        5,
+        "associated",
+        2,
+        "eprintopenaccess",
+        1,
+        "inspire",
+        1
+      ]
+    },
+    "facet_ranges": {},
+    "facet_intervals": {},
+    "facet_heatmaps": {}
+  }
+}

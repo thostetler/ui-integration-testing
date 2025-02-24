@@ -109,9 +109,11 @@ test('Export tool loads properly', async ({ page, cacheRoute }, testInfo) => {
 });
 
 // FIXME: This test is failing because the author affiliation tool is not loading properly.
-test.fixme('Author affiliation loads properly', async ({ page }, testInfo) => {
+test.fixme('Author affiliation loads properly', async ({ page, cacheRoute }, testInfo) => {
   test.slow();
   const name = 'author-affiliation';
+  await cacheRoute.GET('**/v1/search/query*');
+  await cacheRoute.GET('**/v1/author-affiliation/*');
 
   await test.step('Open the author affiliation tool', async () => {
     // do search and wait for results
@@ -146,9 +148,11 @@ test.fixme('Author affiliation loads properly', async ({ page }, testInfo) => {
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test('Citation metrics loads properly', async ({ page }, testInfo) => {
+test('Citation metrics loads properly', async ({ page, cacheRoute }, testInfo) => {
   test.slow();
   const name = 'citation-metrics';
+  await cacheRoute.GET('**/v1/search/query*');
+  await cacheRoute.GET('**/v1/metrics');
 
   await test.step('Open the citation metrics tool', async () => {
     // do search and wait for results
@@ -186,8 +190,11 @@ test('Citation metrics loads properly', async ({ page }, testInfo) => {
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test('Author network loads properly', async ({ page }, testInfo) => {
+test('Author network loads properly', async ({ page, cacheRoute }, testInfo) => {
   const name = 'author-network';
+  await cacheRoute.GET('**/v1/search/query*');
+  await cacheRoute.GET('**/v1/vis/*');
+
   // Increase the number of papers
   const QS = new URLSearchParams(QUERY_STRING);
   QS.set('q', 'year:2000 moon crater');
@@ -226,8 +233,11 @@ test('Author network loads properly', async ({ page }, testInfo) => {
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test('Paper network loads properly', async ({ page }, testInfo) => {
+test('Paper network loads properly', async ({ page, cacheRoute }, testInfo) => {
   const name = 'paper-networks';
+  await cacheRoute.GET('**/v1/search/query*');
+  await cacheRoute.GET('**/v1/vis/*');
+
   // Increase the number of papers
   const QS = new URLSearchParams(QUERY_STRING);
   QS.set('q', 'year:2000 moon crater');
@@ -266,8 +276,10 @@ test('Paper network loads properly', async ({ page }, testInfo) => {
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test('Concept cloud loads properly', async ({ page }, testInfo) => {
+test('Concept cloud loads properly', async ({ page, cacheRoute }, testInfo) => {
   const name = 'concept-cloud';
+  await cacheRoute.GET('**/v1/search/query*');
+  await cacheRoute.GET('**/v1/vis/*');
   // Increase the number of papers
   const QS = new URLSearchParams(QUERY_STRING);
   QS.set('q', 'year:2000 moon crater');
@@ -305,8 +317,11 @@ test('Concept cloud loads properly', async ({ page }, testInfo) => {
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test('Results graph loads properly', async ({ page }, testInfo) => {
+test('Results graph loads properly', async ({ page, cacheRoute }, testInfo) => {
   const name = 'results-graph';
+  await cacheRoute.GET('**/v1/search/query*');
+  await cacheRoute.GET('**/v1/vis/*');
+
   // Increase the number of papers
   const QS = new URLSearchParams(QUERY_STRING);
   QS.set('q', 'year:2000 moon crater');

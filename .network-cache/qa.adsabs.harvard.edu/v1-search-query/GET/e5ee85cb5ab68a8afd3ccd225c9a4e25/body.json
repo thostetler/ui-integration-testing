@@ -1,0 +1,83 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 166,
+    "params": {
+      "facet.field": "author_facet_hier",
+      "fl": "id",
+      "start": "0",
+      "sort": "date desc,bibcode desc",
+      "rows": "1",
+      "p_": "0",
+      "facet.limit": "20",
+      "q": "year:2000 moon crater",
+      "facet.prefix": "0/",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67bcaf73-1746e5a4749c4e9d71cbfeea",
+      "boost": "add(doctype_boost, 1)",
+      "facet.mincount": "1",
+      "facet": "true",
+      "wt": "json",
+      "facet.offset": "0"
+    }
+  },
+  "response": {
+    "numFound": 112,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "6153470"
+      }
+    ]
+  },
+  "facet_counts": {
+    "facet_queries": {},
+    "facet_fields": {
+      "author_facet_hier": [
+        "0/Lucey, P",
+        7,
+        "0/Hartmann, W",
+        5,
+        "0/Hawke, B",
+        5,
+        "0/Bell, J",
+        4,
+        "0/Blewett, D",
+        4,
+        "0/Elphic, R",
+        4,
+        "0/Heidmann, J",
+        4,
+        "0/Lawrence, D",
+        4,
+        "0/Pieters, C",
+        4,
+        "0/Robinson, M",
+        4,
+        "0/Spudis, P",
+        4,
+        "0/Barraclough, B",
+        3,
+        "0/Binder, A",
+        3,
+        "0/Britt, D",
+        3,
+        "0/Chapman, C",
+        3,
+        "0/Cheng, A",
+        3,
+        "0/Feldman, W",
+        3,
+        "0/Head, J",
+        3,
+        "0/Herkenhoff, K",
+        3,
+        "0/Mangold, N",
+        3
+      ]
+    },
+    "facet_ranges": {},
+    "facet_intervals": {},
+    "facet_heatmaps": {}
+  }
+}
