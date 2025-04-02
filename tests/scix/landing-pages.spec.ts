@@ -1,28 +1,42 @@
 import { expect, test } from '@playwright/test';
 import { ROUTES } from '@/constants';
 import { a11yCheck, visualCheck } from '@/util/helpers';
+import { configDotenv } from 'dotenv';
+
+configDotenv();
 
 test.use({
   baseURL: process.env.SCIX_BASE_URL,
 });
 
-test.fixme('Classic form loads properly', { tag: ['@smoke'] }, async ({ page }, testInfo) => {
+test('Classic form loads properly', { tag: ['@smoke'] }, async ({ page }, testInfo) => {
   const name = 'classic-form';
   await page.goto(ROUTES.CLASSIC_FORM);
   await expect(page).toHaveURL(new RegExp(`${ROUTES.CLASSIC_FORM}`));
 
   await test.step('Confirm the page loaded correctly', async () => {
-    await expect(page.locator('#landing-page-layout')).toContainText('Limit query to:');
-    await expect(page.locator('#landing-page-layout')).toContainText('Limit query to: Astronomy Physics General');
-    await expect(page.getByPlaceholder('(Last, First M) one per line')).toBeEmpty();
-    await expect(page.getByPlaceholder('SIMBAD object search (one per')).toBeEmpty();
-    await expect(page.getByLabel('start publication month')).toBeEmpty();
-    await expect(page.getByLabel('start publication year')).toBeEmpty();
-    await expect(page.getByLabel('end publication month')).toBeEmpty();
-    await expect(page.getByLabel('end publication year')).toBeEmpty();
-    await expect(page.getByLabel('title')).toBeEmpty();
-    await expect(page.getByLabel('abstract and keywords')).toBeEmpty();
-    await expect(page.getByPlaceholder('Comma-separated bibstems of')).toBeEmpty();
+    await expect(page.locator('form')).toMatchAriaSnapshot({ name: `${name}.aria.yml` });
+
+    // author
+    await expect(page.getByRole('textbox', { name: 'Author' })).toBeEmpty();
+
+    // object
+    await expect(page.getByRole('textbox', { name: 'Object' })).toBeEmpty();
+
+    // pubdate
+    await expect(page.getByRole('textbox', { name: 'Publication Date End' })).toBeEmpty();
+
+    // title
+    await expect(page.getByRole('textbox', { name: 'Title' })).toBeEmpty();
+
+    // abstract/keywords
+    await expect(page.getByRole('textbox', { name: 'Abstract / Keywords' })).toBeEmpty();
+
+    // publications
+    await expect(page.getByRole('combobox', { name: 'bibstem picker' })).toBeEmpty();
+
+    // sort
+    await expect(page.getByRole('combobox', { name: 'sort' })).toBeEmpty();
   });
 
   await test.step('Checking for visual regressions', async () => await visualCheck(page, name));
@@ -62,4 +76,3 @@ test.fixme('Paper form loads properly', { tag: ['@smoke'] }, async ({ page }, te
   await test.step('Checking for visual regressions', async () => await visualCheck(page, name));
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
-

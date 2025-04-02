@@ -1,6 +1,9 @@
 import { API_TIMEOUT, ROUTES } from '@/constants';
 import { expect, test } from '@/setup/setup';
 import { a11yCheck, searchParamsToString, visualCheck } from '@/util/helpers';
+import { configDotenv } from 'dotenv';
+
+configDotenv();
 
 test.use({
   baseURL: process.env.SCIX_BASE_URL,

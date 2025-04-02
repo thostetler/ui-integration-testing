@@ -1,6 +1,9 @@
 import { expect, type Page, test, type TestInfo } from '@playwright/test';
 import { A11Y_TAGS, MAX_A11Y_VIOLATIONS, ROUTES } from '@/constants';
 import AxeBuilder from '@axe-core/playwright';
+import { configDotenv } from 'dotenv';
+
+configDotenv();
 
 test.use({
   baseURL: process.env.SCIX_BASE_URL,
@@ -73,4 +76,3 @@ test.fixme('Feedback Associated Articles form load properly', { tag: ['@smoke'] 
   await test.step('Checking for visual regressions', visualCheck(page, name));
   await test.step('Check for a11y violations', a11yCheck(page, name, testInfo));
 });
-

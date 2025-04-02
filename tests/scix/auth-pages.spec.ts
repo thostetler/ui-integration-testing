@@ -1,6 +1,9 @@
 import { expect, test } from '@playwright/test';
 import { ROUTES } from '@/constants';
 import { a11yCheck, visualCheck } from '@/util/helpers';
+import { configDotenv } from 'dotenv';
+
+configDotenv();
 
 test.use({
   baseURL: process.env.SCIX_BASE_URL,
@@ -38,4 +41,3 @@ test.fixme('Register page loads properly', { tag: ['@smoke'] }, async ({ page },
   await test.step('Checking for visual regressions', async () => await visualCheck(page, name));
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
-
