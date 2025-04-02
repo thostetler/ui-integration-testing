@@ -52,8 +52,9 @@ test('Add/Remove Libraries', { tag: ['@auth'] }, async ({ loggedInPage: [page] }
   await page.waitForResponse('**/biblib/documents/*', { timeout: API_TIMEOUT });
 });
 
-test('Add/Remove Bibcodes to Library', { tag: ['@auth'] }, async ({ loggedInPage: [page] }) => {
+test('Add/Remove Bibcodes to Library', { tag: ['@auth'] }, async ({ loggedInAltPage: [page], cacheRoute }) => {
   test.slow();
+  await cacheRoute.GET('**/v1/search/query*');
   const state = { name: 'papers' };
   const librariesPage = new LibrariesPage(page);
   await librariesPage.goto();
