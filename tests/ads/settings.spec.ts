@@ -1,6 +1,6 @@
 import { expect, test } from '@/setup/setup';
 import { configDotenv } from 'dotenv';
-import { ExportSettingsPage, MyADSSettingsPage, SearchSettingsPage } from '@/fixtures/settings';
+import { ExportSettingsPage, MyADSSettingsPage, SearchSettingsPage } from '@/ads/fixtures/settings';
 
 configDotenv();
 

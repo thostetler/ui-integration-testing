@@ -3,6 +3,7 @@ import { expect } from '@/setup/setup';
 import { type UserData, userDataSchema } from 'schemas/userdata.schema';
 import { getAPIToken } from '@/util/api';
 import { init } from 'zod-empty';
+import { isScix } from '@/util/helpers';
 
 type SubPage = {
   path: string;
@@ -38,7 +39,10 @@ export class SettingsPage {
   }
 
   async assertHeader() {
-    await expect(this.page.locator('.panel-heading')).toContainText(this.subPage.header);
+    const title = (await isScix(this.page))
+      ? this.page.locator('#settings-section-title')
+      : this.page.locator('.panel-heading');
+    await expect(title).toContainText(this.subPage.header);
   }
 
   async assertUserData(label: string, key?: keyof UserData) {
@@ -54,7 +58,7 @@ export class SettingsPage {
 
   async resetUserData() {
     const api = await request.newContext({
-      baseURL: process.env.ADS_BASE_URL,
+      baseURL: (await isScix(this.page)) ? process.env.SCIX_BASE_URL : process.env.ADS_BASE_URL,
       extraHTTPHeaders: {
         Accept: 'application/json',
         ContentType: 'application/json',

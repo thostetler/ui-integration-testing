@@ -1,5 +1,6 @@
-import { request, expect, Page, Response, type APIRequestContext } from '@playwright/test';
-import { SettingsPage } from '@/fixtures/settings';
+import { expect, Page, Response } from '@playwright/test';
+import { SettingsPage } from '@/ads/fixtures/settings';
+import type { ADSUser } from '@/interfaces/user';
 
 type BootstrapResponse = {
   access_token: string;
@@ -23,7 +24,11 @@ type Credentials = {
   password: string;
 };
 
-export class User {
+export class ADSUser implements ADSUser {
+  private _email: string;
+  private _password: string;
+  page: Page;
+
   get password(): string {
     return this._password;
   }
@@ -31,6 +36,7 @@ export class User {
   set password(value: string) {
     this._password = value;
   }
+
   get email(): string {
     return this._email;
   }
@@ -38,9 +44,6 @@ export class User {
   set email(value: string) {
     this._email = value;
   }
-  private _email: string;
-  private _password: string;
-  page: Page;
 
   constructor(page: Page, credentials: Credentials) {
     this._email = credentials.emailAddress;
@@ -57,12 +60,10 @@ export class User {
     await expect(async () => {
       await this.page.goto('/user/account/login');
 
-      // fill out form
       await this.page.locator('#email').fill(this._email);
       await this.page.locator('#password').fill(this._password);
-
-      // submit
       await this.page.locator('.submit-login').click();
+
       res = await this.page.waitForResponse('**/v1/accounts/user/login');
       expect(res.request().method()).toBe('POST');
     }).toPass();

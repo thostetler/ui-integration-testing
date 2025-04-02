@@ -1,6 +1,6 @@
 import { test as setup, test } from '@/setup/setup';
 import { getTestEmailAccount } from '@/util/email';
-import { User } from '@/fixtures/user';
+import { ADSUser } from '@/ads/fixtures/user';
 import { verifyUser } from '@/util/accounts';
 import { Page } from '@playwright/test';
 
@@ -8,7 +8,7 @@ setup.use({
   baseURL: process.env.ADS_BASE_URL,
 });
 
-const registerUser = async (page: Page, user: User) => {
+const registerUser = async (page: Page, user: ADSUser) => {
   const loginRes = await user.login();
   if (loginRes.status() === 401) {
     await user.register();
@@ -22,6 +22,6 @@ const registerUser = async (page: Page, user: User) => {
 };
 
 test('Can register a new account', { tag: ['@stress', '@accounts'] }, async ({ page }, testInfo) => {
-  const user = new User(page, getTestEmailAccount(String(testInfo.workerIndex + 100)));
+  const user = new ADSUser(page, getTestEmailAccount(String(testInfo.workerIndex + 100)));
   await registerUser(page, user);
 });

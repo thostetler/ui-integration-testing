@@ -55,3 +55,8 @@ export const logNetworkRequests = async (page: Page, filter?: (url: string) => b
     }
   });
 };
+
+export const isScix = async (page: Page) => {
+  const main = page.locator('#main-content');
+  return await main.isVisible();
+};

@@ -1,43 +1,40 @@
 import { expect, test } from '@/setup/setup';
 import { configDotenv } from 'dotenv';
-import { ExportSettingsPage, MyADSSettingsPage, SearchSettingsPage } from '@/fixtures/settings';
+import { ExportSettingsPage, MyADSSettingsPage, SearchSettingsPage } from '@/scix/fixtures/settings';
 
 configDotenv();
 
 test.use({
-  baseURL: process.env.ADS_BASE_URL,
+  baseURL: process.env.SCIX_BASE_URL,
 });
 
-test.fixme(
-  'Can see and modify application settings',
-  { tag: ['@auth', '@smoke'] },
-  async ({ loggedInPage: [page] }) => {
-    const settingsPage = new SearchSettingsPage(page);
-    await settingsPage.goto();
-    await settingsPage.assertHeader();
-    await settingsPage.resetUserData();
+test('Can see and modify application settings', { tag: ['@auth', '@smoke'] }, async ({ loggedInPage: [page] }) => {
+  const settingsPage = new SearchSettingsPage(page);
+  await settingsPage.goto();
+  await settingsPage.assertHeader();
+  await settingsPage.resetUserData();
 
-    await expect(async () => {
-      await settingsPage.setAuthorsPerResult(5);
-    }).toPass();
+  await expect(async () => {
+    await settingsPage.setAuthorsPerResult(5);
+  }).toPass();
 
-    await expect(async () => {
-      await settingsPage.setExternalLinkBehavior('Open new tab');
-    }).toPass();
+  await expect(async () => {
+    await settingsPage.setExternalLinkBehavior('Open new tab');
+  }).toPass();
 
-    await expect(async () => {
-      await settingsPage.setDefaultHomePage('Classic Form');
-    }).toPass();
+  await expect(async () => {
+    await settingsPage.setDefaultHomePage('Classic Form');
+  }).toPass();
 
-    await expect(async () => {
-      await settingsPage.setDefaultDatabase('Physics');
-    }).toPass();
+  await expect(async () => {
+    await settingsPage.setDefaultDatabase('Physics');
+  }).toPass();
 
-    await expect(async () => {
-      await settingsPage.setResultsListSideBars('Hide');
-    }).toPass();
-  },
-);
+  await expect(async () => {
+    await settingsPage.setResultsListSideBars('Hide');
+  }).toPass();
+});
+
 test.fixme('Can see and modify export settings', { tag: ['@auth', '@smoke'] }, async ({ loggedInPage: [page] }) => {
   const exportSettingsPage = new ExportSettingsPage(page);
   await exportSettingsPage.goto();
@@ -58,6 +55,7 @@ test.fixme('Can see and modify export settings', { tag: ['@auth', '@smoke'] }, a
 
   await exportSettingsPage.assertUserData('export-settings');
 });
+
 test.fixme('Can see, add, and modify myADS settings', { tag: ['@auth'] }, async ({ loggedInPage: [page] }) => {
   const myADSSettingsPage = new MyADSSettingsPage(page);
   await myADSSettingsPage.goto();
