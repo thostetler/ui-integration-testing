@@ -1,7 +1,7 @@
-import { expect, type Page, test, type TestInfo } from '@playwright/test';
-import { A11Y_TAGS, MAX_A11Y_VIOLATIONS, ROUTES } from '@/constants';
-import AxeBuilder from '@axe-core/playwright';
+import { expect, test } from '@playwright/test';
+import { ROUTES } from '@/constants';
 import { configDotenv } from 'dotenv';
+import { a11yCheck, ariaSnapshot, visualCheck } from '@/util/helpers';
 
 configDotenv();
 
@@ -9,70 +9,66 @@ test.use({
   baseURL: process.env.SCIX_BASE_URL,
 });
 
-const visualCheck = (page: Page, name: string) => async () => {
-  await expect(page.locator('#content-container')).toHaveScreenshot(`${name}.png`);
-};
-
-const a11yCheck = (page: Page, name: string, testInfo: TestInfo) => async () => {
-  const a11yResults = await new AxeBuilder({ page }).withTags(A11Y_TAGS).analyze();
-  await testInfo.attach(`a11y-results-${name}`, {
-    body: JSON.stringify(a11yResults, null, 2),
-    contentType: 'application/json',
-  });
-  expect(a11yResults.violations.length).toBeLessThanOrEqual(MAX_A11Y_VIOLATIONS);
-};
-
-test.fixme('Feedback Correct Abstract form load properly', { tag: ['@smoke'] }, async ({ page }, testInfo) => {
+test('Feedback Correct Abstract form load properly', { tag: ['@smoke'] }, async ({ page }, testInfo) => {
   const name = 'feedback-correct-abstract';
   await page.goto(ROUTES.FEEDBACK_CORRECT_ABS);
 
   await test.step('Confirm the page loaded correctly', async () => {
-    await expect(page.locator('h2')).toContainText('Submit or Correct an Abstract for the ADS Abstract Service');
-    await expect(page.getByPlaceholder('John Smith')).toBeEmpty();
-    await expect(page.getByPlaceholder('john@example.com')).toBeEmpty();
-    await expect(page.getByPlaceholder('1999ApJ...511L..65Y')).toBeEmpty();
-    await expect(page.getByLabel('Title')).toBeEmpty();
-    await expect(page.getByLabel('Publication *')).toBeEmpty();
-    await expect(page.getByPlaceholder('YYYY-MM-DD')).toBeEmpty();
-    await expect(page.getByLabel('URL 1 type')).toHaveValue('none');
-    await expect(page.getByLabel('URL 1', { exact: true })).toBeEmpty();
-    await expect(page.getByLabel('Abstract', { exact: true })).toBeEmpty();
-    await expect(page.getByLabel('Keyword')).toBeEmpty();
-    await expect(page.getByLabel('Reference')).toBeEmpty();
-    await expect(page.getByLabel('User Comments')).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Name' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Email' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Bibcode' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Title' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Authors' })).toBeEmpty();
+    await expect(page.getByRole('row', { name: 'add author' }).getByRole('textbox').nth(1)).toBeEmpty();
+    await expect(page.getByRole('row', { name: 'add author' }).getByRole('textbox').nth(2)).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Publication', exact: true })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Publication Date' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'URLs' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Abstract' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Keywords' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'References' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'User Comments' })).toBeEmpty();
+    await expect(page.getByRole('button', { name: 'Reset' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Preview' })).toBeDisabled();
   });
 
-  await test.step('Checking for visual regressions', visualCheck(page, name));
-  await test.step('Check for a11y violations', a11yCheck(page, name, testInfo));
+  await test.step('Checking for aria regressions', async () => await ariaSnapshot(page, name));
+  await test.step('Checking for visual regressions', async () => await visualCheck(page, name));
+  await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test.fixme('Feedback Missing References form load properly', { tag: ['@smoke'] }, async ({ page }, testInfo) => {
+test('Feedback Missing References form load properly', { tag: ['@smoke'] }, async ({ page }, testInfo) => {
   const name = 'feedback-missing-references';
   await page.goto(ROUTES.FEEDBACK_MISSING_REFS);
 
   await test.step('Confirm the page loaded correctly', async () => {
-    await expect(page.locator('h2')).toContainText('Submit missing references for the ADS Abstract Service');
-    await expect(page.getByPlaceholder('John Smith')).toBeEmpty();
-    await expect(page.getByPlaceholder('john@example.com')).toBeEmpty();
-    await expect(page.getByLabel('Citing Bibcode')).toBeEmpty();
-    await expect(page.getByLabel('Cited Bibcode')).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Name' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Email' })).toBeEmpty();
+    await expect(page.getByRole('group').filter({ hasText: /^$/ }).getByPlaceholder('1998ApJ...501L..41Y')).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: '1998ApJ...501L..41Y' }).nth(1)).toBeEmpty();
+    await expect(page.getByRole('button', { name: 'Reset' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Preview' })).toBeDisabled();
   });
 
-  await test.step('Checking for visual regressions', visualCheck(page, name));
-  await test.step('Check for a11y violations', a11yCheck(page, name, testInfo));
+  await test.step('Checking for aria regressions', async () => await ariaSnapshot(page, name));
+  await test.step('Checking for visual regressions', async () => await visualCheck(page, name));
+  await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test.fixme('Feedback Associated Articles form load properly', { tag: ['@smoke'] }, async ({ page }, testInfo) => {
+test('Feedback Associated Articles form load properly', { tag: ['@smoke'] }, async ({ page }, testInfo) => {
   const name = 'feedback-associated-articles';
   await page.goto(ROUTES.FEEDBACK_ASSOCIATED_ARTICLES);
 
   await test.step('Confirm the page loaded correctly', async () => {
-    await expect(page.locator('h2')).toContainText('Submit Associated Articles for the ADS Abstract Service');
-    await expect(page.getByPlaceholder('John Smith')).toBeEmpty();
-    await expect(page.getByPlaceholder('john@example.com')).toBeEmpty();
-    await expect(page.getByLabel('Relation type *')).toHaveValue('none');
+    await expect(page.getByRole('textbox', { name: 'Name' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Email' })).toBeEmpty();
+    await expect(page.getByRole('textbox', { name: 'Main Paper Bibcode' })).toBeEmpty();
+    await expect(page.getByRole('group').filter({ hasText: /^$/ }).getByRole('textbox')).toBeEmpty();
+    await expect(page.getByRole('button', { name: 'Reset' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Preview' })).toBeDisabled();
   });
 
-  await test.step('Checking for visual regressions', visualCheck(page, name));
-  await test.step('Check for a11y violations', a11yCheck(page, name, testInfo));
+  await test.step('Checking for aria regressions', async () => await ariaSnapshot(page, name));
+  await test.step('Checking for visual regressions', async () => await visualCheck(page, name));
+  await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });

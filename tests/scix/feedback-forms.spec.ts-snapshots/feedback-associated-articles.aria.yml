@@ -1,0 +1,31 @@
+- region "Submit Associated Articles for the SciX Abstract Service":
+  - heading "Submit Associated Articles for the SciX Abstract Service" [level=2]
+  - paragraph: "Use this form to submit correlated articles (errata, multiple part articles, etc) with other articles in SciX. For instance:"
+  - paragraph:
+    - strong: 1999ApJ...511L..65Y
+    - text: "/: Erratum: An X-Ray Microlensing Test of AU-Scale Accretion Disk Structure in Q2237\\+\\d+/"
+  - paragraph: "is an erratum for:"
+  - paragraph:
+    - strong: 1998ApJ...501L..41Y
+    - text: "/: An X-Ray Microlensing Test of AU-Scale Accretion Disk Structure in Q2237\\+\\d+/"
+  - paragraph: Such associated references are connected with links in the SciX database. If you know of any correlated references (errata, multiple part articles, etc) that do not have such links, please let us know about them by filling in the codes for these correlated articles in this form. The form accepts one bibcode for the main paper and one or more bibcodes for the associated articles. Use the "Add a Record" button to enter multiple records.
+  - group:
+    - text: Name
+    - textbox "Name"
+  - group:
+    - text: Email
+    - textbox "Email"
+  - group:
+    - text: Relation Type
+    - group:
+      - text: Main Paper/Errata
+      - combobox "Relation Type"
+  - group:
+    - text: Main Paper Bibcode
+    - textbox "Main Paper Bibcode"
+  - group: Errata Bibcode(s)
+  - group:
+    - textbox
+    - button "Add" [disabled]
+  - button "Preview" [disabled]
+  - button "Reset"
