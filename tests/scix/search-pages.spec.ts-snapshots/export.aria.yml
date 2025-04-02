@@ -1,0 +1,20 @@
+- heading "Export Citations" [level=2]
+- 'heading /Exporting records 1 to \d+ \(total: \d+\)/ [level=2]'
+- tablist:
+  - tab "Built-in Formats"
+  - tab "Custom Formats" [selected]
+- tabpanel "Custom Formats":
+  - group:
+    - text: Select Custom Format
+    - group:
+      - text: Enter Custom Format
+      - combobox "Custom Formats"
+  - textbox "Enter a custom format"
+  - button "Submit"
+  - paragraph:
+    - text: For more information on custom formats, see
+    - link "SciX Help"
+    - text: .
+- button "Download to file"
+- button "copy to clipboard": Copy to Clipboard
+- textbox: Press "submit" to generate export.

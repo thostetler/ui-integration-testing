@@ -1,0 +1,466 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 38,
+    "params": {
+      "q": "bibcode:2005MNRAS.364.1105S OR bibcode:2003SIAMR..45..167N OR bibcode:2003PASP..115..763C OR bibcode:2003Natur.424..839V OR bibcode:2003MNRAS.344.1000B OR bibcode:2003AnPhy.303....2K OR bibcode:2002PhLB..545...23C OR bibcode:2001Natur.414..338G OR bibcode:2001MNRAS.322..231K OR bibcode:2001MachL..45....5B OR bibcode:2001JGR...106.7183T OR bibcode:2000PhRvL..85.3966P",
+      "fl": "bibcode,title,author,[fields author=50],author_count,pubdate,bibstem,[citations],citation_count,citation_count_norm,esources,property,pub,data,id,identifier",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67ed80ed-3810af0b5ea9e53465bf5144",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "date desc",
+      "rows": "10",
+      "wt": "json",
+      "n": "10",
+      "p_": "0"
+    }
+  },
+  "response": {
+    "numFound": 12,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2005MNRAS.364.1105S",
+        "author": [
+          "Springel, Volker"
+        ],
+        "author_count": 1,
+        "bibstem": [
+          "MNRAS",
+          "MNRAS.364"
+        ],
+        "id": "7600500",
+        "identifier": [
+          "arXiv:astro-ph/0505010",
+          "2005MNRAS.tmp..999S",
+          "2005astro.ph..5010S",
+          "10.48550/arXiv.astro-ph/0505010",
+          "10.1111/j.1365-2966.2005.09655.x",
+          "2005MNRAS.364.1105S"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2005-12-00",
+        "title": [
+          "The cosmological simulation code GADGET-2"
+        ],
+        "data": [
+          "SIMBAD:1"
+        ],
+        "esources": [
+          "ADS_PDF",
+          "ADS_SCAN",
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ADS_OPENACCESS",
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 5800,
+        "citation_count_norm": 5800,
+        "[citations]": {
+          "num_references": 118,
+          "num_citations": 5799
+        }
+      },
+      {
+        "bibcode": "2003MNRAS.344.1000B",
+        "author": [
+          "Bruzual, G.",
+          "Charlot, S."
+        ],
+        "author_count": 2,
+        "bibstem": [
+          "MNRAS",
+          "MNRAS.344"
+        ],
+        "id": "6997732",
+        "identifier": [
+          "2003MNRAS.344.1000B",
+          "arXiv:astro-ph/0309134",
+          "10.48550/arXiv.astro-ph/0309134",
+          "2003astro.ph..9134B",
+          "10.1046/j.1365-8711.2003.06897.x"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2003-10-00",
+        "title": [
+          "Stellar population synthesis at the resolution of 2003"
+        ],
+        "data": [
+          "SIMBAD:12"
+        ],
+        "esources": [
+          "ADS_PDF",
+          "ADS_SCAN",
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ADS_OPENACCESS",
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 9150,
+        "citation_count_norm": 4575,
+        "[citations]": {
+          "num_references": 161,
+          "num_citations": 9150
+        }
+      },
+      {
+        "bibcode": "2003Natur.424..839V",
+        "author": [
+          "Vahala, Kerry J."
+        ],
+        "author_count": 1,
+        "bibstem": [
+          "Natur",
+          "Natur.424"
+        ],
+        "id": "7013476",
+        "identifier": [
+          "2003Natur.424..839V",
+          "10.1038/nature01939"
+        ],
+        "pub": "Nature",
+        "pubdate": "2003-08-00",
+        "title": [
+          "Optical microcavities"
+        ],
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 3101,
+        "citation_count_norm": 3101,
+        "[citations]": {
+          "num_references": 101,
+          "num_citations": 3101
+        }
+      },
+      {
+        "bibcode": "2003PASP..115..763C",
+        "author": [
+          "Chabrier, Gilles"
+        ],
+        "author_count": 1,
+        "bibstem": [
+          "PASP",
+          "PASP..115"
+        ],
+        "id": "7023111",
+        "identifier": [
+          "10.1086/376392",
+          "10.48550/arXiv.astro-ph/0304382",
+          "2003astro.ph..4382C",
+          "arXiv:astro-ph/0304382",
+          "2003PASP..115..763C"
+        ],
+        "pub": "Publications of the Astronomical Society of the Pacific",
+        "pubdate": "2003-07-00",
+        "title": [
+          "Galactic Stellar and Substellar Initial Mass Function"
+        ],
+        "data": [
+          "SIMBAD:6"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 7921,
+        "citation_count_norm": 7921,
+        "[citations]": {
+          "num_references": 198,
+          "num_citations": 7921
+        }
+      },
+      {
+        "bibcode": "2003SIAMR..45..167N",
+        "author": [
+          "Newman, M. E. J."
+        ],
+        "author_count": 1,
+        "bibstem": [
+          "SIAMR",
+          "SIAMR..45"
+        ],
+        "id": "7066807",
+        "identifier": [
+          "2003cond.mat..3516N",
+          "10.1137/S003614450342480",
+          "10.48550/arXiv.cond-mat/0303516",
+          "arXiv:cond-mat/0303516",
+          "2003SIAMR..45..167N"
+        ],
+        "pub": "SIAM Review",
+        "pubdate": "2003-01-00",
+        "title": [
+          "The Structure and Function of Complex Networks"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "citation_count": 5789,
+        "citation_count_norm": 5789,
+        "[citations]": {
+          "num_references": 101,
+          "num_citations": 5789
+        }
+      },
+      {
+        "bibcode": "2003AnPhy.303....2K",
+        "author": [
+          "Kitaev, A. Yu."
+        ],
+        "author_count": 1,
+        "bibstem": [
+          "AnPhy",
+          "AnPhy.303"
+        ],
+        "id": "6870397",
+        "identifier": [
+          "2003AnPhy.303....2K",
+          "10.1016/S0003-4916(02)00018-0",
+          "10.48550/arXiv.quant-ph/9707021",
+          "1997quant.ph..7021K",
+          "arXiv:quant-ph/9707021"
+        ],
+        "pub": "Annals of Physics",
+        "pubdate": "2003-01-00",
+        "title": [
+          "Fault-tolerant quantum computation by anyons"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 5498,
+        "citation_count_norm": 5498,
+        "[citations]": {
+          "num_references": 17,
+          "num_citations": 5498
+        }
+      },
+      {
+        "bibcode": "2002PhLB..545...23C",
+        "author": [
+          "Caldwell, R. R."
+        ],
+        "author_count": 1,
+        "bibstem": [
+          "PhLB",
+          "PhLB..545"
+        ],
+        "id": "6743663",
+        "identifier": [
+          "arXiv:astro-ph/9908168",
+          "1999astro.ph..8168C",
+          "10.48550/arXiv.astro-ph/9908168",
+          "10.1016/S0370-2693(02)02589-3",
+          "2002PhLB..545...23C"
+        ],
+        "pub": "Physics Letters B",
+        "pubdate": "2002-10-00",
+        "title": [
+          "A phantom menace? Cosmological consequences of a dark energy component with super-negative equation of state"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 3105,
+        "citation_count_norm": 3105,
+        "[citations]": {
+          "num_references": 19,
+          "num_citations": 3105
+        }
+      },
+      {
+        "bibcode": "2001Natur.414..338G",
+        "author": [
+          "Grätzel, Michael"
+        ],
+        "author_count": 1,
+        "bibstem": [
+          "Natur",
+          "Natur.414"
+        ],
+        "id": "6455427",
+        "identifier": [
+          "10.1038/35104607",
+          "2001Natur.414..338G"
+        ],
+        "pub": "Nature",
+        "pubdate": "2001-11-00",
+        "title": [
+          "Photoelectrochemical cells"
+        ],
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 4611,
+        "citation_count_norm": 4611,
+        "[citations]": {
+          "num_references": 24,
+          "num_citations": 4611
+        }
+      },
+      {
+        "bibcode": "2001JGR...106.7183T",
+        "author": [
+          "Taylor, Karl E."
+        ],
+        "author_count": 1,
+        "bibstem": [
+          "JGR",
+          "JGR...106"
+        ],
+        "id": "6407285",
+        "identifier": [
+          "10.1029/2000JD900719",
+          "2001JGR...106.7183T"
+        ],
+        "pub": "Journal of Geophysical Research",
+        "pubdate": "2001-04-00",
+        "title": [
+          "Summarizing multiple aspects of model performance in a single diagram"
+        ],
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "REFEREED"
+        ],
+        "citation_count": 4822,
+        "citation_count_norm": 4822,
+        "[citations]": {
+          "num_references": 14,
+          "num_citations": 4822
+        }
+      },
+      {
+        "bibcode": "2001MNRAS.322..231K",
+        "author": [
+          "Kroupa, Pavel"
+        ],
+        "author_count": 1,
+        "bibstem": [
+          "MNRAS",
+          "MNRAS.322"
+        ],
+        "id": "6440505",
+        "identifier": [
+          "2000astro.ph..9005K",
+          "arXiv:astro-ph/0009005",
+          "2001MNRAS.322..231K",
+          "10.48550/arXiv.astro-ph/0009005",
+          "10.1046/j.1365-8711.2001.04022.x"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2001-04-00",
+        "title": [
+          "On the variation of the initial mass function"
+        ],
+        "data": [
+          "SIMBAD:9"
+        ],
+        "esources": [
+          "ADS_PDF",
+          "ADS_SCAN",
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ADS_OPENACCESS",
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 6398,
+        "citation_count_norm": 6398,
+        "[citations]": {
+          "num_references": 97,
+          "num_citations": 6397
+        }
+      }
+    ]
+  }
+}

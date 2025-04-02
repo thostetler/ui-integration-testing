@@ -1,0 +1,80 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 315,
+    "params": {
+      "q": "bibcode:2005MNRAS.364.1105S OR bibcode:2003SIAMR..45..167N OR bibcode:2003PASP..115..763C OR bibcode:2003Natur.424..839V OR bibcode:2003MNRAS.344.1000B OR bibcode:2003AnPhy.303....2K OR bibcode:2002PhLB..545...23C OR bibcode:2001Natur.414..338G OR bibcode:2001MNRAS.322..231K OR bibcode:2001MachL..45....5B OR bibcode:2001JGR...106.7183T OR bibcode:2000PhRvL..85.3966P",
+      "json.facet": "{\"database\":{\"type\":\"terms\",\"field\":\"database\",\"limit\":10,\"mincount\":1,\"offset\":0,\"numBuckets\":true,\"sort\":\"count desc\",\"prefix\":\"\"}}",
+      "fl": "id",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67ed80ee-7ee330443510e55253492606",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "date desc",
+      "rows": "10",
+      "wt": "json",
+      "n": "10",
+      "p_": "0"
+    }
+  },
+  "response": {
+    "numFound": 12,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "7600500"
+      },
+      {
+        "id": "6997732"
+      },
+      {
+        "id": "7013476"
+      },
+      {
+        "id": "7023111"
+      },
+      {
+        "id": "7066807"
+      },
+      {
+        "id": "6870397"
+      },
+      {
+        "id": "6743663"
+      },
+      {
+        "id": "6455427"
+      },
+      {
+        "id": "6407285"
+      },
+      {
+        "id": "6440505"
+      }
+    ]
+  },
+  "facets": {
+    "count": 12,
+    "database": {
+      "numBuckets": 4,
+      "buckets": [
+        {
+          "val": "physics",
+          "count": 7
+        },
+        {
+          "val": "astronomy",
+          "count": 6
+        },
+        {
+          "val": "general",
+          "count": 2
+        },
+        {
+          "val": "earthscience",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

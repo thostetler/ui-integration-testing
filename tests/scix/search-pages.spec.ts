@@ -1,6 +1,6 @@
 import { API_TIMEOUT, ROUTES } from '@/constants';
 import { expect, test } from '@/setup/setup';
-import { a11yCheck, searchParamsToString, visualCheck } from '@/util/helpers';
+import { a11yCheck, ariaSnapshot, searchParamsToString, visualCheck } from '@/util/helpers';
 import { configDotenv } from 'dotenv';
 
 configDotenv();
@@ -27,112 +27,93 @@ const BIBCODES = [
 const QUERY_STRING = new URLSearchParams({
   q: `bibcode:${BIBCODES.join(' OR bibcode:')}`,
   sort: 'date desc, bibcode desc',
-  p_: '0',
+  p: '1',
 });
 QUERY_STRING.sort();
 
-test.fixme('Search page loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+test('Search page loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'search';
   await cacheRoute.GET('**/v1/search/query*');
-  await page.goto(`${ROUTES.SEARCH}/${searchParamsToString(QUERY_STRING)}`);
-  await expect(page).toHaveURL(new RegExp(`${ROUTES.SEARCH}/${searchParamsToString(QUERY_STRING)}`));
+  await page.goto(`${ROUTES.SEARCH}?${searchParamsToString(QUERY_STRING)}`);
+  await expect(page).toHaveURL((url) => {
+    const searchParams = new URLSearchParams(url.search);
+    return searchParams.get('q') === QUERY_STRING.get('q') && searchParams.get('sort') === QUERY_STRING.get('sort');
+  });
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      await expect(
-        page.getByLabel(`Your search returned ${BIBCODES.length} results`),
-        'Numfound is displayed',
-      ).toContainText(`Your search returned ${BIBCODES.length} results`);
-      await expect(page.getByLabel('Start typing a query here to'), 'Search bar has been filled properly').toHaveValue(
-        QUERY_STRING.get('q'),
+      await expect(page.locator('form')).toContainText('Your search returned 12 results');
+      await expect(page.getByTestId('search-input')).toHaveValue(
+        'bibcode:2005MNRAS.364.1105S OR bibcode:2003SIAMR..45..167N OR bibcode:2003PASP..115..763C OR bibcode:2003Natur.424..839V OR bibcode:2003MNRAS.344.1000B OR bibcode:2003AnPhy.303....2K OR bibcode:2002PhLB..545...23C OR bibcode:2001Natur.414..338G OR bibcode:2001MNRAS.322..231K OR bibcode:2001MachL..45....5B OR bibcode:2001JGR...106.7183T OR bibcode:2000PhRvL..85.3966P',
       );
-      await expect(page.getByLabel('list of results'), 'Results list has results').toContainText(BIBCODES[0]);
-      expect(await page.locator('#results-left-column').textContent(), 'Facets have loaded').toMatchSnapshot(
-        'facet-text',
+      await expect(page.getByText('QUICK FIELD: authorfirst')).toBeVisible();
+      await expect(page.getByText('Select AllBulk ActionsExplore')).toBeVisible();
+      await expect(page.getByRole('heading', { name: 'Filters' })).toBeVisible();
+      await expect(page.getByTestId('pagination-label').getByRole('paragraph')).toContainText(
+        'Showing 1 to 10 of 12 results',
       );
-      expect(await page.getByLabel('limit years graph').textContent(), 'Years graph is loaded').toMatchSnapshot(
-        'years-graph',
-      );
-      await expect(page.getByText('select all on this page Show'), 'Select all checkbox is visible').toBeVisible();
-      await expect(page.getByText('Actions Explore'), 'Actions dropdowns are visible').toBeVisible();
-      await expect(page.locator('#search-results-sort'), 'Sort dropdown is visible').toBeVisible();
+      await expect(page.getByTestId('pagination-select-page')).toContainText('1 of 2');
+      await expect(page.getByRole('button', { name: 'Toggle Off Author' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Toggle Off Collections' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Toggle Off Refereed' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Toggle On Institutions' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Toggle On Keywords' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Toggle On Publications' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Toggle On Bibgroups' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Toggle On SIMBAD Objects' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Toggle On NED Objects' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Toggle On Data' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Toggle On Vizier Tables' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Toggle On Publication Type' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Show hidden filters (2)' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Create email notification of' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Result list settings' })).toBeVisible();
+      await expect(page.getByTestId('search-submit')).toBeVisible();
     }).toPass();
   });
 
+  await test.step('Checking for aria regressions', async () => await ariaSnapshot(page, name));
   await test.step('Checking for visual regressions', async () => await visualCheck(page, name));
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test.fixme('Export tool loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+test('Export tool loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'export';
-  const urlRegx = new RegExp(`${ROUTES.SEARCH}/${searchParamsToString(QUERY_STRING)}${ROUTES.SEARCH_EXPORT_BIBTEX}`);
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/export**');
 
-  // FIXME: This goto does not work since the page redirects to the main `search` page. We can't navigate to the export tool directly.
-  // await page.goto(`${ROUTES.SEARCH}/${QUERY_STRING.toString()}${ROUTES.SEARCH_EXPORT_BIBTEX}`);
-
-  await test.step('Open the export tool', async () => {
-    await page.goto(`${ROUTES.SEARCH}/${QUERY_STRING.toString()}`, { waitUntil: 'domcontentloaded' });
-
-    // have to wait for results to load
-    await expect(page.getByLabel('list of results'), 'Results list has results').toContainText(BIBCODES[0]);
-
-    // get the export button and click it
-    await page.getByRole('button', { name: ' Export' }).click();
-    await page.getByRole('menuitem', { name: 'in BibTeX' }).click();
-
-    // wait for the export container to be visible
-    await page.locator("div[class$='export-container']").waitFor({ state: 'visible' });
-    await page.waitForURL(urlRegx);
-    await expect(page).toHaveURL(urlRegx);
-  });
+  await page.goto(`${ROUTES.SCIX.SEARCH_EXPORT_BIBTEX}?${QUERY_STRING.toString()}`);
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      await expect(
-        page.getByLabel(`Your search returned ${BIBCODES.length} results`),
-        'Numfound is displayed',
-      ).toContainText(`Your search returned ${BIBCODES.length} results`);
-      await expect(page.getByLabel('Start typing a query here to'), 'Search bar has been filled properly').toHaveValue(
-        QUERY_STRING.get('q'),
-      );
-      await expect(page.getByLabel('container for search results'), 'Export content is visible').toContainText(
-        `Exporting record(s) 1 to ${BIBCODES.length} (total: ${BIBCODES.length})`,
-      );
-      await page.getByLabel('export content').waitFor({ state: 'visible' });
-      expect(await page.getByLabel('export content').inputValue(), 'Export output is seen').toMatchSnapshot(
-        'export-content',
-      );
+      await expect(page.getByTestId('export-heading')).toContainText('Exporting records 1 to 12 (total: 12)');
+      await expect(page.getByRole('spinbutton', { name: 'Limit Records Limit Records' })).toHaveValue('12');
+      await expect(page.getByTestId('export-submit')).toBeVisible();
+      await expect(page.getByTestId('export-download')).toBeVisible();
+      await expect(page.getByTestId('export-copy')).toBeVisible();
+      await expect(page.getByTestId('export-output')).toBeVisible();
+      await expect(page.getByRole('button', { name: 'More Options' })).toBeVisible();
+      await page.getByRole('button', { name: 'More Options' }).click();
+      await page.getByRole('button', { name: 'More Options' }).click();
+      await page.getByRole('tab', { name: 'Custom Formats' }).click();
+      await expect(page.getByRole('textbox', { name: 'Enter a custom format' })).toHaveValue('%1H:%Y:%q');
+      await expect(page.getByRole('button', { name: 'Submit' })).toBeVisible();
     }).toPass();
   });
 
+  await test.step('Checking for aria regressions', async () => await ariaSnapshot(page, name));
   await test.step('Checking for visual regressions', async () => await visualCheck(page, name));
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-// FIXME: This test is failing because the author affiliation tool is not loading properly.
+// TODO: author affiliation is not working
 test.fixme('Author affiliation loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
-  test.slow();
   const name = 'author-affiliation';
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/author-affiliation/*');
 
-  await test.step('Open the author affiliation tool', async () => {
-    // do search and wait for results
-    await page.goto(`${ROUTES.SEARCH}/${searchParamsToString(QUERY_STRING)}`);
-    await expect(page).toHaveURL(new RegExp(`${ROUTES.SEARCH}/${searchParamsToString(QUERY_STRING)}`));
-    await expect(page.getByLabel('list of results')).toContainText(BIBCODES[0]);
-    // open the author affiliation tool
-    await page.getByLabel('select all on this page').check();
-    await page.getByRole('button', { name: ' Export' }).click();
-    await page.getByRole('menuitem', { name: 'Author Affiliation' }).click();
-    await page.waitForResponse('**/v1/author-affiliation/*', { timeout: API_TIMEOUT });
-
-    // change to ALL years to include our test bibcodes
-    await page.getByLabel('Years:').selectOption('0');
-    await page.waitForResponse('**/v1/author-affiliation/*', { timeout: API_TIMEOUT });
-  });
+  await page.goto(`${ROUTES.SCIX.SEARCH_AUTHOR_AFFILIATION}?${QUERY_STRING.toString()}`);
+  console.log(`URL: ${page.url()}`);
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
@@ -152,21 +133,9 @@ test.fixme('Author affiliation loads properly', { tag: ['@smoke'] }, async ({ pa
 });
 
 test.fixme('Citation metrics loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
-  test.slow();
   const name = 'citation-metrics';
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/metrics');
-
-  await test.step('Open the citation metrics tool', async () => {
-    // do search and wait for results
-    await page.goto(`${ROUTES.SEARCH}/${searchParamsToString(QUERY_STRING)}`);
-    await expect(page).toHaveURL(new RegExp(`${ROUTES.SEARCH}/${searchParamsToString(QUERY_STRING)}`));
-    await expect(page.getByLabel('list of results')).toContainText(BIBCODES[0]);
-
-    await page.getByRole('button', { name: ' Explore' }).click();
-    await page.getByRole('menuitem', { name: 'Citation Metrics' }).click();
-    await page.waitForResponse('**/v1/metrics', { timeout: API_TIMEOUT });
-  });
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
