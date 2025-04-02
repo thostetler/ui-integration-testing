@@ -20,6 +20,11 @@ export const ROUTES = {
   ABS_GRAPHICS: 'graphics',
   ABS_METRICS: 'metrics',
   ABS_EXPORT: 'exportcitation',
+
+  SCIX: {
+    SEARCH_EXPORT_BIBTEX: '/search/exportcitation/bibtex',
+    SEARCH_AUTHOR_AFFILIATION: '/search/authoraffiliations',
+  },
 } as const;
 
 export const MAX_A11Y_VIOLATIONS = 10;

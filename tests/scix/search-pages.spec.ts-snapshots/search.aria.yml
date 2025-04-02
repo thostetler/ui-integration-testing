@@ -1,0 +1,381 @@
+- paragraph: "QUICK FIELD:"
+- button "author"
+- button "first author"
+- button "abstract"
+- button "year"
+- button "fulltext"
+- combobox "all search terms dropdown":
+  - textbox "All Search Terms"
+  - img
+  - listbox "All Search Terms"
+- text: Search Database
+- combobox "Search": /bibcode:2005MNRAS\.\d+\.1105S OR bibcode:2003SIAMR\.\.\d+\.\.167N OR bibcode:2003PASP\.\.\d+\.\.763C OR bibcode:2003Natur\.\d+\.\.839V OR bibcode:2003MNRAS[\d,.]+[bkmBKM]+ OR bibcode:2003AnPhy[\d,.]+[bkmBKM]+ OR bibcode:2002PhLB\.\.\d+\.\.\.23C OR bibcode:2001Natur\.\d+\.\.338G OR bibcode:2001MNRAS[\d,.]+[bkmBKM]+ OR bibcode:2001MachL[\d,.]+[bkmBKM]+ OR bibcode:2001JGR\.\.\.\d+\.7183T OR bibcode:2000PhRvL\.\.\d+\.3966P/
+- button "Clear search"
+- button "search"
+- status: /Your search returned \d+ results/
+- complementary "Filters":
+  - heading "Filters" [level=2]
+  - button "reset filters"
+  - button "hide filters"
+  - region "Year Histogram":
+    - heading "Year Histogram" [level=3]
+    - button "expand"
+    - paragraph: Year(s)
+    - img
+  - list:
+    - listitem:
+      - heading "Toggle Off Author Hide Author filter" [level=3]:
+        - button "Toggle Off Author":
+          - img
+          - img
+          - paragraph: Author
+        - button "Hide Author filter"
+      - list:
+        - listitem:
+          - checkbox "select Breiman, L"
+          - paragraph: Breiman, L
+          - paragraph: "1"
+          - button "Toggle On":
+            - img
+        - listitem:
+          - checkbox "select Bruzual, G"
+          - paragraph: Bruzual, G
+          - paragraph: "1"
+          - button "Toggle On":
+            - img
+        - listitem:
+          - checkbox "select Caldwell, R"
+          - paragraph: Caldwell, R
+          - paragraph: "1"
+          - button "Toggle On":
+            - img
+        - listitem:
+          - checkbox "select Chabrier, G"
+          - paragraph: Chabrier, G
+          - paragraph: "1"
+          - button "Toggle On":
+            - img
+        - listitem:
+          - checkbox "select Charlot, S"
+          - paragraph: Charlot, S
+          - paragraph: "1"
+          - button "Toggle On":
+            - img
+        - listitem:
+          - checkbox "select Gratzel, M"
+          - paragraph: Gratzel, M
+          - paragraph: "1"
+          - button "Toggle On":
+            - img
+        - listitem:
+          - checkbox "select Kitaev, A"
+          - paragraph: Kitaev, A
+          - paragraph: "1"
+          - button "Toggle On":
+            - img
+        - listitem:
+          - checkbox "select Kroupa, P"
+          - paragraph: Kroupa, P
+          - paragraph: "1"
+          - button "Toggle On":
+            - img
+        - listitem:
+          - checkbox "select Newman, M"
+          - paragraph: Newman, M
+          - paragraph: "1"
+          - button "Toggle On":
+            - img
+        - listitem:
+          - checkbox "select Pendry, J"
+          - paragraph: Pendry, J
+          - paragraph: "1"
+          - button "Toggle On":
+            - img
+      - button "more"
+    - listitem:
+      - heading "Toggle Off Collections Hide Collections filter" [level=3]:
+        - button "Toggle Off Collections":
+          - img
+          - img
+          - paragraph: Collections
+        - button "Hide Collections filter"
+      - list:
+        - listitem:
+          - checkbox "select physics"
+          - paragraph: physics
+          - paragraph: "7"
+        - listitem:
+          - checkbox "select astronomy"
+          - paragraph: astronomy
+          - paragraph: "6"
+        - listitem:
+          - checkbox "select general"
+          - paragraph: general
+          - paragraph: "2"
+        - listitem:
+          - checkbox "select earthscience"
+          - paragraph: earthscience
+          - paragraph: "1"
+    - listitem:
+      - heading "Toggle Off Refereed Hide Refereed filter" [level=3]:
+        - button "Toggle Off Refereed":
+          - img
+          - img
+          - paragraph: Refereed
+        - button "Hide Refereed filter"
+      - list:
+        - listitem:
+          - checkbox "select refereed"
+          - paragraph: refereed
+          - paragraph: /\d+/
+    - listitem:
+      - heading "Toggle On Institutions Hide Institutions filter" [level=3]:
+        - button "Toggle On Institutions":
+          - img
+          - img
+          - paragraph: Institutions
+        - button "Hide Institutions filter"
+    - listitem:
+      - heading "Toggle On Keywords Hide Keywords filter" [level=3]:
+        - button "Toggle On Keywords":
+          - img
+          - img
+          - paragraph: Keywords
+        - button "Hide Keywords filter"
+    - listitem:
+      - heading "Toggle On Publications Hide Publications filter" [level=3]:
+        - button "Toggle On Publications":
+          - img
+          - img
+          - paragraph: Publications
+        - button "Hide Publications filter"
+    - listitem:
+      - heading "Toggle On Bibgroups Hide Bibgroups filter" [level=3]:
+        - button "Toggle On Bibgroups":
+          - img
+          - img
+          - paragraph: Bibgroups
+        - button "Hide Bibgroups filter"
+    - listitem:
+      - heading "Toggle On SIMBAD Objects Hide SIMBAD Objects filter" [level=3]:
+        - button "Toggle On SIMBAD Objects":
+          - img
+          - img
+          - paragraph: SIMBAD Objects
+        - button "Hide SIMBAD Objects filter"
+    - listitem:
+      - heading "Toggle On NED Objects Hide NED Objects filter" [level=3]:
+        - button "Toggle On NED Objects":
+          - img
+          - img
+          - paragraph: NED Objects
+        - button "Hide NED Objects filter"
+    - listitem:
+      - heading "Toggle On Data Hide Data filter" [level=3]:
+        - button "Toggle On Data":
+          - img
+          - img
+          - paragraph: Data
+        - button "Hide Data filter"
+    - listitem:
+      - heading "Toggle On Vizier Tables Hide Vizier Tables filter" [level=3]:
+        - button "Toggle On Vizier Tables":
+          - img
+          - img
+          - paragraph: Vizier Tables
+        - button "Hide Vizier Tables filter"
+    - listitem:
+      - heading "Toggle On Publication Type Hide Publication Type filter" [level=3]:
+        - button "Toggle On Publication Type":
+          - img
+          - img
+          - paragraph: Publication Type
+        - button "Hide Publication Type filter"
+  - button "Show hidden filters (2)"
+  - status
+- region "Result Actions":
+  - heading "Result Actions" [level=2]
+  - group:
+    - text: Date
+    - combobox "Sort"
+  - button "Sort descending"
+  - button "Create email notification of this query"
+  - button "Result list settings"
+  - checkbox "select all"
+  - button "Bulk Actions"
+  - button "Explore"
+- heading "Search Results" [level=2]
+- region "Results":
+  - heading "Results" [level=2]
+  - article:
+    - paragraph: "1"
+    - checkbox "Select item The cosmological simulation code GADGET-2"
+    - link "The cosmological simulation code GADGET-2"
+    - button "Full text sources"
+    - button "References and citations"
+    - button "Data products"
+    - button "share options"
+    - text: Springel, Volker;
+    - button "show details"
+    - text: /\d+\/\d+/
+    - paragraph: ·
+    - text: Monthly Notices of the Royal Astronomical Society
+    - paragraph: ·
+    - 'link /cited: \d+/'
+    - button "show abstract"
+  - article:
+    - paragraph: "2"
+    - checkbox /Select item Stellar population synthesis at the resolution of \d+/
+    - link /Stellar population synthesis at the resolution of \d+/
+    - button "Full text sources"
+    - button "References and citations"
+    - button "Data products"
+    - button "share options"
+    - text: Bruzual, G.; Charlot, S.;
+    - button "show details"
+    - text: /\d+\/\d+/
+    - paragraph: ·
+    - text: Monthly Notices of the Royal Astronomical Society
+    - paragraph: ·
+    - 'link /cited: \d+/'
+    - button "show abstract"
+  - article:
+    - paragraph: "3"
+    - checkbox "Select item Optical microcavities"
+    - link "Optical microcavities"
+    - button "Full text sources"
+    - button "References and citations"
+    - button "No data products" [disabled]
+    - button "share options"
+    - text: Vahala, Kerry J.;
+    - button "show details"
+    - text: /\d+\/\d+/
+    - paragraph: ·
+    - text: Nature
+    - paragraph: ·
+    - 'link /cited: \d+/'
+    - button "show abstract"
+  - article:
+    - paragraph: "4"
+    - checkbox "Select item Galactic Stellar and Substellar Initial Mass Function"
+    - link "Galactic Stellar and Substellar Initial Mass Function"
+    - button "Full text sources"
+    - button "References and citations"
+    - button "Data products"
+    - button "share options"
+    - text: Chabrier, Gilles;
+    - button "show details"
+    - text: /\d+\/\d+/
+    - paragraph: ·
+    - text: Publications of the Astronomical Society of the Pa...
+    - paragraph: ·
+    - 'link /cited: \d+/'
+    - button "show abstract"
+  - article:
+    - paragraph: "5"
+    - checkbox "Select item The Structure and Function of Complex Networks"
+    - link "The Structure and Function of Complex Networks"
+    - button "Full text sources"
+    - button "References and citations"
+    - button "No data products" [disabled]
+    - button "share options"
+    - text: Newman, M. E. J.;
+    - button "show details"
+    - text: /\d+\/\d+/
+    - paragraph: ·
+    - text: SIAM Review
+    - paragraph: ·
+    - 'link /cited: \d+/'
+    - button "show abstract"
+  - article:
+    - paragraph: "6"
+    - checkbox "Select item Fault-tolerant quantum computation by anyons"
+    - link "Fault-tolerant quantum computation by anyons"
+    - button "Full text sources"
+    - button "References and citations"
+    - button "No data products" [disabled]
+    - button "share options"
+    - text: Kitaev, A. Yu.;
+    - button "show details"
+    - text: /\d+\/\d+/
+    - paragraph: ·
+    - text: Annals of Physics
+    - paragraph: ·
+    - 'link /cited: \d+/'
+    - button "show abstract"
+  - article:
+    - paragraph: "7"
+    - checkbox "Select item A phantom menace? Cosmological consequences of a dark energy component with super-negative equation of state"
+    - link "A phantom menace? Cosmological consequences of a dark energy component with super-negative equation of state"
+    - button "Full text sources"
+    - button "References and citations"
+    - button "No data products" [disabled]
+    - button "share options"
+    - text: Caldwell, R. R.;
+    - button "show details"
+    - text: /\d+\/\d+/
+    - paragraph: ·
+    - text: Physics Letters B
+    - paragraph: ·
+    - 'link /cited: \d+/'
+    - button "show abstract"
+  - article:
+    - paragraph: "8"
+    - checkbox "Select item Photoelectrochemical cells"
+    - link "Photoelectrochemical cells"
+    - button "Full text sources"
+    - button "References and citations"
+    - button "No data products" [disabled]
+    - button "share options"
+    - text: Grätzel, Michael;
+    - button "show details"
+    - text: /\d+\/\d+/
+    - paragraph: ·
+    - text: Nature
+    - paragraph: ·
+    - 'link /cited: \d+/'
+    - button "show abstract"
+  - article:
+    - paragraph: "9"
+    - checkbox "Select item Summarizing multiple aspects of model performance in a single diagram"
+    - link "Summarizing multiple aspects of model performance in a single diagram"
+    - button "Full text sources"
+    - button "References and citations"
+    - button "No data products" [disabled]
+    - button "share options"
+    - text: Taylor, Karl E.;
+    - button "show details"
+    - text: /\d+\/\d+/
+    - paragraph: ·
+    - text: Journal of Geophysical Research
+    - paragraph: ·
+    - 'link /cited: \d+/'
+    - button "show abstract"
+  - article:
+    - paragraph: /\d+/
+    - checkbox "Select item On the variation of the initial mass function"
+    - link "On the variation of the initial mass function"
+    - button "Full text sources"
+    - button "References and citations"
+    - button "Data products"
+    - button "share options"
+    - text: Kroupa, Pavel;
+    - button "show details"
+    - text: /\d+\/\d+/
+    - paragraph: ·
+    - text: Monthly Notices of the Royal Astronomical Society
+    - paragraph: ·
+    - 'link /cited: \d+/'
+    - button "show abstract"
+- region /Pagination, showing 1 to \d+ of \d+ results/:
+  - heading /Pagination, showing 1 to \d+ of \d+ results/ [level=3]
+  - paragraph: /Showing 1 to \d+ of \d+ results/
+  - group:
+    - text: /\d+/
+    - combobox "Select number of results to show per page"
+  - navigation "Pagination":
+    - link "previous":
+      - button "previous" [disabled]
+    - button "current page is 1, update page"
+    - link "next":
+      - button "next": Next
