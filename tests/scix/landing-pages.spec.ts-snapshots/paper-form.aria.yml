@@ -1,0 +1,36 @@
+- article:
+  - heading "Journal Search" [level=2]
+  - paragraph:
+    - text: A bibstem is an abbreviation that the ADS uses to identify a journal. A full list is available
+    - link "here"
+    - text: . The input field below will autocomplete on our current database of journal names, allowing you to type "Astrophysical Journal", for instance, to find the bibstem "ApJ".
+  - separator
+  - text: Start typing to search journal database
+  - combobox "bibstem picker"
+  - group:
+    - text: Year
+    - textbox "Year"
+  - group:
+    - text: Volume
+    - textbox "Volume"
+  - group:
+    - text: Page / Id
+    - textbox "Page / Id"
+  - button "Search"
+  - button "Reset"
+  - heading "Reference Query" [level=2]
+  - separator
+  - group:
+    - text: Reference
+    - textbox "Reference"
+    - text: /Enter a full reference string \(eg Smith et al \d+, A&A \d+, pp\. \d+-\d+\)/
+  - button "Search"
+  - button "Reset"
+  - heading "Bibliographic Code Query" [level=2]
+  - separator
+  - group:
+    - text: List of Bibcodes
+    - textbox "List of Bibcodes"
+    - text: Enter list of Bibcodes (e.g. 1989ApJ...342L..71R), one per line.
+  - button "Search"
+  - button "Reset"

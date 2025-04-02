@@ -1,0 +1,30 @@
+- heading "Modern Search Form" [level=2]
+- paragraph: "QUICK FIELD:"
+- button "author"
+- button "first author"
+- button "abstract"
+- button "year"
+- button "fulltext"
+- combobox "all search terms dropdown":
+  - textbox "All Search Terms"
+  - img
+  - listbox "All Search Terms"
+- text: Search Database
+- combobox "Search"
+- button "search"
+- button "goto previous page"
+- tabpanel "●":
+  - heading "WELCOME TO THE SciX Digital Library" [level=3]:
+    - paragraph: WELCOME TO THE
+    - paragraph: SciX Digital Library
+  - paragraph:
+    - text: Learn more about the SciX digital library and how it can support your scientific research in
+    - link "this welcome video"
+    - text: and brief user tutorial from Dr. Stephanie Jarmak.
+- button "goto next page"
+- tablist:
+  - tab "●" [selected]
+  - tab "○"
+  - tab "○"
+  - tab "○"
+  - tab "○"
