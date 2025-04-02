@@ -52,7 +52,7 @@ export default defineConfig({
       grep: /@perf/,
     },
     {
-      name: 'default',
+      name: 'ads',
       use: {
         ...devices['Desktop Chrome'],
         launchOptions: {
@@ -61,6 +61,19 @@ export default defineConfig({
       },
       testIgnore: '**/perf/perf.spec.ts',
       grepInvert: /@stress/,
+      testDir: './tests/ads',
+    },
+    {
+      name: 'scix',
+      use: {
+        ...devices['Desktop Chrome'],
+        launchOptions: {
+          args: ['--use-gl=egl'],
+        },
+      },
+      testIgnore: '**/perf/perf.spec.ts',
+      grepInvert: /@stress/,
+      testDir: './tests/scix',
     },
   ],
 });
