@@ -1,0 +1,98 @@
+- heading "Classic Form" [level=2]
+- group "Collection":
+  - checkbox "Astronomy" [checked]
+  - checkbox "Physics"
+  - checkbox "General"
+  - checkbox "Earth Science"
+  - text: Earth Science
+- group:
+  - text: Author
+  - radiogroup:
+    - radio "And" [checked]
+    - text: And
+    - radio "Or"
+    - text: Or
+  - textbox "Author"
+  - paragraph: Author names, enter (Last, First M) one per line.
+  - paragraph: "Example Operators:"
+  - paragraph:
+    - text: Use
+    - code: "-"
+    - text: "to filter out an author. (Ex:"
+    - code: "-Smith, John"
+    - text: )
+  - paragraph:
+    - text: Use
+    - code: =
+    - text: to restrict name expansion. For example
+    - code: =Smith, Jim
+    - text: will match "Smith, Jim" but not "Smith, James".
+  - paragraph:
+    - text: Surround name with
+    - code: ^ $
+    - text: "to match papers with only one particular author. (Ex:"
+    - code: ^Smith, J$
+    - text: )
+  - paragraph:
+    - link "Learn More"
+- group:
+  - text: Object
+  - radiogroup:
+    - radio "And" [checked]
+    - text: And
+    - radio "Or"
+    - text: Or
+  - textbox "Object"
+  - text: SIMBAD object search, one per line.
+- group "Publication":
+  - group:
+    - text: Publication Publication Date Start
+    - img
+    - textbox "Publication Date Start"
+    - text: "/Ex: \"\\d+\\/\\d+\"/"
+  - group:
+    - text: Publication Date End
+    - img
+    - textbox "Publication Date End"
+    - text: "/Ex: \"\\d+\\/\\d+\"/"
+- group:
+  - text: Title
+  - radiogroup:
+    - radio "And" [checked]
+    - text: And
+    - radio "Or"
+    - text: Or
+    - radio "Boolean"
+    - text: Boolean
+  - textbox "Title"
+  - text: "Ex: \"Content of the Future in the ADS\""
+- group:
+  - text: Abstract / Keywords
+  - radiogroup:
+    - radio "And" [checked]
+    - text: And
+    - radio "Or"
+    - text: Or
+    - radio "Boolean"
+    - text: Boolean
+  - textbox "Abstract / Keywords"
+  - text: "Ex: \"Dark Energy\""
+- group "Property":
+  - checkbox "Refereed only"
+  - text: Refereed only
+  - checkbox "Articles only"
+  - text: Articles only
+- group:
+  - text: Publications Publications Start typing to search journal database
+  - combobox "bibstem picker"
+  - text: Ex. "A&A" or "-A&A"
+- group:
+  - text: Sort
+  - group:
+    - text: Relevance
+    - combobox "Sort"
+  - button "Sort descending"
+- group:
+  - button "Search"
+- img
+- button "Generated Query"

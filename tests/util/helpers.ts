@@ -3,10 +3,16 @@ import AxeBuilder from '@axe-core/playwright';
 import { A11Y_TAGS, MAX_A11Y_VIOLATIONS } from '@/constants';
 
 export const visualCheck = async (page: Page, name: string) => {
+  const adsMain = page.locator('#content-container');
+  const scixMain = page.locator('#main-content');
+
   await expect(async () => {
-    await expect(page.locator('#content-container')).toHaveScreenshot(`${name}.png`, {
-      threshold: 0.4,
-    });
+    if (await adsMain.isVisible()) {
+      await expect(adsMain).toHaveScreenshot(`${name}.png`, { threshold: 0.4 });
+    }
+    if (await scixMain.isVisible()) {
+      await expect(scixMain).toHaveScreenshot(`${name}.png`, { threshold: 0.4 });
+    }
   }).toPass({ timeout: 10_000 });
 };
 
