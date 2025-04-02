@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { ROUTES } from '@/constants';
-import { a11yCheck, visualCheck } from '@/util/helpers';
+import { a11yCheck, ariaSnapshot, visualCheck } from '@/util/helpers';
 import { configDotenv } from 'dotenv';
 
 configDotenv();
@@ -15,7 +15,6 @@ test('Classic form loads properly', { tag: ['@smoke'] }, async ({ page }, testIn
   await expect(page).toHaveURL(new RegExp(`${ROUTES.CLASSIC_FORM}`));
 
   await test.step('Confirm the page loaded correctly', async () => {
-    await expect(page.locator('form')).toMatchAriaSnapshot({ name: `${name}.aria.yml` });
     await expect(page.getByRole('textbox', { name: 'Author' })).toBeEmpty();
     await expect(page.getByRole('textbox', { name: 'Object' })).toBeEmpty();
     await expect(page.getByRole('textbox', { name: 'Publication Date End' })).toBeEmpty();
@@ -25,6 +24,7 @@ test('Classic form loads properly', { tag: ['@smoke'] }, async ({ page }, testIn
     await expect(page.getByRole('combobox', { name: 'sort' })).toBeEmpty();
   });
 
+  await test.step('Checking for aria regressions', async () => await ariaSnapshot(page, name));
   await test.step('Checking for visual regressions', async () => await visualCheck(page, name));
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
@@ -35,10 +35,10 @@ test('Modern form loads properly', { tag: ['@smoke'] }, async ({ page }, testInf
   await expect(page).toHaveURL(new RegExp(`${ROUTES.ROOT}`));
 
   await test.step('Confirm the page loaded correctly', async () => {
-    await expect(page.locator('#main-content')).toMatchAriaSnapshot({ name: `${name}.aria.yml` });
     await expect(page.getByTestId('search-input')).toBeEmpty();
   });
 
+  await test.step('Checking for aria regressions', async () => await ariaSnapshot(page, name));
   await test.step('Checking for visual regressions', async () => await visualCheck(page, name));
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
@@ -49,7 +49,6 @@ test('Paper form loads properly', { tag: ['@smoke'] }, async ({ page }, testInfo
   await expect(page).toHaveURL(new RegExp(`${ROUTES.PAPER_FORM}`));
 
   await test.step('Confirm the page loaded correctly', async () => {
-    await expect(page.locator('#main-content')).toMatchAriaSnapshot({ name: `${name}.aria.yml` });
     await expect(page.getByRole('combobox', { name: 'bibstem picker' })).toBeEmpty();
     await expect(page.getByLabel('Year')).toBeEmpty();
     await expect(page.getByLabel('Volume')).toBeEmpty();
@@ -58,6 +57,7 @@ test('Paper form loads properly', { tag: ['@smoke'] }, async ({ page }, testInfo
     await expect(page.getByLabel('List of Bibcodes')).toBeEmpty();
   });
 
+  await test.step('Checking for aria regressions', async () => await ariaSnapshot(page, name));
   await test.step('Checking for visual regressions', async () => await visualCheck(page, name));
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });

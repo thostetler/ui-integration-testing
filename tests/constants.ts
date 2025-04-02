@@ -1,6 +1,7 @@
 export const ROUTES = {
   LOGIN: '/user/account/login',
   REGISTER: '/user/account/register',
+  FORGOT_PASSWORD: '/user/account/forgotpassword',
   ROOT: '/',
   CLASSIC_FORM: '/classic-form',
   PAPER_FORM: '/paper-form',

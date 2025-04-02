@@ -1,0 +1,33 @@
+- heading "Register" [level=2]
+- form "Register":
+  - group:
+    - text: Given Name
+    - textbox "James T."
+  - group:
+    - text: Family Name
+    - textbox "Kirk"
+  - group:
+    - text: Email
+    - textbox "email@example.com"
+  - group:
+    - text: Password
+    - textbox "*******"
+    - button "Show"
+    - paragraph: One lowercase letter.
+    - paragraph: One uppercase letter.
+    - paragraph: One number.
+    - paragraph: At least 4 characters.
+  - group:
+    - text: Confirm password
+    - textbox "*******"
+    - button "Show"
+  - button "Submit"
+  - paragraph:
+    - text: Already have an account?
+    - link "Login"
+- paragraph:
+  - text: This site is protected by reCAPTCHA and the Google
+  - link "Privacy Policy"
+  - text: and
+  - link "Terms of Service"
+  - text: apply.
