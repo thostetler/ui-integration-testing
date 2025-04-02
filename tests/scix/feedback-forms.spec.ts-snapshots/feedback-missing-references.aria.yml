@@ -1,0 +1,33 @@
+- region "Submit missing references for SciX Abstract Service":
+  - heading "Submit missing references for SciX Abstract Service" [level=2]
+  - paragraph: Please use this form to submit one or more citations currently missing from our databases.
+  - paragraph: In order to use this form you will need to know the bibcodes of the citing and cited papers, and enter them in the appropriate fields.
+  - paragraph:
+    - text: If either the citing or cited paper is not in SciX you should
+    - link "submit a record"
+    - text: for it first.
+  - group:
+    - text: Name
+    - textbox "Name"
+  - group:
+    - text: Email
+    - textbox "Email"
+  - table:
+    - rowgroup:
+      - row "index Citing Bibcode Cited Bibcode Actions":
+        - cell "index"
+        - cell "Citing Bibcode"
+        - cell "Cited Bibcode"
+        - cell "Actions"
+    - rowgroup:
+      - row "1 add missing reference":
+        - cell "1"
+        - cell:
+          - group:
+            - textbox "1998ApJ...501L..41Y"
+        - cell:
+          - textbox "1998ApJ...501L..41Y"
+        - cell "add missing reference":
+          - button "add missing reference" [disabled]
+  - button "Preview" [disabled]
+  - button "Reset"

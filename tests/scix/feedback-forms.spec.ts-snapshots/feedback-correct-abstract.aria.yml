@@ -1,0 +1,120 @@
+- region "Submit or Correct an Abstract for the SciX Abstract Service":
+  - heading "Submit or Correct an Abstract for the SciX Abstract Service" [level=2]
+  - paragraph: Please use the following form to submit a new bibliographic record to ADS or correct an existing record.
+  - tablist:
+    - tab "New Record" [selected]
+    - tab "Edit Record"
+  - tabpanel "New Record":
+    - group:
+      - text: Name
+      - textbox "Name"
+    - group:
+      - text: Email
+      - textbox "Email"
+    - group:
+      - text: Bibcode
+      - textbox "Bibcode"
+    - group:
+      - text: Collection
+      - checkbox "Collection Astronomy and Astrophysics"
+      - text: Astronomy and Astrophysics
+      - checkbox "Physics and Geophysics"
+      - text: Physics and Geophysics
+      - checkbox "Earth Science"
+      - text: Earth Science
+      - checkbox "General"
+      - text: General
+    - group:
+      - text: Title
+      - textbox "Title"
+    - group:
+      - text: Authors
+      - table:
+        - rowgroup:
+          - row "index Name Affiliation ORCiD Actions":
+            - cell "index"
+            - cell "Name"
+            - cell "Affiliation"
+            - cell "ORCiD"
+            - cell "Actions"
+        - rowgroup:
+          - row "1 add author":
+            - cell "1"
+            - cell:
+              - textbox "Authors"
+            - cell:
+              - textbox
+            - cell:
+              - textbox
+            - cell "add author":
+              - button "add author" [disabled]
+      - text: Showing 1 to 0 of 0 results
+      - combobox:
+        - option /\d+/ [selected]
+        - option /\d+/
+        - option /\d+/
+        - option /\d+/
+      - button "go to previous page" [disabled]
+      - button "current page is 1, update page" [disabled]
+      - button "go to next page" [disabled]
+    - group:
+      - checkbox "Abstract has no author(s)"
+      - text: Abstract has no author(s)
+    - group:
+      - text: Publication
+      - textbox "Publication"
+    - group:
+      - text: Publication Date
+      - textbox "Publication Date"
+    - group:
+      - text: URLs
+      - table:
+        - rowgroup:
+          - row "index Type URL Actions":
+            - cell "index"
+            - cell "Type"
+            - cell "URL"
+            - cell "Actions"
+        - rowgroup:
+          - row "1 add url":
+            - cell "1"
+            - cell:
+              - group:
+                - text: arXiv
+                - combobox "new url type"
+            - cell:
+              - textbox "URLs"
+            - cell "add url":
+              - button "add url" [disabled]
+    - group:
+      - text: Abstract
+      - textbox "Abstract"
+    - group:
+      - text: Keywords
+      - textbox "Keywords"
+      - button "Add" [disabled]
+    - group:
+      - text: References
+      - table:
+        - rowgroup:
+          - row "index Type Reference Actions":
+            - cell "index"
+            - cell "Type"
+            - cell "Reference"
+            - cell "Actions"
+        - rowgroup:
+          - row "1 add Reference":
+            - cell "1"
+            - cell:
+              - group:
+                - text: Bibcode
+                - combobox "new Reference type"
+            - cell:
+              - textbox "References"
+            - cell "add Reference":
+              - button "add Reference" [disabled]
+    - group:
+      - text: User Comments
+      - textbox "User Comments"
+    - button "Preview" [disabled]
+    - button "Reset"
