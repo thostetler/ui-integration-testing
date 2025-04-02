@@ -34,34 +34,34 @@ const SUBVIEWS = [
  */
 const routeAssertions: Record<string, (page: Page, title: string) => Promise<void>> = {
   [ROUTES.ABS_ABSTRACT]: async (page, title) => {
-    await expect(page.getByRole('article')).toContainText(title);
+    await expect(page.locator('#abstract-subview-title')).toContainText(title);
   },
   [ROUTES.ABS_CITATIONS]: async (page, title) => {
-    await expect(page.locator('#current-subview')).toContainText(`Papers that cite ${title}`);
-    await expect(page.locator('.col-xs-1').first()).toBeVisible();
+    await expect(page.locator('#abstract-subview-title')).toContainText(`Papers that cite ${title}`);
+    await expect(page.locator('#abstract-subview-content')).toBeVisible();
   },
   [ROUTES.ABS_REFERENCES]: async (page, title) => {
-    await expect(page.locator('#current-subview')).toContainText(`Papers referenced by ${title}`);
-    await expect(page.locator('.col-xs-1').first()).toBeVisible();
+    await expect(page.locator('#abstract-subview-title')).toContainText(`Papers referenced by ${title}`);
+    await expect(page.locator('#abstract-subview-content')).toBeVisible();
   },
   [ROUTES.ABS_COREADS]: async (page, title) => {
-    await expect(page.locator('#current-subview')).toContainText(`Papers also read by those who read ${title}`);
-    await expect(page.locator('.col-xs-1').first()).toBeVisible();
+    await expect(page.locator('#abstract-subview-title')).toContainText(`Papers also read by those who read ${title}`);
+    await expect(page.locator('#abstract-subview-content')).toBeVisible();
   },
   [ROUTES.ABS_SIMILAR]: async (page, title) => {
-    await expect(page.locator('#current-subview')).toContainText(`Papers similar to ${title}`);
-    await expect(page.locator('.col-xs-1').first()).toBeVisible();
+    await expect(page.locator('#abstract-subview-title')).toContainText(`Papers similar to ${title}`);
+    await expect(page.locator('#abstract-subview-content')).toBeVisible();
   },
   [ROUTES.ABS_VOLUME]: async (page, title) => {
-    await expect(page.locator('#current-subview')).toContainText(`Papers in the same volume as ${title}`);
-    await expect(page.locator('.col-xs-1').first()).toBeVisible();
+    await expect(page.locator('#abstract-subview-title')).toContainText(`Papers in the same volume as ${title}`);
+    await expect(page.locator('#abstract-subview-content')).toBeVisible();
   },
   [ROUTES.ABS_GRAPHICS]: async (page, title) => {
-    await expect(page.locator('#current-subview')).toContainText(`Graphics from ${title}`);
+    await expect(page.locator('#abstract-subview-title')).toContainText(`Graphics from ${title}`);
   },
-  [ROUTES.ABS_EXPORT]: async (page) => {
-    await expect(page.locator('#current-subview')).toContainText('Exporting record(s) 1 to 1 (total: 1)');
-    expect(await page.getByLabel('export content').inputValue()).toContain('@ARTICLE');
+  [ROUTES.ABS_EXPORT]: async (page, title) => {
+    await expect(page.locator('#abstract-subview-title')).toContainText(`Export citation for ${title}`);
+    await expect(page.locator('#export-output')).toContainText('@ARTICLE');
   },
 };
 
@@ -70,13 +70,10 @@ const routeAssertions: Record<string, (page: Page, title: string) => Promise<voi
  */
 async function assertCommonElements(page: Page) {
   // Assert we can see the resources container
-  await expect(page.locator('#resources-container')).toContainText('full text sources', { ignoreCase: true });
+  await expect(page.locator('#resources-container').getByRole('button', { name: 'Full Text sources' })).toBeVisible();
 
   // Assert we can see the right column graphics component
-  await expect(page.locator('#right-col-container')).toContainText('Graphics', { ignoreCase: true });
-
-  // Assert we can see the left side navigation
-  await expect(page.locator('#left-column')).toBeVisible();
+  await expect(page.locator('#abstract-nav-menu')).toContainText('Graphics', { ignoreCase: true });
 }
 
 /**
@@ -92,7 +89,7 @@ async function assertContentLoaded(page: Page, route: string, title: string) {
 
 test.describe('Abstract pages', () => {
   for (const { name, route } of SUBVIEWS) {
-    test.fixme(`${name} page loads properly`, { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+    test(`${name} page loads properly`, { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
       await cacheRoute.GET('**/v1/search/query*');
 
       // Build the test name for snapshots and a11y logs
@@ -123,4 +120,3 @@ test.describe('Abstract pages', () => {
     });
   }
 });
-
