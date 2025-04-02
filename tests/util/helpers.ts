@@ -2,6 +2,18 @@ import { expect, type Page, type TestInfo } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { A11Y_TAGS, MAX_A11Y_VIOLATIONS } from '@/constants';
 
+export const ariaSnapshot = async (page: Page, name: string) => {
+  const adsMain = page.locator('#content-container');
+  const scixMain = page.locator('#main-content');
+
+  if (await adsMain.isVisible()) {
+    await expect(adsMain).toMatchAriaSnapshot({ name: `${name}.aria.yml` });
+  }
+  if (await scixMain.isVisible()) {
+    await expect(scixMain).toMatchAriaSnapshot({ name: `${name}.aria.yml` });
+  }
+};
+
 export const visualCheck = async (page: Page, name: string) => {
   const adsMain = page.locator('#content-container');
   const scixMain = page.locator('#main-content');

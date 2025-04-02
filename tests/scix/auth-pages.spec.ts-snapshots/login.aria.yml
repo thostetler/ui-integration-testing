@@ -1,0 +1,12 @@
+- heading "Login" [level=2]
+- form "Login":
+  - group:
+    - text: Email
+    - textbox "email@example.com"
+  - group:
+    - text: Password
+    - textbox "*******"
+    - button "Show"
+  - link "Forgot password?"
+  - button "Submit"
+  - link "Register"
