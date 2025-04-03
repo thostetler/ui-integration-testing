@@ -31,6 +31,12 @@ const QUERY_STRING = new URLSearchParams({
 });
 QUERY_STRING.sort();
 
+const QUERY_STRING_2 = new URLSearchParams({
+  q: `author:"huchra, john"`,
+  sort: 'date desc, bibcode desc',
+  p: '1',
+});
+
 test('Search page loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'search';
   await cacheRoute.GET('**/v1/search/query*');
@@ -106,23 +112,20 @@ test('Export tool loads properly', { tag: ['@smoke'] }, async ({ page, cacheRout
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-// TODO: author affiliation is not working
-test.fixme('Author affiliation loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+test('Author affiliation loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'author-affiliation';
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/author-affiliation/*');
 
-  await page.goto(`${ROUTES.SCIX.SEARCH_AUTHOR_AFFILIATION}?${QUERY_STRING.toString()}`);
+  await page.goto(`${ROUTES.SCIX.SEARCH_AUTHOR_AFFILIATION}?${QUERY_STRING_2.toString()}`);
   console.log(`URL: ${page.url()}`);
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      const header = await page.getByLabel('container for search results').getByRole('heading');
-      await header.waitFor({ state: 'visible', timeout: API_TIMEOUT });
-      expect(await header.textContent()).toMatchSnapshot('author-affiliation-title');
-      expect(await page.getByLabel('container for search results').textContent()).toMatchSnapshot(
-        'author-affiliation-results',
+      await expect(page.locator('#author-affiliation-title')).toContainText(
+        'Showing affiliation data for 3 authors (100 works)',
       );
+      await expect(page.locator('#author-affiliation-content')).toBeVisible();
     }).toPass({
       timeout: API_TIMEOUT,
     });
