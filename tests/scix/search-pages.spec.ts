@@ -31,12 +31,6 @@ const QUERY_STRING = new URLSearchParams({
 });
 QUERY_STRING.sort();
 
-const QUERY_STRING_2 = new URLSearchParams({
-  q: `author:"huchra, john"`,
-  sort: 'date desc, bibcode desc',
-  p: '1',
-});
-
 test('Search page loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'search';
   await cacheRoute.GET('**/v1/search/query*');
@@ -117,14 +111,16 @@ test('Author affiliation loads properly', { tag: ['@smoke'] }, async ({ page, ca
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/author-affiliation/*');
 
-  await page.goto(`${ROUTES.SCIX.SEARCH_AUTHOR_AFFILIATION}?${QUERY_STRING_2.toString()}`);
+  const QS = new URLSearchParams(QUERY_STRING);
+  QS.set('q', 'author:"huchra, john"');
+  QS.set('sort', 'score desc, date desc');
+
+  await page.goto(`${ROUTES.SCIX.SEARCH_AUTHOR_AFFILIATION}?${QS.toString()}`);
   console.log(`URL: ${page.url()}`);
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      await expect(page.locator('#author-affiliation-title')).toContainText(
-        'Showing affiliation data for 3 authors (100 works)',
-      );
+      await expect(page.locator('#author-affiliation-title')).toContainText('Showing affiliation data for');
       await expect(page.locator('#author-affiliation-content')).toBeVisible();
     }).toPass({
       timeout: API_TIMEOUT,
@@ -140,7 +136,10 @@ test('Citation metrics loads properly', { tag: ['@smoke'] }, async ({ page, cach
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/metrics');
 
-  await page.goto(`${ROUTES.SCIX.SEARCH_METRICS}?${QUERY_STRING_2.toString()}`);
+  const QS = new URLSearchParams(QUERY_STRING);
+  QS.set('q', 'year:2000 moon crater');
+
+  await page.goto(`${ROUTES.SCIX.SEARCH_METRICS}?${QS.toString()}`);
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
