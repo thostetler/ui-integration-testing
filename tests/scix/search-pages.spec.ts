@@ -296,7 +296,7 @@ test('Concept cloud loads properly', { tag: ['@smoke'] }, async ({ page, cacheRo
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test.fixme('Results graph loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+test('Results graph loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'results-graph';
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/vis/*');
@@ -307,7 +307,7 @@ test.fixme('Results graph loads properly', { tag: ['@smoke'] }, async ({ page, c
 
   await test.step('Open the results graph tool', async () => {
     // do search and wait for results
-    await page.goto(`${ROUTES.SEARCH}/${searchParamsToString(QS)}`);
+    await page.goto(`${ROUTES.SEARCH}?${searchParamsToString(QS)}`);
     const searchRes = await page.waitForResponse(
       (res) => {
         const url = res.request().url();
@@ -317,18 +317,19 @@ test.fixme('Results graph loads properly', { tag: ['@smoke'] }, async ({ page, c
       },
       { timeout: API_TIMEOUT },
     );
-    const doc = (await searchRes.json()).response.docs[0] as { bibcode: string };
-    await expect(page).toHaveURL(new RegExp(`${ROUTES.SEARCH}/${searchParamsToString(QS)}`));
-    await expect(page.getByLabel('list of results')).toContainText(doc.bibcode);
+    const doc = (await searchRes.json()).response.docs[0] as { title: string };
+    await expect(page).toHaveURL(`${ROUTES.SEARCH}?${searchParamsToString(QS)}`);
+    await expect(page.locator('#results')).toContainText(doc.title[0]);
 
-    await page.getByRole('button', { name: ' Explore' }).click();
+    await page.getByRole('button', { name: 'Explore' }).click();
     await page.getByRole('menuitem', { name: 'Results Graph' }).click();
+    await page.waitForURL('**/search/results_graph*', { waitUntil: 'domcontentloaded' });
   });
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      await expect(page.locator('.s-bubble-label-container')).toBeVisible();
-      await expect(page.getByLabel('bubble chart')).toBeVisible();
+      await expect(page.getByLabel('Results Graph')).toBeVisible();
+      await expect(page.locator('.bubble-plot-svg')).toBeVisible();
     }).toPass({ timeout: API_TIMEOUT });
   });
 
