@@ -1,8 +1,11 @@
 import { test as base, expect, type Page } from '@playwright/test';
 import { CacheRoute } from 'playwright-network-cache';
 import * as crypto from 'node:crypto';
-import { getAltTestEmailAccount, getTestEmailAccount } from '@/util/email';
-import { User } from '@/fixtures/user';
+import { getAltTestEmailAccount, getTestEmailAccount } from '@/email';
+import { User } from '@/interfaces/user';
+import { ScixUser } from '@scix/fixtures/user';
+import { isScix } from '@/common';
+import { ADSUser } from '@ads/fixtures/user';
 
 const hashQueryString = (url: string) => {
   const urlObj = new URL(url);
@@ -25,15 +28,19 @@ const test = base.extend<Fixtures>({
       }),
     );
   },
-  loggedInPage: async ({ browser }, use) => {
+  loggedInPage: async ({ browser }, use, testInfo) => {
     const page = await browser.newPage();
-    const user = new User(page, getTestEmailAccount());
+    const user = isScix(testInfo)
+      ? new ScixUser(page, getTestEmailAccount())
+      : new ADSUser(page, getTestEmailAccount());
     await user.login();
     await use([page, user]);
   },
-  loggedInAltPage: async ({ browser }, use) => {
+  loggedInAltPage: async ({ browser }, use, testInfo) => {
     const page = await browser.newPage();
-    const user = new User(page, getAltTestEmailAccount());
+    const user = isScix(testInfo)
+      ? new ScixUser(page, getAltTestEmailAccount())
+      : new ADSUser(page, getAltTestEmailAccount());
     await user.login();
     await use([page, user]);
   },

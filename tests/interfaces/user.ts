@@ -1,8 +1,8 @@
 import { Page, Response } from '@playwright/test';
 
-export interface ADSUser {
-  _email: string;
-  _password: string;
+export interface User {
+  email: string;
+  password: string;
   page: Page;
 
   _after(): Promise<void>;

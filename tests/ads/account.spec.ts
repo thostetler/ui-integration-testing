@@ -1,8 +1,8 @@
 import { test as setup, test } from '@/setup/setup';
-import { getTestEmailAccount } from '@/util/email';
 import { ADSUser } from '@/ads/fixtures/user';
-import { verifyUser } from '@/util/accounts';
 import { Page } from '@playwright/test';
+import { verifyUser } from '@ads/util/accounts';
+import { getTestEmailAccount } from '@/email';
 
 setup.use({
   baseURL: process.env.ADS_BASE_URL,

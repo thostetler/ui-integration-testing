@@ -1,5 +1,5 @@
 import { expect, type Page, request } from '@playwright/test';
-import { getAPIToken } from '@/util/api';
+import { getAPIToken } from '@ads/util/api';
 
 const BASE_URL = process.env.ADS_BASE_URL;
 

@@ -2,29 +2,18 @@ import { expect, type Page, type TestInfo } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { A11Y_TAGS, MAX_A11Y_VIOLATIONS } from '@/constants';
 
-export const ariaSnapshot = async (page: Page, name: string) => {
-  const adsMain = page.locator('#content-container');
-  const scixMain = page.locator('#main-content');
+const CONTENT_SELECTOR = '#content-container';
+const SCREENSHOT_THRESHOLD = 0.4;
 
-  if (await adsMain.isVisible()) {
-    await expect(adsMain).toMatchAriaSnapshot({ name: `${name}.aria.yml` });
-  }
-  if (await scixMain.isVisible()) {
-    await expect(scixMain).toMatchAriaSnapshot({ name: `${name}.aria.yml` });
-  }
+export const ariaSnapshot = async (page: Page, name: string) => {
+  await expect(page.locator(CONTENT_SELECTOR)).toMatchAriaSnapshot({ name: `${name}.aria.yml` });
 };
 
 export const visualCheck = async (page: Page, name: string) => {
-  const adsMain = page.locator('#content-container');
-  const scixMain = page.locator('#main-content');
-
   await expect(async () => {
-    if (await adsMain.isVisible()) {
-      await expect(adsMain).toHaveScreenshot(`${name}.png`, { threshold: 0.4 });
-    }
-    if (await scixMain.isVisible()) {
-      await expect(scixMain).toHaveScreenshot(`${name}.png`, { threshold: 0.4 });
-    }
+    await expect(page.locator(CONTENT_SELECTOR)).toHaveScreenshot(`${name}.png`, {
+      threshold: SCREENSHOT_THRESHOLD,
+    });
   }).toPass({ timeout: 10_000 });
 };
 
@@ -54,9 +43,4 @@ export const logNetworkRequests = async (page: Page, filter?: (url: string) => b
       console.log('<<', response.status(), response.url());
     }
   });
-};
-
-export const isScix = async (page: Page) => {
-  const main = page.locator('#main-content');
-  return await main.isVisible();
 };

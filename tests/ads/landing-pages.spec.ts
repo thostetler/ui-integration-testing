@@ -1,6 +1,6 @@
-import { expect, test } from '@playwright/test';
+import { expect, test } from '@/setup/setup';
 import { ROUTES } from '@/constants';
-import { a11yCheck, visualCheck } from '@/util/helpers';
+import { a11yCheck, visualCheck } from '@ads/util/helpers';
 
 test.use({
   baseURL: process.env.ADS_BASE_URL,

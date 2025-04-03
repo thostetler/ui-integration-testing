@@ -1,8 +1,8 @@
 import type { Page } from '@playwright/test';
-import { User } from '@/fixtures/user';
 import { expect, test as setup } from '@/setup/setup';
-import { getLatestADSEmail } from '../../provider/gmail';
 import { API_TIMEOUT } from '@/constants';
+import { getLatestADSEmail } from 'provider/gmail';
+import type { User } from '@/interfaces/user';
 
 const extractRegisterToken = (body: string): string | null => {
   if (typeof body === 'string') {

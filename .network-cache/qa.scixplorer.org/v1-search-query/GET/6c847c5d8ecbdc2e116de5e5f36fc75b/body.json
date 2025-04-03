@@ -1,0 +1,98 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 3,
+    "params": {
+      "q": "identifier:\"2022PhRvD.105j3539A\"",
+      "fl": "bibcode,title,author,[fields author=50],author_count,pubdate,bibstem,[citations],citation_count,citation_count_norm,esources,property,pub,data,id,identifier,read_count,abstract,comment,data,[fields orcid_pub=50],[fields orcid_user=50],[fields orcid_other=50],orcid_pub,orcid_user,orcid_other,doi,pub_raw,publisher,keyword,comment,pubnote,book_author,planetary_feature,planetary_feature_id,uat,uat_id",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67eef471-6b84606f2d87a8535c973601",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "score desc,date desc",
+      "rows": "10",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 1,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2022PhRvD.105j3539A",
+        "abstract": "We present a successful realization of supersymmetric μ -hybrid inflation model based on a gauged U (1 )<SUB>B - L</SUB> extension of the minimal supersymmetric standard model, with the soft supersymmetry breaking terms are playing an important role. Successful nonthermal leptogenesis with gravitino dark matter yields a reheat temperature in the range 2 ×10<SUP>7</SUP>≲T<SUB>R</SUB>≲5 ×10<SUP>9</SUP> GeV . This corresponds to the predictions 2 ×10<SUP>-18</SUP>≲r ≲4 ×10<SUP>-13</SUP> for the tensor to scalar ratio, and -2 ×10<SUP>-6</SUP>≲d n<SUB>s</SUB>/d ln k ≲-5 ×10<SUP>-11</SUP> for the running of the scalar spectral index. The B - L breaking scale is estimated as 6 ×10<SUP>14</SUP>≲M /GeV ≲10<SUP>16</SUP> , calculated at the central value of the scalar spectral index, n<SUB>s</SUB>=0.9655 , reported by Planck 2018. Finally, in a grand unified theory setup the dimensionless string tension parameter associated with the metastable strings is in the range 10<SUP>-9</SUP>≲G μ<SUB>cs</SUB>≲10<SUP>-6</SUP> corresponding to a stochastic gravitational wave background lying within the 2 σ bound of the recent NANOGrav 12.5-yr data.",
+        "author": [
+          "Afzal, Adeela",
+          "Ahmed, Waqas",
+          "Rehman, Mansoor Ur",
+          "Shafi, Qaisar"
+        ],
+        "author_count": 4,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.105.103539",
+          "10.48550/arXiv.2202.07386"
+        ],
+        "id": "17570813",
+        "identifier": [
+          "10.1103/PhysRevD.105.103539",
+          "arXiv:2202.07386",
+          "2022PhRvD.105j3539A",
+          "2022arXiv220207386A",
+          "10.48550/arXiv.2202.07386"
+        ],
+        "keyword": [
+          "High Energy Physics - Phenomenology",
+          "Astrophysics - Cosmology and Nongalactic Astrophysics"
+        ],
+        "orcid_pub": [
+          "0000-0003-4439-5342",
+          "-",
+          "0000-0002-1780-1571",
+          "-"
+        ],
+        "pub": "Physical Review D",
+        "pubnote": [
+          "12 pages, 7 figures; PHYS. REV. D 105, 103539 (2022); doi:10.1103/PhysRevD.105.103539"
+        ],
+        "pub_raw": "Physical Review D, Volume 105, Issue 10, article id.103539",
+        "pubdate": "2022-05-00",
+        "title": [
+          "μ -hybrid inflation, gravitino dark matter, and stochastic gravitational wave background from cosmic strings"
+        ],
+        "publisher": "APS",
+        "read_count": 69,
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "uat": [
+          "cosmology/observational cosmology",
+          "observational astronomy/astronomical methods/observational cosmology"
+        ],
+        "uat_id": [
+          1146,
+          1146
+        ],
+        "citation_count": 28,
+        "citation_count_norm": 7,
+        "[citations]": {
+          "num_references": 76,
+          "num_citations": 28
+        }
+      }
+    ]
+  }
+}

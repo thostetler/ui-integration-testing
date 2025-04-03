@@ -32,10 +32,13 @@ export default defineConfig({
     timezoneId: 'America/New_York',
     bypassCSP: true,
     video: 'retain-on-failure',
+    extraHTTPHeaders: {
+      'X-Test-Request': 'integration',
+    },
   },
   expect: {
     toHaveScreenshot: {
-      stylePath: 'tests/util/screenshots.css',
+      stylePath: 'tests/screenshots.css',
       maxDiffPixelRatio: 0.1,
     },
   },
@@ -52,7 +55,7 @@ export default defineConfig({
       grep: /@perf/,
     },
     {
-      name: 'ads',
+      name: 'default',
       use: {
         ...devices['Desktop Chrome'],
         launchOptions: {
@@ -61,19 +64,7 @@ export default defineConfig({
       },
       testIgnore: '**/perf/**',
       grepInvert: /@stress/,
-      testDir: './tests/ads',
-    },
-    {
-      name: 'scix',
-      use: {
-        ...devices['Desktop Chrome'],
-        launchOptions: {
-          args: ['--use-gl=egl'],
-        },
-      },
-      testIgnore: '**/perf/**',
-      grepInvert: /@stress/,
-      testDir: './tests/scix',
+      testDir: './tests',
     },
   ],
 });

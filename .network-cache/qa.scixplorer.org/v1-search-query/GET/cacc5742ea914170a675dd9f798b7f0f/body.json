@@ -1,0 +1,677 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 87,
+    "params": {
+      "q": "identifier:\"2022PhRvD.105*\"",
+      "fl": "bibcode,title,author,[fields author=50],author_count,pubdate,bibstem,[citations],citation_count,citation_count_norm,esources,property,pub,data,id,identifier",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67eef472-38feaf3117a5d0bb7d070c77",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "score desc,date desc",
+      "rows": "10",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 2108,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2022PhRvD.105b3520A",
+        "author": [
+          "Abbott, T. M. C.",
+          "Aguena, M.",
+          "Alarcon, A.",
+          "Allam, S.",
+          "Alves, O.",
+          "Amon, A.",
+          "Andrade-Oliveira, F.",
+          "Annis, J.",
+          "Avila, S.",
+          "Bacon, D.",
+          "Baxter, E.",
+          "Bechtol, K.",
+          "Becker, M. R.",
+          "Bernstein, G. M.",
+          "Bhargava, S.",
+          "Birrer, S.",
+          "Blazek, J.",
+          "Brandao-Souza, A.",
+          "Bridle, S. L.",
+          "Brooks, D.",
+          "Buckley-Geer, E.",
+          "Burke, D. L.",
+          "Camacho, H.",
+          "Campos, A.",
+          "Carnero Rosell, A.",
+          "Carrasco Kind, M.",
+          "Carretero, J.",
+          "Castander, F. J.",
+          "Cawthon, R.",
+          "Chang, C.",
+          "Chen, A.",
+          "Chen, R.",
+          "Choi, A.",
+          "Conselice, C.",
+          "Cordero, J.",
+          "Costanzi, M.",
+          "Crocce, M.",
+          "da Costa, L. N.",
+          "da Silva Pereira, M. E.",
+          "Davis, C.",
+          "Davis, T. M.",
+          "De Vicente, J.",
+          "DeRose, J.",
+          "Desai, S.",
+          "Di Valentino, E.",
+          "Diehl, H. T.",
+          "Dietrich, J. P.",
+          "Dodelson, S.",
+          "Doel, P.",
+          "Doux, C."
+        ],
+        "author_count": 171,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17250846",
+        "identifier": [
+          "arXiv:2105.13549",
+          "2021arXiv210513549D",
+          "2022PhRvD.105b3520A",
+          "10.1103/PhysRevD.105.023520",
+          "10.48550/arXiv.2105.13549"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-01-00",
+        "title": [
+          "Dark Energy Survey Year 3 results: Cosmological constraints from galaxy clustering and weak lensing"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 961,
+        "citation_count_norm": 5.619883,
+        "[citations]": {
+          "num_references": 220,
+          "num_citations": 961
+        }
+      },
+      {
+        "bibcode": "2022PhRvD.105b3514A",
+        "author": [
+          "Amon, A.",
+          "Gruen, D.",
+          "Troxel, M. A.",
+          "MacCrann, N.",
+          "Dodelson, S.",
+          "Choi, A.",
+          "Doux, C.",
+          "Secco, L. F.",
+          "Samuroff, S.",
+          "Krause, E.",
+          "Cordero, J.",
+          "Myles, J.",
+          "DeRose, J.",
+          "Wechsler, R. H.",
+          "Gatti, M.",
+          "Navarro-Alsina, A.",
+          "Bernstein, G. M.",
+          "Jain, B.",
+          "Blazek, J.",
+          "Alarcon, A.",
+          "Ferté, A.",
+          "Lemos, P.",
+          "Raveri, M.",
+          "Campos, A.",
+          "Prat, J.",
+          "Sánchez, C.",
+          "Jarvis, M.",
+          "Alves, O.",
+          "Andrade-Oliveira, F.",
+          "Baxter, E.",
+          "Bechtol, K.",
+          "Becker, M. R.",
+          "Bridle, S. L.",
+          "Camacho, H.",
+          "Carnero Rosell, A.",
+          "Carrasco Kind, M.",
+          "Cawthon, R.",
+          "Chang, C.",
+          "Chen, R.",
+          "Chintalapati, P.",
+          "Crocce, M.",
+          "Davis, C.",
+          "Diehl, H. T.",
+          "Drlica-Wagner, A.",
+          "Eckert, K.",
+          "Eifler, T. F.",
+          "Elvin-Poole, J.",
+          "Everett, S.",
+          "Fang, X.",
+          "Fosalba, P."
+        ],
+        "author_count": 148,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17250820",
+        "identifier": [
+          "10.48550/arXiv.2105.13543",
+          "arXiv:2105.13543",
+          "2022PhRvD.105b3514A",
+          "10.1103/PhysRevD.105.023514",
+          "2021arXiv210513543A"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-01-00",
+        "title": [
+          "Dark Energy Survey Year 3 results: Cosmology from cosmic shear and robustness to data calibration"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 361,
+        "citation_count_norm": 2.4391892,
+        "[citations]": {
+          "num_references": 200,
+          "num_citations": 361
+        }
+      },
+      {
+        "bibcode": "2022PhRvD.105b3515S",
+        "author": [
+          "Secco, L. F.",
+          "Samuroff, S.",
+          "Krause, E.",
+          "Jain, B.",
+          "Blazek, J.",
+          "Raveri, M.",
+          "Campos, A.",
+          "Amon, A.",
+          "Chen, A.",
+          "Doux, C.",
+          "Choi, A.",
+          "Gruen, D.",
+          "Bernstein, G. M.",
+          "Chang, C.",
+          "DeRose, J.",
+          "Myles, J.",
+          "Ferté, A.",
+          "Lemos, P.",
+          "Huterer, D.",
+          "Prat, J.",
+          "Troxel, M. A.",
+          "MacCrann, N.",
+          "Liddle, A. R.",
+          "Kacprzak, T.",
+          "Fang, X.",
+          "Sánchez, C.",
+          "Pandey, S.",
+          "Dodelson, S.",
+          "Chintalapati, P.",
+          "Hoffmann, K.",
+          "Alarcon, A.",
+          "Alves, O.",
+          "Andrade-Oliveira, F.",
+          "Baxter, E. J.",
+          "Bechtol, K.",
+          "Becker, M. R.",
+          "Brandao-Souza, A.",
+          "Camacho, H.",
+          "Carnero Rosell, A.",
+          "Carrasco Kind, M.",
+          "Cawthon, R.",
+          "Cordero, J. P.",
+          "Crocce, M.",
+          "Davis, C.",
+          "Di Valentino, E.",
+          "Drlica-Wagner, A.",
+          "Eckert, K.",
+          "Eifler, T. F.",
+          "Elidaiana, M.",
+          "Elsner, F."
+        ],
+        "author_count": 156,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17250824",
+        "identifier": [
+          "2021arXiv210513544S",
+          "2022PhRvD.105b3515S",
+          "arXiv:2105.13544",
+          "10.48550/arXiv.2105.13544",
+          "10.1103/PhysRevD.105.023515"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-01-00",
+        "title": [
+          "Dark Energy Survey Year 3 results: Cosmology from cosmic shear and robustness to modeling uncertainty"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 320,
+        "citation_count_norm": 2.0512822,
+        "[citations]": {
+          "num_references": 185,
+          "num_citations": 320
+        }
+      },
+      {
+        "bibcode": "2022PhRvD.105h3524T",
+        "author": [
+          "Tristram, M.",
+          "Banday, A. J.",
+          "Górski, K. M.",
+          "Keskitalo, R.",
+          "Lawrence, C. R.",
+          "Andersen, K. J.",
+          "Barreiro, R. B.",
+          "Borrill, J.",
+          "Colombo, L. P. L.",
+          "Eriksen, H. K.",
+          "Fernandez-Cobos, R.",
+          "Kisner, T. S.",
+          "Martínez-González, E.",
+          "Partridge, B.",
+          "Scott, D.",
+          "Svalheim, T. L.",
+          "Wehus, I. K."
+        ],
+        "author_count": 17,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17502697",
+        "identifier": [
+          "2022PhRvD.105h3524T",
+          "arXiv:2112.07961",
+          "10.48550/arXiv.2112.07961",
+          "2021arXiv211207961T",
+          "10.1103/PhysRevD.105.083524"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-04-00",
+        "title": [
+          "Improved limits on the tensor-to-scalar ratio using BICEP and Planck data"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 218,
+        "citation_count_norm": 12.823529,
+        "[citations]": {
+          "num_references": 33,
+          "num_citations": 218
+        }
+      },
+      {
+        "bibcode": "2022PhRvD.105d3517P",
+        "author": [
+          "Philcox, Oliver H. E.",
+          "Ivanov, Mikhail M."
+        ],
+        "author_count": 2,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17309420",
+        "identifier": [
+          "10.1103/PhysRevD.105.043517",
+          "10.48550/arXiv.2112.04515",
+          "2022PhRvD.105d3517P",
+          "2021arXiv211204515P",
+          "arXiv:2112.04515"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-02-00",
+        "title": [
+          "BOSS DR12 full-shape cosmology: Λ CDM constraints from the large-scale galaxy power spectrum and bispectrum monopole"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 222,
+        "citation_count_norm": 111,
+        "[citations]": {
+          "num_references": 134,
+          "num_citations": 222
+        }
+      },
+      {
+        "bibcode": "2022PhRvD.105l5016C",
+        "author": [
+          "Choi, Yichul",
+          "Córdova, Clay",
+          "Hsin, Po-Shen",
+          "Lam, Ho Tat",
+          "Shao, Shu-Heng"
+        ],
+        "author_count": 5,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17654818",
+        "identifier": [
+          "arXiv:2111.01139",
+          "10.48550/arXiv.2111.01139",
+          "10.1103/PhysRevD.105.125016",
+          "2021arXiv211101139C",
+          "2022PhRvD.105l5016C"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-06-00",
+        "title": [
+          "Noninvertible duality defects in 3 +1 dimensions"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 266,
+        "citation_count_norm": 53.2,
+        "[citations]": {
+          "num_references": 79,
+          "num_citations": 266
+        }
+      },
+      {
+        "bibcode": "2022PhRvD.105h3526F",
+        "author": [
+          "Franciolini, Gabriele",
+          "Baibhav, Vishal",
+          "De Luca, Valerio",
+          "Ng, Ken K. Y.",
+          "Wong, Kaze W. K.",
+          "Berti, Emanuele",
+          "Pani, Paolo",
+          "Riotto, Antonio",
+          "Vitale, Salvatore"
+        ],
+        "author_count": 9,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17502699",
+        "identifier": [
+          "2021arXiv210503349F",
+          "10.1103/PhysRevD.105.083526",
+          "10.48550/arXiv.2105.03349",
+          "2022PhRvD.105h3526F",
+          "arXiv:2105.03349"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-04-00",
+        "title": [
+          "Searching for a subpopulation of primordial black holes in LIGO-Virgo gravitational-wave data"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 185,
+        "citation_count_norm": 20.555555,
+        "[citations]": {
+          "num_references": 124,
+          "num_citations": 185
+        }
+      },
+      {
+        "bibcode": "2022PhRvD.105h3517K",
+        "author": [
+          "Kobayashi, Yosuke",
+          "Nishimichi, Takahiro",
+          "Takada, Masahiro",
+          "Miyatake, Hironao"
+        ],
+        "author_count": 4,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17487592",
+        "identifier": [
+          "10.48550/arXiv.2110.06969",
+          "arXiv:2110.06969",
+          "2022PhRvD.105h3517K",
+          "2021arXiv211006969K",
+          "10.1103/PhysRevD.105.083517"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-04-00",
+        "title": [
+          "Full-shape cosmology analysis of the SDSS-III BOSS galaxy power spectrum using an emulator-based halo model: A 5% determination of σ<SUB>8</SUB>"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 97,
+        "citation_count_norm": 24.25,
+        "[citations]": {
+          "num_references": 87,
+          "num_citations": 97
+        }
+      },
+      {
+        "bibcode": "2022PhRvD.105d3512A",
+        "author": [
+          "Abbott, T. M. C.",
+          "Aguena, M.",
+          "Allam, S.",
+          "Amon, A.",
+          "Andrade-Oliveira, F.",
+          "Asorey, J.",
+          "Avila, S.",
+          "Bernstein, G. M.",
+          "Bertin, E.",
+          "Brandao-Souza, A.",
+          "Brooks, D.",
+          "Burke, D. L.",
+          "Calcino, J.",
+          "Camacho, H.",
+          "Carnero Rosell, A.",
+          "Carollo, D.",
+          "Carrasco Kind, M.",
+          "Carretero, J.",
+          "Castander, F. J.",
+          "Cawthon, R.",
+          "Chan, K. C.",
+          "Choi, A.",
+          "Conselice, C.",
+          "Costanzi, M.",
+          "Crocce, M.",
+          "da Costa, L. N.",
+          "Pereira, M. E. S.",
+          "Davis, T. M.",
+          "De Vicente, J.",
+          "Desai, S.",
+          "Diehl, H. T.",
+          "Doel, P.",
+          "Eckert, K.",
+          "Elvin-Poole, J.",
+          "Everett, S.",
+          "Evrard, A. E.",
+          "Fang, X.",
+          "Ferrero, I.",
+          "Ferté, A.",
+          "Flaugher, B.",
+          "Fosalba, P.",
+          "García-Bellido, J.",
+          "Gaztanaga, E.",
+          "Gerdes, D. W.",
+          "Giannantonio, T.",
+          "Glazebrook, K.",
+          "Gomes, D.",
+          "Gruen, D.",
+          "Gruendl, R. A.",
+          "Gschwend, J."
+        ],
+        "author_count": 113,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17309408",
+        "identifier": [
+          "arXiv:2107.04646",
+          "2021arXiv210704646D",
+          "2022PhRvD.105d3512A",
+          "10.1103/PhysRevD.105.043512",
+          "10.48550/arXiv.2107.04646"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-02-00",
+        "title": [
+          "Dark Energy Survey Year 3 results: A 2.7% measurement of baryon acoustic oscillation distance scale at redshift 0.835"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 84,
+        "citation_count_norm": 0.74336284,
+        "[citations]": {
+          "num_references": 115,
+          "num_citations": 84
+        }
+      },
+      {
+        "bibcode": "2022PhRvD.105b3005W",
+        "author": [
+          "Wang, Ze-Rui",
+          "Liu, Ruo-Yu",
+          "Petropoulou, Maria",
+          "Oikonomou, Foteini",
+          "Xue, Rui",
+          "Wang, Xiang-Yu"
+        ],
+        "author_count": 6,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17210359",
+        "identifier": [
+          "arXiv:2112.01739",
+          "2021arXiv211201739W",
+          "10.48550/arXiv.2112.01739",
+          "10.1103/PhysRevD.105.023005",
+          "2022PhRvD.105b3005W"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-01-00",
+        "title": [
+          "Unified model for orphan and multiwavelength blazar flares"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 24,
+        "citation_count_norm": 4,
+        "[citations]": {
+          "num_references": 122,
+          "num_citations": 24
+        }
+      }
+    ]
+  }
+}

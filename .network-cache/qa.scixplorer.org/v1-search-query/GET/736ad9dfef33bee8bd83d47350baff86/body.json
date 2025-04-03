@@ -1,0 +1,465 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 17200,
+    "params": {
+      "q": "similar(identifier:\"2022PhRvD.105j3539A\")",
+      "fl": "bibcode,title,author,[fields author=50],author_count,pubdate,bibstem,[citations],citation_count,citation_count_norm,esources,property,pub,data,id,identifier",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67eef471-6c35638429f4c8be6293e603",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "score desc",
+      "rows": "10",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 11493412,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2022PhRvD.105k5008A",
+        "author": [
+          "Ahmed, Waqas",
+          "Junaid, M.",
+          "Nasri, Salah",
+          "Zubair, Umer"
+        ],
+        "author_count": 4,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17570860",
+        "identifier": [
+          "arXiv:2202.06216",
+          "2022PhRvD.105k5008A",
+          "10.48550/arXiv.2202.06216",
+          "10.1103/PhysRevD.105.115008",
+          "2022arXiv220206216A"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-06-00",
+        "title": [
+          "Constraining the cosmic strings gravitational wave spectra in no-scale inflation with viable gravitino dark matter and nonthermal leptogenesis"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 23,
+        "citation_count_norm": 5.75,
+        "[citations]": {
+          "num_references": 89,
+          "num_citations": 23
+        }
+      },
+      {
+        "bibcode": "2021JCAP...11..022M",
+        "author": [
+          "Masoud, Muhammad Atif",
+          "Rehman, Mansoor Ur",
+          "Shafi, Qaisar"
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "JCAP",
+          "JCAP...11"
+        ],
+        "id": "17071437",
+        "identifier": [
+          "10.48550/arXiv.2107.09689",
+          "arXiv:2107.09689",
+          "2021JCAP...11..022M",
+          "10.1088/1475-7516/2021/11/022",
+          "2021arXiv210709689A"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2021-11-00",
+        "title": [
+          "Sneutrino tribrid inflation, metastable cosmic strings and gravitational waves"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 31,
+        "citation_count_norm": 10.333333,
+        "[citations]": {
+          "num_references": 70,
+          "num_citations": 31
+        }
+      },
+      {
+        "bibcode": "2020PhLB..81135914B",
+        "author": [
+          "Buchmuller, Wilfried",
+          "Domcke, Valerie",
+          "Schmitz, Kai"
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "PhLB",
+          "PhLB..811"
+        ],
+        "id": "14993177",
+        "identifier": [
+          "10.1016/j.physletb.2020.135914",
+          "arXiv:2009.10649",
+          "2020PhLB..81135914B",
+          "10.48550/arXiv.2009.10649",
+          "2020arXiv200910649B"
+        ],
+        "pub": "Physics Letters B",
+        "pubdate": "2020-12-00",
+        "title": [
+          "From NANOGrav to LIGO with metastable cosmic strings"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 134,
+        "citation_count_norm": 44.666668,
+        "[citations]": {
+          "num_references": 39,
+          "num_citations": 134
+        }
+      },
+      {
+        "bibcode": "2020JCAP...11..019R",
+        "author": [
+          "Rehman, Mansoor Ur",
+          "Azeem Abid, Mian Muhammad",
+          "Ejaz, Amna"
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "JCAP",
+          "JCAP...11"
+        ],
+        "id": "14776819",
+        "identifier": [
+          "2020JCAP...11..019R",
+          "10.1088/1475-7516/2020/11/019",
+          "arXiv:1804.07619",
+          "2018arXiv180407619R",
+          "10.48550/arXiv.1804.07619"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2020-11-00",
+        "title": [
+          "New inflation in supersymmetric SU(5) and flipped SU(5) GUT models"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 16,
+        "citation_count_norm": 5.3333335,
+        "[citations]": {
+          "num_references": 78,
+          "num_citations": 16
+        }
+      },
+      {
+        "bibcode": "2013PhLB..725..327P",
+        "author": [
+          "Pallis, Constantinos",
+          "Shafi, Qaisar"
+        ],
+        "author_count": 2,
+        "bibstem": [
+          "PhLB",
+          "PhLB..725"
+        ],
+        "id": "11023815",
+        "identifier": [
+          "10.1016/j.physletb.2013.07.029",
+          "10.48550/arXiv.1304.5202",
+          "2013arXiv1304.5202P",
+          "2013PhLB..725..327P",
+          "arXiv:1304.5202"
+        ],
+        "pub": "Physics Letters B",
+        "pubdate": "2013-10-00",
+        "title": [
+          "Update on minimal supersymmetric hybrid inflation in light of PLANCK"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 49,
+        "citation_count_norm": 24.5,
+        "[citations]": {
+          "num_references": 63,
+          "num_citations": 49
+        }
+      },
+      {
+        "bibcode": "1993PhLB..315..331E",
+        "author": [
+          "Ellwanger, Ulrich",
+          "de Traubenberg, Michel Rausch",
+          "Savoy, Carlos A."
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "PhLB",
+          "PhLB..315"
+        ],
+        "id": "4645520",
+        "identifier": [
+          "1993hep.ph....7322E",
+          "10.48550/arXiv.hep-ph/9307322",
+          "10.1016/0370-2693(93)91621-S",
+          "1993PhLB..315..331E",
+          "arXiv:hep-ph/9307322"
+        ],
+        "pub": "Physics Letters B",
+        "pubdate": "1993-10-00",
+        "title": [
+          "Particle spectrum in supersymmetric models with a gauge singlet"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 230,
+        "citation_count_norm": 76.666664,
+        "[citations]": {
+          "num_references": 38,
+          "num_citations": 230
+        }
+      },
+      {
+        "bibcode": "2006JCAP...09..007B",
+        "author": [
+          "Battye, Richard A.",
+          "Garbrecht, Björn",
+          "Moss, Adam"
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "JCAP",
+          "JCAP...09"
+        ],
+        "id": "7879394",
+        "identifier": [
+          "2006astro.ph..7339B",
+          "2006JCAP...09..007B",
+          "10.48550/arXiv.astro-ph/0607339",
+          "10.1088/1475-7516/2006/09/007",
+          "arXiv:astro-ph/0607339"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2006-09-00",
+        "title": [
+          "Constraints on supersymmetric hybrid inflation models"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 113,
+        "citation_count_norm": 37.666668,
+        "[citations]": {
+          "num_references": 83,
+          "num_citations": 113
+        }
+      },
+      {
+        "bibcode": "1983PhRvD..28..679B",
+        "author": [
+          "Bardeen, James M.",
+          "Steinhardt, Paul J.",
+          "Turner, Michael S."
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD..28"
+        ],
+        "id": "2959630",
+        "identifier": [
+          "1983PhRvD..28..679B",
+          "10.1103/PhysRevD.28.679"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "1983-08-00",
+        "title": [
+          "Spontaneous creation of almost scale-free density perturbations in an inflationary universe"
+        ],
+        "esources": [
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "ESOURCE",
+          "INSPIRE",
+          "REFEREED"
+        ],
+        "citation_count": 2101,
+        "citation_count_norm": 700.3333,
+        "[citations]": {
+          "num_references": 40,
+          "num_citations": 2101
+        }
+      },
+      {
+        "bibcode": "2024PhRvD.109e5025F",
+        "author": [
+          "Fu, Bowen",
+          "King, Stephen F.",
+          "Marsili, Luca",
+          "Pascoli, Silvia",
+          "Turner, Jessica",
+          "Zhou, Ye-Ling"
+        ],
+        "author_count": 6,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.109"
+        ],
+        "id": "23005807",
+        "identifier": [
+          "2024PhRvD.109e5025F",
+          "arXiv:2308.05799",
+          "10.48550/arXiv.2308.05799",
+          "10.1103/PhysRevD.109.055025",
+          "2023arXiv230805799F"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2024-03-00",
+        "title": [
+          "Testing realistic SO(10) SUSY GUTs with proton decay and gravitational waves"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 26,
+        "citation_count_norm": 4.3333335,
+        "[citations]": {
+          "num_references": 95,
+          "num_citations": 26
+        }
+      },
+      {
+        "bibcode": "2003PhRvD..68j3514J",
+        "author": [
+          "Jeannerot, Rachel",
+          "Rocher, Jonathan",
+          "Sakellariadou, Mairi"
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD..68"
+        ],
+        "id": "7046629",
+        "identifier": [
+          "10.1103/PhysRevD.68.103514",
+          "2003hep.ph....8134J",
+          "2003PhRvD..68j3514J",
+          "arXiv:hep-ph/0308134",
+          "10.48550/arXiv.hep-ph/0308134"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2003-11-00",
+        "title": [
+          "How generic is cosmic string formation in supersymmetric grand unified theories"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 386,
+        "citation_count_norm": 128.66667,
+        "[citations]": {
+          "num_references": 71,
+          "num_citations": 386
+        }
+      }
+    ]
+  }
+}

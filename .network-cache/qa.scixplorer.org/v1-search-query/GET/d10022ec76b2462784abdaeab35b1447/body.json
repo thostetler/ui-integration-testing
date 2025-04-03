@@ -1,0 +1,623 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 40,
+    "params": {
+      "q": "references(identifier:\"2022PhRvD.105j3539A\")",
+      "fl": "bibcode,title,author,[fields author=50],author_count,pubdate,bibstem,[citations],citation_count,citation_count_norm,esources,property,pub,data,id,identifier",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67eef472-782451207620c95d42fbab2a",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "first_author asc",
+      "rows": "10",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 76,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2021PhRvD.104b2004A",
+        "author": [
+          "Abbott, R.",
+          "Abbott, T. D.",
+          "Abraham, S.",
+          "Acernese, F.",
+          "Ackley, K.",
+          "Adams, A.",
+          "Adams, C.",
+          "Adhikari, R. X.",
+          "Adya, V. B.",
+          "Affeldt, C.",
+          "Agarwal, D.",
+          "Agathos, M.",
+          "Agatsuma, K.",
+          "Aggarwal, N.",
+          "Aguiar, O. D.",
+          "Aiello, L.",
+          "Ain, A.",
+          "Akutsu, T.",
+          "Aleman, K. M.",
+          "Allen, G.",
+          "Allocca, A.",
+          "Altin, P. A.",
+          "Amato, A.",
+          "Anand, S.",
+          "Ananyeva, A.",
+          "Anderson, S. B.",
+          "Anderson, W. G.",
+          "Ando, M.",
+          "Angelova, S. V.",
+          "Ansoldi, S.",
+          "Antelis, J. M.",
+          "Antier, S.",
+          "Appert, S.",
+          "Arai, Koya",
+          "Arai, Koji",
+          "Arai, Y.",
+          "Araki, S.",
+          "Araya, A.",
+          "Araya, M. C.",
+          "Areeda, J. S.",
+          "Arène, M.",
+          "Aritomi, N.",
+          "Arnaud, N.",
+          "Aronson, S. M.",
+          "Asada, H.",
+          "Asali, Y.",
+          "Ashton, G.",
+          "Aso, Y.",
+          "Aston, S. M.",
+          "Astone, P."
+        ],
+        "author_count": 1590,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.104"
+        ],
+        "id": "16701816",
+        "identifier": [
+          "10.48550/arXiv.2101.12130",
+          "2021arXiv210112130T",
+          "2021PhRvD.104b2004A",
+          "arXiv:2101.12130",
+          "10.1103/PhysRevD.104.022004"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2021-07-00",
+        "title": [
+          "Upper limits on the isotropic gravitational-wave background from Advanced LIGO and Advanced Virgo's third observing run"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 377,
+        "citation_count_norm": 0.23710692,
+        "[citations]": {
+          "num_references": 116,
+          "num_citations": 377
+        }
+      },
+      {
+        "bibcode": "2017MPLA...3240002A",
+        "author": [
+          "Addazi, Andrea",
+          "Khlopov, Maxim Yu."
+        ],
+        "author_count": 2,
+        "bibstem": [
+          "MPLA",
+          "MPLA...32"
+        ],
+        "id": "13030085",
+        "identifier": [
+          "2017arXiv170205381A",
+          "2017MPLA...3240002A",
+          "10.1142/S0217732317400028",
+          "10.48550/arXiv.1702.05381",
+          "arXiv:1702.05381"
+        ],
+        "pub": "Modern Physics Letters A",
+        "pubdate": "2017-05-00",
+        "title": [
+          "Dark matter from Starobinsky supergravity"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 12,
+        "citation_count_norm": 6,
+        "[citations]": {
+          "num_references": 54,
+          "num_citations": 12
+        }
+      },
+      {
+        "bibcode": "2021PhRvD.104e5025A",
+        "author": [
+          "Ahmed, Waqas",
+          "Karozas, Athanasios",
+          "Leontaris, George K."
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.104"
+        ],
+        "id": "16950668",
+        "identifier": [
+          "10.1103/PhysRevD.104.055025",
+          "10.48550/arXiv.2104.04328",
+          "arXiv:2104.04328",
+          "2021PhRvD.104e5025A",
+          "2021arXiv210404328A"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2021-09-00",
+        "title": [
+          "Gravitino dark matter, nonthermal leptogenesis, and low reheating temperature in no-scale Higgs inflation"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 10,
+        "citation_count_norm": 3.3333333,
+        "[citations]": {
+          "num_references": 82,
+          "num_citations": 10
+        }
+      },
+      {
+        "bibcode": "2022JCAP...06..027A",
+        "author": [
+          "Ahmed, Waqas",
+          "Karozas, Athanasios",
+          "Leontaris, George K.",
+          "Zubair, Umer"
+        ],
+        "author_count": 4,
+        "bibstem": [
+          "JCAP",
+          "JCAP...06"
+        ],
+        "id": "17617676",
+        "identifier": [
+          "2022arXiv220112789A",
+          "arXiv:2201.12789",
+          "10.48550/arXiv.2201.12789",
+          "2022JCAP...06..027A",
+          "10.1088/1475-7516/2022/06/027"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2022-06-00",
+        "title": [
+          "Smooth hybrid inflation with low reheat temperature and observable gravity waves in SU(5) × U(1)<SUB>χ</SUB> super-GUT"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 7,
+        "citation_count_norm": 1.75,
+        "[citations]": {
+          "num_references": 53,
+          "num_citations": 7
+        }
+      },
+      {
+        "bibcode": "2022PhRvD.105k5008A",
+        "author": [
+          "Ahmed, Waqas",
+          "Junaid, M.",
+          "Nasri, Salah",
+          "Zubair, Umer"
+        ],
+        "author_count": 4,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.105"
+        ],
+        "id": "17570860",
+        "identifier": [
+          "arXiv:2202.06216",
+          "2022PhRvD.105k5008A",
+          "10.48550/arXiv.2202.06216",
+          "10.1103/PhysRevD.105.115008",
+          "2022arXiv220206216A"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2022-06-00",
+        "title": [
+          "Constraining the cosmic strings gravitational wave spectra in no-scale inflation with viable gravitino dark matter and nonthermal leptogenesis"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 23,
+        "citation_count_norm": 5.75,
+        "[citations]": {
+          "num_references": 89,
+          "num_citations": 23
+        }
+      },
+      {
+        "bibcode": "2017arXiv170200786A",
+        "author": [
+          "Amaro-Seoane, Pau",
+          "Audley, Heather",
+          "Babak, Stanislav",
+          "Baker, John",
+          "Barausse, Enrico",
+          "Bender, Peter",
+          "Berti, Emanuele",
+          "Binetruy, Pierre",
+          "Born, Michael",
+          "Bortoluzzi, Daniele",
+          "Camp, Jordan",
+          "Caprini, Chiara",
+          "Cardoso, Vitor",
+          "Colpi, Monica",
+          "Conklin, John",
+          "Cornish, Neil",
+          "Cutler, Curt",
+          "Danzmann, Karsten",
+          "Dolesi, Rita",
+          "Ferraioli, Luigi",
+          "Ferroni, Valerio",
+          "Fitzsimons, Ewan",
+          "Gair, Jonathan",
+          "Gesa Bote, Lluis",
+          "Giardini, Domenico",
+          "Gibert, Ferran",
+          "Grimani, Catia",
+          "Halloin, Hubert",
+          "Heinzel, Gerhard",
+          "Hertog, Thomas",
+          "Hewitson, Martin",
+          "Holley-Bockelmann, Kelly",
+          "Hollington, Daniel",
+          "Hueller, Mauro",
+          "Inchauspe, Henri",
+          "Jetzer, Philippe",
+          "Karnesis, Nikos",
+          "Killow, Christian",
+          "Klein, Antoine",
+          "Klipstein, Bill",
+          "Korsakova, Natalia",
+          "Larson, Shane L",
+          "Livas, Jeffrey",
+          "Lloro, Ivan",
+          "Man, Nary",
+          "Mance, Davor",
+          "Martino, Joseph",
+          "Mateos, Ignacio",
+          "McKenzie, Kirk",
+          "McWilliams, Sean T"
+        ],
+        "author_count": 84,
+        "bibstem": [
+          "arXiv",
+          "arXiv1702"
+        ],
+        "id": "13237058",
+        "identifier": [
+          "2017arXiv170200786A",
+          "arXiv:1702.00786",
+          "10.48550/arXiv.1702.00786"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2017-02-00",
+        "title": [
+          "Laser Interferometer Space Antenna"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "citation_count": 3409,
+        "citation_count_norm": 40.583332,
+        "[citations]": {
+          "num_references": 23,
+          "num_citations": 3409
+        }
+      },
+      {
+        "bibcode": "2020ApJ...905L..34A",
+        "author": [
+          "Arzoumanian, Zaven",
+          "Baker, Paul T.",
+          "Blumer, Harsha",
+          "Bécsy, Bence",
+          "Brazier, Adam",
+          "Brook, Paul R.",
+          "Burke-Spolaor, Sarah",
+          "Chatterjee, Shami",
+          "Chen, Siyuan",
+          "Cordes, James M.",
+          "Cornish, Neil J.",
+          "Crawford, Fronefield",
+          "Cromartie, H. Thankful",
+          "Decesar, Megan E.",
+          "Demorest, Paul B.",
+          "Dolch, Timothy",
+          "Ellis, Justin A.",
+          "Ferrara, Elizabeth C.",
+          "Fiore, William",
+          "Fonseca, Emmanuel",
+          "Garver-Daniels, Nathan",
+          "Gentile, Peter A.",
+          "Good, Deborah C.",
+          "Hazboun, Jeffrey S.",
+          "Holgado, A. Miguel",
+          "Islo, Kristina",
+          "Jennings, Ross J.",
+          "Jones, Megan L.",
+          "Kaiser, Andrew R.",
+          "Kaplan, David L.",
+          "Kelley, Luke Zoltan",
+          "Key, Joey Shapiro",
+          "Laal, Nima",
+          "Lam, Michael T.",
+          "Lazio, T. Joseph W.",
+          "Lorimer, Duncan R.",
+          "Luo, Jing",
+          "Lynch, Ryan S.",
+          "Madison, Dustin R.",
+          "McLaughlin, Maura A.",
+          "Mingarelli, Chiara M. F.",
+          "Ng, Cherry",
+          "Nice, David J.",
+          "Pennucci, Timothy T.",
+          "Pol, Nihan S.",
+          "Ransom, Scott M.",
+          "Ray, Paul S.",
+          "Shapiro-Albert, Brent J.",
+          "Siemens, Xavier",
+          "Simon, Joseph"
+        ],
+        "author_count": 62,
+        "bibstem": [
+          "ApJL",
+          "ApJL..905"
+        ],
+        "id": "14622717",
+        "identifier": [
+          "2020ApJ...905L..34A",
+          "arXiv:2009.04496",
+          "10.48550/arXiv.2009.04496",
+          "2020arXiv200904496A",
+          "10.3847/2041-8213/abd401"
+        ],
+        "pub": "The Astrophysical Journal",
+        "pubdate": "2020-12-00",
+        "title": [
+          "The NANOGrav 12.5 yr Data Set: Search for an Isotropic Stochastic Gravitational-wave Background"
+        ],
+        "data": [
+          "SIMBAD:15"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 801,
+        "citation_count_norm": 12.919354,
+        "[citations]": {
+          "num_references": 84,
+          "num_citations": 801
+        }
+      },
+      {
+        "bibcode": "2000PhRvD..61h3512A",
+        "author": [
+          "Asaka, T.",
+          "Hamaguchi, K.",
+          "Kawasaki, M.",
+          "Yanagida, T."
+        ],
+        "author_count": 4,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD..61"
+        ],
+        "id": "6227907",
+        "identifier": [
+          "arXiv:hep-ph/9907559",
+          "10.1103/PhysRevD.61.083512",
+          "2000PhRvD..61h3512A",
+          "1999hep.ph....7559A",
+          "10.48550/arXiv.hep-ph/9907559"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2000-04-00",
+        "title": [
+          "Leptogenesis in an inflationary universe"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 193,
+        "citation_count_norm": 48.25,
+        "[citations]": {
+          "num_references": 62,
+          "num_citations": 193
+        }
+      },
+      {
+        "bibcode": "2020JCAP...04..034A",
+        "author": [
+          "Auclair, Pierre",
+          "Blanco-Pillado, Jose J.",
+          "Figueroa, Daniel G.",
+          "Jenkins, Alexander C.",
+          "Lewicki, Marek",
+          "Sakellariadou, Mairi",
+          "Sanidas, Sotiris",
+          "Sousa, Lara",
+          "Steer, Danièle A.",
+          "Wachter, Jeremy M.",
+          "Kuroyanagi, Sachiko",
+          "LISA Cosmology Working Group"
+        ],
+        "author_count": 12,
+        "bibstem": [
+          "JCAP",
+          "JCAP...04"
+        ],
+        "id": "14776291",
+        "identifier": [
+          "2020JCAP...04..034A",
+          "arXiv:1909.00819",
+          "10.48550/arXiv.1909.00819",
+          "10.1088/1475-7516/2020/04/034",
+          "2019arXiv190900819A"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2020-04-00",
+        "title": [
+          "Probing the gravitational wave background from cosmic strings with LISA"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 262,
+        "citation_count_norm": 21.833334,
+        "[citations]": {
+          "num_references": 206,
+          "num_citations": 262
+        }
+      },
+      {
+        "bibcode": "1999PhRvD..60j3517B",
+        "author": [
+          "Bastero-Gil, M.",
+          "King, S. F.",
+          "Sanderson, J."
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD..60"
+        ],
+        "id": "5991095",
+        "identifier": [
+          "1999PhRvD..60j3517B",
+          "arXiv:hep-ph/9904315",
+          "10.1103/PhysRevD.60.103517",
+          "1999hep.ph....4315B",
+          "10.48550/arXiv.hep-ph/9904315"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "1999-11-00",
+        "title": [
+          "Preheating in supersymmetric hybrid inflation"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "INSPIRE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 54,
+        "citation_count_norm": 18,
+        "[citations]": {
+          "num_references": 44,
+          "num_citations": 54
+        }
+      }
+    ]
+  }
+}

@@ -1,32 +1,32 @@
 import { expect, Page, Response } from '@playwright/test';
 import { SettingsPage } from '@/ads/fixtures/settings';
-import type { ADSUser } from '@/interfaces/user';
+import type { User } from '@/interfaces/user';
 
-type BootstrapResponse = {
-  access_token: string;
-  refresh_token: string;
-  expires_at: string;
-  token_type: 'bearer';
-  username: string;
-  scopes: string[];
-  anonymous: boolean;
-  client_id: string;
-  client_secret: string;
-  ratelimit: number;
-  client_name: string;
-  individual_ratelimits: number | null;
-  given_name: string | null;
-  family_name: string | null;
-};
+// type BootstrapResponse = {
+//   access_token: string;
+//   refresh_token: string;
+//   expires_at: string;
+//   token_type: 'bearer';
+//   username: string;
+//   scopes: string[];
+//   anonymous: boolean;
+//   client_id: string;
+//   client_secret: string;
+//   ratelimit: number;
+//   client_name: string;
+//   individual_ratelimits: number | null;
+//   given_name: string | null;
+//   family_name: string | null;
+// };
 
 type Credentials = {
   emailAddress: string;
   password: string;
 };
 
-export class ADSUser implements ADSUser {
-  private _email: string;
-  private _password: string;
+export class ADSUser implements User {
+  protected _email: string;
+  protected _password: string;
   page: Page;
 
   get password(): string {

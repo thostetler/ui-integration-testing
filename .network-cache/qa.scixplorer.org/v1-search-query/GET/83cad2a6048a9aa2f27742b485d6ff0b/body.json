@@ -1,0 +1,22 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 5,
+    "params": {
+      "q": "trending(identifier:\"undefined\") -identifier:\"undefined\"",
+      "fl": "bibcode,title,author,[fields author=50],author_count,pubdate,bibstem,[citations],citation_count,citation_count_norm,esources,property,pub,data,id,identifier",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67eef472-7245625761edabd31919c183",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "score desc",
+      "rows": "10",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 0,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": []
+  }
+}

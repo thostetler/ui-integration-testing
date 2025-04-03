@@ -1,9 +1,9 @@
 import { Page } from '@playwright/test';
 import { test, expect } from '@/setup/setup';
-import { getAltTestEmailAccount, getTestEmailAccount } from '@/util/email';
+import { getAltTestEmailAccount, getTestEmailAccount } from '@/email';
 import { configDotenv } from 'dotenv';
 import { API_TIMEOUT } from '@/constants';
-import { LibrariesPage } from '@/fixtures/libraries';
+import { LibrariesPage } from './fixtures/libraries';
 
 configDotenv();
 
@@ -157,7 +157,7 @@ test.fixme(
     const altEmail = getAltTestEmailAccount().emailAddress;
     const assertBiblibPermissions = async (page: Page, expected: Array<{ [email: string]: string[] }>) => {
       const permissionsResponse = await page.waitForResponse(
-        (res) => biblibPermissionsRgx.test.fixme(res.request().url()) && res.request().method() === 'GET',
+        (res) => biblibPermissionsRgx.test(res.request().url()) && res.request().method() === 'GET',
         { timeout: API_TIMEOUT },
       );
       const permissions = (await permissionsResponse.json()) as Array<{ [email: string]: string[] }>;

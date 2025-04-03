@@ -1,7 +1,7 @@
-import { expect, test } from '@playwright/test';
+import { expect, test } from '@/setup/setup';
 import { ROUTES } from '@/constants';
 import { configDotenv } from 'dotenv';
-import { a11yCheck, ariaSnapshot, visualCheck } from '@/util/helpers';
+import { a11yCheck, ariaSnapshot, visualCheck } from '@scix/util/helpers';
 
 configDotenv();
 

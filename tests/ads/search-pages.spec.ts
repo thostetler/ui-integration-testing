@@ -1,6 +1,6 @@
 import { API_TIMEOUT, ROUTES } from '@/constants';
 import { expect, test } from '@/setup/setup';
-import { a11yCheck, searchParamsToString, visualCheck } from '@/util/helpers';
+import { a11yCheck, searchParamsToString, visualCheck } from './util/helpers';
 
 test.use({
   baseURL: process.env.ADS_BASE_URL,

@@ -1,9 +1,9 @@
 import { Page } from '@playwright/test';
 import { test, expect } from '@/setup/setup';
-import { getAltTestEmailAccount, getTestEmailAccount } from '@/util/email';
 import { configDotenv } from 'dotenv';
 import { API_TIMEOUT } from '@/constants';
 import { LibrariesPage } from '@/ads/fixtures/libraries';
+import { getAltTestEmailAccount, getTestEmailAccount } from '@/email';
 
 configDotenv();
 

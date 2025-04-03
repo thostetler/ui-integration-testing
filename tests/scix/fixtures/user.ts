@@ -1,6 +1,6 @@
 import { expect, Page, Response } from '@playwright/test';
 import { SettingsPage } from '@/scix/fixtures/settings';
-import type { ADSUser } from '@/interfaces/user';
+import type { User } from '@/interfaces/user';
 
 type BootstrapResponse = {
   access_token: string;
@@ -24,7 +24,11 @@ type Credentials = {
   password: string;
 };
 
-export class ScixUser implements ADSUser {
+export class ScixUser implements User {
+  protected _email: string;
+  protected _password: string;
+  page: Page;
+
   get password(): string {
     return this._password;
   }
@@ -40,10 +44,6 @@ export class ScixUser implements ADSUser {
   set email(value: string) {
     this._email = value;
   }
-
-  _email: string;
-  _password: string;
-  page: Page;
 
   constructor(page: Page, credentials: Credentials) {
     this._email = credentials.emailAddress;
@@ -88,11 +88,11 @@ export class ScixUser implements ADSUser {
 
     // fill out form
     await this.page.locator('#email').fill(this._email);
-    await this.page.locator('#password1').fill(this._password);
-    await this.page.locator('#password2').fill(this._password);
+    await this.page.locator('#password').fill(this._password);
+    await this.page.locator('#confirmPassword').fill(this._password);
 
     // submit
-    await this.page.locator("button[data-form-name='register']").click();
+    await this.page.locator('button[type="submit"]').click();
     const res = await this.page.waitForResponse('**/v1/accounts/user');
     await expect(res.json()).resolves.toEqual({ message: 'success' });
     await this._after();

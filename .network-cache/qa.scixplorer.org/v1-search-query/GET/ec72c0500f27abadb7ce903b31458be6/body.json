@@ -1,0 +1,682 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 7420,
+    "params": {
+      "q": "trending(identifier:\"2022PhRvD.105j3539A\") -identifier:\"2022PhRvD.105j3539A\"",
+      "fl": "bibcode,title,author,[fields author=50],author_count,pubdate,bibstem,[citations],citation_count,citation_count_norm,esources,property,pub,data,id,identifier",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67eef472-4ea4f4ff532376155a76673e",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "score desc",
+      "rows": "10",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 22706,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2006AJ....132.1126N",
+        "author": [
+          "Neill, J. D.",
+          "Sullivan, M.",
+          "Balam, D.",
+          "Pritchet, C. J.",
+          "Howell, D. A.",
+          "Perrett, K.",
+          "Astier, P.",
+          "Aubourg, E.",
+          "Basa, S.",
+          "Carlberg, R. G.",
+          "Conley, A.",
+          "Fabbro, S.",
+          "Fouchez, D.",
+          "Guy, J.",
+          "Hook, I.",
+          "Pain, R.",
+          "Palanque-Delabrouille, N.",
+          "Regnault, N.",
+          "Rich, J.",
+          "Taillet, R.",
+          "Aldering, G.",
+          "Antilogus, P.",
+          "Arsenijevic, V.",
+          "Balland, C.",
+          "Baumont, S.",
+          "Bronder, J.",
+          "Ellis, R. S.",
+          "Filiol, M.",
+          "Gonçalves, A. C.",
+          "Hardin, D.",
+          "Kowalski, M.",
+          "Lidman, C.",
+          "Lusset, V.",
+          "Mouchet, M.",
+          "Mourao, A.",
+          "Perlmutter, S.",
+          "Ripoche, P.",
+          "Schlegel, D.",
+          "Tao, C."
+        ],
+        "author_count": 39,
+        "bibstem": [
+          "AJ",
+          "AJ....132"
+        ],
+        "id": "7769461",
+        "identifier": [
+          "2006astro.ph..5148N",
+          "10.1086/505532",
+          "10.48550/arXiv.astro-ph/0605148",
+          "2006AJ....132.1126N",
+          "arXiv:astro-ph/0605148"
+        ],
+        "pub": "The Astronomical Journal",
+        "pubdate": "2006-09-00",
+        "title": [
+          "The Type Ia Supernova Rate at z~0.5 from the Supernova Legacy Survey"
+        ],
+        "data": [
+          "ESO:1",
+          "Gemini:1",
+          "NED:165",
+          "SIMBAD:165"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 114,
+        "citation_count_norm": 2.9230769,
+        "[citations]": {
+          "num_references": 57,
+          "num_citations": 114
+        }
+      },
+      {
+        "bibcode": "2009ApJ...704..629M",
+        "author": [
+          "Mandel, Kaisey S.",
+          "Wood-Vasey, W. Michael",
+          "Friedman, Andrew S.",
+          "Kirshner, Robert P."
+        ],
+        "author_count": 4,
+        "bibstem": [
+          "ApJ",
+          "ApJ...704"
+        ],
+        "id": "8902872",
+        "identifier": [
+          "arXiv:0908.0536",
+          "2009arXiv0908.0536M",
+          "2009ApJ...704..629M",
+          "10.1088/0004-637X/704/1/629",
+          "10.48550/arXiv.0908.0536"
+        ],
+        "pub": "The Astrophysical Journal",
+        "pubdate": "2009-10-00",
+        "title": [
+          "Type Ia Supernova Light-Curve Inference: Hierarchical Bayesian Analysis in the Near-Infrared"
+        ],
+        "data": [
+          "NED:78",
+          "SIMBAD:44"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 113,
+        "citation_count_norm": 28.25,
+        "[citations]": {
+          "num_references": 71,
+          "num_citations": 113
+        }
+      },
+      {
+        "bibcode": "2014PASJ...66...49O",
+        "author": [
+          "Okumura, Jun E.",
+          "Ihara, Yutaka",
+          "Doi, Mamoru",
+          "Morokuma, Tomoki",
+          "Pain, Reynald",
+          "Totani, Tomonori",
+          "Barbary, Kyle",
+          "Takanashi, Naohiro",
+          "Yasuda, Naoki",
+          "Aldering, Greg",
+          "Dawson, Kyle",
+          "Goldhaber, Gerson",
+          "Hook, Isobel",
+          "Lidman, Chris",
+          "Perlmutter, Saul",
+          "Spadafora, Anthony",
+          "Suzuki, Nao",
+          "Wang, Lifan"
+        ],
+        "author_count": 18,
+        "bibstem": [
+          "PASJ",
+          "PASJ...66"
+        ],
+        "id": "11466127",
+        "identifier": [
+          "arXiv:1401.7701",
+          "2014arXiv1401.7701O",
+          "2014PASJ...66...49O",
+          "10.1093/pasj/psu024",
+          "10.48550/arXiv.1401.7701"
+        ],
+        "pub": "Publications of the Astronomical Society of Japan",
+        "pubdate": "2014-04-00",
+        "title": [
+          "The Type Ia supernovae rate with Subaru/XMM-Newton Deep Survey"
+        ],
+        "data": [
+          "IRSA:1",
+          "NED:24",
+          "SIMBAD:63",
+          "XMM:10"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 17,
+        "citation_count_norm": 0.9444444,
+        "[citations]": {
+          "num_references": 118,
+          "num_citations": 17
+        }
+      },
+      {
+        "bibcode": "2020ApJ...896..165J",
+        "author": [
+          "Jacobson-Galán, Wynn V.",
+          "Polin, Abigail",
+          "Foley, Ryan J.",
+          "Dimitriadis, Georgios",
+          "Kilpatrick, Charles D.",
+          "Margutti, Raffaella",
+          "Coulter, David A.",
+          "Jha, Saurabh W.",
+          "Jones, David O.",
+          "Kirshner, Robert P.",
+          "Pan, Yen-Chen",
+          "Piro, Anthony L.",
+          "Rest, Armin",
+          "Rojas-Bravo, César"
+        ],
+        "author_count": 14,
+        "bibstem": [
+          "ApJ",
+          "ApJ...896"
+        ],
+        "id": "14621032",
+        "identifier": [
+          "10.48550/arXiv.1910.05436",
+          "arXiv:1910.05436",
+          "2019arXiv191005436J",
+          "10.3847/1538-4357/ab94b8",
+          "2020ApJ...896..165J"
+        ],
+        "pub": "The Astrophysical Journal",
+        "pubdate": "2020-06-00",
+        "title": [
+          "Ca hnk: The Calcium-rich Transient Supernova 2016hnk from a Helium Shell Detonation of a Sub-Chandrasekhar White Dwarf"
+        ],
+        "data": [
+          "CDS:1",
+          "NED:3",
+          "SIMBAD:21"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 32,
+        "citation_count_norm": 2.2857144,
+        "[citations]": {
+          "num_references": 129,
+          "num_citations": 32
+        }
+      },
+      {
+        "bibcode": "2011A&A...534A..43B",
+        "author": [
+          "Bazin, G.",
+          "Ruhlmann-Kleider, V.",
+          "Palanque-Delabrouille, N.",
+          "Rich, J.",
+          "Aubourg, E.",
+          "Astier, P.",
+          "Balland, C.",
+          "Basa, S.",
+          "Carlberg, R. G.",
+          "Conley, A.",
+          "Fouchez, D.",
+          "Guy, J.",
+          "Hardin, D.",
+          "Hook, I. M.",
+          "Howell, D. A.",
+          "Pain, R.",
+          "Perrett, K.",
+          "Pritchet, C. J.",
+          "Regnault, N.",
+          "Sullivan, M.",
+          "Fourmanoit, N.",
+          "González-Gaitán, S.",
+          "Lidman, C.",
+          "Perlmutter, S.",
+          "Ripoche, P.",
+          "Walker, E. S."
+        ],
+        "author_count": 26,
+        "bibstem": [
+          "A&A",
+          "A&A...534"
+        ],
+        "id": "9715474",
+        "identifier": [
+          "10.48550/arXiv.1109.0948",
+          "2011arXiv1109.0948B",
+          "10.1051/0004-6361/201116898",
+          "2011A&A...534A..43B",
+          "arXiv:1109.0948"
+        ],
+        "pub": "Astronomy and Astrophysics",
+        "pubdate": "2011-10-00",
+        "title": [
+          "Photometric selection of Type Ia supernovae in the Supernova Legacy Survey"
+        ],
+        "data": [
+          "ESO:1",
+          "Gemini:1",
+          "NED:15",
+          "SIMBAD:12"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 58,
+        "citation_count_norm": 2.2307692,
+        "[citations]": {
+          "num_references": 37,
+          "num_citations": 58
+        }
+      },
+      {
+        "bibcode": "2017arXiv170603762V",
+        "author": [
+          "Vaswani, Ashish",
+          "Shazeer, Noam",
+          "Parmar, Niki",
+          "Uszkoreit, Jakob",
+          "Jones, Llion",
+          "Gomez, Aidan N.",
+          "Kaiser, Lukasz",
+          "Polosukhin, Illia"
+        ],
+        "author_count": 8,
+        "bibstem": [
+          "arXiv",
+          "arXiv1706"
+        ],
+        "id": "13263373",
+        "identifier": [
+          "2017arXiv170603762V",
+          "arXiv:1706.03762",
+          "10.48550/arXiv.1706.03762"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2017-06-00",
+        "title": [
+          "Attention Is All You Need"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "citation_count": 7102,
+        "citation_count_norm": 887.75,
+        "[citations]": {
+          "num_references": 22,
+          "num_citations": 7097
+        }
+      },
+      {
+        "bibcode": "2025arXiv250106307N",
+        "author": [
+          "Nadeem Ahmad, Muhammad",
+          "Mehmood, Maria",
+          "Rehman, Mansoor Ur",
+          "Shafi, Qaisar"
+        ],
+        "author_count": 4,
+        "bibstem": [
+          "arXiv",
+          "arXiv2501"
+        ],
+        "id": "28242374",
+        "identifier": [
+          "10.48550/arXiv.2501.06307",
+          "2025arXiv250106307N",
+          "arXiv:2501.06307"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2025-01-00",
+        "title": [
+          "$\\mathbf{\\mu}$-Hybrid Inflation and Metastable Cosmic Strings in $\\mathbf{SU(3)_c\\times SU(2)_L\\times SU(2)_R \\times U(1)_{B-L}}$"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "citation_count": 1,
+        "citation_count_norm": 0.25,
+        "[citations]": {
+          "num_references": 89,
+          "num_citations": 1
+        }
+      },
+      {
+        "bibcode": "2010ApJ...713.1073S",
+        "author": [
+          "Scalzo, R. A.",
+          "Aldering, G.",
+          "Antilogus, P.",
+          "Aragon, C.",
+          "Bailey, S.",
+          "Baltay, C.",
+          "Bongard, S.",
+          "Buton, C.",
+          "Childress, M.",
+          "Chotard, N.",
+          "Copin, Y.",
+          "Fakhouri, H. K.",
+          "Gal-Yam, A.",
+          "Gangler, E.",
+          "Hoyer, S.",
+          "Kasliwal, M.",
+          "Loken, S.",
+          "Nugent, P.",
+          "Pain, R.",
+          "Pécontal, E.",
+          "Pereira, R.",
+          "Perlmutter, S.",
+          "Rabinowitz, D.",
+          "Rau, A.",
+          "Rigaudier, G.",
+          "Runge, K.",
+          "Smadja, G.",
+          "Tao, C.",
+          "Thomas, R. C.",
+          "Weaver, B.",
+          "Wu, C."
+        ],
+        "author_count": 31,
+        "bibstem": [
+          "ApJ",
+          "ApJ...713"
+        ],
+        "id": "9341275",
+        "identifier": [
+          "10.48550/arXiv.1003.2217",
+          "10.1088/0004-637X/713/2/1073",
+          "2010arXiv1003.2217S",
+          "2010ApJ...713.1073S",
+          "arXiv:1003.2217"
+        ],
+        "pub": "The Astrophysical Journal",
+        "pubdate": "2010-04-00",
+        "title": [
+          "Nearby Supernova Factory Observations of SN 2007if: First Total Mass Measurement of a Super-Chandrasekhar-Mass Progenitor"
+        ],
+        "data": [
+          "NED:8",
+          "SIMBAD:7"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 334,
+        "citation_count_norm": 10.774194,
+        "[citations]": {
+          "num_references": 84,
+          "num_citations": 334
+        }
+      },
+      {
+        "bibcode": "2025arXiv250203455H",
+        "author": [
+          "Huang, X.",
+          "Baltasar, S.",
+          "Ratier-Werbin, N.",
+          "Storfer, C.",
+          "Sheu, W.",
+          "Agarwal, S.",
+          "Tamargo-Arizmendi, M.",
+          "Schlegel, D. J.",
+          "Aguilar, J.",
+          "Ahlen, S.",
+          "Aldering, G.",
+          "Banka, S.",
+          "BenZvi, S.",
+          "Bianchi, D.",
+          "Bolton, A.",
+          "Brooks, D.",
+          "Cikota, A.",
+          "Claybaugh, T.",
+          "de la Macorra, A.",
+          "Dey, A.",
+          "Doel, P.",
+          "Edelstein, J.",
+          "Filipp, A.",
+          "Forero-Romero, J. E.",
+          "Gaztanaga, E.",
+          "Gontcho, S. Gontcho A",
+          "Gu, A.",
+          "Gutierrez, G.",
+          "Honscheid, K.",
+          "Jullo, E.",
+          "Juneau, S.",
+          "Kehoe, R.",
+          "Kirkby, D.",
+          "Kisner, T.",
+          "Kremin, A.",
+          "Kwon, K. J.",
+          "Lambert, A.",
+          "Landriau, M.",
+          "Lang, D.",
+          "Le Guillou, L.",
+          "Liu, J.",
+          "Meisner, A.",
+          "Miquel, R.",
+          "Moustakas, J.",
+          "Myers, A. D.",
+          "Perlmutter, S.",
+          "Perez-Rafols, I.",
+          "Prada, F.",
+          "Rossi, G.",
+          "Rubin, D."
+        ],
+        "author_count": 59,
+        "bibstem": [
+          "arXiv",
+          "arXiv2502"
+        ],
+        "id": "28348960",
+        "identifier": [
+          "arXiv:2502.03455",
+          "2025arXiv250203455H",
+          "10.48550/arXiv.2502.03455"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2025-02-00",
+        "title": [
+          "DESI Strong Lens Foundry I: HST Observations and Modeling with GIGA-Lens"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "citation_count": 3,
+        "citation_count_norm": 0.050847456,
+        "[citations]": {
+          "num_references": 146,
+          "num_citations": 3
+        }
+      },
+      {
+        "bibcode": "2012ApJ...751...25M",
+        "author": [
+          "Milisavljevic, Dan",
+          "Fesen, Robert A.",
+          "Chevalier, Roger A.",
+          "Kirshner, Robert P.",
+          "Challis, Peter",
+          "Turatto, Massimo"
+        ],
+        "author_count": 6,
+        "bibstem": [
+          "ApJ",
+          "ApJ...751"
+        ],
+        "id": "10249761",
+        "identifier": [
+          "10.48550/arXiv.1203.0006",
+          "arXiv:1203.0006",
+          "10.1088/0004-637X/751/1/25",
+          "2012arXiv1203.0006M",
+          "2012ApJ...751...25M"
+        ],
+        "pub": "The Astrophysical Journal",
+        "pubdate": "2012-05-00",
+        "title": [
+          "Late-time Optical Emission from Core-collapse Supernovae"
+        ],
+        "data": [
+          "ESA:1",
+          "ESO:1",
+          "MAST:1",
+          "NED:18",
+          "SIMBAD:28"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML",
+          "PUB_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 89,
+        "citation_count_norm": 14.833333,
+        "[citations]": {
+          "num_references": 144,
+          "num_citations": 89
+        }
+      }
+    ]
+  }
+}

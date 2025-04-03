@@ -1,0 +1,22 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 4,
+    "params": {
+      "q": "citations(identifier:\"undefined\")",
+      "fl": "bibcode,title,author,[fields author=50],author_count,pubdate,bibstem,[citations],citation_count,citation_count_norm,esources,property,pub,data,id,identifier",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67eef471-21c7a0d06ed724d319ad1a79",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "score desc,date desc",
+      "rows": "10",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 0,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": []
+  }
+}

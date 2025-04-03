@@ -1,9 +1,8 @@
-import { type Page, request } from '@playwright/test';
-import { expect } from '@/setup/setup';
+import { expect, type Page, request } from '@playwright/test';
 import { type UserData, userDataSchema } from 'schemas/userdata.schema';
-import { getAPIToken } from '@/util/api';
 import { init } from 'zod-empty';
-import { isScix } from '@/util/helpers';
+import { getAPIToken } from '@ads/util/api';
+import type { Settings } from '@/interfaces/settings';
 
 type SubPage = {
   path: string;
@@ -23,7 +22,7 @@ const PAGES: Record<string, SubPage> = {
   delete: { path: '/delete', header: 'Delete Account' },
 } as const;
 
-export class SettingsPage {
+export class SettingsPage implements Settings {
   page: Page;
   subPage: SubPage;
 
@@ -39,10 +38,7 @@ export class SettingsPage {
   }
 
   async assertHeader() {
-    const title = (await isScix(this.page))
-      ? this.page.locator('#settings-section-title')
-      : this.page.locator('.panel-heading');
-    await expect(title).toContainText(this.subPage.header);
+    await expect(this.page.locator('.panel-heading')).toContainText(this.subPage.header);
   }
 
   async assertUserData(label: string, key?: keyof UserData) {
@@ -58,7 +54,7 @@ export class SettingsPage {
 
   async resetUserData() {
     const api = await request.newContext({
-      baseURL: (await isScix(this.page)) ? process.env.SCIX_BASE_URL : process.env.ADS_BASE_URL,
+      baseURL: process.env.ADS_BASE_URL,
       extraHTTPHeaders: {
         Accept: 'application/json',
         ContentType: 'application/json',

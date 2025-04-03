@@ -1,0 +1,468 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 47,
+    "params": {
+      "q": "citations(identifier:\"2022PhRvD.105j3539A\")",
+      "fl": "bibcode,title,author,[fields author=50],author_count,pubdate,bibstem,[citations],citation_count,citation_count_norm,esources,property,pub,data,id,identifier",
+      "start": "0",
+      "internal_logging_params": "X-Amzn-Trace-Id=Root=1-67eef471-2f70ee760594105d5920271b",
+      "boost": "add(doctype_boost, 1)",
+      "sort": "score desc,date desc",
+      "rows": "10",
+      "wt": "json"
+    }
+  },
+  "response": {
+    "numFound": 28,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "bibcode": "2023JHEAp..39...81V",
+        "author": [
+          "Vagnozzi, Sunny"
+        ],
+        "author_count": 1,
+        "bibstem": [
+          "JHEAp",
+          "JHEAp..39"
+        ],
+        "id": "19473525",
+        "identifier": [
+          "2023JHEAp..39...81V",
+          "2023arXiv230616912V",
+          "10.1016/j.jheap.2023.07.001",
+          "arXiv:2306.16912",
+          "10.48550/arXiv.2306.16912"
+        ],
+        "pub": "Journal of High Energy Astrophysics",
+        "pubdate": "2023-08-00",
+        "title": [
+          "Inflationary interpretation of the stochastic gravitational wave background signal detected by pulsar timing array experiments"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 164,
+        "citation_count_norm": 164,
+        "[citations]": {
+          "num_references": 434,
+          "num_citations": 164
+        }
+      },
+      {
+        "bibcode": "2025RvMP...97a5001R",
+        "author": [
+          "Roshan, Rishav",
+          "White, Graham"
+        ],
+        "author_count": 2,
+        "bibstem": [
+          "RvMP",
+          "RvMP...97"
+        ],
+        "id": "28252405",
+        "identifier": [
+          "2025RvMP...97a5001R",
+          "arXiv:2401.04388",
+          "2024arXiv240104388R",
+          "10.48550/arXiv.2401.04388",
+          "10.1103/RevModPhys.97.015001"
+        ],
+        "pub": "Reviews of Modern Physics",
+        "pubdate": "2025-01-00",
+        "title": [
+          "Using gravitational waves to see the first second of the Universe"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 51,
+        "citation_count_norm": 25.5,
+        "[citations]": {
+          "num_references": 758,
+          "num_citations": 51
+        }
+      },
+      {
+        "bibcode": "2023JCAP...11..020B",
+        "author": [
+          "Buchmüller, Wilfried",
+          "Domcke, Valerie",
+          "Schmitz, Kai"
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "JCAP",
+          "JCAP...11"
+        ],
+        "id": "20869600",
+        "identifier": [
+          "arXiv:2307.04691",
+          "10.48550/arXiv.2307.04691",
+          "2023JCAP...11..020B",
+          "2023arXiv230704691B",
+          "10.1088/1475-7516/2023/11/020"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2023-11-00",
+        "title": [
+          "Metastable cosmic strings"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 47,
+        "citation_count_norm": 15.666667,
+        "[citations]": {
+          "num_references": 89,
+          "num_citations": 47
+        }
+      },
+      {
+        "bibcode": "2024PhRvD.109b6013E",
+        "author": [
+          "Eichhorn, Astrid",
+          "Santos, Rafael R. Lino dos",
+          "Miqueleto, João Lucas"
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.109"
+        ],
+        "id": "22527953",
+        "identifier": [
+          "2024PhRvD.109b6013E",
+          "arXiv:2306.17718",
+          "10.1103/PhysRevD.109.026013",
+          "2023arXiv230617718E",
+          "10.48550/arXiv.2306.17718"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2024-01-00",
+        "title": [
+          "From quantum gravity to gravitational waves through cosmic strings"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 27,
+        "citation_count_norm": 9,
+        "[citations]": {
+          "num_references": 228,
+          "num_citations": 27
+        }
+      },
+      {
+        "bibcode": "2024PhRvD.109a5008A",
+        "author": [
+          "Ahmed, Waqas",
+          "Chowdhury, Talal Ahmed",
+          "Nasri, Salah",
+          "Saad, Shaikh"
+        ],
+        "author_count": 4,
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.109"
+        ],
+        "id": "22284840",
+        "identifier": [
+          "arXiv:2308.13248",
+          "2024PhRvD.109a5008A",
+          "2023arXiv230813248A",
+          "10.48550/arXiv.2308.13248",
+          "10.1103/PhysRevD.109.015008"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2024-01-00",
+        "title": [
+          "Gravitational waves from metastable cosmic strings in the Pati-Salam model in light of new pulsar timing array data"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 30,
+        "citation_count_norm": 7.5,
+        "[citations]": {
+          "num_references": 82,
+          "num_citations": 30
+        }
+      },
+      {
+        "bibcode": "2024JCAP...01..049A",
+        "author": [
+          "Ahmed, Waqas",
+          "Rehman, Mansoor Ur",
+          "Zubair, Umer"
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "JCAP",
+          "JCAP...01"
+        ],
+        "id": "22364771",
+        "identifier": [
+          "2024JCAP...01..049A",
+          "2023arXiv230809125A",
+          "10.1088/1475-7516/2024/01/049",
+          "arXiv:2308.09125",
+          "10.48550/arXiv.2308.09125"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2024-01-00",
+        "title": [
+          "Probing stochastic gravitational wave background from SU(5) × U(1)<SUB>χ</SUB> strings in light of NANOGrav 15-year data"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 28,
+        "citation_count_norm": 9.333333,
+        "[citations]": {
+          "num_references": 86,
+          "num_citations": 28
+        }
+      },
+      {
+        "bibcode": "2024JCAP...01..015M",
+        "author": [
+          "Maji, Rinku",
+          "Park, Wan-il"
+        ],
+        "author_count": 2,
+        "bibstem": [
+          "JCAP",
+          "JCAP...01"
+        ],
+        "id": "22234004",
+        "identifier": [
+          "10.1088/1475-7516/2024/01/015",
+          "2024JCAP...01..015M",
+          "2023arXiv230811439M",
+          "10.48550/arXiv.2308.11439",
+          "arXiv:2308.11439"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2024-01-00",
+        "title": [
+          "Supersymmetric U(1) <SUB>B-L</SUB> flat direction and NANOGrav 15 year data"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 40,
+        "citation_count_norm": 20,
+        "[citations]": {
+          "num_references": 137,
+          "num_citations": 40
+        }
+      },
+      {
+        "bibcode": "2024NuPhB100216528B",
+        "author": [
+          "Borah, Debasish",
+          "Jyoti Das, Suruj",
+          "Roshan, Rishav"
+        ],
+        "author_count": 3,
+        "bibstem": [
+          "NuPhB",
+          "NuPhB1002"
+        ],
+        "id": "23259386",
+        "identifier": [
+          "arXiv:2208.04965",
+          "10.1016/j.nuclphysb.2024.116528",
+          "10.48550/arXiv.2208.04965",
+          "2022arXiv220804965B",
+          "2024NuPhB100216528B"
+        ],
+        "pub": "Nuclear Physics B",
+        "pubdate": "2024-05-00",
+        "title": [
+          "Probing high scale seesaw and PBH generated dark matter via gravitational waves with multiple tilts"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 18,
+        "citation_count_norm": 6,
+        "[citations]": {
+          "num_references": 159,
+          "num_citations": 18
+        }
+      },
+      {
+        "bibcode": "2022arXiv220306240B",
+        "author": [
+          "Berti, Emanuele",
+          "Cardoso, Vitor",
+          "Haiman, Zoltán",
+          "Holz, Daniel E.",
+          "Mottola, Emil",
+          "Mukherjee, Suvodip",
+          "Sathyaprakash, Bangalore",
+          "Siemens, Xavier",
+          "Yunes, Nicolás"
+        ],
+        "author_count": 9,
+        "bibstem": [
+          "arXiv",
+          "arXiv2203"
+        ],
+        "id": "17356694",
+        "identifier": [
+          "arXiv:2203.06240",
+          "2022arXiv220306240B",
+          "10.48550/arXiv.2203.06240"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2022-03-00",
+        "title": [
+          "Snowmass2021 Cosmic Frontier White Paper: Fundamental Physics and Beyond the Standard Model"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "citation_count": 20,
+        "citation_count_norm": 2.2222223,
+        "[citations]": {
+          "num_references": 372,
+          "num_citations": 20
+        }
+      },
+      {
+        "bibcode": "2024JCAP...03..006L",
+        "author": [
+          "Lazarides, George",
+          "Maji, Rinku",
+          "Moursy, Ahmad",
+          "Shafi, Qaisar"
+        ],
+        "author_count": 4,
+        "bibstem": [
+          "JCAP",
+          "JCAP...03"
+        ],
+        "id": "22977326",
+        "identifier": [
+          "arXiv:2308.07094",
+          "2024JCAP...03..006L",
+          "10.1088/1475-7516/2024/03/006",
+          "10.48550/arXiv.2308.07094",
+          "2023arXiv230807094L"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2024-03-00",
+        "title": [
+          "Inflation, superheavy metastable strings and gravitational waves in non-supersymmetric flipped SU(5)"
+        ],
+        "esources": [
+          "EPRINT_HTML",
+          "EPRINT_PDF",
+          "PUB_HTML"
+        ],
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 31,
+        "citation_count_norm": 7.75,
+        "[citations]": {
+          "num_references": 77,
+          "num_citations": 31
+        }
+      }
+    ]
+  }
+}

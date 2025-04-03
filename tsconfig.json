@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["tests/*"]
+      "@/*":  ["tests/*"],
+      "@ads/*": ["tests/ads/*"],
+      "@scix/*": ["tests/scix/*"]
     }
   }
 }

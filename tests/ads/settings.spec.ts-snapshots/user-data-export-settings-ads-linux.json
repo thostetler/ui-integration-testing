@@ -1,0 +1,23 @@
+{
+  "homePage": "Modern Form",
+  "customFormats": [
+    {
+      "id": "format-158",
+      "name": "Custom Format",
+      "code": "custom-format"
+    }
+  ],
+  "bibtexKeyFormat": "custom-format",
+  "defaultDatabase": [],
+  "bibtexMaxAuthors": "100",
+  "bibtexABSKeyFormat": "",
+  "bibtexAuthorCutoff": "100",
+  "externalLinkAction": "Open new tab",
+  "bibtexABSMaxAuthors": "10",
+  "bibtexJournalFormat": "Use Journal Abbreviations",
+  "defaultExportFormat": "Icarus",
+  "defaultHideSidebars": "Show",
+  "minAuthorsPerResult": "5",
+  "preferredSearchSort": "author_count",
+  "bibtexABSAuthorCutoff": "10"
+}

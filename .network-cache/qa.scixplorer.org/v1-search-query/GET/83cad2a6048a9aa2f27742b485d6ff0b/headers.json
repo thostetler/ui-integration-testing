@@ -1,0 +1,26 @@
+{
+  "url": "https://qa.scixplorer.org/v1/search/query?q=trending(identifier%3A%22undefined%22)+-identifier%3A%22undefined%22&sort=score+desc&fl=bibcode&fl=title&fl=author&fl=%5Bfields+author%3D50%5D&fl=author_count&fl=pubdate&fl=bibstem&fl=%5Bcitations%5D&fl=citation_count&fl=citation_count_norm&fl=esources&fl=property&fl=pub&fl=data&fl=id&fl=identifier&start=0&rows=10",
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "date": "Thu, 03 Apr 2025 20:49:54 GMT",
+    "content-type": "application/json",
+    "content-length": "604",
+    "connection": "keep-alive",
+    "permissions-policy": "browsing-topics=()",
+    "x-frame-options": "SAMEORIGIN",
+    "x-content-type-options": "nosniff",
+    "content-security-policy": "default-src 'self'; object-src 'none'",
+    "strict-transport-security": "max-age=31556926; includeSubDomains",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "x-ratelimit-limit": "5000",
+    "x-ratelimit-remaining": "4998",
+    "x-ratelimit-reset": "1743799795",
+    "retry-after": "86400",
+    "access-control-allow-origin": "http://0.0.0.0:8000",
+    "access-control-allow-credentials": "true",
+    "vary": "Origin, Cookie",
+    "set-cookie": "session=.eJwlzrtSwzAQheF3UU0hrSx51x0lMzTADEUaj7SXSYhJiC0nBcO748AD_Od83260WZe9G6xMiz648SBucETVlLyilo4kcczCWBHQB4VOic2nrmIigCCQmELsTDGXinkrQ7HEAWuwzkoMEKkH6RlLYIxW-4ylqDJSFk_sI6ZKasAqnReF6N0G-dL5s5z01NzQ5vVOWxed_33bodWALIE2oEcEwYKQDEIVkHt_Lmvbjzwd_hac5tdzu-6yHvk9pbfj0-PlY-fldomxtfySnq-mfZxu7ucX2odTRw.Z-70cg.TDLGXu9O59euZGvMP8pnK7YDXZE; Expires=Sat, 04 Apr 2026 02:49:54 GMT; Secure; HttpOnly; Path=/; SameSite=Lax",
+    "x-envoy-upstream-service-time": "83"
+  }
+}
