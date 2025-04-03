@@ -135,25 +135,27 @@ test('Author affiliation loads properly', { tag: ['@smoke'] }, async ({ page, ca
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test.fixme('Citation metrics loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+test('Citation metrics loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'citation-metrics';
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/metrics');
 
+  await page.goto(`${ROUTES.SCIX.SEARCH_METRICS}?${QUERY_STRING_2.toString()}`);
+
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      await expect(page.getByRole('heading', { name: 'Papers' })).toBeVisible();
-      await expect(page.getByRole('heading', { name: 'Citations' })).toBeVisible();
-      await expect(page.getByRole('heading', { name: 'Reads' })).toBeVisible();
-      await expect(page.getByRole('heading', { name: 'Indices' })).toBeVisible();
+      await expect(page.getByRole('tab', { name: 'Papers' })).toBeVisible();
+      await expect(page.getByRole('tab', { name: 'Citations' })).toBeVisible();
+      await expect(page.getByRole('tab', { name: 'Reads' })).toBeVisible();
+      await expect(page.getByRole('tab', { name: 'Indices' })).toBeVisible();
       await expect(page.getByRole('cell', { name: 'Number of papers' })).toBeVisible();
       await expect(page.getByRole('cell', { name: 'Normalized paper count' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'Number of citing papers' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'Total citations' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'Total number of reads' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'Average number of reads' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'h-index' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'g-index' })).toBeVisible();
+      await expect(page.getByRole('cell', { name: 'Number of citing papers' })).not.toBeVisible();
+      await expect(page.getByRole('cell', { name: 'Total citations' })).not.toBeVisible();
+      await expect(page.getByRole('cell', { name: 'Total number of reads' })).not.toBeVisible();
+      await expect(page.getByRole('cell', { name: 'Average number of reads' })).not.toBeVisible();
+      await expect(page.getByRole('cell', { name: 'h-index' })).not.toBeVisible();
+      await expect(page.getByRole('cell', { name: 'g-index' })).not.toBeVisible();
     }).toPass({
       // metrics takes a while
       intervals: [3000],
