@@ -24,6 +24,7 @@ export const ROUTES = {
   SCIX: {
     SEARCH_EXPORT_BIBTEX: '/search/exportcitation/bibtex',
     SEARCH_AUTHOR_AFFILIATION: '/search/authoraffiliations',
+    SEARCH_METRICS: '/search/metrics',
   },
 } as const;
 

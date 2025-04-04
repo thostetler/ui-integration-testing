@@ -106,23 +106,22 @@ test('Export tool loads properly', { tag: ['@smoke'] }, async ({ page, cacheRout
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-// TODO: author affiliation is not working
-test.fixme('Author affiliation loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+test('Author affiliation loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'author-affiliation';
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/author-affiliation/*');
 
-  await page.goto(`${ROUTES.SCIX.SEARCH_AUTHOR_AFFILIATION}?${QUERY_STRING.toString()}`);
+  const QS = new URLSearchParams(QUERY_STRING);
+  QS.set('q', 'author:"huchra, john"');
+  QS.set('sort', 'score desc, date desc');
+
+  await page.goto(`${ROUTES.SCIX.SEARCH_AUTHOR_AFFILIATION}?${QS.toString()}`);
   console.log(`URL: ${page.url()}`);
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      const header = await page.getByLabel('container for search results').getByRole('heading');
-      await header.waitFor({ state: 'visible', timeout: API_TIMEOUT });
-      expect(await header.textContent()).toMatchSnapshot('author-affiliation-title');
-      expect(await page.getByLabel('container for search results').textContent()).toMatchSnapshot(
-        'author-affiliation-results',
-      );
+      await expect(page.locator('#author-affiliation-title')).toContainText('Showing affiliation data for');
+      await expect(page.locator('#author-affiliation-content')).toBeVisible();
     }).toPass({
       timeout: API_TIMEOUT,
     });
@@ -132,25 +131,30 @@ test.fixme('Author affiliation loads properly', { tag: ['@smoke'] }, async ({ pa
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test.fixme('Citation metrics loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+test('Citation metrics loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'citation-metrics';
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/metrics');
 
+  const QS = new URLSearchParams(QUERY_STRING);
+  QS.set('q', 'year:2000 moon crater');
+
+  await page.goto(`${ROUTES.SCIX.SEARCH_METRICS}?${QS.toString()}`);
+
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      await expect(page.getByRole('heading', { name: 'Papers' })).toBeVisible();
-      await expect(page.getByRole('heading', { name: 'Citations' })).toBeVisible();
-      await expect(page.getByRole('heading', { name: 'Reads' })).toBeVisible();
-      await expect(page.getByRole('heading', { name: 'Indices' })).toBeVisible();
+      await expect(page.getByRole('tab', { name: 'Papers' })).toBeVisible();
+      await expect(page.getByRole('tab', { name: 'Citations' })).toBeVisible();
+      await expect(page.getByRole('tab', { name: 'Reads' })).toBeVisible();
+      await expect(page.getByRole('tab', { name: 'Indices' })).toBeVisible();
       await expect(page.getByRole('cell', { name: 'Number of papers' })).toBeVisible();
       await expect(page.getByRole('cell', { name: 'Normalized paper count' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'Number of citing papers' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'Total citations' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'Total number of reads' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'Average number of reads' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'h-index' })).toBeVisible();
-      await expect(page.getByRole('cell', { name: 'g-index' })).toBeVisible();
+      await expect(page.getByRole('cell', { name: 'Number of citing papers' })).not.toBeVisible();
+      await expect(page.getByRole('cell', { name: 'Total citations' })).not.toBeVisible();
+      await expect(page.getByRole('cell', { name: 'Total number of reads' })).not.toBeVisible();
+      await expect(page.getByRole('cell', { name: 'Average number of reads' })).not.toBeVisible();
+      await expect(page.getByRole('cell', { name: 'h-index' })).not.toBeVisible();
+      await expect(page.getByRole('cell', { name: 'g-index' })).not.toBeVisible();
     }).toPass({
       // metrics takes a while
       intervals: [3000],
@@ -162,7 +166,7 @@ test.fixme('Citation metrics loads properly', { tag: ['@smoke'] }, async ({ page
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test.fixme('Author network loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+test('Author network loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'author-network';
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/vis/*');
@@ -173,7 +177,7 @@ test.fixme('Author network loads properly', { tag: ['@smoke'] }, async ({ page, 
 
   await test.step('Open the author network tool', async () => {
     // do search and wait for results
-    await page.goto(`${ROUTES.SEARCH}/${searchParamsToString(QS)}`);
+    await page.goto(`${ROUTES.SEARCH}?${searchParamsToString(QS)}`);
     const searchRes = await page.waitForResponse(
       (res) => {
         const url = res.request().url();
@@ -183,19 +187,20 @@ test.fixme('Author network loads properly', { tag: ['@smoke'] }, async ({ page, 
       },
       { timeout: API_TIMEOUT },
     );
-    const doc = (await searchRes.json()).response.docs[0] as { bibcode: string };
-    await expect(page).toHaveURL(new RegExp(`${ROUTES.SEARCH}/${searchParamsToString(QS)}`));
-    await expect(page.getByLabel('list of results')).toContainText(doc.bibcode);
+    const doc = (await searchRes.json()).response.docs[0] as { title: string[] };
+    await expect(page).toHaveURL(`${ROUTES.SEARCH}?${searchParamsToString(QS)}`);
+    await expect(page.locator('#results')).toContainText(doc.title[0]);
 
-    await page.getByRole('button', { name: ' Explore' }).click();
+    await page.getByRole('button', { name: 'Explore' }).click();
     await page.getByRole('menuitem', { name: 'Author Network' }).click();
+    await page.waitForURL('**/search/author_network*', { waitUntil: 'domcontentloaded' });
   });
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      await expect(page.locator('#network-viz-main-chart')).toBeVisible();
-      await expect(page.getByText('select an author or group of')).toBeVisible();
-      await expect(page.getByText('Author Network This network')).toBeVisible();
+      await expect(page.getByLabel('Author network graph')).toBeVisible();
+      await expect(page.locator('.network-graph-svg')).toBeVisible();
+      await expect(page.getByText('Group Activity Over Time')).toBeVisible();
     }).toPass({
       timeout: API_TIMEOUT,
     });
@@ -205,7 +210,7 @@ test.fixme('Author network loads properly', { tag: ['@smoke'] }, async ({ page, 
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test.fixme('Paper network loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+test('Paper network loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'paper-networks';
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/vis/*');
@@ -216,7 +221,7 @@ test.fixme('Paper network loads properly', { tag: ['@smoke'] }, async ({ page, c
 
   await test.step('Open the paper network tool', async () => {
     // do search and wait for results
-    await page.goto(`${ROUTES.SEARCH}/${searchParamsToString(QS)}`);
+    await page.goto(`${ROUTES.SEARCH}?${searchParamsToString(QS)}`);
     const searchRes = await page.waitForResponse(
       (res) => {
         const url = res.request().url();
@@ -226,19 +231,20 @@ test.fixme('Paper network loads properly', { tag: ['@smoke'] }, async ({ page, c
       },
       { timeout: API_TIMEOUT },
     );
-    const doc = (await searchRes.json()).response.docs[0] as { bibcode: string };
-    await expect(page).toHaveURL(new RegExp(`${ROUTES.SEARCH}/${searchParamsToString(QS)}`));
-    await expect(page.getByLabel('list of results')).toContainText(doc.bibcode);
+    const doc = (await searchRes.json()).response.docs[0] as { title: string };
+    await expect(page).toHaveURL(`${ROUTES.SEARCH}?${searchParamsToString(QS)}`);
+    await expect(page.locator('#results')).toContainText(doc.title[0]);
 
-    await page.getByRole('button', { name: ' Explore' }).click();
+    await page.getByRole('button', { name: 'Explore' }).click();
     await page.getByRole('menuitem', { name: 'Paper Network' }).click();
+    await page.waitForURL('**/search/paper_network*', { waitUntil: 'domcontentloaded' });
   });
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      await expect(page.locator('circle')).toBeVisible();
-      await expect(page.getByRole('heading', { name: 'Currently viewing data for' })).toBeVisible();
-      await expect(page.getByRole('heading', { name: 'Size wedges based on:' })).toBeVisible();
+      await expect(page.getByLabel('Paper network graph')).toBeVisible();
+      await expect(page.locator('.network-graph-svg')).toBeVisible();
+      await expect(page.getByText('Group Activity Over Time')).toBeVisible();
     }).toPass({
       timeout: API_TIMEOUT,
     });
@@ -248,7 +254,7 @@ test.fixme('Paper network loads properly', { tag: ['@smoke'] }, async ({ page, c
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test.fixme('Concept cloud loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+test('Concept cloud loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'concept-cloud';
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/vis/*');
@@ -258,7 +264,7 @@ test.fixme('Concept cloud loads properly', { tag: ['@smoke'] }, async ({ page, c
 
   await test.step('Open the concept cloud tool', async () => {
     // do search and wait for results
-    await page.goto(`${ROUTES.SEARCH}/${searchParamsToString(QS)}`);
+    await page.goto(`${ROUTES.SEARCH}?${searchParamsToString(QS)}`);
     const searchRes = await page.waitForResponse(
       (res) => {
         const url = res.request().url();
@@ -268,18 +274,19 @@ test.fixme('Concept cloud loads properly', { tag: ['@smoke'] }, async ({ page, c
       },
       { timeout: API_TIMEOUT },
     );
-    const doc = (await searchRes.json()).response.docs[0] as { bibcode: string };
-    await expect(page).toHaveURL(new RegExp(`${ROUTES.SEARCH}/${searchParamsToString(QS)}`));
-    await expect(page.getByLabel('list of results')).toContainText(doc.bibcode);
+    const doc = (await searchRes.json()).response.docs[0] as { title: string };
+    await expect(page).toHaveURL(`${ROUTES.SEARCH}?${searchParamsToString(QS)}`);
+    await expect(page.locator('#results')).toContainText(doc.title[0]);
 
-    await page.getByRole('button', { name: ' Explore' }).click();
+    await page.getByRole('button', { name: 'Explore' }).click();
     await page.getByRole('menuitem', { name: 'Concept Cloud' }).click();
+    await page.waitForURL('**/search/concept_cloud*', { waitUntil: 'domcontentloaded' });
   });
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      await expect(page.getByRole('heading', { name: 'Word Cloud' })).toBeVisible();
-      await expect(page.getByLabel('wordcloud chart')).toBeVisible();
+      await expect(page.getByLabel('Concept Cloud graph')).toBeVisible();
+      await expect(page.locator('.concept-cloud-svg')).toBeVisible();
     }).toPass({
       timeout: API_TIMEOUT,
     });
@@ -289,7 +296,7 @@ test.fixme('Concept cloud loads properly', { tag: ['@smoke'] }, async ({ page, c
   await test.step('Check for a11y violations', async () => await a11yCheck(page, name, testInfo));
 });
 
-test.fixme('Results graph loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
+test('Results graph loads properly', { tag: ['@smoke'] }, async ({ page, cacheRoute }, testInfo) => {
   const name = 'results-graph';
   await cacheRoute.GET('**/v1/search/query*');
   await cacheRoute.GET('**/v1/vis/*');
@@ -300,7 +307,7 @@ test.fixme('Results graph loads properly', { tag: ['@smoke'] }, async ({ page, c
 
   await test.step('Open the results graph tool', async () => {
     // do search and wait for results
-    await page.goto(`${ROUTES.SEARCH}/${searchParamsToString(QS)}`);
+    await page.goto(`${ROUTES.SEARCH}?${searchParamsToString(QS)}`);
     const searchRes = await page.waitForResponse(
       (res) => {
         const url = res.request().url();
@@ -310,18 +317,19 @@ test.fixme('Results graph loads properly', { tag: ['@smoke'] }, async ({ page, c
       },
       { timeout: API_TIMEOUT },
     );
-    const doc = (await searchRes.json()).response.docs[0] as { bibcode: string };
-    await expect(page).toHaveURL(new RegExp(`${ROUTES.SEARCH}/${searchParamsToString(QS)}`));
-    await expect(page.getByLabel('list of results')).toContainText(doc.bibcode);
+    const doc = (await searchRes.json()).response.docs[0] as { title: string };
+    await expect(page).toHaveURL(`${ROUTES.SEARCH}?${searchParamsToString(QS)}`);
+    await expect(page.locator('#results')).toContainText(doc.title[0]);
 
-    await page.getByRole('button', { name: ' Explore' }).click();
+    await page.getByRole('button', { name: 'Explore' }).click();
     await page.getByRole('menuitem', { name: 'Results Graph' }).click();
+    await page.waitForURL('**/search/results_graph*', { waitUntil: 'domcontentloaded' });
   });
 
   await test.step('Confirm the page loaded correctly', async () => {
     await expect(async () => {
-      await expect(page.locator('.s-bubble-label-container')).toBeVisible();
-      await expect(page.getByLabel('bubble chart')).toBeVisible();
+      await expect(page.getByLabel('Results Graph')).toBeVisible();
+      await expect(page.locator('.bubble-plot-svg')).toBeVisible();
     }).toPass({ timeout: API_TIMEOUT });
   });
 
