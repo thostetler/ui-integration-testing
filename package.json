@@ -38,10 +38,13 @@
     "test:perf:quick": "WARMUP_RUNS=5 playwright test 'perf/perf.spec.ts' --repeat-each 20 --project perf",
     "test:perf:nowarmup": "WARMUP_RUNS=0 playwright test 'perf/perf.spec.ts' --repeat-each 100 --project perf",
     "test:perf:novitals": "CAPTURE_WEB_VITALS=false playwright test 'perf/perf.spec.ts' --repeat-each 100 --project perf",
+    "test:perf:full": "PERF_QUERY_SET=full playwright test 'perf/perf.spec.ts' --repeat-each 100 --project perf",
+    "test:perf:full:200": "PERF_QUERY_SET=full playwright test 'perf/perf.spec.ts' --repeat-each 200 --project perf",
+    "test:perf:extended": "PERF_QUERY_SET=extended playwright test 'perf/perf.spec.ts' --repeat-each 100 --project perf",
     "aggregate": "node ./agg_timings.js",
     "perf:stats": "node scripts/generate-perf-stats.js",
     "perf:compare": "node scripts/compare-perf-results.js",
-    "perf:full": "npm run test:perf && npm run perf:stats",
+    "perf:workflow": "npm run test:perf && npm run perf:stats",
     "authenticate-gmail": "ts-node provider/gmail.ts"
   },
   "devDependencies": {
