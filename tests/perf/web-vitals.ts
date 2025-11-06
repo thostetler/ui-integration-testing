@@ -31,12 +31,31 @@ export async function captureWebVitals(page: Page): Promise<WebVitals> {
       const vitals: WebVitals = {};
       let resolved = false;
 
-      // Timeout to ensure we don't wait forever
-      const timeout = setTimeout(() => {
+      // Store observers so we can disconnect them later
+      const observers: PerformanceObserver[] = [];
+
+      const cleanup = () => {
+        // Disconnect all observers to prevent memory leaks
+        observers.forEach(observer => {
+          try {
+            observer.disconnect();
+          } catch (e) {
+            // Ignore errors during cleanup
+          }
+        });
+      };
+
+      const resolveAndCleanup = () => {
         if (!resolved) {
           resolved = true;
+          cleanup();
           resolve(vitals);
         }
+      };
+
+      // Timeout to ensure we don't wait forever
+      const timeout = setTimeout(() => {
+        resolveAndCleanup();
       }, 5000);
 
       // Capture navigation timing
@@ -54,15 +73,11 @@ export async function captureWebVitals(page: Page): Promise<WebVitals> {
         vitals.FCP = fcpEntry.startTime;
       }
 
-      // Track which vitals we've captured
-      const captured = new Set<string>();
-
       const checkComplete = () => {
         // We consider it complete when we have at least FCP and navigation timing
         if (vitals.FCP && vitals.TTFB && !resolved) {
-          resolved = true;
           clearTimeout(timeout);
-          resolve(vitals);
+          resolveAndCleanup();
         }
       };
 
@@ -74,10 +89,10 @@ export async function captureWebVitals(page: Page): Promise<WebVitals> {
             const entries = list.getEntries();
             const lastEntry = entries[entries.length - 1] as any;
             vitals.LCP = lastEntry.renderTime || lastEntry.loadTime;
-            captured.add('LCP');
             checkComplete();
           });
           lcpObserver.observe({ type: 'largest-contentful-paint', buffered: true });
+          observers.push(lcpObserver);
 
           // CLS Observer
           let clsValue = 0;
@@ -88,19 +103,19 @@ export async function captureWebVitals(page: Page): Promise<WebVitals> {
               }
             }
             vitals.CLS = clsValue;
-            captured.add('CLS');
           });
           clsObserver.observe({ type: 'layout-shift', buffered: true });
+          observers.push(clsObserver);
 
           // FID Observer (First Input Delay)
           const fidObserver = new PerformanceObserver((list) => {
             const entries = list.getEntries();
             const firstInput = entries[0] as any;
             vitals.FID = firstInput.processingStart - firstInput.startTime;
-            captured.add('FID');
             checkComplete();
           });
           fidObserver.observe({ type: 'first-input', buffered: true });
+          observers.push(fidObserver);
         } catch (e) {
           // PerformanceObserver might not be fully supported
           console.warn('PerformanceObserver not fully supported:', e);

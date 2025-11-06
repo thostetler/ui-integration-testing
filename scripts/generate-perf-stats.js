@@ -79,19 +79,45 @@ function round(value, decimals = 1) {
 function loadSamples(filepath) {
   console.log(`Loading samples from: ${filepath}`);
 
+  // Check if file exists
+  if (!fs.existsSync(filepath)) {
+    throw new Error(`File not found: ${filepath}`);
+  }
+
   const content = fs.readFileSync(filepath, 'utf-8');
+
+  // Check if file is empty
+  if (!content.trim()) {
+    throw new Error(`File is empty: ${filepath}`);
+  }
+
   const ext = path.extname(filepath);
 
   let samples;
-  if (ext === '.jsonl') {
-    // JSONL format (one JSON object per line)
-    samples = content
-      .split('\n')
-      .filter((line) => line.trim())
-      .map((line) => JSON.parse(line));
-  } else {
-    // Regular JSON format
-    samples = JSON.parse(content);
+  try {
+    if (ext === '.jsonl') {
+      // JSONL format (one JSON object per line)
+      samples = content
+        .split('\n')
+        .filter((line) => line.trim())
+        .map((line, index) => {
+          try {
+            return JSON.parse(line);
+          } catch (e) {
+            throw new Error(`Invalid JSON on line ${index + 1}: ${e.message}`);
+          }
+        });
+    } else {
+      // Regular JSON format
+      samples = JSON.parse(content);
+    }
+  } catch (e) {
+    throw new Error(`Failed to parse ${ext || 'JSON'} file: ${e.message}`);
+  }
+
+  // Validate that samples is an array
+  if (!Array.isArray(samples)) {
+    throw new Error(`Expected samples to be an array, got ${typeof samples}`);
   }
 
   console.log(`Loaded ${samples.length} samples`);
