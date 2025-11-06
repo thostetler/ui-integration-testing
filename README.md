@@ -3,7 +3,8 @@
 ## Repository Structure
 
 - **/tests**: Contains all test cases and scenarios.
-- **/perf-results**: Stores performance test results. 
+- **/perf-results**: Stores performance test results.
+- **/dashboard**: Interactive web dashboard for visualizing performance test results. 
 
 ## Getting Started
 
@@ -56,5 +57,46 @@ These shouldn't be accounts you use for anything else, as the settings/libraries
 4. Create credentials for the project
 5. Download the credentials as a JSON file, save this in the `gmail` directory
 6. Set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable to the path of the JSON file
+
+## Performance Testing
+
+### Running Performance Tests
+```bash
+# Run performance tests with 100 repetitions
+pnpm test:perf
+
+# Aggregate performance results
+pnpm aggregate
+```
+
+### Performance Dashboard
+
+An interactive web dashboard is available to visualize and compare performance test results.
+
+**Quick Start:**
+```bash
+# Start the dashboard server
+pnpm dashboard
+
+# Or use npm
+npm run dashboard
+```
+
+Then open your browser to `http://localhost:3000`
+
+**Features:**
+- 📊 Interactive charts showing performance metrics (TTRL, TTSBI, TTRS, TTRR)
+- 🔍 Advanced filtering by app, throttling condition, and metric type
+- 📈 Multi-run comparison and trend analysis
+- 📥 Export filtered results to CSV
+- 🎯 Real-time statistics and detailed test results
+
+**Performance Metrics:**
+- **TTRL**: Time To Results from Load (initial page load)
+- **TTSBI**: Time To Search Bar Interactive
+- **TTRS**: Time To Results from Search
+- **TTRR**: Time To Results from Refinement
+
+For detailed dashboard documentation, see [dashboard/README.md](dashboard/README.md)
 
 

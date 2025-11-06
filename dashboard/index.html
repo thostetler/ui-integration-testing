@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Test Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>UI Performance Test Dashboard</h1>
+            <p class="subtitle">Interactive Performance Analysis & Comparison Tool</p>
+        </header>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="dataSource">Data Source:</label>
+                <select id="dataSource">
+                    <option value="performance-results">Aggregated Results (JSON)</option>
+                    <option value="aggregated-csv">Aggregated CSV</option>
+                    <option value="performance-log">Raw Performance Log (JSONL)</option>
+                </select>
+                <button id="loadDataBtn" class="btn btn-primary">Load Data</button>
+                <button id="compareRunsBtn" class="btn btn-secondary">Compare Runs</button>
+            </div>
+
+            <div class="control-group">
+                <label>Quick Filters:</label>
+                <div class="filter-chips">
+                    <button class="chip" data-filter="app" data-value="scix">SCIX</button>
+                    <button class="chip" data-filter="app" data-value="bbb">BBB (ADS)</button>
+                    <button class="chip active" data-filter="app" data-value="all">All Apps</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Throttling:</label>
+                <div class="filter-chips">
+                    <button class="chip" data-filter="throttle" data-value="normal">Normal</button>
+                    <button class="chip" data-filter="throttle" data-value="6x-cpu">6x CPU</button>
+                    <button class="chip" data-filter="throttle" data-value="3g-4x">3G 4x</button>
+                    <button class="chip" data-filter="throttle" data-value="eth-2x">Ethernet 2x</button>
+                    <button class="chip active" data-filter="throttle" data-value="all">All</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Metrics:</label>
+                <div class="filter-chips">
+                    <button class="chip metric-chip" data-metric="TTRL">TTRL</button>
+                    <button class="chip metric-chip" data-metric="TTSBI">TTSBI</button>
+                    <button class="chip metric-chip" data-metric="TTRS">TTRS</button>
+                    <button class="chip metric-chip" data-metric="TTRR">TTRR</button>
+                    <button class="chip metric-chip active" data-metric="all">All Metrics</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="searchTest">Search Tests:</label>
+                <input type="text" id="searchTest" placeholder="Filter by test name...">
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Tests</h3>
+                <div class="stat-value" id="totalTests">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>Avg TTRL</h3>
+                <div class="stat-value" id="avgTTRL">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>Avg TTRS</h3>
+                <div class="stat-value" id="avgTTRS">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>Total Runs</h3>
+                <div class="stat-value" id="totalRuns">-</div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" data-tab="overview">Overview</button>
+            <button class="tab" data-tab="comparison">Comparison</button>
+            <button class="tab" data-tab="trends">Trends</button>
+            <button class="tab" data-tab="details">Details</button>
+        </div>
+
+        <div class="tab-content active" id="overview">
+            <div class="chart-container">
+                <h2>Performance Metrics Overview</h2>
+                <canvas id="overviewChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <h2>Test Distribution by Metric</h2>
+                <canvas id="distributionChart"></canvas>
+            </div>
+        </div>
+
+        <div class="tab-content" id="comparison">
+            <div class="comparison-controls">
+                <h2>Multi-Run Comparison</h2>
+                <p>Compare performance across different test runs, apps, or throttling conditions</p>
+
+                <div class="comparison-selectors">
+                    <div class="selector-group">
+                        <label>Select Tests to Compare:</label>
+                        <select id="compareTests" multiple size="10"></select>
+                    </div>
+
+                    <div class="selector-group">
+                        <label>Metric to Compare:</label>
+                        <select id="compareMetric">
+                            <option value="TTRL">Time To Results from Load (TTRL)</option>
+                            <option value="TTSBI">Time To Search Bar Interactive (TTSBI)</option>
+                            <option value="TTRS">Time To Results from Search (TTRS)</option>
+                            <option value="TTRR">Time To Results from Refinement (TTRR)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="generateComparisonBtn" class="btn btn-primary">Generate Comparison</button>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="comparisonChart"></canvas>
+            </div>
+        </div>
+
+        <div class="tab-content" id="trends">
+            <div class="chart-container">
+                <h2>Performance Trends Over Time</h2>
+                <p>View how performance metrics change across test runs</p>
+                <canvas id="trendsChart"></canvas>
+            </div>
+        </div>
+
+        <div class="tab-content" id="details">
+            <div class="table-controls">
+                <h2>Detailed Test Results</h2>
+                <button id="exportCSVBtn" class="btn btn-secondary">Export to CSV</button>
+            </div>
+            <div class="table-container">
+                <table id="detailsTable">
+                    <thead>
+                        <tr>
+                            <th>Test Name</th>
+                            <th>App</th>
+                            <th>Throttle</th>
+                            <th>Metric</th>
+                            <th>Avg Time (ms)</th>
+                            <th>SEM</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                            <th>Runs</th>
+                        </tr>
+                    </thead>
+                    <tbody id="detailsTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <p>Performance Test Dashboard | Data updates automatically when new test results are available</p>
+        </footer>
+    </div>
+
+    <!-- Comparison Modal -->
+    <div id="comparisonModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select Runs to Compare</h2>
+            <div id="runSelectionContainer"></div>
+            <button id="confirmComparisonBtn" class="btn btn-primary">Compare Selected Runs</button>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
