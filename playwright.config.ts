@@ -32,6 +32,7 @@ export default defineConfig({
     timezoneId: 'America/New_York',
     bypassCSP: true,
     video: 'retain-on-failure',
+    ignoreHTTPSErrors: true,
   },
   expect: {
     toHaveScreenshot: {
