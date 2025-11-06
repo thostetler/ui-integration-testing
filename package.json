@@ -34,7 +34,14 @@
     "auth": "playwright test --project ads --project scix --grep @auth",
     "preinstall": "npx only-allow pnpm",
     "test:perf": "playwright test 'perf/perf.spec.ts' --repeat-each 100 --project perf",
+    "test:perf:200": "playwright test 'perf/perf.spec.ts' --repeat-each 200 --project perf",
+    "test:perf:quick": "WARMUP_RUNS=5 playwright test 'perf/perf.spec.ts' --repeat-each 20 --project perf",
+    "test:perf:nowarmup": "WARMUP_RUNS=0 playwright test 'perf/perf.spec.ts' --repeat-each 100 --project perf",
+    "test:perf:novitals": "CAPTURE_WEB_VITALS=false playwright test 'perf/perf.spec.ts' --repeat-each 100 --project perf",
     "aggregate": "node ./agg_timings.js",
+    "perf:stats": "node scripts/generate-perf-stats.js",
+    "perf:compare": "node scripts/compare-perf-results.js",
+    "perf:full": "npm run test:perf && npm run perf:stats",
     "authenticate-gmail": "ts-node provider/gmail.ts"
   },
   "devDependencies": {
