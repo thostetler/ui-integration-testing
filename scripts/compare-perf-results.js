@@ -81,17 +81,47 @@ function confidenceInterval(values, confidenceLevel = 0.95) {
 
 function loadSamples(filepath) {
   console.log(`Loading: ${filepath}`);
+
+  // Check if file exists
+  if (!fs.existsSync(filepath)) {
+    throw new Error(`File not found: ${filepath}`);
+  }
+
   const content = fs.readFileSync(filepath, 'utf-8');
+
+  // Check if file is empty
+  if (!content.trim()) {
+    throw new Error(`File is empty: ${filepath}`);
+  }
+
   const ext = path.extname(filepath);
 
-  if (ext === '.jsonl') {
-    return content
-      .split('\n')
-      .filter((line) => line.trim())
-      .map((line) => JSON.parse(line));
-  } else {
-    return JSON.parse(content);
+  let samples;
+  try {
+    if (ext === '.jsonl') {
+      samples = content
+        .split('\n')
+        .filter((line) => line.trim())
+        .map((line, index) => {
+          try {
+            return JSON.parse(line);
+          } catch (e) {
+            throw new Error(`Invalid JSON on line ${index + 1}: ${e.message}`);
+          }
+        });
+    } else {
+      samples = JSON.parse(content);
+    }
+  } catch (e) {
+    throw new Error(`Failed to parse ${ext || 'JSON'} file: ${e.message}`);
   }
+
+  // Validate that samples is an array
+  if (!Array.isArray(samples)) {
+    throw new Error(`Expected samples to be an array, got ${typeof samples}`);
+  }
+
+  return samples;
 }
 
 function aggregateSamples(samples) {

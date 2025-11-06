@@ -74,14 +74,12 @@ const perfTest = async (
     const vitals = await captureWebVitalsAfterLoad(page);
     console.log(`${prefix} - ${formatWebVitals(vitals)}`);
 
-    // Record vitals as separate metrics
-    if (vitals.LCP) enhancedRecorder.sampleStart(`${prefix}.LCP`);
-    if (vitals.FCP) enhancedRecorder.sampleStart(`${prefix}.FCP`);
-    if (vitals.TTFB) enhancedRecorder.sampleStart(`${prefix}.TTFB`);
-
-    if (vitals.LCP) enhancedRecorder.sampleEnd(`${prefix}.LCP`, { duration: vitals.LCP } as any);
-    if (vitals.FCP) enhancedRecorder.sampleEnd(`${prefix}.FCP`, { duration: vitals.FCP } as any);
-    if (vitals.TTFB) enhancedRecorder.sampleEnd(`${prefix}.TTFB`, { duration: vitals.TTFB } as any);
+    // Record vitals as separate metrics using recordValue (they're pre-measured)
+    if (vitals.LCP) enhancedRecorder.recordValue(`${prefix}.LCP`, vitals.LCP);
+    if (vitals.FCP) enhancedRecorder.recordValue(`${prefix}.FCP`, vitals.FCP);
+    if (vitals.TTFB) enhancedRecorder.recordValue(`${prefix}.TTFB`, vitals.TTFB);
+    if (vitals.FID) enhancedRecorder.recordValue(`${prefix}.FID`, vitals.FID);
+    if (vitals.CLS) enhancedRecorder.recordValue(`${prefix}.CLS`, vitals.CLS);
   }
 
   await page.locator(searchBarSelector).fill(query);

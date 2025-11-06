@@ -24,6 +24,8 @@ export class EnhancedPerformanceRecorder {
   private samples: PerformanceSample[] = [];
   private startTimes: Map<string, number> = new Map();
   private resultsDir: string;
+  private lastAppendedCount: number = 0; // Track how many samples have been appended to JSONL
+  private currentTestSampleIndices: Map<string, number[]> = new Map(); // Track sample indices per test
 
   constructor(resultsDir: string = './perf-results') {
     this.resultsDir = resultsDir;
@@ -60,8 +62,9 @@ export class EnhancedPerformanceRecorder {
       ? parts
       : ['unknown', 'unknown', 'unknown', name];
 
+    const testKey = `${app}.${testName}.${throttling}`;
     const sample: PerformanceSample = {
-      test: `${app}.${testName}.${throttling}`,
+      test: testKey,
       metric,
       duration,
       timestamp: Date.now(),
@@ -71,27 +74,75 @@ export class EnhancedPerformanceRecorder {
       ...metadata,
     };
 
+    const sampleIndex = this.samples.length;
     this.samples.push(sample);
     this.startTimes.delete(name);
+
+    // Track this sample index for the test
+    if (!this.currentTestSampleIndices.has(testKey)) {
+      this.currentTestSampleIndices.set(testKey, []);
+    }
+    this.currentTestSampleIndices.get(testKey)!.push(sampleIndex);
   }
 
   /**
-   * Record a sample with metadata (for result counts, etc.)
+   * Record a pre-measured value (e.g., Web Vitals that are already measured)
+   */
+  recordValue(name: string, duration: number, metadata?: Partial<PerformanceSample>): void {
+    // Parse the metric name (format: app.testName.throttling.metricType)
+    const parts = name.split('.');
+    const [app, testName, throttling, metric] = parts.length >= 4
+      ? parts
+      : ['unknown', 'unknown', 'unknown', name];
+
+    const testKey = `${app}.${testName}.${throttling}`;
+    const sample: PerformanceSample = {
+      test: testKey,
+      metric,
+      duration,
+      timestamp: Date.now(),
+      app,
+      throttling,
+      queryType: testName,
+      ...metadata,
+    };
+
+    const sampleIndex = this.samples.length;
+    this.samples.push(sample);
+
+    // Track this sample index for the test
+    if (!this.currentTestSampleIndices.has(testKey)) {
+      this.currentTestSampleIndices.set(testKey, []);
+    }
+    this.currentTestSampleIndices.get(testKey)!.push(sampleIndex);
+  }
+
+  /**
+   * Record metadata for the current test run (for result counts, etc.)
+   * Updates all samples recorded for this test since the last metadata call
    */
   recordMetadata(testName: string, metadata: { resultCount?: number; refinedResultCount?: number }): void {
-    // Find recent samples for this test and update them
-    const recentSamples = this.samples
-      .filter(s => s.test === testName)
-      .slice(-10); // Last 10 samples for this test
+    const indices = this.currentTestSampleIndices.get(testName);
+    if (!indices || indices.length === 0) {
+      console.warn(`No samples found for test: ${testName}`);
+      return;
+    }
 
-    recentSamples.forEach(sample => {
-      if (metadata.resultCount !== undefined) {
-        sample.resultCount = metadata.resultCount;
-      }
-      if (metadata.refinedResultCount !== undefined) {
-        sample.refinedResultCount = metadata.refinedResultCount;
+    // Update all samples for this test run
+    indices.forEach(index => {
+      const sample = this.samples[index];
+      if (sample) {
+        if (metadata.resultCount !== undefined) {
+          sample.resultCount = metadata.resultCount;
+        }
+        if (metadata.refinedResultCount !== undefined) {
+          sample.refinedResultCount = metadata.refinedResultCount;
+        }
       }
     });
+
+    // Clear the tracked indices for this test now that metadata is recorded
+    this.currentTestSampleIndices.delete(testName);
   }
 
   /**
@@ -118,12 +169,23 @@ export class EnhancedPerformanceRecorder {
   }
 
   /**
-   * Append samples to a JSONL (JSON Lines) file for incremental recording
+   * Append new samples to a JSONL (JSON Lines) file for incremental recording
+   * Only appends samples that haven't been appended yet
    */
   appendToJSONL(filename: string = 'performance-samples.jsonl'): void {
     const filepath = path.join(this.resultsDir, filename);
-    const lines = this.samples.map(sample => JSON.stringify(sample)).join('\n') + '\n';
+
+    // Only append samples that haven't been appended yet
+    const newSamples = this.samples.slice(this.lastAppendedCount);
+    if (newSamples.length === 0) {
+      return; // Nothing new to append
+    }
+
+    const lines = newSamples.map(sample => JSON.stringify(sample)).join('\n') + '\n';
     fs.appendFileSync(filepath, lines, 'utf-8');
+
+    // Update the count of appended samples
+    this.lastAppendedCount = this.samples.length;
   }
 
   /**
@@ -132,6 +194,8 @@ export class EnhancedPerformanceRecorder {
   clear(): void {
     this.samples = [];
     this.startTimes.clear();
+    this.currentTestSampleIndices.clear();
+    this.lastAppendedCount = 0;
   }
 
   /**
