@@ -3,14 +3,20 @@
 ## 🚀 Common Commands
 
 ```bash
-# Run tests (100 iterations with warmup)
+# Run tests with CORE set (8 queries, ~30-45 min for 100 samples)
 npm run test:perf
 
-# Run with 200 iterations (recommended for baselines)
+# Run with 200 iterations (recommended for baselines, ~1-2 hours)
 npm run test:perf:200
 
-# Quick test (20 iterations, 5 warmup)
+# Quick test (20 iterations, 5 warmup, ~10-15 min)
 npm run test:perf:quick
+
+# Full query set (26 queries, ~2-4 hours for 100 samples)
+npm run test:perf:full
+
+# Full query set with 200 samples (~8-12 hours, run overnight!)
+npm run test:perf:full:200
 
 # Generate statistics
 npm run perf:stats
@@ -19,8 +25,30 @@ npm run perf:stats
 npm run perf:compare baseline.json current.json
 
 # Full workflow (test + stats)
-npm run perf:full
+npm run perf:workflow
 ```
+
+## 📦 Query Sets
+
+Tests now run with configurable query sets for faster execution:
+
+| Set | Queries | Tests | Time (200 samples) | Use For |
+|-----|---------|-------|-------------------|---------|
+| **CORE** (default) | 8 | 32 | ~1-2 hours | Regular testing |
+| **EXTENDED** | 18 | 72 | ~4-6 hours | Thorough testing |
+| **FULL** | 26 | 104 | ~8-12 hours | Release baselines |
+
+```bash
+# Use different query sets
+npm run test:perf              # CORE (default)
+npm run test:perf:full         # FULL set
+npm run test:perf:extended     # EXTENDED set
+
+# Or set via environment variable
+PERF_QUERY_SET=full npm run test:perf:200
+```
+
+See [tests/perf/QUERY_SETS.md](tests/perf/QUERY_SETS.md) for details.
 
 ## 📊 Output Files
 
