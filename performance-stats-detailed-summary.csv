@@ -1,0 +1,2 @@
+Test Name,TTSBI Median (ms),TTSBI P95 (ms),FCP Median (ms),FCP P95 (ms),TTFB Median (ms),TTFB P95 (ms),TTRS Median (ms),TTRS P95 (ms),TTRL Median (ms),TTRL P95 (ms),TTRR Median (ms),TTRR P95 (ms)
+scix.first-author.normal,2705.9,2705.9,700,700,154.5,154.5,3320.2,3320.2,7378.7,7378.7,1244.3,1244.3

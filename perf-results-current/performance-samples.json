@@ -1,0 +1,200 @@
+[
+  {
+    "test": "scix.first-author.normal",
+    "metric": "TTSBI",
+    "duration": 2199.870938,
+    "timestamp": 1762446813114,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "first-author",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.first-author.normal",
+    "metric": "FCP",
+    "duration": 804,
+    "timestamp": 1762446814160,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "first-author",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.first-author.normal",
+    "metric": "TTFB",
+    "duration": 105.09999999962747,
+    "timestamp": 1762446814160,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "first-author",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.first-author.normal",
+    "metric": "TTRS",
+    "duration": 2470.723795,
+    "timestamp": 1762446817120,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "first-author",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.first-author.normal",
+    "metric": "TTRL",
+    "duration": 6206.099438000001,
+    "timestamp": 1762446817120,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "first-author",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.first-author.normal",
+    "metric": "TTRR",
+    "duration": 1191.0634360000004,
+    "timestamp": 1762446818373,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "first-author",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.title-keyword.normal",
+    "metric": "TTSBI",
+    "duration": 2808.484894000001,
+    "timestamp": 1762446831913,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "title-keyword",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.title-keyword.normal",
+    "metric": "FCP",
+    "duration": 1428,
+    "timestamp": 1762446832927,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "title-keyword",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.title-keyword.normal",
+    "metric": "TTFB",
+    "duration": 187.40000000037253,
+    "timestamp": 1762446832927,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "title-keyword",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.title-keyword.normal",
+    "metric": "TTRS",
+    "duration": 3298.985216000001,
+    "timestamp": 1762446836587,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "title-keyword",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.title-keyword.normal",
+    "metric": "TTRL",
+    "duration": 7482.499401999998,
+    "timestamp": 1762446836587,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "title-keyword",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.title-keyword.normal",
+    "metric": "TTRR",
+    "duration": 1248.743312999999,
+    "timestamp": 1762446837852,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "title-keyword",
+    "resultCount": 10,
+    "refinedResultCount": 10
+  },
+  {
+    "test": "scix.bibcode-search.normal",
+    "metric": "TTSBI",
+    "duration": 2263.4116739999954,
+    "timestamp": 1762446849984,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "bibcode-search",
+    "resultCount": 1,
+    "refinedResultCount": 1
+  },
+  {
+    "test": "scix.bibcode-search.normal",
+    "metric": "FCP",
+    "duration": 236,
+    "timestamp": 1762446851011,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "bibcode-search",
+    "resultCount": 1,
+    "refinedResultCount": 1
+  },
+  {
+    "test": "scix.bibcode-search.normal",
+    "metric": "TTFB",
+    "duration": 68.39999999850988,
+    "timestamp": 1762446851011,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "bibcode-search",
+    "resultCount": 1,
+    "refinedResultCount": 1
+  },
+  {
+    "test": "scix.bibcode-search.normal",
+    "metric": "TTRS",
+    "duration": 2275.8327939999945,
+    "timestamp": 1762446853703,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "bibcode-search",
+    "resultCount": 1,
+    "refinedResultCount": 1
+  },
+  {
+    "test": "scix.bibcode-search.normal",
+    "metric": "TTRL",
+    "duration": 5981.811693999996,
+    "timestamp": 1762446853703,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "bibcode-search",
+    "resultCount": 1,
+    "refinedResultCount": 1
+  },
+  {
+    "test": "scix.bibcode-search.normal",
+    "metric": "TTRR",
+    "duration": 1164.2403159999958,
+    "timestamp": 1762446854893,
+    "app": "scix",
+    "throttling": "normal",
+    "queryType": "bibcode-search",
+    "resultCount": 1,
+    "refinedResultCount": 1
+  }
+]

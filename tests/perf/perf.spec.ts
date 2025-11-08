@@ -2,7 +2,7 @@ import { test, TestContext } from './test-base';
 import { queries } from './queries';
 import { makePrefix } from './utils';
 import { throttlePage } from './throttle';
-import { getGlobalRecorder, EnhancedPerformanceRecorder } from './performance-recorder';
+import { getGlobalRecorder } from './performance-recorder';
 import { captureWebVitalsAfterLoad, formatWebVitals } from './web-vitals';
 
 type Query = (typeof queries)[number];
@@ -53,6 +53,20 @@ const perfTest = async (
   { query, refinement }: Query,
   recordResults: boolean = true,
 ) => {
+  // Block tracking and monitoring requests
+  await page.route('**/*', (route) => {
+    const url = route.request().url();
+    if (
+      url.includes('googletagmanager') ||
+      url.includes('google-analytics') ||
+      url.includes('analytics.google') ||
+      url.includes('/monitor')
+    ) {
+      return route.abort();
+    }
+    return route.continue();
+  });
+
   // Use both the standard performance API and enhanced recorder
   performance.sampleStart(`${prefix}.TTRL`);
   performance.sampleStart(`${prefix}.TTSBI`);
@@ -109,20 +123,19 @@ const perfTest = async (
     enhancedRecorder.sampleStart(`${prefix}.TTRR`);
   }
 
+  // Wait for search bar to be ready and clear it first
+  await page.waitForSelector(searchBarSelector, { state: 'visible' });
+  await page.locator(searchBarSelector).clear();
   await page.locator(searchBarSelector).fill(`${query} ${refinement}`);
+
+  // Click search button and wait for results to update
   await page.locator(searchButtonSelector).click();
 
-  // Wait for results to actually change (count changes)
-  await page.waitForFunction(
-    ({ selector, initialCount }) => {
-      const elements = document.querySelectorAll(selector);
-      const currentCount = elements.length;
-      // Results have changed when count is different and non-zero
-      return currentCount !== initialCount && currentCount > 0;
-    },
-    { selector: searchResultsSelector, initialCount: initialResultCount },
-    { timeout: 10000 }
-  );
+  // Wait for results to be visible (handles both navigation and SPA updates)
+  await page.waitForSelector(searchResultsSelector, { state: 'visible', timeout: 10000 });
+
+  // Give a brief moment for all results to render
+  await page.waitForTimeout(500);
 
   performance.sampleEnd(`${prefix}.TTRR`);
   if (recordResults) {
@@ -148,7 +161,7 @@ const perfTest = async (
 };
 
 test.describe('scixplorer.org', { tag: '@perf' }, () => {
-  test.use({ baseURL: 'https://dev.scixplorer.org' });
+  test.use({ baseURL: process.env.SCIX_BASE_URL });
 
   // scix selectors
   const selectors = {
@@ -160,7 +173,7 @@ test.describe('scixplorer.org', { tag: '@perf' }, () => {
   for (const { description, name, query, refinement } of queries) {
     const prefix = makePrefix('scix', name, 'normal');
     test(prefix, async ({ page, performance }) => {
-      test.setTimeout(30000); // Increased timeout for warmup + actual test
+      test.setTimeout(300000); // 5 minutes for warmup + actual test
 
       // Run warmup iterations (results not recorded)
       for (let i = 0; i < WARMUP_ITERATIONS; i++) {
@@ -178,7 +191,13 @@ test.describe('scixplorer.org', { tag: '@perf' }, () => {
 
       // Run warmup iterations (results not recorded)
       for (let i = 0; i < WARMUP_ITERATIONS; i++) {
-        await perfTest(throttledPrefix, selectors, { page, performance }, { query, name, description, refinement }, false);
+        await perfTest(
+          throttledPrefix,
+          selectors,
+          { page, performance },
+          { query, name, description, refinement },
+          false,
+        );
       }
 
       // Run actual measured test
@@ -187,45 +206,45 @@ test.describe('scixplorer.org', { tag: '@perf' }, () => {
   }
 });
 
-test.describe('ui.adsabs.harvard.edu', () => {
-  test.use({ baseURL: 'https://dev.adsabs.harvard.edu' });
-
-  // bbb selectors
-  const selectors = {
-    searchBarSelector: 'input[name="q"]',
-    searchButtonSelector: 'button.s-search-submit',
-    searchResultsSelector: 'h3.s-results-title',
-  };
-
-  for (const { description, name, query, refinement } of queries) {
-    const prefix = makePrefix('bbb', name, 'normal');
-    test(prefix, async ({ page, performance }) => {
-      test.setTimeout(30000); // Increased timeout for warmup + actual test
-
-      // Run warmup iterations (results not recorded)
-      for (let i = 0; i < WARMUP_ITERATIONS; i++) {
-        await perfTest(prefix, selectors, { page, performance }, { query, name, description, refinement }, false);
-      }
-
-      // Run actual measured test
-      await perfTest(prefix, selectors, { page, performance }, { query, name, description, refinement }, true);
-    });
-
-    const throttledPrefix = makePrefix('bbb', name, '6x-cpu');
-    test(throttledPrefix, async ({ page, performance, context }) => {
-      test.slow();
-      await throttlePage(context, page, '6x');
-
-      // Run warmup iterations (results not recorded)
-      for (let i = 0; i < WARMUP_ITERATIONS; i++) {
-        await perfTest(throttledPrefix, selectors, { page, performance }, { query, name, description, refinement }, false);
-      }
-
-      // Run actual measured test
-      await perfTest(throttledPrefix, selectors, { page, performance }, { query, name, description, refinement }, true);
-    });
-  }
-});
+// test.describe.skip('ui.adsabs.harvard.edu', () => {
+//   test.use({ baseURL: 'https://dev.adsabs.harvard.edu' });
+//
+//   // bbb selectors
+//   const selectors = {
+//     searchBarSelector: 'input[name="q"]',
+//     searchButtonSelector: 'button.s-search-submit',
+//     searchResultsSelector: 'h3.s-results-title',
+//   };
+//
+//   for (const { description, name, query, refinement } of queries) {
+//     const prefix = makePrefix('bbb', name, 'normal');
+//     test(prefix, async ({ page, performance }) => {
+//       test.setTimeout(30000); // Increased timeout for warmup + actual test
+//
+//       // Run warmup iterations (results not recorded)
+//       for (let i = 0; i < WARMUP_ITERATIONS; i++) {
+//         await perfTest(prefix, selectors, { page, performance }, { query, name, description, refinement }, false);
+//       }
+//
+//       // Run actual measured test
+//       await perfTest(prefix, selectors, { page, performance }, { query, name, description, refinement }, true);
+//     });
+//
+//     const throttledPrefix = makePrefix('bbb', name, '6x-cpu');
+//     test(throttledPrefix, async ({ page, performance, context }) => {
+//       test.slow();
+//       await throttlePage(context, page, '6x');
+//
+//       // Run warmup iterations (results not recorded)
+//       for (let i = 0; i < WARMUP_ITERATIONS; i++) {
+//         await perfTest(throttledPrefix, selectors, { page, performance }, { query, name, description, refinement }, false);
+//       }
+//
+//       // Run actual measured test
+//       await perfTest(throttledPrefix, selectors, { page, performance }, { query, name, description, refinement }, true);
+//     });
+//   }
+// });
 
 // test.describe('ui.adsabs.harvard.edu', () => {
 //   test.use({

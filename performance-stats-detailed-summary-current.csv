@@ -1,0 +1,4 @@
+Test Name,TTSBI Median (ms),TTSBI P95 (ms),FCP Median (ms),FCP P95 (ms),TTFB Median (ms),TTFB P95 (ms),TTRS Median (ms),TTRS P95 (ms),TTRL Median (ms),TTRL P95 (ms),TTRR Median (ms),TTRR P95 (ms)
+scix.bibcode-search.normal,2263.4,2263.4,236,236,68.4,68.4,2275.8,2275.8,5981.8,5981.8,1164.2,1164.2
+scix.first-author.normal,2199.9,2199.9,804,804,105.1,105.1,2470.7,2470.7,6206.1,6206.1,1191.1,1191.1
+scix.title-keyword.normal,2808.5,2808.5,1428,1428,187.4,187.4,3299,3299,7482.5,7482.5,1248.7,1248.7

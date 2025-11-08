@@ -1,0 +1,19 @@
+Test,Metric,Mean (ms),Median (ms),Std Dev (ms),CV (%),Min (ms),Max (ms),P50 (ms),P90 (ms),P95 (ms),P99 (ms),Sample Size,Avg Result Count,Avg Refined Result Count
+scix.bibcode-search.normal,FCP,236,236,0,0,236,236,236,236,236,236,1,1,1
+scix.bibcode-search.normal,TTFB,68.4,68.4,0,0,68.4,68.4,68.4,68.4,68.4,68.4,1,1,1
+scix.bibcode-search.normal,TTRL,5981.8,5981.8,0,0,5981.8,5981.8,5981.8,5981.8,5981.8,5981.8,1,1,1
+scix.bibcode-search.normal,TTRR,1164.2,1164.2,0,0,1164.2,1164.2,1164.2,1164.2,1164.2,1164.2,1,1,1
+scix.bibcode-search.normal,TTRS,2275.8,2275.8,0,0,2275.8,2275.8,2275.8,2275.8,2275.8,2275.8,1,1,1
+scix.bibcode-search.normal,TTSBI,2263.4,2263.4,0,0,2263.4,2263.4,2263.4,2263.4,2263.4,2263.4,1,1,1
+scix.first-author.normal,FCP,804,804,0,0,804,804,804,804,804,804,1,10,10
+scix.first-author.normal,TTFB,105.1,105.1,0,0,105.1,105.1,105.1,105.1,105.1,105.1,1,10,10
+scix.first-author.normal,TTRL,6206.1,6206.1,0,0,6206.1,6206.1,6206.1,6206.1,6206.1,6206.1,1,10,10
+scix.first-author.normal,TTRR,1191.1,1191.1,0,0,1191.1,1191.1,1191.1,1191.1,1191.1,1191.1,1,10,10
+scix.first-author.normal,TTRS,2470.7,2470.7,0,0,2470.7,2470.7,2470.7,2470.7,2470.7,2470.7,1,10,10
+scix.first-author.normal,TTSBI,2199.9,2199.9,0,0,2199.9,2199.9,2199.9,2199.9,2199.9,2199.9,1,10,10
+scix.title-keyword.normal,FCP,1428,1428,0,0,1428,1428,1428,1428,1428,1428,1,10,10
+scix.title-keyword.normal,TTFB,187.4,187.4,0,0,187.4,187.4,187.4,187.4,187.4,187.4,1,10,10
+scix.title-keyword.normal,TTRL,7482.5,7482.5,0,0,7482.5,7482.5,7482.5,7482.5,7482.5,7482.5,1,10,10
+scix.title-keyword.normal,TTRR,1248.7,1248.7,0,0,1248.7,1248.7,1248.7,1248.7,1248.7,1248.7,1,10,10
+scix.title-keyword.normal,TTRS,3299,3299,0,0,3299,3299,3299,3299,3299,3299,1,10,10
+scix.title-keyword.normal,TTSBI,2808.5,2808.5,0,0,2808.5,2808.5,2808.5,2808.5,2808.5,2808.5,1,10,10

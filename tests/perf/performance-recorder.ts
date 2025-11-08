@@ -58,9 +58,7 @@ export class EnhancedPerformanceRecorder {
 
     // Parse the metric name (format: app.testName.throttling.metricType)
     const parts = name.split('.');
-    const [app, testName, throttling, metric] = parts.length >= 4
-      ? parts
-      : ['unknown', 'unknown', 'unknown', name];
+    const [app, testName, throttling, metric] = parts.length >= 4 ? parts : ['unknown', 'unknown', 'unknown', name];
 
     const testKey = `${app}.${testName}.${throttling}`;
     const sample: PerformanceSample = {
@@ -91,9 +89,7 @@ export class EnhancedPerformanceRecorder {
   recordValue(name: string, duration: number, metadata?: Partial<PerformanceSample>): void {
     // Parse the metric name (format: app.testName.throttling.metricType)
     const parts = name.split('.');
-    const [app, testName, throttling, metric] = parts.length >= 4
-      ? parts
-      : ['unknown', 'unknown', 'unknown', name];
+    const [app, testName, throttling, metric] = parts.length >= 4 ? parts : ['unknown', 'unknown', 'unknown', name];
 
     const testKey = `${app}.${testName}.${throttling}`;
     const sample: PerformanceSample = {
@@ -129,7 +125,7 @@ export class EnhancedPerformanceRecorder {
     }
 
     // Update all samples for this test run
-    indices.forEach(index => {
+    indices.forEach((index) => {
       const sample = this.samples[index];
       if (sample) {
         if (metadata.resultCount !== undefined) {
@@ -181,7 +177,7 @@ export class EnhancedPerformanceRecorder {
       return; // Nothing new to append
     }
 
-    const lines = newSamples.map(sample => JSON.stringify(sample)).join('\n') + '\n';
+    const lines = newSamples.map((sample) => JSON.stringify(sample)).join('\n') + '\n';
     fs.appendFileSync(filepath, lines, 'utf-8');
 
     // Update the count of appended samples
@@ -211,7 +207,7 @@ export class EnhancedPerformanceRecorder {
   getSamplesGrouped(): Map<string, PerformanceSample[]> {
     const grouped = new Map<string, PerformanceSample[]>();
 
-    this.samples.forEach(sample => {
+    this.samples.forEach((sample) => {
       const key = `${sample.test}.${sample.metric}`;
       if (!grouped.has(key)) {
         grouped.set(key, []);

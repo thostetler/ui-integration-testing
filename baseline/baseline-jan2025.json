@@ -1,0 +1,29 @@
+[
+  {
+    "test": "scix.abstract-keyword.6x-cpu",
+    "metric": "TTSBI",
+    "duration": 12555.535702000008,
+    "timestamp": 1762452538463,
+    "app": "scix",
+    "throttling": "6x-cpu",
+    "queryType": "abstract-keyword"
+  },
+  {
+    "test": "scix.abstract-keyword.6x-cpu",
+    "metric": "FCP",
+    "duration": 2616,
+    "timestamp": 1762452540028,
+    "app": "scix",
+    "throttling": "6x-cpu",
+    "queryType": "abstract-keyword"
+  },
+  {
+    "test": "scix.abstract-keyword.6x-cpu",
+    "metric": "TTFB",
+    "duration": 218,
+    "timestamp": 1762452540028,
+    "app": "scix",
+    "throttling": "6x-cpu",
+    "queryType": "abstract-keyword"
+  }
+]

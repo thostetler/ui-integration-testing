@@ -1,0 +1,7 @@
+Test,Metric,Mean (ms),Median (ms),Std Dev (ms),CV (%),Min (ms),Max (ms),P50 (ms),P90 (ms),P95 (ms),P99 (ms),Sample Size,Avg Result Count,Avg Refined Result Count
+scix.first-author.normal,FCP,700,700,0,0,700,700,700,700,700,700,1,10,10
+scix.first-author.normal,TTFB,154.5,154.5,0,0,154.5,154.5,154.5,154.5,154.5,154.5,1,10,10
+scix.first-author.normal,TTRL,7378.7,7378.7,0,0,7378.7,7378.7,7378.7,7378.7,7378.7,7378.7,1,10,10
+scix.first-author.normal,TTRR,1244.3,1244.3,0,0,1244.3,1244.3,1244.3,1244.3,1244.3,1244.3,1,10,10
+scix.first-author.normal,TTRS,3320.2,3320.2,0,0,3320.2,3320.2,3320.2,3320.2,3320.2,3320.2,1,10,10
+scix.first-author.normal,TTSBI,2705.9,2705.9,0,0,2705.9,2705.9,2705.9,2705.9,2705.9,2705.9,1,10,10
