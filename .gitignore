@@ -10,3 +10,6 @@ playwright/
 # gmail credentials
 provider/credentials.json
 provider/token.json
+
+# lighthouse results
+/lighthouse-results/

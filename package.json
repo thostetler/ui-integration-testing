@@ -35,12 +35,18 @@
     "preinstall": "npx only-allow pnpm",
     "test:perf": "playwright test 'perf/perf.spec.ts' --repeat-each 100 --project perf",
     "aggregate": "node ./agg_timings.js",
-    "authenticate-gmail": "ts-node provider/gmail.ts"
+    "authenticate-gmail": "ts-node provider/gmail.ts",
+    "test:competitors": "playwright test --project competitors",
+    "test:competitors:search": "playwright test --project competitors search-lighthouse.spec.ts",
+    "test:competitors:article": "playwright test --project competitors article-lighthouse.spec.ts",
+    "analyze:competitors": "ts-node analyze-lighthouse-results.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
     "eslint": "^9.14.0",
     "globals": "^15.12.0",
+    "lighthouse": "^13.0.1",
+    "playwright-lighthouse": "^4.0.0",
     "typescript-eslint": "^8.13.0"
   }
 }

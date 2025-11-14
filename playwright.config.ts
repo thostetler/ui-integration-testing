@@ -75,5 +75,18 @@ export default defineConfig({
       grepInvert: /@stress/,
       testDir: './tests/scix',
     },
+    {
+      name: 'competitors',
+      use: {
+        ...devices['Desktop Chrome'],
+        launchOptions: {
+          args: [
+            '--use-gl=egl',
+            '--remote-debugging-port=9222', // Required for lighthouse
+          ],
+        },
+      },
+      testDir: './tests/competitors',
+    },
   ],
 });

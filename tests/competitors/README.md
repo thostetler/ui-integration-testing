@@ -1,0 +1,192 @@
+# Competitor Lighthouse Performance Tests
+
+This directory contains Lighthouse performance tests for competitor academic search platforms. The tests measure Core Web Vitals and other performance metrics to establish a baseline for comparison.
+
+## Overview
+
+The test suite uses [playwright-lighthouse](https://github.com/abhinaba-ghosh/playwright-lighthouse) to run Lighthouse audits on competitor sites, testing both search pages and article/detail pages.
+
+### Competitors Tested
+
+- **arXiv** - Physics preprint archive
+- **INSPIRE-HEP** - High-energy physics literature database
+- **Semantic Scholar** - AI-powered research tool
+- **Google Scholar** - Academic search engine
+- **Scopus** - Abstract and citation database (requires subscription)
+- **Web of Science** - Citation indexing service (requires subscription)
+- **SciX** - NASA's modernized successor to ADS
+
+## Files
+
+- `competitors-config.ts` - Configuration for competitor sites and Lighthouse settings
+- `lighthouse-utils.ts` - Utility functions for running audits and aggregating results
+- `search-lighthouse.spec.ts` - Tests for search pages
+- `article-lighthouse.spec.ts` - Tests for article/detail pages
+
+## Running the Tests
+
+### Run all competitor tests
+
+```bash
+pnpm test:competitors
+```
+
+### Run only search page tests
+
+```bash
+pnpm test:competitors:search
+```
+
+### Run only article page tests
+
+```bash
+pnpm test:competitors:article
+```
+
+### Analyze results
+
+After running the tests, analyze and compare results:
+
+```bash
+pnpm analyze:competitors
+```
+
+## Test Configuration
+
+The test configuration in `competitors-config.ts` includes:
+
+- **Runs per URL**: 3 (configurable via `lighthouseConfig.runsPerUrl`)
+- **Lighthouse categories**: Performance, Accessibility, Best Practices, SEO
+- **Throttling**: Simulated 3G connection with 4x CPU slowdown (configurable)
+- **Timeout**: 60 seconds per audit
+
+### Customizing the configuration
+
+To adjust test parameters, edit `tests/competitors/competitors-config.ts`:
+
+```typescript
+export const lighthouseConfig = {
+  runsPerUrl: 3, // Change number of runs
+  lighthouseOptions: {
+    // Adjust Lighthouse settings
+    throttling: {
+      rttMs: 40,
+      throughputKbps: 10240,
+      cpuSlowdownMultiplier: 1,
+    },
+  },
+  timeout: 60000,
+};
+```
+
+## Metrics Collected
+
+### Core Web Vitals
+
+- **FCP (First Contentful Paint)** - Time until first content is rendered
+- **LCP (Largest Contentful Paint)** - Time until largest content element is rendered
+- **TBT (Total Blocking Time)** - Time the main thread was blocked
+- **CLS (Cumulative Layout Shift)** - Visual stability metric
+
+### Additional Metrics
+
+- **Speed Index** - How quickly content is visually displayed
+- **TTI (Time to Interactive)** - Time until page is fully interactive
+
+### Lighthouse Scores
+
+Each category is scored 0-100:
+
+- **Performance** - Page load performance
+- **Accessibility** - Accessibility best practices
+- **Best Practices** - Web development best practices
+- **SEO** - Search engine optimization
+
+## Results
+
+Results are saved to `lighthouse-results/` directory:
+
+### Raw Results
+
+- `search-pages-raw-TIMESTAMP.json` - All individual test runs for search pages
+- `article-pages-raw-TIMESTAMP.json` - All individual test runs for article pages
+
+### Aggregated Results
+
+- `search-pages-aggregated-TIMESTAMP.json` - Statistical analysis (mean, median, std dev) for search pages
+- `article-pages-aggregated-TIMESTAMP.json` - Statistical analysis for article pages
+
+### Result Format
+
+Each aggregated result includes:
+
+```json
+{
+  "siteName": "arXiv",
+  "pageType": "search",
+  "numberOfRuns": 3,
+  "scores": {
+    "performance": {
+      "mean": 0.85,
+      "median": 0.86,
+      "stdDev": 0.02,
+      "min": 0.83,
+      "max": 0.87
+    }
+    // ... other scores
+  },
+  "metrics": {
+    "largestContentfulPaint": {
+      "mean": 2456.3,
+      "median": 2450.0,
+      "stdDev": 45.2,
+      "min": 2410,
+      "max": 2500
+    }
+    // ... other metrics
+  }
+}
+```
+
+## Notes
+
+- Some sites (Scopus, Web of Science) require institutional subscriptions and may show login/paywall pages
+- Tests may fail or show degraded performance for subscription-required sites
+- Each test suite prints a summary table after completion
+- Individual test results are attached to Playwright test reports
+
+## Adding New Competitors
+
+To add a new competitor site:
+
+1. Edit `competitors-config.ts` and add to the `competitors` array:
+
+```typescript
+{
+  name: 'New Site',
+  url: 'https://example.com',
+  search_url: 'https://example.com/search?q=black+holes',
+  article_url: 'https://example.com/article/12345',
+  note: 'Optional note about the site',
+}
+```
+
+2. Run the tests - the new site will be automatically included
+
+## Troubleshooting
+
+### Chrome debugging port conflict
+
+If you see port 9222 errors, another Chrome instance may be using the debugging port. Close other Chrome instances or modify the port in `playwright.config.ts`.
+
+### Timeout errors
+
+Some sites may be slow or have long load times. Increase the timeout in `competitors-config.ts`:
+
+```typescript
+timeout: 120000, // 2 minutes
+```
+
+### Subscription-required sites
+
+Tests for Scopus and Web of Science may fail without institutional access. This is expected behavior.
