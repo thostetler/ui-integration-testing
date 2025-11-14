@@ -79,10 +79,12 @@ export default defineConfig({
       name: 'competitors',
       use: {
         ...devices['Desktop Chrome'],
+        ignoreHTTPSErrors: true, // Required for sites with SSL certificate issues in test environment
         launchOptions: {
           args: [
             '--use-gl=egl',
             '--remote-debugging-port=9222', // Required for lighthouse
+            '--ignore-certificate-errors', // Additional flag for certificate issues
           ],
         },
       },

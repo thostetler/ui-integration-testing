@@ -37,8 +37,8 @@
     "aggregate": "node ./agg_timings.js",
     "authenticate-gmail": "ts-node provider/gmail.ts",
     "test:competitors": "playwright test --project competitors",
-    "test:competitors:search": "playwright test --project competitors search-lighthouse.spec.ts",
-    "test:competitors:article": "playwright test --project competitors article-lighthouse.spec.ts",
+    "test:competitors:search": "playwright test tests/competitors/search-lighthouse.spec.ts --project competitors",
+    "test:competitors:article": "playwright test tests/competitors/article-lighthouse.spec.ts --project competitors",
     "analyze:competitors": "ts-node analyze-lighthouse-results.ts",
     "charts:competitors": "ts-node generate-lighthouse-charts.ts"
   },
