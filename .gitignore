@@ -11,5 +11,5 @@ playwright/
 provider/credentials.json
 provider/token.json
 
-# lighthouse results
-/lighthouse-results/
+# performance results
+/performance-results/

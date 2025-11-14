@@ -1,16 +1,15 @@
-# Competitor Lighthouse Performance Tests
+# Competitor Performance Tests
 
-This directory contains Lighthouse performance tests for competitor academic search platforms. The tests measure Core Web Vitals and other performance metrics to establish a baseline for comparison.
+This directory contains performance tests for competitor academic search platforms using native Playwright Performance APIs. The tests measure Core Web Vitals and other performance metrics to establish a baseline for comparison.
 
 ## ⚠️ Environment Requirements
 
 **IMPORTANT: These tests are designed to run locally on your development machine.**
 
-Lighthouse requires significant system resources and stable browser control. In containerized/CI environments, you may encounter:
+Performance testing requires stable browser control. In containerized/CI environments, you may encounter:
 - Browser crashes ("Page crashed" errors)
 - Resource exhaustion
 - Timeout issues
-- Port conflicts
 
 **Recommended setup:**
 - Run tests on your local machine (Mac, Linux, or Windows with WSL)
@@ -19,14 +18,13 @@ Lighthouse requires significant system resources and stable browser control. In 
 - Close other resource-intensive applications
 
 **Configuration optimizations:**
-- Tests run sequentially (1 worker) to avoid port 9222 conflicts
+- Tests run sequentially (1 worker) to ensure stability
 - 3-minute timeout per test
-- Performance-only audits for speed
-- No network throttling in controlled environment
+- Native Performance API measurements for reliability
 
 ## Overview
 
-The test suite uses [playwright-lighthouse](https://github.com/abhinaba-ghosh/playwright-lighthouse) to run Lighthouse audits on competitor sites, testing both search pages and article/detail pages.
+The test suite uses native Playwright Performance APIs to measure performance metrics on competitor sites, testing both search pages and article/detail pages.
 
 ### Competitors Tested
 
@@ -40,8 +38,8 @@ The test suite uses [playwright-lighthouse](https://github.com/abhinaba-ghosh/pl
 
 ## Files
 
-- `competitors-config.ts` - Configuration for competitor sites and Lighthouse settings
-- `lighthouse-utils.ts` - Utility functions for running audits and aggregating results
+- `competitors-config.ts` - Configuration for competitor sites and performance test settings
+- `performance-utils.ts` - Utility functions for measuring performance and aggregating results
 - `search-lighthouse.spec.ts` - Tests for search pages
 - `article-lighthouse.spec.ts` - Tests for article/detail pages
 
@@ -81,7 +79,7 @@ Generate an HTML page with interactive charts visualizing all metrics:
 pnpm charts:competitors
 ```
 
-This creates `lighthouse-results/lighthouse-charts.html` with:
+This creates `performance-results/performance-charts.html` with:
 - Bar charts for all collected metrics (Performance Score, LCP, TBT, CLS, TTFB, Page Weight, etc.)
 - Separate sections for search and article pages
 - **SciX (NASA SciX Explorer) highlighted in red** across all charts as the primary comparison baseline
@@ -94,27 +92,19 @@ Open the generated HTML file in your browser to explore the interactive charts.
 
 The test configuration in `competitors-config.ts` includes:
 
-- **Runs per URL**: 3 (configurable via `lighthouseConfig.runsPerUrl`)
-- **Lighthouse categories**: Performance, Accessibility, Best Practices, SEO
-- **Throttling**: Simulated 3G connection with 4x CPU slowdown (configurable)
+- **Runs per URL**: 3 (configurable via `performanceConfig.runsPerUrl`)
+- **Metrics**: Performance Score, Core Web Vitals (FCP, LCP, CLS, TBT, INP), Speed Index, TTI, TTFB, Page Weight
 - **Timeout**: 60 seconds per audit
+- **Measurement**: Native browser Performance APIs (Navigation Timing, Paint Timing, Resource Timing, PerformanceObserver)
 
 ### Customizing the configuration
 
 To adjust test parameters, edit `tests/competitors/competitors-config.ts`:
 
 ```typescript
-export const lighthouseConfig = {
+export const performanceConfig = {
   runsPerUrl: 3, // Change number of runs
-  lighthouseOptions: {
-    // Adjust Lighthouse settings
-    throttling: {
-      rttMs: 40,
-      throughputKbps: 10240,
-      cpuSlowdownMultiplier: 1,
-    },
-  },
-  timeout: 60000,
+  timeout: 60000, // Timeout in milliseconds
 };
 ```
 
@@ -122,34 +112,34 @@ export const lighthouseConfig = {
 
 ### Core Web Vitals
 
-- **FCP (First Contentful Paint)** - Time until first content is rendered
-- **LCP (Largest Contentful Paint)** - Time until largest content element is rendered
-- **CLS (Cumulative Layout Shift)** - Visual stability metric
-- **INP (Interaction to Next Paint)** - Responsiveness to user interactions (may not always be available)
+- **FCP (First Contentful Paint)** - Time until first content is rendered (Paint Timing API)
+- **LCP (Largest Contentful Paint)** - Time until largest content element is rendered (PerformanceObserver)
+- **CLS (Cumulative Layout Shift)** - Visual stability metric (PerformanceObserver)
+- **INP (Interaction to Next Paint)** - Responsiveness to user interactions (currently not measured by native APIs)
 
 ### Additional Metrics
 
-- **TBT (Total Blocking Time)** - Time the main thread was blocked
-- **Speed Index** - How quickly content is visually displayed
-- **TTI (Time to Interactive)** - Time until page is fully interactive
-- **Max Potential FID** - Estimated First Input Delay
-- **TTFB (Time to First Byte)** - Server response time
-- **Page Weight** - Total size of all resources downloaded (HTML, CSS, JS, images, fonts, etc.) in kilobytes
+- **TBT (Total Blocking Time)** - Time the main thread was blocked (estimated from long tasks)
+- **Speed Index** - How quickly content is visually displayed (estimated as LCP)
+- **TTI (Time to Interactive)** - Time until page is fully interactive (Navigation Timing API)
+- **TTFB (Time to First Byte)** - Server response time (Navigation Timing API)
+- **Page Weight** - Total size of all resources downloaded (HTML, CSS, JS, images, fonts, etc.) in kilobytes (Resource Timing API)
 
-> **Note on INP**: INP (Interaction to Next Paint) replaced FID as an official Core Web Vital in March 2024. However, INP requires actual user interactions during page load. Lighthouse simulates some interactions, but INP may not always be measurable for all pages. When INP is not available, it will show as "N/A" in the results.
+> **Note on Metrics**: These measurements use native browser Performance APIs which provide reliable, real-world performance data. Some metrics like INP require specialized measurement tools and are not available through standard Performance APIs. The performance score is calculated using a weighted formula similar to Lighthouse's scoring system.
 
-### Lighthouse Scores
+### Performance Scores
 
-Each category is scored 0-100:
+The performance score is calculated on a 0-1 scale (displayed as 0-100):
 
-- **Performance** - Page load performance
-- **Accessibility** - Accessibility best practices
-- **Best Practices** - Web development best practices
-- **SEO** - Search engine optimization
+- **Performance** - Calculated from Core Web Vitals using weighted scoring
+  - LCP (25%), FCP (10%), CLS (15%), TBT (25%)
+- **Accessibility** - Not currently measured (native APIs don't provide this)
+- **Best Practices** - Not currently measured (native APIs don't provide this)
+- **SEO** - Not currently measured (native APIs don't provide this)
 
 ## Results
 
-Results are saved to `lighthouse-results/` directory:
+Results are saved to `performance-results/` directory:
 
 ### Raw Results
 
@@ -210,12 +200,12 @@ Each aggregated result includes:
 Each time you run the tests, new result files are created with timestamps:
 
 ```
-lighthouse-results/
+performance-results/
 ├── search-pages-raw-2024-11-14T10-30-00.json
 ├── search-pages-aggregated-2024-11-14T10-30-00.json
 ├── article-pages-raw-2024-11-14T10-30-00.json
 ├── article-pages-aggregated-2024-11-14T10-30-00.json
-└── lighthouse-charts.html (updated each time)
+└── performance-charts.html (updated each time)
 ```
 
 ### Key points
@@ -252,11 +242,9 @@ To add a new competitor site:
 
 ## Troubleshooting
 
-### Chrome debugging port conflict
+### Browser stability issues
 
-If you see port 9222 errors, another Chrome instance may be using the debugging port. Close other Chrome instances or modify the port in `playwright.config.ts`.
-
-**Note**: The competitors project is configured to run with `workers: 1` (serial execution) because all Lighthouse tests share the same Chrome debugging port (9222). Running tests in parallel would cause port conflicts and timeouts.
+**Note**: The competitors project is configured to run with `workers: 1` (serial execution) to ensure stable performance measurements. Running tests in parallel may cause resource contention and unreliable results.
 
 ### Timeout errors
 
@@ -270,12 +258,12 @@ Tests automatically retry 2 times on failure, but if a site consistently times o
 
 ### Missing INP metrics
 
-INP (Interaction to Next Paint) requires user interactions during page load. If INP shows as "N/A" in results:
+INP (Interaction to Next Paint) is not currently measured by native Performance APIs. This metric:
 
-- This is normal for pages with minimal interactive elements
-- The test does simulate basic interactions (mouse movement, hover)
-- Consider the page may load so fast that no meaningful interactions occur
-- INP is most useful for slower, more interactive pages
+- Requires specialized measurement tools like Lighthouse or web-vitals library
+- Native browser APIs don't expose INP data directly
+- May be added in future updates using additional instrumentation
+- For now, use TBT (Total Blocking Time) as a proxy for interactivity performance
 
 ### Rate limiting
 

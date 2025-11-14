@@ -64,37 +64,15 @@ export const competitors: CompetitorSite[] = [
 ];
 
 /**
- * Lighthouse test configuration
+ * Performance test configuration (using native Playwright Performance APIs)
  */
-export const lighthouseConfig = {
+export const performanceConfig = {
   // Number of runs per URL for statistical significance
   runsPerUrl: 3,
 
-  // Lighthouse settings
-  lighthouseOptions: {
-    logLevel: 'info',
-    output: 'json',
-    onlyCategories: ['performance', 'accessibility', 'best-practices', 'seo'],
-    formFactor: 'desktop',
-    screenEmulation: {
-      mobile: false,
-      width: 1920,
-      height: 1080,
-      deviceScaleFactor: 1,
-      disabled: false,
-    },
-    throttling: {
-      rttMs: 40,
-      throughputKbps: 10240,
-      cpuSlowdownMultiplier: 1,
-    },
-  },
-
-  // Playwright-lighthouse specific options
-  playwrightOptions: {
-    port: 9222,
-  },
-
-  // Timeout for each lighthouse run (ms)
-  timeout: 120000,
+  // Timeout for each performance measurement (ms)
+  timeout: 60000,
 };
+
+// Legacy config for backward compatibility (deprecated - use performanceConfig)
+export const lighthouseConfig = performanceConfig;

@@ -1,11 +1,11 @@
 /**
- * Generates an HTML page with charts comparing Lighthouse results across competitors
+ * Generates an HTML page with charts comparing performance results across competitors
  */
 
 import * as fs from 'fs';
 import * as path from 'path';
 
-interface LighthouseResult {
+interface PerformanceResult {
   url: string;
   siteName: string;
   pageType: 'search' | 'article';
@@ -45,9 +45,9 @@ function findLatestResults(dir: string, pattern: string): string | null {
   return files.length > 0 ? path.join(dir, files[0]) : null;
 }
 
-function generateHTML(searchResults: LighthouseResult[], articleResults: LighthouseResult[]) {
+function generateHTML(searchResults: PerformanceResult[], articleResults: PerformanceResult[]) {
   // Group results by site name
-  const groupBySite = (results: LighthouseResult[]) => {
+  const groupBySite = (results: PerformanceResult[]) => {
     return results.reduce(
       (acc, result) => {
         if (!acc[result.siteName]) {
@@ -56,7 +56,7 @@ function generateHTML(searchResults: LighthouseResult[], articleResults: Lightho
         acc[result.siteName].push(result);
         return acc;
       },
-      {} as Record<string, LighthouseResult[]>,
+      {} as Record<string, PerformanceResult[]>,
     );
   };
 
@@ -91,8 +91,8 @@ function generateHTML(searchResults: LighthouseResult[], articleResults: Lightho
 
   // Generate datasets for each metric
   const createChartData = (
-    results: Record<string, LighthouseResult[]>,
-    metricGetter: (r: LighthouseResult) => number | undefined,
+    results: Record<string, PerformanceResult[]>,
+    metricGetter: (r: PerformanceResult) => number | undefined,
     label: string,
   ) => {
     return {
@@ -117,7 +117,7 @@ function generateHTML(searchResults: LighthouseResult[], articleResults: Lightho
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lighthouse Competitor Analysis</title>
+  <title>Performance Competitor Analysis</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <style>
     * {
@@ -256,7 +256,7 @@ function generateHTML(searchResults: LighthouseResult[], articleResults: Lightho
 </head>
 <body>
   <div class="container">
-    <h1>🚀 Lighthouse Competitor Analysis</h1>
+    <h1>🚀 Performance Competitor Analysis</h1>
     <p class="subtitle">Performance benchmarking across academic search platforms</p>
 
     <div class="legend-note">
@@ -285,7 +285,7 @@ function generateHTML(searchResults: LighthouseResult[], articleResults: Lightho
 
 function generatePageSection(
   title: string,
-  resultsBySite: Record<string, LighthouseResult[]>,
+  resultsBySite: Record<string, PerformanceResult[]>,
   allSites: string[],
   getColor: (site: string, alpha: number) => string,
   getBorderWidth: (site: string) => number,
@@ -358,16 +358,16 @@ function generatePageSection(
 }
 
 function generateChartScripts(
-  searchBySite: Record<string, LighthouseResult[]>,
-  articleBySite: Record<string, LighthouseResult[]>,
+  searchBySite: Record<string, PerformanceResult[]>,
+  articleBySite: Record<string, PerformanceResult[]>,
   allSites: string[],
   getColor: (site: string, alpha: number) => string,
   getBorderWidth: (site: string) => number,
 ) {
   const createChartScript = (
     canvasId: string,
-    resultsBySite: Record<string, LighthouseResult[]>,
-    metricGetter: (r: LighthouseResult) => number,
+    resultsBySite: Record<string, PerformanceResult[]>,
+    metricGetter: (r: PerformanceResult) => number,
     title: string,
     unit: string = '',
     decimals: number = 0,
@@ -566,7 +566,7 @@ function generateChartScripts(
 }
 
 function main() {
-  const resultsDir = path.join(process.cwd(), 'lighthouse-results');
+  const resultsDir = path.join(process.cwd(), 'performance-results');
 
   if (!fs.existsSync(resultsDir)) {
     console.error('No results directory found. Please run the tests first.');
@@ -581,10 +581,10 @@ function main() {
     process.exit(1);
   }
 
-  const searchResults: LighthouseResult[] = searchFile
+  const searchResults: PerformanceResult[] = searchFile
     ? JSON.parse(fs.readFileSync(searchFile, 'utf-8'))
     : [];
-  const articleResults: LighthouseResult[] = articleFile
+  const articleResults: PerformanceResult[] = articleFile
     ? JSON.parse(fs.readFileSync(articleFile, 'utf-8'))
     : [];
 
@@ -594,7 +594,7 @@ function main() {
 
   const html = generateHTML(searchResults, articleResults);
 
-  const outputPath = path.join(resultsDir, 'lighthouse-charts.html');
+  const outputPath = path.join(resultsDir, 'performance-charts.html');
   fs.writeFileSync(outputPath, html);
 
   console.log(`\n✅ Charts generated successfully!`);

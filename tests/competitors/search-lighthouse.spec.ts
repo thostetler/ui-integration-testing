@@ -3,38 +3,38 @@
  */
 
 import { test, expect } from '@playwright/test';
-import { competitors, lighthouseConfig } from './competitors-config';
+import { competitors, performanceConfig } from './competitors-config';
 import {
-  runLighthouseAudit,
-  saveLighthouseResults,
+  runPerformanceAudit,
+  savePerformanceResults,
   aggregateResults,
-  type LighthouseResult,
-} from './lighthouse-utils';
+  type PerformanceResult,
+} from './performance-utils';
 
-test.describe('Competitor Search Pages - Lighthouse Audits', () => {
-  const allResults: LighthouseResult[] = [];
+test.describe('Competitor Search Pages - Performance Audits', () => {
+  const allResults: PerformanceResult[] = [];
 
-  // Run lighthouse audits for each competitor's search page
+  // Run performance audits for each competitor's search page
   for (const competitor of competitors) {
     test.describe(`${competitor.name} - Search Page`, () => {
       // Run multiple times for statistical significance
-      for (let run = 1; run <= lighthouseConfig.runsPerUrl; run++) {
-        test(`Run ${run} - Lighthouse audit for ${competitor.name} search`, async ({
+      for (let run = 1; run <= performanceConfig.runsPerUrl; run++) {
+        test(`Run ${run} - Performance audit for ${competitor.name} search`, async ({
           page,
           browser,
         }, testInfo) => {
-          test.setTimeout(lighthouseConfig.timeout * 3);
+          test.setTimeout(performanceConfig.timeout * 3);
 
           if (run > 1) {
             await page.waitForTimeout(5000);
           }
 
           console.log(
-            `Running Lighthouse audit ${run}/${lighthouseConfig.runsPerUrl} for ${competitor.name} search page...`,
+            `Running performance audit ${run}/${performanceConfig.runsPerUrl} for ${competitor.name} search page...`,
           );
 
           try {
-            const result = await runLighthouseAudit(
+            const result = await runPerformanceAudit(
               page,
               competitor.search_url,
               competitor.name,
@@ -74,7 +74,7 @@ test.describe('Competitor Search Pages - Lighthouse Audits', () => {
             }
 
             // Attach the result to the test report
-            await testInfo.attach('lighthouse-result.json', {
+            await testInfo.attach('performance-result.json', {
               body: JSON.stringify(result, null, 2),
               contentType: 'application/json',
             });
@@ -83,7 +83,7 @@ test.describe('Competitor Search Pages - Lighthouse Audits', () => {
             expect(result.scores.performance).toBeGreaterThanOrEqual(0);
             expect(result.scores.accessibility).toBeGreaterThanOrEqual(0);
           } catch (error) {
-            console.error(`Error running Lighthouse audit for ${competitor.name}:`, error);
+            console.error(`Error running performance audit for ${competitor.name}:`, error);
             if (competitor.note) {
               console.log(`Note: ${competitor.note}`);
             }
@@ -100,11 +100,11 @@ test.describe('Competitor Search Pages - Lighthouse Audits', () => {
       const timestamp = new Date().toISOString().replace(/:/g, '-').split('.')[0];
 
       // Save raw results
-      saveLighthouseResults(allResults, `search-pages-raw-${timestamp}.json`);
+      savePerformanceResults(allResults, `search-pages-raw-${timestamp}.json`);
 
       // Calculate and save aggregated statistics
       const aggregated = aggregateResults(allResults);
-      saveLighthouseResults(aggregated as any, `search-pages-aggregated-${timestamp}.json`);
+      savePerformanceResults(aggregated as any, `search-pages-aggregated-${timestamp}.json`);
 
       // Print summary table
       console.log('\n\n=== SEARCH PAGES PERFORMANCE SUMMARY ===\n');

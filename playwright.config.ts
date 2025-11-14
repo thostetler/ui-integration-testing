@@ -83,7 +83,6 @@ export default defineConfig({
         launchOptions: {
           args: [
             '--use-gl=egl',
-            '--remote-debugging-port=9222',
             '--ignore-certificate-errors',
           ],
         },

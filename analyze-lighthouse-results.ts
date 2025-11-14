@@ -1,11 +1,11 @@
 /**
- * Script to analyze and compare Lighthouse results from competitor tests
+ * Script to analyze and compare performance results from competitor tests
  */
 
 import * as fs from 'fs';
 import * as path from 'path';
 
-interface LighthouseMetric {
+interface PerformanceMetric {
   mean: number;
   median: number;
   stdDev: number;
@@ -18,22 +18,22 @@ interface AggregatedResult {
   pageType: string;
   numberOfRuns: number;
   scores: {
-    performance: LighthouseMetric;
-    accessibility: LighthouseMetric;
-    bestPractices: LighthouseMetric;
-    seo: LighthouseMetric;
+    performance: PerformanceMetric;
+    accessibility: PerformanceMetric;
+    bestPractices: PerformanceMetric;
+    seo: PerformanceMetric;
   };
   metrics: {
-    firstContentfulPaint: LighthouseMetric;
-    largestContentfulPaint: LighthouseMetric;
-    totalBlockingTime: LighthouseMetric;
-    cumulativeLayoutShift: LighthouseMetric;
-    speedIndex: LighthouseMetric;
-    timeToInteractive: LighthouseMetric;
-    interactionToNextPaint?: LighthouseMetric;
-    maxPotentialFID?: LighthouseMetric;
-    timeToFirstByte?: LighthouseMetric;
-    totalByteWeight?: LighthouseMetric;
+    firstContentfulPaint: PerformanceMetric;
+    largestContentfulPaint: PerformanceMetric;
+    totalBlockingTime: PerformanceMetric;
+    cumulativeLayoutShift: PerformanceMetric;
+    speedIndex: PerformanceMetric;
+    timeToInteractive: PerformanceMetric;
+    interactionToNextPaint?: PerformanceMetric;
+    maxPotentialFID?: PerformanceMetric;
+    timeToFirstByte?: PerformanceMetric;
+    totalByteWeight?: PerformanceMetric;
   };
 }
 
@@ -52,7 +52,7 @@ function findLatestResults(dir: string, pattern: string): string | null {
 }
 
 function formatMetric(
-  metric: LighthouseMetric,
+  metric: PerformanceMetric,
   isScore: boolean = false,
   isBytes: boolean = false,
 ): string {
@@ -66,7 +66,7 @@ function formatMetric(
 }
 
 function analyzeResults() {
-  const resultsDir = path.join(process.cwd(), 'lighthouse-results');
+  const resultsDir = path.join(process.cwd(), 'performance-results');
 
   if (!fs.existsSync(resultsDir)) {
     console.error('No results directory found. Please run the tests first.');
@@ -81,7 +81,7 @@ function analyzeResults() {
     process.exit(1);
   }
 
-  console.log('\n=== COMPETITOR LIGHTHOUSE ANALYSIS ===\n');
+  console.log('\n=== COMPETITOR PERFORMANCE ANALYSIS ===\n');
 
   // Analyze search pages
   if (searchFile) {
