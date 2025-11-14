@@ -51,6 +51,23 @@ After running the tests, analyze and compare results:
 pnpm analyze:competitors
 ```
 
+### Generate interactive charts
+
+Generate an HTML page with interactive charts visualizing all metrics:
+
+```bash
+pnpm charts:competitors
+```
+
+This creates `lighthouse-results/lighthouse-charts.html` with:
+- Bar charts for all collected metrics (Performance Score, LCP, TBT, CLS, TTFB, Page Weight, etc.)
+- Separate sections for search and article pages
+- **SciX (NASA SciX Explorer) highlighted in red** across all charts as the primary comparison baseline
+- Responsive design with gradient styling
+- Averages calculated from all test runs
+
+Open the generated HTML file in your browser to explore the interactive charts.
+
 ## Test Configuration
 
 The test configuration in `competitors-config.ts` includes:
@@ -163,6 +180,35 @@ Each aggregated result includes:
 - Each test suite prints a summary table after completion
 - Individual test results are attached to Playwright test reports
 - Google Scholar only has search page tests (no dedicated article detail pages)
+
+## Multiple Test Runs
+
+### How results are stored
+
+Each time you run the tests, new result files are created with timestamps:
+
+```
+lighthouse-results/
+├── search-pages-raw-2024-11-14T10-30-00.json
+├── search-pages-aggregated-2024-11-14T10-30-00.json
+├── article-pages-raw-2024-11-14T10-30-00.json
+├── article-pages-aggregated-2024-11-14T10-30-00.json
+└── lighthouse-charts.html (updated each time)
+```
+
+### Key points
+
+- **Results don't accumulate** - Each test run creates separate timestamped files
+- **Analysis and charts use the latest results** - `analyze:competitors` and `charts:competitors` automatically use the most recent files
+- **Historical data is preserved** - Previous test runs remain in the directory for comparison
+- **No conflicts** - Running tests multiple times won't mess up your data; each run is independent
+
+### Comparing across runs
+
+To compare results across multiple test runs:
+1. Run tests at different times
+2. Compare the timestamped JSON files manually
+3. Each file contains complete data for that specific run
 
 ## Adding New Competitors
 

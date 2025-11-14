@@ -39,7 +39,8 @@
     "test:competitors": "playwright test --project competitors",
     "test:competitors:search": "playwright test --project competitors search-lighthouse.spec.ts",
     "test:competitors:article": "playwright test --project competitors article-lighthouse.spec.ts",
-    "analyze:competitors": "ts-node analyze-lighthouse-results.ts"
+    "analyze:competitors": "ts-node analyze-lighthouse-results.ts",
+    "charts:competitors": "ts-node generate-lighthouse-charts.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
