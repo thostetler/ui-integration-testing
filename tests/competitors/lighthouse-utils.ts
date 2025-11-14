@@ -27,6 +27,9 @@ export interface LighthouseResult {
     cumulativeLayoutShift: number;
     speedIndex: number;
     timeToInteractive: number;
+    interactionToNextPaint?: number;
+    maxPotentialFID?: number;
+    timeToFirstByte?: number;
   };
   rawReport?: any;
 }
@@ -44,6 +47,9 @@ export function extractLighthouseMetrics(auditResults: any): LighthouseResult['m
     cumulativeLayoutShift: audits['cumulative-layout-shift']?.numericValue || 0,
     speedIndex: audits['speed-index']?.numericValue || 0,
     timeToInteractive: audits['interactive']?.numericValue || 0,
+    interactionToNextPaint: audits['interaction-to-next-paint']?.numericValue,
+    maxPotentialFID: audits['max-potential-fid']?.numericValue,
+    timeToFirstByte: audits['server-response-time']?.numericValue,
   };
 }
 
@@ -182,6 +188,15 @@ export function aggregateResults(results: LighthouseResult[]) {
         ),
         speedIndex: calculateStats(runs.map((r) => r.metrics.speedIndex)),
         timeToInteractive: calculateStats(runs.map((r) => r.metrics.timeToInteractive)),
+        interactionToNextPaint: calculateStats(
+          runs.map((r) => r.metrics.interactionToNextPaint).filter((v) => v !== undefined) as number[],
+        ),
+        maxPotentialFID: calculateStats(
+          runs.map((r) => r.metrics.maxPotentialFID).filter((v) => v !== undefined) as number[],
+        ),
+        timeToFirstByte: calculateStats(
+          runs.map((r) => r.metrics.timeToFirstByte).filter((v) => v !== undefined) as number[],
+        ),
       },
     };
   });

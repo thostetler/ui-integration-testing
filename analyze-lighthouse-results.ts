@@ -30,6 +30,9 @@ interface AggregatedResult {
     cumulativeLayoutShift: LighthouseMetric;
     speedIndex: LighthouseMetric;
     timeToInteractive: LighthouseMetric;
+    interactionToNextPaint?: LighthouseMetric;
+    maxPotentialFID?: LighthouseMetric;
+    timeToFirstByte?: LighthouseMetric;
   };
 }
 
@@ -77,10 +80,20 @@ function analyzeResults() {
     console.log('📊 SEARCH PAGES COMPARISON\n');
     const searchResults: AggregatedResult[] = JSON.parse(fs.readFileSync(searchFile, 'utf-8'));
 
-    console.log('Site'.padEnd(25), '| Perf Score  | LCP (ms)    | TBT (ms)    | CLS');
-    console.log('-'.repeat(85));
+    console.log(
+      'Site'.padEnd(25),
+      '| Perf Score  | LCP (ms)    | INP (ms)    | CLS         | TTFB (ms)',
+    );
+    console.log('-'.repeat(105));
 
     searchResults.forEach((result) => {
+      const inp = result.metrics.interactionToNextPaint
+        ? formatMetric(result.metrics.interactionToNextPaint)
+        : 'N/A';
+      const ttfb = result.metrics.timeToFirstByte
+        ? formatMetric(result.metrics.timeToFirstByte)
+        : 'N/A';
+
       console.log(
         result.siteName.padEnd(25),
         '|',
@@ -88,9 +101,11 @@ function analyzeResults() {
         '|',
         formatMetric(result.metrics.largestContentfulPaint).padEnd(11),
         '|',
-        formatMetric(result.metrics.totalBlockingTime).padEnd(11),
+        inp.padEnd(11),
         '|',
-        formatMetric(result.metrics.cumulativeLayoutShift),
+        formatMetric(result.metrics.cumulativeLayoutShift).padEnd(11),
+        '|',
+        ttfb,
       );
     });
 
@@ -107,6 +122,16 @@ function analyzeResults() {
 
     console.log(`  Performance Score: ${bestPerf.siteName}`);
     console.log(`  LCP: ${bestLCP.siteName}`);
+
+    const withINP = searchResults.filter((r) => r.metrics.interactionToNextPaint);
+    if (withINP.length > 0) {
+      const bestINP = withINP.reduce((best, curr) =>
+        curr.metrics.interactionToNextPaint!.mean < best.metrics.interactionToNextPaint!.mean
+          ? curr
+          : best,
+      );
+      console.log(`  INP: ${bestINP.siteName}`);
+    }
   }
 
   console.log('\n');
@@ -116,10 +141,20 @@ function analyzeResults() {
     console.log('📄 ARTICLE PAGES COMPARISON\n');
     const articleResults: AggregatedResult[] = JSON.parse(fs.readFileSync(articleFile, 'utf-8'));
 
-    console.log('Site'.padEnd(25), '| Perf Score  | LCP (ms)    | TBT (ms)    | CLS');
-    console.log('-'.repeat(85));
+    console.log(
+      'Site'.padEnd(25),
+      '| Perf Score  | LCP (ms)    | INP (ms)    | CLS         | TTFB (ms)',
+    );
+    console.log('-'.repeat(105));
 
     articleResults.forEach((result) => {
+      const inp = result.metrics.interactionToNextPaint
+        ? formatMetric(result.metrics.interactionToNextPaint)
+        : 'N/A';
+      const ttfb = result.metrics.timeToFirstByte
+        ? formatMetric(result.metrics.timeToFirstByte)
+        : 'N/A';
+
       console.log(
         result.siteName.padEnd(25),
         '|',
@@ -127,9 +162,11 @@ function analyzeResults() {
         '|',
         formatMetric(result.metrics.largestContentfulPaint).padEnd(11),
         '|',
-        formatMetric(result.metrics.totalBlockingTime).padEnd(11),
+        inp.padEnd(11),
         '|',
-        formatMetric(result.metrics.cumulativeLayoutShift),
+        formatMetric(result.metrics.cumulativeLayoutShift).padEnd(11),
+        '|',
+        ttfb,
       );
     });
 
@@ -146,6 +183,16 @@ function analyzeResults() {
 
     console.log(`  Performance Score: ${bestPerf.siteName}`);
     console.log(`  LCP: ${bestLCP.siteName}`);
+
+    const withINP = articleResults.filter((r) => r.metrics.interactionToNextPaint);
+    if (withINP.length > 0) {
+      const bestINP = withINP.reduce((best, curr) =>
+        curr.metrics.interactionToNextPaint!.mean < best.metrics.interactionToNextPaint!.mean
+          ? curr
+          : best,
+      );
+      console.log(`  INP: ${bestINP.siteName}`);
+    }
   }
 
   console.log('\n📁 Detailed results saved in:', resultsDir);

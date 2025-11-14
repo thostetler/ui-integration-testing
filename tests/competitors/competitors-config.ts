@@ -6,7 +6,7 @@ export interface CompetitorSite {
   name: string;
   url: string;
   search_url: string;
-  article_url: string;
+  article_url: string | null;
   note?: string;
 }
 
@@ -21,42 +21,45 @@ export const competitors: CompetitorSite[] = [
   {
     name: 'INSPIRE-HEP',
     url: 'https://inspirehep.net',
-    search_url: 'https://inspirehep.net/literature?q=black+holes',
-    article_url: 'https://inspirehep.net/literature/2178285',
+    search_url:
+      'https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=black%20holes',
+    article_url: 'https://inspirehep.net/literature/3082719',
   },
   {
     name: 'Semantic Scholar',
     url: 'https://www.semanticscholar.org',
     search_url: 'https://www.semanticscholar.org/search?q=black+holes&sort=relevance',
-    article_url: 'https://www.semanticscholar.org/paper/a2cdc78e0b0c4e80e08a7a1e6e2e0e0e0e0e0e0',
+    article_url:
+      'https://www.semanticscholar.org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8',
   },
   {
     name: 'Google Scholar',
     url: 'https://scholar.google.com',
     search_url: 'https://scholar.google.com/scholar?q=black+holes&hl=en&as_sdt=0,5',
-    article_url: 'https://scholar.google.com/scholar?cluster=1234567890&hl=en&as_sdt=0,5',
-  },
-  {
-    name: 'Scopus',
-    url: 'https://www.scopus.com',
-    search_url:
-      'https://www.scopus.com/results/results.uri?sort=plf-f&src=s&st1=black+holes&nlo=&nlr=&nls=',
-    article_url: 'https://www.scopus.com/record/display.uri?eid=2-s2.0-12345678901234',
-    note: 'Scopus requires institutional subscription for full access',
-  },
-  {
-    name: 'Web of Science',
-    url: 'https://www.webofscience.com',
-    search_url: 'https://www.webofscience.com/wos/woscc/search?q=black+holes&woscc=true',
-    article_url: 'https://www.webofscience.com/wos/alldb/full-record/WOS:000123456789',
-    note: 'Web of Science requires institutional subscription',
+    article_url: null,
+    note: 'Google Scholar search results link directly to publisher full-text; no dedicated article details page',
   },
   {
     name: 'SciX (NASA SciX Explorer)',
-    url: 'https://scix.org',
-    search_url: 'https://scix.org/search?q=black+holes&sort=date',
-    article_url: 'https://scix.org/record/arxiv:2301.12345',
+    url: 'https://scixplorer.org',
+    search_url:
+      'https://scixplorer.org/search?n=10&p=1&q=black+holes&sort=score+desc&sort=date+desc',
+    article_url: 'https://scixplorer.org/abs/2022ApJ...930L..12E/abstract',
     note: 'SciX is the modernized successor to ADS',
+  },
+  {
+    name: 'GeoScience World',
+    url: 'https://pubs.geoscienceworld.org',
+    search_url:
+      'https://pubs.geoscienceworld.org/search-results?page=1&quicknav=1&q=black%20holes',
+    article_url:
+      'https://pubs.geoscienceworld.org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a?redirectedFrom=fulltext#15102376',
+  },
+  {
+    name: 'PubMed',
+    url: 'https://pubmed.ncbi.nlm.nih.gov',
+    search_url: 'https://pubmed.ncbi.nlm.nih.gov/?term=black+holes',
+    article_url: 'https://pubmed.ncbi.nlm.nih.gov/36949335/',
   },
 ];
 

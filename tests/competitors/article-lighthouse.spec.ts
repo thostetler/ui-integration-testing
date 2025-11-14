@@ -14,8 +14,11 @@ import {
 test.describe('Competitor Article Pages - Lighthouse Audits', () => {
   const allResults: LighthouseResult[] = [];
 
+  // Filter out competitors without article URLs
+  const competitorsWithArticles = competitors.filter((c) => c.article_url !== null);
+
   // Run lighthouse audits for each competitor's article page
-  for (const competitor of competitors) {
+  for (const competitor of competitorsWithArticles) {
     test.describe(`${competitor.name} - Article Page`, () => {
       // Run multiple times for statistical significance
       for (let run = 1; run <= lighthouseConfig.runsPerUrl; run++) {
@@ -32,7 +35,7 @@ test.describe('Competitor Article Pages - Lighthouse Audits', () => {
           try {
             const result = await runLighthouseAudit(
               page,
-              competitor.article_url,
+              competitor.article_url!,
               competitor.name,
               'article',
               run,
@@ -51,10 +54,20 @@ test.describe('Competitor Article Pages - Lighthouse Audits', () => {
             console.log(`\n  Core Web Vitals:`);
             console.log(`    FCP: ${result.metrics.firstContentfulPaint.toFixed(0)}ms`);
             console.log(`    LCP: ${result.metrics.largestContentfulPaint.toFixed(0)}ms`);
-            console.log(`    TBT: ${result.metrics.totalBlockingTime.toFixed(0)}ms`);
             console.log(`    CLS: ${result.metrics.cumulativeLayoutShift.toFixed(3)}`);
+            if (result.metrics.interactionToNextPaint !== undefined) {
+              console.log(`    INP: ${result.metrics.interactionToNextPaint.toFixed(0)}ms`);
+            }
+            console.log(`\n  Other Metrics:`);
+            console.log(`    TBT: ${result.metrics.totalBlockingTime.toFixed(0)}ms`);
             console.log(`    Speed Index: ${result.metrics.speedIndex.toFixed(0)}ms`);
             console.log(`    TTI: ${result.metrics.timeToInteractive.toFixed(0)}ms`);
+            if (result.metrics.maxPotentialFID !== undefined) {
+              console.log(`    Max Potential FID: ${result.metrics.maxPotentialFID.toFixed(0)}ms`);
+            }
+            if (result.metrics.timeToFirstByte !== undefined) {
+              console.log(`    TTFB: ${result.metrics.timeToFirstByte.toFixed(0)}ms`);
+            }
 
             // Attach the result to the test report
             await testInfo.attach('lighthouse-result.json', {
@@ -96,24 +109,31 @@ test.describe('Competitor Article Pages - Lighthouse Audits', () => {
         'Site'.padEnd(25),
         'Perf Score'.padEnd(12),
         'LCP (ms)'.padEnd(12),
-        'TBT (ms)'.padEnd(12),
-        'CLS',
+        'INP (ms)'.padEnd(12),
+        'CLS'.padEnd(8),
+        'TTFB (ms)',
       );
-      console.log('-'.repeat(75));
+      console.log('-'.repeat(85));
 
       for (const agg of aggregated) {
         if (agg.pageType === 'article') {
           const perfScore = (agg.scores.performance.mean * 100).toFixed(1);
           const lcp = agg.metrics.largestContentfulPaint.mean.toFixed(0);
-          const tbt = agg.metrics.totalBlockingTime.mean.toFixed(0);
+          const inp = agg.metrics.interactionToNextPaint?.mean
+            ? agg.metrics.interactionToNextPaint.mean.toFixed(0)
+            : 'N/A';
           const cls = agg.metrics.cumulativeLayoutShift.mean.toFixed(3);
+          const ttfb = agg.metrics.timeToFirstByte?.mean
+            ? agg.metrics.timeToFirstByte.mean.toFixed(0)
+            : 'N/A';
 
           console.log(
             agg.siteName.padEnd(25),
             perfScore.padEnd(12),
             lcp.padEnd(12),
-            tbt.padEnd(12),
-            cls,
+            inp.toString().padEnd(12),
+            cls.padEnd(8),
+            ttfb,
           );
         }
       }
