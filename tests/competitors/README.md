@@ -2,6 +2,28 @@
 
 This directory contains Lighthouse performance tests for competitor academic search platforms. The tests measure Core Web Vitals and other performance metrics to establish a baseline for comparison.
 
+## ⚠️ Environment Requirements
+
+**IMPORTANT: These tests are designed to run locally on your development machine.**
+
+Lighthouse requires significant system resources and stable browser control. In containerized/CI environments, you may encounter:
+- Browser crashes ("Page crashed" errors)
+- Resource exhaustion
+- Timeout issues
+- Port conflicts
+
+**Recommended setup:**
+- Run tests on your local machine (Mac, Linux, or Windows with WSL)
+- Ensure Chrome/Chromium is properly installed
+- Have at least 4GB RAM available
+- Close other resource-intensive applications
+
+**Configuration optimizations:**
+- Tests run sequentially (1 worker) to avoid port 9222 conflicts
+- 3-minute timeout per test
+- Performance-only audits for speed
+- No network throttling in controlled environment
+
 ## Overview
 
 The test suite uses [playwright-lighthouse](https://github.com/abhinaba-ghosh/playwright-lighthouse) to run Lighthouse audits on competitor sites, testing both search pages and article/detail pages.

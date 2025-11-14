@@ -65,9 +65,9 @@ export function extractLighthouseScores(
 
   return {
     performance: categories.performance?.score || 0,
-    accessibility: categories.accessibility?.score || 0,
-    bestPractices: categories['best-practices']?.score || 0,
-    seo: categories.seo?.score || 0,
+    accessibility: categories.accessibility?.score ?? 0,
+    bestPractices: categories['best-practices']?.score ?? 0,
+    seo: categories.seo?.score ?? 0,
   };
 }
 
@@ -148,13 +148,16 @@ export async function runLighthouseAudit(
       }
 
       await page.goto(url, {
-        waitUntil: 'domcontentloaded',
+        waitUntil: 'networkidle',
         timeout: lighthouseConfig.timeout,
       });
 
+      // Give page a moment to settle
+      await page.waitForTimeout(1000);
+
       await handlePageInterferences(page);
 
-      await page.waitForTimeout(3000);
+      await page.waitForTimeout(1000);
 
       await simulateUserInteractions(page);
 

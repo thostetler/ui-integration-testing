@@ -26,10 +26,10 @@ test.describe('Competitor Article Pages - Lighthouse Audits', () => {
           page,
           browser,
         }, testInfo) => {
-          test.setTimeout(lighthouseConfig.timeout * 3);
+          test.setTimeout(180000); // 3 minute timeout per test
 
           if (run > 1) {
-            await page.waitForTimeout(3000);
+            await page.waitForTimeout(1000); // Brief delay between runs
           }
 
           console.log(

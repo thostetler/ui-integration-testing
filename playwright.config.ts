@@ -85,10 +85,15 @@ export default defineConfig({
             '--use-gl=egl',
             '--remote-debugging-port=9222', // Required for lighthouse
             '--ignore-certificate-errors', // Additional flag for certificate issues
+            '--disable-dev-shm-usage', // Overcome limited resource problems
+            '--no-sandbox', // Additional stability for containerized environments
           ],
         },
       },
       testDir: './tests/competitors',
+      fullyParallel: false, // Run tests sequentially to avoid port conflicts
+      workers: 1, // Only one worker to prevent browser/lighthouse conflicts
+      timeout: 180000, // 3 minutes per test
     },
   ],
 });

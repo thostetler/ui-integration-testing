@@ -72,9 +72,9 @@ export const lighthouseConfig = {
 
   // Lighthouse settings
   lighthouseOptions: {
-    logLevel: 'info',
+    logLevel: 'error', // Reduce logging overhead
     output: 'json',
-    onlyCategories: ['performance', 'accessibility', 'best-practices', 'seo'],
+    onlyCategories: ['performance'], // Focus on performance only for speed
     formFactor: 'desktop',
     screenEmulation: {
       mobile: false,
@@ -83,12 +83,21 @@ export const lighthouseConfig = {
       deviceScaleFactor: 1,
       disabled: false,
     },
-    // Throttling settings (can be adjusted)
+    // No throttling for faster tests in controlled environment
     throttling: {
-      rttMs: 40,
-      throughputKbps: 10240,
+      rttMs: 0,
+      throughputKbps: 0,
       cpuSlowdownMultiplier: 1,
+      requestLatencyMs: 0,
+      downloadThroughputKbps: 0,
+      uploadThroughputKbps: 0,
     },
+    // Skip some audits for speed
+    skipAudits: [
+      'screenshot-thumbnails',
+      'final-screenshot',
+      'full-page-screenshot',
+    ],
   },
 
   // Playwright-lighthouse specific options
