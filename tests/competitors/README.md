@@ -256,6 +256,8 @@ To add a new competitor site:
 
 If you see port 9222 errors, another Chrome instance may be using the debugging port. Close other Chrome instances or modify the port in `playwright.config.ts`.
 
+**Note**: The competitors project is configured to run with `workers: 1` (serial execution) because all Lighthouse tests share the same Chrome debugging port (9222). Running tests in parallel would cause port conflicts and timeouts.
+
 ### Timeout errors
 
 Some sites may be slow or have long load times. Increase the timeout in `competitors-config.ts`:

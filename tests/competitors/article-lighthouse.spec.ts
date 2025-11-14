@@ -26,10 +26,10 @@ test.describe('Competitor Article Pages - Lighthouse Audits', () => {
           page,
           browser,
         }, testInfo) => {
-          test.setTimeout(180000); // 3 minute timeout per test
+          test.setTimeout(lighthouseConfig.timeout * 3);
 
           if (run > 1) {
-            await page.waitForTimeout(1000); // Brief delay between runs
+            await page.waitForTimeout(5000);
           }
 
           console.log(
@@ -87,7 +87,6 @@ test.describe('Competitor Article Pages - Lighthouse Audits', () => {
             expect(result.scores.accessibility).toBeGreaterThanOrEqual(0);
           } catch (error) {
             console.error(`Error running Lighthouse audit for ${competitor.name}:`, error);
-            // Add note if there was an error
             if (competitor.note) {
               console.log(`Note: ${competitor.note}`);
             }

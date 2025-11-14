@@ -16,7 +16,7 @@ export const competitors: CompetitorSite[] = [
     url: 'https://arxiv.org',
     search_url:
       'https://arxiv.org/search/?query=black+holes&searchtype=all&abstracts=show&order=-announced_date_first&size=25',
-    article_url: 'https://arxiv.org/abs/2301.12345',
+    article_url: 'https://arxiv.org/abs/0704.0001',
   },
   {
     name: 'INSPIRE-HEP',
@@ -72,9 +72,9 @@ export const lighthouseConfig = {
 
   // Lighthouse settings
   lighthouseOptions: {
-    logLevel: 'error', // Reduce logging overhead
+    logLevel: 'info',
     output: 'json',
-    onlyCategories: ['performance'], // Focus on performance only for speed
+    onlyCategories: ['performance', 'accessibility', 'best-practices', 'seo'],
     formFactor: 'desktop',
     screenEmulation: {
       mobile: false,
@@ -83,21 +83,11 @@ export const lighthouseConfig = {
       deviceScaleFactor: 1,
       disabled: false,
     },
-    // No throttling for faster tests in controlled environment
     throttling: {
-      rttMs: 0,
-      throughputKbps: 0,
+      rttMs: 40,
+      throughputKbps: 10240,
       cpuSlowdownMultiplier: 1,
-      requestLatencyMs: 0,
-      downloadThroughputKbps: 0,
-      uploadThroughputKbps: 0,
     },
-    // Skip some audits for speed
-    skipAudits: [
-      'screenshot-thumbnails',
-      'final-screenshot',
-      'full-page-screenshot',
-    ],
   },
 
   // Playwright-lighthouse specific options
@@ -106,5 +96,5 @@ export const lighthouseConfig = {
   },
 
   // Timeout for each lighthouse run (ms)
-  timeout: 60000,
+  timeout: 120000,
 };

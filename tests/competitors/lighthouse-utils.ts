@@ -65,9 +65,9 @@ export function extractLighthouseScores(
 
   return {
     performance: categories.performance?.score || 0,
-    accessibility: categories.accessibility?.score ?? 0,
-    bestPractices: categories['best-practices']?.score ?? 0,
-    seo: categories.seo?.score ?? 0,
+    accessibility: categories.accessibility?.score || 0,
+    bestPractices: categories['best-practices']?.score || 0,
+    seo: categories.seo?.score || 0,
   };
 }
 
@@ -147,20 +147,23 @@ export async function runLighthouseAudit(
         await page.waitForTimeout(5000);
       }
 
+      console.log(`    Navigating to ${url}...`);
       await page.goto(url, {
-        waitUntil: 'networkidle',
+        waitUntil: 'load',
         timeout: lighthouseConfig.timeout,
       });
-
-      // Give page a moment to settle
-      await page.waitForTimeout(1000);
+      await page.waitForLoadState('domcontentloaded');
+      console.log(`    Navigation complete`);
 
       await handlePageInterferences(page);
 
-      await page.waitForTimeout(1000);
+      await page.waitForTimeout(2000);
 
       await simulateUserInteractions(page);
 
+      await page.waitForTimeout(1000);
+
+      console.log(`    Starting Lighthouse audit...`);
       const auditResults = await playAudit({
         page,
         port: lighthouseConfig.playwrightOptions.port,
@@ -172,6 +175,7 @@ export async function runLighthouseAudit(
         },
         opts: lighthouseConfig.lighthouseOptions,
       });
+      console.log(`    Lighthouse audit complete`);
 
       const result: LighthouseResult = {
         url,
@@ -184,10 +188,21 @@ export async function runLighthouseAudit(
         rawReport: auditResults,
       };
 
+      await page.goto('about:blank');
+      console.log(`    Page reset to about:blank`);
+
       return result;
     } catch (error) {
       lastError = error as Error;
       console.error(`    Attempt ${attempt + 1} failed:`, error.message);
+      console.error(`    Error stack:`, error.stack);
+
+      try {
+        await page.goto('about:blank');
+        console.log(`    Page reset after error`);
+      } catch (resetError) {
+        console.error(`    Failed to reset page:`, resetError);
+      }
 
       if (attempt === retries) {
         throw new Error(
