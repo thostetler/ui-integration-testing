@@ -84,6 +84,11 @@ export default defineConfig({
           args: [
             '--use-gl=egl',
             '--ignore-certificate-errors',
+            '--disable-dev-shm-usage',
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-gpu',
+            '--disable-software-rasterizer',
           ],
         },
       },

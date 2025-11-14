@@ -210,7 +210,13 @@ export async function runPerformanceAudit(
     try {
       if (attempt > 0) {
         console.log(`    Retry attempt ${attempt}/${retries}...`);
-        await page.waitForTimeout(3000);
+        // Wait before retry, but handle case where page might be closed
+        try {
+          await page.waitForTimeout(3000);
+        } catch (waitError) {
+          // Page might be closed, continue to navigation
+          console.log(`    Page closed, continuing to navigation...`);
+        }
       }
 
       // Navigate to the page
