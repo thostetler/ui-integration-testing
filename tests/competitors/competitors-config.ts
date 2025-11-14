@@ -75,6 +75,14 @@ export const lighthouseConfig = {
     logLevel: 'info',
     output: 'json',
     onlyCategories: ['performance', 'accessibility', 'best-practices', 'seo'],
+    formFactor: 'desktop',
+    screenEmulation: {
+      mobile: false,
+      width: 1920,
+      height: 1080,
+      deviceScaleFactor: 1,
+      disabled: false,
+    },
     // Throttling settings (can be adjusted)
     throttling: {
       rttMs: 40,

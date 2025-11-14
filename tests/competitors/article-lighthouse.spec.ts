@@ -26,7 +26,11 @@ test.describe('Competitor Article Pages - Lighthouse Audits', () => {
           page,
           browser,
         }, testInfo) => {
-          test.setTimeout(lighthouseConfig.timeout * 2);
+          test.setTimeout(lighthouseConfig.timeout * 3);
+
+          if (run > 1) {
+            await page.waitForTimeout(3000);
+          }
 
           console.log(
             `Running Lighthouse audit ${run}/${lighthouseConfig.runsPerUrl} for ${competitor.name} article page...`,

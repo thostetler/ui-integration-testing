@@ -70,6 +70,62 @@ export function extractLighthouseScores(
 }
 
 /**
+ * Handles common page elements that might interfere with testing
+ */
+async function handlePageInterferences(page: Page) {
+  try {
+    const commonSelectors = [
+      'button:has-text("Accept")',
+      'button:has-text("Agree")',
+      'button:has-text("I agree")',
+      'button:has-text("Accept all")',
+      'button:has-text("Continue")',
+      '[aria-label*="cookie" i] button',
+      '[aria-label*="consent" i] button',
+      '.cookie-banner button',
+      '#onetrust-accept-btn-handler',
+    ];
+
+    for (const selector of commonSelectors) {
+      try {
+        const button = await page.locator(selector).first();
+        if (await button.isVisible({ timeout: 1000 })) {
+          await button.click({ timeout: 1000 });
+          console.log(`    Clicked consent/popup: ${selector}`);
+          await page.waitForTimeout(500);
+          break;
+        }
+      } catch {
+        continue;
+      }
+    }
+  } catch (error) {
+    console.log('    No consent popups detected');
+  }
+}
+
+/**
+ * Simulates user interactions to help trigger INP measurements
+ */
+async function simulateUserInteractions(page: Page) {
+  try {
+    await page.mouse.move(100, 100);
+    await page.waitForTimeout(100);
+
+    const interactiveElements = await page.locator('a, button, input').all();
+    if (interactiveElements.length > 0) {
+      const element = interactiveElements[0];
+      if (await element.isVisible({ timeout: 1000 })) {
+        await element.hover();
+        await page.waitForTimeout(100);
+      }
+    }
+  } catch (error) {
+    console.log('    Could not simulate interactions');
+  }
+}
+
+/**
  * Runs a single Lighthouse audit on a page
  */
 export async function runLighthouseAudit(
@@ -78,36 +134,65 @@ export async function runLighthouseAudit(
   siteName: string,
   pageType: 'search' | 'article',
   runNumber: number,
+  retries: number = 2,
 ): Promise<LighthouseResult> {
-  await page.goto(url, { waitUntil: 'networkidle', timeout: lighthouseConfig.timeout });
+  let lastError: Error | null = null;
 
-  // Wait a bit for any lazy-loaded content
-  await page.waitForTimeout(2000);
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      if (attempt > 0) {
+        console.log(`    Retry attempt ${attempt}/${retries}...`);
+        await page.waitForTimeout(5000);
+      }
 
-  const auditResults = await playAudit({
-    page,
-    port: lighthouseConfig.playwrightOptions.port,
-    thresholds: {
-      performance: 0, // Don't fail tests based on thresholds
-      accessibility: 0,
-      'best-practices': 0,
-      seo: 0,
-    },
-    opts: lighthouseConfig.lighthouseOptions,
-  });
+      await page.goto(url, {
+        waitUntil: 'domcontentloaded',
+        timeout: lighthouseConfig.timeout,
+      });
 
-  const result: LighthouseResult = {
-    url,
-    siteName,
-    pageType,
-    runNumber,
-    timestamp: new Date().toISOString(),
-    scores: extractLighthouseScores(auditResults),
-    metrics: extractLighthouseMetrics(auditResults),
-    rawReport: auditResults,
-  };
+      await handlePageInterferences(page);
 
-  return result;
+      await page.waitForTimeout(3000);
+
+      await simulateUserInteractions(page);
+
+      const auditResults = await playAudit({
+        page,
+        port: lighthouseConfig.playwrightOptions.port,
+        thresholds: {
+          performance: 0,
+          accessibility: 0,
+          'best-practices': 0,
+          seo: 0,
+        },
+        opts: lighthouseConfig.lighthouseOptions,
+      });
+
+      const result: LighthouseResult = {
+        url,
+        siteName,
+        pageType,
+        runNumber,
+        timestamp: new Date().toISOString(),
+        scores: extractLighthouseScores(auditResults),
+        metrics: extractLighthouseMetrics(auditResults),
+        rawReport: auditResults,
+      };
+
+      return result;
+    } catch (error) {
+      lastError = error as Error;
+      console.error(`    Attempt ${attempt + 1} failed:`, error.message);
+
+      if (attempt === retries) {
+        throw new Error(
+          `Failed after ${retries + 1} attempts. Last error: ${lastError.message}`,
+        );
+      }
+    }
+  }
+
+  throw lastError!;
 }
 
 /**

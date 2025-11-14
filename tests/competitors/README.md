@@ -11,10 +11,10 @@ The test suite uses [playwright-lighthouse](https://github.com/abhinaba-ghosh/pl
 - **arXiv** - Physics preprint archive
 - **INSPIRE-HEP** - High-energy physics literature database
 - **Semantic Scholar** - AI-powered research tool
-- **Google Scholar** - Academic search engine
-- **Scopus** - Abstract and citation database (requires subscription)
-- **Web of Science** - Citation indexing service (requires subscription)
+- **Google Scholar** - Academic search engine (search only)
 - **SciX** - NASA's modernized successor to ADS
+- **GeoScience World** - Geoscience literature platform
+- **PubMed** - Biomedical literature database
 
 ## Files
 
@@ -85,13 +85,18 @@ export const lighthouseConfig = {
 
 - **FCP (First Contentful Paint)** - Time until first content is rendered
 - **LCP (Largest Contentful Paint)** - Time until largest content element is rendered
-- **TBT (Total Blocking Time)** - Time the main thread was blocked
 - **CLS (Cumulative Layout Shift)** - Visual stability metric
+- **INP (Interaction to Next Paint)** - Responsiveness to user interactions (may not always be available)
 
 ### Additional Metrics
 
+- **TBT (Total Blocking Time)** - Time the main thread was blocked
 - **Speed Index** - How quickly content is visually displayed
 - **TTI (Time to Interactive)** - Time until page is fully interactive
+- **Max Potential FID** - Estimated First Input Delay
+- **TTFB (Time to First Byte)** - Server response time
+
+> **Note on INP**: INP (Interaction to Next Paint) replaced FID as an official Core Web Vital in March 2024. However, INP requires actual user interactions during page load. Lighthouse simulates some interactions, but INP may not always be measurable for all pages. When INP is not available, it will show as "N/A" in the results.
 
 ### Lighthouse Scores
 
@@ -150,10 +155,13 @@ Each aggregated result includes:
 
 ## Notes
 
-- Some sites (Scopus, Web of Science) require institutional subscriptions and may show login/paywall pages
-- Tests may fail or show degraded performance for subscription-required sites
+- Tests automatically retry up to 2 times on failure to handle transient network issues
+- Cookie consent popups are automatically detected and accepted when possible
+- User interactions are simulated to help trigger INP measurements
+- A 3-second delay is added between test runs to prevent rate limiting
 - Each test suite prints a summary table after completion
 - Individual test results are attached to Playwright test reports
+- Google Scholar only has search page tests (no dedicated article detail pages)
 
 ## Adding New Competitors
 
@@ -187,6 +195,22 @@ Some sites may be slow or have long load times. Increase the timeout in `competi
 timeout: 120000, // 2 minutes
 ```
 
-### Subscription-required sites
+Tests automatically retry 2 times on failure, but if a site consistently times out, you may need to increase the timeout.
 
-Tests for Scopus and Web of Science may fail without institutional access. This is expected behavior.
+### Missing INP metrics
+
+INP (Interaction to Next Paint) requires user interactions during page load. If INP shows as "N/A" in results:
+
+- This is normal for pages with minimal interactive elements
+- The test does simulate basic interactions (mouse movement, hover)
+- Consider the page may load so fast that no meaningful interactions occur
+- INP is most useful for slower, more interactive pages
+
+### Rate limiting
+
+If tests fail with connection errors or 429 status codes:
+
+- Sites may be rate-limiting automated requests
+- Tests include 3-second delays between runs
+- Consider reducing `runsPerUrl` or adding longer delays
+- Some sites may block automated browsers entirely
