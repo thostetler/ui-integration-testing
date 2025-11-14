@@ -30,6 +30,7 @@ export interface LighthouseResult {
     interactionToNextPaint?: number;
     maxPotentialFID?: number;
     timeToFirstByte?: number;
+    totalByteWeight?: number;
   };
   rawReport?: any;
 }
@@ -50,6 +51,7 @@ export function extractLighthouseMetrics(auditResults: any): LighthouseResult['m
     interactionToNextPaint: audits['interaction-to-next-paint']?.numericValue,
     maxPotentialFID: audits['max-potential-fid']?.numericValue,
     timeToFirstByte: audits['server-response-time']?.numericValue,
+    totalByteWeight: audits['total-byte-weight']?.numericValue,
   };
 }
 
@@ -281,6 +283,9 @@ export function aggregateResults(results: LighthouseResult[]) {
         ),
         timeToFirstByte: calculateStats(
           runs.map((r) => r.metrics.timeToFirstByte).filter((v) => v !== undefined) as number[],
+        ),
+        totalByteWeight: calculateStats(
+          runs.map((r) => r.metrics.totalByteWeight).filter((v) => v !== undefined) as number[],
         ),
       },
     };

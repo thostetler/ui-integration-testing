@@ -72,6 +72,9 @@ test.describe('Competitor Article Pages - Lighthouse Audits', () => {
             if (result.metrics.timeToFirstByte !== undefined) {
               console.log(`    TTFB: ${result.metrics.timeToFirstByte.toFixed(0)}ms`);
             }
+            if (result.metrics.totalByteWeight !== undefined) {
+              console.log(`    Page Weight: ${(result.metrics.totalByteWeight / 1024).toFixed(1)} KB`);
+            }
 
             // Attach the result to the test report
             await testInfo.attach('lighthouse-result.json', {
@@ -115,9 +118,10 @@ test.describe('Competitor Article Pages - Lighthouse Audits', () => {
         'LCP (ms)'.padEnd(12),
         'INP (ms)'.padEnd(12),
         'CLS'.padEnd(8),
-        'TTFB (ms)',
+        'TTFB (ms)'.padEnd(12),
+        'Page Weight (KB)',
       );
-      console.log('-'.repeat(85));
+      console.log('-'.repeat(105));
 
       for (const agg of aggregated) {
         if (agg.pageType === 'article') {
@@ -130,6 +134,9 @@ test.describe('Competitor Article Pages - Lighthouse Audits', () => {
           const ttfb = agg.metrics.timeToFirstByte?.mean
             ? agg.metrics.timeToFirstByte.mean.toFixed(0)
             : 'N/A';
+          const pageWeight = agg.metrics.totalByteWeight?.mean
+            ? (agg.metrics.totalByteWeight.mean / 1024).toFixed(1)
+            : 'N/A';
 
           console.log(
             agg.siteName.padEnd(25),
@@ -137,7 +144,8 @@ test.describe('Competitor Article Pages - Lighthouse Audits', () => {
             lcp.padEnd(12),
             inp.toString().padEnd(12),
             cls.padEnd(8),
-            ttfb,
+            ttfb.toString().padEnd(12),
+            pageWeight,
           );
         }
       }

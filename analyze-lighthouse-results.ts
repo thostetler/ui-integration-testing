@@ -33,6 +33,7 @@ interface AggregatedResult {
     interactionToNextPaint?: LighthouseMetric;
     maxPotentialFID?: LighthouseMetric;
     timeToFirstByte?: LighthouseMetric;
+    totalByteWeight?: LighthouseMetric;
   };
 }
 
@@ -50,10 +51,17 @@ function findLatestResults(dir: string, pattern: string): string | null {
   return files.length > 0 ? path.join(dir, files[0]) : null;
 }
 
-function formatMetric(metric: LighthouseMetric, isScore: boolean = false): string {
-  const multiplier = isScore ? 100 : 1;
-  const mean = (metric.mean * multiplier).toFixed(isScore ? 1 : 0);
-  const stdDev = (metric.stdDev * multiplier).toFixed(isScore ? 1 : 0);
+function formatMetric(
+  metric: LighthouseMetric,
+  isScore: boolean = false,
+  isBytes: boolean = false,
+): string {
+  let multiplier = 1;
+  if (isScore) multiplier = 100;
+  if (isBytes) multiplier = 1 / 1024; // Convert bytes to KB
+
+  const mean = (metric.mean * multiplier).toFixed(isScore || isBytes ? 1 : 0);
+  const stdDev = (metric.stdDev * multiplier).toFixed(isScore || isBytes ? 1 : 0);
   return `${mean} (±${stdDev})`;
 }
 
@@ -82,9 +90,9 @@ function analyzeResults() {
 
     console.log(
       'Site'.padEnd(25),
-      '| Perf Score  | LCP (ms)    | INP (ms)    | CLS         | TTFB (ms)',
+      '| Perf Score  | LCP (ms)    | INP (ms)    | CLS         | TTFB (ms)   | Page (KB)',
     );
-    console.log('-'.repeat(105));
+    console.log('-'.repeat(125));
 
     searchResults.forEach((result) => {
       const inp = result.metrics.interactionToNextPaint
@@ -92,6 +100,9 @@ function analyzeResults() {
         : 'N/A';
       const ttfb = result.metrics.timeToFirstByte
         ? formatMetric(result.metrics.timeToFirstByte)
+        : 'N/A';
+      const pageWeight = result.metrics.totalByteWeight
+        ? formatMetric(result.metrics.totalByteWeight, false, true)
         : 'N/A';
 
       console.log(
@@ -105,7 +116,9 @@ function analyzeResults() {
         '|',
         formatMetric(result.metrics.cumulativeLayoutShift).padEnd(11),
         '|',
-        ttfb,
+        ttfb.padEnd(11),
+        '|',
+        pageWeight,
       );
     });
 
@@ -132,6 +145,14 @@ function analyzeResults() {
       );
       console.log(`  INP: ${bestINP.siteName}`);
     }
+
+    const withPageWeight = searchResults.filter((r) => r.metrics.totalByteWeight);
+    if (withPageWeight.length > 0) {
+      const lightestPage = withPageWeight.reduce((best, curr) =>
+        curr.metrics.totalByteWeight!.mean < best.metrics.totalByteWeight!.mean ? curr : best,
+      );
+      console.log(`  Smallest Page Weight: ${lightestPage.siteName}`);
+    }
   }
 
   console.log('\n');
@@ -143,9 +164,9 @@ function analyzeResults() {
 
     console.log(
       'Site'.padEnd(25),
-      '| Perf Score  | LCP (ms)    | INP (ms)    | CLS         | TTFB (ms)',
+      '| Perf Score  | LCP (ms)    | INP (ms)    | CLS         | TTFB (ms)   | Page (KB)',
     );
-    console.log('-'.repeat(105));
+    console.log('-'.repeat(125));
 
     articleResults.forEach((result) => {
       const inp = result.metrics.interactionToNextPaint
@@ -153,6 +174,9 @@ function analyzeResults() {
         : 'N/A';
       const ttfb = result.metrics.timeToFirstByte
         ? formatMetric(result.metrics.timeToFirstByte)
+        : 'N/A';
+      const pageWeight = result.metrics.totalByteWeight
+        ? formatMetric(result.metrics.totalByteWeight, false, true)
         : 'N/A';
 
       console.log(
@@ -166,7 +190,9 @@ function analyzeResults() {
         '|',
         formatMetric(result.metrics.cumulativeLayoutShift).padEnd(11),
         '|',
-        ttfb,
+        ttfb.padEnd(11),
+        '|',
+        pageWeight,
       );
     });
 
@@ -192,6 +218,14 @@ function analyzeResults() {
           : best,
       );
       console.log(`  INP: ${bestINP.siteName}`);
+    }
+
+    const withPageWeight = articleResults.filter((r) => r.metrics.totalByteWeight);
+    if (withPageWeight.length > 0) {
+      const lightestPage = withPageWeight.reduce((best, curr) =>
+        curr.metrics.totalByteWeight!.mean < best.metrics.totalByteWeight!.mean ? curr : best,
+      );
+      console.log(`  Smallest Page Weight: ${lightestPage.siteName}`);
     }
   }
 

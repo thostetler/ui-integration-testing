@@ -95,6 +95,7 @@ export const lighthouseConfig = {
 - **TTI (Time to Interactive)** - Time until page is fully interactive
 - **Max Potential FID** - Estimated First Input Delay
 - **TTFB (Time to First Byte)** - Server response time
+- **Page Weight** - Total size of all resources downloaded (HTML, CSS, JS, images, fonts, etc.) in kilobytes
 
 > **Note on INP**: INP (Interaction to Next Paint) replaced FID as an official Core Web Vital in March 2024. However, INP requires actual user interactions during page load. Lighthouse simulates some interactions, but INP may not always be measurable for all pages. When INP is not available, it will show as "N/A" in the results.
 
