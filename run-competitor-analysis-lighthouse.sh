@@ -88,7 +88,7 @@ cat > "${RESULT_DIR}/budget.json" <<EOF
     "timings": {
       "fullyLoaded": 5000,
       "largestContentfulPaint": 4000,
-      "speedIndex": 3000
+      "SpeedIndex": 3000
     },
     "requests": {
       "total": 150
