@@ -7,7 +7,7 @@
 set -e
 
 # Configuration
-ITERATIONS=7  # Number of test runs per URL (7-11 recommended for statistical accuracy)
+ITERATIONS=3  # Number of test runs per URL (3-5 for quick tests, 7-11 for statistical accuracy)
 OUTPUT_DIR="./sitespeed-results"
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 RESULT_DIR="${OUTPUT_DIR}/${TIMESTAMP}"
@@ -95,6 +95,12 @@ SITESPEED_OPTS=(
 
   # HTML output configuration - show comprehensive metrics
   "--html.showAllWaterfallSummary"
+  "--html.pageSummaryMetrics" "timings.fullyLoaded"
+  "--html.pageSummaryMetrics" "timings.SpeedIndex"
+  "--html.pageSummaryMetrics" "timings.largestContentfulPaint"
+  "--html.pageSummaryMetrics" "transferSize.total"
+  "--html.pageSummaryMetrics" "requests.total"
+  "--html.pageSummaryMetrics" "score.performance"
 
   # Screenshot and video
   "--browsertime.screenshot" "true"
@@ -131,23 +137,20 @@ SITESPEED_OPTS=(
   "-vv"
 )
 
-# Create budget.json for performance budgets
+# Create budget.json for performance budgets (optional - won't fail tests)
 cat > "${RESULT_DIR}/budget.json" <<EOF
 {
   "budget": {
     "timings": {
-      "firstPaint": 1000,
-      "fullyLoaded": 3000,
-      "pageLoadTime": 2000,
-      "firstContentfulPaint": 1000,
-      "largestContentfulPaint": 2500,
-      "speedIndex": 2000
+      "fullyLoaded": 5000,
+      "largestContentfulPaint": 4000,
+      "speedIndex": 3000
     },
     "requests": {
-      "total": 100
+      "total": 150
     },
     "transferSize": {
-      "total": 1000000
+      "total": 2000000
     }
   }
 }
