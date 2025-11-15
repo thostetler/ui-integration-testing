@@ -163,22 +163,23 @@ docker run --rm --shm-size=2g \
   --browsertime.chrome.args disable-dev-shm-usage \
   --budget.configPath /sitespeed.io/budget.json \
   --html.showAllWaterfallSummary \
-  --html.pageSummaryMetrics transferSize \
-  --html.pageSummaryMetrics contentSize \
-  --html.pageSummaryMetrics requests \
-  --html.pageSummaryMetrics fullyLoaded \
-  --html.pageSummaryMetrics backEndTime \
-  --html.pageSummaryMetrics frontEndTime \
-  --html.pageSummaryMetrics speedIndex \
-  --html.pageSummaryMetrics firstPaint \
-  --html.pageSummaryMetrics firstVisualChange \
-  --html.pageSummaryMetrics visualComplete85 \
-  --html.pageSummaryMetrics lastVisualChange \
-  --html.pageSummaryMetrics lighthouse.performance \
-  --html.pageSummaryMetrics lighthouse.accessibility \
-  --html.pageSummaryMetrics lighthouse.best-practices \
-  --html.pageSummaryMetrics lighthouse.seo \
-  --html.pageSummaryMetrics lighthouse.pwa \
+  --html.pageSummaryMetrics transferSize.total \
+  --html.pageSummaryMetrics contentSize.total \
+  --html.pageSummaryMetrics requests.total \
+  --html.pageSummaryMetrics timings.fullyLoaded \
+  --html.pageSummaryMetrics timings.backEndTime \
+  --html.pageSummaryMetrics timings.frontEndTime \
+  --html.pageSummaryMetrics timings.SpeedIndex \
+  --html.pageSummaryMetrics timings.firstPaint \
+  --html.pageSummaryMetrics timings.FirstVisualChange \
+  --html.pageSummaryMetrics timings.VisualComplete85 \
+  --html.pageSummaryMetrics timings.LastVisualChange \
+  --html.pageSummaryMetrics timings.largestContentfulPaint \
+  --html.pageSummaryMetrics timings.firstContentfulPaint \
+  --html.pageSummaryMetrics score.performance \
+  --html.pageSummaryMetrics score.accessibility \
+  --html.pageSummaryMetrics score.bestpractice \
+  --html.pageSummaryMetrics score.score \
   --browsertime.screenshot \
   --browsertime.screenshotParams.type png \
   --screenshot \
