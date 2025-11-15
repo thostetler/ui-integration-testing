@@ -3,19 +3,19 @@
  */
 
 import { test, expect } from '@playwright/test';
-import { lighthouseConfig } from './competitors-config';
-import { runLighthouseAudit, type LighthouseResult } from './lighthouse-utils';
+import { performanceConfig } from './competitors-config';
+import { runPerformanceAudit } from './performance-utils';
 
 test.describe('Single Competitor Test - Google Scholar', () => {
   test('Run Lighthouse audit on Google Scholar search', async ({ page }, testInfo) => {
-    test.setTimeout(lighthouseConfig.timeout * 3);
+    test.setTimeout(performanceConfig.timeout * 3);
 
     const competitorName = 'Google Scholar';
     const searchUrl = 'https://scholar.google.com/scholar?q=black+holes&hl=en&as_sdt=0,5';
 
     console.log(`Running Lighthouse audit for ${competitorName}...`);
 
-    const result = await runLighthouseAudit(page, searchUrl, competitorName, 'search', 1);
+    const result = await runPerformanceAudit(page, searchUrl, competitorName, 'search', 1);
 
     console.log(`\n${competitorName} Results:`);
     console.log(`  Performance Score: ${(result.scores.performance * 100).toFixed(1)}`);
@@ -37,7 +37,7 @@ test.describe('Single Competitor Test - Google Scholar', () => {
   });
 
   test('Run second Lighthouse audit on Google Scholar search', async ({ page }, testInfo) => {
-    test.setTimeout(lighthouseConfig.timeout * 3);
+    test.setTimeout(performanceConfig.timeout * 3);
 
     await page.waitForTimeout(5000);
 
@@ -46,7 +46,7 @@ test.describe('Single Competitor Test - Google Scholar', () => {
 
     console.log(`Running second Lighthouse audit for ${competitorName}...`);
 
-    const result = await runLighthouseAudit(page, searchUrl, competitorName, 'search', 2);
+    const result = await runPerformanceAudit(page, searchUrl, competitorName, 'search', 2);
 
     console.log(`\n${competitorName} Run 2 Results:`);
     console.log(`  Performance Score: ${(result.scores.performance * 100).toFixed(1)}`);

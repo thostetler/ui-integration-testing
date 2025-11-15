@@ -21,8 +21,7 @@ export const competitors: CompetitorSite[] = [
   {
     name: 'INSPIRE-HEP',
     url: 'https://inspirehep.net',
-    search_url:
-      'https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=black%20holes',
+    search_url: 'https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=black%20holes',
     article_url: 'https://inspirehep.net/literature/3082719',
   },
   {
@@ -42,16 +41,14 @@ export const competitors: CompetitorSite[] = [
   {
     name: 'SciX (NASA SciX Explorer)',
     url: 'https://scixplorer.org',
-    search_url:
-      'https://scixplorer.org/search?n=10&p=1&q=black+holes&sort=score+desc&sort=date+desc',
+    search_url: 'https://scixplorer.org/search?n=10&p=1&q=black+holes&sort=score+desc&sort=date+desc',
     article_url: 'https://scixplorer.org/abs/2022ApJ...930L..12E/abstract',
     note: 'SciX is the modernized successor to ADS',
   },
   {
     name: 'GeoScience World',
     url: 'https://pubs.geoscienceworld.org',
-    search_url:
-      'https://pubs.geoscienceworld.org/search-results?page=1&quicknav=1&q=black%20holes',
+    search_url: 'https://pubs.geoscienceworld.org/search-results?page=1&quicknav=1&q=black%20holes',
     article_url:
       'https://pubs.geoscienceworld.org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a?redirectedFrom=fulltext#15102376',
   },

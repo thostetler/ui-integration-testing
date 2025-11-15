@@ -19,10 +19,7 @@ test.describe('Competitor Search Pages - Performance Audits', () => {
     test.describe(`${competitor.name} - Search Page`, () => {
       // Run multiple times for statistical significance
       for (let run = 1; run <= performanceConfig.runsPerUrl; run++) {
-        test(`Run ${run} - Performance audit for ${competitor.name} search`, async ({
-          page,
-          browser,
-        }, testInfo) => {
+        test(`Run ${run} - Performance audit for ${competitor.name} search`, async ({ page }, testInfo) => {
           test.setTimeout(performanceConfig.timeout * 3);
 
           if (run > 1) {
@@ -34,22 +31,14 @@ test.describe('Competitor Search Pages - Performance Audits', () => {
           );
 
           try {
-            const result = await runPerformanceAudit(
-              page,
-              competitor.search_url,
-              competitor.name,
-              'search',
-              run,
-            );
+            const result = await runPerformanceAudit(page, competitor.search_url, competitor.name, 'search', run);
 
             allResults.push(result);
 
             // Log results
             console.log(`\n${competitor.name} Search Page - Run ${run} Results:`);
             console.log(`  Performance Score: ${(result.scores.performance * 100).toFixed(1)}`);
-            console.log(
-              `  Accessibility Score: ${(result.scores.accessibility * 100).toFixed(1)}`,
-            );
+            console.log(`  Accessibility Score: ${(result.scores.accessibility * 100).toFixed(1)}`);
             console.log(`  Best Practices Score: ${(result.scores.bestPractices * 100).toFixed(1)}`);
             console.log(`  SEO Score: ${(result.scores.seo * 100).toFixed(1)}`);
             console.log(`\n  Core Web Vitals:`);
@@ -104,7 +93,7 @@ test.describe('Competitor Search Pages - Performance Audits', () => {
 
       // Calculate and save aggregated statistics
       const aggregated = aggregateResults(allResults);
-      savePerformanceResults(aggregated as any, `search-pages-aggregated-${timestamp}.json`);
+      savePerformanceResults(aggregated, `search-pages-aggregated-${timestamp}.json`);
 
       // Print summary table
       console.log('\n\n=== SEARCH PAGES PERFORMANCE SUMMARY ===\n');
@@ -127,9 +116,7 @@ test.describe('Competitor Search Pages - Performance Audits', () => {
             ? agg.metrics.interactionToNextPaint.mean.toFixed(0)
             : 'N/A';
           const cls = agg.metrics.cumulativeLayoutShift.mean.toFixed(3);
-          const ttfb = agg.metrics.timeToFirstByte?.mean
-            ? agg.metrics.timeToFirstByte.mean.toFixed(0)
-            : 'N/A';
+          const ttfb = agg.metrics.timeToFirstByte?.mean ? agg.metrics.timeToFirstByte.mean.toFixed(0) : 'N/A';
           const pageWeight = agg.metrics.totalByteWeight?.mean
             ? (agg.metrics.totalByteWeight.mean / 1024).toFixed(1)
             : 'N/A';

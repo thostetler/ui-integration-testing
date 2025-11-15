@@ -8,6 +8,44 @@ import { performanceConfig } from './competitors-config';
 import * as fs from 'fs';
 import * as path from 'path';
 
+interface LongTask {
+  duration: number;
+  startTime: number;
+}
+
+interface LayoutShiftEntry {
+  value: number;
+  hadRecentInput: boolean;
+}
+
+interface PerformanceMetrics {
+  timeToFirstByte?: number;
+  domContentLoaded?: number;
+  loadComplete?: number;
+  firstContentfulPaint?: number;
+  totalByteWeight?: number;
+  resourceCount?: number;
+  largestContentfulPaint?: number;
+  cumulativeLayoutShift?: number;
+  totalBlockingTime?: number;
+  timeToInteractive?: number;
+  speedIndex?: number;
+}
+
+declare global {
+  interface Window {
+    __longTasks?: LongTask[];
+  }
+}
+
+interface MetricStats {
+  mean: number;
+  median: number;
+  stdDev: number;
+  min: number;
+  max: number;
+}
+
 export interface PerformanceResult {
   url: string;
   siteName: string;
@@ -32,7 +70,31 @@ export interface PerformanceResult {
     timeToFirstByte?: number;
     totalByteWeight?: number;
   };
-  rawReport?: any;
+  rawReport?: unknown;
+}
+
+export interface AggregatedPerformanceResult {
+  siteName: string;
+  pageType: string;
+  numberOfRuns: number;
+  scores: {
+    performance: MetricStats;
+    accessibility: MetricStats;
+    bestPractices: MetricStats;
+    seo: MetricStats;
+  };
+  metrics: {
+    firstContentfulPaint: MetricStats;
+    largestContentfulPaint: MetricStats;
+    totalBlockingTime: MetricStats;
+    cumulativeLayoutShift: MetricStats;
+    speedIndex: MetricStats;
+    timeToInteractive: MetricStats;
+    interactionToNextPaint: MetricStats;
+    maxPotentialFID: MetricStats;
+    timeToFirstByte: MetricStats;
+    totalByteWeight: MetricStats;
+  };
 }
 
 /**
@@ -46,7 +108,7 @@ function calculatePerformanceScore(metrics: PerformanceResult['metrics']): numbe
   const tbtScore = Math.max(0, Math.min(1, (600 - metrics.totalBlockingTime) / 400));
 
   // Weighted average similar to Lighthouse
-  return (lcpScore * 0.25 + fcpScore * 0.10 + clsScore * 0.15 + tbtScore * 0.25) / 0.75;
+  return (lcpScore * 0.25 + fcpScore * 0.1 + clsScore * 0.15 + tbtScore * 0.25) / 0.75;
 }
 
 /**
@@ -63,7 +125,7 @@ export async function measurePerformance(page: Page): Promise<PerformanceResult[
 
   // Collect performance metrics
   const metrics = await page.evaluate(() => {
-    const metrics: any = {};
+    const metrics: PerformanceMetrics = {};
 
     // Get Navigation Timing metrics
     const navTiming = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
@@ -75,7 +137,7 @@ export async function measurePerformance(page: Page): Promise<PerformanceResult[
 
     // Get Paint Timing metrics
     const paintEntries = performance.getEntriesByType('paint');
-    const fcpEntry = paintEntries.find(entry => entry.name === 'first-contentful-paint');
+    const fcpEntry = paintEntries.find((entry) => entry.name === 'first-contentful-paint');
     if (fcpEntry) {
       metrics.firstContentfulPaint = fcpEntry.startTime;
     }
@@ -94,7 +156,7 @@ export async function measurePerformance(page: Page): Promise<PerformanceResult[
       if (lcpEntries.length > 0) {
         largestContentfulPaint = lcpEntries[lcpEntries.length - 1].startTime;
       }
-    } catch (e) {
+    } catch {
       // LCP not available
     }
     metrics.largestContentfulPaint = largestContentfulPaint || metrics.firstContentfulPaint || 0;
@@ -102,13 +164,12 @@ export async function measurePerformance(page: Page): Promise<PerformanceResult[
     // Get Cumulative Layout Shift
     let cumulativeLayoutShift = 0;
     try {
-      const clsEntries = performance.getEntriesByType('layout-shift') as any[];
+      const clsEntries = performance.getEntriesByType('layout-shift') as unknown as LayoutShiftEntry[];
       cumulativeLayoutShift = clsEntries
-        .filter(entry => !entry.hadRecentInput)
+        .filter((entry) => !entry.hadRecentInput)
         .reduce((sum, entry) => sum + entry.value, 0);
-    } catch (e) {
+    } catch {
       // CLS not available
-      console.log('CLS measurement error:', e);
     }
     metrics.cumulativeLayoutShift = cumulativeLayoutShift;
 
@@ -116,14 +177,13 @@ export async function measurePerformance(page: Page): Promise<PerformanceResult[
     let totalBlockingTime = 0;
     try {
       // Check if window has longTaskEntries (set by addInitScript)
-      const longTasks = (window as any).__longTasks || [];
-      totalBlockingTime = longTasks.reduce((sum: number, task: any) => {
+      const longTasks = window.__longTasks || [];
+      totalBlockingTime = longTasks.reduce((sum: number, task: LongTask) => {
         const blockingTime = Math.max(0, task.duration - 50);
         return sum + blockingTime;
       }, 0);
-    } catch (e) {
+    } catch {
       // Long tasks not available
-      console.log('TBT measurement error:', e);
     }
     metrics.totalBlockingTime = totalBlockingTime;
     metrics.timeToInteractive = metrics.loadComplete || 0;
@@ -176,7 +236,7 @@ async function handlePageInterferences(page: Page) {
         continue;
       }
     }
-  } catch (error) {
+  } catch {
     // Silently continue if no popups found
   }
 }
@@ -201,7 +261,7 @@ export async function runPerformanceAudit(
         // Wait before retry, but handle case where page might be closed
         try {
           await page.waitForTimeout(3000);
-        } catch (waitError) {
+        } catch {
           // Page might be closed, continue to navigation
           console.log(`    Page closed, continuing to navigation...`);
         }
@@ -209,18 +269,18 @@ export async function runPerformanceAudit(
 
       // Set up long task observer before page loads
       await page.addInitScript(() => {
-        (window as any).__longTasks = [];
+        window.__longTasks = [];
         try {
           const observer = new PerformanceObserver((list) => {
             for (const entry of list.getEntries()) {
-              (window as any).__longTasks.push({
+              window.__longTasks!.push({
                 duration: entry.duration,
                 startTime: entry.startTime,
               });
             }
           });
           observer.observe({ entryTypes: ['longtask'] });
-        } catch (e) {
+        } catch {
           // Long task observer not supported
         }
       });
@@ -264,9 +324,7 @@ export async function runPerformanceAudit(
       console.error(`    Attempt ${attempt + 1} failed:`, error.message);
 
       if (attempt === retries) {
-        throw new Error(
-          `Failed after ${retries + 1} attempts. Last error: ${lastError.message}`,
-        );
+        throw new Error(`Failed after ${retries + 1} attempts. Last error: ${lastError.message}`);
       }
     }
   }
@@ -277,7 +335,7 @@ export async function runPerformanceAudit(
 /**
  * Saves performance results to a JSON file
  */
-export function savePerformanceResults(results: PerformanceResult[], filename: string) {
+export function savePerformanceResults(results: PerformanceResult[] | AggregatedPerformanceResult[], filename: string) {
   const resultsDir = path.join(process.cwd(), 'performance-results');
 
   if (!fs.existsSync(resultsDir)) {
@@ -299,8 +357,7 @@ export function calculateStats(values: number[]) {
   const sorted = [...values].sort((a, b) => a - b);
   const mean = values.reduce((sum, val) => sum + val, 0) / values.length;
   const median = sorted[Math.floor(sorted.length / 2)];
-  const variance =
-    values.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / values.length;
+  const variance = values.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / values.length;
   const stdDev = Math.sqrt(variance);
 
   return {
@@ -315,7 +372,7 @@ export function calculateStats(values: number[]) {
 /**
  * Aggregates results from multiple runs
  */
-export function aggregateResults(results: PerformanceResult[]) {
+export function aggregateResults(results: PerformanceResult[]): AggregatedPerformanceResult[] {
   const groupedBySiteAndType = results.reduce(
     (acc, result) => {
       const key = `${result.siteName}-${result.pageType}`;
@@ -343,13 +400,9 @@ export function aggregateResults(results: PerformanceResult[]) {
       },
       metrics: {
         firstContentfulPaint: calculateStats(runs.map((r) => r.metrics.firstContentfulPaint)),
-        largestContentfulPaint: calculateStats(
-          runs.map((r) => r.metrics.largestContentfulPaint),
-        ),
+        largestContentfulPaint: calculateStats(runs.map((r) => r.metrics.largestContentfulPaint)),
         totalBlockingTime: calculateStats(runs.map((r) => r.metrics.totalBlockingTime)),
-        cumulativeLayoutShift: calculateStats(
-          runs.map((r) => r.metrics.cumulativeLayoutShift),
-        ),
+        cumulativeLayoutShift: calculateStats(runs.map((r) => r.metrics.cumulativeLayoutShift)),
         speedIndex: calculateStats(runs.map((r) => r.metrics.speedIndex)),
         timeToInteractive: calculateStats(runs.map((r) => r.metrics.timeToInteractive)),
         interactionToNextPaint: calculateStats(
