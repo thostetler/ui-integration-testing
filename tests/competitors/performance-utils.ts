@@ -58,92 +58,80 @@ export async function measurePerformance(page: Page): Promise<PerformanceResult[
     console.log('    Network idle timeout, proceeding with measurements');
   });
 
-  // Inject web-vitals measurement script
+  // Wait a bit more for any layout shifts to settle
+  await page.waitForTimeout(1000);
+
+  // Collect performance metrics
   const metrics = await page.evaluate(() => {
-    return new Promise<any>((resolve) => {
-      const metrics: any = {};
+    const metrics: any = {};
 
-      // Get Navigation Timing metrics
-      const navTiming = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
-      if (navTiming) {
-        metrics.timeToFirstByte = navTiming.responseStart - navTiming.requestStart;
-        metrics.domContentLoaded = navTiming.domContentLoadedEventEnd - navTiming.fetchStart;
-        metrics.loadComplete = navTiming.loadEventEnd - navTiming.fetchStart;
+    // Get Navigation Timing metrics
+    const navTiming = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
+    if (navTiming) {
+      metrics.timeToFirstByte = navTiming.responseStart - navTiming.requestStart;
+      metrics.domContentLoaded = navTiming.domContentLoadedEventEnd - navTiming.fetchStart;
+      metrics.loadComplete = navTiming.loadEventEnd - navTiming.fetchStart;
+    }
+
+    // Get Paint Timing metrics
+    const paintEntries = performance.getEntriesByType('paint');
+    const fcpEntry = paintEntries.find(entry => entry.name === 'first-contentful-paint');
+    if (fcpEntry) {
+      metrics.firstContentfulPaint = fcpEntry.startTime;
+    }
+
+    // Get Resource Timing for page weight
+    const resources = performance.getEntriesByType('resource') as PerformanceResourceTiming[];
+    metrics.totalByteWeight = resources.reduce((total, resource) => {
+      return total + (resource.transferSize || 0);
+    }, 0);
+    metrics.resourceCount = resources.length;
+
+    // Get Largest Contentful Paint
+    let largestContentfulPaint = 0;
+    try {
+      const lcpEntries = performance.getEntriesByType('largest-contentful-paint');
+      if (lcpEntries.length > 0) {
+        largestContentfulPaint = lcpEntries[lcpEntries.length - 1].startTime;
       }
+    } catch (e) {
+      // LCP not available
+    }
+    metrics.largestContentfulPaint = largestContentfulPaint || metrics.firstContentfulPaint || 0;
 
-      // Get Paint Timing metrics
-      const paintEntries = performance.getEntriesByType('paint');
-      const fcpEntry = paintEntries.find(entry => entry.name === 'first-contentful-paint');
-      if (fcpEntry) {
-        metrics.firstContentfulPaint = fcpEntry.startTime;
-      }
+    // Get Cumulative Layout Shift
+    let cumulativeLayoutShift = 0;
+    try {
+      const clsEntries = performance.getEntriesByType('layout-shift') as any[];
+      cumulativeLayoutShift = clsEntries
+        .filter(entry => !entry.hadRecentInput)
+        .reduce((sum, entry) => sum + entry.value, 0);
+    } catch (e) {
+      // CLS not available
+      console.log('CLS measurement error:', e);
+    }
+    metrics.cumulativeLayoutShift = cumulativeLayoutShift;
 
-      // Get Resource Timing for page weight
-      const resources = performance.getEntriesByType('resource') as PerformanceResourceTiming[];
-      metrics.totalByteWeight = resources.reduce((total, resource) => {
-        return total + (resource.transferSize || 0);
+    // Calculate Total Blocking Time from long tasks
+    let totalBlockingTime = 0;
+    try {
+      // Check if window has longTaskEntries (set by addInitScript)
+      const longTasks = (window as any).__longTasks || [];
+      totalBlockingTime = longTasks.reduce((sum: number, task: any) => {
+        const blockingTime = Math.max(0, task.duration - 50);
+        return sum + blockingTime;
       }, 0);
-      metrics.resourceCount = resources.length;
+    } catch (e) {
+      // Long tasks not available
+      console.log('TBT measurement error:', e);
+    }
+    metrics.totalBlockingTime = totalBlockingTime;
+    metrics.timeToInteractive = metrics.loadComplete || 0;
 
-      // Measure Largest Contentful Paint using PerformanceObserver
-      let largestContentfulPaint = 0;
-      try {
-        const lcpObserver = new PerformanceObserver((list) => {
-          const entries = list.getEntries();
-          const lastEntry = entries[entries.length - 1];
-          largestContentfulPaint = lastEntry.startTime;
-        });
-        lcpObserver.observe({ type: 'largest-contentful-paint', buffered: true });
+    // Estimate Speed Index (simplified as time to visual completeness)
+    metrics.speedIndex = metrics.largestContentfulPaint || metrics.loadComplete || 0;
 
-        // Get buffered entries
-        const lcpEntries = performance.getEntriesByType('largest-contentful-paint');
-        if (lcpEntries.length > 0) {
-          largestContentfulPaint = lcpEntries[lcpEntries.length - 1].startTime;
-        }
-      } catch (e) {
-        // LCP not available
-      }
-      metrics.largestContentfulPaint = largestContentfulPaint || metrics.firstContentfulPaint || 0;
-
-      // Measure Cumulative Layout Shift
-      let cumulativeLayoutShift = 0;
-      try {
-        const clsObserver = new PerformanceObserver((list) => {
-          for (const entry of list.getEntries()) {
-            if (!(entry as any).hadRecentInput) {
-              cumulativeLayoutShift += (entry as any).value;
-            }
-          }
-        });
-        clsObserver.observe({ type: 'layout-shift', buffered: true });
-
-        // Get buffered entries
-        const clsEntries = performance.getEntriesByType('layout-shift');
-        cumulativeLayoutShift = clsEntries.reduce((sum, entry) => {
-          return sum + ((entry as any).hadRecentInput ? 0 : (entry as any).value);
-        }, 0);
-      } catch (e) {
-        // CLS not available
-      }
-      metrics.cumulativeLayoutShift = cumulativeLayoutShift;
-
-      // Estimate Time to Interactive (simplified)
-      const longTasks = performance.getEntriesByType('longtask');
-      let totalBlockingTime = 0;
-      longTasks.forEach((task: any) => {
-        const duration = task.duration;
-        if (duration > 50) {
-          totalBlockingTime += duration - 50;
-        }
-      });
-      metrics.totalBlockingTime = totalBlockingTime;
-      metrics.timeToInteractive = metrics.loadComplete || 0;
-
-      // Estimate Speed Index (simplified as time to visual completeness)
-      metrics.speedIndex = metrics.largestContentfulPaint || metrics.loadComplete || 0;
-
-      resolve(metrics);
-    });
+    return metrics;
   });
 
   return {
@@ -218,6 +206,24 @@ export async function runPerformanceAudit(
           console.log(`    Page closed, continuing to navigation...`);
         }
       }
+
+      // Set up long task observer before page loads
+      await page.addInitScript(() => {
+        (window as any).__longTasks = [];
+        try {
+          const observer = new PerformanceObserver((list) => {
+            for (const entry of list.getEntries()) {
+              (window as any).__longTasks.push({
+                duration: entry.duration,
+                startTime: entry.startTime,
+              });
+            }
+          });
+          observer.observe({ entryTypes: ['longtask'] });
+        } catch (e) {
+          // Long task observer not supported
+        }
+      });
 
       // Navigate to the page
       await page.goto(url, {

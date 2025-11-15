@@ -82,7 +82,7 @@ pnpm charts:competitors
 This creates `performance-results/performance-charts.html` with:
 - Bar charts for all collected metrics (Performance Score, LCP, TBT, CLS, TTFB, Page Weight, etc.)
 - Separate sections for search and article pages
-- **SciX (NASA SciX Explorer) highlighted in red** across all charts as the primary comparison baseline
+- **SciX (NASA SciX Explorer) highlighted with a thicker border** across all charts as the primary comparison baseline
 - Responsive design with gradient styling
 - Averages calculated from all test runs
 

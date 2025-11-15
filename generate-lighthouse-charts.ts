@@ -67,11 +67,8 @@ function generateHTML(searchResults: PerformanceResult[], articleResults: Perfor
     new Set([...Object.keys(searchBySite), ...Object.keys(articleBySite)]),
   ).sort();
 
-  // Helper to get color for site (highlight SciX)
+  // Helper to get color for site
   const getColor = (siteName: string, alpha: number = 1) => {
-    if (siteName.includes('SciX')) {
-      return `rgba(255, 99, 132, ${alpha})`; // Red for SciX
-    }
     const colors = [
       `rgba(54, 162, 235, ${alpha})`, // Blue
       `rgba(75, 192, 192, ${alpha})`, // Teal
@@ -86,7 +83,12 @@ function generateHTML(searchResults: PerformanceResult[], articleResults: Perfor
   };
 
   const getBorderWidth = (siteName: string) => {
-    return siteName.includes('SciX') ? 3 : 2;
+    return siteName.includes('SciX') ? 4 : 2;
+  };
+
+  const getBorderColor = (siteName: string) => {
+    // Highlight SciX with a contrasting border
+    return siteName.includes('SciX') ? 'rgba(0, 0, 0, 0.8)' : 'rgba(0, 0, 0, 0.1)';
   };
 
   // Generate datasets for each metric
@@ -105,7 +107,7 @@ function generateHTML(searchResults: PerformanceResult[], articleResults: Perfor
           label: siteName,
           data: values.length > 0 ? values : [0],
           backgroundColor: getColor(siteName, 0.6),
-          borderColor: getColor(siteName, 1),
+          borderColor: getBorderColor(siteName),
           borderWidth: getBorderWidth(siteName),
         };
       }),
@@ -260,7 +262,7 @@ function generateHTML(searchResults: PerformanceResult[], articleResults: Perfor
     <p class="subtitle">Performance benchmarking across academic search platforms</p>
 
     <div class="legend-note">
-      <strong>Note:</strong> <span class="scix-highlight">SciX (NASA SciX Explorer)</span> is highlighted in red across all charts as the primary comparison baseline.
+      <strong>Note:</strong> <span class="scix-highlight">SciX (NASA SciX Explorer)</span> is highlighted with a thicker border across all charts as the primary comparison baseline.
     </div>
 
     ${searchResults.length > 0 ? generatePageSection('Search Pages', searchBySite, allSites, getColor, getBorderWidth) : ''}
