@@ -100,6 +100,9 @@ export interface AggregatedPerformanceResult {
 /**
  * Calculates a performance score (0-1) based on key metrics
  * Uses similar weighting to Lighthouse
+ *
+ * @param metrics - Performance metrics to score
+ * @returns Performance score between 0 and 1
  */
 function calculatePerformanceScore(metrics: PerformanceResult['metrics']): number {
   const lcpScore = Math.max(0, Math.min(1, (4000 - metrics.largestContentfulPaint) / 2500));
@@ -107,12 +110,18 @@ function calculatePerformanceScore(metrics: PerformanceResult['metrics']): numbe
   const clsScore = Math.max(0, Math.min(1, (0.25 - metrics.cumulativeLayoutShift) / 0.15));
   const tbtScore = Math.max(0, Math.min(1, (600 - metrics.totalBlockingTime) / 400));
 
-  // Weighted average similar to Lighthouse
-  return (lcpScore * 0.25 + fcpScore * 0.1 + clsScore * 0.15 + tbtScore * 0.25) / 0.75;
+  // Weighted average similar to Lighthouse (LCP 25%, FCP 10%, CLS 15%, TBT 25%)
+  const score = (lcpScore * 0.25 + fcpScore * 0.1 + clsScore * 0.15 + tbtScore * 0.25) / 0.75;
+
+  // Ensure score is clamped between 0 and 1
+  return Math.max(0, Math.min(1, score));
 }
 
 /**
  * Measures Core Web Vitals and performance metrics using native Playwright APIs
+ *
+ * @param page - Playwright page instance
+ * @returns Promise resolving to performance metrics
  */
 export async function measurePerformance(page: Page): Promise<PerformanceResult['metrics']> {
   // Wait for page to be fully loaded
@@ -164,10 +173,14 @@ export async function measurePerformance(page: Page): Promise<PerformanceResult[
     // Get Cumulative Layout Shift
     let cumulativeLayoutShift = 0;
     try {
-      const clsEntries = performance.getEntriesByType('layout-shift') as unknown as LayoutShiftEntry[];
+      const clsEntries = performance.getEntriesByType('layout-shift');
       cumulativeLayoutShift = clsEntries
-        .filter((entry) => !entry.hadRecentInput)
-        .reduce((sum, entry) => sum + entry.value, 0);
+        .filter((entry: any) => {
+          // Type guard: ensure entry has required properties
+          return typeof entry.value === 'number' && typeof entry.hadRecentInput === 'boolean';
+        })
+        .filter((entry: any) => !entry.hadRecentInput)
+        .reduce((sum: number, entry: any) => sum + entry.value, 0);
     } catch {
       // CLS not available
     }
@@ -208,6 +221,9 @@ export async function measurePerformance(page: Page): Promise<PerformanceResult[
 
 /**
  * Handles common page elements that might interfere with testing
+ * Attempts to dismiss cookie consent banners and other popups
+ *
+ * @param page - Playwright page instance
  */
 async function handlePageInterferences(page: Page) {
   try {
@@ -243,6 +259,15 @@ async function handlePageInterferences(page: Page) {
 
 /**
  * Runs a performance audit on a page using native Playwright APIs
+ *
+ * @param page - Playwright page instance
+ * @param url - URL to audit
+ * @param siteName - Name of the site being audited
+ * @param pageType - Type of page (search or article)
+ * @param runNumber - Run number for this audit
+ * @param retries - Number of retry attempts (default: 2)
+ * @returns Promise resolving to performance result
+ * @throws Error if all retry attempts fail
  */
 export async function runPerformanceAudit(
   page: Page,
@@ -322,18 +347,20 @@ export async function runPerformanceAudit(
     } catch (error) {
       lastError = error as Error;
       console.error(`    Attempt ${attempt + 1} failed:`, error.message);
-
-      if (attempt === retries) {
-        throw new Error(`Failed after ${retries + 1} attempts. Last error: ${lastError.message}`);
-      }
     }
   }
 
-  throw lastError!;
+  // All attempts failed, throw the last error
+  throw new Error(
+    `Failed after ${retries + 1} attempts. Last error: ${lastError?.message || 'Unknown error'}`,
+  );
 }
 
 /**
  * Saves performance results to a JSON file
+ *
+ * @param results - Performance results to save
+ * @param filename - Name of the file to save to
  */
 export function savePerformanceResults(results: PerformanceResult[] | AggregatedPerformanceResult[], filename: string) {
   const resultsDir = path.join(process.cwd(), 'performance-results');
@@ -350,13 +377,28 @@ export function savePerformanceResults(results: PerformanceResult[] | Aggregated
 
 /**
  * Calculates statistics (mean, median, std dev) for multiple runs
+ *
+ * @param values - Array of numeric values to analyze
+ * @returns Statistical measures including mean, median, standard deviation, min, and max
  */
-export function calculateStats(values: number[]) {
+export function calculateStats(values: number[]): MetricStats {
   if (values.length === 0) return { mean: 0, median: 0, stdDev: 0, min: 0, max: 0 };
 
   const sorted = [...values].sort((a, b) => a - b);
   const mean = values.reduce((sum, val) => sum + val, 0) / values.length;
-  const median = sorted[Math.floor(sorted.length / 2)];
+
+  // Calculate median correctly for both odd and even length arrays
+  let median: number;
+  if (sorted.length % 2 === 0) {
+    // Even length: average the two middle values
+    const mid1 = sorted[sorted.length / 2 - 1];
+    const mid2 = sorted[sorted.length / 2];
+    median = (mid1 + mid2) / 2;
+  } else {
+    // Odd length: take the middle value
+    median = sorted[Math.floor(sorted.length / 2)];
+  }
+
   const variance = values.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / values.length;
   const stdDev = Math.sqrt(variance);
 
@@ -371,11 +413,15 @@ export function calculateStats(values: number[]) {
 
 /**
  * Aggregates results from multiple runs
+ *
+ * @param results - Array of performance results to aggregate
+ * @returns Array of aggregated results with statistics for each site/page type combination
  */
 export function aggregateResults(results: PerformanceResult[]): AggregatedPerformanceResult[] {
   const groupedBySiteAndType = results.reduce(
     (acc, result) => {
-      const key = `${result.siteName}-${result.pageType}`;
+      // Use a separator that won't appear in site names or page types
+      const key = `${result.siteName}|||${result.pageType}`;
       if (!acc[key]) {
         acc[key] = [];
       }
@@ -386,7 +432,8 @@ export function aggregateResults(results: PerformanceResult[]): AggregatedPerfor
   );
 
   const aggregated = Object.entries(groupedBySiteAndType).map(([key, runs]) => {
-    const [siteName, pageType] = key.split('-');
+    // Split using the same separator
+    const [siteName, pageType] = key.split('|||');
 
     return {
       siteName,
