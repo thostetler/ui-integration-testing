@@ -142,6 +142,7 @@ docker run --rm --shm-size=2g \
   -v "${PWD}/${OUTPUT_DIR}:/sitespeed.io" \
   -v "${RESULT_DIR}/budget.json:/sitespeed.io/budget.json" \
   -v "${RESULT_DIR}/lighthouse-config.json:/sitespeed.io/lighthouse-config.json" \
+  -v "${PWD}/tests/perf/pre-script.js:/sitespeed.io/pre-script.js" \
   ${DOCKER_IMAGE} \
   --plugins.add analysisstorer \
   --lighthouse.enable \
@@ -150,6 +151,7 @@ docker run --rm --shm-size=2g \
   -n ${ITERATIONS} \
   --browsertime.chrome.args no-sandbox \
   --browsertime.chrome.args disable-dev-shm-usage \
+  --browsertime.preScript /sitespeed.io/pre-script.js \
   --budget.configPath /sitespeed.io/budget.json \
   --html.showAllWaterfallSummary \
   --html.pageSummaryMetrics lighthouse.performance \

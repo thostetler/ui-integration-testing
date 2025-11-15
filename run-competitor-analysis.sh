@@ -169,8 +169,10 @@ echo -e "${BLUE}Running sitespeed.io tests...${NC}"
 docker run --rm \
   -v "${PWD}/${OUTPUT_DIR}:/sitespeed.io" \
   -v "${RESULT_DIR}/budget.json:/sitespeed.io/budget.json" \
+  -v "${PWD}/tests/perf/pre-script.js:/sitespeed.io/pre-script.js" \
   ${DOCKER_IMAGE} \
   "${SITESPEED_OPTS[@]}" \
+  --browsertime.preScript /sitespeed.io/pre-script.js \
   "${URLS[@]}"
 
 echo ""
