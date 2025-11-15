@@ -95,20 +95,6 @@ SITESPEED_OPTS=(
 
   # HTML output configuration - show comprehensive metrics
   "--html.showAllWaterfallSummary"
-  "--html.pageSummaryMetrics" "transferSize.total"
-  "--html.pageSummaryMetrics" "contentSize.total"
-  "--html.pageSummaryMetrics" "requests.total"
-  "--html.pageSummaryMetrics" "timings.fullyLoaded"
-  "--html.pageSummaryMetrics" "timings.backEndTime"
-  "--html.pageSummaryMetrics" "timings.frontEndTime"
-  "--html.pageSummaryMetrics" "timings.SpeedIndex"
-  "--html.pageSummaryMetrics" "timings.firstPaint"
-  "--html.pageSummaryMetrics" "timings.FirstVisualChange"
-  "--html.pageSummaryMetrics" "timings.VisualComplete85"
-  "--html.pageSummaryMetrics" "timings.LastVisualChange"
-  "--html.pageSummaryMetrics" "timings.largestContentfulPaint"
-  "--html.pageSummaryMetrics" "timings.firstContentfulPaint"
-  "--html.pageSummaryMetrics" "score.score"
 
   # Screenshot and video
   "--browsertime.screenshot" "true"
