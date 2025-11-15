@@ -67,16 +67,19 @@ declare -A competitors=(
   ["PubMed_article"]="https://pubmed.ncbi.nlm.nih.gov/36949335/"
 )
 
-# Create URLs file for batch processing
-URLS_FILE="${RESULT_DIR}/urls.txt"
-> "${URLS_FILE}"
+# Prepare URLs array for testing
+URLS=()
 
 echo -e "${YELLOW}Preparing URLs for testing...${NC}"
 for key in "${!competitors[@]}"; do
-  echo "${competitors[$key]}" >> "${URLS_FILE}"
+  URLS+=("${competitors[$key]}")
   echo "  - ${key}: ${competitors[$key]}"
 done
 echo ""
+
+# Also create a URLs file for reference
+URLS_FILE="${RESULT_DIR}/urls.txt"
+printf '%s\n' "${URLS[@]}" > "${URLS_FILE}"
 
 # Create budget.json for performance budgets
 cat > "${RESULT_DIR}/budget.json" <<EOF
@@ -187,7 +190,7 @@ docker run --rm --shm-size=2g \
   --summary \
   --summary-detail \
   -vv \
-  < "${URLS_FILE}"
+  "${URLS[@]}"
 
 echo ""
 echo -e "${GREEN}========================================${NC}"
