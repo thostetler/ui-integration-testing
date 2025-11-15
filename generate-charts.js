@@ -32,14 +32,25 @@ function getPageType(url) {
   return 'home';
 }
 
-// Extract domain from URL
+// Extract domain from URL (keep www. prefix for directory matching)
 function getDomain(url) {
   try {
     const urlObj = new URL(url);
-    return urlObj.hostname.replace('www.', '');
+    return urlObj.hostname;
   } catch (e) {
     return url;
   }
+}
+
+// Get display name for domain (matches without www. prefix)
+function getCompetitorInfo(domain) {
+  // Try exact match first
+  if (competitors[domain]) return competitors[domain];
+  // Try without www. prefix
+  const withoutWww = domain.replace('www.', '');
+  if (competitors[withoutWww]) return competitors[withoutWww];
+  // Return default
+  return { name: domain, color: '#666666' };
 }
 
 // Parse sitespeed.io result directory
@@ -114,11 +125,12 @@ function parseResults(resultsDir) {
 
     if (data) {
       if (!pageData[pageType]) pageData[pageType] = [];
+      const competitorInfo = getCompetitorInfo(domain);
       pageData[pageType].push({
         url,
         domain,
-        site: competitors[domain]?.name || domain,
-        color: competitors[domain]?.color || '#666666',
+        site: competitorInfo.name,
+        color: competitorInfo.color,
         data
       });
     }
@@ -130,13 +142,13 @@ function parseResults(resultsDir) {
 // Generate HTML with Chart.js visualizations
 function generateHTML(pageData, outputPath) {
   const metrics = [
-    { key: 'timings.fullyLoaded', label: 'Fully Loaded (ms)', unit: 'ms' },
-    { key: 'timings.largestContentfulPaint', label: 'LCP (ms)', unit: 'ms' },
-    { key: 'visualMetrics.SpeedIndex', label: 'Speed Index (ms)', unit: 'ms' },
-    { key: 'googleWebVitals.totalBlockingTime', label: 'Total Blocking Time (ms)', unit: 'ms' },
-    { key: 'googleWebVitals.cumulativeLayoutShift', label: 'Cumulative Layout Shift', unit: '' },
-    { key: 'pageinfo.transferSize', label: 'Transfer Size (KB)', unit: 'KB', divisor: 1024 },
-    { key: 'pageinfo.requests', label: 'Request Count', unit: '' }
+    { key: 'statistics.timings.fullyLoaded', label: 'Fully Loaded (ms)', unit: 'ms' },
+    { key: 'statistics.timings.largestContentfulPaint.renderTime', label: 'LCP (ms)', unit: 'ms' },
+    { key: 'statistics.visualMetrics.SpeedIndex', label: 'Speed Index (ms)', unit: 'ms' },
+    { key: 'statistics.googleWebVitals.totalBlockingTime', label: 'Total Blocking Time (ms)', unit: 'ms' },
+    { key: 'statistics.googleWebVitals.cumulativeLayoutShift', label: 'Cumulative Layout Shift', unit: '' },
+    { key: 'statistics.pageinfo.documentSize.transferSize', label: 'Transfer Size (KB)', unit: 'KB', divisor: 1024 },
+    { key: 'statistics.pageinfo.resources.count', label: 'Request Count', unit: '' }
   ];
 
   // Get value from nested object path
