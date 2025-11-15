@@ -1,0 +1,360 @@
+02:26:03.429 - FFMPEG found
+02:26:03.429 - Python 3.6+ found
+02:26:03.495 - Numpy found
+02:26:03.516 - OpenCV-Python found
+02:26:03.525 - Pillow found
+02:26:03.785 - SSIM found
+02:26:03.789 - Processing frames from video /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/video/1.mp4 to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1
+02:26:03.789 - ['ffprobe', '/sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/video/1.mp4']
+02:26:03.796 - Finding Video Viewport...
+02:26:03.796 - Using frame 0
+02:26:03.861 - STREAM b'IHDR' 16 13
+02:26:03.861 - STREAM b'pHYs' 41 9
+02:26:03.861 - STREAM b'IDAT' 62 4096
+02:26:03.861 - /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/viewport.png is 1366x708
+02:26:03.861 - Finding the viewport for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/viewport.png
+02:26:03.862 - STREAM b'IHDR' 16 13
+02:26:03.862 - STREAM b'pHYs' 41 9
+02:26:03.862 - STREAM b'IDAT' 62 4096
+02:26:03.866 - Viewport left edge is 0
+02:26:03.866 - Viewport right edge is 1363
+02:26:03.866 - Viewport top edge is 88
+02:26:03.867 - Viewport bottom edge is 704
+02:26:03.878 - Extracting frames from /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/video/1.mp4 to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1
+02:26:03.880 - ffmpeg -v debug -i /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/video/1.mp4 -vsync 0 -vf crop=1363:616:0:88,scale=iw*min(400/iw\,400/ih):ih*min(400/iw\,400/ih),mpdecimate=0:64:640:0.001 /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-%d.png
+02:26:04.054 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-1.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-000000.png
+02:26:04.054 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-2.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-000900.png
+02:26:04.054 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-3.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-001666.png
+02:26:04.054 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-4.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-001766.png
+02:26:04.054 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-5.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-001800.png
+02:26:04.054 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-6.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-001833.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-7.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-001900.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-8.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-001933.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-9.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002166.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-10.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002233.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-11.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002266.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-12.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002300.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-13.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002500.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-14.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002700.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-15.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002733.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-16.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002766.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-17.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002800.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-18.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002833.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-19.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002866.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-20.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002900.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-21.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002933.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-22.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-002966.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-23.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-003100.png
+02:26:04.055 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-24.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-004333.png
+02:26:04.056 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-25.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-004400.png
+02:26:04.056 - Renaming /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/img-26.png to /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-004433.png
+02:26:04.056 - Scanning for non-orange frames...
+02:26:04.056 - STREAM b'IHDR' 16 13
+02:26:04.056 - STREAM b'pHYs' 41 9
+02:26:04.056 - STREAM b'IDAT' 62 658
+02:26:04.056 - STREAM b'IHDR' 16 13
+02:26:04.056 - STREAM b'pHYs' 41 9
+02:26:04.056 - STREAM b'IDAT' 62 658
+02:26:04.058 - STREAM b'IHDR' 16 13
+02:26:04.058 - STREAM b'IDAT' 41 535
+02:26:04.060 - Scanning for orange frames...
+02:26:04.060 - Removing Orange frame: /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/video-000000.png
+02:26:04.060 - STREAM b'IHDR' 16 13
+02:26:04.060 - STREAM b'pHYs' 41 9
+02:26:04.060 - STREAM b'IDAT' 62 634
+02:26:04.060 - STREAM b'IHDR' 16 13
+02:26:04.060 - STREAM b'pHYs' 41 9
+02:26:04.060 - STREAM b'IDAT' 62 634
+02:26:04.061 - STREAM b'IHDR' 16 13
+02:26:04.061 - STREAM b'IDAT' 41 535
+02:26:04.062 - STREAM b'IHDR' 16 13
+02:26:04.062 - STREAM b'pHYs' 41 9
+02:26:04.062 - STREAM b'IDAT' 62 634
+02:26:04.063 - STREAM b'IHDR' 16 13
+02:26:04.064 - STREAM b'IDAT' 41 535
+02:26:04.064 - STREAM b'IHDR' 16 13
+02:26:04.065 - STREAM b'pHYs' 41 9
+02:26:04.065 - STREAM b'IDAT' 62 634
+02:26:04.065 - STREAM b'IHDR' 16 13
+02:26:04.066 - STREAM b'IDAT' 41 535
+02:26:04.066 - STREAM b'IHDR' 16 13
+02:26:04.066 - STREAM b'pHYs' 41 9
+02:26:04.066 - STREAM b'IDAT' 62 4096
+02:26:04.067 - STREAM b'IHDR' 16 13
+02:26:04.067 - STREAM b'pHYs' 41 9
+02:26:04.067 - STREAM b'IDAT' 62 4096
+02:26:04.068 - STREAM b'IHDR' 16 13
+02:26:04.068 - STREAM b'IDAT' 41 535
+02:26:04.069 - STREAM b'IHDR' 16 13
+02:26:04.069 - STREAM b'pHYs' 41 9
+02:26:04.069 - STREAM b'IDAT' 62 4096
+02:26:04.070 - STREAM b'IHDR' 16 13
+02:26:04.070 - STREAM b'IDAT' 41 535
+02:26:04.071 - STREAM b'IHDR' 16 13
+02:26:04.071 - STREAM b'pHYs' 41 9
+02:26:04.071 - STREAM b'IDAT' 62 4096
+02:26:04.072 - STREAM b'IHDR' 16 13
+02:26:04.072 - STREAM b'IDAT' 41 535
+02:26:04.073 - Finding Render Start...
+02:26:04.073 - STREAM b'IHDR' 16 13
+02:26:04.073 - STREAM b'pHYs' 41 9
+02:26:04.073 - STREAM b'IDAT' 62 634
+02:26:04.073 - STREAM b'IHDR' 16 13
+02:26:04.073 - STREAM b'pHYs' 41 9
+02:26:04.073 - STREAM b'IDAT' 62 634
+02:26:04.073 - STREAM b'IHDR' 16 13
+02:26:04.073 - STREAM b'pHYs' 41 9
+02:26:04.073 - STREAM b'IDAT' 62 4096
+02:26:04.077 - STREAM b'IHDR' 16 13
+02:26:04.077 - STREAM b'pHYs' 41 9
+02:26:04.077 - STREAM b'IDAT' 62 4096
+02:26:04.077 - STREAM b'IHDR' 16 13
+02:26:04.077 - STREAM b'pHYs' 41 9
+02:26:04.077 - STREAM b'IDAT' 62 4096
+02:26:04.078 - STREAM b'IHDR' 16 13
+02:26:04.078 - STREAM b'IDAT' 41 535
+02:26:04.079 - STREAM b'IHDR' 16 13
+02:26:04.079 - STREAM b'pHYs' 41 9
+02:26:04.079 - STREAM b'IDAT' 62 4096
+02:26:04.080 - STREAM b'IHDR' 16 13
+02:26:04.080 - STREAM b'IDAT' 41 535
+02:26:04.081 - STREAM b'IHDR' 16 13
+02:26:04.081 - STREAM b'pHYs' 41 9
+02:26:04.081 - STREAM b'IDAT' 62 4096
+02:26:04.082 - STREAM b'IHDR' 16 13
+02:26:04.082 - STREAM b'IDAT' 41 535
+02:26:04.083 - Eliminating Duplicate Frames...
+02:26:04.083 - STREAM b'IHDR' 16 13
+02:26:04.084 - STREAM b'pHYs' 41 9
+02:26:04.084 - STREAM b'IDAT' 62 634
+02:26:04.084 - Viewport cropping set to (W, H, L, T): (400, 170, 0, 0)
+02:26:04.084 - STREAM b'IHDR' 16 13
+02:26:04.084 - STREAM b'pHYs' 41 9
+02:26:04.084 - STREAM b'IDAT' 62 634
+02:26:04.084 - STREAM b'IHDR' 16 13
+02:26:04.084 - STREAM b'pHYs' 41 9
+02:26:04.084 - STREAM b'IDAT' 62 4096
+02:26:04.087 - STREAM b'IHDR' 16 13
+02:26:04.087 - STREAM b'pHYs' 41 9
+02:26:04.087 - STREAM b'IDAT' 62 4096
+02:26:04.087 - STREAM b'IHDR' 16 13
+02:26:04.087 - STREAM b'pHYs' 41 9
+02:26:04.087 - STREAM b'IDAT' 62 4096
+02:26:04.091 - STREAM b'IHDR' 16 13
+02:26:04.091 - STREAM b'pHYs' 41 9
+02:26:04.091 - STREAM b'IDAT' 62 4096
+02:26:04.091 - STREAM b'IHDR' 16 13
+02:26:04.091 - STREAM b'pHYs' 41 9
+02:26:04.091 - STREAM b'IDAT' 62 4096
+02:26:04.095 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_003500.png from the end
+02:26:04.095 - STREAM b'IHDR' 16 13
+02:26:04.095 - STREAM b'pHYs' 41 9
+02:26:04.095 - STREAM b'IDAT' 62 4096
+02:26:04.095 - STREAM b'IHDR' 16 13
+02:26:04.095 - STREAM b'pHYs' 41 9
+02:26:04.095 - STREAM b'IDAT' 62 4096
+02:26:04.099 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_003433.png from the end
+02:26:04.099 - STREAM b'IHDR' 16 13
+02:26:04.099 - STREAM b'pHYs' 41 9
+02:26:04.099 - STREAM b'IDAT' 62 4096
+02:26:04.099 - STREAM b'IHDR' 16 13
+02:26:04.099 - STREAM b'pHYs' 41 9
+02:26:04.099 - STREAM b'IDAT' 62 4096
+02:26:04.103 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_002200.png from the end
+02:26:04.103 - STREAM b'IHDR' 16 13
+02:26:04.103 - STREAM b'pHYs' 41 9
+02:26:04.103 - STREAM b'IDAT' 62 4096
+02:26:04.103 - STREAM b'IHDR' 16 13
+02:26:04.103 - STREAM b'pHYs' 41 9
+02:26:04.103 - STREAM b'IDAT' 62 4096
+02:26:04.107 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_002066.png from the end
+02:26:04.107 - STREAM b'IHDR' 16 13
+02:26:04.107 - STREAM b'pHYs' 41 9
+02:26:04.108 - STREAM b'IDAT' 62 4096
+02:26:04.108 - STREAM b'IHDR' 16 13
+02:26:04.108 - STREAM b'pHYs' 41 9
+02:26:04.108 - STREAM b'IDAT' 62 4096
+02:26:04.111 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_002033.png from the end
+02:26:04.111 - STREAM b'IHDR' 16 13
+02:26:04.112 - STREAM b'pHYs' 41 9
+02:26:04.112 - STREAM b'IDAT' 62 4096
+02:26:04.112 - STREAM b'IHDR' 16 13
+02:26:04.112 - STREAM b'pHYs' 41 9
+02:26:04.112 - STREAM b'IDAT' 62 4096
+02:26:04.115 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_003533.png from the end
+02:26:04.126 - Calculating image histograms
+02:26:04.126 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_000000.png
+02:26:04.126 - STREAM b'IHDR' 16 13
+02:26:04.126 - STREAM b'pHYs' 41 9
+02:26:04.126 - STREAM b'IDAT' 62 634
+02:26:04.132 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_000766.png
+02:26:04.132 - STREAM b'IHDR' 16 13
+02:26:04.132 - STREAM b'pHYs' 41 9
+02:26:04.132 - STREAM b'IDAT' 62 4096
+02:26:04.139 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_000866.png
+02:26:04.140 - STREAM b'IHDR' 16 13
+02:26:04.140 - STREAM b'pHYs' 41 9
+02:26:04.140 - STREAM b'IDAT' 62 4096
+02:26:04.146 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_000900.png
+02:26:04.146 - STREAM b'IHDR' 16 13
+02:26:04.146 - STREAM b'pHYs' 41 9
+02:26:04.146 - STREAM b'IDAT' 62 4096
+02:26:04.153 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_000933.png
+02:26:04.153 - STREAM b'IHDR' 16 13
+02:26:04.153 - STREAM b'pHYs' 41 9
+02:26:04.153 - STREAM b'IDAT' 62 4096
+02:26:04.161 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001000.png
+02:26:04.161 - STREAM b'IHDR' 16 13
+02:26:04.161 - STREAM b'pHYs' 41 9
+02:26:04.161 - STREAM b'IDAT' 62 4096
+02:26:04.169 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001033.png
+02:26:04.169 - STREAM b'IHDR' 16 13
+02:26:04.169 - STREAM b'pHYs' 41 9
+02:26:04.169 - STREAM b'IDAT' 62 4096
+02:26:04.176 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001266.png
+02:26:04.176 - STREAM b'IHDR' 16 13
+02:26:04.176 - STREAM b'pHYs' 41 9
+02:26:04.176 - STREAM b'IDAT' 62 4096
+02:26:04.184 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001333.png
+02:26:04.184 - STREAM b'IHDR' 16 13
+02:26:04.184 - STREAM b'pHYs' 41 9
+02:26:04.184 - STREAM b'IDAT' 62 4096
+02:26:04.191 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001366.png
+02:26:04.191 - STREAM b'IHDR' 16 13
+02:26:04.191 - STREAM b'pHYs' 41 9
+02:26:04.191 - STREAM b'IDAT' 62 4096
+02:26:04.199 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001400.png
+02:26:04.199 - STREAM b'IHDR' 16 13
+02:26:04.199 - STREAM b'pHYs' 41 9
+02:26:04.199 - STREAM b'IDAT' 62 4096
+02:26:04.207 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001600.png
+02:26:04.207 - STREAM b'IHDR' 16 13
+02:26:04.207 - STREAM b'pHYs' 41 9
+02:26:04.207 - STREAM b'IDAT' 62 4096
+02:26:04.214 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001800.png
+02:26:04.215 - STREAM b'IHDR' 16 13
+02:26:04.215 - STREAM b'pHYs' 41 9
+02:26:04.215 - STREAM b'IDAT' 62 4096
+02:26:04.222 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001833.png
+02:26:04.222 - STREAM b'IHDR' 16 13
+02:26:04.222 - STREAM b'pHYs' 41 9
+02:26:04.222 - STREAM b'IDAT' 62 4096
+02:26:04.230 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001866.png
+02:26:04.230 - STREAM b'IHDR' 16 13
+02:26:04.230 - STREAM b'pHYs' 41 9
+02:26:04.230 - STREAM b'IDAT' 62 4096
+02:26:04.239 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001900.png
+02:26:04.239 - STREAM b'IHDR' 16 13
+02:26:04.239 - STREAM b'pHYs' 41 9
+02:26:04.239 - STREAM b'IDAT' 62 4096
+02:26:04.248 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001933.png
+02:26:04.248 - STREAM b'IHDR' 16 13
+02:26:04.248 - STREAM b'pHYs' 41 9
+02:26:04.248 - STREAM b'IDAT' 62 4096
+02:26:04.256 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_001966.png
+02:26:04.256 - STREAM b'IHDR' 16 13
+02:26:04.256 - STREAM b'pHYs' 41 9
+02:26:04.256 - STREAM b'IDAT' 62 4096
+02:26:04.264 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scixplorer_org/abs/2022ApJ...930L..12E/abstract/data/filmstrip/1/ms_002000.png
+02:26:04.264 - STREAM b'IHDR' 16 13
+02:26:04.264 - STREAM b'pHYs' 41 9
+02:26:04.264 - STREAM b'IDAT' 62 4096
+02:26:04.290 - Done calculating histograms
+02:26:04.291 - 0ms - 0% Complete
+02:26:04.291 - 766ms - 76% Complete
+02:26:04.291 - 866ms - 76% Complete
+02:26:04.291 - 900ms - 76% Complete
+02:26:04.292 - 933ms - 76% Complete
+02:26:04.292 - 1000ms - 77% Complete
+02:26:04.292 - 1033ms - 77% Complete
+02:26:04.292 - 1266ms - 76% Complete
+02:26:04.292 - 1333ms - 76% Complete
+02:26:04.293 - 1366ms - 76% Complete
+02:26:04.293 - 1400ms - 76% Complete
+02:26:04.293 - 1600ms - 98% Complete
+02:26:04.293 - 1800ms - 98% Complete
+02:26:04.293 - 1833ms - 98% Complete
+02:26:04.293 - 1866ms - 98% Complete
+02:26:04.294 - 1900ms - 98% Complete
+02:26:04.294 - 1933ms - 99% Complete
+02:26:04.294 - 1966ms - 99% Complete
+02:26:04.294 - 2000ms - 100% Complete
+02:26:04.294 - Hero elements file is not valid: None
+02:26:04.294 - Converting video frames to JPEG
+02:26:04.294 - STREAM b'IHDR' 16 13
+02:26:04.294 - STREAM b'pHYs' 41 9
+02:26:04.294 - STREAM b'IDAT' 62 634
+02:26:04.295 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.295 - STREAM b'IHDR' 16 13
+02:26:04.295 - STREAM b'pHYs' 41 9
+02:26:04.295 - STREAM b'IDAT' 62 4096
+02:26:04.295 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.296 - STREAM b'IHDR' 16 13
+02:26:04.296 - STREAM b'pHYs' 41 9
+02:26:04.296 - STREAM b'IDAT' 62 4096
+02:26:04.296 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.297 - STREAM b'IHDR' 16 13
+02:26:04.297 - STREAM b'pHYs' 41 9
+02:26:04.297 - STREAM b'IDAT' 62 4096
+02:26:04.297 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.298 - STREAM b'IHDR' 16 13
+02:26:04.298 - STREAM b'pHYs' 41 9
+02:26:04.298 - STREAM b'IDAT' 62 4096
+02:26:04.298 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.299 - STREAM b'IHDR' 16 13
+02:26:04.299 - STREAM b'pHYs' 41 9
+02:26:04.299 - STREAM b'IDAT' 62 4096
+02:26:04.299 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.300 - STREAM b'IHDR' 16 13
+02:26:04.300 - STREAM b'pHYs' 41 9
+02:26:04.300 - STREAM b'IDAT' 62 4096
+02:26:04.300 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.301 - STREAM b'IHDR' 16 13
+02:26:04.301 - STREAM b'pHYs' 41 9
+02:26:04.301 - STREAM b'IDAT' 62 4096
+02:26:04.301 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.302 - STREAM b'IHDR' 16 13
+02:26:04.302 - STREAM b'pHYs' 41 9
+02:26:04.302 - STREAM b'IDAT' 62 4096
+02:26:04.302 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.303 - STREAM b'IHDR' 16 13
+02:26:04.303 - STREAM b'pHYs' 41 9
+02:26:04.303 - STREAM b'IDAT' 62 4096
+02:26:04.303 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.304 - STREAM b'IHDR' 16 13
+02:26:04.304 - STREAM b'pHYs' 41 9
+02:26:04.304 - STREAM b'IDAT' 62 4096
+02:26:04.304 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.305 - STREAM b'IHDR' 16 13
+02:26:04.305 - STREAM b'pHYs' 41 9
+02:26:04.305 - STREAM b'IDAT' 62 4096
+02:26:04.305 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.306 - STREAM b'IHDR' 16 13
+02:26:04.306 - STREAM b'pHYs' 41 9
+02:26:04.306 - STREAM b'IDAT' 62 4096
+02:26:04.306 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.307 - STREAM b'IHDR' 16 13
+02:26:04.307 - STREAM b'pHYs' 41 9
+02:26:04.307 - STREAM b'IDAT' 62 4096
+02:26:04.307 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.308 - STREAM b'IHDR' 16 13
+02:26:04.308 - STREAM b'pHYs' 41 9
+02:26:04.308 - STREAM b'IDAT' 62 4096
+02:26:04.308 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.309 - STREAM b'IHDR' 16 13
+02:26:04.309 - STREAM b'pHYs' 41 9
+02:26:04.309 - STREAM b'IDAT' 62 4096
+02:26:04.309 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.310 - STREAM b'IHDR' 16 13
+02:26:04.310 - STREAM b'pHYs' 41 9
+02:26:04.310 - STREAM b'IDAT' 62 4096
+02:26:04.310 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.311 - STREAM b'IHDR' 16 13
+02:26:04.311 - STREAM b'pHYs' 41 9
+02:26:04.311 - STREAM b'IDAT' 62 4096
+02:26:04.311 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.312 - STREAM b'IHDR' 16 13
+02:26:04.312 - STREAM b'pHYs' 41 9
+02:26:04.312 - STREAM b'IDAT' 62 4096
+02:26:04.312 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:26:04.313 - Done converting video frames to JPEG

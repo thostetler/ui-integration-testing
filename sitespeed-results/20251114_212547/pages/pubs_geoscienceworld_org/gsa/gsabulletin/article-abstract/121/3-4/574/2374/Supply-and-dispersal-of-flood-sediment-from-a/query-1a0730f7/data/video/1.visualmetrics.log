@@ -1,0 +1,758 @@
+02:36:00.959 - FFMPEG found
+02:36:00.959 - Python 3.6+ found
+02:36:01.002 - Numpy found
+02:36:01.022 - OpenCV-Python found
+02:36:01.035 - Pillow found
+02:36:01.288 - SSIM found
+02:36:01.292 - Processing frames from video /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/video/1.mp4 to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1
+02:36:01.292 - ['ffprobe', '/sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/video/1.mp4']
+02:36:01.298 - Finding Video Viewport...
+02:36:01.298 - Using frame 0
+02:36:01.360 - STREAM b'IHDR' 16 13
+02:36:01.360 - STREAM b'pHYs' 41 9
+02:36:01.360 - STREAM b'IDAT' 62 4096
+02:36:01.360 - /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/viewport.png is 1366x708
+02:36:01.360 - Finding the viewport for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/viewport.png
+02:36:01.360 - STREAM b'IHDR' 16 13
+02:36:01.360 - STREAM b'pHYs' 41 9
+02:36:01.360 - STREAM b'IDAT' 62 4096
+02:36:01.365 - Viewport left edge is 0
+02:36:01.365 - Viewport right edge is 1363
+02:36:01.365 - Viewport top edge is 88
+02:36:01.365 - Viewport bottom edge is 704
+02:36:01.375 - Extracting frames from /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/video/1.mp4 to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1
+02:36:01.377 - ffmpeg -v debug -i /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/video/1.mp4 -vsync 0 -vf crop=1363:616:0:88,scale=iw*min(400/iw\,400/ih):ih*min(400/iw\,400/ih),mpdecimate=0:64:640:0.001 /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-%d.png
+02:36:01.577 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-1.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-000000.png
+02:36:01.577 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-2.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-000900.png
+02:36:01.577 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-3.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-002600.png
+02:36:01.577 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-4.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-002633.png
+02:36:01.577 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-5.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-002666.png
+02:36:01.577 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-6.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-002700.png
+02:36:01.577 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-7.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-002733.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-8.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-002766.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-9.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-002800.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-10.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-002833.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-11.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-002900.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-12.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-002933.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-13.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-003233.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-14.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-003800.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-15.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-003866.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-16.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004000.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-17.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004033.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-18.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004066.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-19.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004100.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-20.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004133.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-21.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004166.png
+02:36:01.578 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-22.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004200.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-23.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004233.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-24.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004266.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-25.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004300.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-26.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004333.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-27.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004366.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-28.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004400.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-29.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004433.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-30.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004466.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-31.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004500.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-32.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004533.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-33.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004566.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-34.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004600.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-35.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004633.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-36.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004666.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-37.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004700.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-38.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004733.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-39.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004766.png
+02:36:01.579 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-40.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004800.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-41.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-004833.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-42.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-005333.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-43.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006133.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-44.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006233.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-45.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006300.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-46.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006433.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-47.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006466.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-48.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006500.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-49.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006533.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-50.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006566.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-51.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006600.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-52.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006633.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-53.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006666.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-54.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006700.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-55.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006733.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-56.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006800.png
+02:36:01.580 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-57.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006866.png
+02:36:01.581 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-58.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-006966.png
+02:36:01.581 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-59.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-007100.png
+02:36:01.581 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-60.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-007366.png
+02:36:01.581 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-61.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-007766.png
+02:36:01.581 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-62.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-008033.png
+02:36:01.581 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-63.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-008333.png
+02:36:01.581 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-64.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-008366.png
+02:36:01.581 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-65.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-008400.png
+02:36:01.581 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-66.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-008466.png
+02:36:01.581 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/img-67.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-008500.png
+02:36:01.582 - Scanning for non-orange frames...
+02:36:01.582 - STREAM b'IHDR' 16 13
+02:36:01.582 - STREAM b'pHYs' 41 9
+02:36:01.582 - STREAM b'IDAT' 62 658
+02:36:01.582 - STREAM b'IHDR' 16 13
+02:36:01.582 - STREAM b'pHYs' 41 9
+02:36:01.582 - STREAM b'IDAT' 62 658
+02:36:01.583 - STREAM b'IHDR' 16 13
+02:36:01.583 - STREAM b'IDAT' 41 535
+02:36:01.585 - Scanning for orange frames...
+02:36:01.585 - Removing Orange frame: /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/video-000000.png
+02:36:01.585 - STREAM b'IHDR' 16 13
+02:36:01.585 - STREAM b'pHYs' 41 9
+02:36:01.585 - STREAM b'IDAT' 62 634
+02:36:01.585 - STREAM b'IHDR' 16 13
+02:36:01.585 - STREAM b'pHYs' 41 9
+02:36:01.585 - STREAM b'IDAT' 62 634
+02:36:01.586 - STREAM b'IHDR' 16 13
+02:36:01.586 - STREAM b'IDAT' 41 535
+02:36:01.587 - STREAM b'IHDR' 16 13
+02:36:01.587 - STREAM b'pHYs' 41 9
+02:36:01.587 - STREAM b'IDAT' 62 634
+02:36:01.588 - STREAM b'IHDR' 16 13
+02:36:01.588 - STREAM b'IDAT' 41 535
+02:36:01.588 - STREAM b'IHDR' 16 13
+02:36:01.588 - STREAM b'pHYs' 41 9
+02:36:01.588 - STREAM b'IDAT' 62 634
+02:36:01.589 - STREAM b'IHDR' 16 13
+02:36:01.589 - STREAM b'IDAT' 41 535
+02:36:01.590 - STREAM b'IHDR' 16 13
+02:36:01.590 - STREAM b'pHYs' 41 9
+02:36:01.590 - STREAM b'IDAT' 62 4096
+02:36:01.590 - STREAM b'IHDR' 16 13
+02:36:01.590 - STREAM b'pHYs' 41 9
+02:36:01.590 - STREAM b'IDAT' 62 4096
+02:36:01.591 - STREAM b'IHDR' 16 13
+02:36:01.591 - STREAM b'IDAT' 41 535
+02:36:01.592 - STREAM b'IHDR' 16 13
+02:36:01.592 - STREAM b'pHYs' 41 9
+02:36:01.592 - STREAM b'IDAT' 62 4096
+02:36:01.593 - STREAM b'IHDR' 16 13
+02:36:01.593 - STREAM b'IDAT' 41 535
+02:36:01.594 - STREAM b'IHDR' 16 13
+02:36:01.594 - STREAM b'pHYs' 41 9
+02:36:01.594 - STREAM b'IDAT' 62 4096
+02:36:01.595 - STREAM b'IHDR' 16 13
+02:36:01.595 - STREAM b'IDAT' 41 535
+02:36:01.596 - Finding Render Start...
+02:36:01.596 - STREAM b'IHDR' 16 13
+02:36:01.596 - STREAM b'pHYs' 41 9
+02:36:01.596 - STREAM b'IDAT' 62 634
+02:36:01.596 - STREAM b'IHDR' 16 13
+02:36:01.596 - STREAM b'pHYs' 41 9
+02:36:01.596 - STREAM b'IDAT' 62 634
+02:36:01.596 - STREAM b'IHDR' 16 13
+02:36:01.596 - STREAM b'pHYs' 41 9
+02:36:01.596 - STREAM b'IDAT' 62 4096
+02:36:01.600 - STREAM b'IHDR' 16 13
+02:36:01.600 - STREAM b'pHYs' 41 9
+02:36:01.600 - STREAM b'IDAT' 62 4096
+02:36:01.600 - STREAM b'IHDR' 16 13
+02:36:01.600 - STREAM b'pHYs' 41 9
+02:36:01.600 - STREAM b'IDAT' 62 4096
+02:36:01.601 - STREAM b'IHDR' 16 13
+02:36:01.601 - STREAM b'IDAT' 41 535
+02:36:01.602 - STREAM b'IHDR' 16 13
+02:36:01.602 - STREAM b'pHYs' 41 9
+02:36:01.602 - STREAM b'IDAT' 62 4096
+02:36:01.603 - STREAM b'IHDR' 16 13
+02:36:01.603 - STREAM b'IDAT' 41 535
+02:36:01.604 - STREAM b'IHDR' 16 13
+02:36:01.604 - STREAM b'pHYs' 41 9
+02:36:01.604 - STREAM b'IDAT' 62 4096
+02:36:01.605 - STREAM b'IHDR' 16 13
+02:36:01.605 - STREAM b'IDAT' 41 535
+02:36:01.607 - Eliminating Duplicate Frames...
+02:36:01.607 - STREAM b'IHDR' 16 13
+02:36:01.607 - STREAM b'pHYs' 41 9
+02:36:01.607 - STREAM b'IDAT' 62 634
+02:36:01.607 - Viewport cropping set to (W, H, L, T): (400, 170, 0, 0)
+02:36:01.607 - STREAM b'IHDR' 16 13
+02:36:01.607 - STREAM b'pHYs' 41 9
+02:36:01.607 - STREAM b'IDAT' 62 634
+02:36:01.607 - STREAM b'IHDR' 16 13
+02:36:01.608 - STREAM b'pHYs' 41 9
+02:36:01.608 - STREAM b'IDAT' 62 4096
+02:36:01.611 - STREAM b'IHDR' 16 13
+02:36:01.611 - STREAM b'pHYs' 41 9
+02:36:01.611 - STREAM b'IDAT' 62 4096
+02:36:01.611 - STREAM b'IHDR' 16 13
+02:36:01.611 - STREAM b'pHYs' 41 9
+02:36:01.611 - STREAM b'IDAT' 62 4096
+02:36:01.615 - STREAM b'IHDR' 16 13
+02:36:01.615 - STREAM b'pHYs' 41 9
+02:36:01.615 - STREAM b'IDAT' 62 4096
+02:36:01.615 - STREAM b'IHDR' 16 13
+02:36:01.615 - STREAM b'pHYs' 41 9
+02:36:01.615 - STREAM b'IDAT' 62 4096
+02:36:01.618 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_007566.png from the end
+02:36:01.618 - STREAM b'IHDR' 16 13
+02:36:01.618 - STREAM b'pHYs' 41 9
+02:36:01.618 - STREAM b'IDAT' 62 4096
+02:36:01.618 - STREAM b'IHDR' 16 13
+02:36:01.618 - STREAM b'pHYs' 41 9
+02:36:01.618 - STREAM b'IDAT' 62 4096
+02:36:01.622 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_007500.png from the end
+02:36:01.622 - STREAM b'IHDR' 16 13
+02:36:01.622 - STREAM b'pHYs' 41 9
+02:36:01.622 - STREAM b'IDAT' 62 4096
+02:36:01.622 - STREAM b'IHDR' 16 13
+02:36:01.622 - STREAM b'pHYs' 41 9
+02:36:01.622 - STREAM b'IDAT' 62 4096
+02:36:01.626 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_007466.png from the end
+02:36:01.626 - STREAM b'IHDR' 16 13
+02:36:01.626 - STREAM b'pHYs' 41 9
+02:36:01.626 - STREAM b'IDAT' 62 4096
+02:36:01.626 - STREAM b'IHDR' 16 13
+02:36:01.626 - STREAM b'pHYs' 41 9
+02:36:01.626 - STREAM b'IDAT' 62 4096
+02:36:01.629 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_007433.png from the end
+02:36:01.629 - STREAM b'IHDR' 16 13
+02:36:01.630 - STREAM b'pHYs' 41 9
+02:36:01.630 - STREAM b'IDAT' 62 4096
+02:36:01.630 - STREAM b'IHDR' 16 13
+02:36:01.630 - STREAM b'pHYs' 41 9
+02:36:01.630 - STREAM b'IDAT' 62 4096
+02:36:01.633 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_007133.png from the end
+02:36:01.633 - STREAM b'IHDR' 16 13
+02:36:01.633 - STREAM b'pHYs' 41 9
+02:36:01.633 - STREAM b'IDAT' 62 4096
+02:36:01.633 - STREAM b'IHDR' 16 13
+02:36:01.633 - STREAM b'pHYs' 41 9
+02:36:01.633 - STREAM b'IDAT' 62 4096
+02:36:01.637 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_006866.png from the end
+02:36:01.637 - STREAM b'IHDR' 16 13
+02:36:01.637 - STREAM b'pHYs' 41 9
+02:36:01.637 - STREAM b'IDAT' 62 4096
+02:36:01.637 - STREAM b'IHDR' 16 13
+02:36:01.637 - STREAM b'pHYs' 41 9
+02:36:01.637 - STREAM b'IDAT' 62 4096
+02:36:01.641 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_006466.png from the end
+02:36:01.641 - STREAM b'IHDR' 16 13
+02:36:01.641 - STREAM b'pHYs' 41 9
+02:36:01.641 - STREAM b'IDAT' 62 4096
+02:36:01.641 - STREAM b'IHDR' 16 13
+02:36:01.641 - STREAM b'pHYs' 41 9
+02:36:01.641 - STREAM b'IDAT' 62 4096
+02:36:01.644 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_006200.png from the end
+02:36:01.645 - STREAM b'IHDR' 16 13
+02:36:01.645 - STREAM b'pHYs' 41 9
+02:36:01.645 - STREAM b'IDAT' 62 4096
+02:36:01.645 - STREAM b'IHDR' 16 13
+02:36:01.645 - STREAM b'pHYs' 41 9
+02:36:01.645 - STREAM b'IDAT' 62 4096
+02:36:01.648 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_006066.png from the end
+02:36:01.648 - STREAM b'IHDR' 16 13
+02:36:01.648 - STREAM b'pHYs' 41 9
+02:36:01.648 - STREAM b'IDAT' 62 4096
+02:36:01.648 - STREAM b'IHDR' 16 13
+02:36:01.649 - STREAM b'pHYs' 41 9
+02:36:01.649 - STREAM b'IDAT' 62 4096
+02:36:01.652 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005966.png from the end
+02:36:01.652 - STREAM b'IHDR' 16 13
+02:36:01.652 - STREAM b'pHYs' 41 9
+02:36:01.652 - STREAM b'IDAT' 62 4096
+02:36:01.652 - STREAM b'IHDR' 16 13
+02:36:01.652 - STREAM b'pHYs' 41 9
+02:36:01.652 - STREAM b'IDAT' 62 4096
+02:36:01.656 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005900.png from the end
+02:36:01.656 - STREAM b'IHDR' 16 13
+02:36:01.656 - STREAM b'pHYs' 41 9
+02:36:01.656 - STREAM b'IDAT' 62 4096
+02:36:01.656 - STREAM b'IHDR' 16 13
+02:36:01.656 - STREAM b'pHYs' 41 9
+02:36:01.656 - STREAM b'IDAT' 62 4096
+02:36:01.660 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_007600.png from the end
+02:36:01.670 - Calculating image histograms
+02:36:01.671 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_000000.png
+02:36:01.671 - STREAM b'IHDR' 16 13
+02:36:01.671 - STREAM b'pHYs' 41 9
+02:36:01.671 - STREAM b'IDAT' 62 634
+02:36:01.677 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_001700.png
+02:36:01.677 - STREAM b'IHDR' 16 13
+02:36:01.677 - STREAM b'pHYs' 41 9
+02:36:01.677 - STREAM b'IDAT' 62 4096
+02:36:01.683 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_001733.png
+02:36:01.683 - STREAM b'IHDR' 16 13
+02:36:01.683 - STREAM b'pHYs' 41 9
+02:36:01.683 - STREAM b'IDAT' 62 4096
+02:36:01.691 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_001766.png
+02:36:01.691 - STREAM b'IHDR' 16 13
+02:36:01.691 - STREAM b'pHYs' 41 9
+02:36:01.691 - STREAM b'IDAT' 62 4096
+02:36:01.697 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_001800.png
+02:36:01.698 - STREAM b'IHDR' 16 13
+02:36:01.698 - STREAM b'pHYs' 41 9
+02:36:01.698 - STREAM b'IDAT' 62 4096
+02:36:01.706 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_001833.png
+02:36:01.706 - STREAM b'IHDR' 16 13
+02:36:01.706 - STREAM b'pHYs' 41 9
+02:36:01.706 - STREAM b'IDAT' 62 4096
+02:36:01.712 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_001866.png
+02:36:01.713 - STREAM b'IHDR' 16 13
+02:36:01.713 - STREAM b'pHYs' 41 9
+02:36:01.713 - STREAM b'IDAT' 62 4096
+02:36:01.719 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_001900.png
+02:36:01.719 - STREAM b'IHDR' 16 13
+02:36:01.719 - STREAM b'pHYs' 41 9
+02:36:01.719 - STREAM b'IDAT' 62 4096
+02:36:01.726 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_001933.png
+02:36:01.726 - STREAM b'IHDR' 16 13
+02:36:01.726 - STREAM b'pHYs' 41 9
+02:36:01.726 - STREAM b'IDAT' 62 4096
+02:36:01.732 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_002000.png
+02:36:01.733 - STREAM b'IHDR' 16 13
+02:36:01.733 - STREAM b'pHYs' 41 9
+02:36:01.733 - STREAM b'IDAT' 62 4096
+02:36:01.740 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_002033.png
+02:36:01.740 - STREAM b'IHDR' 16 13
+02:36:01.740 - STREAM b'pHYs' 41 9
+02:36:01.740 - STREAM b'IDAT' 62 4096
+02:36:01.747 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_002333.png
+02:36:01.747 - STREAM b'IHDR' 16 13
+02:36:01.747 - STREAM b'pHYs' 41 9
+02:36:01.747 - STREAM b'IDAT' 62 4096
+02:36:01.754 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_002900.png
+02:36:01.754 - STREAM b'IHDR' 16 13
+02:36:01.754 - STREAM b'pHYs' 41 9
+02:36:01.754 - STREAM b'IDAT' 62 4096
+02:36:01.761 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_002966.png
+02:36:01.761 - STREAM b'IHDR' 16 13
+02:36:01.761 - STREAM b'pHYs' 41 9
+02:36:01.761 - STREAM b'IDAT' 62 4096
+02:36:01.768 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003100.png
+02:36:01.768 - STREAM b'IHDR' 16 13
+02:36:01.768 - STREAM b'pHYs' 41 9
+02:36:01.768 - STREAM b'IDAT' 62 4096
+02:36:01.775 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003133.png
+02:36:01.775 - STREAM b'IHDR' 16 13
+02:36:01.775 - STREAM b'pHYs' 41 9
+02:36:01.775 - STREAM b'IDAT' 62 4096
+02:36:01.782 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003166.png
+02:36:01.782 - STREAM b'IHDR' 16 13
+02:36:01.782 - STREAM b'pHYs' 41 9
+02:36:01.782 - STREAM b'IDAT' 62 4096
+02:36:01.790 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003200.png
+02:36:01.790 - STREAM b'IHDR' 16 13
+02:36:01.790 - STREAM b'pHYs' 41 9
+02:36:01.790 - STREAM b'IDAT' 62 4096
+02:36:01.797 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003233.png
+02:36:01.797 - STREAM b'IHDR' 16 13
+02:36:01.797 - STREAM b'pHYs' 41 9
+02:36:01.797 - STREAM b'IDAT' 62 4096
+02:36:01.805 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003266.png
+02:36:01.805 - STREAM b'IHDR' 16 13
+02:36:01.805 - STREAM b'pHYs' 41 9
+02:36:01.805 - STREAM b'IDAT' 62 4096
+02:36:01.812 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003300.png
+02:36:01.812 - STREAM b'IHDR' 16 13
+02:36:01.812 - STREAM b'pHYs' 41 9
+02:36:01.812 - STREAM b'IDAT' 62 4096
+02:36:01.820 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003333.png
+02:36:01.820 - STREAM b'IHDR' 16 13
+02:36:01.820 - STREAM b'pHYs' 41 9
+02:36:01.820 - STREAM b'IDAT' 62 4096
+02:36:01.827 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003366.png
+02:36:01.827 - STREAM b'IHDR' 16 13
+02:36:01.827 - STREAM b'pHYs' 41 9
+02:36:01.827 - STREAM b'IDAT' 62 4096
+02:36:01.835 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003400.png
+02:36:01.836 - STREAM b'IHDR' 16 13
+02:36:01.836 - STREAM b'pHYs' 41 9
+02:36:01.836 - STREAM b'IDAT' 62 4096
+02:36:01.843 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003433.png
+02:36:01.843 - STREAM b'IHDR' 16 13
+02:36:01.843 - STREAM b'pHYs' 41 9
+02:36:01.843 - STREAM b'IDAT' 62 4096
+02:36:01.851 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003466.png
+02:36:01.851 - STREAM b'IHDR' 16 13
+02:36:01.851 - STREAM b'pHYs' 41 9
+02:36:01.851 - STREAM b'IDAT' 62 4096
+02:36:01.859 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003500.png
+02:36:01.859 - STREAM b'IHDR' 16 13
+02:36:01.859 - STREAM b'pHYs' 41 9
+02:36:01.859 - STREAM b'IDAT' 62 4096
+02:36:01.867 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003533.png
+02:36:01.867 - STREAM b'IHDR' 16 13
+02:36:01.867 - STREAM b'pHYs' 41 9
+02:36:01.867 - STREAM b'IDAT' 62 4096
+02:36:01.875 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003566.png
+02:36:01.875 - STREAM b'IHDR' 16 13
+02:36:01.875 - STREAM b'pHYs' 41 9
+02:36:01.875 - STREAM b'IDAT' 62 4096
+02:36:01.882 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003600.png
+02:36:01.882 - STREAM b'IHDR' 16 13
+02:36:01.882 - STREAM b'pHYs' 41 9
+02:36:01.882 - STREAM b'IDAT' 62 4096
+02:36:01.891 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003633.png
+02:36:01.891 - STREAM b'IHDR' 16 13
+02:36:01.891 - STREAM b'pHYs' 41 9
+02:36:01.891 - STREAM b'IDAT' 62 4096
+02:36:01.898 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003666.png
+02:36:01.898 - STREAM b'IHDR' 16 13
+02:36:01.898 - STREAM b'pHYs' 41 9
+02:36:01.898 - STREAM b'IDAT' 62 4096
+02:36:01.907 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003700.png
+02:36:01.907 - STREAM b'IHDR' 16 13
+02:36:01.907 - STREAM b'pHYs' 41 9
+02:36:01.907 - STREAM b'IDAT' 62 4096
+02:36:01.914 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003733.png
+02:36:01.914 - STREAM b'IHDR' 16 13
+02:36:01.914 - STREAM b'pHYs' 41 9
+02:36:01.914 - STREAM b'IDAT' 62 4096
+02:36:01.922 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003766.png
+02:36:01.922 - STREAM b'IHDR' 16 13
+02:36:01.922 - STREAM b'pHYs' 41 9
+02:36:01.922 - STREAM b'IDAT' 62 4096
+02:36:01.929 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003800.png
+02:36:01.930 - STREAM b'IHDR' 16 13
+02:36:01.930 - STREAM b'pHYs' 41 9
+02:36:01.930 - STREAM b'IDAT' 62 4096
+02:36:01.937 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003833.png
+02:36:01.937 - STREAM b'IHDR' 16 13
+02:36:01.937 - STREAM b'pHYs' 41 9
+02:36:01.937 - STREAM b'IDAT' 62 4096
+02:36:01.944 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003866.png
+02:36:01.945 - STREAM b'IHDR' 16 13
+02:36:01.945 - STREAM b'pHYs' 41 9
+02:36:01.945 - STREAM b'IDAT' 62 4096
+02:36:01.953 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003900.png
+02:36:01.953 - STREAM b'IHDR' 16 13
+02:36:01.953 - STREAM b'pHYs' 41 9
+02:36:01.953 - STREAM b'IDAT' 62 4096
+02:36:01.961 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_003933.png
+02:36:01.961 - STREAM b'IHDR' 16 13
+02:36:01.961 - STREAM b'pHYs' 41 9
+02:36:01.961 - STREAM b'IDAT' 62 4096
+02:36:01.969 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_004433.png
+02:36:01.969 - STREAM b'IHDR' 16 13
+02:36:01.969 - STREAM b'pHYs' 41 9
+02:36:01.969 - STREAM b'IDAT' 62 4096
+02:36:01.976 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005233.png
+02:36:01.976 - STREAM b'IHDR' 16 13
+02:36:01.976 - STREAM b'pHYs' 41 9
+02:36:01.976 - STREAM b'IDAT' 62 4096
+02:36:01.984 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005333.png
+02:36:01.984 - STREAM b'IHDR' 16 13
+02:36:01.984 - STREAM b'pHYs' 41 9
+02:36:01.984 - STREAM b'IDAT' 62 4096
+02:36:01.991 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005400.png
+02:36:01.991 - STREAM b'IHDR' 16 13
+02:36:01.991 - STREAM b'pHYs' 41 9
+02:36:01.991 - STREAM b'IDAT' 62 4096
+02:36:01.999 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005533.png
+02:36:01.999 - STREAM b'IHDR' 16 13
+02:36:01.999 - STREAM b'pHYs' 41 9
+02:36:01.999 - STREAM b'IDAT' 62 4096
+02:36:02.007 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005566.png
+02:36:02.007 - STREAM b'IHDR' 16 13
+02:36:02.007 - STREAM b'pHYs' 41 9
+02:36:02.007 - STREAM b'IDAT' 62 4096
+02:36:02.014 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005600.png
+02:36:02.015 - STREAM b'IHDR' 16 13
+02:36:02.015 - STREAM b'pHYs' 41 9
+02:36:02.015 - STREAM b'IDAT' 62 4096
+02:36:02.022 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005633.png
+02:36:02.022 - STREAM b'IHDR' 16 13
+02:36:02.022 - STREAM b'pHYs' 41 9
+02:36:02.022 - STREAM b'IDAT' 62 4096
+02:36:02.029 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005666.png
+02:36:02.029 - STREAM b'IHDR' 16 13
+02:36:02.029 - STREAM b'pHYs' 41 9
+02:36:02.029 - STREAM b'IDAT' 62 4096
+02:36:02.037 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005700.png
+02:36:02.037 - STREAM b'IHDR' 16 13
+02:36:02.037 - STREAM b'pHYs' 41 9
+02:36:02.037 - STREAM b'IDAT' 62 4096
+02:36:02.045 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005733.png
+02:36:02.045 - STREAM b'IHDR' 16 13
+02:36:02.045 - STREAM b'pHYs' 41 9
+02:36:02.045 - STREAM b'IDAT' 62 4096
+02:36:02.052 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005766.png
+02:36:02.052 - STREAM b'IHDR' 16 13
+02:36:02.052 - STREAM b'pHYs' 41 9
+02:36:02.052 - STREAM b'IDAT' 62 4096
+02:36:02.060 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005800.png
+02:36:02.060 - STREAM b'IHDR' 16 13
+02:36:02.060 - STREAM b'pHYs' 41 9
+02:36:02.060 - STREAM b'IDAT' 62 4096
+02:36:02.068 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/gsa/gsabulletin/article-abstract/121/3-4/574/2374/Supply-and-dispersal-of-flood-sediment-from-a/query-1a0730f7/data/filmstrip/1/ms_005833.png
+02:36:02.068 - STREAM b'IHDR' 16 13
+02:36:02.068 - STREAM b'pHYs' 41 9
+02:36:02.068 - STREAM b'IDAT' 62 4096
+02:36:02.135 - Done calculating histograms
+02:36:02.138 - 0ms - 0% Complete
+02:36:02.138 - 1700ms - 8% Complete
+02:36:02.138 - 1733ms - 8% Complete
+02:36:02.138 - 1766ms - 12% Complete
+02:36:02.138 - 1800ms - 13% Complete
+02:36:02.139 - 1833ms - 13% Complete
+02:36:02.139 - 1866ms - 13% Complete
+02:36:02.139 - 1900ms - 13% Complete
+02:36:02.139 - 1933ms - 13% Complete
+02:36:02.139 - 2000ms - 13% Complete
+02:36:02.140 - 2033ms - 13% Complete
+02:36:02.140 - 2333ms - 14% Complete
+02:36:02.140 - 2900ms - 16% Complete
+02:36:02.140 - 2966ms - 17% Complete
+02:36:02.140 - 3100ms - 17% Complete
+02:36:02.141 - 3133ms - 17% Complete
+02:36:02.141 - 3166ms - 17% Complete
+02:36:02.141 - 3200ms - 24% Complete
+02:36:02.141 - 3233ms - 23% Complete
+02:36:02.141 - 3266ms - 24% Complete
+02:36:02.142 - 3300ms - 24% Complete
+02:36:02.142 - 3333ms - 24% Complete
+02:36:02.142 - 3366ms - 24% Complete
+02:36:02.142 - 3400ms - 24% Complete
+02:36:02.142 - 3433ms - 24% Complete
+02:36:02.143 - 3466ms - 24% Complete
+02:36:02.143 - 3500ms - 24% Complete
+02:36:02.143 - 3533ms - 24% Complete
+02:36:02.143 - 3566ms - 25% Complete
+02:36:02.143 - 3600ms - 24% Complete
+02:36:02.144 - 3633ms - 25% Complete
+02:36:02.144 - 3666ms - 24% Complete
+02:36:02.144 - 3700ms - 24% Complete
+02:36:02.144 - 3733ms - 24% Complete
+02:36:02.144 - 3766ms - 24% Complete
+02:36:02.145 - 3800ms - 24% Complete
+02:36:02.145 - 3833ms - 24% Complete
+02:36:02.145 - 3866ms - 24% Complete
+02:36:02.145 - 3900ms - 24% Complete
+02:36:02.145 - 3933ms - 24% Complete
+02:36:02.146 - 4433ms - 24% Complete
+02:36:02.146 - 5233ms - 24% Complete
+02:36:02.146 - 5333ms - 24% Complete
+02:36:02.146 - 5400ms - 24% Complete
+02:36:02.146 - 5533ms - 24% Complete
+02:36:02.147 - 5566ms - 27% Complete
+02:36:02.147 - 5600ms - 52% Complete
+02:36:02.147 - 5633ms - 92% Complete
+02:36:02.147 - 5666ms - 93% Complete
+02:36:02.147 - 5700ms - 97% Complete
+02:36:02.148 - 5733ms - 97% Complete
+02:36:02.148 - 5766ms - 97% Complete
+02:36:02.148 - 5800ms - 98% Complete
+02:36:02.148 - 5833ms - 100% Complete
+02:36:02.148 - Hero elements file is not valid: None
+02:36:02.148 - Converting video frames to JPEG
+02:36:02.149 - STREAM b'IHDR' 16 13
+02:36:02.149 - STREAM b'pHYs' 41 9
+02:36:02.149 - STREAM b'IDAT' 62 634
+02:36:02.149 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.149 - STREAM b'IHDR' 16 13
+02:36:02.150 - STREAM b'pHYs' 41 9
+02:36:02.150 - STREAM b'IDAT' 62 4096
+02:36:02.150 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.150 - STREAM b'IHDR' 16 13
+02:36:02.150 - STREAM b'pHYs' 41 9
+02:36:02.150 - STREAM b'IDAT' 62 4096
+02:36:02.150 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.151 - STREAM b'IHDR' 16 13
+02:36:02.151 - STREAM b'pHYs' 41 9
+02:36:02.151 - STREAM b'IDAT' 62 4096
+02:36:02.151 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.152 - STREAM b'IHDR' 16 13
+02:36:02.152 - STREAM b'pHYs' 41 9
+02:36:02.152 - STREAM b'IDAT' 62 4096
+02:36:02.152 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.153 - STREAM b'IHDR' 16 13
+02:36:02.153 - STREAM b'pHYs' 41 9
+02:36:02.153 - STREAM b'IDAT' 62 4096
+02:36:02.153 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.154 - STREAM b'IHDR' 16 13
+02:36:02.154 - STREAM b'pHYs' 41 9
+02:36:02.154 - STREAM b'IDAT' 62 4096
+02:36:02.154 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.154 - STREAM b'IHDR' 16 13
+02:36:02.155 - STREAM b'pHYs' 41 9
+02:36:02.155 - STREAM b'IDAT' 62 4096
+02:36:02.155 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.155 - STREAM b'IHDR' 16 13
+02:36:02.155 - STREAM b'pHYs' 41 9
+02:36:02.155 - STREAM b'IDAT' 62 4096
+02:36:02.155 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.156 - STREAM b'IHDR' 16 13
+02:36:02.156 - STREAM b'pHYs' 41 9
+02:36:02.156 - STREAM b'IDAT' 62 4096
+02:36:02.156 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.157 - STREAM b'IHDR' 16 13
+02:36:02.157 - STREAM b'pHYs' 41 9
+02:36:02.157 - STREAM b'IDAT' 62 4096
+02:36:02.157 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.158 - STREAM b'IHDR' 16 13
+02:36:02.158 - STREAM b'pHYs' 41 9
+02:36:02.158 - STREAM b'IDAT' 62 4096
+02:36:02.158 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.159 - STREAM b'IHDR' 16 13
+02:36:02.159 - STREAM b'pHYs' 41 9
+02:36:02.159 - STREAM b'IDAT' 62 4096
+02:36:02.159 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.160 - STREAM b'IHDR' 16 13
+02:36:02.160 - STREAM b'pHYs' 41 9
+02:36:02.160 - STREAM b'IDAT' 62 4096
+02:36:02.160 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.161 - STREAM b'IHDR' 16 13
+02:36:02.161 - STREAM b'pHYs' 41 9
+02:36:02.161 - STREAM b'IDAT' 62 4096
+02:36:02.161 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.162 - STREAM b'IHDR' 16 13
+02:36:02.162 - STREAM b'pHYs' 41 9
+02:36:02.162 - STREAM b'IDAT' 62 4096
+02:36:02.162 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.163 - STREAM b'IHDR' 16 13
+02:36:02.163 - STREAM b'pHYs' 41 9
+02:36:02.163 - STREAM b'IDAT' 62 4096
+02:36:02.163 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.163 - STREAM b'IHDR' 16 13
+02:36:02.164 - STREAM b'pHYs' 41 9
+02:36:02.164 - STREAM b'IDAT' 62 4096
+02:36:02.164 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.164 - STREAM b'IHDR' 16 13
+02:36:02.165 - STREAM b'pHYs' 41 9
+02:36:02.165 - STREAM b'IDAT' 62 4096
+02:36:02.165 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.165 - STREAM b'IHDR' 16 13
+02:36:02.165 - STREAM b'pHYs' 41 9
+02:36:02.165 - STREAM b'IDAT' 62 4096
+02:36:02.166 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.166 - STREAM b'IHDR' 16 13
+02:36:02.166 - STREAM b'pHYs' 41 9
+02:36:02.167 - STREAM b'IDAT' 62 4096
+02:36:02.167 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.167 - STREAM b'IHDR' 16 13
+02:36:02.167 - STREAM b'pHYs' 41 9
+02:36:02.168 - STREAM b'IDAT' 62 4096
+02:36:02.168 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.168 - STREAM b'IHDR' 16 13
+02:36:02.168 - STREAM b'pHYs' 41 9
+02:36:02.168 - STREAM b'IDAT' 62 4096
+02:36:02.169 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.169 - STREAM b'IHDR' 16 13
+02:36:02.169 - STREAM b'pHYs' 41 9
+02:36:02.169 - STREAM b'IDAT' 62 4096
+02:36:02.170 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.170 - STREAM b'IHDR' 16 13
+02:36:02.170 - STREAM b'pHYs' 41 9
+02:36:02.170 - STREAM b'IDAT' 62 4096
+02:36:02.170 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.171 - STREAM b'IHDR' 16 13
+02:36:02.171 - STREAM b'pHYs' 41 9
+02:36:02.171 - STREAM b'IDAT' 62 4096
+02:36:02.171 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.172 - STREAM b'IHDR' 16 13
+02:36:02.172 - STREAM b'pHYs' 41 9
+02:36:02.172 - STREAM b'IDAT' 62 4096
+02:36:02.172 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.173 - STREAM b'IHDR' 16 13
+02:36:02.173 - STREAM b'pHYs' 41 9
+02:36:02.173 - STREAM b'IDAT' 62 4096
+02:36:02.173 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.174 - STREAM b'IHDR' 16 13
+02:36:02.174 - STREAM b'pHYs' 41 9
+02:36:02.174 - STREAM b'IDAT' 62 4096
+02:36:02.174 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.175 - STREAM b'IHDR' 16 13
+02:36:02.175 - STREAM b'pHYs' 41 9
+02:36:02.175 - STREAM b'IDAT' 62 4096
+02:36:02.175 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.176 - STREAM b'IHDR' 16 13
+02:36:02.176 - STREAM b'pHYs' 41 9
+02:36:02.176 - STREAM b'IDAT' 62 4096
+02:36:02.176 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.177 - STREAM b'IHDR' 16 13
+02:36:02.177 - STREAM b'pHYs' 41 9
+02:36:02.177 - STREAM b'IDAT' 62 4096
+02:36:02.177 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.178 - STREAM b'IHDR' 16 13
+02:36:02.178 - STREAM b'pHYs' 41 9
+02:36:02.178 - STREAM b'IDAT' 62 4096
+02:36:02.178 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.179 - STREAM b'IHDR' 16 13
+02:36:02.179 - STREAM b'pHYs' 41 9
+02:36:02.179 - STREAM b'IDAT' 62 4096
+02:36:02.179 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.180 - STREAM b'IHDR' 16 13
+02:36:02.180 - STREAM b'pHYs' 41 9
+02:36:02.180 - STREAM b'IDAT' 62 4096
+02:36:02.180 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.181 - STREAM b'IHDR' 16 13
+02:36:02.181 - STREAM b'pHYs' 41 9
+02:36:02.181 - STREAM b'IDAT' 62 4096
+02:36:02.181 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.182 - STREAM b'IHDR' 16 13
+02:36:02.182 - STREAM b'pHYs' 41 9
+02:36:02.182 - STREAM b'IDAT' 62 4096
+02:36:02.182 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.183 - STREAM b'IHDR' 16 13
+02:36:02.183 - STREAM b'pHYs' 41 9
+02:36:02.183 - STREAM b'IDAT' 62 4096
+02:36:02.183 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.184 - STREAM b'IHDR' 16 13
+02:36:02.184 - STREAM b'pHYs' 41 9
+02:36:02.184 - STREAM b'IDAT' 62 4096
+02:36:02.184 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.185 - STREAM b'IHDR' 16 13
+02:36:02.185 - STREAM b'pHYs' 41 9
+02:36:02.185 - STREAM b'IDAT' 62 4096
+02:36:02.185 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.186 - STREAM b'IHDR' 16 13
+02:36:02.186 - STREAM b'pHYs' 41 9
+02:36:02.186 - STREAM b'IDAT' 62 4096
+02:36:02.186 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.187 - STREAM b'IHDR' 16 13
+02:36:02.187 - STREAM b'pHYs' 41 9
+02:36:02.187 - STREAM b'IDAT' 62 4096
+02:36:02.187 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.188 - STREAM b'IHDR' 16 13
+02:36:02.188 - STREAM b'pHYs' 41 9
+02:36:02.188 - STREAM b'IDAT' 62 4096
+02:36:02.188 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.189 - STREAM b'IHDR' 16 13
+02:36:02.189 - STREAM b'pHYs' 41 9
+02:36:02.189 - STREAM b'IDAT' 62 4096
+02:36:02.189 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.190 - STREAM b'IHDR' 16 13
+02:36:02.190 - STREAM b'pHYs' 41 9
+02:36:02.190 - STREAM b'IDAT' 62 4096
+02:36:02.190 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.191 - STREAM b'IHDR' 16 13
+02:36:02.191 - STREAM b'pHYs' 41 9
+02:36:02.191 - STREAM b'IDAT' 62 4096
+02:36:02.191 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.192 - STREAM b'IHDR' 16 13
+02:36:02.192 - STREAM b'pHYs' 41 9
+02:36:02.192 - STREAM b'IDAT' 62 4096
+02:36:02.192 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.193 - STREAM b'IHDR' 16 13
+02:36:02.193 - STREAM b'pHYs' 41 9
+02:36:02.193 - STREAM b'IDAT' 62 4096
+02:36:02.193 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.194 - STREAM b'IHDR' 16 13
+02:36:02.194 - STREAM b'pHYs' 41 9
+02:36:02.194 - STREAM b'IDAT' 62 4096
+02:36:02.194 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.195 - STREAM b'IHDR' 16 13
+02:36:02.195 - STREAM b'pHYs' 41 9
+02:36:02.195 - STREAM b'IDAT' 62 4096
+02:36:02.195 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.196 - STREAM b'IHDR' 16 13
+02:36:02.196 - STREAM b'pHYs' 41 9
+02:36:02.196 - STREAM b'IDAT' 62 4096
+02:36:02.196 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.197 - STREAM b'IHDR' 16 13
+02:36:02.197 - STREAM b'pHYs' 41 9
+02:36:02.197 - STREAM b'IDAT' 62 4096
+02:36:02.197 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.198 - STREAM b'IHDR' 16 13
+02:36:02.198 - STREAM b'pHYs' 41 9
+02:36:02.198 - STREAM b'IDAT' 62 4096
+02:36:02.198 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.199 - STREAM b'IHDR' 16 13
+02:36:02.199 - STREAM b'pHYs' 41 9
+02:36:02.199 - STREAM b'IDAT' 62 4096
+02:36:02.199 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:02.200 - Done converting video frames to JPEG

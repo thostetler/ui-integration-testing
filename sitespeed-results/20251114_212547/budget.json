@@ -1,0 +1,15 @@
+{
+  "budget": {
+    "timings": {
+      "fullyLoaded": 5000,
+      "largestContentfulPaint": 4000,
+      "SpeedIndex": 3000
+    },
+    "requests": {
+      "total": 150
+    },
+    "transferSize": {
+      "total": 2000000
+    }
+  }
+}

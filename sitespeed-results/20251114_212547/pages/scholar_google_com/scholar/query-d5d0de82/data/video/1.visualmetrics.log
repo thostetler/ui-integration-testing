@@ -1,0 +1,162 @@
+02:28:11.322 - FFMPEG found
+02:28:11.322 - Python 3.6+ found
+02:28:11.365 - Numpy found
+02:28:11.386 - OpenCV-Python found
+02:28:11.399 - Pillow found
+02:28:11.654 - SSIM found
+02:28:11.658 - Processing frames from video /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/video/1.mp4 to /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1
+02:28:11.658 - ['ffprobe', '/sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/video/1.mp4']
+02:28:11.664 - Finding Video Viewport...
+02:28:11.664 - Using frame 0
+02:28:11.729 - STREAM b'IHDR' 16 13
+02:28:11.729 - STREAM b'pHYs' 41 9
+02:28:11.729 - STREAM b'IDAT' 62 4096
+02:28:11.729 - /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/viewport.png is 1366x708
+02:28:11.729 - Finding the viewport for /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/viewport.png
+02:28:11.730 - STREAM b'IHDR' 16 13
+02:28:11.730 - STREAM b'pHYs' 41 9
+02:28:11.730 - STREAM b'IDAT' 62 4096
+02:28:11.735 - Viewport left edge is 0
+02:28:11.735 - Viewport right edge is 1363
+02:28:11.735 - Viewport top edge is 88
+02:28:11.735 - Viewport bottom edge is 704
+02:28:11.745 - Extracting frames from /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/video/1.mp4 to /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1
+02:28:11.747 - ffmpeg -v debug -i /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/video/1.mp4 -vsync 0 -vf crop=1363:616:0:88,scale=iw*min(400/iw\,400/ih):ih*min(400/iw\,400/ih),mpdecimate=0:64:640:0.001 /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/img-%d.png
+02:28:11.895 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/img-1.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/video-000000.png
+02:28:11.895 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/img-2.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/video-000900.png
+02:28:11.895 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/img-3.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/video-001134.png
+02:28:11.895 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/img-4.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/video-001167.png
+02:28:11.895 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/img-5.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/video-001201.png
+02:28:11.896 - Scanning for non-orange frames...
+02:28:11.896 - STREAM b'IHDR' 16 13
+02:28:11.896 - STREAM b'pHYs' 41 9
+02:28:11.896 - STREAM b'IDAT' 62 658
+02:28:11.896 - STREAM b'IHDR' 16 13
+02:28:11.896 - STREAM b'pHYs' 41 9
+02:28:11.896 - STREAM b'IDAT' 62 658
+02:28:11.897 - STREAM b'IHDR' 16 13
+02:28:11.898 - STREAM b'IDAT' 41 535
+02:28:11.899 - Scanning for orange frames...
+02:28:11.899 - Removing Orange frame: /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/video-000000.png
+02:28:11.900 - STREAM b'IHDR' 16 13
+02:28:11.900 - STREAM b'pHYs' 41 9
+02:28:11.900 - STREAM b'IDAT' 62 641
+02:28:11.900 - STREAM b'IHDR' 16 13
+02:28:11.900 - STREAM b'pHYs' 41 9
+02:28:11.900 - STREAM b'IDAT' 62 641
+02:28:11.901 - STREAM b'IHDR' 16 13
+02:28:11.901 - STREAM b'IDAT' 41 535
+02:28:11.902 - STREAM b'IHDR' 16 13
+02:28:11.902 - STREAM b'pHYs' 41 9
+02:28:11.902 - STREAM b'IDAT' 62 641
+02:28:11.903 - STREAM b'IHDR' 16 13
+02:28:11.903 - STREAM b'IDAT' 41 535
+02:28:11.904 - STREAM b'IHDR' 16 13
+02:28:11.904 - STREAM b'pHYs' 41 9
+02:28:11.904 - STREAM b'IDAT' 62 641
+02:28:11.905 - STREAM b'IHDR' 16 13
+02:28:11.905 - STREAM b'IDAT' 41 535
+02:28:11.906 - STREAM b'IHDR' 16 13
+02:28:11.906 - STREAM b'pHYs' 41 9
+02:28:11.906 - STREAM b'IDAT' 62 4096
+02:28:11.906 - STREAM b'IHDR' 16 13
+02:28:11.906 - STREAM b'pHYs' 41 9
+02:28:11.906 - STREAM b'IDAT' 62 4096
+02:28:11.907 - STREAM b'IHDR' 16 13
+02:28:11.907 - STREAM b'IDAT' 41 535
+02:28:11.908 - STREAM b'IHDR' 16 13
+02:28:11.908 - STREAM b'pHYs' 41 9
+02:28:11.908 - STREAM b'IDAT' 62 4096
+02:28:11.909 - STREAM b'IHDR' 16 13
+02:28:11.909 - STREAM b'IDAT' 41 535
+02:28:11.910 - STREAM b'IHDR' 16 13
+02:28:11.910 - STREAM b'pHYs' 41 9
+02:28:11.910 - STREAM b'IDAT' 62 4096
+02:28:11.911 - STREAM b'IHDR' 16 13
+02:28:11.911 - STREAM b'IDAT' 41 535
+02:28:11.912 - Finding Render Start...
+02:28:11.912 - STREAM b'IHDR' 16 13
+02:28:11.912 - STREAM b'pHYs' 41 9
+02:28:11.912 - STREAM b'IDAT' 62 641
+02:28:11.912 - STREAM b'IHDR' 16 13
+02:28:11.912 - STREAM b'pHYs' 41 9
+02:28:11.912 - STREAM b'IDAT' 62 641
+02:28:11.912 - STREAM b'IHDR' 16 13
+02:28:11.912 - STREAM b'pHYs' 41 9
+02:28:11.912 - STREAM b'IDAT' 62 1761
+02:28:11.915 - STREAM b'IHDR' 16 13
+02:28:11.915 - STREAM b'pHYs' 41 9
+02:28:11.916 - STREAM b'IDAT' 62 1761
+02:28:11.916 - STREAM b'IHDR' 16 13
+02:28:11.916 - STREAM b'pHYs' 41 9
+02:28:11.916 - STREAM b'IDAT' 62 1761
+02:28:11.917 - STREAM b'IHDR' 16 13
+02:28:11.917 - STREAM b'IDAT' 41 535
+02:28:11.917 - STREAM b'IHDR' 16 13
+02:28:11.917 - STREAM b'pHYs' 41 9
+02:28:11.917 - STREAM b'IDAT' 62 1761
+02:28:11.918 - STREAM b'IHDR' 16 13
+02:28:11.918 - STREAM b'IDAT' 41 535
+02:28:11.919 - STREAM b'IHDR' 16 13
+02:28:11.919 - STREAM b'pHYs' 41 9
+02:28:11.919 - STREAM b'IDAT' 62 1761
+02:28:11.920 - STREAM b'IHDR' 16 13
+02:28:11.920 - STREAM b'IDAT' 41 535
+02:28:11.921 - Eliminating Duplicate Frames...
+02:28:11.921 - STREAM b'IHDR' 16 13
+02:28:11.921 - STREAM b'pHYs' 41 9
+02:28:11.921 - STREAM b'IDAT' 62 641
+02:28:11.921 - Viewport cropping set to (W, H, L, T): (400, 170, 0, 0)
+02:28:11.921 - STREAM b'IHDR' 16 13
+02:28:11.921 - STREAM b'pHYs' 41 9
+02:28:11.921 - STREAM b'IDAT' 62 641
+02:28:11.921 - STREAM b'IHDR' 16 13
+02:28:11.921 - STREAM b'pHYs' 41 9
+02:28:11.921 - STREAM b'IDAT' 62 1761
+02:28:11.925 - STREAM b'IHDR' 16 13
+02:28:11.925 - STREAM b'pHYs' 41 9
+02:28:11.925 - STREAM b'IDAT' 62 4096
+02:28:11.925 - STREAM b'IHDR' 16 13
+02:28:11.925 - STREAM b'pHYs' 41 9
+02:28:11.925 - STREAM b'IDAT' 62 2942
+02:28:11.936 - Calculating image histograms
+02:28:11.937 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/ms_000000.png
+02:28:11.937 - STREAM b'IHDR' 16 13
+02:28:11.937 - STREAM b'pHYs' 41 9
+02:28:11.937 - STREAM b'IDAT' 62 641
+02:28:11.943 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/ms_000234.png
+02:28:11.943 - STREAM b'IHDR' 16 13
+02:28:11.943 - STREAM b'pHYs' 41 9
+02:28:11.943 - STREAM b'IDAT' 62 1761
+02:28:11.948 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/ms_000267.png
+02:28:11.948 - STREAM b'IHDR' 16 13
+02:28:11.948 - STREAM b'pHYs' 41 9
+02:28:11.948 - STREAM b'IDAT' 62 2942
+02:28:11.954 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scholar_google_com/scholar/query-d5d0de82/data/filmstrip/1/ms_000301.png
+02:28:11.954 - STREAM b'IHDR' 16 13
+02:28:11.954 - STREAM b'pHYs' 41 9
+02:28:11.954 - STREAM b'IDAT' 62 4096
+02:28:11.963 - Done calculating histograms
+02:28:11.963 - 0ms - 0% Complete
+02:28:11.963 - 234ms - 31% Complete
+02:28:11.964 - 267ms - 33% Complete
+02:28:11.964 - 301ms - 100% Complete
+02:28:11.964 - Hero elements file is not valid: None
+02:28:11.964 - Converting video frames to JPEG
+02:28:11.964 - STREAM b'IHDR' 16 13
+02:28:11.964 - STREAM b'pHYs' 41 9
+02:28:11.964 - STREAM b'IDAT' 62 641
+02:28:11.964 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:28:11.965 - STREAM b'IHDR' 16 13
+02:28:11.965 - STREAM b'pHYs' 41 9
+02:28:11.965 - STREAM b'IDAT' 62 1761
+02:28:11.965 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:28:11.965 - STREAM b'IHDR' 16 13
+02:28:11.965 - STREAM b'pHYs' 41 9
+02:28:11.966 - STREAM b'IDAT' 62 2942
+02:28:11.966 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:28:11.966 - STREAM b'IHDR' 16 13
+02:28:11.966 - STREAM b'pHYs' 41 9
+02:28:11.966 - STREAM b'IDAT' 62 4096
+02:28:11.966 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:28:11.967 - Done converting video frames to JPEG

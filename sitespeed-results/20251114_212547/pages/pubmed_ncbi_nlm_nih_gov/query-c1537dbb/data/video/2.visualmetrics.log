@@ -1,0 +1,370 @@
+02:30:17.560 - FFMPEG found
+02:30:17.560 - Python 3.6+ found
+02:30:17.608 - Numpy found
+02:30:17.631 - OpenCV-Python found
+02:30:17.644 - Pillow found
+02:30:17.907 - SSIM found
+02:30:17.911 - Processing frames from video /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/video/2.mp4 to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2
+02:30:17.911 - ['ffprobe', '/sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/video/2.mp4']
+02:30:17.917 - Finding Video Viewport...
+02:30:17.917 - Using frame 0
+02:30:17.981 - STREAM b'IHDR' 16 13
+02:30:17.981 - STREAM b'pHYs' 41 9
+02:30:17.981 - STREAM b'IDAT' 62 4096
+02:30:17.981 - /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/viewport.png is 1366x708
+02:30:17.981 - Finding the viewport for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/viewport.png
+02:30:17.981 - STREAM b'IHDR' 16 13
+02:30:17.981 - STREAM b'pHYs' 41 9
+02:30:17.981 - STREAM b'IDAT' 62 4096
+02:30:17.986 - Viewport left edge is 0
+02:30:17.986 - Viewport right edge is 1363
+02:30:17.986 - Viewport top edge is 88
+02:30:17.987 - Viewport bottom edge is 704
+02:30:17.998 - Extracting frames from /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/video/2.mp4 to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2
+02:30:18.001 - ffmpeg -v debug -i /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/video/2.mp4 -vsync 0 -vf crop=1363:616:0:88,scale=iw*min(400/iw\,400/ih):ih*min(400/iw\,400/ih),mpdecimate=0:64:640:0.001 /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-%d.png
+02:30:18.151 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-1.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-000000.png
+02:30:18.151 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-2.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-000900.png
+02:30:18.151 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-3.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-001666.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-4.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-001700.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-5.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-001733.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-6.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-001766.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-7.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-001800.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-8.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-001833.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-9.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-001866.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-10.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-001900.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-11.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-001933.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-12.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-001966.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-13.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-002000.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-14.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-002033.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-15.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-002066.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-16.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-002100.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-17.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-002133.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-18.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-002200.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-19.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-002300.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-20.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-002733.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-21.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-003333.png
+02:30:18.152 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-22.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-003933.png
+02:30:18.153 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-23.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-004533.png
+02:30:18.153 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-24.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-005133.png
+02:30:18.153 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-25.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-005733.png
+02:30:18.153 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-26.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-006333.png
+02:30:18.153 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-27.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-006933.png
+02:30:18.153 - Renaming /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/img-28.png to /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-007533.png
+02:30:18.153 - Scanning for non-orange frames...
+02:30:18.153 - STREAM b'IHDR' 16 13
+02:30:18.153 - STREAM b'pHYs' 41 9
+02:30:18.153 - STREAM b'IDAT' 62 658
+02:30:18.153 - STREAM b'IHDR' 16 13
+02:30:18.154 - STREAM b'pHYs' 41 9
+02:30:18.154 - STREAM b'IDAT' 62 658
+02:30:18.155 - STREAM b'IHDR' 16 13
+02:30:18.155 - STREAM b'IDAT' 41 535
+02:30:18.157 - Scanning for orange frames...
+02:30:18.157 - Removing Orange frame: /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/video-000000.png
+02:30:18.157 - STREAM b'IHDR' 16 13
+02:30:18.157 - STREAM b'pHYs' 41 9
+02:30:18.157 - STREAM b'IDAT' 62 634
+02:30:18.157 - STREAM b'IHDR' 16 13
+02:30:18.157 - STREAM b'pHYs' 41 9
+02:30:18.157 - STREAM b'IDAT' 62 634
+02:30:18.158 - STREAM b'IHDR' 16 13
+02:30:18.158 - STREAM b'IDAT' 41 535
+02:30:18.159 - STREAM b'IHDR' 16 13
+02:30:18.159 - STREAM b'pHYs' 41 9
+02:30:18.159 - STREAM b'IDAT' 62 634
+02:30:18.160 - STREAM b'IHDR' 16 13
+02:30:18.160 - STREAM b'IDAT' 41 535
+02:30:18.161 - STREAM b'IHDR' 16 13
+02:30:18.161 - STREAM b'pHYs' 41 9
+02:30:18.161 - STREAM b'IDAT' 62 634
+02:30:18.162 - STREAM b'IHDR' 16 13
+02:30:18.162 - STREAM b'IDAT' 41 535
+02:30:18.163 - STREAM b'IHDR' 16 13
+02:30:18.163 - STREAM b'pHYs' 41 9
+02:30:18.163 - STREAM b'IDAT' 62 4096
+02:30:18.163 - STREAM b'IHDR' 16 13
+02:30:18.163 - STREAM b'pHYs' 41 9
+02:30:18.163 - STREAM b'IDAT' 62 4096
+02:30:18.164 - STREAM b'IHDR' 16 13
+02:30:18.164 - STREAM b'IDAT' 41 535
+02:30:18.165 - STREAM b'IHDR' 16 13
+02:30:18.165 - STREAM b'pHYs' 41 9
+02:30:18.165 - STREAM b'IDAT' 62 4096
+02:30:18.166 - STREAM b'IHDR' 16 13
+02:30:18.166 - STREAM b'IDAT' 41 535
+02:30:18.167 - STREAM b'IHDR' 16 13
+02:30:18.167 - STREAM b'pHYs' 41 9
+02:30:18.167 - STREAM b'IDAT' 62 4096
+02:30:18.168 - STREAM b'IHDR' 16 13
+02:30:18.168 - STREAM b'IDAT' 41 535
+02:30:18.169 - Finding Render Start...
+02:30:18.169 - STREAM b'IHDR' 16 13
+02:30:18.169 - STREAM b'pHYs' 41 9
+02:30:18.169 - STREAM b'IDAT' 62 634
+02:30:18.169 - STREAM b'IHDR' 16 13
+02:30:18.169 - STREAM b'pHYs' 41 9
+02:30:18.169 - STREAM b'IDAT' 62 634
+02:30:18.169 - STREAM b'IHDR' 16 13
+02:30:18.169 - STREAM b'pHYs' 41 9
+02:30:18.169 - STREAM b'IDAT' 62 4096
+02:30:18.173 - STREAM b'IHDR' 16 13
+02:30:18.173 - STREAM b'pHYs' 41 9
+02:30:18.173 - STREAM b'IDAT' 62 4096
+02:30:18.173 - STREAM b'IHDR' 16 13
+02:30:18.173 - STREAM b'pHYs' 41 9
+02:30:18.173 - STREAM b'IDAT' 62 4096
+02:30:18.174 - STREAM b'IHDR' 16 13
+02:30:18.174 - STREAM b'IDAT' 41 535
+02:30:18.174 - STREAM b'IHDR' 16 13
+02:30:18.174 - STREAM b'pHYs' 41 9
+02:30:18.174 - STREAM b'IDAT' 62 4096
+02:30:18.176 - STREAM b'IHDR' 16 13
+02:30:18.176 - STREAM b'IDAT' 41 535
+02:30:18.176 - STREAM b'IHDR' 16 13
+02:30:18.177 - STREAM b'pHYs' 41 9
+02:30:18.177 - STREAM b'IDAT' 62 4096
+02:30:18.177 - STREAM b'IHDR' 16 13
+02:30:18.177 - STREAM b'IDAT' 41 535
+02:30:18.179 - Eliminating Duplicate Frames...
+02:30:18.179 - STREAM b'IHDR' 16 13
+02:30:18.179 - STREAM b'pHYs' 41 9
+02:30:18.179 - STREAM b'IDAT' 62 634
+02:30:18.179 - Viewport cropping set to (W, H, L, T): (400, 170, 0, 0)
+02:30:18.179 - STREAM b'IHDR' 16 13
+02:30:18.179 - STREAM b'pHYs' 41 9
+02:30:18.179 - STREAM b'IDAT' 62 634
+02:30:18.179 - STREAM b'IHDR' 16 13
+02:30:18.179 - STREAM b'pHYs' 41 9
+02:30:18.179 - STREAM b'IDAT' 62 4096
+02:30:18.182 - STREAM b'IHDR' 16 13
+02:30:18.183 - STREAM b'pHYs' 41 9
+02:30:18.183 - STREAM b'IDAT' 62 4096
+02:30:18.183 - STREAM b'IHDR' 16 13
+02:30:18.183 - STREAM b'pHYs' 41 9
+02:30:18.183 - STREAM b'IDAT' 62 4096
+02:30:18.186 - STREAM b'IHDR' 16 13
+02:30:18.186 - STREAM b'pHYs' 41 9
+02:30:18.186 - STREAM b'IDAT' 62 4096
+02:30:18.186 - STREAM b'IHDR' 16 13
+02:30:18.186 - STREAM b'pHYs' 41 9
+02:30:18.186 - STREAM b'IDAT' 62 4096
+02:30:18.190 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_006033.png from the end
+02:30:18.190 - STREAM b'IHDR' 16 13
+02:30:18.190 - STREAM b'pHYs' 41 9
+02:30:18.190 - STREAM b'IDAT' 62 4096
+02:30:18.190 - STREAM b'IHDR' 16 13
+02:30:18.190 - STREAM b'pHYs' 41 9
+02:30:18.190 - STREAM b'IDAT' 62 4096
+02:30:18.193 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_005433.png from the end
+02:30:18.193 - STREAM b'IHDR' 16 13
+02:30:18.193 - STREAM b'pHYs' 41 9
+02:30:18.193 - STREAM b'IDAT' 62 4096
+02:30:18.193 - STREAM b'IHDR' 16 13
+02:30:18.193 - STREAM b'pHYs' 41 9
+02:30:18.193 - STREAM b'IDAT' 62 4096
+02:30:18.197 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_004833.png from the end
+02:30:18.197 - STREAM b'IHDR' 16 13
+02:30:18.197 - STREAM b'pHYs' 41 9
+02:30:18.197 - STREAM b'IDAT' 62 4096
+02:30:18.197 - STREAM b'IHDR' 16 13
+02:30:18.197 - STREAM b'pHYs' 41 9
+02:30:18.197 - STREAM b'IDAT' 62 4096
+02:30:18.201 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_004233.png from the end
+02:30:18.201 - STREAM b'IHDR' 16 13
+02:30:18.201 - STREAM b'pHYs' 41 9
+02:30:18.201 - STREAM b'IDAT' 62 4096
+02:30:18.201 - STREAM b'IHDR' 16 13
+02:30:18.201 - STREAM b'pHYs' 41 9
+02:30:18.201 - STREAM b'IDAT' 62 4096
+02:30:18.204 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_003633.png from the end
+02:30:18.204 - STREAM b'IHDR' 16 13
+02:30:18.204 - STREAM b'pHYs' 41 9
+02:30:18.204 - STREAM b'IDAT' 62 4096
+02:30:18.204 - STREAM b'IHDR' 16 13
+02:30:18.204 - STREAM b'pHYs' 41 9
+02:30:18.204 - STREAM b'IDAT' 62 4096
+02:30:18.208 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_003033.png from the end
+02:30:18.208 - STREAM b'IHDR' 16 13
+02:30:18.208 - STREAM b'pHYs' 41 9
+02:30:18.208 - STREAM b'IDAT' 62 4096
+02:30:18.208 - STREAM b'IHDR' 16 13
+02:30:18.208 - STREAM b'pHYs' 41 9
+02:30:18.208 - STREAM b'IDAT' 62 4096
+02:30:18.212 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_002433.png from the end
+02:30:18.212 - STREAM b'IHDR' 16 13
+02:30:18.212 - STREAM b'pHYs' 41 9
+02:30:18.212 - STREAM b'IDAT' 62 4096
+02:30:18.212 - STREAM b'IHDR' 16 13
+02:30:18.212 - STREAM b'pHYs' 41 9
+02:30:18.212 - STREAM b'IDAT' 62 4096
+02:30:18.215 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_001833.png from the end
+02:30:18.215 - STREAM b'IHDR' 16 13
+02:30:18.215 - STREAM b'pHYs' 41 9
+02:30:18.215 - STREAM b'IDAT' 62 4096
+02:30:18.215 - STREAM b'IHDR' 16 13
+02:30:18.215 - STREAM b'pHYs' 41 9
+02:30:18.215 - STREAM b'IDAT' 62 4096
+02:30:18.219 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_001400.png from the end
+02:30:18.219 - STREAM b'IHDR' 16 13
+02:30:18.219 - STREAM b'pHYs' 41 9
+02:30:18.219 - STREAM b'IDAT' 62 4096
+02:30:18.219 - STREAM b'IHDR' 16 13
+02:30:18.219 - STREAM b'pHYs' 41 9
+02:30:18.219 - STREAM b'IDAT' 62 4096
+02:30:18.222 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_001300.png from the end
+02:30:18.222 - STREAM b'IHDR' 16 13
+02:30:18.222 - STREAM b'pHYs' 41 9
+02:30:18.222 - STREAM b'IDAT' 62 4096
+02:30:18.222 - STREAM b'IHDR' 16 13
+02:30:18.222 - STREAM b'pHYs' 41 9
+02:30:18.222 - STREAM b'IDAT' 62 4096
+02:30:18.226 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_006633.png from the end
+02:30:18.236 - Calculating image histograms
+02:30:18.236 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_000000.png
+02:30:18.236 - STREAM b'IHDR' 16 13
+02:30:18.236 - STREAM b'pHYs' 41 9
+02:30:18.236 - STREAM b'IDAT' 62 634
+02:30:18.242 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_000766.png
+02:30:18.242 - STREAM b'IHDR' 16 13
+02:30:18.242 - STREAM b'pHYs' 41 9
+02:30:18.242 - STREAM b'IDAT' 62 4096
+02:30:18.249 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_000800.png
+02:30:18.250 - STREAM b'IHDR' 16 13
+02:30:18.250 - STREAM b'pHYs' 41 9
+02:30:18.250 - STREAM b'IDAT' 62 4096
+02:30:18.257 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_000833.png
+02:30:18.257 - STREAM b'IHDR' 16 13
+02:30:18.257 - STREAM b'pHYs' 41 9
+02:30:18.257 - STREAM b'IDAT' 62 4096
+02:30:18.266 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_000866.png
+02:30:18.266 - STREAM b'IHDR' 16 13
+02:30:18.266 - STREAM b'pHYs' 41 9
+02:30:18.266 - STREAM b'IDAT' 62 4096
+02:30:18.274 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_000900.png
+02:30:18.274 - STREAM b'IHDR' 16 13
+02:30:18.274 - STREAM b'pHYs' 41 9
+02:30:18.274 - STREAM b'IDAT' 62 4096
+02:30:18.282 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_000933.png
+02:30:18.282 - STREAM b'IHDR' 16 13
+02:30:18.282 - STREAM b'pHYs' 41 9
+02:30:18.282 - STREAM b'IDAT' 62 4096
+02:30:18.289 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_000966.png
+02:30:18.289 - STREAM b'IHDR' 16 13
+02:30:18.289 - STREAM b'pHYs' 41 9
+02:30:18.289 - STREAM b'IDAT' 62 4096
+02:30:18.297 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_001000.png
+02:30:18.297 - STREAM b'IHDR' 16 13
+02:30:18.297 - STREAM b'pHYs' 41 9
+02:30:18.297 - STREAM b'IDAT' 62 4096
+02:30:18.304 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_001033.png
+02:30:18.304 - STREAM b'IHDR' 16 13
+02:30:18.304 - STREAM b'pHYs' 41 9
+02:30:18.304 - STREAM b'IDAT' 62 4096
+02:30:18.311 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_001066.png
+02:30:18.311 - STREAM b'IHDR' 16 13
+02:30:18.311 - STREAM b'pHYs' 41 9
+02:30:18.312 - STREAM b'IDAT' 62 4096
+02:30:18.319 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_001100.png
+02:30:18.319 - STREAM b'IHDR' 16 13
+02:30:18.319 - STREAM b'pHYs' 41 9
+02:30:18.319 - STREAM b'IDAT' 62 4096
+02:30:18.326 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_001133.png
+02:30:18.326 - STREAM b'IHDR' 16 13
+02:30:18.326 - STREAM b'pHYs' 41 9
+02:30:18.326 - STREAM b'IDAT' 62 4096
+02:30:18.334 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_001166.png
+02:30:18.334 - STREAM b'IHDR' 16 13
+02:30:18.334 - STREAM b'pHYs' 41 9
+02:30:18.334 - STREAM b'IDAT' 62 4096
+02:30:18.341 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_001200.png
+02:30:18.341 - STREAM b'IHDR' 16 13
+02:30:18.341 - STREAM b'pHYs' 41 9
+02:30:18.341 - STREAM b'IDAT' 62 4096
+02:30:18.350 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubmed_ncbi_nlm_nih_gov/query-c1537dbb/data/filmstrip/2/ms_001233.png
+02:30:18.350 - STREAM b'IHDR' 16 13
+02:30:18.350 - STREAM b'pHYs' 41 9
+02:30:18.350 - STREAM b'IDAT' 62 4096
+02:30:18.371 - Done calculating histograms
+02:30:18.372 - 0ms - 0% Complete
+02:30:18.372 - 766ms - 70% Complete
+02:30:18.372 - 800ms - 92% Complete
+02:30:18.372 - 833ms - 94% Complete
+02:30:18.373 - 866ms - 92% Complete
+02:30:18.373 - 900ms - 92% Complete
+02:30:18.373 - 933ms - 93% Complete
+02:30:18.373 - 966ms - 93% Complete
+02:30:18.373 - 1000ms - 94% Complete
+02:30:18.374 - 1033ms - 94% Complete
+02:30:18.374 - 1066ms - 95% Complete
+02:30:18.374 - 1100ms - 94% Complete
+02:30:18.374 - 1133ms - 95% Complete
+02:30:18.374 - 1166ms - 95% Complete
+02:30:18.374 - 1200ms - 95% Complete
+02:30:18.375 - 1233ms - 100% Complete
+02:30:18.375 - Hero elements file is not valid: None
+02:30:18.375 - Converting video frames to JPEG
+02:30:18.375 - STREAM b'IHDR' 16 13
+02:30:18.375 - STREAM b'pHYs' 41 9
+02:30:18.375 - STREAM b'IDAT' 62 634
+02:30:18.375 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.376 - STREAM b'IHDR' 16 13
+02:30:18.376 - STREAM b'pHYs' 41 9
+02:30:18.376 - STREAM b'IDAT' 62 4096
+02:30:18.376 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.377 - STREAM b'IHDR' 16 13
+02:30:18.377 - STREAM b'pHYs' 41 9
+02:30:18.377 - STREAM b'IDAT' 62 4096
+02:30:18.377 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.377 - STREAM b'IHDR' 16 13
+02:30:18.378 - STREAM b'pHYs' 41 9
+02:30:18.378 - STREAM b'IDAT' 62 4096
+02:30:18.378 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.378 - STREAM b'IHDR' 16 13
+02:30:18.378 - STREAM b'pHYs' 41 9
+02:30:18.378 - STREAM b'IDAT' 62 4096
+02:30:18.378 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.379 - STREAM b'IHDR' 16 13
+02:30:18.379 - STREAM b'pHYs' 41 9
+02:30:18.379 - STREAM b'IDAT' 62 4096
+02:30:18.379 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.380 - STREAM b'IHDR' 16 13
+02:30:18.380 - STREAM b'pHYs' 41 9
+02:30:18.380 - STREAM b'IDAT' 62 4096
+02:30:18.380 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.381 - STREAM b'IHDR' 16 13
+02:30:18.381 - STREAM b'pHYs' 41 9
+02:30:18.381 - STREAM b'IDAT' 62 4096
+02:30:18.381 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.382 - STREAM b'IHDR' 16 13
+02:30:18.382 - STREAM b'pHYs' 41 9
+02:30:18.382 - STREAM b'IDAT' 62 4096
+02:30:18.382 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.382 - STREAM b'IHDR' 16 13
+02:30:18.382 - STREAM b'pHYs' 41 9
+02:30:18.382 - STREAM b'IDAT' 62 4096
+02:30:18.382 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.383 - STREAM b'IHDR' 16 13
+02:30:18.383 - STREAM b'pHYs' 41 9
+02:30:18.383 - STREAM b'IDAT' 62 4096
+02:30:18.383 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.384 - STREAM b'IHDR' 16 13
+02:30:18.384 - STREAM b'pHYs' 41 9
+02:30:18.384 - STREAM b'IDAT' 62 4096
+02:30:18.384 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.385 - STREAM b'IHDR' 16 13
+02:30:18.385 - STREAM b'pHYs' 41 9
+02:30:18.385 - STREAM b'IDAT' 62 4096
+02:30:18.385 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.386 - STREAM b'IHDR' 16 13
+02:30:18.386 - STREAM b'pHYs' 41 9
+02:30:18.386 - STREAM b'IDAT' 62 4096
+02:30:18.386 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.387 - STREAM b'IHDR' 16 13
+02:30:18.387 - STREAM b'pHYs' 41 9
+02:30:18.387 - STREAM b'IDAT' 62 4096
+02:30:18.387 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.387 - STREAM b'IHDR' 16 13
+02:30:18.387 - STREAM b'pHYs' 41 9
+02:30:18.387 - STREAM b'IDAT' 62 4096
+02:30:18.388 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:30:18.388 - Done converting video frames to JPEG

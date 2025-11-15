@@ -1,0 +1,212 @@
+02:36:48.733 - FFMPEG found
+02:36:48.733 - Python 3.6+ found
+02:36:48.777 - Numpy found
+02:36:48.799 - OpenCV-Python found
+02:36:48.812 - Pillow found
+02:36:49.076 - SSIM found
+02:36:49.080 - Processing frames from video /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/video/1.mp4 to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1
+02:36:49.080 - ['ffprobe', '/sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/video/1.mp4']
+02:36:49.087 - Finding Video Viewport...
+02:36:49.087 - Using frame 0
+02:36:49.152 - STREAM b'IHDR' 16 13
+02:36:49.152 - STREAM b'pHYs' 41 9
+02:36:49.152 - STREAM b'IDAT' 62 4096
+02:36:49.152 - /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/viewport.png is 1366x708
+02:36:49.152 - Finding the viewport for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/viewport.png
+02:36:49.152 - STREAM b'IHDR' 16 13
+02:36:49.152 - STREAM b'pHYs' 41 9
+02:36:49.152 - STREAM b'IDAT' 62 4096
+02:36:49.157 - Viewport left edge is 0
+02:36:49.157 - Viewport right edge is 1363
+02:36:49.158 - Viewport top edge is 88
+02:36:49.158 - Viewport bottom edge is 704
+02:36:49.168 - Extracting frames from /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/video/1.mp4 to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1
+02:36:49.171 - ffmpeg -v debug -i /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/video/1.mp4 -vsync 0 -vf crop=1363:616:0:88,scale=iw*min(400/iw\,400/ih):ih*min(400/iw\,400/ih),mpdecimate=0:64:640:0.001 /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/img-%d.png
+02:36:49.332 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/img-1.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/video-000000.png
+02:36:49.333 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/img-2.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/video-000900.png
+02:36:49.333 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/img-3.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/video-002966.png
+02:36:49.333 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/img-4.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/video-003000.png
+02:36:49.333 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/img-5.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/video-003033.png
+02:36:49.333 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/img-6.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/video-003066.png
+02:36:49.333 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/img-7.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/video-003100.png
+02:36:49.333 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/img-8.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/video-003166.png
+02:36:49.333 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/img-9.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/video-003233.png
+02:36:49.333 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/img-10.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/video-003633.png
+02:36:49.334 - Scanning for non-orange frames...
+02:36:49.334 - STREAM b'IHDR' 16 13
+02:36:49.334 - STREAM b'pHYs' 41 9
+02:36:49.334 - STREAM b'IDAT' 62 658
+02:36:49.334 - STREAM b'IHDR' 16 13
+02:36:49.334 - STREAM b'pHYs' 41 9
+02:36:49.334 - STREAM b'IDAT' 62 658
+02:36:49.335 - STREAM b'IHDR' 16 13
+02:36:49.335 - STREAM b'IDAT' 41 535
+02:36:49.337 - Scanning for orange frames...
+02:36:49.337 - Removing Orange frame: /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/video-000000.png
+02:36:49.337 - STREAM b'IHDR' 16 13
+02:36:49.337 - STREAM b'pHYs' 41 9
+02:36:49.337 - STREAM b'IDAT' 62 634
+02:36:49.337 - STREAM b'IHDR' 16 13
+02:36:49.337 - STREAM b'pHYs' 41 9
+02:36:49.337 - STREAM b'IDAT' 62 634
+02:36:49.338 - STREAM b'IHDR' 16 13
+02:36:49.338 - STREAM b'IDAT' 41 535
+02:36:49.339 - STREAM b'IHDR' 16 13
+02:36:49.339 - STREAM b'pHYs' 41 9
+02:36:49.339 - STREAM b'IDAT' 62 634
+02:36:49.340 - STREAM b'IHDR' 16 13
+02:36:49.340 - STREAM b'IDAT' 41 535
+02:36:49.341 - STREAM b'IHDR' 16 13
+02:36:49.341 - STREAM b'pHYs' 41 9
+02:36:49.341 - STREAM b'IDAT' 62 634
+02:36:49.342 - STREAM b'IHDR' 16 13
+02:36:49.342 - STREAM b'IDAT' 41 535
+02:36:49.343 - STREAM b'IHDR' 16 13
+02:36:49.343 - STREAM b'pHYs' 41 9
+02:36:49.343 - STREAM b'IDAT' 62 4096
+02:36:49.343 - STREAM b'IHDR' 16 13
+02:36:49.343 - STREAM b'pHYs' 41 9
+02:36:49.344 - STREAM b'IDAT' 62 4096
+02:36:49.345 - STREAM b'IHDR' 16 13
+02:36:49.345 - STREAM b'IDAT' 41 535
+02:36:49.345 - STREAM b'IHDR' 16 13
+02:36:49.345 - STREAM b'pHYs' 41 9
+02:36:49.345 - STREAM b'IDAT' 62 4096
+02:36:49.346 - STREAM b'IHDR' 16 13
+02:36:49.346 - STREAM b'IDAT' 41 535
+02:36:49.347 - STREAM b'IHDR' 16 13
+02:36:49.347 - STREAM b'pHYs' 41 9
+02:36:49.347 - STREAM b'IDAT' 62 4096
+02:36:49.348 - STREAM b'IHDR' 16 13
+02:36:49.348 - STREAM b'IDAT' 41 535
+02:36:49.349 - Finding Render Start...
+02:36:49.349 - STREAM b'IHDR' 16 13
+02:36:49.349 - STREAM b'pHYs' 41 9
+02:36:49.349 - STREAM b'IDAT' 62 634
+02:36:49.349 - STREAM b'IHDR' 16 13
+02:36:49.349 - STREAM b'pHYs' 41 9
+02:36:49.349 - STREAM b'IDAT' 62 634
+02:36:49.349 - STREAM b'IHDR' 16 13
+02:36:49.349 - STREAM b'pHYs' 41 9
+02:36:49.349 - STREAM b'IDAT' 62 4096
+02:36:49.353 - STREAM b'IHDR' 16 13
+02:36:49.353 - STREAM b'pHYs' 41 9
+02:36:49.353 - STREAM b'IDAT' 62 4096
+02:36:49.353 - STREAM b'IHDR' 16 13
+02:36:49.353 - STREAM b'pHYs' 41 9
+02:36:49.353 - STREAM b'IDAT' 62 4096
+02:36:49.354 - STREAM b'IHDR' 16 13
+02:36:49.354 - STREAM b'IDAT' 41 535
+02:36:49.355 - STREAM b'IHDR' 16 13
+02:36:49.355 - STREAM b'pHYs' 41 9
+02:36:49.355 - STREAM b'IDAT' 62 4096
+02:36:49.356 - STREAM b'IHDR' 16 13
+02:36:49.356 - STREAM b'IDAT' 41 535
+02:36:49.357 - STREAM b'IHDR' 16 13
+02:36:49.357 - STREAM b'pHYs' 41 9
+02:36:49.357 - STREAM b'IDAT' 62 4096
+02:36:49.358 - STREAM b'IHDR' 16 13
+02:36:49.358 - STREAM b'IDAT' 41 535
+02:36:49.359 - Eliminating Duplicate Frames...
+02:36:49.359 - STREAM b'IHDR' 16 13
+02:36:49.359 - STREAM b'pHYs' 41 9
+02:36:49.359 - STREAM b'IDAT' 62 634
+02:36:49.359 - Viewport cropping set to (W, H, L, T): (400, 170, 0, 0)
+02:36:49.359 - STREAM b'IHDR' 16 13
+02:36:49.359 - STREAM b'pHYs' 41 9
+02:36:49.359 - STREAM b'IDAT' 62 634
+02:36:49.359 - STREAM b'IHDR' 16 13
+02:36:49.359 - STREAM b'pHYs' 41 9
+02:36:49.359 - STREAM b'IDAT' 62 4096
+02:36:49.362 - STREAM b'IHDR' 16 13
+02:36:49.362 - STREAM b'pHYs' 41 9
+02:36:49.362 - STREAM b'IDAT' 62 4096
+02:36:49.363 - STREAM b'IHDR' 16 13
+02:36:49.363 - STREAM b'pHYs' 41 9
+02:36:49.363 - STREAM b'IDAT' 62 4096
+02:36:49.375 - Calculating image histograms
+02:36:49.375 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/ms_000000.png
+02:36:49.375 - STREAM b'IHDR' 16 13
+02:36:49.375 - STREAM b'pHYs' 41 9
+02:36:49.375 - STREAM b'IDAT' 62 634
+02:36:49.380 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/ms_002066.png
+02:36:49.380 - STREAM b'IHDR' 16 13
+02:36:49.380 - STREAM b'pHYs' 41 9
+02:36:49.380 - STREAM b'IDAT' 62 4096
+02:36:49.388 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/ms_002100.png
+02:36:49.388 - STREAM b'IHDR' 16 13
+02:36:49.388 - STREAM b'pHYs' 41 9
+02:36:49.388 - STREAM b'IDAT' 62 4096
+02:36:49.395 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/ms_002133.png
+02:36:49.395 - STREAM b'IHDR' 16 13
+02:36:49.395 - STREAM b'pHYs' 41 9
+02:36:49.395 - STREAM b'IDAT' 62 4096
+02:36:49.403 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/ms_002166.png
+02:36:49.403 - STREAM b'IHDR' 16 13
+02:36:49.403 - STREAM b'pHYs' 41 9
+02:36:49.403 - STREAM b'IDAT' 62 4096
+02:36:49.410 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/ms_002200.png
+02:36:49.410 - STREAM b'IHDR' 16 13
+02:36:49.410 - STREAM b'pHYs' 41 9
+02:36:49.410 - STREAM b'IDAT' 62 4096
+02:36:49.416 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/ms_002266.png
+02:36:49.417 - STREAM b'IHDR' 16 13
+02:36:49.417 - STREAM b'pHYs' 41 9
+02:36:49.417 - STREAM b'IDAT' 62 4096
+02:36:49.424 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/ms_002333.png
+02:36:49.424 - STREAM b'IHDR' 16 13
+02:36:49.424 - STREAM b'pHYs' 41 9
+02:36:49.424 - STREAM b'IDAT' 62 4096
+02:36:49.431 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/paper/Particle-creation-by-black-holes-Hawking/6b9d83c086ea962b6e7ef5caaaf2c241a4d47ff8/data/filmstrip/1/ms_002733.png
+02:36:49.431 - STREAM b'IHDR' 16 13
+02:36:49.431 - STREAM b'pHYs' 41 9
+02:36:49.431 - STREAM b'IDAT' 62 4096
+02:36:49.444 - Done calculating histograms
+02:36:49.445 - 0ms - 0% Complete
+02:36:49.445 - 2066ms - 96% Complete
+02:36:49.445 - 2100ms - 96% Complete
+02:36:49.445 - 2133ms - 97% Complete
+02:36:49.446 - 2166ms - 97% Complete
+02:36:49.446 - 2200ms - 97% Complete
+02:36:49.446 - 2266ms - 97% Complete
+02:36:49.446 - 2333ms - 97% Complete
+02:36:49.446 - 2733ms - 100% Complete
+02:36:49.446 - Hero elements file is not valid: None
+02:36:49.446 - Converting video frames to JPEG
+02:36:49.446 - STREAM b'IHDR' 16 13
+02:36:49.447 - STREAM b'pHYs' 41 9
+02:36:49.447 - STREAM b'IDAT' 62 634
+02:36:49.447 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:49.447 - STREAM b'IHDR' 16 13
+02:36:49.447 - STREAM b'pHYs' 41 9
+02:36:49.447 - STREAM b'IDAT' 62 4096
+02:36:49.447 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:49.448 - STREAM b'IHDR' 16 13
+02:36:49.448 - STREAM b'pHYs' 41 9
+02:36:49.448 - STREAM b'IDAT' 62 4096
+02:36:49.448 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:49.449 - STREAM b'IHDR' 16 13
+02:36:49.449 - STREAM b'pHYs' 41 9
+02:36:49.449 - STREAM b'IDAT' 62 4096
+02:36:49.449 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:49.450 - STREAM b'IHDR' 16 13
+02:36:49.450 - STREAM b'pHYs' 41 9
+02:36:49.450 - STREAM b'IDAT' 62 4096
+02:36:49.450 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:49.451 - STREAM b'IHDR' 16 13
+02:36:49.451 - STREAM b'pHYs' 41 9
+02:36:49.451 - STREAM b'IDAT' 62 4096
+02:36:49.451 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:49.452 - STREAM b'IHDR' 16 13
+02:36:49.452 - STREAM b'pHYs' 41 9
+02:36:49.452 - STREAM b'IDAT' 62 4096
+02:36:49.452 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:49.452 - STREAM b'IHDR' 16 13
+02:36:49.452 - STREAM b'pHYs' 41 9
+02:36:49.452 - STREAM b'IDAT' 62 4096
+02:36:49.452 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:49.453 - STREAM b'IHDR' 16 13
+02:36:49.453 - STREAM b'pHYs' 41 9
+02:36:49.453 - STREAM b'IDAT' 62 4096
+02:36:49.453 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:36:49.454 - Done converting video frames to JPEG

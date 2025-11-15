@@ -1,0 +1,338 @@
+02:27:18.653 - FFMPEG found
+02:27:18.653 - Python 3.6+ found
+02:27:18.703 - Numpy found
+02:27:18.728 - OpenCV-Python found
+02:27:18.744 - Pillow found
+02:27:19.004 - SSIM found
+02:27:19.008 - Processing frames from video /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/video/3.mp4 to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3
+02:27:19.008 - ['ffprobe', '/sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/video/3.mp4']
+02:27:19.014 - Finding Video Viewport...
+02:27:19.015 - Using frame 0
+02:27:19.080 - STREAM b'IHDR' 16 13
+02:27:19.081 - STREAM b'pHYs' 41 9
+02:27:19.081 - STREAM b'IDAT' 62 4096
+02:27:19.081 - /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/viewport.png is 1366x708
+02:27:19.081 - Finding the viewport for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/viewport.png
+02:27:19.081 - STREAM b'IHDR' 16 13
+02:27:19.081 - STREAM b'pHYs' 41 9
+02:27:19.081 - STREAM b'IDAT' 62 4096
+02:27:19.086 - Viewport left edge is 0
+02:27:19.086 - Viewport right edge is 1363
+02:27:19.086 - Viewport top edge is 88
+02:27:19.087 - Viewport bottom edge is 704
+02:27:19.097 - Extracting frames from /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/video/3.mp4 to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3
+02:27:19.099 - ffmpeg -v debug -i /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/video/3.mp4 -vsync 0 -vf crop=1363:616:0:88,scale=iw*min(400/iw\,400/ih):ih*min(400/iw\,400/ih),mpdecimate=0:64:640:0.001 /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-%d.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-1.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-000000.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-2.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-000900.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-3.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-002400.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-4.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-002433.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-5.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-002466.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-6.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-002500.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-7.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-002533.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-8.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-002566.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-9.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-002600.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-10.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-002633.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-11.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-002666.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-12.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-002700.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-13.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-002733.png
+02:27:19.269 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-14.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-003000.png
+02:27:19.270 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-15.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-003600.png
+02:27:19.270 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-16.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-004200.png
+02:27:19.270 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-17.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-004800.png
+02:27:19.270 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-18.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-005400.png
+02:27:19.270 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-19.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-006000.png
+02:27:19.270 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-20.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-006600.png
+02:27:19.270 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-21.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-007200.png
+02:27:19.270 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-22.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-007800.png
+02:27:19.270 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-23.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-008333.png
+02:27:19.270 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-24.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-008400.png
+02:27:19.270 - Renaming /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/img-25.png to /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-009000.png
+02:27:19.270 - Scanning for non-orange frames...
+02:27:19.271 - STREAM b'IHDR' 16 13
+02:27:19.271 - STREAM b'pHYs' 41 9
+02:27:19.271 - STREAM b'IDAT' 62 658
+02:27:19.271 - STREAM b'IHDR' 16 13
+02:27:19.271 - STREAM b'pHYs' 41 9
+02:27:19.271 - STREAM b'IDAT' 62 658
+02:27:19.272 - STREAM b'IHDR' 16 13
+02:27:19.272 - STREAM b'IDAT' 41 535
+02:27:19.274 - Scanning for orange frames...
+02:27:19.274 - Removing Orange frame: /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/video-000000.png
+02:27:19.274 - STREAM b'IHDR' 16 13
+02:27:19.274 - STREAM b'pHYs' 41 9
+02:27:19.274 - STREAM b'IDAT' 62 634
+02:27:19.274 - STREAM b'IHDR' 16 13
+02:27:19.274 - STREAM b'pHYs' 41 9
+02:27:19.274 - STREAM b'IDAT' 62 634
+02:27:19.275 - STREAM b'IHDR' 16 13
+02:27:19.275 - STREAM b'IDAT' 41 535
+02:27:19.276 - STREAM b'IHDR' 16 13
+02:27:19.276 - STREAM b'pHYs' 41 9
+02:27:19.276 - STREAM b'IDAT' 62 634
+02:27:19.277 - STREAM b'IHDR' 16 13
+02:27:19.277 - STREAM b'IDAT' 41 535
+02:27:19.278 - STREAM b'IHDR' 16 13
+02:27:19.278 - STREAM b'pHYs' 41 9
+02:27:19.278 - STREAM b'IDAT' 62 634
+02:27:19.279 - STREAM b'IHDR' 16 13
+02:27:19.279 - STREAM b'IDAT' 41 535
+02:27:19.280 - STREAM b'IHDR' 16 13
+02:27:19.280 - STREAM b'pHYs' 41 9
+02:27:19.280 - STREAM b'IDAT' 62 4096
+02:27:19.280 - STREAM b'IHDR' 16 13
+02:27:19.280 - STREAM b'pHYs' 41 9
+02:27:19.280 - STREAM b'IDAT' 62 4096
+02:27:19.281 - STREAM b'IHDR' 16 13
+02:27:19.282 - STREAM b'IDAT' 41 535
+02:27:19.282 - STREAM b'IHDR' 16 13
+02:27:19.282 - STREAM b'pHYs' 41 9
+02:27:19.282 - STREAM b'IDAT' 62 4096
+02:27:19.283 - STREAM b'IHDR' 16 13
+02:27:19.283 - STREAM b'IDAT' 41 535
+02:27:19.284 - STREAM b'IHDR' 16 13
+02:27:19.284 - STREAM b'pHYs' 41 9
+02:27:19.284 - STREAM b'IDAT' 62 4096
+02:27:19.285 - STREAM b'IHDR' 16 13
+02:27:19.285 - STREAM b'IDAT' 41 535
+02:27:19.286 - Finding Render Start...
+02:27:19.286 - STREAM b'IHDR' 16 13
+02:27:19.286 - STREAM b'pHYs' 41 9
+02:27:19.286 - STREAM b'IDAT' 62 634
+02:27:19.286 - STREAM b'IHDR' 16 13
+02:27:19.286 - STREAM b'pHYs' 41 9
+02:27:19.286 - STREAM b'IDAT' 62 634
+02:27:19.286 - STREAM b'IHDR' 16 13
+02:27:19.286 - STREAM b'pHYs' 41 9
+02:27:19.286 - STREAM b'IDAT' 62 4096
+02:27:19.290 - STREAM b'IHDR' 16 13
+02:27:19.290 - STREAM b'pHYs' 41 9
+02:27:19.290 - STREAM b'IDAT' 62 4096
+02:27:19.290 - STREAM b'IHDR' 16 13
+02:27:19.290 - STREAM b'pHYs' 41 9
+02:27:19.290 - STREAM b'IDAT' 62 4096
+02:27:19.291 - STREAM b'IHDR' 16 13
+02:27:19.291 - STREAM b'IDAT' 41 535
+02:27:19.291 - STREAM b'IHDR' 16 13
+02:27:19.292 - STREAM b'pHYs' 41 9
+02:27:19.292 - STREAM b'IDAT' 62 4096
+02:27:19.292 - STREAM b'IHDR' 16 13
+02:27:19.292 - STREAM b'IDAT' 41 535
+02:27:19.293 - STREAM b'IHDR' 16 13
+02:27:19.293 - STREAM b'pHYs' 41 9
+02:27:19.293 - STREAM b'IDAT' 62 4096
+02:27:19.294 - STREAM b'IHDR' 16 13
+02:27:19.294 - STREAM b'IDAT' 41 535
+02:27:19.295 - Eliminating Duplicate Frames...
+02:27:19.296 - STREAM b'IHDR' 16 13
+02:27:19.296 - STREAM b'pHYs' 41 9
+02:27:19.296 - STREAM b'IDAT' 62 634
+02:27:19.296 - Viewport cropping set to (W, H, L, T): (400, 170, 0, 0)
+02:27:19.296 - STREAM b'IHDR' 16 13
+02:27:19.296 - STREAM b'pHYs' 41 9
+02:27:19.296 - STREAM b'IDAT' 62 634
+02:27:19.296 - STREAM b'IHDR' 16 13
+02:27:19.296 - STREAM b'pHYs' 41 9
+02:27:19.296 - STREAM b'IDAT' 62 4096
+02:27:19.299 - STREAM b'IHDR' 16 13
+02:27:19.299 - STREAM b'pHYs' 41 9
+02:27:19.299 - STREAM b'IDAT' 62 4096
+02:27:19.299 - STREAM b'IHDR' 16 13
+02:27:19.299 - STREAM b'pHYs' 41 9
+02:27:19.299 - STREAM b'IDAT' 62 4096
+02:27:19.303 - STREAM b'IHDR' 16 13
+02:27:19.303 - STREAM b'pHYs' 41 9
+02:27:19.303 - STREAM b'IDAT' 62 4096
+02:27:19.303 - STREAM b'IHDR' 16 13
+02:27:19.303 - STREAM b'pHYs' 41 9
+02:27:19.303 - STREAM b'IDAT' 62 4096
+02:27:19.306 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_007500.png from the end
+02:27:19.306 - STREAM b'IHDR' 16 13
+02:27:19.306 - STREAM b'pHYs' 41 9
+02:27:19.306 - STREAM b'IDAT' 62 4096
+02:27:19.306 - STREAM b'IHDR' 16 13
+02:27:19.306 - STREAM b'pHYs' 41 9
+02:27:19.306 - STREAM b'IDAT' 62 4096
+02:27:19.310 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_007433.png from the end
+02:27:19.310 - STREAM b'IHDR' 16 13
+02:27:19.310 - STREAM b'pHYs' 41 9
+02:27:19.310 - STREAM b'IDAT' 62 4096
+02:27:19.310 - STREAM b'IHDR' 16 13
+02:27:19.310 - STREAM b'pHYs' 41 9
+02:27:19.310 - STREAM b'IDAT' 62 4096
+02:27:19.313 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_006900.png from the end
+02:27:19.313 - STREAM b'IHDR' 16 13
+02:27:19.313 - STREAM b'pHYs' 41 9
+02:27:19.313 - STREAM b'IDAT' 62 4096
+02:27:19.313 - STREAM b'IHDR' 16 13
+02:27:19.313 - STREAM b'pHYs' 41 9
+02:27:19.313 - STREAM b'IDAT' 62 4096
+02:27:19.317 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_006300.png from the end
+02:27:19.317 - STREAM b'IHDR' 16 13
+02:27:19.317 - STREAM b'pHYs' 41 9
+02:27:19.317 - STREAM b'IDAT' 62 4096
+02:27:19.317 - STREAM b'IHDR' 16 13
+02:27:19.317 - STREAM b'pHYs' 41 9
+02:27:19.317 - STREAM b'IDAT' 62 4096
+02:27:19.320 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_005700.png from the end
+02:27:19.320 - STREAM b'IHDR' 16 13
+02:27:19.320 - STREAM b'pHYs' 41 9
+02:27:19.320 - STREAM b'IDAT' 62 4096
+02:27:19.320 - STREAM b'IHDR' 16 13
+02:27:19.320 - STREAM b'pHYs' 41 9
+02:27:19.320 - STREAM b'IDAT' 62 4096
+02:27:19.324 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_005100.png from the end
+02:27:19.324 - STREAM b'IHDR' 16 13
+02:27:19.324 - STREAM b'pHYs' 41 9
+02:27:19.324 - STREAM b'IDAT' 62 4096
+02:27:19.324 - STREAM b'IHDR' 16 13
+02:27:19.324 - STREAM b'pHYs' 41 9
+02:27:19.324 - STREAM b'IDAT' 62 4096
+02:27:19.327 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_004500.png from the end
+02:27:19.327 - STREAM b'IHDR' 16 13
+02:27:19.327 - STREAM b'pHYs' 41 9
+02:27:19.327 - STREAM b'IDAT' 62 4096
+02:27:19.327 - STREAM b'IHDR' 16 13
+02:27:19.327 - STREAM b'pHYs' 41 9
+02:27:19.327 - STREAM b'IDAT' 62 4096
+02:27:19.331 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_003900.png from the end
+02:27:19.331 - STREAM b'IHDR' 16 13
+02:27:19.331 - STREAM b'pHYs' 41 9
+02:27:19.331 - STREAM b'IDAT' 62 4096
+02:27:19.331 - STREAM b'IHDR' 16 13
+02:27:19.331 - STREAM b'pHYs' 41 9
+02:27:19.331 - STREAM b'IDAT' 62 4096
+02:27:19.334 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_003300.png from the end
+02:27:19.334 - STREAM b'IHDR' 16 13
+02:27:19.334 - STREAM b'pHYs' 41 9
+02:27:19.334 - STREAM b'IDAT' 62 4096
+02:27:19.334 - STREAM b'IHDR' 16 13
+02:27:19.334 - STREAM b'pHYs' 41 9
+02:27:19.334 - STREAM b'IDAT' 62 4096
+02:27:19.337 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_002700.png from the end
+02:27:19.338 - STREAM b'IHDR' 16 13
+02:27:19.338 - STREAM b'pHYs' 41 9
+02:27:19.338 - STREAM b'IDAT' 62 4096
+02:27:19.338 - STREAM b'IHDR' 16 13
+02:27:19.338 - STREAM b'pHYs' 41 9
+02:27:19.338 - STREAM b'IDAT' 62 4096
+02:27:19.342 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_002100.png from the end
+02:27:19.342 - STREAM b'IHDR' 16 13
+02:27:19.342 - STREAM b'pHYs' 41 9
+02:27:19.342 - STREAM b'IDAT' 62 4096
+02:27:19.342 - STREAM b'IHDR' 16 13
+02:27:19.342 - STREAM b'pHYs' 41 9
+02:27:19.342 - STREAM b'IDAT' 62 4096
+02:27:19.345 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_008100.png from the end
+02:27:19.354 - Calculating image histograms
+02:27:19.354 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_000000.png
+02:27:19.354 - STREAM b'IHDR' 16 13
+02:27:19.354 - STREAM b'pHYs' 41 9
+02:27:19.354 - STREAM b'IDAT' 62 634
+02:27:19.360 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_001500.png
+02:27:19.360 - STREAM b'IHDR' 16 13
+02:27:19.360 - STREAM b'pHYs' 41 9
+02:27:19.360 - STREAM b'IDAT' 62 4096
+02:27:19.367 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_001533.png
+02:27:19.367 - STREAM b'IHDR' 16 13
+02:27:19.367 - STREAM b'pHYs' 41 9
+02:27:19.367 - STREAM b'IDAT' 62 4096
+02:27:19.374 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_001566.png
+02:27:19.374 - STREAM b'IHDR' 16 13
+02:27:19.374 - STREAM b'pHYs' 41 9
+02:27:19.374 - STREAM b'IDAT' 62 4096
+02:27:19.380 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_001600.png
+02:27:19.380 - STREAM b'IHDR' 16 13
+02:27:19.380 - STREAM b'pHYs' 41 9
+02:27:19.380 - STREAM b'IDAT' 62 4096
+02:27:19.385 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_001633.png
+02:27:19.385 - STREAM b'IHDR' 16 13
+02:27:19.385 - STREAM b'pHYs' 41 9
+02:27:19.385 - STREAM b'IDAT' 62 4096
+02:27:19.392 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_001666.png
+02:27:19.392 - STREAM b'IHDR' 16 13
+02:27:19.392 - STREAM b'pHYs' 41 9
+02:27:19.392 - STREAM b'IDAT' 62 4096
+02:27:19.398 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_001700.png
+02:27:19.398 - STREAM b'IHDR' 16 13
+02:27:19.398 - STREAM b'pHYs' 41 9
+02:27:19.398 - STREAM b'IDAT' 62 4096
+02:27:19.404 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_001733.png
+02:27:19.404 - STREAM b'IHDR' 16 13
+02:27:19.404 - STREAM b'pHYs' 41 9
+02:27:19.404 - STREAM b'IDAT' 62 4096
+02:27:19.412 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_001766.png
+02:27:19.412 - STREAM b'IHDR' 16 13
+02:27:19.412 - STREAM b'pHYs' 41 9
+02:27:19.412 - STREAM b'IDAT' 62 4096
+02:27:19.418 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_001800.png
+02:27:19.418 - STREAM b'IHDR' 16 13
+02:27:19.419 - STREAM b'pHYs' 41 9
+02:27:19.419 - STREAM b'IDAT' 62 4096
+02:27:19.425 - Calculating histogram for /sitespeed.io/20251114_212547/pages/inspirehep_net/literature/query-c2835f2e/data/filmstrip/3/ms_001833.png
+02:27:19.425 - STREAM b'IHDR' 16 13
+02:27:19.425 - STREAM b'pHYs' 41 9
+02:27:19.425 - STREAM b'IDAT' 62 4096
+02:27:19.441 - Done calculating histograms
+02:27:19.442 - 0ms - 0% Complete
+02:27:19.442 - 1500ms - 65% Complete
+02:27:19.442 - 1533ms - 65% Complete
+02:27:19.442 - 1566ms - 65% Complete
+02:27:19.442 - 1600ms - 65% Complete
+02:27:19.442 - 1633ms - 65% Complete
+02:27:19.443 - 1666ms - 65% Complete
+02:27:19.443 - 1700ms - 65% Complete
+02:27:19.443 - 1733ms - 65% Complete
+02:27:19.443 - 1766ms - 65% Complete
+02:27:19.443 - 1800ms - 65% Complete
+02:27:19.444 - 1833ms - 100% Complete
+02:27:19.444 - Hero elements file is not valid: None
+02:27:19.444 - Converting video frames to JPEG
+02:27:19.444 - STREAM b'IHDR' 16 13
+02:27:19.444 - STREAM b'pHYs' 41 9
+02:27:19.444 - STREAM b'IDAT' 62 634
+02:27:19.444 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.445 - STREAM b'IHDR' 16 13
+02:27:19.445 - STREAM b'pHYs' 41 9
+02:27:19.445 - STREAM b'IDAT' 62 4096
+02:27:19.445 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.445 - STREAM b'IHDR' 16 13
+02:27:19.445 - STREAM b'pHYs' 41 9
+02:27:19.445 - STREAM b'IDAT' 62 4096
+02:27:19.445 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.446 - STREAM b'IHDR' 16 13
+02:27:19.446 - STREAM b'pHYs' 41 9
+02:27:19.446 - STREAM b'IDAT' 62 4096
+02:27:19.446 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.447 - STREAM b'IHDR' 16 13
+02:27:19.447 - STREAM b'pHYs' 41 9
+02:27:19.447 - STREAM b'IDAT' 62 4096
+02:27:19.447 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.447 - STREAM b'IHDR' 16 13
+02:27:19.447 - STREAM b'pHYs' 41 9
+02:27:19.447 - STREAM b'IDAT' 62 4096
+02:27:19.447 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.448 - STREAM b'IHDR' 16 13
+02:27:19.448 - STREAM b'pHYs' 41 9
+02:27:19.448 - STREAM b'IDAT' 62 4096
+02:27:19.448 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.449 - STREAM b'IHDR' 16 13
+02:27:19.449 - STREAM b'pHYs' 41 9
+02:27:19.449 - STREAM b'IDAT' 62 4096
+02:27:19.449 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.449 - STREAM b'IHDR' 16 13
+02:27:19.449 - STREAM b'pHYs' 41 9
+02:27:19.449 - STREAM b'IDAT' 62 4096
+02:27:19.449 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.450 - STREAM b'IHDR' 16 13
+02:27:19.450 - STREAM b'pHYs' 41 9
+02:27:19.450 - STREAM b'IDAT' 62 4096
+02:27:19.450 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.451 - STREAM b'IHDR' 16 13
+02:27:19.451 - STREAM b'pHYs' 41 9
+02:27:19.451 - STREAM b'IDAT' 62 4096
+02:27:19.451 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.451 - STREAM b'IHDR' 16 13
+02:27:19.451 - STREAM b'pHYs' 41 9
+02:27:19.451 - STREAM b'IDAT' 62 4096
+02:27:19.452 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:19.452 - Done converting video frames to JPEG

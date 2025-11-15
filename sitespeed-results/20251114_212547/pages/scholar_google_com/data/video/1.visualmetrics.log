@@ -1,0 +1,272 @@
+02:27:32.269 - FFMPEG found
+02:27:32.269 - Python 3.6+ found
+02:27:32.333 - Numpy found
+02:27:32.354 - OpenCV-Python found
+02:27:32.362 - Pillow found
+02:27:32.619 - SSIM found
+02:27:32.623 - Processing frames from video /sitespeed.io/20251114_212547/pages/scholar_google_com/data/video/1.mp4 to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1
+02:27:32.623 - ['ffprobe', '/sitespeed.io/20251114_212547/pages/scholar_google_com/data/video/1.mp4']
+02:27:32.629 - Finding Video Viewport...
+02:27:32.629 - Using frame 0
+02:27:32.694 - STREAM b'IHDR' 16 13
+02:27:32.694 - STREAM b'pHYs' 41 9
+02:27:32.695 - STREAM b'IDAT' 62 4096
+02:27:32.695 - /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/viewport.png is 1366x708
+02:27:32.695 - Finding the viewport for /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/viewport.png
+02:27:32.695 - STREAM b'IHDR' 16 13
+02:27:32.695 - STREAM b'pHYs' 41 9
+02:27:32.695 - STREAM b'IDAT' 62 4096
+02:27:32.699 - Viewport left edge is 0
+02:27:32.699 - Viewport right edge is 1363
+02:27:32.699 - Viewport top edge is 88
+02:27:32.700 - Viewport bottom edge is 704
+02:27:32.710 - Extracting frames from /sitespeed.io/20251114_212547/pages/scholar_google_com/data/video/1.mp4 to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1
+02:27:32.713 - ffmpeg -v debug -i /sitespeed.io/20251114_212547/pages/scholar_google_com/data/video/1.mp4 -vsync 0 -vf crop=1363:616:0:88,scale=iw*min(400/iw\,400/ih):ih*min(400/iw\,400/ih),mpdecimate=0:64:640:0.001 /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-%d.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-1.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-000000.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-2.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-000900.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-3.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-001100.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-4.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-001133.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-5.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-001166.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-6.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-001200.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-7.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-001266.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-8.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-001333.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-9.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-001433.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-10.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-001700.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-11.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-002300.png
+02:27:32.862 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-12.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-002900.png
+02:27:32.863 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-13.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-003500.png
+02:27:32.863 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-14.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-004100.png
+02:27:32.863 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-15.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-004700.png
+02:27:32.863 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-16.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-005300.png
+02:27:32.863 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-17.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-005900.png
+02:27:32.863 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-18.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-006500.png
+02:27:32.863 - Renaming /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/img-19.png to /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-007100.png
+02:27:32.863 - Scanning for non-orange frames...
+02:27:32.863 - STREAM b'IHDR' 16 13
+02:27:32.863 - STREAM b'pHYs' 41 9
+02:27:32.863 - STREAM b'IDAT' 62 658
+02:27:32.863 - STREAM b'IHDR' 16 13
+02:27:32.863 - STREAM b'pHYs' 41 9
+02:27:32.864 - STREAM b'IDAT' 62 658
+02:27:32.865 - STREAM b'IHDR' 16 13
+02:27:32.865 - STREAM b'IDAT' 41 535
+02:27:32.866 - Scanning for orange frames...
+02:27:32.866 - Removing Orange frame: /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/video-000000.png
+02:27:32.866 - STREAM b'IHDR' 16 13
+02:27:32.867 - STREAM b'pHYs' 41 9
+02:27:32.867 - STREAM b'IDAT' 62 634
+02:27:32.867 - STREAM b'IHDR' 16 13
+02:27:32.867 - STREAM b'pHYs' 41 9
+02:27:32.867 - STREAM b'IDAT' 62 634
+02:27:32.868 - STREAM b'IHDR' 16 13
+02:27:32.868 - STREAM b'IDAT' 41 535
+02:27:32.868 - STREAM b'IHDR' 16 13
+02:27:32.868 - STREAM b'pHYs' 41 9
+02:27:32.868 - STREAM b'IDAT' 62 634
+02:27:32.869 - STREAM b'IHDR' 16 13
+02:27:32.869 - STREAM b'IDAT' 41 535
+02:27:32.870 - STREAM b'IHDR' 16 13
+02:27:32.870 - STREAM b'pHYs' 41 9
+02:27:32.871 - STREAM b'IDAT' 62 634
+02:27:32.872 - STREAM b'IHDR' 16 13
+02:27:32.872 - STREAM b'IDAT' 41 535
+02:27:32.873 - STREAM b'IHDR' 16 13
+02:27:32.873 - STREAM b'pHYs' 41 9
+02:27:32.873 - STREAM b'IDAT' 62 4096
+02:27:32.873 - STREAM b'IHDR' 16 13
+02:27:32.873 - STREAM b'pHYs' 41 9
+02:27:32.873 - STREAM b'IDAT' 62 4096
+02:27:32.874 - STREAM b'IHDR' 16 13
+02:27:32.874 - STREAM b'IDAT' 41 535
+02:27:32.874 - STREAM b'IHDR' 16 13
+02:27:32.874 - STREAM b'pHYs' 41 9
+02:27:32.874 - STREAM b'IDAT' 62 4096
+02:27:32.875 - STREAM b'IHDR' 16 13
+02:27:32.875 - STREAM b'IDAT' 41 535
+02:27:32.876 - STREAM b'IHDR' 16 13
+02:27:32.876 - STREAM b'pHYs' 41 9
+02:27:32.876 - STREAM b'IDAT' 62 4096
+02:27:32.877 - STREAM b'IHDR' 16 13
+02:27:32.877 - STREAM b'IDAT' 41 535
+02:27:32.878 - Finding Render Start...
+02:27:32.878 - STREAM b'IHDR' 16 13
+02:27:32.878 - STREAM b'pHYs' 41 9
+02:27:32.878 - STREAM b'IDAT' 62 634
+02:27:32.878 - STREAM b'IHDR' 16 13
+02:27:32.878 - STREAM b'pHYs' 41 9
+02:27:32.878 - STREAM b'IDAT' 62 634
+02:27:32.878 - STREAM b'IHDR' 16 13
+02:27:32.878 - STREAM b'pHYs' 41 9
+02:27:32.878 - STREAM b'IDAT' 62 4096
+02:27:32.882 - STREAM b'IHDR' 16 13
+02:27:32.882 - STREAM b'pHYs' 41 9
+02:27:32.882 - STREAM b'IDAT' 62 4096
+02:27:32.882 - STREAM b'IHDR' 16 13
+02:27:32.882 - STREAM b'pHYs' 41 9
+02:27:32.882 - STREAM b'IDAT' 62 4096
+02:27:32.883 - STREAM b'IHDR' 16 13
+02:27:32.883 - STREAM b'IDAT' 41 535
+02:27:32.884 - STREAM b'IHDR' 16 13
+02:27:32.884 - STREAM b'pHYs' 41 9
+02:27:32.884 - STREAM b'IDAT' 62 4096
+02:27:32.885 - STREAM b'IHDR' 16 13
+02:27:32.885 - STREAM b'IDAT' 41 535
+02:27:32.885 - STREAM b'IHDR' 16 13
+02:27:32.885 - STREAM b'pHYs' 41 9
+02:27:32.886 - STREAM b'IDAT' 62 4096
+02:27:32.886 - STREAM b'IHDR' 16 13
+02:27:32.886 - STREAM b'IDAT' 41 535
+02:27:32.888 - Eliminating Duplicate Frames...
+02:27:32.888 - STREAM b'IHDR' 16 13
+02:27:32.888 - STREAM b'pHYs' 41 9
+02:27:32.888 - STREAM b'IDAT' 62 634
+02:27:32.888 - Viewport cropping set to (W, H, L, T): (400, 170, 0, 0)
+02:27:32.888 - STREAM b'IHDR' 16 13
+02:27:32.888 - STREAM b'pHYs' 41 9
+02:27:32.888 - STREAM b'IDAT' 62 634
+02:27:32.888 - STREAM b'IHDR' 16 13
+02:27:32.888 - STREAM b'pHYs' 41 9
+02:27:32.888 - STREAM b'IDAT' 62 4096
+02:27:32.892 - STREAM b'IHDR' 16 13
+02:27:32.893 - STREAM b'pHYs' 41 9
+02:27:32.893 - STREAM b'IDAT' 62 4096
+02:27:32.893 - STREAM b'IHDR' 16 13
+02:27:32.893 - STREAM b'pHYs' 41 9
+02:27:32.893 - STREAM b'IDAT' 62 4096
+02:27:32.896 - STREAM b'IHDR' 16 13
+02:27:32.896 - STREAM b'pHYs' 41 9
+02:27:32.896 - STREAM b'IDAT' 62 4096
+02:27:32.896 - STREAM b'IHDR' 16 13
+02:27:32.896 - STREAM b'pHYs' 41 9
+02:27:32.896 - STREAM b'IDAT' 62 4096
+02:27:32.899 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_005600.png from the end
+02:27:32.899 - STREAM b'IHDR' 16 13
+02:27:32.899 - STREAM b'pHYs' 41 9
+02:27:32.899 - STREAM b'IDAT' 62 4096
+02:27:32.899 - STREAM b'IHDR' 16 13
+02:27:32.899 - STREAM b'pHYs' 41 9
+02:27:32.899 - STREAM b'IDAT' 62 4096
+02:27:32.902 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_005000.png from the end
+02:27:32.903 - STREAM b'IHDR' 16 13
+02:27:32.903 - STREAM b'pHYs' 41 9
+02:27:32.903 - STREAM b'IDAT' 62 4096
+02:27:32.903 - STREAM b'IHDR' 16 13
+02:27:32.903 - STREAM b'pHYs' 41 9
+02:27:32.903 - STREAM b'IDAT' 62 4096
+02:27:32.906 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_004400.png from the end
+02:27:32.906 - STREAM b'IHDR' 16 13
+02:27:32.906 - STREAM b'pHYs' 41 9
+02:27:32.906 - STREAM b'IDAT' 62 4096
+02:27:32.906 - STREAM b'IHDR' 16 13
+02:27:32.906 - STREAM b'pHYs' 41 9
+02:27:32.906 - STREAM b'IDAT' 62 4096
+02:27:32.909 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_003800.png from the end
+02:27:32.909 - STREAM b'IHDR' 16 13
+02:27:32.909 - STREAM b'pHYs' 41 9
+02:27:32.909 - STREAM b'IDAT' 62 4096
+02:27:32.909 - STREAM b'IHDR' 16 13
+02:27:32.909 - STREAM b'pHYs' 41 9
+02:27:32.910 - STREAM b'IDAT' 62 4096
+02:27:32.913 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_003200.png from the end
+02:27:32.913 - STREAM b'IHDR' 16 13
+02:27:32.913 - STREAM b'pHYs' 41 9
+02:27:32.913 - STREAM b'IDAT' 62 4096
+02:27:32.913 - STREAM b'IHDR' 16 13
+02:27:32.913 - STREAM b'pHYs' 41 9
+02:27:32.913 - STREAM b'IDAT' 62 4096
+02:27:32.916 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_002600.png from the end
+02:27:32.916 - STREAM b'IHDR' 16 13
+02:27:32.916 - STREAM b'pHYs' 41 9
+02:27:32.916 - STREAM b'IDAT' 62 4096
+02:27:32.916 - STREAM b'IHDR' 16 13
+02:27:32.916 - STREAM b'pHYs' 41 9
+02:27:32.916 - STREAM b'IDAT' 62 4096
+02:27:32.919 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_002000.png from the end
+02:27:32.919 - STREAM b'IHDR' 16 13
+02:27:32.920 - STREAM b'pHYs' 41 9
+02:27:32.920 - STREAM b'IDAT' 62 4096
+02:27:32.920 - STREAM b'IHDR' 16 13
+02:27:32.920 - STREAM b'pHYs' 41 9
+02:27:32.920 - STREAM b'IDAT' 62 4096
+02:27:32.923 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_001400.png from the end
+02:27:32.923 - STREAM b'IHDR' 16 13
+02:27:32.923 - STREAM b'pHYs' 41 9
+02:27:32.923 - STREAM b'IDAT' 62 4096
+02:27:32.923 - STREAM b'IHDR' 16 13
+02:27:32.923 - STREAM b'pHYs' 41 9
+02:27:32.923 - STREAM b'IDAT' 62 4096
+02:27:32.927 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_000800.png from the end
+02:27:32.927 - STREAM b'IHDR' 16 13
+02:27:32.927 - STREAM b'pHYs' 41 9
+02:27:32.927 - STREAM b'IDAT' 62 4096
+02:27:32.927 - STREAM b'IHDR' 16 13
+02:27:32.927 - STREAM b'pHYs' 41 9
+02:27:32.927 - STREAM b'IDAT' 62 4096
+02:27:32.930 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_000533.png from the end
+02:27:32.930 - STREAM b'IHDR' 16 13
+02:27:32.930 - STREAM b'pHYs' 41 9
+02:27:32.930 - STREAM b'IDAT' 62 4096
+02:27:32.930 - STREAM b'IHDR' 16 13
+02:27:32.930 - STREAM b'pHYs' 41 9
+02:27:32.930 - STREAM b'IDAT' 62 4096
+02:27:32.933 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_000433.png from the end
+02:27:32.933 - STREAM b'IHDR' 16 13
+02:27:32.933 - STREAM b'pHYs' 41 9
+02:27:32.933 - STREAM b'IDAT' 62 4096
+02:27:32.934 - STREAM b'IHDR' 16 13
+02:27:32.934 - STREAM b'pHYs' 41 9
+02:27:32.934 - STREAM b'IDAT' 62 4096
+02:27:32.937 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_000366.png from the end
+02:27:32.937 - STREAM b'IHDR' 16 13
+02:27:32.937 - STREAM b'pHYs' 41 9
+02:27:32.937 - STREAM b'IDAT' 62 4096
+02:27:32.937 - STREAM b'IHDR' 16 13
+02:27:32.937 - STREAM b'pHYs' 41 9
+02:27:32.937 - STREAM b'IDAT' 62 4096
+02:27:32.940 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_000300.png from the end
+02:27:32.940 - STREAM b'IHDR' 16 13
+02:27:32.940 - STREAM b'pHYs' 41 9
+02:27:32.940 - STREAM b'IDAT' 62 4096
+02:27:32.940 - STREAM b'IHDR' 16 13
+02:27:32.940 - STREAM b'pHYs' 41 9
+02:27:32.940 - STREAM b'IDAT' 62 4096
+02:27:32.944 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_000266.png from the end
+02:27:32.944 - STREAM b'IHDR' 16 13
+02:27:32.944 - STREAM b'pHYs' 41 9
+02:27:32.944 - STREAM b'IDAT' 62 4096
+02:27:32.944 - STREAM b'IHDR' 16 13
+02:27:32.944 - STREAM b'pHYs' 41 9
+02:27:32.944 - STREAM b'IDAT' 62 4096
+02:27:32.947 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_006200.png from the end
+02:27:32.958 - Calculating image histograms
+02:27:32.958 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_000000.png
+02:27:32.958 - STREAM b'IHDR' 16 13
+02:27:32.958 - STREAM b'pHYs' 41 9
+02:27:32.958 - STREAM b'IDAT' 62 634
+02:27:32.964 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_000200.png
+02:27:32.964 - STREAM b'IHDR' 16 13
+02:27:32.964 - STREAM b'pHYs' 41 9
+02:27:32.964 - STREAM b'IDAT' 62 4096
+02:27:32.970 - Calculating histogram for /sitespeed.io/20251114_212547/pages/scholar_google_com/data/filmstrip/1/ms_000233.png
+02:27:32.970 - STREAM b'IHDR' 16 13
+02:27:32.970 - STREAM b'pHYs' 41 9
+02:27:32.970 - STREAM b'IDAT' 62 4096
+02:27:32.978 - Done calculating histograms
+02:27:32.978 - 0ms - 0% Complete
+02:27:32.978 - 200ms - 81% Complete
+02:27:32.978 - 233ms - 100% Complete
+02:27:32.978 - Hero elements file is not valid: None
+02:27:32.978 - Converting video frames to JPEG
+02:27:32.978 - STREAM b'IHDR' 16 13
+02:27:32.979 - STREAM b'pHYs' 41 9
+02:27:32.979 - STREAM b'IDAT' 62 634
+02:27:32.979 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:32.979 - STREAM b'IHDR' 16 13
+02:27:32.979 - STREAM b'pHYs' 41 9
+02:27:32.979 - STREAM b'IDAT' 62 4096
+02:27:32.979 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:32.980 - STREAM b'IHDR' 16 13
+02:27:32.980 - STREAM b'pHYs' 41 9
+02:27:32.980 - STREAM b'IDAT' 62 4096
+02:27:32.980 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:27:32.981 - Done converting video frames to JPEG

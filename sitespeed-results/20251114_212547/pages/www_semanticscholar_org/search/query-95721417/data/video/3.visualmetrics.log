@@ -1,0 +1,880 @@
+02:34:11.094 - FFMPEG found
+02:34:11.095 - Python 3.6+ found
+02:34:11.178 - Numpy found
+02:34:11.193 - OpenCV-Python found
+02:34:11.203 - Pillow found
+02:34:11.473 - SSIM found
+02:34:11.476 - Processing frames from video /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/video/3.mp4 to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3
+02:34:11.477 - ['ffprobe', '/sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/video/3.mp4']
+02:34:11.483 - Finding Video Viewport...
+02:34:11.483 - Using frame 0
+02:34:11.551 - STREAM b'IHDR' 16 13
+02:34:11.551 - STREAM b'pHYs' 41 9
+02:34:11.551 - STREAM b'IDAT' 62 4096
+02:34:11.551 - /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/viewport.png is 1366x708
+02:34:11.551 - Finding the viewport for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/viewport.png
+02:34:11.551 - STREAM b'IHDR' 16 13
+02:34:11.551 - STREAM b'pHYs' 41 9
+02:34:11.551 - STREAM b'IDAT' 62 4096
+02:34:11.556 - Viewport left edge is 0
+02:34:11.557 - Viewport right edge is 1363
+02:34:11.557 - Viewport top edge is 88
+02:34:11.557 - Viewport bottom edge is 704
+02:34:11.568 - Extracting frames from /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/video/3.mp4 to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3
+02:34:11.571 - ffmpeg -v debug -i /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/video/3.mp4 -vsync 0 -vf crop=1363:616:0:88,scale=iw*min(400/iw\,400/ih):ih*min(400/iw\,400/ih),mpdecimate=0:64:640:0.001 /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-%d.png
+02:34:11.743 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-1.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-000000.png
+02:34:11.743 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-2.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-000900.png
+02:34:11.743 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-3.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001266.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-4.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001300.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-5.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001333.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-6.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001366.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-7.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001400.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-8.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001433.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-9.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001466.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-10.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001533.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-11.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001566.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-12.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001600.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-13.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001633.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-14.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001700.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-15.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001766.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-16.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001833.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-17.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001866.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-18.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001900.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-19.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-001933.png
+02:34:11.744 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-20.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002000.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-21.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002033.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-22.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002066.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-23.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002133.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-24.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002166.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-25.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002200.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-26.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002233.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-27.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002266.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-28.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002333.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-29.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002400.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-30.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002433.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-31.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002466.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-32.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002500.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-33.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002533.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-34.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002566.png
+02:34:11.745 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-35.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002600.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-36.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002633.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-37.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002666.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-38.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002733.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-39.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002766.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-40.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002800.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-41.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002833.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-42.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002900.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-43.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-002966.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-44.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003000.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-45.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003033.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-46.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003066.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-47.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003100.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-48.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003166.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-49.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003233.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-50.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003266.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-51.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003333.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-52.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003366.png
+02:34:11.746 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-53.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003400.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-54.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003433.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-55.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003466.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-56.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003500.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-57.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003533.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-58.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003566.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-59.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003633.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-60.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003666.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-61.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003700.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-62.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003733.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-63.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003766.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-64.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003800.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-65.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003866.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-66.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003933.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-67.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-003966.png
+02:34:11.747 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-68.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-004000.png
+02:34:11.748 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-69.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-004033.png
+02:34:11.748 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-70.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-004100.png
+02:34:11.748 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-71.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-004166.png
+02:34:11.748 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-72.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-004233.png
+02:34:11.748 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-73.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-004266.png
+02:34:11.748 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-74.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-004300.png
+02:34:11.748 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-75.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-004333.png
+02:34:11.748 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-76.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-004366.png
+02:34:11.748 - Renaming /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/img-77.png to /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-008333.png
+02:34:11.749 - Scanning for non-orange frames...
+02:34:11.749 - STREAM b'IHDR' 16 13
+02:34:11.749 - STREAM b'pHYs' 41 9
+02:34:11.749 - STREAM b'IDAT' 62 658
+02:34:11.749 - STREAM b'IHDR' 16 13
+02:34:11.749 - STREAM b'pHYs' 41 9
+02:34:11.749 - STREAM b'IDAT' 62 658
+02:34:11.750 - STREAM b'IHDR' 16 13
+02:34:11.750 - STREAM b'IDAT' 41 535
+02:34:11.752 - Scanning for orange frames...
+02:34:11.752 - Removing Orange frame: /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/video-000000.png
+02:34:11.752 - STREAM b'IHDR' 16 13
+02:34:11.752 - STREAM b'pHYs' 41 9
+02:34:11.752 - STREAM b'IDAT' 62 634
+02:34:11.753 - STREAM b'IHDR' 16 13
+02:34:11.753 - STREAM b'pHYs' 41 9
+02:34:11.753 - STREAM b'IDAT' 62 634
+02:34:11.754 - STREAM b'IHDR' 16 13
+02:34:11.754 - STREAM b'IDAT' 41 535
+02:34:11.755 - STREAM b'IHDR' 16 13
+02:34:11.755 - STREAM b'pHYs' 41 9
+02:34:11.755 - STREAM b'IDAT' 62 634
+02:34:11.756 - STREAM b'IHDR' 16 13
+02:34:11.756 - STREAM b'IDAT' 41 535
+02:34:11.757 - STREAM b'IHDR' 16 13
+02:34:11.757 - STREAM b'pHYs' 41 9
+02:34:11.757 - STREAM b'IDAT' 62 634
+02:34:11.758 - STREAM b'IHDR' 16 13
+02:34:11.758 - STREAM b'IDAT' 41 535
+02:34:11.758 - STREAM b'IHDR' 16 13
+02:34:11.758 - STREAM b'pHYs' 41 9
+02:34:11.759 - STREAM b'IDAT' 62 4096
+02:34:11.759 - STREAM b'IHDR' 16 13
+02:34:11.759 - STREAM b'pHYs' 41 9
+02:34:11.759 - STREAM b'IDAT' 62 4096
+02:34:11.760 - STREAM b'IHDR' 16 13
+02:34:11.760 - STREAM b'IDAT' 41 535
+02:34:11.760 - STREAM b'IHDR' 16 13
+02:34:11.760 - STREAM b'pHYs' 41 9
+02:34:11.760 - STREAM b'IDAT' 62 4096
+02:34:11.761 - STREAM b'IHDR' 16 13
+02:34:11.761 - STREAM b'IDAT' 41 535
+02:34:11.762 - STREAM b'IHDR' 16 13
+02:34:11.762 - STREAM b'pHYs' 41 9
+02:34:11.762 - STREAM b'IDAT' 62 4096
+02:34:11.763 - STREAM b'IHDR' 16 13
+02:34:11.763 - STREAM b'IDAT' 41 535
+02:34:11.764 - Finding Render Start...
+02:34:11.764 - STREAM b'IHDR' 16 13
+02:34:11.764 - STREAM b'pHYs' 41 9
+02:34:11.764 - STREAM b'IDAT' 62 634
+02:34:11.764 - STREAM b'IHDR' 16 13
+02:34:11.764 - STREAM b'pHYs' 41 9
+02:34:11.764 - STREAM b'IDAT' 62 634
+02:34:11.764 - STREAM b'IHDR' 16 13
+02:34:11.764 - STREAM b'pHYs' 41 9
+02:34:11.764 - STREAM b'IDAT' 62 4096
+02:34:11.768 - STREAM b'IHDR' 16 13
+02:34:11.768 - STREAM b'pHYs' 41 9
+02:34:11.768 - STREAM b'IDAT' 62 4096
+02:34:11.768 - STREAM b'IHDR' 16 13
+02:34:11.768 - STREAM b'pHYs' 41 9
+02:34:11.768 - STREAM b'IDAT' 62 4096
+02:34:11.769 - STREAM b'IHDR' 16 13
+02:34:11.769 - STREAM b'IDAT' 41 535
+02:34:11.770 - STREAM b'IHDR' 16 13
+02:34:11.770 - STREAM b'pHYs' 41 9
+02:34:11.770 - STREAM b'IDAT' 62 4096
+02:34:11.771 - STREAM b'IHDR' 16 13
+02:34:11.771 - STREAM b'IDAT' 41 535
+02:34:11.772 - STREAM b'IHDR' 16 13
+02:34:11.772 - STREAM b'pHYs' 41 9
+02:34:11.772 - STREAM b'IDAT' 62 4096
+02:34:11.772 - STREAM b'IHDR' 16 13
+02:34:11.772 - STREAM b'IDAT' 41 535
+02:34:11.775 - Eliminating Duplicate Frames...
+02:34:11.775 - STREAM b'IHDR' 16 13
+02:34:11.775 - STREAM b'pHYs' 41 9
+02:34:11.775 - STREAM b'IDAT' 62 634
+02:34:11.775 - Viewport cropping set to (W, H, L, T): (400, 170, 0, 0)
+02:34:11.775 - STREAM b'IHDR' 16 13
+02:34:11.775 - STREAM b'pHYs' 41 9
+02:34:11.775 - STREAM b'IDAT' 62 634
+02:34:11.775 - STREAM b'IHDR' 16 13
+02:34:11.776 - STREAM b'pHYs' 41 9
+02:34:11.776 - STREAM b'IDAT' 62 4096
+02:34:11.779 - STREAM b'IHDR' 16 13
+02:34:11.779 - STREAM b'pHYs' 41 9
+02:34:11.779 - STREAM b'IDAT' 62 4096
+02:34:11.779 - STREAM b'IHDR' 16 13
+02:34:11.779 - STREAM b'pHYs' 41 9
+02:34:11.779 - STREAM b'IDAT' 62 4096
+02:34:11.782 - STREAM b'IHDR' 16 13
+02:34:11.782 - STREAM b'pHYs' 41 9
+02:34:11.782 - STREAM b'IDAT' 62 4096
+02:34:11.782 - STREAM b'IHDR' 16 13
+02:34:11.782 - STREAM b'pHYs' 41 9
+02:34:11.782 - STREAM b'IDAT' 62 4096
+02:34:11.786 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_007433.png from the end
+02:34:11.795 - Calculating image histograms
+02:34:11.796 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000000.png
+02:34:11.796 - STREAM b'IHDR' 16 13
+02:34:11.796 - STREAM b'pHYs' 41 9
+02:34:11.796 - STREAM b'IDAT' 62 634
+02:34:11.804 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000366.png
+02:34:11.804 - STREAM b'IHDR' 16 13
+02:34:11.804 - STREAM b'pHYs' 41 9
+02:34:11.804 - STREAM b'IDAT' 62 4096
+02:34:11.813 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000400.png
+02:34:11.813 - STREAM b'IHDR' 16 13
+02:34:11.814 - STREAM b'pHYs' 41 9
+02:34:11.814 - STREAM b'IDAT' 62 4096
+02:34:11.821 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000433.png
+02:34:11.821 - STREAM b'IHDR' 16 13
+02:34:11.821 - STREAM b'pHYs' 41 9
+02:34:11.821 - STREAM b'IDAT' 62 4096
+02:34:11.829 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000466.png
+02:34:11.829 - STREAM b'IHDR' 16 13
+02:34:11.829 - STREAM b'pHYs' 41 9
+02:34:11.829 - STREAM b'IDAT' 62 4096
+02:34:11.837 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000500.png
+02:34:11.838 - STREAM b'IHDR' 16 13
+02:34:11.838 - STREAM b'pHYs' 41 9
+02:34:11.838 - STREAM b'IDAT' 62 4096
+02:34:11.845 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000533.png
+02:34:11.845 - STREAM b'IHDR' 16 13
+02:34:11.845 - STREAM b'pHYs' 41 9
+02:34:11.845 - STREAM b'IDAT' 62 4096
+02:34:11.853 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000566.png
+02:34:11.853 - STREAM b'IHDR' 16 13
+02:34:11.853 - STREAM b'pHYs' 41 9
+02:34:11.853 - STREAM b'IDAT' 62 4096
+02:34:11.861 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000633.png
+02:34:11.862 - STREAM b'IHDR' 16 13
+02:34:11.862 - STREAM b'pHYs' 41 9
+02:34:11.862 - STREAM b'IDAT' 62 4096
+02:34:11.869 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000666.png
+02:34:11.870 - STREAM b'IHDR' 16 13
+02:34:11.870 - STREAM b'pHYs' 41 9
+02:34:11.870 - STREAM b'IDAT' 62 4096
+02:34:11.877 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000700.png
+02:34:11.877 - STREAM b'IHDR' 16 13
+02:34:11.877 - STREAM b'pHYs' 41 9
+02:34:11.878 - STREAM b'IDAT' 62 4096
+02:34:11.885 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000733.png
+02:34:11.885 - STREAM b'IHDR' 16 13
+02:34:11.885 - STREAM b'pHYs' 41 9
+02:34:11.886 - STREAM b'IDAT' 62 4096
+02:34:11.893 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000800.png
+02:34:11.893 - STREAM b'IHDR' 16 13
+02:34:11.893 - STREAM b'pHYs' 41 9
+02:34:11.893 - STREAM b'IDAT' 62 4096
+02:34:11.901 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000866.png
+02:34:11.902 - STREAM b'IHDR' 16 13
+02:34:11.902 - STREAM b'pHYs' 41 9
+02:34:11.902 - STREAM b'IDAT' 62 4096
+02:34:11.909 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000933.png
+02:34:11.910 - STREAM b'IHDR' 16 13
+02:34:11.910 - STREAM b'pHYs' 41 9
+02:34:11.910 - STREAM b'IDAT' 62 4096
+02:34:11.917 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_000966.png
+02:34:11.917 - STREAM b'IHDR' 16 13
+02:34:11.917 - STREAM b'pHYs' 41 9
+02:34:11.917 - STREAM b'IDAT' 62 4096
+02:34:11.925 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001000.png
+02:34:11.925 - STREAM b'IHDR' 16 13
+02:34:11.925 - STREAM b'pHYs' 41 9
+02:34:11.925 - STREAM b'IDAT' 62 4096
+02:34:11.934 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001033.png
+02:34:11.934 - STREAM b'IHDR' 16 13
+02:34:11.934 - STREAM b'pHYs' 41 9
+02:34:11.934 - STREAM b'IDAT' 62 4096
+02:34:11.942 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001100.png
+02:34:11.942 - STREAM b'IHDR' 16 13
+02:34:11.942 - STREAM b'pHYs' 41 9
+02:34:11.942 - STREAM b'IDAT' 62 4096
+02:34:11.951 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001133.png
+02:34:11.951 - STREAM b'IHDR' 16 13
+02:34:11.951 - STREAM b'pHYs' 41 9
+02:34:11.951 - STREAM b'IDAT' 62 4096
+02:34:11.959 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001166.png
+02:34:11.959 - STREAM b'IHDR' 16 13
+02:34:11.959 - STREAM b'pHYs' 41 9
+02:34:11.959 - STREAM b'IDAT' 62 4096
+02:34:11.966 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001233.png
+02:34:11.966 - STREAM b'IHDR' 16 13
+02:34:11.966 - STREAM b'pHYs' 41 9
+02:34:11.966 - STREAM b'IDAT' 62 4096
+02:34:11.972 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001266.png
+02:34:11.973 - STREAM b'IHDR' 16 13
+02:34:11.973 - STREAM b'pHYs' 41 9
+02:34:11.973 - STREAM b'IDAT' 62 4096
+02:34:11.979 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001300.png
+02:34:11.979 - STREAM b'IHDR' 16 13
+02:34:11.979 - STREAM b'pHYs' 41 9
+02:34:11.979 - STREAM b'IDAT' 62 4096
+02:34:11.985 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001333.png
+02:34:11.985 - STREAM b'IHDR' 16 13
+02:34:11.985 - STREAM b'pHYs' 41 9
+02:34:11.985 - STREAM b'IDAT' 62 4096
+02:34:11.991 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001366.png
+02:34:11.991 - STREAM b'IHDR' 16 13
+02:34:11.991 - STREAM b'pHYs' 41 9
+02:34:11.991 - STREAM b'IDAT' 62 4096
+02:34:11.997 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001433.png
+02:34:11.997 - STREAM b'IHDR' 16 13
+02:34:11.998 - STREAM b'pHYs' 41 9
+02:34:11.998 - STREAM b'IDAT' 62 4096
+02:34:12.004 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001500.png
+02:34:12.004 - STREAM b'IHDR' 16 13
+02:34:12.004 - STREAM b'pHYs' 41 9
+02:34:12.004 - STREAM b'IDAT' 62 4096
+02:34:12.010 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001533.png
+02:34:12.010 - STREAM b'IHDR' 16 13
+02:34:12.011 - STREAM b'pHYs' 41 9
+02:34:12.011 - STREAM b'IDAT' 62 4096
+02:34:12.017 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001566.png
+02:34:12.017 - STREAM b'IHDR' 16 13
+02:34:12.017 - STREAM b'pHYs' 41 9
+02:34:12.017 - STREAM b'IDAT' 62 4096
+02:34:12.024 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001600.png
+02:34:12.025 - STREAM b'IHDR' 16 13
+02:34:12.025 - STREAM b'pHYs' 41 9
+02:34:12.025 - STREAM b'IDAT' 62 4096
+02:34:12.033 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001633.png
+02:34:12.033 - STREAM b'IHDR' 16 13
+02:34:12.033 - STREAM b'pHYs' 41 9
+02:34:12.033 - STREAM b'IDAT' 62 4096
+02:34:12.042 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001666.png
+02:34:12.042 - STREAM b'IHDR' 16 13
+02:34:12.042 - STREAM b'pHYs' 41 9
+02:34:12.042 - STREAM b'IDAT' 62 4096
+02:34:12.050 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001700.png
+02:34:12.051 - STREAM b'IHDR' 16 13
+02:34:12.051 - STREAM b'pHYs' 41 9
+02:34:12.051 - STREAM b'IDAT' 62 4096
+02:34:12.060 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001733.png
+02:34:12.061 - STREAM b'IHDR' 16 13
+02:34:12.061 - STREAM b'pHYs' 41 9
+02:34:12.061 - STREAM b'IDAT' 62 4096
+02:34:12.069 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001766.png
+02:34:12.070 - STREAM b'IHDR' 16 13
+02:34:12.070 - STREAM b'pHYs' 41 9
+02:34:12.070 - STREAM b'IDAT' 62 4096
+02:34:12.078 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001833.png
+02:34:12.078 - STREAM b'IHDR' 16 13
+02:34:12.078 - STREAM b'pHYs' 41 9
+02:34:12.078 - STREAM b'IDAT' 62 4096
+02:34:12.088 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001866.png
+02:34:12.088 - STREAM b'IHDR' 16 13
+02:34:12.088 - STREAM b'pHYs' 41 9
+02:34:12.088 - STREAM b'IDAT' 62 4096
+02:34:12.097 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001900.png
+02:34:12.097 - STREAM b'IHDR' 16 13
+02:34:12.097 - STREAM b'pHYs' 41 9
+02:34:12.097 - STREAM b'IDAT' 62 4096
+02:34:12.105 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_001933.png
+02:34:12.105 - STREAM b'IHDR' 16 13
+02:34:12.106 - STREAM b'pHYs' 41 9
+02:34:12.106 - STREAM b'IDAT' 62 4096
+02:34:12.115 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002000.png
+02:34:12.115 - STREAM b'IHDR' 16 13
+02:34:12.115 - STREAM b'pHYs' 41 9
+02:34:12.115 - STREAM b'IDAT' 62 4096
+02:34:12.123 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002066.png
+02:34:12.123 - STREAM b'IHDR' 16 13
+02:34:12.123 - STREAM b'pHYs' 41 9
+02:34:12.123 - STREAM b'IDAT' 62 4096
+02:34:12.129 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002100.png
+02:34:12.129 - STREAM b'IHDR' 16 13
+02:34:12.129 - STREAM b'pHYs' 41 9
+02:34:12.129 - STREAM b'IDAT' 62 4096
+02:34:12.135 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002133.png
+02:34:12.136 - STREAM b'IHDR' 16 13
+02:34:12.136 - STREAM b'pHYs' 41 9
+02:34:12.136 - STREAM b'IDAT' 62 4096
+02:34:12.141 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002166.png
+02:34:12.142 - STREAM b'IHDR' 16 13
+02:34:12.142 - STREAM b'pHYs' 41 9
+02:34:12.142 - STREAM b'IDAT' 62 4096
+02:34:12.148 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002200.png
+02:34:12.148 - STREAM b'IHDR' 16 13
+02:34:12.148 - STREAM b'pHYs' 41 9
+02:34:12.148 - STREAM b'IDAT' 62 4096
+02:34:12.154 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002266.png
+02:34:12.154 - STREAM b'IHDR' 16 13
+02:34:12.154 - STREAM b'pHYs' 41 9
+02:34:12.154 - STREAM b'IDAT' 62 4096
+02:34:12.160 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002333.png
+02:34:12.160 - STREAM b'IHDR' 16 13
+02:34:12.160 - STREAM b'pHYs' 41 9
+02:34:12.160 - STREAM b'IDAT' 62 4096
+02:34:12.166 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002366.png
+02:34:12.166 - STREAM b'IHDR' 16 13
+02:34:12.166 - STREAM b'pHYs' 41 9
+02:34:12.166 - STREAM b'IDAT' 62 4096
+02:34:12.172 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002433.png
+02:34:12.172 - STREAM b'IHDR' 16 13
+02:34:12.172 - STREAM b'pHYs' 41 9
+02:34:12.172 - STREAM b'IDAT' 62 4096
+02:34:12.182 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002466.png
+02:34:12.182 - STREAM b'IHDR' 16 13
+02:34:12.182 - STREAM b'pHYs' 41 9
+02:34:12.182 - STREAM b'IDAT' 62 4096
+02:34:12.190 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002500.png
+02:34:12.190 - STREAM b'IHDR' 16 13
+02:34:12.190 - STREAM b'pHYs' 41 9
+02:34:12.190 - STREAM b'IDAT' 62 4096
+02:34:12.197 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002533.png
+02:34:12.197 - STREAM b'IHDR' 16 13
+02:34:12.197 - STREAM b'pHYs' 41 9
+02:34:12.197 - STREAM b'IDAT' 62 4096
+02:34:12.203 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002566.png
+02:34:12.204 - STREAM b'IHDR' 16 13
+02:34:12.204 - STREAM b'pHYs' 41 9
+02:34:12.204 - STREAM b'IDAT' 62 4096
+02:34:12.212 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002600.png
+02:34:12.212 - STREAM b'IHDR' 16 13
+02:34:12.212 - STREAM b'pHYs' 41 9
+02:34:12.212 - STREAM b'IDAT' 62 4096
+02:34:12.218 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002633.png
+02:34:12.218 - STREAM b'IHDR' 16 13
+02:34:12.218 - STREAM b'pHYs' 41 9
+02:34:12.218 - STREAM b'IDAT' 62 4096
+02:34:12.224 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002666.png
+02:34:12.224 - STREAM b'IHDR' 16 13
+02:34:12.224 - STREAM b'pHYs' 41 9
+02:34:12.224 - STREAM b'IDAT' 62 4096
+02:34:12.230 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002733.png
+02:34:12.230 - STREAM b'IHDR' 16 13
+02:34:12.230 - STREAM b'pHYs' 41 9
+02:34:12.230 - STREAM b'IDAT' 62 4096
+02:34:12.236 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002766.png
+02:34:12.236 - STREAM b'IHDR' 16 13
+02:34:12.236 - STREAM b'pHYs' 41 9
+02:34:12.236 - STREAM b'IDAT' 62 4096
+02:34:12.242 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002800.png
+02:34:12.242 - STREAM b'IHDR' 16 13
+02:34:12.242 - STREAM b'pHYs' 41 9
+02:34:12.242 - STREAM b'IDAT' 62 4096
+02:34:12.248 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002833.png
+02:34:12.248 - STREAM b'IHDR' 16 13
+02:34:12.248 - STREAM b'pHYs' 41 9
+02:34:12.248 - STREAM b'IDAT' 62 4096
+02:34:12.254 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002866.png
+02:34:12.254 - STREAM b'IHDR' 16 13
+02:34:12.254 - STREAM b'pHYs' 41 9
+02:34:12.254 - STREAM b'IDAT' 62 4096
+02:34:12.260 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002900.png
+02:34:12.260 - STREAM b'IHDR' 16 13
+02:34:12.260 - STREAM b'pHYs' 41 9
+02:34:12.260 - STREAM b'IDAT' 62 4096
+02:34:12.266 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_002966.png
+02:34:12.266 - STREAM b'IHDR' 16 13
+02:34:12.266 - STREAM b'pHYs' 41 9
+02:34:12.266 - STREAM b'IDAT' 62 4096
+02:34:12.272 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_003033.png
+02:34:12.272 - STREAM b'IHDR' 16 13
+02:34:12.272 - STREAM b'pHYs' 41 9
+02:34:12.272 - STREAM b'IDAT' 62 4096
+02:34:12.278 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_003066.png
+02:34:12.278 - STREAM b'IHDR' 16 13
+02:34:12.278 - STREAM b'pHYs' 41 9
+02:34:12.278 - STREAM b'IDAT' 62 4096
+02:34:12.284 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_003100.png
+02:34:12.284 - STREAM b'IHDR' 16 13
+02:34:12.284 - STREAM b'pHYs' 41 9
+02:34:12.284 - STREAM b'IDAT' 62 4096
+02:34:12.290 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_003133.png
+02:34:12.290 - STREAM b'IHDR' 16 13
+02:34:12.291 - STREAM b'pHYs' 41 9
+02:34:12.291 - STREAM b'IDAT' 62 4096
+02:34:12.297 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_003200.png
+02:34:12.297 - STREAM b'IHDR' 16 13
+02:34:12.297 - STREAM b'pHYs' 41 9
+02:34:12.297 - STREAM b'IDAT' 62 4096
+02:34:12.304 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_003266.png
+02:34:12.304 - STREAM b'IHDR' 16 13
+02:34:12.304 - STREAM b'pHYs' 41 9
+02:34:12.304 - STREAM b'IDAT' 62 4096
+02:34:12.311 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_003333.png
+02:34:12.311 - STREAM b'IHDR' 16 13
+02:34:12.311 - STREAM b'pHYs' 41 9
+02:34:12.311 - STREAM b'IDAT' 62 4096
+02:34:12.317 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_003366.png
+02:34:12.317 - STREAM b'IHDR' 16 13
+02:34:12.317 - STREAM b'pHYs' 41 9
+02:34:12.317 - STREAM b'IDAT' 62 4096
+02:34:12.323 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_003400.png
+02:34:12.323 - STREAM b'IHDR' 16 13
+02:34:12.323 - STREAM b'pHYs' 41 9
+02:34:12.323 - STREAM b'IDAT' 62 4096
+02:34:12.332 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_003433.png
+02:34:12.333 - STREAM b'IHDR' 16 13
+02:34:12.333 - STREAM b'pHYs' 41 9
+02:34:12.333 - STREAM b'IDAT' 62 4096
+02:34:12.342 - Calculating histogram for /sitespeed.io/20251114_212547/pages/www_semanticscholar_org/search/query-95721417/data/filmstrip/3/ms_003466.png
+02:34:12.342 - STREAM b'IHDR' 16 13
+02:34:12.342 - STREAM b'pHYs' 41 9
+02:34:12.342 - STREAM b'IDAT' 62 4096
+02:34:12.390 - Done calculating histograms
+02:34:12.393 - 0ms - 0% Complete
+02:34:12.393 - 366ms - 82% Complete
+02:34:12.393 - 400ms - 82% Complete
+02:34:12.394 - 433ms - 82% Complete
+02:34:12.394 - 466ms - 82% Complete
+02:34:12.394 - 500ms - 82% Complete
+02:34:12.394 - 533ms - 82% Complete
+02:34:12.394 - 566ms - 82% Complete
+02:34:12.395 - 633ms - 82% Complete
+02:34:12.395 - 666ms - 82% Complete
+02:34:12.395 - 700ms - 82% Complete
+02:34:12.395 - 733ms - 82% Complete
+02:34:12.395 - 800ms - 82% Complete
+02:34:12.395 - 866ms - 82% Complete
+02:34:12.396 - 933ms - 82% Complete
+02:34:12.396 - 966ms - 82% Complete
+02:34:12.396 - 1000ms - 82% Complete
+02:34:12.396 - 1033ms - 82% Complete
+02:34:12.396 - 1100ms - 82% Complete
+02:34:12.397 - 1133ms - 82% Complete
+02:34:12.397 - 1166ms - 82% Complete
+02:34:12.397 - 1233ms - 82% Complete
+02:34:12.397 - 1266ms - 82% Complete
+02:34:12.397 - 1300ms - 82% Complete
+02:34:12.397 - 1333ms - 82% Complete
+02:34:12.398 - 1366ms - 82% Complete
+02:34:12.398 - 1433ms - 82% Complete
+02:34:12.398 - 1500ms - 82% Complete
+02:34:12.398 - 1533ms - 82% Complete
+02:34:12.398 - 1566ms - 82% Complete
+02:34:12.399 - 1600ms - 82% Complete
+02:34:12.399 - 1633ms - 82% Complete
+02:34:12.399 - 1666ms - 82% Complete
+02:34:12.399 - 1700ms - 82% Complete
+02:34:12.399 - 1733ms - 82% Complete
+02:34:12.399 - 1766ms - 82% Complete
+02:34:12.400 - 1833ms - 82% Complete
+02:34:12.400 - 1866ms - 82% Complete
+02:34:12.400 - 1900ms - 82% Complete
+02:34:12.400 - 1933ms - 82% Complete
+02:34:12.400 - 2000ms - 82% Complete
+02:34:12.401 - 2066ms - 82% Complete
+02:34:12.401 - 2100ms - 82% Complete
+02:34:12.401 - 2133ms - 82% Complete
+02:34:12.401 - 2166ms - 82% Complete
+02:34:12.401 - 2200ms - 82% Complete
+02:34:12.401 - 2266ms - 82% Complete
+02:34:12.402 - 2333ms - 82% Complete
+02:34:12.402 - 2366ms - 82% Complete
+02:34:12.402 - 2433ms - 82% Complete
+02:34:12.402 - 2466ms - 82% Complete
+02:34:12.402 - 2500ms - 82% Complete
+02:34:12.403 - 2533ms - 82% Complete
+02:34:12.403 - 2566ms - 82% Complete
+02:34:12.403 - 2600ms - 82% Complete
+02:34:12.403 - 2633ms - 82% Complete
+02:34:12.403 - 2666ms - 82% Complete
+02:34:12.403 - 2733ms - 82% Complete
+02:34:12.404 - 2766ms - 82% Complete
+02:34:12.404 - 2800ms - 82% Complete
+02:34:12.404 - 2833ms - 82% Complete
+02:34:12.404 - 2866ms - 82% Complete
+02:34:12.404 - 2900ms - 82% Complete
+02:34:12.404 - 2966ms - 82% Complete
+02:34:12.405 - 3033ms - 82% Complete
+02:34:12.405 - 3066ms - 82% Complete
+02:34:12.405 - 3100ms - 82% Complete
+02:34:12.405 - 3133ms - 82% Complete
+02:34:12.405 - 3200ms - 82% Complete
+02:34:12.406 - 3266ms - 82% Complete
+02:34:12.406 - 3333ms - 82% Complete
+02:34:12.406 - 3366ms - 82% Complete
+02:34:12.406 - 3400ms - 98% Complete
+02:34:12.406 - 3433ms - 99% Complete
+02:34:12.406 - 3466ms - 100% Complete
+02:34:12.407 - Hero elements file is not valid: None
+02:34:12.407 - Converting video frames to JPEG
+02:34:12.407 - STREAM b'IHDR' 16 13
+02:34:12.407 - STREAM b'pHYs' 41 9
+02:34:12.407 - STREAM b'IDAT' 62 634
+02:34:12.407 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.408 - STREAM b'IHDR' 16 13
+02:34:12.408 - STREAM b'pHYs' 41 9
+02:34:12.408 - STREAM b'IDAT' 62 4096
+02:34:12.408 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.408 - STREAM b'IHDR' 16 13
+02:34:12.408 - STREAM b'pHYs' 41 9
+02:34:12.408 - STREAM b'IDAT' 62 4096
+02:34:12.408 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.409 - STREAM b'IHDR' 16 13
+02:34:12.409 - STREAM b'pHYs' 41 9
+02:34:12.409 - STREAM b'IDAT' 62 4096
+02:34:12.409 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.410 - STREAM b'IHDR' 16 13
+02:34:12.410 - STREAM b'pHYs' 41 9
+02:34:12.410 - STREAM b'IDAT' 62 4096
+02:34:12.410 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.410 - STREAM b'IHDR' 16 13
+02:34:12.410 - STREAM b'pHYs' 41 9
+02:34:12.411 - STREAM b'IDAT' 62 4096
+02:34:12.411 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.411 - STREAM b'IHDR' 16 13
+02:34:12.411 - STREAM b'pHYs' 41 9
+02:34:12.411 - STREAM b'IDAT' 62 4096
+02:34:12.411 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.412 - STREAM b'IHDR' 16 13
+02:34:12.412 - STREAM b'pHYs' 41 9
+02:34:12.412 - STREAM b'IDAT' 62 4096
+02:34:12.412 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.412 - STREAM b'IHDR' 16 13
+02:34:12.413 - STREAM b'pHYs' 41 9
+02:34:12.413 - STREAM b'IDAT' 62 4096
+02:34:12.413 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.413 - STREAM b'IHDR' 16 13
+02:34:12.413 - STREAM b'pHYs' 41 9
+02:34:12.413 - STREAM b'IDAT' 62 4096
+02:34:12.413 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.414 - STREAM b'IHDR' 16 13
+02:34:12.414 - STREAM b'pHYs' 41 9
+02:34:12.414 - STREAM b'IDAT' 62 4096
+02:34:12.414 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.414 - STREAM b'IHDR' 16 13
+02:34:12.415 - STREAM b'pHYs' 41 9
+02:34:12.415 - STREAM b'IDAT' 62 4096
+02:34:12.415 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.415 - STREAM b'IHDR' 16 13
+02:34:12.415 - STREAM b'pHYs' 41 9
+02:34:12.415 - STREAM b'IDAT' 62 4096
+02:34:12.415 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.416 - STREAM b'IHDR' 16 13
+02:34:12.416 - STREAM b'pHYs' 41 9
+02:34:12.416 - STREAM b'IDAT' 62 4096
+02:34:12.416 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.416 - STREAM b'IHDR' 16 13
+02:34:12.417 - STREAM b'pHYs' 41 9
+02:34:12.417 - STREAM b'IDAT' 62 4096
+02:34:12.417 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.417 - STREAM b'IHDR' 16 13
+02:34:12.417 - STREAM b'pHYs' 41 9
+02:34:12.417 - STREAM b'IDAT' 62 4096
+02:34:12.417 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.418 - STREAM b'IHDR' 16 13
+02:34:12.418 - STREAM b'pHYs' 41 9
+02:34:12.418 - STREAM b'IDAT' 62 4096
+02:34:12.418 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.418 - STREAM b'IHDR' 16 13
+02:34:12.419 - STREAM b'pHYs' 41 9
+02:34:12.419 - STREAM b'IDAT' 62 4096
+02:34:12.419 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.419 - STREAM b'IHDR' 16 13
+02:34:12.419 - STREAM b'pHYs' 41 9
+02:34:12.419 - STREAM b'IDAT' 62 4096
+02:34:12.419 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.420 - STREAM b'IHDR' 16 13
+02:34:12.420 - STREAM b'pHYs' 41 9
+02:34:12.420 - STREAM b'IDAT' 62 4096
+02:34:12.420 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.420 - STREAM b'IHDR' 16 13
+02:34:12.421 - STREAM b'pHYs' 41 9
+02:34:12.421 - STREAM b'IDAT' 62 4096
+02:34:12.421 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.421 - STREAM b'IHDR' 16 13
+02:34:12.421 - STREAM b'pHYs' 41 9
+02:34:12.421 - STREAM b'IDAT' 62 4096
+02:34:12.421 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.422 - STREAM b'IHDR' 16 13
+02:34:12.422 - STREAM b'pHYs' 41 9
+02:34:12.422 - STREAM b'IDAT' 62 4096
+02:34:12.422 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.422 - STREAM b'IHDR' 16 13
+02:34:12.423 - STREAM b'pHYs' 41 9
+02:34:12.423 - STREAM b'IDAT' 62 4096
+02:34:12.423 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.423 - STREAM b'IHDR' 16 13
+02:34:12.423 - STREAM b'pHYs' 41 9
+02:34:12.423 - STREAM b'IDAT' 62 4096
+02:34:12.423 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.424 - STREAM b'IHDR' 16 13
+02:34:12.424 - STREAM b'pHYs' 41 9
+02:34:12.424 - STREAM b'IDAT' 62 4096
+02:34:12.424 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.424 - STREAM b'IHDR' 16 13
+02:34:12.424 - STREAM b'pHYs' 41 9
+02:34:12.425 - STREAM b'IDAT' 62 4096
+02:34:12.425 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.425 - STREAM b'IHDR' 16 13
+02:34:12.425 - STREAM b'pHYs' 41 9
+02:34:12.425 - STREAM b'IDAT' 62 4096
+02:34:12.425 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.426 - STREAM b'IHDR' 16 13
+02:34:12.426 - STREAM b'pHYs' 41 9
+02:34:12.426 - STREAM b'IDAT' 62 4096
+02:34:12.426 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.426 - STREAM b'IHDR' 16 13
+02:34:12.426 - STREAM b'pHYs' 41 9
+02:34:12.426 - STREAM b'IDAT' 62 4096
+02:34:12.427 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.427 - STREAM b'IHDR' 16 13
+02:34:12.427 - STREAM b'pHYs' 41 9
+02:34:12.427 - STREAM b'IDAT' 62 4096
+02:34:12.427 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.428 - STREAM b'IHDR' 16 13
+02:34:12.428 - STREAM b'pHYs' 41 9
+02:34:12.428 - STREAM b'IDAT' 62 4096
+02:34:12.428 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.428 - STREAM b'IHDR' 16 13
+02:34:12.428 - STREAM b'pHYs' 41 9
+02:34:12.428 - STREAM b'IDAT' 62 4096
+02:34:12.428 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.429 - STREAM b'IHDR' 16 13
+02:34:12.429 - STREAM b'pHYs' 41 9
+02:34:12.429 - STREAM b'IDAT' 62 4096
+02:34:12.429 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.430 - STREAM b'IHDR' 16 13
+02:34:12.430 - STREAM b'pHYs' 41 9
+02:34:12.430 - STREAM b'IDAT' 62 4096
+02:34:12.430 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.430 - STREAM b'IHDR' 16 13
+02:34:12.430 - STREAM b'pHYs' 41 9
+02:34:12.430 - STREAM b'IDAT' 62 4096
+02:34:12.430 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.431 - STREAM b'IHDR' 16 13
+02:34:12.431 - STREAM b'pHYs' 41 9
+02:34:12.431 - STREAM b'IDAT' 62 4096
+02:34:12.431 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.432 - STREAM b'IHDR' 16 13
+02:34:12.432 - STREAM b'pHYs' 41 9
+02:34:12.432 - STREAM b'IDAT' 62 4096
+02:34:12.432 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.432 - STREAM b'IHDR' 16 13
+02:34:12.432 - STREAM b'pHYs' 41 9
+02:34:12.432 - STREAM b'IDAT' 62 4096
+02:34:12.432 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.433 - STREAM b'IHDR' 16 13
+02:34:12.433 - STREAM b'pHYs' 41 9
+02:34:12.433 - STREAM b'IDAT' 62 4096
+02:34:12.433 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.434 - STREAM b'IHDR' 16 13
+02:34:12.434 - STREAM b'pHYs' 41 9
+02:34:12.434 - STREAM b'IDAT' 62 4096
+02:34:12.434 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.434 - STREAM b'IHDR' 16 13
+02:34:12.434 - STREAM b'pHYs' 41 9
+02:34:12.434 - STREAM b'IDAT' 62 4096
+02:34:12.434 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.435 - STREAM b'IHDR' 16 13
+02:34:12.435 - STREAM b'pHYs' 41 9
+02:34:12.435 - STREAM b'IDAT' 62 4096
+02:34:12.435 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.436 - STREAM b'IHDR' 16 13
+02:34:12.436 - STREAM b'pHYs' 41 9
+02:34:12.436 - STREAM b'IDAT' 62 4096
+02:34:12.436 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.436 - STREAM b'IHDR' 16 13
+02:34:12.436 - STREAM b'pHYs' 41 9
+02:34:12.436 - STREAM b'IDAT' 62 4096
+02:34:12.436 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.437 - STREAM b'IHDR' 16 13
+02:34:12.437 - STREAM b'pHYs' 41 9
+02:34:12.437 - STREAM b'IDAT' 62 4096
+02:34:12.437 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.438 - STREAM b'IHDR' 16 13
+02:34:12.438 - STREAM b'pHYs' 41 9
+02:34:12.438 - STREAM b'IDAT' 62 4096
+02:34:12.438 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.438 - STREAM b'IHDR' 16 13
+02:34:12.438 - STREAM b'pHYs' 41 9
+02:34:12.438 - STREAM b'IDAT' 62 4096
+02:34:12.438 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.439 - STREAM b'IHDR' 16 13
+02:34:12.439 - STREAM b'pHYs' 41 9
+02:34:12.439 - STREAM b'IDAT' 62 4096
+02:34:12.439 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.440 - STREAM b'IHDR' 16 13
+02:34:12.440 - STREAM b'pHYs' 41 9
+02:34:12.440 - STREAM b'IDAT' 62 4096
+02:34:12.440 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.440 - STREAM b'IHDR' 16 13
+02:34:12.440 - STREAM b'pHYs' 41 9
+02:34:12.440 - STREAM b'IDAT' 62 4096
+02:34:12.440 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.441 - STREAM b'IHDR' 16 13
+02:34:12.441 - STREAM b'pHYs' 41 9
+02:34:12.441 - STREAM b'IDAT' 62 4096
+02:34:12.441 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.442 - STREAM b'IHDR' 16 13
+02:34:12.442 - STREAM b'pHYs' 41 9
+02:34:12.442 - STREAM b'IDAT' 62 4096
+02:34:12.442 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.442 - STREAM b'IHDR' 16 13
+02:34:12.442 - STREAM b'pHYs' 41 9
+02:34:12.442 - STREAM b'IDAT' 62 4096
+02:34:12.442 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.443 - STREAM b'IHDR' 16 13
+02:34:12.443 - STREAM b'pHYs' 41 9
+02:34:12.443 - STREAM b'IDAT' 62 4096
+02:34:12.443 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.444 - STREAM b'IHDR' 16 13
+02:34:12.444 - STREAM b'pHYs' 41 9
+02:34:12.444 - STREAM b'IDAT' 62 4096
+02:34:12.444 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.444 - STREAM b'IHDR' 16 13
+02:34:12.444 - STREAM b'pHYs' 41 9
+02:34:12.444 - STREAM b'IDAT' 62 4096
+02:34:12.444 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.445 - STREAM b'IHDR' 16 13
+02:34:12.445 - STREAM b'pHYs' 41 9
+02:34:12.445 - STREAM b'IDAT' 62 4096
+02:34:12.445 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.446 - STREAM b'IHDR' 16 13
+02:34:12.446 - STREAM b'pHYs' 41 9
+02:34:12.446 - STREAM b'IDAT' 62 4096
+02:34:12.446 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.446 - STREAM b'IHDR' 16 13
+02:34:12.446 - STREAM b'pHYs' 41 9
+02:34:12.446 - STREAM b'IDAT' 62 4096
+02:34:12.446 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.447 - STREAM b'IHDR' 16 13
+02:34:12.447 - STREAM b'pHYs' 41 9
+02:34:12.447 - STREAM b'IDAT' 62 4096
+02:34:12.447 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.447 - STREAM b'IHDR' 16 13
+02:34:12.448 - STREAM b'pHYs' 41 9
+02:34:12.448 - STREAM b'IDAT' 62 4096
+02:34:12.448 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.448 - STREAM b'IHDR' 16 13
+02:34:12.448 - STREAM b'pHYs' 41 9
+02:34:12.448 - STREAM b'IDAT' 62 4096
+02:34:12.448 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.449 - STREAM b'IHDR' 16 13
+02:34:12.449 - STREAM b'pHYs' 41 9
+02:34:12.449 - STREAM b'IDAT' 62 4096
+02:34:12.449 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.449 - STREAM b'IHDR' 16 13
+02:34:12.450 - STREAM b'pHYs' 41 9
+02:34:12.450 - STREAM b'IDAT' 62 4096
+02:34:12.450 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.450 - STREAM b'IHDR' 16 13
+02:34:12.450 - STREAM b'pHYs' 41 9
+02:34:12.450 - STREAM b'IDAT' 62 4096
+02:34:12.450 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.451 - STREAM b'IHDR' 16 13
+02:34:12.451 - STREAM b'pHYs' 41 9
+02:34:12.451 - STREAM b'IDAT' 62 4096
+02:34:12.451 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.451 - STREAM b'IHDR' 16 13
+02:34:12.451 - STREAM b'pHYs' 41 9
+02:34:12.452 - STREAM b'IDAT' 62 4096
+02:34:12.452 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.452 - STREAM b'IHDR' 16 13
+02:34:12.452 - STREAM b'pHYs' 41 9
+02:34:12.452 - STREAM b'IDAT' 62 4096
+02:34:12.452 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.453 - STREAM b'IHDR' 16 13
+02:34:12.453 - STREAM b'pHYs' 41 9
+02:34:12.453 - STREAM b'IDAT' 62 4096
+02:34:12.453 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.454 - STREAM b'IHDR' 16 13
+02:34:12.454 - STREAM b'pHYs' 41 9
+02:34:12.454 - STREAM b'IDAT' 62 4096
+02:34:12.454 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.454 - STREAM b'IHDR' 16 13
+02:34:12.454 - STREAM b'pHYs' 41 9
+02:34:12.454 - STREAM b'IDAT' 62 4096
+02:34:12.454 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.455 - STREAM b'IHDR' 16 13
+02:34:12.455 - STREAM b'pHYs' 41 9
+02:34:12.455 - STREAM b'IDAT' 62 4096
+02:34:12.455 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.456 - STREAM b'IHDR' 16 13
+02:34:12.456 - STREAM b'pHYs' 41 9
+02:34:12.456 - STREAM b'IDAT' 62 4096
+02:34:12.456 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.456 - STREAM b'IHDR' 16 13
+02:34:12.457 - STREAM b'pHYs' 41 9
+02:34:12.457 - STREAM b'IDAT' 62 4096
+02:34:12.457 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:34:12.457 - Done converting video frames to JPEG

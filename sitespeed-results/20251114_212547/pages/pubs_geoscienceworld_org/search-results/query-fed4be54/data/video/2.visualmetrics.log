@@ -1,0 +1,734 @@
+02:29:15.993 - FFMPEG found
+02:29:15.993 - Python 3.6+ found
+02:29:16.039 - Numpy found
+02:29:16.061 - OpenCV-Python found
+02:29:16.074 - Pillow found
+02:29:16.335 - SSIM found
+02:29:16.339 - Processing frames from video /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/video/2.mp4 to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2
+02:29:16.339 - ['ffprobe', '/sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/video/2.mp4']
+02:29:16.346 - Finding Video Viewport...
+02:29:16.346 - Using frame 0
+02:29:16.412 - STREAM b'IHDR' 16 13
+02:29:16.412 - STREAM b'pHYs' 41 9
+02:29:16.412 - STREAM b'IDAT' 62 4096
+02:29:16.412 - /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/viewport.png is 1366x708
+02:29:16.412 - Finding the viewport for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/viewport.png
+02:29:16.412 - STREAM b'IHDR' 16 13
+02:29:16.412 - STREAM b'pHYs' 41 9
+02:29:16.412 - STREAM b'IDAT' 62 4096
+02:29:16.417 - Viewport left edge is 0
+02:29:16.417 - Viewport right edge is 1363
+02:29:16.417 - Viewport top edge is 88
+02:29:16.417 - Viewport bottom edge is 704
+02:29:16.428 - Extracting frames from /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/video/2.mp4 to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2
+02:29:16.431 - ffmpeg -v debug -i /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/video/2.mp4 -vsync 0 -vf crop=1363:616:0:88,scale=iw*min(400/iw\,400/ih):ih*min(400/iw\,400/ih),mpdecimate=0:64:640:0.001 /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-%d.png
+02:29:16.643 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-1.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-000000.png
+02:29:16.643 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-2.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-000900.png
+02:29:16.643 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-3.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003366.png
+02:29:16.643 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-4.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003400.png
+02:29:16.643 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-5.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003433.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-6.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003533.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-7.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003666.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-8.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003700.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-9.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003733.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-10.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003766.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-11.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003800.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-12.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003833.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-13.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003866.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-14.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003900.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-15.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-003966.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-16.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004033.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-17.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004066.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-18.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004600.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-19.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004633.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-20.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004666.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-21.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004700.png
+02:29:16.644 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-22.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004733.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-23.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004766.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-24.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004800.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-25.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004833.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-26.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004900.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-27.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004933.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-28.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-004966.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-29.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005000.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-30.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005033.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-31.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005066.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-32.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005100.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-33.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005133.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-34.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005166.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-35.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005200.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-36.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005233.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-37.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005266.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-38.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005300.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-39.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005333.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-40.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005366.png
+02:29:16.645 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-41.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005400.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-42.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005433.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-43.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-005500.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-44.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-007800.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-45.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-007833.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-46.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-007866.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-47.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-007900.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-48.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-007933.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-49.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-007966.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-50.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008000.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-51.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008033.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-52.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008066.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-53.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008100.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-54.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008133.png
+02:29:16.646 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-55.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008166.png
+02:29:16.647 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-56.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008200.png
+02:29:16.647 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-57.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008266.png
+02:29:16.647 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-58.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008300.png
+02:29:16.647 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-59.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008333.png
+02:29:16.647 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-60.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008366.png
+02:29:16.647 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-61.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008400.png
+02:29:16.647 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-62.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008466.png
+02:29:16.647 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-63.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008500.png
+02:29:16.647 - Renaming /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/img-64.png to /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-008600.png
+02:29:16.648 - Scanning for non-orange frames...
+02:29:16.648 - STREAM b'IHDR' 16 13
+02:29:16.648 - STREAM b'pHYs' 41 9
+02:29:16.648 - STREAM b'IDAT' 62 658
+02:29:16.648 - STREAM b'IHDR' 16 13
+02:29:16.648 - STREAM b'pHYs' 41 9
+02:29:16.648 - STREAM b'IDAT' 62 658
+02:29:16.649 - STREAM b'IHDR' 16 13
+02:29:16.649 - STREAM b'IDAT' 41 535
+02:29:16.651 - Scanning for orange frames...
+02:29:16.651 - Removing Orange frame: /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/video-000000.png
+02:29:16.652 - STREAM b'IHDR' 16 13
+02:29:16.652 - STREAM b'pHYs' 41 9
+02:29:16.652 - STREAM b'IDAT' 62 634
+02:29:16.652 - STREAM b'IHDR' 16 13
+02:29:16.652 - STREAM b'pHYs' 41 9
+02:29:16.652 - STREAM b'IDAT' 62 634
+02:29:16.653 - STREAM b'IHDR' 16 13
+02:29:16.653 - STREAM b'IDAT' 41 535
+02:29:16.654 - STREAM b'IHDR' 16 13
+02:29:16.654 - STREAM b'pHYs' 41 9
+02:29:16.654 - STREAM b'IDAT' 62 634
+02:29:16.655 - STREAM b'IHDR' 16 13
+02:29:16.655 - STREAM b'IDAT' 41 535
+02:29:16.655 - STREAM b'IHDR' 16 13
+02:29:16.656 - STREAM b'pHYs' 41 9
+02:29:16.656 - STREAM b'IDAT' 62 634
+02:29:16.656 - STREAM b'IHDR' 16 13
+02:29:16.656 - STREAM b'IDAT' 41 535
+02:29:16.657 - STREAM b'IHDR' 16 13
+02:29:16.657 - STREAM b'pHYs' 41 9
+02:29:16.657 - STREAM b'IDAT' 62 4096
+02:29:16.657 - STREAM b'IHDR' 16 13
+02:29:16.657 - STREAM b'pHYs' 41 9
+02:29:16.657 - STREAM b'IDAT' 62 4096
+02:29:16.658 - STREAM b'IHDR' 16 13
+02:29:16.658 - STREAM b'IDAT' 41 535
+02:29:16.659 - STREAM b'IHDR' 16 13
+02:29:16.659 - STREAM b'pHYs' 41 9
+02:29:16.659 - STREAM b'IDAT' 62 4096
+02:29:16.660 - STREAM b'IHDR' 16 13
+02:29:16.660 - STREAM b'IDAT' 41 535
+02:29:16.661 - STREAM b'IHDR' 16 13
+02:29:16.661 - STREAM b'pHYs' 41 9
+02:29:16.661 - STREAM b'IDAT' 62 4096
+02:29:16.662 - STREAM b'IHDR' 16 13
+02:29:16.662 - STREAM b'IDAT' 41 535
+02:29:16.663 - Finding Render Start...
+02:29:16.663 - STREAM b'IHDR' 16 13
+02:29:16.663 - STREAM b'pHYs' 41 9
+02:29:16.663 - STREAM b'IDAT' 62 634
+02:29:16.663 - STREAM b'IHDR' 16 13
+02:29:16.663 - STREAM b'pHYs' 41 9
+02:29:16.663 - STREAM b'IDAT' 62 634
+02:29:16.663 - STREAM b'IHDR' 16 13
+02:29:16.663 - STREAM b'pHYs' 41 9
+02:29:16.663 - STREAM b'IDAT' 62 3964
+02:29:16.667 - STREAM b'IHDR' 16 13
+02:29:16.667 - STREAM b'pHYs' 41 9
+02:29:16.667 - STREAM b'IDAT' 62 3964
+02:29:16.667 - STREAM b'IHDR' 16 13
+02:29:16.667 - STREAM b'pHYs' 41 9
+02:29:16.667 - STREAM b'IDAT' 62 3964
+02:29:16.668 - STREAM b'IHDR' 16 13
+02:29:16.668 - STREAM b'IDAT' 41 535
+02:29:16.669 - STREAM b'IHDR' 16 13
+02:29:16.669 - STREAM b'pHYs' 41 9
+02:29:16.669 - STREAM b'IDAT' 62 3964
+02:29:16.670 - STREAM b'IHDR' 16 13
+02:29:16.670 - STREAM b'IDAT' 41 535
+02:29:16.671 - STREAM b'IHDR' 16 13
+02:29:16.671 - STREAM b'pHYs' 41 9
+02:29:16.671 - STREAM b'IDAT' 62 3964
+02:29:16.672 - STREAM b'IHDR' 16 13
+02:29:16.672 - STREAM b'IDAT' 41 535
+02:29:16.674 - Eliminating Duplicate Frames...
+02:29:16.674 - STREAM b'IHDR' 16 13
+02:29:16.674 - STREAM b'pHYs' 41 9
+02:29:16.674 - STREAM b'IDAT' 62 634
+02:29:16.674 - Viewport cropping set to (W, H, L, T): (400, 170, 0, 0)
+02:29:16.674 - STREAM b'IHDR' 16 13
+02:29:16.674 - STREAM b'pHYs' 41 9
+02:29:16.674 - STREAM b'IDAT' 62 634
+02:29:16.674 - STREAM b'IHDR' 16 13
+02:29:16.674 - STREAM b'pHYs' 41 9
+02:29:16.674 - STREAM b'IDAT' 62 3964
+02:29:16.678 - STREAM b'IHDR' 16 13
+02:29:16.678 - STREAM b'pHYs' 41 9
+02:29:16.678 - STREAM b'IDAT' 62 4096
+02:29:16.678 - STREAM b'IHDR' 16 13
+02:29:16.678 - STREAM b'pHYs' 41 9
+02:29:16.678 - STREAM b'IDAT' 62 4096
+02:29:16.682 - STREAM b'IHDR' 16 13
+02:29:16.682 - STREAM b'pHYs' 41 9
+02:29:16.682 - STREAM b'IDAT' 62 4096
+02:29:16.682 - STREAM b'IHDR' 16 13
+02:29:16.682 - STREAM b'pHYs' 41 9
+02:29:16.682 - STREAM b'IDAT' 62 4096
+02:29:16.685 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007600.png from the end
+02:29:16.685 - STREAM b'IHDR' 16 13
+02:29:16.685 - STREAM b'pHYs' 41 9
+02:29:16.685 - STREAM b'IDAT' 62 4096
+02:29:16.685 - STREAM b'IHDR' 16 13
+02:29:16.685 - STREAM b'pHYs' 41 9
+02:29:16.685 - STREAM b'IDAT' 62 4096
+02:29:16.689 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007566.png from the end
+02:29:16.689 - STREAM b'IHDR' 16 13
+02:29:16.689 - STREAM b'pHYs' 41 9
+02:29:16.689 - STREAM b'IDAT' 62 4096
+02:29:16.689 - STREAM b'IHDR' 16 13
+02:29:16.689 - STREAM b'pHYs' 41 9
+02:29:16.689 - STREAM b'IDAT' 62 4096
+02:29:16.692 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007500.png from the end
+02:29:16.693 - STREAM b'IHDR' 16 13
+02:29:16.693 - STREAM b'pHYs' 41 9
+02:29:16.693 - STREAM b'IDAT' 62 4096
+02:29:16.693 - STREAM b'IHDR' 16 13
+02:29:16.693 - STREAM b'pHYs' 41 9
+02:29:16.693 - STREAM b'IDAT' 62 4096
+02:29:16.696 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007466.png from the end
+02:29:16.696 - STREAM b'IHDR' 16 13
+02:29:16.696 - STREAM b'pHYs' 41 9
+02:29:16.696 - STREAM b'IDAT' 62 4096
+02:29:16.696 - STREAM b'IHDR' 16 13
+02:29:16.696 - STREAM b'pHYs' 41 9
+02:29:16.696 - STREAM b'IDAT' 62 4096
+02:29:16.700 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007433.png from the end
+02:29:16.700 - STREAM b'IHDR' 16 13
+02:29:16.700 - STREAM b'pHYs' 41 9
+02:29:16.700 - STREAM b'IDAT' 62 4096
+02:29:16.700 - STREAM b'IHDR' 16 13
+02:29:16.700 - STREAM b'pHYs' 41 9
+02:29:16.700 - STREAM b'IDAT' 62 4096
+02:29:16.703 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007400.png from the end
+02:29:16.703 - STREAM b'IHDR' 16 13
+02:29:16.703 - STREAM b'pHYs' 41 9
+02:29:16.703 - STREAM b'IDAT' 62 4096
+02:29:16.704 - STREAM b'IHDR' 16 13
+02:29:16.704 - STREAM b'pHYs' 41 9
+02:29:16.704 - STREAM b'IDAT' 62 4096
+02:29:16.707 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007366.png from the end
+02:29:16.708 - STREAM b'IHDR' 16 13
+02:29:16.708 - STREAM b'pHYs' 41 9
+02:29:16.708 - STREAM b'IDAT' 62 4096
+02:29:16.708 - STREAM b'IHDR' 16 13
+02:29:16.708 - STREAM b'pHYs' 41 9
+02:29:16.708 - STREAM b'IDAT' 62 4096
+02:29:16.712 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007300.png from the end
+02:29:16.712 - STREAM b'IHDR' 16 13
+02:29:16.712 - STREAM b'pHYs' 41 9
+02:29:16.712 - STREAM b'IDAT' 62 4096
+02:29:16.712 - STREAM b'IHDR' 16 13
+02:29:16.712 - STREAM b'pHYs' 41 9
+02:29:16.712 - STREAM b'IDAT' 62 4096
+02:29:16.716 - Removing duplicate frame /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007700.png from the end
+02:29:16.726 - Calculating image histograms
+02:29:16.727 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_000000.png
+02:29:16.727 - STREAM b'IHDR' 16 13
+02:29:16.727 - STREAM b'pHYs' 41 9
+02:29:16.727 - STREAM b'IDAT' 62 634
+02:29:16.733 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_002466.png
+02:29:16.733 - STREAM b'IHDR' 16 13
+02:29:16.733 - STREAM b'pHYs' 41 9
+02:29:16.733 - STREAM b'IDAT' 62 3964
+02:29:16.738 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_002500.png
+02:29:16.738 - STREAM b'IHDR' 16 13
+02:29:16.739 - STREAM b'pHYs' 41 9
+02:29:16.739 - STREAM b'IDAT' 62 4096
+02:29:16.745 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_002533.png
+02:29:16.745 - STREAM b'IHDR' 16 13
+02:29:16.745 - STREAM b'pHYs' 41 9
+02:29:16.745 - STREAM b'IDAT' 62 4096
+02:29:16.751 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_002633.png
+02:29:16.751 - STREAM b'IHDR' 16 13
+02:29:16.751 - STREAM b'pHYs' 41 9
+02:29:16.751 - STREAM b'IDAT' 62 4096
+02:29:16.756 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_002766.png
+02:29:16.756 - STREAM b'IHDR' 16 13
+02:29:16.757 - STREAM b'pHYs' 41 9
+02:29:16.757 - STREAM b'IDAT' 62 4096
+02:29:16.765 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_002800.png
+02:29:16.765 - STREAM b'IHDR' 16 13
+02:29:16.765 - STREAM b'pHYs' 41 9
+02:29:16.765 - STREAM b'IDAT' 62 4096
+02:29:16.773 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_002833.png
+02:29:16.773 - STREAM b'IHDR' 16 13
+02:29:16.773 - STREAM b'pHYs' 41 9
+02:29:16.773 - STREAM b'IDAT' 62 4096
+02:29:16.780 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_002866.png
+02:29:16.780 - STREAM b'IHDR' 16 13
+02:29:16.780 - STREAM b'pHYs' 41 9
+02:29:16.780 - STREAM b'IDAT' 62 4096
+02:29:16.787 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_002900.png
+02:29:16.787 - STREAM b'IHDR' 16 13
+02:29:16.787 - STREAM b'pHYs' 41 9
+02:29:16.787 - STREAM b'IDAT' 62 4096
+02:29:16.794 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_002933.png
+02:29:16.794 - STREAM b'IHDR' 16 13
+02:29:16.794 - STREAM b'pHYs' 41 9
+02:29:16.794 - STREAM b'IDAT' 62 4096
+02:29:16.802 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_002966.png
+02:29:16.802 - STREAM b'IHDR' 16 13
+02:29:16.802 - STREAM b'pHYs' 41 9
+02:29:16.802 - STREAM b'IDAT' 62 4096
+02:29:16.810 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003000.png
+02:29:16.810 - STREAM b'IHDR' 16 13
+02:29:16.810 - STREAM b'pHYs' 41 9
+02:29:16.810 - STREAM b'IDAT' 62 4096
+02:29:16.817 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003066.png
+02:29:16.817 - STREAM b'IHDR' 16 13
+02:29:16.817 - STREAM b'pHYs' 41 9
+02:29:16.817 - STREAM b'IDAT' 62 4096
+02:29:16.824 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003133.png
+02:29:16.824 - STREAM b'IHDR' 16 13
+02:29:16.824 - STREAM b'pHYs' 41 9
+02:29:16.824 - STREAM b'IDAT' 62 4096
+02:29:16.833 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003166.png
+02:29:16.833 - STREAM b'IHDR' 16 13
+02:29:16.833 - STREAM b'pHYs' 41 9
+02:29:16.833 - STREAM b'IDAT' 62 4096
+02:29:16.840 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003700.png
+02:29:16.840 - STREAM b'IHDR' 16 13
+02:29:16.840 - STREAM b'pHYs' 41 9
+02:29:16.840 - STREAM b'IDAT' 62 4096
+02:29:16.849 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003733.png
+02:29:16.849 - STREAM b'IHDR' 16 13
+02:29:16.849 - STREAM b'pHYs' 41 9
+02:29:16.849 - STREAM b'IDAT' 62 4096
+02:29:16.856 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003766.png
+02:29:16.856 - STREAM b'IHDR' 16 13
+02:29:16.856 - STREAM b'pHYs' 41 9
+02:29:16.856 - STREAM b'IDAT' 62 4096
+02:29:16.864 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003800.png
+02:29:16.864 - STREAM b'IHDR' 16 13
+02:29:16.864 - STREAM b'pHYs' 41 9
+02:29:16.865 - STREAM b'IDAT' 62 4096
+02:29:16.872 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003833.png
+02:29:16.872 - STREAM b'IHDR' 16 13
+02:29:16.872 - STREAM b'pHYs' 41 9
+02:29:16.872 - STREAM b'IDAT' 62 4096
+02:29:16.883 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003866.png
+02:29:16.883 - STREAM b'IHDR' 16 13
+02:29:16.883 - STREAM b'pHYs' 41 9
+02:29:16.883 - STREAM b'IDAT' 62 4096
+02:29:16.891 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003900.png
+02:29:16.891 - STREAM b'IHDR' 16 13
+02:29:16.891 - STREAM b'pHYs' 41 9
+02:29:16.891 - STREAM b'IDAT' 62 4096
+02:29:16.898 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_003933.png
+02:29:16.899 - STREAM b'IHDR' 16 13
+02:29:16.899 - STREAM b'pHYs' 41 9
+02:29:16.899 - STREAM b'IDAT' 62 4096
+02:29:16.905 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004000.png
+02:29:16.905 - STREAM b'IHDR' 16 13
+02:29:16.905 - STREAM b'pHYs' 41 9
+02:29:16.905 - STREAM b'IDAT' 62 4096
+02:29:16.912 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004033.png
+02:29:16.912 - STREAM b'IHDR' 16 13
+02:29:16.912 - STREAM b'pHYs' 41 9
+02:29:16.912 - STREAM b'IDAT' 62 4096
+02:29:16.919 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004066.png
+02:29:16.919 - STREAM b'IHDR' 16 13
+02:29:16.919 - STREAM b'pHYs' 41 9
+02:29:16.919 - STREAM b'IDAT' 62 4096
+02:29:16.926 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004100.png
+02:29:16.926 - STREAM b'IHDR' 16 13
+02:29:16.926 - STREAM b'pHYs' 41 9
+02:29:16.926 - STREAM b'IDAT' 62 4096
+02:29:16.933 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004133.png
+02:29:16.933 - STREAM b'IHDR' 16 13
+02:29:16.933 - STREAM b'pHYs' 41 9
+02:29:16.933 - STREAM b'IDAT' 62 4096
+02:29:16.940 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004166.png
+02:29:16.940 - STREAM b'IHDR' 16 13
+02:29:16.940 - STREAM b'pHYs' 41 9
+02:29:16.940 - STREAM b'IDAT' 62 4096
+02:29:16.947 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004200.png
+02:29:16.947 - STREAM b'IHDR' 16 13
+02:29:16.947 - STREAM b'pHYs' 41 9
+02:29:16.947 - STREAM b'IDAT' 62 4096
+02:29:16.954 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004233.png
+02:29:16.954 - STREAM b'IHDR' 16 13
+02:29:16.954 - STREAM b'pHYs' 41 9
+02:29:16.954 - STREAM b'IDAT' 62 4096
+02:29:16.962 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004266.png
+02:29:16.962 - STREAM b'IHDR' 16 13
+02:29:16.962 - STREAM b'pHYs' 41 9
+02:29:16.962 - STREAM b'IDAT' 62 4096
+02:29:16.969 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004300.png
+02:29:16.969 - STREAM b'IHDR' 16 13
+02:29:16.969 - STREAM b'pHYs' 41 9
+02:29:16.969 - STREAM b'IDAT' 62 4096
+02:29:16.978 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004333.png
+02:29:16.978 - STREAM b'IHDR' 16 13
+02:29:16.978 - STREAM b'pHYs' 41 9
+02:29:16.978 - STREAM b'IDAT' 62 4096
+02:29:16.986 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004366.png
+02:29:16.986 - STREAM b'IHDR' 16 13
+02:29:16.986 - STREAM b'pHYs' 41 9
+02:29:16.986 - STREAM b'IDAT' 62 4096
+02:29:16.995 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004400.png
+02:29:16.995 - STREAM b'IHDR' 16 13
+02:29:16.995 - STREAM b'pHYs' 41 9
+02:29:16.995 - STREAM b'IDAT' 62 4096
+02:29:17.003 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004433.png
+02:29:17.003 - STREAM b'IHDR' 16 13
+02:29:17.003 - STREAM b'pHYs' 41 9
+02:29:17.003 - STREAM b'IDAT' 62 4096
+02:29:17.010 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004466.png
+02:29:17.011 - STREAM b'IHDR' 16 13
+02:29:17.011 - STREAM b'pHYs' 41 9
+02:29:17.011 - STREAM b'IDAT' 62 4096
+02:29:17.018 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004500.png
+02:29:17.018 - STREAM b'IHDR' 16 13
+02:29:17.018 - STREAM b'pHYs' 41 9
+02:29:17.018 - STREAM b'IDAT' 62 4096
+02:29:17.025 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004533.png
+02:29:17.025 - STREAM b'IHDR' 16 13
+02:29:17.025 - STREAM b'pHYs' 41 9
+02:29:17.025 - STREAM b'IDAT' 62 4096
+02:29:17.034 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_004600.png
+02:29:17.034 - STREAM b'IHDR' 16 13
+02:29:17.034 - STREAM b'pHYs' 41 9
+02:29:17.034 - STREAM b'IDAT' 62 4096
+02:29:17.041 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_006900.png
+02:29:17.041 - STREAM b'IHDR' 16 13
+02:29:17.041 - STREAM b'pHYs' 41 9
+02:29:17.041 - STREAM b'IDAT' 62 4096
+02:29:17.051 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_006933.png
+02:29:17.051 - STREAM b'IHDR' 16 13
+02:29:17.051 - STREAM b'pHYs' 41 9
+02:29:17.051 - STREAM b'IDAT' 62 4096
+02:29:17.059 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_006966.png
+02:29:17.059 - STREAM b'IHDR' 16 13
+02:29:17.059 - STREAM b'pHYs' 41 9
+02:29:17.059 - STREAM b'IDAT' 62 4096
+02:29:17.067 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007000.png
+02:29:17.067 - STREAM b'IHDR' 16 13
+02:29:17.067 - STREAM b'pHYs' 41 9
+02:29:17.067 - STREAM b'IDAT' 62 4096
+02:29:17.075 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007033.png
+02:29:17.075 - STREAM b'IHDR' 16 13
+02:29:17.075 - STREAM b'pHYs' 41 9
+02:29:17.075 - STREAM b'IDAT' 62 4096
+02:29:17.083 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007066.png
+02:29:17.083 - STREAM b'IHDR' 16 13
+02:29:17.083 - STREAM b'pHYs' 41 9
+02:29:17.083 - STREAM b'IDAT' 62 4096
+02:29:17.091 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007100.png
+02:29:17.091 - STREAM b'IHDR' 16 13
+02:29:17.091 - STREAM b'pHYs' 41 9
+02:29:17.091 - STREAM b'IDAT' 62 4096
+02:29:17.099 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007133.png
+02:29:17.099 - STREAM b'IHDR' 16 13
+02:29:17.099 - STREAM b'pHYs' 41 9
+02:29:17.099 - STREAM b'IDAT' 62 4096
+02:29:17.106 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007166.png
+02:29:17.106 - STREAM b'IHDR' 16 13
+02:29:17.106 - STREAM b'pHYs' 41 9
+02:29:17.106 - STREAM b'IDAT' 62 4096
+02:29:17.113 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007200.png
+02:29:17.113 - STREAM b'IHDR' 16 13
+02:29:17.113 - STREAM b'pHYs' 41 9
+02:29:17.113 - STREAM b'IDAT' 62 4096
+02:29:17.120 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007233.png
+02:29:17.120 - STREAM b'IHDR' 16 13
+02:29:17.120 - STREAM b'pHYs' 41 9
+02:29:17.120 - STREAM b'IDAT' 62 4096
+02:29:17.129 - Calculating histogram for /sitespeed.io/20251114_212547/pages/pubs_geoscienceworld_org/search-results/query-fed4be54/data/filmstrip/2/ms_007266.png
+02:29:17.129 - STREAM b'IHDR' 16 13
+02:29:17.129 - STREAM b'pHYs' 41 9
+02:29:17.129 - STREAM b'IDAT' 62 4096
+02:29:17.195 - Done calculating histograms
+02:29:17.197 - 0ms - 0% Complete
+02:29:17.197 - 2466ms - 5% Complete
+02:29:17.197 - 2500ms - 8% Complete
+02:29:17.197 - 2533ms - 7% Complete
+02:29:17.198 - 2633ms - 7% Complete
+02:29:17.198 - 2766ms - 20% Complete
+02:29:17.198 - 2800ms - 20% Complete
+02:29:17.198 - 2833ms - 20% Complete
+02:29:17.198 - 2866ms - 20% Complete
+02:29:17.199 - 2900ms - 20% Complete
+02:29:17.199 - 2933ms - 20% Complete
+02:29:17.199 - 2966ms - 20% Complete
+02:29:17.199 - 3000ms - 20% Complete
+02:29:17.199 - 3066ms - 20% Complete
+02:29:17.199 - 3133ms - 20% Complete
+02:29:17.200 - 3166ms - 20% Complete
+02:29:17.200 - 3700ms - 20% Complete
+02:29:17.200 - 3733ms - 20% Complete
+02:29:17.200 - 3766ms - 20% Complete
+02:29:17.200 - 3800ms - 20% Complete
+02:29:17.201 - 3833ms - 20% Complete
+02:29:17.201 - 3866ms - 20% Complete
+02:29:17.201 - 3900ms - 20% Complete
+02:29:17.201 - 3933ms - 20% Complete
+02:29:17.201 - 4000ms - 21% Complete
+02:29:17.201 - 4033ms - 21% Complete
+02:29:17.202 - 4066ms - 21% Complete
+02:29:17.202 - 4100ms - 21% Complete
+02:29:17.202 - 4133ms - 21% Complete
+02:29:17.202 - 4166ms - 21% Complete
+02:29:17.202 - 4200ms - 21% Complete
+02:29:17.203 - 4233ms - 21% Complete
+02:29:17.203 - 4266ms - 21% Complete
+02:29:17.203 - 4300ms - 21% Complete
+02:29:17.203 - 4333ms - 21% Complete
+02:29:17.203 - 4366ms - 21% Complete
+02:29:17.203 - 4400ms - 21% Complete
+02:29:17.204 - 4433ms - 21% Complete
+02:29:17.204 - 4466ms - 21% Complete
+02:29:17.204 - 4500ms - 21% Complete
+02:29:17.204 - 4533ms - 21% Complete
+02:29:17.204 - 4600ms - 21% Complete
+02:29:17.205 - 6900ms - 21% Complete
+02:29:17.205 - 6933ms - 21% Complete
+02:29:17.205 - 6966ms - 22% Complete
+02:29:17.205 - 7000ms - 28% Complete
+02:29:17.205 - 7033ms - 44% Complete
+02:29:17.205 - 7066ms - 93% Complete
+02:29:17.206 - 7100ms - 96% Complete
+02:29:17.206 - 7133ms - 96% Complete
+02:29:17.206 - 7166ms - 96% Complete
+02:29:17.206 - 7200ms - 96% Complete
+02:29:17.206 - 7233ms - 97% Complete
+02:29:17.207 - 7266ms - 100% Complete
+02:29:17.207 - Hero elements file is not valid: None
+02:29:17.207 - Converting video frames to JPEG
+02:29:17.207 - STREAM b'IHDR' 16 13
+02:29:17.207 - STREAM b'pHYs' 41 9
+02:29:17.207 - STREAM b'IDAT' 62 634
+02:29:17.207 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.208 - STREAM b'IHDR' 16 13
+02:29:17.208 - STREAM b'pHYs' 41 9
+02:29:17.208 - STREAM b'IDAT' 62 3964
+02:29:17.208 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.209 - STREAM b'IHDR' 16 13
+02:29:17.209 - STREAM b'pHYs' 41 9
+02:29:17.209 - STREAM b'IDAT' 62 4096
+02:29:17.209 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.210 - STREAM b'IHDR' 16 13
+02:29:17.210 - STREAM b'pHYs' 41 9
+02:29:17.210 - STREAM b'IDAT' 62 4096
+02:29:17.210 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.210 - STREAM b'IHDR' 16 13
+02:29:17.210 - STREAM b'pHYs' 41 9
+02:29:17.210 - STREAM b'IDAT' 62 4096
+02:29:17.210 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.211 - STREAM b'IHDR' 16 13
+02:29:17.211 - STREAM b'pHYs' 41 9
+02:29:17.211 - STREAM b'IDAT' 62 4096
+02:29:17.211 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.212 - STREAM b'IHDR' 16 13
+02:29:17.212 - STREAM b'pHYs' 41 9
+02:29:17.212 - STREAM b'IDAT' 62 4096
+02:29:17.212 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.213 - STREAM b'IHDR' 16 13
+02:29:17.213 - STREAM b'pHYs' 41 9
+02:29:17.213 - STREAM b'IDAT' 62 4096
+02:29:17.213 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.214 - STREAM b'IHDR' 16 13
+02:29:17.214 - STREAM b'pHYs' 41 9
+02:29:17.214 - STREAM b'IDAT' 62 4096
+02:29:17.214 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.215 - STREAM b'IHDR' 16 13
+02:29:17.215 - STREAM b'pHYs' 41 9
+02:29:17.215 - STREAM b'IDAT' 62 4096
+02:29:17.215 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.216 - STREAM b'IHDR' 16 13
+02:29:17.216 - STREAM b'pHYs' 41 9
+02:29:17.216 - STREAM b'IDAT' 62 4096
+02:29:17.216 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.216 - STREAM b'IHDR' 16 13
+02:29:17.217 - STREAM b'pHYs' 41 9
+02:29:17.217 - STREAM b'IDAT' 62 4096
+02:29:17.217 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.217 - STREAM b'IHDR' 16 13
+02:29:17.217 - STREAM b'pHYs' 41 9
+02:29:17.217 - STREAM b'IDAT' 62 4096
+02:29:17.217 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.218 - STREAM b'IHDR' 16 13
+02:29:17.218 - STREAM b'pHYs' 41 9
+02:29:17.218 - STREAM b'IDAT' 62 4096
+02:29:17.218 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.219 - STREAM b'IHDR' 16 13
+02:29:17.219 - STREAM b'pHYs' 41 9
+02:29:17.219 - STREAM b'IDAT' 62 4096
+02:29:17.219 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.220 - STREAM b'IHDR' 16 13
+02:29:17.220 - STREAM b'pHYs' 41 9
+02:29:17.220 - STREAM b'IDAT' 62 4096
+02:29:17.220 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.221 - STREAM b'IHDR' 16 13
+02:29:17.221 - STREAM b'pHYs' 41 9
+02:29:17.221 - STREAM b'IDAT' 62 4096
+02:29:17.221 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.222 - STREAM b'IHDR' 16 13
+02:29:17.222 - STREAM b'pHYs' 41 9
+02:29:17.222 - STREAM b'IDAT' 62 4096
+02:29:17.222 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.223 - STREAM b'IHDR' 16 13
+02:29:17.223 - STREAM b'pHYs' 41 9
+02:29:17.223 - STREAM b'IDAT' 62 4096
+02:29:17.223 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.224 - STREAM b'IHDR' 16 13
+02:29:17.224 - STREAM b'pHYs' 41 9
+02:29:17.224 - STREAM b'IDAT' 62 4096
+02:29:17.224 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.224 - STREAM b'IHDR' 16 13
+02:29:17.224 - STREAM b'pHYs' 41 9
+02:29:17.224 - STREAM b'IDAT' 62 4096
+02:29:17.224 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.225 - STREAM b'IHDR' 16 13
+02:29:17.225 - STREAM b'pHYs' 41 9
+02:29:17.225 - STREAM b'IDAT' 62 4096
+02:29:17.225 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.226 - STREAM b'IHDR' 16 13
+02:29:17.226 - STREAM b'pHYs' 41 9
+02:29:17.226 - STREAM b'IDAT' 62 4096
+02:29:17.226 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.227 - STREAM b'IHDR' 16 13
+02:29:17.227 - STREAM b'pHYs' 41 9
+02:29:17.227 - STREAM b'IDAT' 62 4096
+02:29:17.227 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.228 - STREAM b'IHDR' 16 13
+02:29:17.228 - STREAM b'pHYs' 41 9
+02:29:17.228 - STREAM b'IDAT' 62 4096
+02:29:17.228 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.229 - STREAM b'IHDR' 16 13
+02:29:17.229 - STREAM b'pHYs' 41 9
+02:29:17.229 - STREAM b'IDAT' 62 4096
+02:29:17.229 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.230 - STREAM b'IHDR' 16 13
+02:29:17.230 - STREAM b'pHYs' 41 9
+02:29:17.230 - STREAM b'IDAT' 62 4096
+02:29:17.230 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.231 - STREAM b'IHDR' 16 13
+02:29:17.231 - STREAM b'pHYs' 41 9
+02:29:17.231 - STREAM b'IDAT' 62 4096
+02:29:17.231 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.232 - STREAM b'IHDR' 16 13
+02:29:17.232 - STREAM b'pHYs' 41 9
+02:29:17.232 - STREAM b'IDAT' 62 4096
+02:29:17.232 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.232 - STREAM b'IHDR' 16 13
+02:29:17.232 - STREAM b'pHYs' 41 9
+02:29:17.232 - STREAM b'IDAT' 62 4096
+02:29:17.232 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.233 - STREAM b'IHDR' 16 13
+02:29:17.233 - STREAM b'pHYs' 41 9
+02:29:17.233 - STREAM b'IDAT' 62 4096
+02:29:17.233 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.234 - STREAM b'IHDR' 16 13
+02:29:17.234 - STREAM b'pHYs' 41 9
+02:29:17.234 - STREAM b'IDAT' 62 4096
+02:29:17.234 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.235 - STREAM b'IHDR' 16 13
+02:29:17.235 - STREAM b'pHYs' 41 9
+02:29:17.235 - STREAM b'IDAT' 62 4096
+02:29:17.235 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.236 - STREAM b'IHDR' 16 13
+02:29:17.236 - STREAM b'pHYs' 41 9
+02:29:17.236 - STREAM b'IDAT' 62 4096
+02:29:17.236 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.237 - STREAM b'IHDR' 16 13
+02:29:17.237 - STREAM b'pHYs' 41 9
+02:29:17.237 - STREAM b'IDAT' 62 4096
+02:29:17.237 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.238 - STREAM b'IHDR' 16 13
+02:29:17.238 - STREAM b'pHYs' 41 9
+02:29:17.238 - STREAM b'IDAT' 62 4096
+02:29:17.238 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.239 - STREAM b'IHDR' 16 13
+02:29:17.239 - STREAM b'pHYs' 41 9
+02:29:17.239 - STREAM b'IDAT' 62 4096
+02:29:17.239 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.240 - STREAM b'IHDR' 16 13
+02:29:17.240 - STREAM b'pHYs' 41 9
+02:29:17.240 - STREAM b'IDAT' 62 4096
+02:29:17.240 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.240 - STREAM b'IHDR' 16 13
+02:29:17.240 - STREAM b'pHYs' 41 9
+02:29:17.241 - STREAM b'IDAT' 62 4096
+02:29:17.241 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.242 - STREAM b'IHDR' 16 13
+02:29:17.242 - STREAM b'pHYs' 41 9
+02:29:17.242 - STREAM b'IDAT' 62 4096
+02:29:17.242 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.243 - STREAM b'IHDR' 16 13
+02:29:17.243 - STREAM b'pHYs' 41 9
+02:29:17.243 - STREAM b'IDAT' 62 4096
+02:29:17.243 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.243 - STREAM b'IHDR' 16 13
+02:29:17.243 - STREAM b'pHYs' 41 9
+02:29:17.243 - STREAM b'IDAT' 62 4096
+02:29:17.243 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.244 - STREAM b'IHDR' 16 13
+02:29:17.244 - STREAM b'pHYs' 41 9
+02:29:17.244 - STREAM b'IDAT' 62 4096
+02:29:17.244 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.245 - STREAM b'IHDR' 16 13
+02:29:17.245 - STREAM b'pHYs' 41 9
+02:29:17.245 - STREAM b'IDAT' 62 4096
+02:29:17.245 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.246 - STREAM b'IHDR' 16 13
+02:29:17.246 - STREAM b'pHYs' 41 9
+02:29:17.246 - STREAM b'IDAT' 62 4096
+02:29:17.246 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.247 - STREAM b'IHDR' 16 13
+02:29:17.247 - STREAM b'pHYs' 41 9
+02:29:17.247 - STREAM b'IDAT' 62 4096
+02:29:17.247 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.248 - STREAM b'IHDR' 16 13
+02:29:17.248 - STREAM b'pHYs' 41 9
+02:29:17.248 - STREAM b'IDAT' 62 4096
+02:29:17.248 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.249 - STREAM b'IHDR' 16 13
+02:29:17.249 - STREAM b'pHYs' 41 9
+02:29:17.249 - STREAM b'IDAT' 62 4096
+02:29:17.249 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.250 - STREAM b'IHDR' 16 13
+02:29:17.250 - STREAM b'pHYs' 41 9
+02:29:17.250 - STREAM b'IDAT' 62 4096
+02:29:17.250 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.251 - STREAM b'IHDR' 16 13
+02:29:17.251 - STREAM b'pHYs' 41 9
+02:29:17.251 - STREAM b'IDAT' 62 4096
+02:29:17.251 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.252 - STREAM b'IHDR' 16 13
+02:29:17.252 - STREAM b'pHYs' 41 9
+02:29:17.252 - STREAM b'IDAT' 62 4096
+02:29:17.252 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.252 - STREAM b'IHDR' 16 13
+02:29:17.253 - STREAM b'pHYs' 41 9
+02:29:17.253 - STREAM b'IDAT' 62 4096
+02:29:17.253 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.253 - STREAM b'IHDR' 16 13
+02:29:17.253 - STREAM b'pHYs' 41 9
+02:29:17.253 - STREAM b'IDAT' 62 4096
+02:29:17.253 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.254 - STREAM b'IHDR' 16 13
+02:29:17.254 - STREAM b'pHYs' 41 9
+02:29:17.254 - STREAM b'IDAT' 62 4096
+02:29:17.254 - Unable to convert image to sRGB as there is no color profile to transform from.
+02:29:17.255 - Done converting video frames to JPEG
