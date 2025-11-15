@@ -138,7 +138,10 @@ cat > "${RESULT_DIR}/budget.json" <<EOF
     "timings": {
       "firstPaint": 1000,
       "fullyLoaded": 3000,
-      "pageLoadTime": 2000
+      "pageLoadTime": 2000,
+      "firstContentfulPaint": 1000,
+      "largestContentfulPaint": 2500,
+      "speedIndex": 2000
     },
     "requests": {
       "total": 100

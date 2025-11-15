@@ -89,23 +89,15 @@ cat > "${RESULT_DIR}/budget.json" <<EOF
       "firstPaint": 1000,
       "fullyLoaded": 3000,
       "pageLoadTime": 2000,
-      "FirstContentfulPaint": 1000,
-      "LargestContentfulPaint": 2500,
-      "TotalBlockingTime": 200,
-      "CumulativeLayoutShift": 0.1,
-      "SpeedIndex": 2000
+      "firstContentfulPaint": 1000,
+      "largestContentfulPaint": 2500,
+      "speedIndex": 2000
     },
     "requests": {
       "total": 100
     },
     "transferSize": {
       "total": 1000000
-    },
-    "lighthouse": {
-      "performance": 80,
-      "accessibility": 90,
-      "best-practices": 90,
-      "seo": 90
     }
   }
 }
