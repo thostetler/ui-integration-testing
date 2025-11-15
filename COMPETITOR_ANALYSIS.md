@@ -39,13 +39,23 @@ Run with Lighthouse (recommended for comprehensive analysis):
 
 ### Analyzing Results
 
-After the tests complete, analyze the results:
+After the tests complete, generate visual comparison charts:
+
+```bash
+# Generate interactive charts grouped by page type
+node generate-charts.js ./sitespeed-results/<timestamp>
+
+# Open the comparison charts
+open ./sitespeed-results/<timestamp>/competitor-comparison.html
+```
+
+Or run the terminal-based analysis:
 
 ```bash
 node analyze-results.js ./sitespeed-results/<timestamp>
 ```
 
-Or view the HTML reports directly:
+Or view the detailed HTML reports directly:
 
 ```bash
 open ./sitespeed-results/<timestamp>/index.html
@@ -165,6 +175,47 @@ Edit `budget.json` created during script execution to set thresholds:
     }
   }
 }
+```
+
+## Visual Comparison Charts
+
+The `generate-charts.js` script creates interactive comparison charts from your sitespeed.io results:
+
+### Features
+
+- **Grouped by Page Type**: Charts are organized by Home, Search, and Article pages
+- **Multiple Metrics**: Visualizes 7 key performance metrics
+- **Color-Coded**: Each competitor has a distinct color for easy identification
+- **Interactive**: Hover over bars to see exact values
+- **Responsive**: Works on desktop and mobile browsers
+
+### Metrics Visualized
+
+1. **Fully Loaded (ms)** - Total page load time
+2. **LCP (ms)** - Largest Contentful Paint (Core Web Vital)
+3. **Speed Index (ms)** - Visual loading speed
+4. **Total Blocking Time (ms)** - Main thread blocking (Core Web Vital)
+5. **Cumulative Layout Shift** - Visual stability (Core Web Vital)
+6. **Transfer Size (KB)** - Total bytes downloaded
+7. **Request Count** - Number of HTTP requests
+
+### Output Format
+
+The generator creates a single HTML file (`competitor-comparison.html`) with:
+- Summary cards showing test counts
+- Separate sections for each page type (Home, Search, Article)
+- Grid layout of bar charts for each metric
+- Color-coded bars matching each competitor
+- Interactive tooltips with exact values
+
+### Example Usage
+
+```bash
+# After running sitespeed tests
+node generate-charts.js ./sitespeed-results/20251114_212547
+
+# Opens in browser
+open ./sitespeed-results/20251114_212547/competitor-comparison.html
 ```
 
 ## Understanding Results

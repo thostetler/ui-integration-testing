@@ -2,16 +2,19 @@
 
 ## TL;DR
 
-Run comprehensive performance comparison in 3 steps:
+Run comprehensive performance comparison in 4 steps:
 
 ```bash
 # 1. Run tests (with Lighthouse - recommended)
 ./run-competitor-analysis-lighthouse.sh
 
-# 2. Analyze results (replace <timestamp> with actual directory name)
-node analyze-results.js ./sitespeed-results/<timestamp>
+# 2. Generate visual comparison charts (replace <timestamp> with actual directory name)
+node generate-charts.js ./sitespeed-results/<timestamp>
 
-# 3. View HTML reports
+# 3. Open the comparison charts in your browser
+open ./sitespeed-results/<timestamp>/competitor-comparison.html
+
+# 4. View detailed HTML reports
 open ./sitespeed-results/<timestamp>/index.html
 ```
 
